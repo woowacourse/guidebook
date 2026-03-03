@@ -6,17 +6,20 @@ type TimelineItemStatus = 'completed' | 'active' | 'upcoming'
 interface TimelineItemProps {
   date: string
   title: string
+  href?: string
   status?: TimelineItemStatus
   children?: ReactNode
 }
 
 interface TimelineProps {
   children: ReactNode
+  label?: string
 }
 
 export function TimelineItem({
   date,
   title,
+  href,
   status = 'upcoming',
   children,
 }: TimelineItemProps) {
@@ -28,13 +31,24 @@ export function TimelineItem({
       </div>
       <div className={styles.content}>
         <span className={styles.date}>{date}</span>
-        <h4 className={styles.title}>{title}</h4>
+        {href ? (
+          <a href={href} className={styles.titleLink}>
+            <h4 className={styles.title}>{title}</h4>
+          </a>
+        ) : (
+          <h4 className={styles.title}>{title}</h4>
+        )}
         {children && <div className={styles.description}>{children}</div>}
       </div>
     </div>
   )
 }
 
-export function Timeline({ children }: TimelineProps) {
-  return <div className={styles.timeline}>{children}</div>
+export function Timeline({ children, label }: TimelineProps) {
+  return (
+    <div className={styles.timeline}>
+      {label && <span className={styles.label}>{label}</span>}
+      {children}
+    </div>
+  )
 }

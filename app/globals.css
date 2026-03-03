@@ -202,6 +202,18 @@ aside a {
   --nextra-content-width: 85rem;
 }
 
+/* 랜딩 페이지 — Nextra 기본 패딩 제거 후 콘텐츠 중앙 정렬 */
+div.nextra-body-typesetting-article:has([data-landing-hero]) {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+div.nextra-body-typesetting-article:has([data-landing-hero]) > * {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ===== 사이드바 footer 재배치 ===== */
 
 /* 사이드바를 flex column으로 만들어 footer를 상단으로 이동 */

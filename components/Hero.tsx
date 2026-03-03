@@ -9,7 +9,7 @@ interface HeroProps {
 
 export function Hero({ title, subtitle, description }: HeroProps) {
   return (
-    <div className={styles.hero}>
+    <div className={styles.hero} data-landing-hero>
       <h1 className={styles.title}>{title}</h1>
       <p className={styles.subtitle}>{subtitle}</p>
       {description && <div className={styles.description}>{description}</div>}

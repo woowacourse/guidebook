@@ -7,12 +7,14 @@ interface CardProps {
   href?: string
   disabled?: boolean
   meta?: string
+  variant?: 'card' | 'row'
   children?: ReactNode
 }
 
-export function Card({ title, icon, href, disabled, meta, children }: CardProps) {
+export function Card({ title, icon, href, disabled, meta, variant = 'card', children }: CardProps) {
+  const baseClass = variant === 'row' ? styles.row : styles.card
   const content = (
-    <div className={`${styles.card} ${disabled ? styles.disabled : ''}`}>
+    <div className={`${baseClass} ${disabled ? styles.disabled : ''}`}>
       {icon && <span className={styles.icon}>{icon}</span>}
       <div className={styles.body}>
         <h3 className={styles.title}>{title}</h3>

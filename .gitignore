@@ -3,3 +3,5 @@ node_modules/
 out/
 *.tsbuildinfo
 next-env.d.ts
+docs/plans/pr-data/
+.playwright-mcp/

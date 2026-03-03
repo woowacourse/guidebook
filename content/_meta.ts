@@ -8,6 +8,7 @@ export default {
       toc: false,
       breadcrumb: false,
       pagination: false,
+      copyPage: false,
       timestamp: false,
       typesetting: 'article'
     }
@@ -16,7 +17,7 @@ export default {
     title: '교육 모델',
     type: 'page'
   },
-  'ai-experience': {
+  'education-experiment': {
     title: '교육 실험',
     type: 'page'
   }

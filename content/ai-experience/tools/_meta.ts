@@ -7,5 +7,6 @@ export default {
       timestamp: false,
       typesetting: 'article'
     }
-  }
+  },
+  'clean-language-mentoring': '클린 랭귀지 상호 멘토링'
 }

@@ -1,0 +1,66 @@
+/* Hero section for landing page */
+.hero {
+  text-align: center;
+  padding: 3.5rem 0 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  margin: 0 0 0.75rem;
+  color: rgb(55, 53, 47);
+}
+
+:global(.dark) .title {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* 서브타이틀 — 이 사이트가 무엇인지 */
+.subtitle {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: rgba(55, 53, 47, 0.5);
+  margin: 0 0 1rem;
+  letter-spacing: -0.01em;
+}
+
+:global(.dark) .subtitle {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(55, 53, 47, 0.45);
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+:global(.dark) .description {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.description p {
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 2.5rem 0 1.5rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 0.875rem;
+  }
+}

@@ -1,0 +1,81 @@
+/* Notion-style Callout */
+.callout {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  border-radius: 6px;
+  margin: 1rem 0;
+  line-height: 1.55;
+  font-size: 0.9375rem;
+}
+
+.emoji {
+  font-size: 1.35em;
+  flex-shrink: 0;
+  line-height: 1.5;
+  user-select: none;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+.content p {
+  margin: 0;
+}
+
+.content p + p {
+  margin-top: 0.5em;
+}
+
+/* Info - 노션 파란색 배경 */
+.info {
+  background-color: rgb(231, 243, 248);
+}
+
+/* Warning - 노션 노란색 배경 */
+.warning {
+  background-color: rgb(251, 243, 219);
+}
+
+/* Tip - 노션 초록색 배경 */
+.tip {
+  background-color: rgb(221, 237, 226);
+}
+
+/* Danger - 노션 빨간색 배경 */
+.danger {
+  background-color: rgb(253, 235, 236);
+}
+
+/* Note - 노션 회색 배경 */
+.note {
+  background-color: rgb(241, 241, 239);
+}
+
+/* Dark mode */
+:global(.dark) .info {
+  background-color: rgba(45, 89, 120, 0.35);
+  color: rgba(255, 255, 255, 0.81);
+}
+
+:global(.dark) .warning {
+  background-color: rgba(120, 97, 30, 0.35);
+  color: rgba(255, 255, 255, 0.81);
+}
+
+:global(.dark) .tip {
+  background-color: rgba(36, 95, 55, 0.35);
+  color: rgba(255, 255, 255, 0.81);
+}
+
+:global(.dark) .danger {
+  background-color: rgba(120, 36, 40, 0.35);
+  color: rgba(255, 255, 255, 0.81);
+}
+
+:global(.dark) .note {
+  background-color: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.81);
+}

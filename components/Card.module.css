@@ -1,0 +1,149 @@
+/* Notion-style Card */
+.link {
+  text-decoration: none !important;
+  color: inherit;
+  display: flex;
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(55, 53, 47, 0.09);
+  background: rgba(55, 53, 47, 0.024);
+  transition: background 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.link:hover .card,
+.card:hover {
+  background: rgba(55, 53, 47, 0.06);
+  border-color: rgba(55, 53, 47, 0.16);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.icon {
+  font-size: 2em;
+  flex-shrink: 0;
+  line-height: 1.2;
+  user-select: none;
+}
+
+.body {
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  margin: 0 0 0.3em 0;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.description {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: rgba(55, 53, 47, 0.65);
+  line-height: 1.6;
+}
+
+.card .description p {
+  margin: 0;
+  line-height: inherit;
+}
+
+/* Meta info (e.g. "7개 챕터 · 30+ 문서") */
+.meta {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: rgba(55, 53, 47, 0.45);
+  letter-spacing: 0.01em;
+}
+
+:global(.dark) .meta {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+/* Arrow indicator for linked cards */
+.arrow {
+  flex-shrink: 0;
+  font-size: 1.125rem;
+  color: rgba(55, 53, 47, 0.25);
+  transition: color 0.15s ease, transform 0.15s ease;
+  align-self: center;
+}
+
+.link:hover .arrow {
+  color: rgba(55, 53, 47, 0.6);
+  transform: translateX(2px);
+}
+
+:global(.dark) .arrow {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+:global(.dark) .link:hover .arrow {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Grid - 노션 스타일 갤러리 */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--columns, 2), 1fr);
+  gap: 0.75rem;
+  margin: 1.25rem 0;
+}
+
+.grid[data-columns="2"] {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Disabled state */
+.disabled {
+  opacity: 0.5;
+  cursor: default;
+  border-style: dashed;
+}
+
+.disabled:hover {
+  background: rgba(55, 53, 47, 0.024);
+  border-color: rgba(55, 53, 47, 0.09);
+  box-shadow: none;
+}
+
+:global(.dark) .disabled:hover {
+  background: rgba(255, 255, 255, 0.024);
+  border-color: rgba(255, 255, 255, 0.09);
+}
+
+/* Dark mode */
+:global(.dark) .card {
+  background: rgba(255, 255, 255, 0.024);
+  border-color: rgba(255, 255, 255, 0.09);
+}
+
+:global(.dark) .link:hover .card,
+:global(.dark) .card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+:global(.dark) .description {
+  color: rgba(255, 255, 255, 0.5);
+}

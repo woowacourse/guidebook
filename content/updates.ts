@@ -10,6 +10,13 @@ export interface Update {
 const updates: Update[] = [
   {
     date: '2025년 8기',
+    title: '선배 코드로 눈 키우기',
+    description: '선배 PR의 AS-IS를 먼저 판단하고 TO-BE와 비교하여 "못 보던 것"을 발견하는 활동.',
+    href: '/education-experiment/logs/senior-code-review',
+    status: 'active',
+  },
+  {
+    date: '2025년 8기',
     title: '표준화 크루를 활용한 코칭 훈련',
     description: 'GPTs로 구현한 가상 크루와 코칭을 연습하는 훈련 환경.',
     href: '/education-experiment/logs/standardized-crew-coaching',

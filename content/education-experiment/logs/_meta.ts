@@ -2,6 +2,7 @@ export default {
   index: '개요',
   'mission-design': 'Gemini Canvas 웹앱 다작하기',
   expedition: '원정대: 송곳 같은 강점 만들기',
+  'senior-code-review': '선배 코드로 눈 키우기',
   'standardized-crew-coaching': '표준화 크루를 활용한 코칭 훈련',
   'one-on-one': {
     title: '1:1 코칭 지원',

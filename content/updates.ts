@@ -9,6 +9,13 @@ export interface Update {
 // 최신 항목을 맨 위에 추가하세요.
 const updates: Update[] = [
   {
+    date: '2026년 8기',
+    title: '레벨0: 자기주도 학습 설계 (안드로이드)',
+    description: '입학 전 4주, 계획-실행-회고 구조로 크루 스스로 학습 리듬을 만드는 실험. 19명 전원 완주.',
+    href: '/education-experiment/logs/android-level0',
+    status: 'active',
+  },
+  {
     date: '2025년 8기',
     title: '선배 코드로 눈 키우기',
     description: '선배 PR의 AS-IS를 먼저 판단하고 TO-BE와 비교하여 "못 보던 것"을 발견하는 활동.',

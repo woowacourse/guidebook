@@ -10,16 +10,9 @@ export interface Update {
 const updates: Update[] = [
   {
     date: '2026년 8기',
-    title: '8기 연극 주제 아카이브',
-    description: '28개 팀이 제출한 온보딩 연극 주제 전체 목록. 개발자 문화, 우테코 생활, AI 미래 등 5개 카테고리로 분류.',
-    href: '/education-experiment/logs/drama-themes',
-    status: 'active',
-  },
-  {
-    date: '2026년 8기',
-    title: '코드랩으로 관심사 분리 체험하기',
-    description: 'POE 사이클로 "도메인과 UI를 왜 분리해야 하는가"를 크루 스스로 발견하게 하는 수업 설계.',
-    href: '/education-experiment/logs/codelab-lotto-domain-ui',
+    title: '온보딩 연극 미션',
+    description: '연극으로 시작하는 온보딩. 심리적 안전감 형성과 팀 정체성을 위한 첫 번째 장치.',
+    href: '/education-experiment/logs/drama-onboarding',
     status: 'active',
   },
   {
@@ -31,9 +24,9 @@ const updates: Update[] = [
   },
   {
     date: '2026년 8기',
-    title: '온보딩 연극 미션',
-    description: '연극으로 시작하는 온보딩. 심리적 안전감 형성과 팀 정체성을 위한 첫 번째 장치.',
-    href: '/education-experiment/logs/drama-onboarding',
+    title: '코드랩으로 관심사 분리 체험하기',
+    description: 'POE 사이클로 "도메인과 UI를 왜 분리해야 하는가"를 크루 스스로 발견하게 하는 수업 설계.',
+    href: '/education-experiment/logs/codelab-lotto-domain-ui',
     status: 'active',
   },
   {

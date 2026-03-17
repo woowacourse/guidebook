@@ -10,6 +10,13 @@ export interface Update {
 const updates: Update[] = [
   {
     date: '2026년 8기',
+    title: '한 발짝 스터디',
+    description: '크루 스스로 소프트 스킬 목표를 설정하고 매주 팀 스터디로 실험하는 성장 사이클.',
+    href: '/education-experiment/logs/soft-skill-one-step-study',
+    status: 'active',
+  },
+  {
+    date: '2026년 8기',
     title: '온보딩 연극 미션',
     description: '연극으로 시작하는 온보딩. 심리적 안전감 형성과 팀 정체성을 위한 첫 번째 장치.',
     href: '/education-experiment/logs/drama-onboarding',

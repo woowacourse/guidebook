@@ -8,6 +8,7 @@ import { Timeline, TimelineItem } from './components/Timeline'
 import { Placeholder } from './components/Placeholder'
 import { Hero } from './components/Hero'
 import { RecentUpdates } from './components/RecentUpdates'
+import { LogList } from './components/LogList'
 
 const docsComponents = getDocsMDXComponents()
 
@@ -24,6 +25,7 @@ export function useMDXComponents(components?: Record<string, React.FC>) {
     Placeholder,
     Hero,
     RecentUpdates,
+    LogList,
     ...components
   }
 }

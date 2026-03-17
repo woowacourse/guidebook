@@ -8,7 +8,7 @@ Nextra 4 + Next.js App Router 기반 교육 가이드북.
 
 1. **`_meta.ts` 업데이트** — 해당 디렉토리의 `_meta.ts`에 새 항목 등록
 2. **`content/updates.ts` 업데이트** — 배열 맨 위에 새 항목 추가. 랜딩 페이지 "최근 업데이트" 타임라인에 자동 반영됨
-3. **실험 로그 개요 업데이트** — `content/education-experiment/logs/` 하위에 페이지를 추가하거나 내용을 수정했을 때, `content/education-experiment/logs/index.mdx`의 목록도 함께 업데이트. 적절한 카테고리(레벨 1, 코치 훈련 등) 아래에 `- [제목](/경로) — 한 줄 설명` 형식으로 추가
+3. **실험 로그는 `content/logs.ts`에만 추가** — `content/education-experiment/logs/` 하위에 MDX를 추가했을 때, `content/logs.ts` 배열 맨 위에 항목 추가. `index.mdx`는 `<LogList />`가 자동 렌더링하므로 직접 수정 불필요
 
 ### updates.ts 항목 형식
 
@@ -19,6 +19,19 @@ Nextra 4 + Next.js App Router 기반 교육 가이드북.
   description: '한 줄 요약.', // 타임라인에 표시될 설명
   href: '/경로/슬러그',       // 문서 링크
   status: 'active',          // active: 최근 추가, completed: 안정화됨, upcoming: 예정
+}
+```
+
+### logs.ts 항목 형식
+
+```ts
+{
+  slug: 'my-log',            // MDX 파일명 (확장자 제외)
+  title: '실험 제목',
+  description: '한 줄 요약.',
+  href: '/education-experiment/logs/my-log',
+  date: '2026-03-17',        // YYYY-MM-DD — 실험이 실제로 진행된 날짜 (정렬 기준)
+  category: '레벨1',         // '온보딩' | '레벨0' | '레벨1' | '소프트스킬' | '코치훈련'
 }
 ```
 
@@ -37,7 +50,9 @@ content/
 
 ## 컴포넌트
 
-MDX에서 사용 가능한 커스텀 컴포넌트: Hero, Card, CardGrid, Timeline, TimelineItem, Toggle, Callout, AssetCard, Placeholder, RecentUpdates
+MDX에서 사용 가능한 커스텀 컴포넌트: Hero, Card, CardGrid, Timeline, TimelineItem, Toggle, Callout, AssetCard, Placeholder, RecentUpdates, LogList
+
+- **LogList** — 실험 로그 목록을 날짜 최신 순으로 렌더링. 카테고리 필터 탭 포함. `content/logs.ts`를 데이터 소스로 사용.
 
 ## hidden 처리
 

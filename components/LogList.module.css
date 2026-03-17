@@ -1,0 +1,137 @@
+.container {
+  margin: 24px 0;
+}
+
+/* 카테고리 탭 */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.tab {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #e5e7eb;
+  background: transparent;
+  font-size: 0.85rem;
+  cursor: pointer;
+  color: #6b7280;
+  transition: all 0.15s;
+}
+
+.tab:hover {
+  border-color: #9ca3af;
+  color: #374151;
+}
+
+.tabActive {
+  background: #1a1a1a;
+  border-color: #1a1a1a;
+  color: #ffffff;
+}
+
+/* 로그 목록 */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.item {
+  display: block;
+  padding: 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.1s;
+}
+
+.item:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  font-variant-numeric: tabular-nums;
+}
+
+.category {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.title {
+  margin: 0 0 4px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #111827;
+}
+
+.description {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.empty {
+  padding: 32px 16px;
+  text-align: center;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+/* Dark mode */
+[data-theme="dark"] .tab,
+:global(.dark) .tab {
+  border-color: #374151;
+  color: #9ca3af;
+}
+
+[data-theme="dark"] .tab:hover,
+:global(.dark) .tab:hover {
+  border-color: #6b7280;
+  color: #d1d5db;
+}
+
+[data-theme="dark"] .tabActive,
+:global(.dark) .tabActive {
+  background: #f9fafb;
+  border-color: #f9fafb;
+  color: #111827;
+}
+
+[data-theme="dark"] .item:hover,
+:global(.dark) .item:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .category,
+:global(.dark) .category {
+  background: #1f2937;
+  color: #9ca3af;
+}
+
+[data-theme="dark"] .title,
+:global(.dark) .title {
+  color: #f9fafb;
+}
+
+[data-theme="dark"] .description,
+:global(.dark) .description {
+  color: #9ca3af;
+}

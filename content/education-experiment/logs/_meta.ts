@@ -8,6 +8,7 @@ export default {
   'senior-code-review': '선배 코드로 눈 키우기',
   'codelab-lotto-domain-ui': '코드랩으로 관심사 분리 체험하기',
   'soft-skill-one-step-study': '한 발짝 스터디 (8기)',
+  'pair-programming-manifesto': '짝 프로그래밍 선언문',
   'standardized-crew-coaching': '표준화 크루를 활용한 코칭 훈련',
   'one-on-one': {
     title: '1:1 코칭 지원',

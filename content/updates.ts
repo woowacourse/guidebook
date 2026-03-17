@@ -10,6 +10,34 @@ export interface Update {
 const updates: Update[] = [
   {
     date: '2026년 8기',
+    title: '8기 연극 주제 아카이브',
+    description: '28개 팀이 제출한 온보딩 연극 주제 전체 목록. 개발자 문화, 우테코 생활, AI 미래 등 5개 카테고리로 분류.',
+    href: '/education-experiment/logs/drama-themes',
+    status: 'active',
+  },
+  {
+    date: '2026년 8기',
+    title: '코드랩으로 관심사 분리 체험하기',
+    description: 'POE 사이클로 "도메인과 UI를 왜 분리해야 하는가"를 크루 스스로 발견하게 하는 수업 설계.',
+    href: '/education-experiment/logs/codelab-lotto-domain-ui',
+    status: 'active',
+  },
+  {
+    date: '2026년 8기',
+    title: '연극 회고: 취약함 공유로 심리적 안전감 만들기',
+    description: '연극 직후 강점과 취약함을 포스트잇으로 공유하며 팀 신뢰의 토대를 만드는 90분 회고 활동.',
+    href: '/education-experiment/logs/drama-retrospective',
+    status: 'active',
+  },
+  {
+    date: '2026년 8기',
+    title: '온보딩 연극 미션',
+    description: '연극으로 시작하는 온보딩. 심리적 안전감 형성과 팀 정체성을 위한 첫 번째 장치.',
+    href: '/education-experiment/logs/drama-onboarding',
+    status: 'active',
+  },
+  {
+    date: '2026년 8기',
     title: '레벨0: 자기주도 학습 설계 (안드로이드)',
     description: '입학 전 4주, 계획-실행-회고 구조로 크루 스스로 학습 리듬을 만드는 실험. 19명 전원 완주.',
     href: '/education-experiment/logs/android-level0',

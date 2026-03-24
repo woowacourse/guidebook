@@ -30,7 +30,7 @@ Nextra 4 + Next.js App Router 기반 교육 가이드북.
   title: '실험 제목',
   description: '한 줄 요약.',
   href: '/education-experiment/logs/my-log',
-  date: '2026-03-17',        // YYYY-MM-DD — 실험이 실제로 진행된 날짜 (정렬 기준)
+  date: '2026-03-17',        // YYYY-MM-DD — 페이지 최초 커밋 날짜 (정렬 기준)
   category: '레벨1',         // '온보딩' | '레벨0' | '레벨1' | '소프트스킬' | '코치훈련'
 }
 ```

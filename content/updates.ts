@@ -10,6 +10,13 @@ export interface Update {
 const updates: Update[] = [
   {
     date: '2026년 8기',
+    title: '원정대 테크살롱: 공유회로 전이 설계하기',
+    description: '원정대가 쌓은 지식을 다른 크루에게 실제로 전이시키는 테크살롱 공유회 설계와 운영 기록.',
+    href: '/education-experiment/logs/expedition-tech-salon',
+    status: 'active',
+  },
+  {
+    date: '2026년 8기',
     title: '한 발짝 스터디',
     description: '크루 스스로 소프트 스킬 목표를 설정하고 매주 팀 스터디로 실험하는 성장 사이클.',
     href: '/education-experiment/logs/soft-skill-one-step-study',

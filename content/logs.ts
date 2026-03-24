@@ -12,6 +12,14 @@ export interface Log {
 // 최신 항목을 맨 위에 추가하세요.
 const logs: Log[] = [
   {
+    slug: 'web-backend-level1-elective-missions',
+    title: '웹백엔드 레벨1 선택미션',
+    description: '기술·문제정의·사고 확장 3가지 유형의 선택미션으로 자기주도 학습 환경을 설계한 기록.',
+    href: '/education-experiment/logs/web-backend-level1-elective-missions',
+    date: '2026-03-24',
+    category: '레벨1',
+  },
+  {
     slug: 'expedition-tech-salon',
     title: '원정대 테크살롱: 공유회로 전이 설계하기',
     description: '원정대가 쌓은 지식을 다른 크루에게 실제로 전이시키는 테크살롱 공유회 설계와 운영 기록.',

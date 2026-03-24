@@ -10,6 +10,13 @@ export interface Update {
 const updates: Update[] = [
   {
     date: '2026년 8기',
+    title: '웹백엔드 레벨1 선택미션',
+    description: '기술·문제정의·사고 확장 3가지 유형의 선택미션으로 자기주도 학습 환경을 설계한 기록.',
+    href: '/education-experiment/logs/web-backend-level1-elective-missions',
+    status: 'active',
+  },
+  {
+    date: '2026년 8기',
     title: '원정대 테크살롱: 공유회로 전이 설계하기',
     description: '원정대가 쌓은 지식을 다른 크루에게 실제로 전이시키는 테크살롱 공유회 설계와 운영 기록.',
     href: '/education-experiment/logs/expedition-tech-salon',

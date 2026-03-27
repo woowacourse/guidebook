@@ -31,7 +31,7 @@ Nextra 4 + Next.js App Router 기반 교육 가이드북.
   description: '한 줄 요약.',
   href: '/education-experiment/logs/my-log',
   date: '2026-03-17',        // YYYY-MM-DD — 페이지 최초 커밋 날짜 (정렬 기준)
-  category: '레벨1',         // '온보딩' | '레벨0' | '레벨1' | '소프트스킬' | '코치훈련'
+  category: '레벨1',         // '온보딩' | '레벨0' | '레벨1' | '레벨3' | '소프트스킬' | '코치훈련'
 }
 ```
 
@@ -57,3 +57,37 @@ MDX에서 사용 가능한 커스텀 컴포넌트: Hero, Card, CardGrid, Timelin
 ## hidden 처리
 
 `_meta.ts`에서 `display: 'hidden'`으로 설정된 항목은 사이드바에 표시되지 않지만 폴더는 존재함. 삭제하지 말 것.
+
+## 실험 로그 반복 개선 (autoresearch 패턴)
+
+Karpathy autoresearch 메커니즘을 실험 로그 품질 개선에 적용한 워크플로우.
+
+### 핵심 구조
+
+| autoresearch | 실험 로그 | 파일 |
+|---|---|---|
+| `prepare.py` (불변 평가 인프라) | 품질 루브릭 (5차원, 25점 만점) | `.claude/log-quality-rubric.md` |
+| `val_bpb` (메트릭 측정) | `/review-log` (점수 매기기) | `.claude/commands/review-log.md` |
+| train → measure → commit/reset 루프 | `/improve-log` (한 차원씩 개선) | `.claude/commands/improve-log.md` |
+| 밤새 실험 순회 | `/improve-all` (전체 로그 순회) | `.claude/commands/improve-all.md` |
+| `results.tsv` (실험 기록) | `improvement-log.tsv` (개선 기록) | 루트 디렉터리 |
+
+### 사용법
+
+```bash
+# 1. 특정 로그 평가만 (수정 없음)
+/review-log expedition
+
+# 2. 전체 로그 일괄 평가
+/review-log
+
+# 3. 특정 로그 반복 개선 (최대 5회, A등급까지)
+/improve-log expedition
+
+# 4. 전체 로그 순회 개선 (가장 약한 것부터)
+/improve-all
+```
+
+### 루브릭 수정 원칙
+
+`.claude/log-quality-rubric.md`는 autoresearch의 `prepare.py`처럼 **에이전트가 수정하지 않는다**. 평가 기준 변경은 사람이 직접 한다. 기준이 바뀌면 모든 이전 점수와 비교 불가능해지므로.

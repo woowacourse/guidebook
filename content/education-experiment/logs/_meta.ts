@@ -11,6 +11,7 @@ export default {
   'web-backend-level1-elective-missions': '웹백엔드 레벨1 선택미션',
   'expedition-tech-salon': '원정대 테크살롱: 공유회로 전이 설계하기',
   'pair-programming-manifesto': '짝 프로그래밍 선언문',
+  'ux-lecture-level3': '레벨3 UX 특강: 사용자 관점으로 서비스 다듬기 (6기)',
   'standardized-crew-coaching': '표준화 크루를 활용한 코칭 훈련',
   'one-on-one': {
     title: '1:1 코칭 지원',

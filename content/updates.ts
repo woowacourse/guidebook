@@ -9,6 +9,13 @@ export interface Update {
 // 최신 항목을 맨 위에 추가하세요.
 const updates: Update[] = [
   {
+    date: '2024년 6기',
+    title: '레벨3 UX 특강: 사용자 관점으로 서비스 다듬기',
+    description: 'UX Writing, JTBD 인터뷰 설계, UT 인터뷰 3회 시리즈로 개발자가 사용자 관점을 체험하고 서비스를 개선하는 활동.',
+    href: '/education-experiment/logs/ux-lecture-level3',
+    status: 'active',
+  },
+  {
     date: '2026년 8기',
     title: '웹백엔드 레벨1 선택미션',
     description: '기술·문제정의·사고 확장 3가지 유형의 선택미션으로 자기주도 학습 환경을 설계한 기록.',

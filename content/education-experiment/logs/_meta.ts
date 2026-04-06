@@ -22,6 +22,12 @@ export default {
   'ux-research-training': 'UX 리서치 3단계 훈련: 글쓰기에서 UT 실전까지',
   'demo-day-retrospective': '데모데이 회고의 점진적 설계: 자유 형식에서 메타인지까지',
   'ux-lecture-level3': '레벨3 UX 특강: 사용자 관점으로 서비스 다듬기 (6기)',
+  'fe-accessibility-report': 'FE 접근성 리포트 (6기·7기)',
+  'fe-ssr-discussion': 'FE SSR 학습: 토론과 OX퀴즈',
+  'fe-rendering-strategy-workshop': '렌더링 전략 워크숍: 팀×팀 피드백',
+  'fe-react-typescript-convention': 'FE React & TypeScript 컨벤션 워크숍 (5기·7기)',
+  'layout-component-workshop': '유연하게 재사용 가능한 레이아웃 컴포넌트 워크숍',
+  'level3-team-project-retrospective-series': '레벨3 팀 프로젝트 회고 3부작',
   'standardized-crew-coaching': '표준화 크루를 활용한 코칭 훈련',
   'one-on-one': {
     title: '1:1 코칭 지원',

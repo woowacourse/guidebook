@@ -275,3 +275,9 @@ hateWaiting(getPopularMovies, 3000)
 - **Q4 이후의 심화 부족**: Q4에서 Promise.race 패턴을 다루지만, 실제 프로젝트에서의 에러 핸들링(AbortController, retry 로직 등)으로 연결되는 장치가 없었습니다. 미션과의 연결 고리를 추가해야 합니다.
 - **설명 품질에 대한 피드백 부재**: 해설지를 게시한 후 다른 페어의 해설지를 읽는 시간은 있었지만, "이 설명에서 빠진 부분이 무엇인가"에 대한 구조화된 피드백은 없었습니다. 상호 리뷰 체크리스트를 도입하면 효과가 클 것입니다.
 - **기수별 퀴즈 미세 조정**: 6기와 7기에서 Q1에 `setTimeout(() => console.log("4"))`를 추가해 4개 출력으로 확장했지만, 근본적인 난이도 변화는 없었습니다. async/await가 보편화된 시점에서 Q3의 제약("async 금지")이 여전히 유효한지 재검토가 필요합니다.
+
+## 참고 자료
+
+- [5기 FE 영화 리뷰 — 비동기 퀴즈 해설지 만들기 (GitHub Discussion #32, 2023.03.18)](https://github.com/woowacourse/retrospective/discussions/32)
+- [6기 FE 영화 리뷰 — 비동기 퀴즈 해설지 만들기 (GitHub Discussion #46, 2024.03.26)](https://github.com/woowacourse/retrospective/discussions/46)
+- [7기 FE 영화 리뷰 — 비동기 퀴즈 해설지 만들기 (GitHub Discussion #58, 2025.03.25)](https://github.com/woowacourse/retrospective/discussions/58)

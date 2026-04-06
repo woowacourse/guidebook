@@ -11,6 +11,9 @@
 }
 
 .tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
   padding: 6px 14px;
   border-radius: 20px;
   border: 1px solid #e5e7eb;
@@ -19,6 +22,12 @@
   cursor: pointer;
   color: #6b7280;
   transition: all 0.15s;
+}
+
+.count {
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.6;
 }
 
 .tab:hover {

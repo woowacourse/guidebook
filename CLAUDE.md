@@ -50,9 +50,10 @@ content/
 
 ## 컴포넌트
 
-MDX에서 사용 가능한 커스텀 컴포넌트: Hero, Card, CardGrid, Timeline, TimelineItem, Toggle, Callout, AssetCard, Placeholder, RecentUpdates, LogList
+MDX에서 사용 가능한 커스텀 컴포넌트: Hero, Card, CardGrid, Timeline, TimelineItem, Toggle, Callout, AssetCard, Placeholder, RecentUpdates, LogList, Mermaid
 
 - **LogList** — 실험 로그 목록을 날짜 최신 순으로 렌더링. 카테고리 필터 탭 포함. `content/logs.ts`를 데이터 소스로 사용.
+- **Mermaid** — Mermaid 다이어그램 렌더링. `<Mermaid chart={\`flowchart TD ...\`} />` 형식으로 사용.
 
 ## hidden 처리
 
@@ -67,10 +68,14 @@ Karpathy autoresearch 메커니즘을 실험 로그 품질 개선에 적용한 �
 | autoresearch | 실험 로그 | 파일 |
 |---|---|---|
 | `prepare.py` (불변 평가 인프라) | 품질 루브릭 (5차원, 25점 만점) | `.claude/log-quality-rubric.md` |
+| `prepare.py` (승격 평가 인프라) | 승격 루브릭 (4차원, 20점 만점) | `.claude/promotion-rubric.md` |
 | `val_bpb` (메트릭 측정) | `/review-log` (점수 매기기) | `.claude/commands/review-log.md` |
 | train → measure → commit/reset 루프 | `/improve-log` (한 차원씩 개선) | `.claude/commands/improve-log.md` |
 | 밤새 실험 순회 | `/improve-all` (전체 로그 순회) | `.claude/commands/improve-all.md` |
-| `results.tsv` (실험 기록) | `improvement-log.tsv` (개선 기록) | 루트 디렉터리 |
+| 패턴 추출 | `/extract-insights` (교차 패턴 탐지) | `.claude/commands/extract-insights.md` |
+| 모델 반영 | `/sync-model` (교육 모델 동기화) | `.claude/commands/sync-model.md` |
+| 전체 파이프라인 | `/research-cycle` (마스터 루프) | `.claude/commands/research-cycle.md` |
+| `results.tsv` (실험 기록) | `research-cycle-log.tsv` (사이클 기록) | 루트 디렉터리 |
 
 ### 사용법
 
@@ -86,8 +91,33 @@ Karpathy autoresearch 메커니즘을 실험 로그 품질 개선에 적용한 �
 
 # 4. 전체 로그 순회 개선 (가장 약한 것부터)
 /improve-all
+
+# 5. 교차 패턴 탐지 → 인사이트 문서 생성
+/extract-insights
+
+# 6. 인사이트 → 교육 모델 동기화
+/sync-model
+
+# 7. 마스터 루프 (측정 → 개선 → 승격 → 동기화 → 기록)
+/research-cycle
+
+# 8. 마스터 루프 (평가만, 변경 없음)
+/research-cycle dry-run
 ```
+
+### 승격 파이프라인
+
+```
+실험 로그 → /improve-log → /extract-insights → /sync-model
+   ↑                                                    |
+   └── /research-cycle (6단계 마스터 루프) ──────────────┘
+```
+
+승격 판정 기준 (20점 만점): P1.반복검증 + P2.추출가능성 + P3.교차연결 + P4.실행영향력
+- 16~20: 승격 가능 → 도구/인사이트/교육모델에 추가
+- 12~15: 조건부 승격 → 보강 후 재평가
+- 8~11: 보류 → 추가 반복 실험 후 재평가
 
 ### 루브릭 수정 원칙
 
-`.claude/log-quality-rubric.md`는 autoresearch의 `prepare.py`처럼 **에이전트가 수정하지 않는다**. 평가 기준 변경은 사람이 직접 한다. 기준이 바뀌면 모든 이전 점수와 비교 불가능해지므로.
+`.claude/log-quality-rubric.md`와 `.claude/promotion-rubric.md`는 autoresearch의 `prepare.py`처럼 **에이전트가 수정하지 않는다**. 평가 기준 변경은 사람이 직접 한다. 기준이 바뀌면 모든 이전 점수와 비교 불가능해지므로.

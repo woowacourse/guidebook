@@ -9,6 +9,7 @@ import { Placeholder } from './components/Placeholder'
 import { Hero } from './components/Hero'
 import { RecentUpdates } from './components/RecentUpdates'
 import { LogList } from './components/LogList'
+import { Mermaid } from './components/Mermaid'
 
 const docsComponents = getDocsMDXComponents()
 
@@ -26,6 +27,7 @@ export function useMDXComponents(components?: Record<string, React.FC>) {
     Hero,
     RecentUpdates,
     LogList,
+    Mermaid,
     ...components
   }
 }

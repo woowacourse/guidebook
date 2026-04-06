@@ -1,0 +1,207 @@
+# 연구 사이클 워크플로우
+
+실험 로그에서 검증된 도구, 인사이트, 교육 모델까지 — 콘텐츠가 상위 레이어로 승격되는 전체 파이프라인을 시각화한 문서입니다.
+
+## 전체 구조
+
+<Mermaid chart={`
+graph TB
+    subgraph Layer1["📝 실험 로그 (26개)"]
+        L1[개별 실험 기록]
+        L2[기수별 반복 데이터]
+        L3[크루 반응 / 결과물]
+    end
+
+    subgraph Layer2["🔧 검증된 도구"]
+        T1[워크플로우 / 프롬프트]
+        T2[템플릿 / 가이드]
+    end
+
+    subgraph Layer3["💡 인사이트"]
+        I1[교차 패턴]
+        I2[설계 원칙]
+    end
+
+    subgraph Layer4["📐 교육 모델"]
+        M1[디자인 패턴 카탈로그]
+        M2[커리큘럼 원칙]
+        M3[교육 철학]
+    end
+
+    Layer1 -->|"승격 평가 (P1~P4)"| Layer2
+    Layer1 -->|"교차 분석"| Layer3
+    Layer2 -->|"패턴 일반화"| Layer4
+    Layer3 -->|"원칙 검증"| Layer4
+
+    style Layer1 fill:#f0f4ff,stroke:#4a6fa5
+    style Layer2 fill:#f0fff4,stroke:#4a9f6e
+    style Layer3 fill:#fff8f0,stroke:#c88a3a
+    style Layer4 fill:#fff0f0,stroke:#c85a5a
+`} />
+
+## 연구 사이클 6단계
+
+<Mermaid chart={`
+flowchart LR
+    P1["Phase 1\n📊 전체 측정"]
+    P2["Phase 2\n🔧 품질 개선"]
+    P3["Phase 3\n⭐ 승격 평가"]
+    P4["Phase 4\n📤 승격 실행"]
+    P5["Phase 5\n🔄 모델 동기화"]
+    P6["Phase 6\n📋 사이클 기록"]
+
+    P1 --> P2 --> P3 --> P4 --> P5 --> P6
+    P6 -.->|"다음 사이클"| P1
+
+    style P1 fill:#e8f0fe,stroke:#4285f4
+    style P2 fill:#e8f5e9,stroke:#34a853
+    style P3 fill:#fff3e0,stroke:#f9ab00
+    style P4 fill:#fce4ec,stroke:#ea4335
+    style P5 fill:#f3e5f5,stroke:#9c27b0
+    style P6 fill:#e0f2f1,stroke:#00897b
+`} />
+
+### Phase 1: 전체 측정
+
+모든 실험 로그를 두 가지 기준으로 동시 평가합니다.
+
+| 평가 | 기준 | 만점 | 목적 |
+|------|------|------|------|
+| **품질 점수** | D1~D5 (구조, 구체성, 전이, 교훈, 원본) | 25점 | 로그 자체의 서술 품질 |
+| **승격 점수** | P1~P4 (반복, 추출, 교차, 영향력) | 20점 | 상위 레이어 승격 적격성 |
+
+### Phase 2: 품질 개선
+
+B등급(16점) 미만인 로그를 점수 오름차순으로 개선합니다.
+
+<Mermaid chart={`
+flowchart TD
+    Start["B등급 미만 로그 선택"]
+    Measure["베이스라인 측정 (D1~D5)"]
+    Select["가장 약한 차원 선택"]
+    Improve["해당 차원만 개선"]
+    Remeasure["재측정"]
+    Decision{총점 향상?}
+    Commit["커밋 ✅"]
+    Revert["리버트 ↩️"]
+    Done{A등급 또는\n5회 반복?}
+    End["완료"]
+
+    Start --> Measure --> Select --> Improve --> Remeasure --> Decision
+    Decision -->|"예"| Commit --> Done
+    Decision -->|"아니오"| Revert --> Done
+    Done -->|"아니오"| Select
+    Done -->|"예"| End
+
+    style Start fill:#e8f5e9
+    style End fill:#e8f5e9
+    style Commit fill:#c8e6c9
+    style Revert fill:#ffcdd2
+`} />
+
+### Phase 3: 승격 평가
+
+<Mermaid chart={`
+flowchart TD
+    Candidates["승격 후보 선별\n(12점 이상)"]
+    Cross["교차 패턴 탐지"]
+    Classify["승격 대상 분류"]
+
+    ToolCheck{"P2 ≥ 4?"}
+    InsightCheck{"P3 ≥ 4?"}
+    ModelCheck{"P4 ≥ 4\n+ P1 ≥ 3?"}
+
+    Tool["🔧 도구 후보"]
+    Insight["💡 인사이트 후보"]
+    Model["📐 교육 모델 후보"]
+
+    Candidates --> Cross --> Classify
+    Classify --> ToolCheck
+    Classify --> InsightCheck
+    Classify --> ModelCheck
+
+    ToolCheck -->|"예"| Tool
+    InsightCheck -->|"예"| Insight
+    ModelCheck -->|"예"| Model
+
+    style Tool fill:#e8f5e9,stroke:#34a853
+    style Insight fill:#fff3e0,stroke:#f9ab00
+    style Model fill:#fce4ec,stroke:#ea4335
+`} />
+
+### Phase 4~6: 승격 → 동기화 → 기록
+
+| Phase | 행동 | 산출물 |
+|-------|------|--------|
+| **4. 승격 실행** | 도구/인사이트/교육모델에 콘텐츠 추가 | MDX 파일, `_meta.ts` 업데이트 |
+| **5. 모델 동기화** | 교육 모델에 실험 근거 반영 | 교육 모델 문서 보강 |
+| **6. 사이클 기록** | TSV에 결과 기록, 다음 사이클 제안 | `research-cycle-log.tsv` |
+
+## 승격 판정 기준
+
+<Mermaid chart={`
+graph LR
+    subgraph 승격판정
+        A["16~20점\n✅ 승격 가능"]
+        B["12~15점\n⚠️ 조건부 승격"]
+        C["8~11점\n⏸️ 보류"]
+        D["4~7점\n❌ 미승격"]
+    end
+
+    A -->|"도구/인사이트/모델\n중 적합한 곳에 추가"| Result1["콘텐츠 생성"]
+    B -->|"특정 차원 보강 후\n재평가"| Result2["인사이트에\n사례로만 추가"]
+    C -->|"추가 반복 실험 후\n재평가"| Result3["로그 유지"]
+    D -->|"향후 반복 시\n재평가"| Result3
+
+    style A fill:#c8e6c9,stroke:#34a853
+    style B fill:#fff9c4,stroke:#f9ab00
+    style C fill:#ffe0b2,stroke:#ff9800
+    style D fill:#ffcdd2,stroke:#ea4335
+`} />
+
+## 커맨드 체계
+
+전체 워크플로우를 슬래시 커맨드로 실행할 수 있습니다.
+
+| 커맨드 | 역할 | 실행 범위 |
+|--------|------|-----------|
+| `/review-log` | 개별 로그 품질 평가 | 단일 로그 or 전체 |
+| `/improve-log` | 개별 로그 반복 개선 | 단일 로그 (최대 5회) |
+| `/improve-all` | 전체 로그 순회 개선 | B등급 미만 전체 |
+| `/extract-insights` | 교차 패턴 탐지 | 카테고리 or 전체 |
+| `/sync-model` | 교육 모델 동기화 | 미반영 인사이트 |
+| `/research-cycle` | **마스터 루프** (위 전체 포함) | 6단계 전체 사이클 |
+
+<Mermaid chart={`
+flowchart TB
+    RC["/research-cycle\n마스터 루프"]
+    RL["/review-log\nPhase 1"]
+    IL["/improve-log\nPhase 2 단위"]
+    IA["/improve-all\nPhase 2 전체"]
+    EI["/extract-insights\nPhase 3"]
+    SM["/sync-model\nPhase 5"]
+
+    RC -->|"Phase 1"| RL
+    RC -->|"Phase 2"| IA
+    IA -->|"각 로그"| IL
+    RC -->|"Phase 3"| EI
+    RC -->|"Phase 5"| SM
+
+    style RC fill:#4285f4,stroke:#1a73e8,color:#fff
+    style RL fill:#e8f0fe,stroke:#4285f4
+    style IL fill:#e8f5e9,stroke:#34a853
+    style IA fill:#e8f5e9,stroke:#34a853
+    style EI fill:#fff3e0,stroke:#f9ab00
+    style SM fill:#f3e5f5,stroke:#9c27b0
+`} />
+
+## autoresearch 원칙과의 대응
+
+| Karpathy autoresearch | 실험 로그 연구 사이클 | 비고 |
+|---|---|---|
+| `prepare.py` (불변 평가 인프라) | 품질 루브릭 + 승격 루브릭 | 사람만 수정 가능 |
+| `val_bpb` (메트릭 측정) | `/review-log` (품질) + 승격 평가 (P1~P4) | 이중 평가 체계 |
+| train → measure → commit/reset | `/improve-log` 루프 | 한 차원씩, 커밋/리버트 |
+| 밤새 실험 순회 | `/research-cycle` 마스터 루프 | 6단계 전체 파이프라인 |
+| 모델 개선 → 배포 | 승격 → 교육 모델 동기화 | **기존에 없던 단계** |
+| `results.tsv` | `research-cycle-log.tsv` | 사이클 단위 기록 |

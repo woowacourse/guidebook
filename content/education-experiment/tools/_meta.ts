@@ -8,5 +8,6 @@ export default {
       typesetting: 'article'
     }
   },
-  'clean-language-mentoring': '클린 랭귀지 상호 멘토링'
+  'clean-language-mentoring': '클린 랭귀지 상호 멘토링',
+  'research-cycle-workflow': '연구 사이클 워크플로우'
 }

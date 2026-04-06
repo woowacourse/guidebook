@@ -9,6 +9,13 @@ export interface Update {
 // 최신 항목을 맨 위에 추가하세요.
 const updates: Update[] = [
   {
+    date: '2026년 8기',
+    title: '연구 사이클 워크플로우',
+    description: '실험 로그 → 검증된 도구 → 인사이트 → 교육 모델로의 승격 파이프라인을 Mermaid로 시각화.',
+    href: '/education-experiment/tools/research-cycle-workflow',
+    status: 'active',
+  },
+  {
     date: '2024년 6기',
     title: '레벨3 UX 특강: 사용자 관점으로 서비스 다듬기',
     description: 'UX Writing, JTBD 인터뷰 설계, UT 인터뷰 3회 시리즈로 개발자가 사용자 관점을 체험하고 서비스를 개선하는 활동.',

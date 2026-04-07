@@ -105,6 +105,16 @@ Karpathy autoresearch 메커니즘을 실험 로그 품질 개선에 적용한 �
 /research-cycle dry-run
 ```
 
+### 자동 동기화 (auto-sync)
+
+`/research-cycle`이 사람이 의도적으로 돌리는 풀 사이클이라면, `/auto-sync`는 신규 로그만 대상으로 증분 처리하는 자동 루프다.
+
+- **트리거:** Stop 훅 (`.claude/hooks/auto-sync-check.sh`)이 매 대화 종료 시 `git diff lastSyncCommit HEAD -- content/education-experiment/logs/*.mdx`로 미반영 로그 수를 계산한다. 임계값(기본 3) 이상이면 stderr로 알림(`exit 2`).
+- **실행:** 알림을 본 다음 사용자 턴에 Claude가 `/auto-sync`를 실행한다. 훅이 직접 파이프라인을 돌리지 않는다.
+- **상태:** `.claude/sync-state.json`의 `lastSyncCommit` 한 필드가 진실의 원천. 카운터는 git diff로 매번 실시간 계산.
+- **안전장치:** 승격 점수 16점 미만 자동 제외, 한 파일당 자동 마커 섹션 5개 상한, 모든 변경은 단일 커밋(`git revert` 한 번으로 원복), 마커 섹션 밖은 절대 수정 금지.
+- **튜닝:** `.claude/sync-state.json`의 `config.threshold`, `config.promotionMinScore`, `config.maxAutoSectionsPerFile`로 사람이 조정.
+
 ### 승격 파이프라인
 
 ```

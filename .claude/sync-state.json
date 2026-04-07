@@ -1,0 +1,11 @@
+{
+  "lastSyncCommit": null,
+  "lastSyncDate": null,
+  "config": {
+    "threshold": 3,
+    "promotionMinScore": 16,
+    "maxAutoSectionsPerFile": 5
+  },
+  "lastBatch": null,
+  "needsHumanReview": []
+}

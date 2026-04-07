@@ -18,6 +18,18 @@ export interface Repo {
 // 수동 편집 시에는 최신 항목을 맨 위에 두세요.
 const repositories: Repo[] = [
   {
+    slug: 'java-mvc',
+    name: 'java-mvc',
+    title: '자바 @MVC 미션 (스프링 MVC 프레임워크 직접 구현, Java)',
+    description: '스프링 @MVC 프레임워크를 직접 구현하며 379회 포크·400+ PR 누적. Controller 반환 타입 일관성·Handler 추상화 수준·JsonView 응답 형식·점진적 리팩토링 전략이 핵심 리뷰 주제.',
+    category: '미션',
+    tier: 'T2',
+    score: 21,
+    href: '/education-experiment/repositories/java-mvc',
+    url: 'https://github.com/woowacourse/java-mvc',
+    lastScanned: '2026-04-07',
+  },
+  {
     slug: 'java-jdbc',
     name: 'java-jdbc',
     title: '자바 JDBC 미션 (스프링 JDBC 라이브러리 직접 구현, Java)',

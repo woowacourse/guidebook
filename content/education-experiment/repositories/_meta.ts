@@ -40,4 +40,8 @@ export default {
     title: '자바 JDBC 미션',
     display: 'hidden',
   },
+  'java-mvc': {
+    title: '자바 @MVC 미션',
+    display: 'hidden',
+  },
 }

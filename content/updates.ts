@@ -10,6 +10,13 @@ export interface Update {
 const updates: Update[] = [
   {
     date: '2026년 연구',
+    title: '자바 @MVC 미션 (스프링 MVC 프레임워크 직접 구현, Java)',
+    description: '스프링 @MVC를 직접 구현하며 379회 포크·400+ PR 누적. Controller 반환 타입 일관성·Handler 추상화·JsonView 응답 형식·점진적 리팩토링이 핵심 리뷰 주제.',
+    href: '/education-experiment/repositories/java-mvc',
+    status: 'active',
+  },
+  {
+    date: '2026년 연구',
     title: '자바 JDBC 미션 (스프링 JDBC 라이브러리 직접 구현, Java)',
     description: '스프링 JDBC를 직접 구현하며 376회 포크·400+ PR 누적. Connection 캡슐화·Optional 일관성·트랜잭션 전파·예외 체이닝이 핵심 리뷰 주제.',
     href: '/education-experiment/repositories/java-jdbc',

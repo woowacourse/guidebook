@@ -10,6 +10,13 @@ export interface Update {
 const updates: Update[] = [
   {
     date: '2026년 연구',
+    title: '자바 블랙잭 미션 (다기수 누적, Java)',
+    description: 'OOP 설계 원칙과 입력 검증 책임 분리를 핵심 주제로, 549회 포크·1,000+ PR이 누적된 대표 미션 레포.',
+    href: '/education-experiment/repositories/java-blackjack',
+    status: 'active',
+  },
+  {
+    date: '2026년 연구',
     title: '우아한테크코스 저장소 연구 (신규)',
     description: 'woowacourse org 전체 공개 저장소를 autoresearch 파이프라인으로 분석하기 시작했습니다.',
     href: '/education-experiment/repositories',

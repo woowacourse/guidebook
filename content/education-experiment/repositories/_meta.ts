@@ -7,5 +7,8 @@ export default {
       timestamp: false,
       typesetting: 'article'
     }
-  }
+  },
+  'java-blackjack': {
+    title: '자바 블랙잭 미션',
+  },
 }

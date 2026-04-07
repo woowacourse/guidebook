@@ -18,6 +18,18 @@ export interface Repo {
 // 수동 편집 시에는 최신 항목을 맨 위에 두세요.
 const repositories: Repo[] = [
   {
+    slug: 'java-lotto',
+    name: 'java-lotto',
+    title: '자바 로또 미션 (구현→리팩토링 2단계, Java)',
+    description: '로또 구현 1단계·리팩토링 2단계 구조로 327회 포크·676 PR 누적. 단일 책임·일급 컬렉션·예외 처리 일관성이 핵심 리뷰 주제.',
+    category: '미션',
+    tier: 'T2',
+    score: 19,
+    href: '/education-experiment/repositories/java-lotto',
+    url: 'https://github.com/woowacourse/java-lotto',
+    lastScanned: '2026-04-07',
+  },
+  {
     slug: 'java-chess',
     name: 'java-chess',
     title: '자바 체스 미션 (OOP 심화·DB 연동, Java)',

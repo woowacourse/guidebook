@@ -16,4 +16,8 @@ export default {
     title: '자바 체스 미션',
     display: 'hidden',
   },
+  'java-lotto': {
+    title: '자바 로또 미션',
+    display: 'hidden',
+  },
 }

@@ -9,6 +9,13 @@ export interface Update {
 // 최신 항목을 맨 위에 추가하세요.
 const updates: Update[] = [
   {
+    date: '2026년 8기',
+    title: '교육 모델 승격: 3개 교차 패턴',
+    description: '연구 사이클로 로그 29개를 측정해 POE 발견 학습·자기 진단 프레임워크·점진적 스캐폴딩을 인사이트와 교육 모델로 승격.',
+    href: '/education-experiment/insights',
+    status: 'active',
+  },
+  {
     date: '아카이브',
     title: 'FE 레벨3·4 워크숍 6편 아카이브',
     description: '접근성 리포트, SSR 토론, 렌더링 전략, TS 컨벤션, 레이아웃 컴포넌트, 레벨3 회고 3부작 — GitHub Discussions 기반 6개 실험 로그를 일괄 자산화.',

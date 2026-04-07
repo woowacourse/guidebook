@@ -12,12 +12,32 @@ export default withNextra({
     return [
       {
         source: '/ai-experience',
-        destination: '/education-experiment',
+        destination: '/education',
         permanent: true
       },
       {
         source: '/ai-experience/:path*',
-        destination: '/education-experiment/:path*',
+        destination: '/education/:path*',
+        permanent: true
+      },
+      {
+        source: '/education-model',
+        destination: '/education',
+        permanent: true
+      },
+      {
+        source: '/education-model/:path*',
+        destination: '/education/:path*',
+        permanent: true
+      },
+      {
+        source: '/education-experiment',
+        destination: '/education',
+        permanent: true
+      },
+      {
+        source: '/education-experiment/:path*',
+        destination: '/education/:path*',
         permanent: true
       }
     ]

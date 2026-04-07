@@ -10,8 +10,5 @@ export default {
   },
   tools: '검증된 도구',
   logs: '실험 로그',
-  insights: {
-    title: '인사이트',
-    display: 'hidden'
-  }
+  insights: '핵심 인사이트'
 }

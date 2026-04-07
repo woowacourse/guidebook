@@ -58,7 +58,18 @@ $ARGUMENTS — 레포 이름. 필수.
 - 이름에 `infra`/`template`/`cli` → '인프라' 또는 '도구'
 - 그 외 → '기타'
 
-#### 4b. `content/education-experiment/repositories/{repo-name}.mdx` 생성
+#### 4b. `_meta.ts`에 hidden 항목 추가
+
+`content/education-experiment/repositories/_meta.ts`를 읽고, 해당 레포 슬러그가 없으면 다음과 같이 추가한다 (사이드바 오염 방지 — 사용자는 `<RepoList />`로 탐색):
+
+```ts
+'{repo-name}': {
+  title: '{한국어 제목}',
+  display: 'hidden',
+},
+```
+
+#### 4c. `content/education-experiment/repositories/{repo-name}.mdx` 생성
 
 아직 없으면 생성한다. 내용은 분석 노트의 요약(타이틀, description, 주요 발견, GitHub 링크). 이미 있으면 건드리지 않는다 (사람 편집 보존).
 
@@ -87,7 +98,7 @@ title: {title}
 `.research/repos/{repo-name}.md` 에 전체 분석 노트가 있습니다.
 ```
 
-#### 4c. `content/updates.ts` 업서트
+#### 4d. `content/updates.ts` 업서트
 
 배열 맨 위에 다음 항목을 추가 (동일 href가 이미 있으면 스킵):
 

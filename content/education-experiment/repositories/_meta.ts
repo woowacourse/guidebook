@@ -10,5 +10,6 @@ export default {
   },
   'java-blackjack': {
     title: '자바 블랙잭 미션',
+    display: 'hidden',
   },
 }

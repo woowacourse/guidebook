@@ -7,7 +7,7 @@ android-movie-theater	T0	-	-	-	-	-	-	?	-	.research/repos/android-movie-theater.m
 android-movie-ticket	T0	-	-	-	-	-	-	?	-	.research/repos/android-movie-ticket.md
 android-paint	T0	-	-	-	-	-	-	true	-	.research/repos/android-paint.md
 android-payments	T0	-	-	-	-	-	-	true	-	.research/repos/android-payments.md
-android-shopping-cart	T0	-	-	-	-	-	-	?	-	.research/repos/android-shopping-cart.md
+android-shopping-cart	T1	2	3	4	3	3	15	true	2026-04-07T0900Z	.research/repos/android-shopping-cart.md
 android-shopping-cart-compose	T0	-	-	-	-	-	-	?	-	.research/repos/android-shopping-cart-compose.md
 android-shopping-order	T0	-	-	-	-	-	-	?	-	.research/repos/android-shopping-order.md
 android-signup	T0	-	-	-	-	-	-	true	-	.research/repos/android-signup.md
@@ -15,7 +15,7 @@ atdd-sbuway-frontend	T0	-	-	-	-	-	-	?	-	.research/repos/atdd-sbuway-frontend.md
 atdd-subway-admin-frontend	T0	-	-	-	-	-	-	?	-	.research/repos/atdd-subway-admin-frontend.md
 atdd-subway-fare	T0	-	-	-	-	-	-	?	-	.research/repos/atdd-subway-fare.md
 atdd-subway-favorite	T0	-	-	-	-	-	-	?	-	.research/repos/atdd-subway-favorite.md
-atdd-subway-map	T0	-	-	-	-	-	-	?	-	.research/repos/atdd-subway-map.md
+atdd-subway-map	T1	3	4	3	3	3	16	true	2026-04-07T0900Z	.research/repos/atdd-subway-map.md
 atdd-subway-path	T0	-	-	-	-	-	-	?	-	.research/repos/atdd-subway-path.md
 back-end-roadmap	T0	-	-	-	-	-	-	?	-	.research/repos/back-end-roadmap.md
 be-optional-rebuild	T0	-	-	-	-	-	-	?	-	.research/repos/be-optional-rebuild.md
@@ -54,7 +54,7 @@ java-coupon	T0	-	-	-	-	-	-	true	-	.research/repos/java-coupon.md
 java-deploy	T0	-	-	-	-	-	-	true	-	.research/repos/java-deploy.md
 java-di	T0	-	-	-	-	-	-	true	-	.research/repos/java-di.md
 java-dice	T0	-	-	-	-	-	-	true	-	.research/repos/java-dice.md
-java-http	T0	-	-	-	-	-	-	true	-	.research/repos/java-http.md
+java-http	T1	4	5	5	4	4	22	true	2026-04-07T0900Z	.research/repos/java-http.md
 java-janggi	T0	-	-	-	-	-	-	true	-	.research/repos/java-janggi.md
 java-jdbc	T0	-	-	-	-	-	-	true	-	.research/repos/java-jdbc.md
 java-ladder	T1	3	4	3	4	2	16	true	2026-04-07T0832Z	.research/repos/java-ladder.md
@@ -76,7 +76,7 @@ javascript-calculator	T0	-	-	-	-	-	-	true	-	.research/repos/javascript-calculato
 javascript-dice	T0	-	-	-	-	-	-	true	-	.research/repos/javascript-dice.md
 javascript-lotto	T1	1	4	3	4	5	17	true	2026-04-07T0836Z	.research/repos/javascript-lotto.md
 javascript-lunch	T0	-	-	-	-	-	-	true	-	.research/repos/javascript-lunch.md
-javascript-movie-review	T0	-	-	-	-	-	-	?	-	.research/repos/javascript-movie-review.md
+javascript-movie-review	T1	2	4	5	3	4	18	true	2026-04-07T0900Z	.research/repos/javascript-movie-review.md
 javascript-own-ui-library	T0	-	-	-	-	-	-	?	-	.research/repos/javascript-own-ui-library.md
 javascript-racingcar	T1	2	4	3	4	3	16	true	2026-04-07T00:02Z	.research/repos/javascript-racingcar.md
 javascript-racingcar-precourse	T0	-	-	-	-	-	-	?	-	.research/repos/javascript-racingcar-precourse.md
@@ -84,14 +84,14 @@ javascript-subway	T0	-	-	-	-	-	-	true	-	.research/repos/javascript-subway.md
 javascript-subway-map-precourse	T0	-	-	-	-	-	-	?	-	.research/repos/javascript-subway-map-precourse.md
 javascript-subway-path-precourse	T0	-	-	-	-	-	-	?	-	.research/repos/javascript-subway-path-precourse.md
 javascript-teammatching-precourse	T0	-	-	-	-	-	-	?	-	.research/repos/javascript-teammatching-precourse.md
-javascript-vendingmachine	T0	-	-	-	-	-	-	true	-	.research/repos/javascript-vendingmachine.md
+javascript-vendingmachine	T1	3	2	2	3	3	13	true	2026-04-07T0900Z	.research/repos/javascript-vendingmachine.md
 javascript-vendingmachine-precourse	T0	-	-	-	-	-	-	?	-	.research/repos/javascript-vendingmachine-precourse.md
 javascript-youtube-classroom	T0	-	-	-	-	-	-	?	-	.research/repos/javascript-youtube-classroom.md
 js-todo-list-step1	T0	-	-	-	-	-	-	?	-	.research/repos/js-todo-list-step1.md
 js-todo-list-step2	T0	-	-	-	-	-	-	?	-	.research/repos/js-todo-list-step2.md
 jsdoc-boilerplate	T0	-	-	-	-	-	-	?	-	.research/repos/jsdoc-boilerplate.md
 jwp-blog	T0	-	-	-	-	-	-	?	-	.research/repos/jwp-blog.md
-jwp-chess	T0	-	-	-	-	-	-	?	-	.research/repos/jwp-chess.md
+jwp-chess	T1	1	4	2	3	3	13	true	2026-04-07T0900Z	.research/repos/jwp-chess.md
 jwp-di	T0	-	-	-	-	-	-	?	-	.research/repos/jwp-di.md
 jwp-hands-on	T0	-	-	-	-	-	-	?	-	.research/repos/jwp-hands-on.md
 jwp-jdbc	T0	-	-	-	-	-	-	?	-	.research/repos/jwp-jdbc.md
@@ -127,7 +127,7 @@ nextstep_test	T0	-	-	-	-	-	-	?	-	.research/repos/nextstep_test.md
 nextstep_test-1	T0	-	-	-	-	-	-	?	-	.research/repos/nextstep_test-1.md
 nextstep_test-2	T0	-	-	-	-	-	-	?	-	.research/repos/nextstep_test-2.md
 pair-programming-manifesto	T0	-	-	-	-	-	-	?	-	.research/repos/pair-programming-manifesto.md
-perf-basecamp	T0	-	-	-	-	-	-	?	-	.research/repos/perf-basecamp.md
+perf-basecamp	T1	4	4	4	4	4	20	true	2026-04-07T0900Z	.research/repos/perf-basecamp.md
 privacy	T0	-	-	-	-	-	-	?	-	.research/repos/privacy.md
 prolog	T0	-	-	-	-	-	-	?	-	.research/repos/prolog.md
 prolog-admin	T0	-	-	-	-	-	-	?	-	.research/repos/prolog-admin.md
@@ -136,10 +136,10 @@ react-basecamp	T0	-	-	-	-	-	-	true	-	.research/repos/react-basecamp.md
 react-calculator	T0	-	-	-	-	-	-	true	-	.research/repos/react-calculator.md
 react-lotto	T0	-	-	-	-	-	-	true	-	.research/repos/react-lotto.md
 react-lunch	T0	-	-	-	-	-	-	true	-	.research/repos/react-lunch.md
-react-modules	T0	-	-	-	-	-	-	true	-	.research/repos/react-modules.md
+react-modules	T1	2	3	3	3	3	14	true	2026-04-07T0900Z	.research/repos/react-modules.md
 react-movie-review	T0	-	-	-	-	-	-	?	-	.research/repos/react-movie-review.md
 react-payments	T2	3	5	4	4	4	20	true	2026-04-07T0845Z	.research/repos/react-payments.md
-react-shopping-cart	T0	-	-	-	-	-	-	?	-	.research/repos/react-shopping-cart.md
+react-shopping-cart	T1	2	4	3	3	3	15	true	2026-04-07T0900Z	.research/repos/react-shopping-cart.md
 react-shopping-cart-prod	T0	-	-	-	-	-	-	?	-	.research/repos/react-shopping-cart-prod.md
 react-shopping-products	T0	-	-	-	-	-	-	?	-	.research/repos/react-shopping-products.md
 react-shopping-products-example	T0	-	-	-	-	-	-	?	-	.research/repos/react-shopping-products-example.md
@@ -166,7 +166,7 @@ spring-helloworld	T0	-	-	-	-	-	-	true	-	.research/repos/spring-helloworld.md
 spring-learning-test	T0	-	-	-	-	-	-	?	-	.research/repos/spring-learning-test.md
 spring-lotto	T0	-	-	-	-	-	-	true	-	.research/repos/spring-lotto.md
 spring-roomescape-admin	T1	3	4	3	4	4	18	true	2026-04-07T0838Z	.research/repos/spring-roomescape-admin.md
-spring-roomescape-member	T0	-	-	-	-	-	-	?	-	.research/repos/spring-roomescape-member.md
+spring-roomescape-member	T1	1	4	4	3	3	15	true	2026-04-07T0900Z	.research/repos/spring-roomescape-member.md
 spring-roomescape-payment	T0	-	-	-	-	-	-	?	-	.research/repos/spring-roomescape-payment.md
 spring-roomescape-waiting	T0	-	-	-	-	-	-	?	-	.research/repos/spring-roomescape-waiting.md
 sql-tuning	T0	-	-	-	-	-	-	?	-	.research/repos/sql-tuning.md

@@ -10,7 +10,7 @@ android-payments	T1	3	2	3	3	3	14	true	2026-04-07T0800Z	.research/repos/android-p
 android-shopping-cart	T1	2	3	4	3	3	15	true	2026-04-07T0900Z	.research/repos/android-shopping-cart.md
 android-shopping-cart-compose	T0	-	-	-	-	-	-	?	-	.research/repos/android-shopping-cart-compose.md
 android-shopping-order	T0	-	-	-	-	-	-	?	-	.research/repos/android-shopping-order.md
-android-signup	T0	-	-	-	-	-	-	true	-	.research/repos/android-signup.md
+android-signup	T1	3	2	3	3	3	14	true	2026-04-07T0811Z	.research/repos/android-signup.md
 atdd-sbuway-frontend	T0	-	-	-	-	-	-	?	-	.research/repos/atdd-sbuway-frontend.md
 atdd-subway-admin-frontend	T0	-	-	-	-	-	-	?	-	.research/repos/atdd-subway-admin-frontend.md
 atdd-subway-fare	T0	-	-	-	-	-	-	?	-	.research/repos/atdd-subway-fare.md

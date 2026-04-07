@@ -27,7 +27,8 @@ Phase 6: 사이클 기록 (Record)
 ## Phase 1: 전체 측정
 
 1. `content/logs.ts`에서 전체 로그 목록을 로드한다.
-2. `.claude/log-quality-rubric.md`와 `.claude/promotion-rubric.md`를 로드한다.
+2. **레포 파이프라인 상태 함께 보고**: `.research/repo-scores.tsv`의 티어 분포(T0/T1/T2/T3 카운트)와 미측정 잔여 수를 함께 출력한다.
+3. `.claude/log-quality-rubric.md`와 `.claude/promotion-rubric.md`를 로드한다.
 3. 각 로그를 순회하며 **두 가지** 평가를 동시에 수행한다:
    - **품질 점수** (D1~D5, 25점 만점) — 로그 자체의 서술 품질
    - **승격 점수** (P1~P4, 20점 만점) — 상위 레이어로의 승격 적격성
@@ -58,6 +59,8 @@ Phase 6: 사이클 기록 (Record)
 4. 개선된 로그는 Phase 3에서 재평가한다.
 
 > Phase 2는 기존 autoresearch 루프와 동일. 생략하려면 `skip-improve`를 인자에 포함.
+
+**레포 파이프라인 동시 진행**: 로그 개선 후 필요 시 `/analyze-all`을 1~2배치 실행해 레포 파이프라인도 함께 진행시킨다 (로그와 레포는 독립적으로 누적된다).
 
 ## Phase 3: 승격 평가
 

@@ -118,6 +118,23 @@ Karpathy autoresearch 메커니즘을 실험 로그 품질 개선에 적용한 �
 - 12~15: 조건부 승격 → 보강 후 재평가
 - 8~11: 보류 → 추가 반복 실험 후 재평가
 
+### 레포 분석 파이프라인
+
+woowacourse org 197개 공개 저장소 분석에도 동일 autoresearch 구조가 적용됩니다.
+
+| 구성 | 파일 |
+|---|---|
+| 측정 루브릭 | `.claude/repo-analysis-rubric.md` |
+| 상태 TSV | `.research/repo-scores.tsv` |
+| 부트스트랩 | `/bootstrap-repos` |
+| 단건 측정 | `/scan-repo <repo>` |
+| 단건 사이클 | `/analyze-repo <repo>` |
+| 배치 순회 | `/analyze-all [N]` |
+| 문서 데이터 | `content/repositories.ts` (자동 갱신) |
+
+T2 이상 승급된 레포만 `content/education-experiment/repositories/` 에 노출됩니다.
+세션당 티어 1개 원칙을 따릅니다.
+
 ### 루브릭 수정 원칙
 
 `.claude/log-quality-rubric.md`와 `.claude/promotion-rubric.md`는 autoresearch의 `prepare.py`처럼 **에이전트가 수정하지 않는다**. 평가 기준 변경은 사람이 직접 한다. 기준이 바뀌면 모든 이전 점수와 비교 불가능해지므로.

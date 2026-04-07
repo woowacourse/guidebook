@@ -1,0 +1,29 @@
+---
+title: 자바 JDBC 미션
+---
+
+# 자바 JDBC 미션
+
+> [GitHub: woowacourse/java-jdbc](https://github.com/woowacourse/java-jdbc)
+>
+> 분석 티어: T2 · 점수: 21/25 · 마지막 스캔: 2026-04-07
+
+## 개요
+
+스프링 JDBC 라이브러리를 직접 구현하며 중복 제거와 트랜잭션 이해를 학습하는 심화 백엔드 미션이다.
+376회 포크·400+ PR이 누적된 핵심 Spring 연계 미션으로, JDBC 추상화 계층의 책임 경계를 탐구한다.
+리뷰는 캡슐화 수준·`Optional` 일관성·예외 체이닝·트랜잭션 전파 패턴에 집중된다.
+
+## 주요 발견
+
+- `Connection`과 `PreparedStatement` 캡슐화 수준: `JdbcTemplate` 내부에서 얼마나 숨겨야 하는가가 반복 리뷰 주제
+- `RowMapper` 선언 일관성: 변하지 않는 매퍼는 `static final`로 선언해야 하는가에 대한 논의가 다수 PR에 등장
+- `Optional` 반환 일관성: 결과 없음을 `null`이 아닌 `Optional.empty()`로 표현하는 원칙 적용 여부
+- 트랜잭션 전파 방식: `Connection`을 인자로 받는 오버로드 패턴 vs 스프링 `DataSourceUtils` 방식
+- 예외 체이닝 (cause 보존): `SQLException` 원인을 `RuntimeException`으로 감쌀 때 `cause` 보존 및 메시지 일치 원칙
+- `try-with-resources` 활용 일관성: 리소스 반환 로직에서 누락 여부가 코드 품질 지표로 자주 언급됨
+- 멀티 데이터소스 트랜잭션 이해도: 단일 H2 데이터베이스를 넘어 복수 데이터소스 시나리오 질문이 심화 리뷰로 등장
+
+## 원본 데이터
+
+`.research/repos/java-jdbc.md` 에 전체 분석 노트가 있습니다.

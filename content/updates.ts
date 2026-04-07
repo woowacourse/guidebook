@@ -10,6 +10,13 @@ export interface Update {
 const updates: Update[] = [
   {
     date: '2026년 연구',
+    title: '자바 JDBC 미션 (스프링 JDBC 라이브러리 직접 구현, Java)',
+    description: '스프링 JDBC를 직접 구현하며 376회 포크·400+ PR 누적. Connection 캡슐화·Optional 일관성·트랜잭션 전파·예외 체이닝이 핵심 리뷰 주제.',
+    href: '/education-experiment/repositories/java-jdbc',
+    status: 'active',
+  },
+  {
+    date: '2026년 연구',
     title: '자바스크립트 영화 리뷰 미션 (DOM 설계, JavaScript)',
     description: 'FE 레벨1 영화 리뷰 미션으로 155회 포크·200+ PR 누적. DOM 설계·상태 관리·컴포넌트 추상화·데이터 모델링이 핵심 리뷰 주제.',
     href: '/education-experiment/repositories/javascript-movie-review',

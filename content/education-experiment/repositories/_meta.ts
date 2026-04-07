@@ -36,4 +36,8 @@ export default {
     title: '자바스크립트 영화 리뷰 미션',
     display: 'hidden',
   },
+  'java-jdbc': {
+    title: '자바 JDBC 미션',
+    display: 'hidden',
+  },
 }

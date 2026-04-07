@@ -18,6 +18,18 @@ export interface Repo {
 // 수동 편집 시에는 최신 항목을 맨 위에 두세요.
 const repositories: Repo[] = [
   {
+    slug: 'java-jdbc',
+    name: 'java-jdbc',
+    title: '자바 JDBC 미션 (스프링 JDBC 라이브러리 직접 구현, Java)',
+    description: '스프링 JDBC 라이브러리를 직접 구현하며 376회 포크·400+ PR 누적. Connection 캡슐화·RowMapper 정적 선언·Optional 반환 일관성·트랜잭션 전파·예외 체이닝이 핵심 리뷰 주제.',
+    category: '미션',
+    tier: 'T2',
+    score: 21,
+    href: '/education-experiment/repositories/java-jdbc',
+    url: 'https://github.com/woowacourse/java-jdbc',
+    lastScanned: '2026-04-07',
+  },
+  {
     slug: 'javascript-movie-review',
     name: 'javascript-movie-review',
     title: '자바스크립트 영화 리뷰 미션 (DOM 설계, JavaScript)',

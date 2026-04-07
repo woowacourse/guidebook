@@ -18,6 +18,18 @@ export interface Repo {
 // 수동 편집 시에는 최신 항목을 맨 위에 두세요.
 const repositories: Repo[] = [
   {
+    slug: 'perf-basecamp',
+    name: 'perf-basecamp',
+    title: '프론트엔드 성능 베이스캠프 (Memegle 최적화, JavaScript)',
+    description: '실제 Memegle 프로젝트 성능을 개선하는 미션으로 205회 포크·191 PR 누적. 이미지 최적화·번들 최적화·캐싱 전략·코드 스플리팅이 핵심 리뷰 주제.',
+    category: '미션',
+    tier: 'T2',
+    score: 20,
+    href: '/education-experiment/repositories/perf-basecamp',
+    url: 'https://github.com/woowacourse/perf-basecamp',
+    lastScanned: '2026-04-07',
+  },
+  {
     slug: 'java-http',
     name: 'java-http',
     title: '자바 HTTP 미션 (톰캣 직접 구현, Java)',

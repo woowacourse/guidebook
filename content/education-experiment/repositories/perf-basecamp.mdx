@@ -1,0 +1,25 @@
+---
+title: 프론트엔드 성능 베이스캠프 (Memegle 최적화, JavaScript)
+---
+
+# 프론트엔드 성능 베이스캠프 (Memegle 최적화, JavaScript)
+
+> [GitHub: woowacourse/perf-basecamp](https://github.com/woowacourse/perf-basecamp)
+>
+> 분석 티어: T2 · 점수: 20/25 · 마지막 스캔: 2026-04-07
+
+## 개요
+
+성능 문제를 의도적으로 심어 놓은 'Memegle'(짤 검색 사이트)의 성능을 개선하는 미션입니다. 205회 포크, 191 PR 전량 병합(100% 병합률)이라는 독특한 지표를 가지며, 2021년부터 2025년까지 장기 운영되어온 FE 레벨3 심화 미션입니다. 성능 최적화의 다양한 기법을 실습 환경에서 체계적으로 다루는 것이 특징입니다.
+
+## 주요 발견
+
+- **이미지 최적화** — WebP·WebM 포맷 변환, 이미지 품질 압축, 히어로 이미지 우선 로딩 vs GIF 일괄 최적화 전략 논의가 가장 빈번한 리뷰 주제
+- **번들 최적화** — Tree Shaking(`usedExports`, `sideEffects` 설정), Terser Plugin을 활용한 JS minify, MiniCssExtractPlugin으로 CSS 분리 후 크기 비교
+- **캐싱 전략** — 로컬스토리지 캐싱 시 불필요한 리렌더링, 서버 데이터 변경 시 오래된 캐시 갱신 타이밍, `useEffect` 마운트 시점과 선제 호출의 의도 차이
+- **코드 스플리팅** — React Lazy loading 적용 범위(Home 컴포넌트 포함 여부), NavBar 분리 후 Route element에만 Suspense를 적용하는 구조 개선
+- **GPU 가속** — `translateX`/`translateY` 대비 `translate3d` 사용 이유, `will-change` CSS 속성으로 렌더링 레이어 사전 생성
+
+## 원본 데이터
+
+`.research/repos/perf-basecamp.md` 에 전체 분석 노트가 있습니다.

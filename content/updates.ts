@@ -10,6 +10,13 @@ export interface Update {
 const updates: Update[] = [
   {
     date: '2026년 연구',
+    title: '프론트엔드 성능 베이스캠프 (Memegle 최적화, JavaScript)',
+    description: 'Memegle 성능 개선 미션으로 205회 포크·191 PR 누적. 이미지 최적화·번들 최적화·캐싱·코드 스플리팅이 핵심 리뷰 주제.',
+    href: '/education-experiment/repositories/perf-basecamp',
+    status: 'active',
+  },
+  {
+    date: '2026년 연구',
     title: '자바 HTTP 미션 (톰캣 직접 구현, Java)',
     description: '톰캣을 직접 구현하며 385회 포크·1,100+ PR 누적. 세션 보안·쿠키 파싱·에러 핸들링 일관성이 핵심 리뷰 주제.',
     href: '/education-experiment/repositories/java-http',

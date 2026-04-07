@@ -28,4 +28,8 @@ export default {
     title: '자바 HTTP 미션',
     display: 'hidden',
   },
+  'perf-basecamp': {
+    title: '프론트엔드 성능 베이스캠프',
+    display: 'hidden',
+  },
 }

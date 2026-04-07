@@ -1,0 +1,25 @@
+---
+title: 자바 체스 미션 (OOP 심화·DB 연동, Java)
+---
+
+# 자바 체스 미션 (OOP 심화·DB 연동, Java)
+
+> [GitHub: woowacourse/java-chess](https://github.com/woowacourse/java-chess)
+>
+> 분석 티어: T2 · 점수: 19/25 · 마지막 스캔: 2026-04-07
+
+## 개요
+
+우아한테크코스 레벨2 Java 학습자를 대상으로 체스 게임을 구현하는 심화 미션 레포지토리. 461회 포크·857개 PR이 누적된 다기수 대규모 미션으로, OOP 설계 심화(Controller 책임 분리, 단방향 의존성)와 DB 연동(DAO·인터페이스 추상화)이 핵심 학습 주제다. 스피드런, 3단계, 4단계(DB 적용) 등 다양한 단계 구조로 운영된다.
+
+## 주요 발견
+
+- **Controller 책임 분리**: Controller가 도메인 비즈니스 로직을 직접 수행하는 안티패턴이 가장 빈번하게 지적됨. 레벨1의 순수 Java 원칙(Controller는 흐름만 제어) 강조.
+- **단방향 의존성 원칙**: domain ↔ controller 간 순환 의존성이 다수 PR에서 반복 지적. 의존성 방향 설계가 핵심 리뷰 주제.
+- **DAO·인터페이스 추상화**: DB 구현체 직접 참조 대신 인터페이스 의존 권고. JDBC 연동 단계에서 집중 등장.
+- **메서드 역할 명확성**: 두 가지 역할을 수행하는 메서드 분리 요구 (movePiece가 이동 + piece 반환을 동시에 담당하는 문제).
+- **예외 처리 패턴**: IllegalAccessException 등 부적절한 예외 사용 지적, try-with-resources 적용 권고, scanner 예외 처리 누락 반복.
+
+## 원본 데이터
+
+`.research/repos/java-chess.md` 에 전체 분석 노트가 있습니다.

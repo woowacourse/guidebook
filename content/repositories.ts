@@ -18,6 +18,18 @@ export interface Repo {
 // 수동 편집 시에는 최신 항목을 맨 위에 두세요.
 const repositories: Repo[] = [
   {
+    slug: 'java-chess',
+    name: 'java-chess',
+    title: '자바 체스 미션 (OOP 심화·DB 연동, Java)',
+    description: 'OOP 심화와 DB 연동을 주제로 461회 포크·857 PR이 누적된 대표 심화 미션. Controller 책임 분리·단방향 의존성·DAO 추상화가 핵심 리뷰 주제.',
+    category: '미션',
+    tier: 'T2',
+    score: 19,
+    href: '/education-experiment/repositories/java-chess',
+    url: 'https://github.com/woowacourse/java-chess',
+    lastScanned: '2026-04-07',
+  },
+  {
     slug: 'java-blackjack',
     name: 'java-blackjack',
     title: '자바 블랙잭 미션 (다기수 누적, Java)',

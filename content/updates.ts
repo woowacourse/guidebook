@@ -10,6 +10,13 @@ export interface Update {
 const updates: Update[] = [
   {
     date: '2026년 연구',
+    title: '자바 체스 미션 (OOP 심화·DB 연동, Java)',
+    description: 'OOP 심화와 DB 연동을 주제로 461회 포크·857 PR이 누적된 대표 심화 미션 레포.',
+    href: '/education-experiment/repositories/java-chess',
+    status: 'active',
+  },
+  {
+    date: '2026년 연구',
     title: '자바 블랙잭 미션 (다기수 누적, Java)',
     description: 'OOP 설계 원칙과 입력 검증 책임 분리를 핵심 주제로, 549회 포크·1,000+ PR이 누적된 대표 미션 레포.',
     href: '/education-experiment/repositories/java-blackjack',

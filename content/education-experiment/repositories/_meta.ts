@@ -12,4 +12,8 @@ export default {
     title: '자바 블랙잭 미션',
     display: 'hidden',
   },
+  'java-chess': {
+    title: '자바 체스 미션',
+    display: 'hidden',
+  },
 }

@@ -9,6 +9,13 @@ export interface Update {
 // 최신 항목을 맨 위에 추가하세요.
 const updates: Update[] = [
   {
+    date: '2026년 연구',
+    title: '우아한테크코스 저장소 연구 (신규)',
+    description: 'woowacourse org 전체 공개 저장소를 autoresearch 파이프라인으로 분석하기 시작했습니다.',
+    href: '/education-experiment/repositories',
+    status: 'active',
+  },
+  {
     date: '아카이브',
     title: 'FE 레벨3·4 워크숍 6편 아카이브',
     description: '접근성 리포트, SSR 토론, 렌더링 전략, TS 컨벤션, 레이아웃 컴포넌트, 레벨3 회고 3부작 — GitHub Discussions 기반 6개 실험 로그를 일괄 자산화.',

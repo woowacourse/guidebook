@@ -7,12 +7,5 @@ export default {
       timestamp: false,
       typesetting: 'article'
     }
-  },
-  tools: '검증된 도구',
-  repositories: '저장소 연구',
-  logs: '실험 로그',
-  insights: {
-    title: '인사이트',
-    display: 'hidden'
   }
 }

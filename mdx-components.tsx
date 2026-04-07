@@ -10,6 +10,7 @@ import { Hero } from './components/Hero'
 import { RecentUpdates } from './components/RecentUpdates'
 import { LogList } from './components/LogList'
 import { Mermaid } from './components/Mermaid'
+import { RepoList } from './components/RepoList'
 
 const docsComponents = getDocsMDXComponents()
 
@@ -28,6 +29,7 @@ export function useMDXComponents(components?: Record<string, React.FC>) {
     RecentUpdates,
     LogList,
     Mermaid,
+    RepoList,
     ...components
   }
 }

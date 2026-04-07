@@ -10,6 +10,13 @@ export interface Update {
 const updates: Update[] = [
   {
     date: '2026년 연구',
+    title: '리액트 페이먼츠 미션 (UI 컴포넌트 설계, TypeScript)',
+    description: '결제 카드 UI를 2단계로 구현하며 207회 포크·496 PR 누적. 커스텀 훅·접근성·TypeScript 타이핑이 핵심 리뷰 주제.',
+    href: '/education-experiment/repositories/react-payments',
+    status: 'active',
+  },
+  {
+    date: '2026년 연구',
     title: '자바 로또 미션 (구현→리팩토링 2단계, Java)',
     description: '로또 구현 1단계·리팩토링 2단계 구조로 327회 포크·676 PR 누적. 단일 책임·일급 컬렉션이 핵심 리뷰 주제.',
     href: '/education-experiment/repositories/java-lotto',

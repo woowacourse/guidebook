@@ -20,4 +20,8 @@ export default {
     title: '자바 로또 미션',
     display: 'hidden',
   },
+  'react-payments': {
+    title: '리액트 페이먼츠 미션',
+    display: 'hidden',
+  },
 }

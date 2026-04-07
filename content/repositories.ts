@@ -18,6 +18,18 @@ export interface Repo {
 // 수동 편집 시에는 최신 항목을 맨 위에 두세요.
 const repositories: Repo[] = [
   {
+    slug: 'react-payments',
+    name: 'react-payments',
+    title: '리액트 페이먼츠 미션 (UI 컴포넌트 설계, TypeScript)',
+    description: '결제 카드 UI를 2단계로 구현하며 207회 포크·496 PR 누적. 커스텀 훅 설계·CSS 단위·접근성·TypeScript 타이핑이 핵심 리뷰 주제.',
+    category: '미션',
+    tier: 'T2',
+    score: 20,
+    href: '/education-experiment/repositories/react-payments',
+    url: 'https://github.com/woowacourse/react-payments',
+    lastScanned: '2026-04-07',
+  },
+  {
     slug: 'java-lotto',
     name: 'java-lotto',
     title: '자바 로또 미션 (구현→리팩토링 2단계, Java)',

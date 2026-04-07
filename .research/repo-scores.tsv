@@ -43,7 +43,7 @@ infra-deploy-book	T0	-	-	-	-	-	-	?	-	.research/repos/infra-deploy-book.md
 java-aop	T0	-	-	-	-	-	-	true	-	.research/repos/java-aop.md
 java-attendance	T0	-	-	-	-	-	-	true	-	.research/repos/java-attendance.md
 java-baseball-precourse	T0	-	-	-	-	-	-	?	-	.research/repos/java-baseball-precourse.md
-java-blackjack	T0	-	-	-	-	-	-	true	-	.research/repos/java-blackjack.md
+java-blackjack	T1	2	5	3	4	5	19	true	2026-04-07T00:00Z	.research/repos/java-blackjack.md
 java-blackjack-precourse	T0	-	-	-	-	-	-	?	-	.research/repos/java-blackjack-precourse.md
 java-calculator	T0	-	-	-	-	-	-	true	-	.research/repos/java-calculator.md
 java-chess	T0	-	-	-	-	-	-	true	-	.research/repos/java-chess.md

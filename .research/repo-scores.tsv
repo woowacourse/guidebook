@@ -57,7 +57,7 @@ java-dice	T0	-	-	-	-	-	-	true	-	.research/repos/java-dice.md
 java-http	T0	-	-	-	-	-	-	true	-	.research/repos/java-http.md
 java-janggi	T0	-	-	-	-	-	-	true	-	.research/repos/java-janggi.md
 java-jdbc	T0	-	-	-	-	-	-	true	-	.research/repos/java-jdbc.md
-java-ladder	T0	-	-	-	-	-	-	true	-	.research/repos/java-ladder.md
+java-ladder	T1	3	4	3	4	2	16	true	2026-04-07T0832Z	.research/repos/java-ladder.md
 java-learning-test	T0	-	-	-	-	-	-	?	-	.research/repos/java-learning-test.md
 java-lotto	T1	3	5	3	4	3	18	true	2026-04-07T0830Z	.research/repos/java-lotto.md
 java-lotto-precourse	T0	-	-	-	-	-	-	?	-	.research/repos/java-lotto-precourse.md

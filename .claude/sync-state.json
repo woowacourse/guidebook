@@ -1,5 +1,5 @@
 {
-  "lastSyncCommit": "78617459cffa829f559134a52b882d1ea151ccaf",
+  "lastSyncCommit": "9c4480034c0d6c0166dd9ba2a0d36c1f2c695bb5",
   "lastSyncDate": "2026-04-07",
   "config": {
     "threshold": 3,
@@ -7,24 +7,12 @@
     "maxAutoSectionsPerFile": 5
   },
   "lastBatch": {
-    "logs": [
-      "29 logs measured"
-    ],
-    "promoted": [
-      "poe-discovery-learning",
-      "self-diagnostic-framework",
-      "progressive-scaffolding"
-    ],
+    "logs": [],
+    "promoted": [],
     "skipped": [],
-    "insights": [
-      "poe-discovery-learning",
-      "self-diagnostic-framework",
-      "progressive-scaffolding"
-    ],
-    "modelFilesChanged": [
-      "content/education-model/philosophy/core-principles.mdx",
-      "content/education-model/design-patterns/catalog.mdx"
-    ]
+    "insights": [],
+    "modelFilesChanged": [],
+    "note": "baseline-advance: 34 file diffs were 100% folder rename (education-experiment → education) with no substantive log content changes; baseline advanced to skip wasteful re-evaluation"
   },
   "needsHumanReview": []
 }

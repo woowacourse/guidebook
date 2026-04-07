@@ -24,4 +24,8 @@ export default {
     title: '리액트 페이먼츠 미션',
     display: 'hidden',
   },
+  'java-http': {
+    title: '자바 HTTP 미션',
+    display: 'hidden',
+  },
 }

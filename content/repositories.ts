@@ -18,6 +18,18 @@ export interface Repo {
 // 수동 편집 시에는 최신 항목을 맨 위에 두세요.
 const repositories: Repo[] = [
   {
+    slug: 'java-http',
+    name: 'java-http',
+    title: '자바 HTTP 미션 (톰캣 직접 구현, Java)',
+    description: '톰캣·HTTP 파서를 직접 구현하며 385회 포크·1,100+ PR 누적. 세션 보안·쿠키 파싱 정확성·에러 핸들링 일관성이 핵심 리뷰 주제.',
+    category: '미션',
+    tier: 'T2',
+    score: 22,
+    href: '/education-experiment/repositories/java-http',
+    url: 'https://github.com/woowacourse/java-http',
+    lastScanned: '2026-04-07',
+  },
+  {
     slug: 'react-payments',
     name: 'react-payments',
     title: '리액트 페이먼츠 미션 (UI 컴포넌트 설계, TypeScript)',

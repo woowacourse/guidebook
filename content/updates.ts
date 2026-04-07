@@ -10,6 +10,13 @@ export interface Update {
 const updates: Update[] = [
   {
     date: '2026년 연구',
+    title: '자바 HTTP 미션 (톰캣 직접 구현, Java)',
+    description: '톰캣을 직접 구현하며 385회 포크·1,100+ PR 누적. 세션 보안·쿠키 파싱·에러 핸들링 일관성이 핵심 리뷰 주제.',
+    href: '/education-experiment/repositories/java-http',
+    status: 'active',
+  },
+  {
+    date: '2026년 연구',
     title: '리액트 페이먼츠 미션 (UI 컴포넌트 설계, TypeScript)',
     description: '결제 카드 UI를 2단계로 구현하며 207회 포크·496 PR 누적. 커스텀 훅·접근성·TypeScript 타이핑이 핵심 리뷰 주제.',
     href: '/education-experiment/repositories/react-payments',

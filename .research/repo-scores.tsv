@@ -64,7 +64,7 @@ java-lotto-precourse	T0	-	-	-	-	-	-	?	-	.research/repos/java-lotto-precourse.md
 java-movie-2019	T0	-	-	-	-	-	-	true	-	.research/repos/java-movie-2019.md
 java-mvc	T0	-	-	-	-	-	-	true	-	.research/repos/java-mvc.md
 java-pairmatching-precourse	T0	-	-	-	-	-	-	?	-	.research/repos/java-pairmatching-precourse.md
-java-racingcar	T0	-	-	-	-	-	-	true	-	.research/repos/java-racingcar.md
+java-racingcar	T1	2	5	3	5	3	18	true	2026-04-07T00:00Z	.research/repos/java-racingcar.md
 java-racingcar-precourse	T0	-	-	-	-	-	-	?	-	.research/repos/java-racingcar-precourse.md
 java-study	T0	-	-	-	-	-	-	true	-	.research/repos/java-study.md
 java-subway-map-precourse	T0	-	-	-	-	-	-	?	-	.research/repos/java-subway-map-precourse.md
@@ -78,7 +78,7 @@ javascript-lotto	T0	-	-	-	-	-	-	true	-	.research/repos/javascript-lotto.md
 javascript-lunch	T0	-	-	-	-	-	-	true	-	.research/repos/javascript-lunch.md
 javascript-movie-review	T0	-	-	-	-	-	-	?	-	.research/repos/javascript-movie-review.md
 javascript-own-ui-library	T0	-	-	-	-	-	-	?	-	.research/repos/javascript-own-ui-library.md
-javascript-racingcar	T0	-	-	-	-	-	-	true	-	.research/repos/javascript-racingcar.md
+javascript-racingcar	T1	2	4	3	4	3	16	true	2026-04-07T00:00Z	.research/repos/javascript-racingcar.md
 javascript-racingcar-precourse	T0	-	-	-	-	-	-	?	-	.research/repos/javascript-racingcar-precourse.md
 javascript-subway	T0	-	-	-	-	-	-	true	-	.research/repos/javascript-subway.md
 javascript-subway-map-precourse	T0	-	-	-	-	-	-	?	-	.research/repos/javascript-subway-map-precourse.md
@@ -111,7 +111,7 @@ kotlin-lotto	T0	-	-	-	-	-	-	true	-	.research/repos/kotlin-lotto.md
 kotlin-minesweeper	T0	-	-	-	-	-	-	true	-	.research/repos/kotlin-minesweeper.md
 kotlin-movie	T0	-	-	-	-	-	-	true	-	.research/repos/kotlin-movie.md
 kotlin-omok	T0	-	-	-	-	-	-	true	-	.research/repos/kotlin-omok.md
-kotlin-racingcar	T0	-	-	-	-	-	-	true	-	.research/repos/kotlin-racingcar.md
+kotlin-racingcar	T1	1	3	3	4	3	14	true	2026-04-07T00:00Z	.research/repos/kotlin-racingcar.md
 kotlin-rss-reader	T0	-	-	-	-	-	-	?	-	.research/repos/kotlin-rss-reader.md
 layout-component	T0	-	-	-	-	-	-	?	-	.research/repos/layout-component.md
 learning-skills	T0	-	-	-	-	-	-	?	-	.research/repos/learning-skills.md

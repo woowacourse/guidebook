@@ -11,7 +11,10 @@ run_case() {
   shift 3
   local tmp
   tmp=$(mktemp -d)
-  ( cd "$tmp"
+  set +e
+  (
+    set -e
+    cd "$tmp"
     git init -q
     git config user.email t@t
     git config user.name t
@@ -24,20 +27,25 @@ run_case() {
     actual_exit=$?
     set -e
     if [ "$actual_exit" != "$expected_exit" ]; then
-      echo "FAIL [$name] exit: expected=$expected_exit actual=$actual_exit"
-      FAIL=$((FAIL+1))
-      return
+      echo "FAIL [$name] exit: expected=$expected_exit actual=$actual_exit" >&2
+      exit 1
     fi
     if [ -n "$expected_stderr_contains" ] && [[ "$stderr" != *"$expected_stderr_contains"* ]]; then
-      echo "FAIL [$name] stderr did not contain: $expected_stderr_contains"
-      echo "  got: $stderr"
-      FAIL=$((FAIL+1))
-      return
+      echo "FAIL [$name] stderr did not contain: $expected_stderr_contains" >&2
+      echo "  got: $stderr" >&2
+      exit 1
     fi
+    exit 0
+  )
+  rc=$?
+  set -e
+  rm -rf "$tmp"
+  if [ "$rc" -eq 0 ]; then
     echo "PASS [$name]"
     PASS=$((PASS+1))
-  )
-  rm -rf "$tmp"
+  else
+    FAIL=$((FAIL+1))
+  fi
 }
 
 case_no_state() { :; }

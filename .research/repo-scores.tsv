@@ -6,7 +6,7 @@ android-di	T1	3	4	3	3	4	17	true	2026-04-07T0839Z	.research/repos/android-di.md
 android-movie-theater	T0	-	-	-	-	-	-	?	-	.research/repos/android-movie-theater.md
 android-movie-ticket	T0	-	-	-	-	-	-	?	-	.research/repos/android-movie-ticket.md
 android-paint	T0	-	-	-	-	-	-	true	-	.research/repos/android-paint.md
-android-payments	T0	-	-	-	-	-	-	true	-	.research/repos/android-payments.md
+android-payments	T1	3	2	3	3	3	14	true	2026-04-07T0800Z	.research/repos/android-payments.md
 android-shopping-cart	T1	2	3	4	3	3	15	true	2026-04-07T0900Z	.research/repos/android-shopping-cart.md
 android-shopping-cart-compose	T0	-	-	-	-	-	-	?	-	.research/repos/android-shopping-cart-compose.md
 android-shopping-order	T0	-	-	-	-	-	-	?	-	.research/repos/android-shopping-order.md

@@ -1,2 +1,3 @@
 date	mode	logs_measured	logs_promoted	insights_created	model_files_changed	notes
 2026-04-07	manual	29	3	3	2	first cycle: POE discovery / self-diagnostic framework / progressive scaffolding
+2026-04-07	auto	0	0	0	0	baseline-advance after folder consolidation (no substantive log changes)

@@ -18,6 +18,18 @@ export interface Repo {
 // 수동 편집 시에는 최신 항목을 맨 위에 두세요.
 const repositories: Repo[] = [
   {
+    slug: 'javascript-movie-review',
+    name: 'javascript-movie-review',
+    title: '자바스크립트 영화 리뷰 미션 (DOM 설계, JavaScript)',
+    description: 'FE 레벨1 영화 리뷰 미션으로 155회 포크·200+ PR 누적. DOM 설계·상태 관리 일관성·컴포넌트 추상화 수준·데이터 모델링이 핵심 리뷰 주제.',
+    category: '미션',
+    tier: 'T2',
+    score: 18,
+    href: '/education-experiment/repositories/javascript-movie-review',
+    url: 'https://github.com/woowacourse/javascript-movie-review',
+    lastScanned: '2026-04-07',
+  },
+  {
     slug: 'perf-basecamp',
     name: 'perf-basecamp',
     title: '프론트엔드 성능 베이스캠프 (Memegle 최적화, JavaScript)',

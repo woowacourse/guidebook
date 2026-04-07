@@ -10,6 +10,13 @@ export interface Update {
 const updates: Update[] = [
   {
     date: '2026년 연구',
+    title: '자바스크립트 영화 리뷰 미션 (DOM 설계, JavaScript)',
+    description: 'FE 레벨1 영화 리뷰 미션으로 155회 포크·200+ PR 누적. DOM 설계·상태 관리·컴포넌트 추상화·데이터 모델링이 핵심 리뷰 주제.',
+    href: '/education-experiment/repositories/javascript-movie-review',
+    status: 'active',
+  },
+  {
+    date: '2026년 연구',
     title: '프론트엔드 성능 베이스캠프 (Memegle 최적화, JavaScript)',
     description: 'Memegle 성능 개선 미션으로 205회 포크·191 PR 누적. 이미지 최적화·번들 최적화·캐싱·코드 스플리팅이 핵심 리뷰 주제.',
     href: '/education-experiment/repositories/perf-basecamp',

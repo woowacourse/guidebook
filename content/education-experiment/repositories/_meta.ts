@@ -32,4 +32,8 @@ export default {
     title: '프론트엔드 성능 베이스캠프',
     display: 'hidden',
   },
+  'javascript-movie-review': {
+    title: '자바스크립트 영화 리뷰 미션',
+    display: 'hidden',
+  },
 }

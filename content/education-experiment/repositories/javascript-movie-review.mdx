@@ -1,0 +1,25 @@
+---
+title: 자바스크립트 영화 리뷰 미션 (DOM 설계, JavaScript)
+---
+
+# 자바스크립트 영화 리뷰 미션 (DOM 설계, JavaScript)
+
+> [GitHub: woowacourse/javascript-movie-review](https://github.com/woowacourse/javascript-movie-review)
+>
+> 분석 티어: T2 · 점수: 18/25 · 마지막 스캔: 2026-04-07
+
+## 개요
+
+FE 레벨1 영화 리뷰 미션으로, 155회 포크와 200+ PR이 누적된 활성 레포지토리입니다. 2026년까지 최신 활동이 확인되며 Cron 자동화가 도입되어 있습니다. 순수 JavaScript로 영화 목록 조회·리뷰 기능을 구현하며, DOM 설계 방식·컴포넌트 추상화 수준·API 응답 모델링을 둘러싼 심도 있는 리뷰 문화가 형성되어 있습니다.
+
+## 주요 발견
+
+- **DOM 설계 및 접근성** — 버튼에 식별자(`id`)가 없어 JavaScript 이벤트 바인딩이 어렵고, CSS 선택자 오타 및 `querySelector` nullable 처리 누락이 반복적으로 지적됨
+- **상태 관리 일관성** — `pushState`를 API 성공 전에 선행 호출하면 요청 실패 시 URL 상태가 어긋남; `Number()` 파싱 시 `NaN`이 API 요청으로 전달되는 사례
+- **컴포넌트 추상화 수준** — `App` 클래스 vs 함수 선택 논의, `renderIf`·`renderIfString` 분리의 타입 안정성 vs 가독성 트레이드오프, DOM API `$()` 추상화 실익 논쟁
+- **데이터 모델링** — API 응답 스키마(snake_case) 직접 사용 vs 애플리케이션 레이어 변환, `SearchMovie`·`PopularMovie` 인터페이스 중복 여부
+- **이벤트 처리 의도 명확성** — `e.currentTarget` 사용 이유 미명시, `debounce` + requestAnimationFrame 조합 선택 근거 설명 부재
+
+## 원본 데이터
+
+`.research/repos/javascript-movie-review.md` 에 전체 분석 노트가 있습니다.

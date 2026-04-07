@@ -2,7 +2,7 @@ repo_name	tier	d1	d2	d3	d4	d5	total	is_mission	last_scanned	notes_path
 Branding	T0	-	-	-	-	-	-	?	-	.research/repos/Branding.md
 NewsLetter	T0	-	-	-	-	-	-	?	-	.research/repos/NewsLetter.md
 a11y-airline	T0	-	-	-	-	-	-	?	-	.research/repos/a11y-airline.md
-android-di	T0	-	-	-	-	-	-	true	-	.research/repos/android-di.md
+android-di	T1	3	4	3	3	4	17	true	2026-04-07T0839Z	.research/repos/android-di.md
 android-movie-theater	T0	-	-	-	-	-	-	?	-	.research/repos/android-movie-theater.md
 android-movie-ticket	T0	-	-	-	-	-	-	?	-	.research/repos/android-movie-ticket.md
 android-paint	T0	-	-	-	-	-	-	true	-	.research/repos/android-paint.md

@@ -10,6 +10,13 @@ export interface Update {
 const updates: Update[] = [
   {
     date: '2026년 8기',
+    title: '수다 타임 아카이브 신설 — 브수타 8기 1회차',
+    description: '브라운 캡틴과 크루들의 오픈 Q&A를 기수별로 아카이빙하는 섹션을 신설. 첫 기록: 코드 리뷰 혼란, 성장 정체, 페어 편차, 무례한 동료 대처.',
+    href: '/education/conversations/bsuta-8th-2026-04-03',
+    status: 'active',
+  },
+  {
+    date: '2026년 8기',
     title: '교육 모델 승격: 3개 교차 패턴',
     description: '연구 사이클로 로그 29개를 측정해 POE 발견 학습·자기 진단 프레임워크·점진적 스캐폴딩을 인사이트와 교육 모델로 승격.',
     href: '/education/insights',

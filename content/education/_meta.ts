@@ -21,6 +21,7 @@ export default {
   curriculum: '🗺️ 커리큘럼',
   'design-patterns': '🧩 디자인 패턴',
   tools: '🛠️ 검증된 도구',
+  conversations: '💬 수다 타임 아카이브',
   insights: `⬆️ 핵심 인사이트 (${insightsCount})`,
   logs: `⬆️ 실험 로그 (${logs.length})`,
   assessment: {

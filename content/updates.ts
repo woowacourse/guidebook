@@ -10,6 +10,13 @@ export interface Update {
 const updates: Update[] = [
   {
     date: '아카이브',
+    title: '프로젝트 데모데이 아카이브',
+    description: '우테코 프로젝트 재생목록 194편을 차수·기수 흐름으로 정리하고, 같은 서비스를 1차·3차·5차 데모로 이어서 볼 수 있게 구성.',
+    href: '/education/conversations/demo-day-archive',
+    status: 'active',
+  },
+  {
+    date: '아카이브',
     title: '인터뷰 챌린지 아카이브',
     description: '우테코 인터뷰 챌린지 45개 영상을 주제별로 정리하고, “무엇이 궁금하면 어떤 영상을 보면 되는지” 바로 찾을 수 있게 구성.',
     href: '/education/conversations/interview-challenge-archive',

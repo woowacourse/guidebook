@@ -1,12 +1,137 @@
-export type LogCategory = '온보딩' | '레벨0' | '레벨1' | '레벨3' | '소프트스킬' | '코치훈련'
+export type LogPhase =
+  | '온보딩'
+  | '레벨0'
+  | '레벨1'
+  | '레벨2'
+  | '레벨3'
+  | '레벨4'
+  | '레벨5'
+
+export type LogTrack = '웹 백엔드' | '웹 프론트엔드' | '모바일'
+export type LogTheme = '소프트스킬' | '코치훈련'
+
+export type LogPrimaryCategory = '전체' | LogPhase | LogTrack | LogTheme
+export type LogTrackFilter = '전체' | LogTrack
 
 export interface Log {
   slug: string
   title: string
   description: string
   href: string
-  date: string        // YYYY-MM-DD — 페이지 최초 커밋 날짜
-  category: LogCategory
+  date: string
+  phases: LogPhase[]
+  tracks: LogTrack[]
+  themes?: LogTheme[]
+}
+
+export const LEVEL_PHASES: LogPhase[] = [
+  '온보딩',
+  '레벨0',
+  '레벨1',
+  '레벨2',
+  '레벨3',
+  '레벨4',
+  '레벨5',
+]
+
+export const TRACKS: LogTrack[] = ['웹 백엔드', '웹 프론트엔드', '모바일']
+
+export const PRIMARY_TABS: LogPrimaryCategory[] = [
+  '전체',
+  ...LEVEL_PHASES,
+  '소프트스킬',
+  ...TRACKS,
+  '코치훈련',
+]
+
+const ALL_TRACKS: LogTrack[] = [...TRACKS]
+const WEB_TRACKS: LogTrack[] = ['웹 백엔드', '웹 프론트엔드']
+
+const PHASE_ORDER: Record<LogPhase, number> = {
+  '온보딩': 0,
+  '레벨0': 1,
+  '레벨1': 2,
+  '레벨2': 3,
+  '레벨3': 4,
+  '레벨4': 5,
+  '레벨5': 6,
+}
+
+export function isLevelPhase(category: LogPrimaryCategory): category is LogPhase {
+  return LEVEL_PHASES.includes(category as LogPhase)
+}
+
+function getThemes(log: Log): LogTheme[] {
+  return log.themes ?? []
+}
+
+export function matchesPrimaryCategory(log: Log, category: LogPrimaryCategory): boolean {
+  if (category === '전체') return true
+  if (isLevelPhase(category)) return log.phases.includes(category)
+  if (TRACKS.includes(category as LogTrack)) return log.tracks.includes(category as LogTrack)
+  return getThemes(log).includes(category as LogTheme)
+}
+
+export function matchesTrackFilter(log: Log, track: LogTrackFilter): boolean {
+  return track === '전체' || log.tracks.includes(track)
+}
+
+export function filterLogs(
+  entries: Log[],
+  primary: LogPrimaryCategory,
+  track: LogTrackFilter = '전체'
+): Log[] {
+  return entries.filter((log) => {
+    if (!matchesPrimaryCategory(log, primary)) return false
+    if (!isLevelPhase(primary)) return true
+    return matchesTrackFilter(log, track)
+  })
+}
+
+function summarizePhases(phases: LogPhase[]): string | null {
+  if (phases.length === 0) return null
+
+  const ordered = [...new Set(phases)].sort((a, b) => PHASE_ORDER[a] - PHASE_ORDER[b])
+  const numericLevels = ordered
+    .map((phase) => {
+      const match = phase.match(/^레벨(\d)$/)
+      return match ? Number(match[1]) : null
+    })
+    .filter((level): level is number => level !== null)
+
+  if (
+    numericLevels.length === ordered.length &&
+    numericLevels.length > 1 &&
+    numericLevels.every((level, index) => index === 0 || level === numericLevels[index - 1] + 1)
+  ) {
+    return `레벨${numericLevels[0]}~${numericLevels[numericLevels.length - 1]}`
+  }
+
+  return ordered.join('·')
+}
+
+function summarizeTracks(tracks: LogTrack[]): string | null {
+  if (tracks.length === 0) return null
+  if (TRACKS.every((track) => tracks.includes(track))) return '전 트랙'
+
+  const ordered = TRACKS.filter((track) => tracks.includes(track))
+  return ordered.join('·')
+}
+
+export function getLogBadges(log: Log): string[] {
+  const badges: string[] = []
+
+  const phaseBadge = summarizePhases(log.phases)
+  if (phaseBadge) badges.push(phaseBadge)
+
+  for (const theme of getThemes(log)) {
+    badges.push(theme)
+  }
+
+  const trackBadge = summarizeTracks(log.tracks)
+  if (trackBadge) badges.push(trackBadge)
+
+  return badges
 }
 
 // 최신 항목을 맨 위에 추가하세요.
@@ -17,7 +142,8 @@ const logs: Log[] = [
     description: '성능 리포트 구조를 접근성으로 확장. 6기 리포트를 7기 디스커션에 누적 자산으로 명시한 반복 실험.',
     href: '/education/logs/fe-accessibility-report',
     date: '2026-04-07',
-    category: '레벨3',
+    phases: ['레벨4'],
+    tracks: ['웹 프론트엔드'],
   },
   {
     slug: 'fe-ssr-discussion',
@@ -25,7 +151,8 @@ const logs: Log[] = [
     description: 'JS 평행세계 토론과 OX퀴즈 해설지를 결합해, SSR이라는 추상 개념을 자기 코드 검증으로 체화하는 2단 구조.',
     href: '/education/logs/fe-ssr-discussion',
     date: '2026-04-07',
-    category: '레벨3',
+    phases: ['레벨4'],
+    tracks: ['웹 프론트엔드'],
   },
   {
     slug: 'fe-rendering-strategy-workshop',
@@ -33,7 +160,8 @@ const logs: Log[] = [
     description: '"CSR이냐 SSR이냐"를 페이지 단위 논증으로 강제하고, 팀 간 피드백·개정 단계로 결정의 단단함을 키운 워크숍.',
     href: '/education/logs/fe-rendering-strategy-workshop',
     date: '2026-04-07',
-    category: '레벨3',
+    phases: ['레벨4'],
+    tracks: ['웹 프론트엔드'],
   },
   {
     slug: 'fe-react-typescript-convention',
@@ -41,7 +169,8 @@ const logs: Log[] = [
     description: '같은 템플릿을 2년 간격으로 운영하며, "사용한다"에서 "왜 사용하는가"로 학습 초점이 이동한 비교 실험.',
     href: '/education/logs/fe-react-typescript-convention',
     date: '2026-04-07',
-    category: '레벨1',
+    phases: ['레벨2'],
+    tracks: ['웹 프론트엔드'],
   },
   {
     slug: 'layout-component-workshop',
@@ -49,7 +178,8 @@ const logs: Log[] = [
     description: '"재사용성"이라는 추상어 대신 "긴 라벨", "세로형" 같은 구체적 시나리오로 사용자 입장을 의인화한 컴포넌트 설계 훈련.',
     href: '/education/logs/layout-component-workshop',
     date: '2026-04-07',
-    category: '레벨3',
+    phases: ['레벨4'],
+    tracks: ['웹 프론트엔드'],
   },
   {
     slug: 'level3-team-project-retrospective-series',
@@ -57,7 +187,9 @@ const logs: Log[] = [
     description: '같은 팀 프로젝트를 시점별로 다른 형식(점수화/3층위/외부 시야)의 회고로 설계해 회고 피로감을 줄인 기록.',
     href: '/education/logs/level3-team-project-retrospective-series',
     date: '2026-04-07',
-    category: '소프트스킬',
+    phases: ['레벨3'],
+    tracks: [],
+    themes: ['소프트스킬'],
   },
   {
     slug: 'ux-research-training',
@@ -65,7 +197,8 @@ const logs: Log[] = [
     description: '페어 글쓰기 → JTBD 인터뷰 설계 → UT 실전이라는 3단계 점진적 스캐폴딩으로 개발자의 UX 리서치 역량을 훈련한 기록.',
     href: '/education/logs/ux-research-training',
     date: '2026-03-27',
-    category: '레벨3',
+    phases: ['레벨3'],
+    tracks: [...WEB_TRACKS],
   },
   {
     slug: 'demo-day-retrospective',
@@ -73,7 +206,9 @@ const logs: Log[] = [
     description: '5회 연속 데모데이 회고를 매회 다른 형식으로 설계하여 성찰 깊이를 점진적으로 끌어올린 실험.',
     href: '/education/logs/demo-day-retrospective',
     date: '2026-03-27',
-    category: '소프트스킬',
+    phases: ['레벨3', '레벨4'],
+    tracks: [],
+    themes: ['소프트스킬'],
   },
   {
     slug: 'fe-level2-16steps',
@@ -81,7 +216,8 @@ const logs: Log[] = [
     description: '적게 읽기, 거꾸로 만들기, 관점 전환 — 세 가지 제약으로 설계한 FE 레벨2 전체 16단계 학습 체계.',
     href: '/education/logs/fe-level2-16steps',
     date: '2026-03-27',
-    category: '레벨1',
+    phases: ['레벨2'],
+    tracks: ['웹 프론트엔드'],
   },
   {
     slug: 'async-quiz-explanation',
@@ -89,7 +225,8 @@ const logs: Log[] = [
     description: '같은 4개의 비동기 퀴즈를 5기/6기/7기에 반복하며, 해설지 작성을 통해 설명 능력의 변화를 관찰한 실험.',
     href: '/education/logs/async-quiz-explanation',
     date: '2026-03-27',
-    category: '레벨1',
+    phases: ['레벨1'],
+    tracks: ['웹 프론트엔드'],
   },
   {
     slug: 'feedback-refactoring',
@@ -97,7 +234,9 @@ const logs: Log[] = [
     description: '5가지 진단 기준으로 기존 피드백을 진단하고, 수동 리팩터링과 GPTs 활용을 비교하며 피드백 품질을 높이는 훈련.',
     href: '/education/logs/feedback-refactoring',
     date: '2026-03-27',
-    category: '소프트스킬',
+    phases: ['레벨2'],
+    tracks: [],
+    themes: ['소프트스킬'],
   },
   {
     slug: 'growth-graph',
@@ -105,7 +244,9 @@ const logs: Log[] = [
     description: 'A3 모눈종이에 기술/소프트스킬 성장 곡선을 그리고 감정 키워드를 붙여 레벨을 회고하는 시각적 회고 활동.',
     href: '/education/logs/growth-graph',
     date: '2026-03-27',
-    category: '소프트스킬',
+    phases: ['레벨1'],
+    tracks: [...ALL_TRACKS],
+    themes: ['소프트스킬'],
   },
   {
     slug: 'team-building-ground-rules',
@@ -113,7 +254,9 @@ const logs: Log[] = [
     description: '개인 사용설명서로 자기 이해를 먼저 하고, 이를 기반으로 팀 그라운드 룰을 협상하는 2단계 팀 빌딩 설계.',
     href: '/education/logs/team-building-ground-rules',
     date: '2026-03-27',
-    category: '소프트스킬',
+    phases: ['레벨3'],
+    tracks: [...ALL_TRACKS],
+    themes: ['소프트스킬'],
   },
   {
     slug: 'finding-tech-strengths',
@@ -121,7 +264,9 @@ const logs: Log[] = [
     description: '"나는 __에 강점이 있는 개발자입니다" 정체성 선언으로 48명의 크루가 각자의 기술 영역을 깊이 탐구한 실험.',
     href: '/education/logs/finding-tech-strengths',
     date: '2026-03-27',
-    category: '소프트스킬',
+    phases: ['레벨4'],
+    tracks: ['웹 프론트엔드'],
+    themes: ['소프트스킬'],
   },
   {
     slug: 'reinventing-the-wheel',
@@ -129,7 +274,8 @@ const logs: Log[] = [
     description: '안드로이드 레벨4 "바퀴의 재발명" 강의 전 사전 에세이 과제. 5기·6기·7기 크루의 사고 깊이 변화를 추적한 기록.',
     href: '/education/logs/reinventing-the-wheel',
     date: '2026-03-27',
-    category: '레벨1',
+    phases: ['레벨4'],
+    tracks: ['모바일'],
   },
   {
     slug: 'fe-performance-report',
@@ -137,7 +283,8 @@ const logs: Log[] = [
     description: '자기 팀 서비스를 대상으로 성능을 측정하고 개선하는 3단계 프레임워크. 5기·6기·7기에 걸친 진화 과정.',
     href: '/education/logs/fe-performance-report',
     date: '2026-03-27',
-    category: '레벨3',
+    phases: ['레벨4'],
+    tracks: ['웹 프론트엔드'],
   },
   {
     slug: 'ux-lecture-level3',
@@ -145,7 +292,8 @@ const logs: Log[] = [
     description: 'UX Writing, JTBD 인터뷰 설계, UT 인터뷰 3회 시리즈로 개발자가 사용자 관점을 체험하고 서비스를 개선하는 활동.',
     href: '/education/logs/ux-lecture-level3',
     date: '2026-03-27',
-    category: '레벨3',
+    phases: ['레벨3'],
+    tracks: [...WEB_TRACKS],
   },
   {
     slug: 'web-backend-level1-elective-missions',
@@ -153,7 +301,8 @@ const logs: Log[] = [
     description: '기술·문제정의·사고 확장 3가지 유형의 선택미션으로 자기주도 학습 환경을 설계한 기록.',
     href: '/education/logs/web-backend-level1-elective-missions',
     date: '2026-03-24',
-    category: '레벨1',
+    phases: ['레벨1'],
+    tracks: ['웹 백엔드'],
   },
   {
     slug: 'expedition-tech-salon',
@@ -161,7 +310,8 @@ const logs: Log[] = [
     description: '원정대가 쌓은 지식을 다른 크루에게 실제로 전이시키는 테크살롱 공유회 설계와 운영 기록.',
     href: '/education/logs/expedition-tech-salon',
     date: '2026-03-24',
-    category: '레벨1',
+    phases: ['레벨1'],
+    tracks: [...WEB_TRACKS],
   },
   {
     slug: 'pair-programming-manifesto',
@@ -169,7 +319,9 @@ const logs: Log[] = [
     description: '첫 미션 후 KPT 회고로 크루가 직접 만든 10가지 협업 원칙. 외부 가이드라인이 아닌 자신들의 언어로 쓴 선언문.',
     href: '/education/logs/pair-programming-manifesto',
     date: '2026-03-17',
-    category: '소프트스킬',
+    phases: ['레벨1'],
+    tracks: [...ALL_TRACKS],
+    themes: ['소프트스킬'],
   },
   {
     slug: 'soft-skill-one-step-study',
@@ -177,7 +329,9 @@ const logs: Log[] = [
     description: '크루 스스로 소프트 스킬 목표를 설정하고 매주 팀 스터디로 실험하는 성장 사이클.',
     href: '/education/logs/soft-skill-one-step-study',
     date: '2026-03-17',
-    category: '소프트스킬',
+    phases: ['레벨1'],
+    tracks: [...ALL_TRACKS],
+    themes: ['소프트스킬'],
   },
   {
     slug: 'codelab-lotto-domain-ui',
@@ -185,7 +339,8 @@ const logs: Log[] = [
     description: 'POE 사이클로 "도메인과 UI를 왜 분리해야 하는가"를 크루 스스로 발견하게 하는 수업 설계.',
     href: '/education/logs/codelab-lotto-domain-ui',
     date: '2026-03-17',
-    category: '레벨1',
+    phases: ['레벨1'],
+    tracks: ['웹 프론트엔드'],
   },
   {
     slug: 'drama-retrospective',
@@ -193,7 +348,9 @@ const logs: Log[] = [
     description: '연극 직후 강점과 취약함을 포스트잇으로 공유하며 팀 신뢰의 토대를 만드는 90분 회고 활동.',
     href: '/education/logs/drama-retrospective',
     date: '2026-03-17',
-    category: '온보딩',
+    phases: ['온보딩', '레벨1'],
+    tracks: [...ALL_TRACKS],
+    themes: ['소프트스킬'],
   },
   {
     slug: 'drama-onboarding',
@@ -201,7 +358,8 @@ const logs: Log[] = [
     description: '연극으로 시작하는 온보딩. 심리적 안전감 형성과 팀 정체성을 위한 첫 번째 장치.',
     href: '/education/logs/drama-onboarding',
     date: '2026-03-17',
-    category: '온보딩',
+    phases: ['온보딩'],
+    tracks: [...ALL_TRACKS],
   },
   {
     slug: 'android-level0',
@@ -209,7 +367,8 @@ const logs: Log[] = [
     description: '입학 전 4주, 계획-실행-회고 구조로 자기주도 학습 리듬을 만드는 실험. 19명 전원 완주.',
     href: '/education/logs/android-level0',
     date: '2026-03-10',
-    category: '레벨0',
+    phases: ['레벨0'],
+    tracks: ['모바일'],
   },
   {
     slug: 'senior-code-review',
@@ -217,7 +376,8 @@ const logs: Log[] = [
     description: '선배 PR의 AS-IS를 먼저 판단하고 TO-BE와 비교하여 "못 보던 것"을 발견하는 활동.',
     href: '/education/logs/senior-code-review',
     date: '2026-03-10',
-    category: '레벨1',
+    phases: ['레벨1'],
+    tracks: [],
   },
   {
     slug: 'expedition',
@@ -225,7 +385,8 @@ const logs: Log[] = [
     description: '동료와 함께 탐험하며 각자의 전문 영역을 만드는 활동.',
     href: '/education/logs/expedition',
     date: '2026-03-10',
-    category: '레벨1',
+    phases: ['레벨1'],
+    tracks: [],
   },
   {
     slug: 'standardized-crew-coaching',
@@ -233,7 +394,9 @@ const logs: Log[] = [
     description: 'GPTs로 구현한 가상 크루와 코칭을 연습하는 훈련 환경.',
     href: '/education/logs/standardized-crew-coaching',
     date: '2026-03-10',
-    category: '코치훈련',
+    phases: [],
+    tracks: [],
+    themes: ['코치훈련'],
   },
   {
     slug: 'mission-design',
@@ -241,7 +404,8 @@ const logs: Log[] = [
     description: 'AI와 협업하는 방식을 익히기 위한 1주 4앱 미션 설계기.',
     href: '/education/logs/mission-design',
     date: '2026-03-03',
-    category: '레벨1',
+    phases: ['레벨1'],
+    tracks: [...ALL_TRACKS],
   },
 ]
 

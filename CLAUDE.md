@@ -131,3 +131,31 @@ Karpathy autoresearch 메커니즘을 실험 로그 품질 개선에 적용한 �
 ### 루브릭 수정 원칙
 
 `.claude/log-quality-rubric.md`와 `.claude/promotion-rubric.md`는 autoresearch의 `prepare.py`처럼 **에이전트가 수정하지 않는다**. 평가 기준 변경은 사람이 직접 한다. 기준이 바뀌면 모든 이전 점수와 비교 불가능해지므로.
+
+---
+
+## 하네스: 연구 사이클
+
+**목표:** 실험 로그에서 인사이트·도구·교육 모델로의 승격 파이프라인을 팀 전체가 동일하게 실행한다.
+
+**트리거:** 연구 사이클, 로그 승격, 전체 로그 처리, 인사이트 추출, 교육 모델 동기화 관련 요청 시 `research-cycle` 스킬을 사용하라.
+
+```
+실험 로그
+    ↓ log-quality-agent (품질 평가 + 개선)
+    ↓ insight-agent (교차 패턴 탐지)
+    ├→ tools/          (검증된 도구, P2 ≥ 4)
+    ├→ insights/       (교차 패턴, P3 ≥ 4)
+    ├→ design-patterns/ (디자인 패턴, P4 ≥ 4 + P1 ≥ 3)
+    ├→ curriculum/     (커리큘럼 원칙, P4 ≥ 4 + P1 ≥ 3)
+    └→ philosophy/     (교육 철학, P4 ≥ 4 + P1 ≥ 4, 엄격)
+```
+
+**에이전트:** `.claude/agents/` — log-quality-agent, insight-agent, promotion-agent, research-cycle-orchestrator
+
+**스킬:** `.claude/skills/` — research-cycle (오케스트레이터), log-quality, insight-extraction, promotion
+
+**변경 이력:**
+| 날짜 | 변경 내용 | 대상 | 사유 |
+|------|----------|------|------|
+| 2026-04-14 | 초기 구성 | 전체 | 팀 워크플로우 통일을 위한 하네스 구축 |

@@ -9,6 +9,20 @@ export interface Update {
 // 최신 항목을 맨 위에 추가하세요.
 const updates: Update[] = [
   {
+    date: '아카이브',
+    title: '인터뷰 챌린지 아카이브',
+    description: '우테코 인터뷰 챌린지 45개 영상을 주제별로 정리하고, “무엇이 궁금하면 어떤 영상을 보면 되는지” 바로 찾을 수 있게 구성.',
+    href: '/education/conversations/interview-challenge-archive',
+    status: 'active',
+  },
+  {
+    date: '2026년 8기',
+    title: '실험 로그 탐색 구조 개편',
+    description: '실험 로그를 레벨·트랙·소프트스킬·코치훈련 기준의 다중 분류로 재구성하고, 사이드바에 레벨별 뎁스를 추가.',
+    href: '/education/logs',
+    status: 'active',
+  },
+  {
     date: '2026년 8기',
     title: '수다 타임 아카이브 신설 — 브수타 8기 1회차',
     description: '브라운 캡틴과 크루들의 오픈 Q&A를 기수별로 아카이빙하는 섹션을 신설. 첫 기록: 코드 리뷰 혼란, 성장 정체, 페어 편차, 무례한 동료 대처.',

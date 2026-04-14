@@ -10,6 +10,55 @@ export interface Update {
 const updates: Update[] = [
   {
     date: '아카이브',
+    title: '테코톡 아카이브',
+    description: '테코톡 재생목록 669편을 서버·프론트엔드·모바일·DB·네트워크 같은 카테고리와 키워드로 다시 묶고, 검색형 탐색 UI로 궁금한 주제부터 바로 찾을 수 있게 구성.',
+    href: '/education/conversations/techtalk-archive',
+    status: 'active',
+  },
+  {
+    date: '7기·8기',
+    title: '코칭 스쿼드 전문성 강화 루프',
+    description: '회상, 표준화 크루, 클린 랭귀지, GPT 반복 훈련, 원온원 준비 템플릿으로 이어진 11회차 코치 훈련 흐름을 한 편의 로그로 정리.',
+    href: '/education/logs/coaching-squad-training-loop',
+    status: 'active',
+  },
+  {
+    date: '아카이브',
+    title: '브이로그 아카이브',
+    description: '우테코 브이로그 재생목록 28편을 하루, 캠퍼스, 프로젝트, 행사, 운영 키워드로 다시 묶고 검색형 탐색 UI까지 붙여 궁금한 장면부터 바로 찾을 수 있게 구성.',
+    href: '/education/conversations/vlog-archive',
+    status: 'active',
+  },
+  {
+    date: '아카이브',
+    title: '교육 설명회 아카이브',
+    description: '우테코 교육설명회 재생목록 23편을 입학 설명회, 코치와 수다 타임, 교육자 관점 강연, 운영 Q&A로 다시 묶어 읽기 쉽게 구성.',
+    href: '/education/conversations/education-briefing-archive',
+    status: 'active',
+  },
+  {
+    date: '7기',
+    title: '논증 기반 학습 설계 인사이트',
+    description: '정답을 주지 않고 설명하게 만드는 패턴 — 4개 로그에서 레벨1~4에 걸쳐 발견된 교차 패턴을 인사이트로 정리.',
+    href: '/education/insights/argumentation-based-learning',
+    status: 'active',
+  },
+  {
+    date: '7기',
+    title: '렌더링 전략 결정 워크숍 템플릿',
+    description: '선언→피드백→개정 3단계로 기술 결정을 논증 훈련으로 만드는 워크숍 운영 템플릿. 7기 FE 레벨4 검증.',
+    href: '/education/tools/rendering-strategy-workshop',
+    status: 'active',
+  },
+  {
+    date: '아카이브',
+    title: '포수타 아카이브 4회차 추가',
+    description: '2024년 9월부터 2025년 5월까지의 포수타 녹음 4회를 정리해, 레벨4 우선순위부터 완벽주의, 관계, 개발의 재미까지 반복되는 질문을 다시 읽을 수 있게 구성.',
+    href: '/education/conversations/posuta',
+    status: 'active',
+  },
+  {
+    date: '아카이브',
     title: '프로젝트 데모데이 아카이브',
     description: '우테코 프로젝트 재생목록 194편을 차수·기수 흐름으로 정리하고, 같은 서비스를 1차·3차·5차 데모로 이어서 볼 수 있게 구성.',
     href: '/education/conversations/demo-day-archive',
@@ -31,9 +80,9 @@ const updates: Update[] = [
   },
   {
     date: '2026년 8기',
-    title: '우테코 토크 아카이브 신설 — 브수타 8기 1회차',
+    title: '우테코 토크 아카이브 신설 — 2026년 8기 브수타 1회차',
     description: '인터뷰, 수다 타임, 테코톡까지 담을 토크형 콘텐츠 아카이브를 열고, 첫 기록으로 브수타 8기 1회차를 정리.',
-    href: '/education/conversations/bsuta-8th-2026-04-03',
+    href: '/education/conversations/bsuta/2026-8th',
     status: 'active',
   },
   {

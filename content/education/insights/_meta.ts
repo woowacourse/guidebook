@@ -3,6 +3,7 @@ export default {
   'poe-discovery-learning': 'POE 발견 학습',
   'self-diagnostic-framework': '자기 진단 프레임워크',
   'progressive-scaffolding': '점진적 스캐폴딩',
+  'argumentation-based-learning': '논증 기반 학습 설계',
   'lecture-design': {
     title: '강의 설계',
     display: 'hidden'

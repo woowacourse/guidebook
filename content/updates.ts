@@ -24,8 +24,8 @@ const updates: Update[] = [
   },
   {
     date: '2026년 8기',
-    title: '수다 타임 아카이브 신설 — 브수타 8기 1회차',
-    description: '브라운 캡틴과 크루들의 오픈 Q&A를 기수별로 아카이빙하는 섹션을 신설. 첫 기록: 코드 리뷰 혼란, 성장 정체, 페어 편차, 무례한 동료 대처.',
+    title: '우테코 토크 아카이브 신설 — 브수타 8기 1회차',
+    description: '인터뷰, 수다 타임, 테코톡까지 담을 토크형 콘텐츠 아카이브를 열고, 첫 기록으로 브수타 8기 1회차를 정리.',
     href: '/education/conversations/bsuta-8th-2026-04-03',
     status: 'active',
   },

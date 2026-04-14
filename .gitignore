@@ -7,3 +7,4 @@ docs/plans/pr-data/
 .playwright-mcp/
 .temp/
 .worktrees/
+public/_pagefind/

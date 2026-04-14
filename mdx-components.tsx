@@ -10,6 +10,10 @@ import { Hero } from './components/Hero'
 import { RecentUpdates } from './components/RecentUpdates'
 import { LogList } from './components/LogList'
 import { Mermaid } from './components/Mermaid'
+import { DemoDayFullList } from './components/DemoDayFullList'
+import { EducationBriefingFullList } from './components/EducationBriefingFullList'
+import { TecoTalkExplorer } from './components/TecoTalkExplorer'
+import { VlogArchiveExplorer } from './components/VlogArchiveExplorer'
 
 const docsComponents = getDocsMDXComponents()
 
@@ -28,6 +32,10 @@ export function useMDXComponents(components?: Record<string, React.FC>) {
     RecentUpdates,
     LogList,
     Mermaid,
+    DemoDayFullList,
+    EducationBriefingFullList,
+    TecoTalkExplorer,
+    VlogArchiveExplorer,
     ...components
   }
 }

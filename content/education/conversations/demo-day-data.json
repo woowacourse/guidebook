@@ -1,0 +1,6528 @@
+{
+  "generatedAt": "2026-04-14T03:24:43.466Z",
+  "summary": {
+    "totalVideos": 194,
+    "transcriptOk": 187,
+    "transcriptUnavailable": 7,
+    "transcriptStatusCounts": {
+      "no_captions": 6,
+      "ok": 187,
+      "private": 1
+    }
+  },
+  "stageSummary": [
+    {
+      "stage": "스케치 영상",
+      "totalVideos": 1,
+      "transcriptOk": 1,
+      "transcriptUnavailable": 0,
+      "categoryMentions": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "categoryMentionRates": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      }
+    },
+    {
+      "stage": "프로젝트 최종 데모",
+      "totalVideos": 1,
+      "transcriptOk": 1,
+      "transcriptUnavailable": 0,
+      "categoryMentions": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "categoryMentionRates": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      }
+    },
+    {
+      "stage": "프로젝트 5차 데모",
+      "totalVideos": 30,
+      "transcriptOk": 30,
+      "transcriptUnavailable": 0,
+      "categoryMentions": {
+        "problem_context": 30,
+        "collaboration_culture": 23,
+        "product_flow": 30,
+        "performance_quality": 30,
+        "operations_infra": 30
+      },
+      "categoryMentionRates": {
+        "problem_context": 1,
+        "collaboration_culture": 0.767,
+        "product_flow": 1,
+        "performance_quality": 1,
+        "operations_infra": 1
+      }
+    },
+    {
+      "stage": "프로젝트 4차 데모",
+      "totalVideos": 40,
+      "transcriptOk": 40,
+      "transcriptUnavailable": 0,
+      "categoryMentions": {
+        "problem_context": 35,
+        "collaboration_culture": 34,
+        "product_flow": 39,
+        "performance_quality": 29,
+        "operations_infra": 38
+      },
+      "categoryMentionRates": {
+        "problem_context": 0.875,
+        "collaboration_culture": 0.85,
+        "product_flow": 0.975,
+        "performance_quality": 0.725,
+        "operations_infra": 0.95
+      }
+    },
+    {
+      "stage": "프로젝트 3차 데모",
+      "totalVideos": 34,
+      "transcriptOk": 34,
+      "transcriptUnavailable": 0,
+      "categoryMentions": {
+        "problem_context": 33,
+        "collaboration_culture": 32,
+        "product_flow": 34,
+        "performance_quality": 23,
+        "operations_infra": 34
+      },
+      "categoryMentionRates": {
+        "problem_context": 0.971,
+        "collaboration_culture": 0.941,
+        "product_flow": 1,
+        "performance_quality": 0.676,
+        "operations_infra": 1
+      }
+    },
+    {
+      "stage": "프로젝트 2차 데모",
+      "totalVideos": 34,
+      "transcriptOk": 34,
+      "transcriptUnavailable": 0,
+      "categoryMentions": {
+        "problem_context": 34,
+        "collaboration_culture": 30,
+        "product_flow": 34,
+        "performance_quality": 23,
+        "operations_infra": 34
+      },
+      "categoryMentionRates": {
+        "problem_context": 1,
+        "collaboration_culture": 0.882,
+        "product_flow": 1,
+        "performance_quality": 0.676,
+        "operations_infra": 1
+      }
+    },
+    {
+      "stage": "프로젝트 1차 데모",
+      "totalVideos": 34,
+      "transcriptOk": 34,
+      "transcriptUnavailable": 0,
+      "categoryMentions": {
+        "problem_context": 34,
+        "collaboration_culture": 33,
+        "product_flow": 34,
+        "performance_quality": 8,
+        "operations_infra": 30
+      },
+      "categoryMentionRates": {
+        "problem_context": 1,
+        "collaboration_culture": 0.971,
+        "product_flow": 1,
+        "performance_quality": 0.235,
+        "operations_infra": 0.882
+      }
+    },
+    {
+      "stage": "프로젝트 소개",
+      "totalVideos": 10,
+      "transcriptOk": 6,
+      "transcriptUnavailable": 4,
+      "categoryMentions": {
+        "problem_context": 2,
+        "collaboration_culture": 1,
+        "product_flow": 3,
+        "performance_quality": 0,
+        "operations_infra": 2
+      },
+      "categoryMentionRates": {
+        "problem_context": 0.333,
+        "collaboration_culture": 0.167,
+        "product_flow": 0.5,
+        "performance_quality": 0,
+        "operations_infra": 0.333
+      }
+    },
+    {
+      "stage": "미니프로젝트",
+      "totalVideos": 9,
+      "transcriptOk": 7,
+      "transcriptUnavailable": 2,
+      "categoryMentions": {
+        "problem_context": 2,
+        "collaboration_culture": 2,
+        "product_flow": 3,
+        "performance_quality": 2,
+        "operations_infra": 2
+      },
+      "categoryMentionRates": {
+        "problem_context": 0.286,
+        "collaboration_culture": 0.286,
+        "product_flow": 0.429,
+        "performance_quality": 0.286,
+        "operations_infra": 0.286
+      }
+    },
+    {
+      "stage": "비공개",
+      "totalVideos": 1,
+      "transcriptOk": 0,
+      "transcriptUnavailable": 1,
+      "categoryMentions": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "categoryMentionRates": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      }
+    }
+  ],
+  "cohortSummary": [
+    {
+      "cohort": "기타",
+      "totalVideos": 7,
+      "transcriptOk": 6,
+      "categoryMentions": {
+        "problem_context": 4,
+        "collaboration_culture": 4,
+        "product_flow": 4,
+        "performance_quality": 2,
+        "operations_infra": 4
+      },
+      "categoryMentionRates": {
+        "problem_context": 0.667,
+        "collaboration_culture": 0.667,
+        "product_flow": 0.667,
+        "performance_quality": 0.333,
+        "operations_infra": 0.667
+      }
+    },
+    {
+      "cohort": "4기",
+      "totalVideos": 89,
+      "transcriptOk": 89,
+      "categoryMentions": {
+        "problem_context": 84,
+        "collaboration_culture": 79,
+        "product_flow": 88,
+        "performance_quality": 55,
+        "operations_infra": 84
+      },
+      "categoryMentionRates": {
+        "problem_context": 0.944,
+        "collaboration_culture": 0.888,
+        "product_flow": 0.989,
+        "performance_quality": 0.618,
+        "operations_infra": 0.944
+      }
+    },
+    {
+      "cohort": "5기",
+      "totalVideos": 59,
+      "transcriptOk": 59,
+      "categoryMentions": {
+        "problem_context": 59,
+        "collaboration_culture": 52,
+        "product_flow": 59,
+        "performance_quality": 48,
+        "operations_infra": 59
+      },
+      "categoryMentionRates": {
+        "problem_context": 1,
+        "collaboration_culture": 0.881,
+        "product_flow": 1,
+        "performance_quality": 0.814,
+        "operations_infra": 1
+      }
+    },
+    {
+      "cohort": "초기 프로젝트",
+      "totalVideos": 30,
+      "transcriptOk": 26,
+      "categoryMentions": {
+        "problem_context": 21,
+        "collaboration_culture": 18,
+        "product_flow": 23,
+        "performance_quality": 8,
+        "operations_infra": 21
+      },
+      "categoryMentionRates": {
+        "problem_context": 0.808,
+        "collaboration_culture": 0.692,
+        "product_flow": 0.885,
+        "performance_quality": 0.308,
+        "operations_infra": 0.808
+      }
+    },
+    {
+      "cohort": "미니프로젝트",
+      "totalVideos": 9,
+      "transcriptOk": 7,
+      "categoryMentions": {
+        "problem_context": 2,
+        "collaboration_culture": 2,
+        "product_flow": 3,
+        "performance_quality": 2,
+        "operations_infra": 2
+      },
+      "categoryMentionRates": {
+        "problem_context": 0.286,
+        "collaboration_culture": 0.286,
+        "product_flow": 0.429,
+        "performance_quality": 0.286,
+        "operations_infra": 0.286
+      }
+    }
+  ],
+  "projectSummary": [
+    {
+      "projectName": "공식",
+      "cohort": "4기",
+      "videos": 5,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 5,
+      "categoryCounts": {
+        "problem_context": 21,
+        "collaboration_culture": 18,
+        "product_flow": 82,
+        "performance_quality": 49,
+        "operations_infra": 60
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "performance_quality"
+      ]
+    },
+    {
+      "projectName": "공책",
+      "cohort": "4기",
+      "videos": 5,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 5,
+      "categoryCounts": {
+        "problem_context": 35,
+        "collaboration_culture": 24,
+        "product_flow": 48,
+        "performance_quality": 55,
+        "operations_infra": 81
+      },
+      "topCategories": [
+        "operations_infra",
+        "performance_quality",
+        "product_flow"
+      ]
+    },
+    {
+      "projectName": "깃-들다",
+      "cohort": "5기",
+      "videos": 5,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 5,
+      "categoryCounts": {
+        "problem_context": 44,
+        "collaboration_culture": 22,
+        "product_flow": 68,
+        "performance_quality": 66,
+        "operations_infra": 115
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "performance_quality"
+      ]
+    },
+    {
+      "projectName": "꼭꼭",
+      "cohort": "4기",
+      "videos": 5,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 5,
+      "categoryCounts": {
+        "problem_context": 47,
+        "collaboration_culture": 15,
+        "product_flow": 76,
+        "performance_quality": 33,
+        "operations_infra": 38
+      },
+      "topCategories": [
+        "product_flow",
+        "problem_context",
+        "operations_infra"
+      ]
+    },
+    {
+      "projectName": "내편",
+      "cohort": "4기",
+      "videos": 5,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 5,
+      "categoryCounts": {
+        "problem_context": 32,
+        "collaboration_culture": 58,
+        "product_flow": 90,
+        "performance_quality": 49,
+        "operations_infra": 101
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "projectName": "놀토",
+      "cohort": "5기",
+      "videos": 5,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 5,
+      "categoryCounts": {
+        "problem_context": 33,
+        "collaboration_culture": 18,
+        "product_flow": 83,
+        "performance_quality": 31,
+        "operations_infra": 109
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "projectName": "다라쓰",
+      "cohort": "5기",
+      "videos": 5,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 5,
+      "categoryCounts": {
+        "problem_context": 54,
+        "collaboration_culture": 26,
+        "product_flow": 86,
+        "performance_quality": 37,
+        "operations_infra": 159
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "projectName": "달록",
+      "cohort": "4기",
+      "videos": 4,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 4,
+      "categoryCounts": {
+        "problem_context": 27,
+        "collaboration_culture": 26,
+        "product_flow": 61,
+        "performance_quality": 35,
+        "operations_infra": 38
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "performance_quality"
+      ]
+    },
+    {
+      "projectName": "달록 -달력이 기록을 공유할 때",
+      "cohort": "기타",
+      "videos": 1,
+      "stages": [
+        "프로젝트 2차 데모"
+      ],
+      "transcriptOk": 1,
+      "categoryCounts": {
+        "problem_context": 12,
+        "collaboration_culture": 2,
+        "product_flow": 20,
+        "performance_quality": 1,
+        "operations_infra": 45
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "projectName": "도란도란",
+      "cohort": "초기 프로젝트",
+      "videos": 2,
+      "stages": [
+        "프로젝트 소개",
+        "프로젝트 4차 데모"
+      ],
+      "transcriptOk": 2,
+      "categoryCounts": {
+        "problem_context": 6,
+        "collaboration_culture": 5,
+        "product_flow": 5,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": [
+        "problem_context",
+        "collaboration_culture",
+        "product_flow"
+      ]
+    },
+    {
+      "projectName": "땡쿠",
+      "cohort": "4기",
+      "videos": 5,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 5,
+      "categoryCounts": {
+        "problem_context": 16,
+        "collaboration_culture": 23,
+        "product_flow": 105,
+        "performance_quality": 30,
+        "operations_infra": 68
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "performance_quality"
+      ]
+    },
+    {
+      "projectName": "레벨로그",
+      "cohort": "4기",
+      "videos": 5,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 5,
+      "categoryCounts": {
+        "problem_context": 51,
+        "collaboration_culture": 43,
+        "product_flow": 39,
+        "performance_quality": 41,
+        "operations_infra": 74
+      },
+      "topCategories": [
+        "operations_infra",
+        "problem_context",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "projectName": "모두모여라",
+      "cohort": "4기",
+      "videos": 5,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 5,
+      "categoryCounts": {
+        "problem_context": 30,
+        "collaboration_culture": 91,
+        "product_flow": 77,
+        "performance_quality": 89,
+        "operations_infra": 26
+      },
+      "topCategories": [
+        "collaboration_culture",
+        "performance_quality",
+        "product_flow"
+      ]
+    },
+    {
+      "projectName": "모락",
+      "cohort": "4기",
+      "videos": 5,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 5,
+      "categoryCounts": {
+        "problem_context": 48,
+        "collaboration_culture": 28,
+        "product_flow": 104,
+        "performance_quality": 57,
+        "operations_infra": 61
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "performance_quality"
+      ]
+    },
+    {
+      "projectName": "모아모아",
+      "cohort": "4기",
+      "videos": 5,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 5,
+      "categoryCounts": {
+        "problem_context": 36,
+        "collaboration_culture": 35,
+        "product_flow": 54,
+        "performance_quality": 31,
+        "operations_infra": 51
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "projectName": "미소",
+      "cohort": "초기 프로젝트",
+      "videos": 3,
+      "stages": [
+        "프로젝트 소개",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모"
+      ],
+      "transcriptOk": 3,
+      "categoryCounts": {
+        "problem_context": 2,
+        "collaboration_culture": 10,
+        "product_flow": 13,
+        "performance_quality": 1,
+        "operations_infra": 5
+      },
+      "topCategories": [
+        "product_flow",
+        "collaboration_culture",
+        "operations_infra"
+      ]
+    },
+    {
+      "projectName": "백중원",
+      "cohort": "5기",
+      "videos": 5,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 5,
+      "categoryCounts": {
+        "problem_context": 33,
+        "collaboration_culture": 23,
+        "product_flow": 77,
+        "performance_quality": 43,
+        "operations_infra": 164
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "performance_quality"
+      ]
+    },
+    {
+      "projectName": "보고 또 보고",
+      "cohort": "5기",
+      "videos": 5,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 5,
+      "categoryCounts": {
+        "problem_context": 96,
+        "collaboration_culture": 18,
+        "product_flow": 129,
+        "performance_quality": 44,
+        "operations_infra": 82
+      },
+      "topCategories": [
+        "product_flow",
+        "problem_context",
+        "operations_infra"
+      ]
+    },
+    {
+      "projectName": "비공개 영상",
+      "cohort": "기타",
+      "videos": 1,
+      "stages": [
+        "비공개"
+      ],
+      "transcriptOk": 0,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": []
+    },
+    {
+      "projectName": "새벽",
+      "cohort": "초기 프로젝트",
+      "videos": 3,
+      "stages": [
+        "프로젝트 소개",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모"
+      ],
+      "transcriptOk": 2,
+      "categoryCounts": {
+        "problem_context": 7,
+        "collaboration_culture": 25,
+        "product_flow": 14,
+        "performance_quality": 1,
+        "operations_infra": 18
+      },
+      "topCategories": [
+        "collaboration_culture",
+        "operations_infra",
+        "product_flow"
+      ]
+    },
+    {
+      "projectName": "속닥속닥",
+      "cohort": "4기",
+      "videos": 5,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 5,
+      "categoryCounts": {
+        "problem_context": 31,
+        "collaboration_culture": 29,
+        "product_flow": 71,
+        "performance_quality": 49,
+        "operations_infra": 60
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "performance_quality"
+      ]
+    },
+    {
+      "projectName": "스모디",
+      "cohort": "4기",
+      "videos": 5,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 5,
+      "categoryCounts": {
+        "problem_context": 28,
+        "collaboration_culture": 17,
+        "product_flow": 117,
+        "performance_quality": 89,
+        "operations_infra": 96
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "performance_quality"
+      ]
+    },
+    {
+      "projectName": "여기서 만나",
+      "cohort": "5기",
+      "videos": 5,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 5,
+      "categoryCounts": {
+        "problem_context": 34,
+        "collaboration_culture": 16,
+        "product_flow": 90,
+        "performance_quality": 44,
+        "operations_infra": 82
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "performance_quality"
+      ]
+    },
+    {
+      "projectName": "우리 동네 캡짱",
+      "cohort": "초기 프로젝트",
+      "videos": 3,
+      "stages": [
+        "프로젝트 소개",
+        "프로젝트 4차 데모",
+        "프로젝트 2차 데모"
+      ],
+      "transcriptOk": 2,
+      "categoryCounts": {
+        "problem_context": 6,
+        "collaboration_culture": 26,
+        "product_flow": 6,
+        "performance_quality": 1,
+        "operations_infra": 8
+      },
+      "topCategories": [
+        "collaboration_culture",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "projectName": "우아한테크코스 4기 최종 데모데이",
+      "cohort": "기타",
+      "videos": 1,
+      "stages": [
+        "프로젝트 최종 데모"
+      ],
+      "transcriptOk": 1,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": []
+    },
+    {
+      "projectName": "우테코 최종 데모데이 🎉",
+      "cohort": "기타",
+      "videos": 1,
+      "stages": [
+        "스케치 영상"
+      ],
+      "transcriptOk": 1,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": []
+    },
+    {
+      "projectName": "주절주절",
+      "cohort": "5기",
+      "videos": 5,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 5,
+      "categoryCounts": {
+        "problem_context": 52,
+        "collaboration_culture": 26,
+        "product_flow": 65,
+        "performance_quality": 50,
+        "operations_infra": 115
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "projectName": "줍줍",
+      "cohort": "4기",
+      "videos": 5,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 5,
+      "categoryCounts": {
+        "problem_context": 39,
+        "collaboration_culture": 12,
+        "product_flow": 58,
+        "performance_quality": 45,
+        "operations_infra": 35
+      },
+      "topCategories": [
+        "product_flow",
+        "performance_quality",
+        "problem_context"
+      ]
+    },
+    {
+      "projectName": "직고래",
+      "cohort": "초기 프로젝트",
+      "videos": 1,
+      "stages": [
+        "프로젝트 소개"
+      ],
+      "transcriptOk": 1,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": []
+    },
+    {
+      "projectName": "찜꽁",
+      "cohort": "5기",
+      "videos": 5,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 5,
+      "categoryCounts": {
+        "problem_context": 50,
+        "collaboration_culture": 5,
+        "product_flow": 151,
+        "performance_quality": 27,
+        "operations_infra": 83
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "projectName": "체크 메이트",
+      "cohort": "4기",
+      "videos": 5,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 5,
+      "categoryCounts": {
+        "problem_context": 33,
+        "collaboration_culture": 49,
+        "product_flow": 51,
+        "performance_quality": 55,
+        "operations_infra": 77
+      },
+      "topCategories": [
+        "operations_infra",
+        "performance_quality",
+        "product_flow"
+      ]
+    },
+    {
+      "projectName": "칵테일픽",
+      "cohort": "기타",
+      "videos": 3,
+      "stages": [
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 3,
+      "categoryCounts": {
+        "problem_context": 22,
+        "collaboration_culture": 42,
+        "product_flow": 13,
+        "performance_quality": 1,
+        "operations_infra": 27
+      },
+      "topCategories": [
+        "collaboration_culture",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "projectName": "코드봐줘",
+      "cohort": "5기",
+      "videos": 5,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 5,
+      "categoryCounts": {
+        "problem_context": 24,
+        "collaboration_culture": 20,
+        "product_flow": 192,
+        "performance_quality": 35,
+        "operations_infra": 150
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "performance_quality"
+      ]
+    },
+    {
+      "projectName": "터놓고",
+      "cohort": "4기",
+      "videos": 5,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 5,
+      "categoryCounts": {
+        "problem_context": 29,
+        "collaboration_culture": 62,
+        "product_flow": 84,
+        "performance_quality": 52,
+        "operations_infra": 34
+      },
+      "topCategories": [
+        "product_flow",
+        "collaboration_culture",
+        "performance_quality"
+      ]
+    },
+    {
+      "projectName": "티타임",
+      "cohort": "4기",
+      "videos": 5,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 5,
+      "categoryCounts": {
+        "problem_context": 12,
+        "collaboration_culture": 39,
+        "product_flow": 46,
+        "performance_quality": 22,
+        "operations_infra": 35
+      },
+      "topCategories": [
+        "product_flow",
+        "collaboration_culture",
+        "operations_infra"
+      ]
+    },
+    {
+      "projectName": "회고덕",
+      "cohort": "4기",
+      "videos": 5,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 5,
+      "categoryCounts": {
+        "problem_context": 42,
+        "collaboration_culture": 53,
+        "product_flow": 65,
+        "performance_quality": 4,
+        "operations_infra": 50
+      },
+      "topCategories": [
+        "product_flow",
+        "collaboration_culture",
+        "operations_infra"
+      ]
+    },
+    {
+      "projectName": "babble",
+      "cohort": "5기",
+      "videos": 4,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 4,
+      "categoryCounts": {
+        "problem_context": 66,
+        "collaboration_culture": 15,
+        "product_flow": 95,
+        "performance_quality": 66,
+        "operations_infra": 95
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "projectName": "CocktailPick",
+      "cohort": "초기 프로젝트",
+      "videos": 1,
+      "stages": [
+        "프로젝트 소개"
+      ],
+      "transcriptOk": 1,
+      "categoryCounts": {
+        "problem_context": 1,
+        "collaboration_culture": 1,
+        "product_flow": 16,
+        "performance_quality": 0,
+        "operations_infra": 5
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "projectName": "Devbie",
+      "cohort": "초기 프로젝트",
+      "videos": 2,
+      "stages": [
+        "프로젝트 소개",
+        "프로젝트 4차 데모"
+      ],
+      "transcriptOk": 2,
+      "categoryCounts": {
+        "problem_context": 8,
+        "collaboration_culture": 11,
+        "product_flow": 6,
+        "performance_quality": 0,
+        "operations_infra": 3
+      },
+      "topCategories": [
+        "collaboration_culture",
+        "problem_context",
+        "product_flow"
+      ]
+    },
+    {
+      "projectName": "F12",
+      "cohort": "4기",
+      "videos": 5,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 5,
+      "categoryCounts": {
+        "problem_context": 67,
+        "collaboration_culture": 13,
+        "product_flow": 125,
+        "performance_quality": 56,
+        "operations_infra": 64
+      },
+      "topCategories": [
+        "product_flow",
+        "problem_context",
+        "operations_infra"
+      ]
+    },
+    {
+      "projectName": "fakebook",
+      "cohort": "미니프로젝트",
+      "videos": 1,
+      "stages": [
+        "미니프로젝트"
+      ],
+      "transcriptOk": 1,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": []
+    },
+    {
+      "projectName": "GPU 내껀데",
+      "cohort": "5기",
+      "videos": 5,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 5,
+      "categoryCounts": {
+        "problem_context": 44,
+        "collaboration_culture": 13,
+        "product_flow": 61,
+        "performance_quality": 45,
+        "operations_infra": 134
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "performance_quality"
+      ]
+    },
+    {
+      "projectName": "Hashtagmap",
+      "cohort": "초기 프로젝트",
+      "videos": 1,
+      "stages": [
+        "프로젝트 2차 데모"
+      ],
+      "transcriptOk": 1,
+      "categoryCounts": {
+        "problem_context": 5,
+        "collaboration_culture": 0,
+        "product_flow": 7,
+        "performance_quality": 3,
+        "operations_infra": 8
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "projectName": "Peloton",
+      "cohort": "초기 프로젝트",
+      "videos": 4,
+      "stages": [
+        "프로젝트 소개",
+        "프로젝트 4차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 3,
+      "categoryCounts": {
+        "problem_context": 29,
+        "collaboration_culture": 12,
+        "product_flow": 17,
+        "performance_quality": 0,
+        "operations_infra": 27
+      },
+      "topCategories": [
+        "problem_context",
+        "operations_infra",
+        "product_flow"
+      ]
+    },
+    {
+      "projectName": "Seller, lee",
+      "cohort": "초기 프로젝트",
+      "videos": 3,
+      "stages": [
+        "프로젝트 4차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 3,
+      "categoryCounts": {
+        "problem_context": 15,
+        "collaboration_culture": 15,
+        "product_flow": 42,
+        "performance_quality": 4,
+        "operations_infra": 18
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "projectName": "Slidemd",
+      "cohort": "초기 프로젝트",
+      "videos": 4,
+      "stages": [
+        "프로젝트 소개",
+        "프로젝트 4차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 3,
+      "categoryCounts": {
+        "problem_context": 17,
+        "collaboration_culture": 19,
+        "product_flow": 16,
+        "performance_quality": 3,
+        "operations_infra": 14
+      },
+      "topCategories": [
+        "collaboration_culture",
+        "problem_context",
+        "product_flow"
+      ]
+    },
+    {
+      "projectName": "Sunbook",
+      "cohort": "미니프로젝트",
+      "videos": 1,
+      "stages": [
+        "미니프로젝트"
+      ],
+      "transcriptOk": 1,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 5,
+        "product_flow": 5,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": [
+        "collaboration_culture",
+        "product_flow"
+      ]
+    },
+    {
+      "projectName": "Taggle",
+      "cohort": "초기 프로젝트",
+      "videos": 3,
+      "stages": [
+        "프로젝트 소개",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모"
+      ],
+      "transcriptOk": 3,
+      "categoryCounts": {
+        "problem_context": 12,
+        "collaboration_culture": 8,
+        "product_flow": 8,
+        "performance_quality": 0,
+        "operations_infra": 9
+      },
+      "topCategories": [
+        "problem_context",
+        "operations_infra",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "projectName": "Thank you for ___",
+      "cohort": "5기",
+      "videos": 5,
+      "stages": [
+        "프로젝트 5차 데모",
+        "프로젝트 4차 데모",
+        "프로젝트 3차 데모",
+        "프로젝트 2차 데모",
+        "프로젝트 1차 데모"
+      ],
+      "transcriptOk": 5,
+      "categoryCounts": {
+        "problem_context": 15,
+        "collaboration_culture": 15,
+        "product_flow": 132,
+        "performance_quality": 23,
+        "operations_infra": 73
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "performance_quality"
+      ]
+    },
+    {
+      "projectName": "TurkeyBook",
+      "cohort": "미니프로젝트",
+      "videos": 1,
+      "stages": [
+        "미니프로젝트"
+      ],
+      "transcriptOk": 0,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": []
+    },
+    {
+      "projectName": "woostagram",
+      "cohort": "미니프로젝트",
+      "videos": 2,
+      "stages": [
+        "미니프로젝트"
+      ],
+      "transcriptOk": 2,
+      "categoryCounts": {
+        "problem_context": 2,
+        "collaboration_culture": 1,
+        "product_flow": 10,
+        "performance_quality": 2,
+        "operations_infra": 1
+      },
+      "topCategories": [
+        "product_flow",
+        "problem_context",
+        "performance_quality"
+      ]
+    },
+    {
+      "projectName": "wootecobook",
+      "cohort": "미니프로젝트",
+      "videos": 1,
+      "stages": [
+        "미니프로젝트"
+      ],
+      "transcriptOk": 1,
+      "categoryCounts": {
+        "problem_context": 5,
+        "collaboration_culture": 0,
+        "product_flow": 1,
+        "performance_quality": 3,
+        "operations_infra": 2
+      },
+      "topCategories": [
+        "problem_context",
+        "performance_quality",
+        "operations_infra"
+      ]
+    },
+    {
+      "projectName": "Wootube",
+      "cohort": "미니프로젝트",
+      "videos": 2,
+      "stages": [
+        "미니프로젝트"
+      ],
+      "transcriptOk": 1,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": []
+    },
+    {
+      "projectName": "zzazanstagram",
+      "cohort": "미니프로젝트",
+      "videos": 1,
+      "stages": [
+        "미니프로젝트"
+      ],
+      "transcriptOk": 1,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": []
+    }
+  ],
+  "entries": [
+    {
+      "index": 1,
+      "id": "wVnYbrLkAv8",
+      "title": "[스케치 영상] 우테코 최종 데모데이 🎉",
+      "duration": "4:52",
+      "url": "https://www.youtube.com/watch?v=wVnYbrLkAv8",
+      "stage": "스케치 영상",
+      "projectName": "우테코 최종 데모데이 🎉",
+      "cohort": "기타",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/001-wVnYbrLkAv8.ko.txt",
+      "transcriptLineCount": 5,
+      "transcriptCharCount": 74,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": []
+    },
+    {
+      "index": 2,
+      "id": "0VfPkutnIN8",
+      "title": "[프로젝트 5차 데모] F12 - 개발자의 모든 도구",
+      "duration": "12:04",
+      "url": "https://www.youtube.com/watch?v=0VfPkutnIN8",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "F12",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/002-0VfPkutnIN8.ko.txt",
+      "transcriptLineCount": 320,
+      "transcriptCharCount": 8415,
+      "categoryCounts": {
+        "problem_context": 25,
+        "collaboration_culture": 3,
+        "product_flow": 21,
+        "performance_quality": 45,
+        "operations_infra": 16
+      },
+      "topCategories": [
+        "performance_quality",
+        "problem_context",
+        "product_flow"
+      ]
+    },
+    {
+      "index": 3,
+      "id": "EFQ7atcSKQ4",
+      "title": "[프로젝트 5차 데모] 회고덕 - 함께 성장하는 회고 플랫폼",
+      "duration": "9:30",
+      "url": "https://www.youtube.com/watch?v=EFQ7atcSKQ4",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "회고덕",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/003-EFQ7atcSKQ4.ko.txt",
+      "transcriptLineCount": 143,
+      "transcriptCharCount": 3422,
+      "categoryCounts": {
+        "problem_context": 5,
+        "collaboration_culture": 5,
+        "product_flow": 18,
+        "performance_quality": 3,
+        "operations_infra": 2
+      },
+      "topCategories": [
+        "product_flow",
+        "problem_context",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "index": 4,
+      "id": "ujnL7SECtMQ",
+      "title": "[프로젝트 5차 데모] 티타임 - 서로를 따뜻하게 채워주는 시간",
+      "duration": "12:26",
+      "url": "https://www.youtube.com/watch?v=ujnL7SECtMQ",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "티타임",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/004-ujnL7SECtMQ.ko.txt",
+      "transcriptLineCount": 186,
+      "transcriptCharCount": 4458,
+      "categoryCounts": {
+        "problem_context": 2,
+        "collaboration_culture": 5,
+        "product_flow": 9,
+        "performance_quality": 14,
+        "operations_infra": 14
+      },
+      "topCategories": [
+        "performance_quality",
+        "operations_infra",
+        "product_flow"
+      ]
+    },
+    {
+      "index": 5,
+      "id": "pQ0ykxIIR1E",
+      "title": "[프로젝트 5차 데모] 체크 메이트 - 주제만 정해주세요 출첵은 제가할게요!",
+      "duration": "13:05",
+      "url": "https://www.youtube.com/watch?v=pQ0ykxIIR1E",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "체크 메이트",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/005-pQ0ykxIIR1E.ko.txt",
+      "transcriptLineCount": 299,
+      "transcriptCharCount": 7312,
+      "categoryCounts": {
+        "problem_context": 11,
+        "collaboration_culture": 4,
+        "product_flow": 11,
+        "performance_quality": 34,
+        "operations_infra": 18
+      },
+      "topCategories": [
+        "performance_quality",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 6,
+      "id": "BolTWkHsKzE",
+      "title": "[프로젝트 5차 데모] 속닥속닥 - 우리들만의 비밀이야기",
+      "duration": "11:08",
+      "url": "https://www.youtube.com/watch?v=BolTWkHsKzE",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "속닥속닥",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/006-BolTWkHsKzE.ko.txt",
+      "transcriptLineCount": 230,
+      "transcriptCharCount": 5708,
+      "categoryCounts": {
+        "problem_context": 6,
+        "collaboration_culture": 0,
+        "product_flow": 10,
+        "performance_quality": 21,
+        "operations_infra": 12
+      },
+      "topCategories": [
+        "performance_quality",
+        "operations_infra",
+        "product_flow"
+      ]
+    },
+    {
+      "index": 7,
+      "id": "418XFEYsmDg",
+      "title": "[프로젝트 5차 데모] 모아모아 - 스터디를 더 쉽고, 편리하게!",
+      "duration": "13:45",
+      "url": "https://www.youtube.com/watch?v=418XFEYsmDg",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "모아모아",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/007-418XFEYsmDg.ko.txt",
+      "transcriptLineCount": 282,
+      "transcriptCharCount": 6727,
+      "categoryCounts": {
+        "problem_context": 10,
+        "collaboration_culture": 6,
+        "product_flow": 11,
+        "performance_quality": 26,
+        "operations_infra": 9
+      },
+      "topCategories": [
+        "performance_quality",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 8,
+      "id": "2CxEYnspLvg",
+      "title": "[프로젝트 5차 데모] 모락 - 모임을 즐겁게, 편리하게! 모락",
+      "duration": "12:57",
+      "url": "https://www.youtube.com/watch?v=2CxEYnspLvg",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "모락",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/008-2CxEYnspLvg.ko.txt",
+      "transcriptLineCount": 266,
+      "transcriptCharCount": 6531,
+      "categoryCounts": {
+        "problem_context": 9,
+        "collaboration_culture": 3,
+        "product_flow": 14,
+        "performance_quality": 27,
+        "operations_infra": 4
+      },
+      "topCategories": [
+        "performance_quality",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 9,
+      "id": "XKx3pv-BGbs",
+      "title": "[프로젝트 5차 데모] 땡쿠 - 당신의 마음을 전달하세요",
+      "duration": "9:40",
+      "url": "https://www.youtube.com/watch?v=XKx3pv-BGbs",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "땡쿠",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/009-XKx3pv-BGbs.ko.txt",
+      "transcriptLineCount": 269,
+      "transcriptCharCount": 7124,
+      "categoryCounts": {
+        "problem_context": 3,
+        "collaboration_culture": 0,
+        "product_flow": 22,
+        "performance_quality": 23,
+        "operations_infra": 13
+      },
+      "topCategories": [
+        "performance_quality",
+        "product_flow",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 10,
+      "id": "zxIGV94Na6M",
+      "title": "[프로젝트 5차 데모] 공식 - 공유해줘 너의 지식",
+      "duration": "9:54",
+      "url": "https://www.youtube.com/watch?v=zxIGV94Na6M",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "공식",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/010-zxIGV94Na6M.ko.txt",
+      "transcriptLineCount": 209,
+      "transcriptCharCount": 5296,
+      "categoryCounts": {
+        "problem_context": 7,
+        "collaboration_culture": 0,
+        "product_flow": 17,
+        "performance_quality": 24,
+        "operations_infra": 2
+      },
+      "topCategories": [
+        "performance_quality",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 11,
+      "id": "JzDo-J-5w4U",
+      "title": "[프로젝트 5차 데모] 레벨로그 - 레벨 인터뷰의 모든 것",
+      "duration": "8:23",
+      "url": "https://www.youtube.com/watch?v=JzDo-J-5w4U",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "레벨로그",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/011-JzDo-J-5w4U.ko.txt",
+      "transcriptLineCount": 230,
+      "transcriptCharCount": 6145,
+      "categoryCounts": {
+        "problem_context": 21,
+        "collaboration_culture": 17,
+        "product_flow": 23,
+        "performance_quality": 31,
+        "operations_infra": 22
+      },
+      "topCategories": [
+        "performance_quality",
+        "product_flow",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 12,
+      "id": "F8sRob8t39s",
+      "title": "[프로젝트 5차 데모] 터놓고 - 면담은 찐하게, 예약은 손쉽게! 면담 예약 서비스",
+      "duration": "10:40",
+      "url": "https://www.youtube.com/watch?v=F8sRob8t39s",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "터놓고",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/012-F8sRob8t39s.ko.txt",
+      "transcriptLineCount": 253,
+      "transcriptCharCount": 6475,
+      "categoryCounts": {
+        "problem_context": 4,
+        "collaboration_culture": 10,
+        "product_flow": 17,
+        "performance_quality": 51,
+        "operations_infra": 13
+      },
+      "topCategories": [
+        "performance_quality",
+        "product_flow",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 13,
+      "id": "MOs-87-Wv2k",
+      "title": "[프로젝트 5차 데모] 줍줍 - 사라지는 Slack 메시지 우리가 주워줄게!",
+      "duration": "9:23",
+      "url": "https://www.youtube.com/watch?v=MOs-87-Wv2k",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "줍줍",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/013-MOs-87-Wv2k.ko.txt",
+      "transcriptLineCount": 236,
+      "transcriptCharCount": 6055,
+      "categoryCounts": {
+        "problem_context": 7,
+        "collaboration_culture": 0,
+        "product_flow": 10,
+        "performance_quality": 42,
+        "operations_infra": 8
+      },
+      "topCategories": [
+        "performance_quality",
+        "product_flow",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 14,
+      "id": "uWM2K9NWzYY",
+      "title": "[프로젝트 5차 데모] 스모디 - 작심삼일에 지쳤을 때, Three More Days",
+      "duration": "11:34",
+      "url": "https://www.youtube.com/watch?v=uWM2K9NWzYY",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "스모디",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/014-uWM2K9NWzYY.ko.txt",
+      "transcriptLineCount": 306,
+      "transcriptCharCount": 8120,
+      "categoryCounts": {
+        "problem_context": 5,
+        "collaboration_culture": 6,
+        "product_flow": 51,
+        "performance_quality": 67,
+        "operations_infra": 7
+      },
+      "topCategories": [
+        "performance_quality",
+        "product_flow",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 15,
+      "id": "YgYHR5Hqk2M",
+      "title": "[프로젝트 5차 데모] 모두모여라 - 한눈에 보는 모임 서비스",
+      "duration": "11:25",
+      "url": "https://www.youtube.com/watch?v=YgYHR5Hqk2M",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "모두모여라",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/015-YgYHR5Hqk2M.ko.txt",
+      "transcriptLineCount": 304,
+      "transcriptCharCount": 8168,
+      "categoryCounts": {
+        "problem_context": 13,
+        "collaboration_culture": 19,
+        "product_flow": 38,
+        "performance_quality": 85,
+        "operations_infra": 11
+      },
+      "topCategories": [
+        "performance_quality",
+        "product_flow",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "index": 16,
+      "id": "W5J49Z4qGPg",
+      "title": "[프로젝트 5차 데모] 달록 - 달력이 기록을 공유할 때",
+      "duration": "10:54",
+      "url": "https://www.youtube.com/watch?v=W5J49Z4qGPg",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "달록",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/016-W5J49Z4qGPg.ko.txt",
+      "transcriptLineCount": 257,
+      "transcriptCharCount": 6591,
+      "categoryCounts": {
+        "problem_context": 10,
+        "collaboration_culture": 1,
+        "product_flow": 18,
+        "performance_quality": 33,
+        "operations_infra": 14
+      },
+      "topCategories": [
+        "performance_quality",
+        "product_flow",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 17,
+      "id": "naWK01lL7Vw",
+      "title": "[프로젝트 5차 데모] 내편 - 내 마음을 편지로",
+      "duration": "8:18",
+      "url": "https://www.youtube.com/watch?v=naWK01lL7Vw",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "내편",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/017-naWK01lL7Vw.ko.txt",
+      "transcriptLineCount": 222,
+      "transcriptCharCount": 5964,
+      "categoryCounts": {
+        "problem_context": 4,
+        "collaboration_culture": 7,
+        "product_flow": 18,
+        "performance_quality": 42,
+        "operations_infra": 19
+      },
+      "topCategories": [
+        "performance_quality",
+        "operations_infra",
+        "product_flow"
+      ]
+    },
+    {
+      "index": 18,
+      "id": "gAiIWmcJBX8",
+      "title": "[프로젝트 5차 데모] 꼭꼭 - 약속을 전달해요 꼭꼭으로 간편하게!",
+      "duration": "12:06",
+      "url": "https://www.youtube.com/watch?v=gAiIWmcJBX8",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "꼭꼭",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/018-gAiIWmcJBX8.ko.txt",
+      "transcriptLineCount": 222,
+      "transcriptCharCount": 5536,
+      "categoryCounts": {
+        "problem_context": 9,
+        "collaboration_culture": 0,
+        "product_flow": 9,
+        "performance_quality": 30,
+        "operations_infra": 10
+      },
+      "topCategories": [
+        "performance_quality",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 19,
+      "id": "U7ZoTKjxt4o",
+      "title": "[프로젝트 5차 데모] 공책 - 함께 사용하는 우리의 공간 우리가 체크하자!",
+      "duration": "10:16",
+      "url": "https://www.youtube.com/watch?v=U7ZoTKjxt4o",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "공책",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/019-U7ZoTKjxt4o.ko.txt",
+      "transcriptLineCount": 206,
+      "transcriptCharCount": 5372,
+      "categoryCounts": {
+        "problem_context": 12,
+        "collaboration_culture": 1,
+        "product_flow": 7,
+        "performance_quality": 26,
+        "operations_infra": 19
+      },
+      "topCategories": [
+        "performance_quality",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 20,
+      "id": "qdQRV2U8Y6Y",
+      "title": "[프로젝트 최종 데모] 우아한테크코스 4기 최종 데모데이",
+      "duration": "5:49",
+      "url": "https://www.youtube.com/watch?v=qdQRV2U8Y6Y",
+      "stage": "프로젝트 최종 데모",
+      "projectName": "우아한테크코스 4기 최종 데모데이",
+      "cohort": "기타",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/020-qdQRV2U8Y6Y.ko.txt",
+      "transcriptLineCount": 25,
+      "transcriptCharCount": 391,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": []
+    },
+    {
+      "index": 21,
+      "id": "5-6levr8Nxw",
+      "title": "[프로젝트 3차 데모] 레벨로그 - 레벨 인터뷰의 모든 것",
+      "duration": "9:01",
+      "url": "https://www.youtube.com/watch?v=5-6levr8Nxw",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "레벨로그",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/021-5-6levr8Nxw.ko.txt",
+      "transcriptLineCount": 196,
+      "transcriptCharCount": 4814,
+      "categoryCounts": {
+        "problem_context": 4,
+        "collaboration_culture": 2,
+        "product_flow": 4,
+        "performance_quality": 0,
+        "operations_infra": 19
+      },
+      "topCategories": [
+        "operations_infra",
+        "problem_context",
+        "product_flow"
+      ]
+    },
+    {
+      "index": 22,
+      "id": "rBufGKaRtZc",
+      "title": "[프로젝트 3차 데모] 공책 - 함께 사용하는 우리의 공간 우리가 체크하자!",
+      "duration": "12:34",
+      "url": "https://www.youtube.com/watch?v=rBufGKaRtZc",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "공책",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/022-rBufGKaRtZc.ko.txt",
+      "transcriptLineCount": 275,
+      "transcriptCharCount": 6828,
+      "categoryCounts": {
+        "problem_context": 5,
+        "collaboration_culture": 3,
+        "product_flow": 15,
+        "performance_quality": 11,
+        "operations_infra": 16
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "performance_quality"
+      ]
+    },
+    {
+      "index": 23,
+      "id": "R1hvIJlTHK0",
+      "title": "[프로젝트 4차 데모] 모아모아 - 스터디를 더 쉽고, 편리하게!",
+      "duration": "4:07",
+      "url": "https://www.youtube.com/watch?v=R1hvIJlTHK0",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "모아모아",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/023-R1hvIJlTHK0.ko.txt",
+      "transcriptLineCount": 83,
+      "transcriptCharCount": 2058,
+      "categoryCounts": {
+        "problem_context": 3,
+        "collaboration_culture": 2,
+        "product_flow": 5,
+        "performance_quality": 1,
+        "operations_infra": 4
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 24,
+      "id": "Qa944GNc2ec",
+      "title": "[프로젝트 4차 데모] 모두모여라 - 한눈에 보는 모임 서비스",
+      "duration": "4:38",
+      "url": "https://www.youtube.com/watch?v=Qa944GNc2ec",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "모두모여라",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/024-Qa944GNc2ec.ko.txt",
+      "transcriptLineCount": 120,
+      "transcriptCharCount": 3036,
+      "categoryCounts": {
+        "problem_context": 3,
+        "collaboration_culture": 13,
+        "product_flow": 9,
+        "performance_quality": 1,
+        "operations_infra": 4
+      },
+      "topCategories": [
+        "collaboration_culture",
+        "product_flow",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 25,
+      "id": "6jtsyPbm8CM",
+      "title": "[프로젝트 4차 데모] 꼭꼭 - 약속을 전달해요 꼭꼭으로 간편하게!",
+      "duration": "4:52",
+      "url": "https://www.youtube.com/watch?v=6jtsyPbm8CM",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "꼭꼭",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/025-6jtsyPbm8CM.ko.txt",
+      "transcriptLineCount": 121,
+      "transcriptCharCount": 3100,
+      "categoryCounts": {
+        "problem_context": 3,
+        "collaboration_culture": 1,
+        "product_flow": 11,
+        "performance_quality": 0,
+        "operations_infra": 8
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 26,
+      "id": "QtfPt4WTAKk",
+      "title": "[프로젝트 4차 데모] 공식 - 공유해줘 너의 지식",
+      "duration": "5:00",
+      "url": "https://www.youtube.com/watch?v=QtfPt4WTAKk",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "공식",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/026-QtfPt4WTAKk.ko.txt",
+      "transcriptLineCount": 113,
+      "transcriptCharCount": 2976,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 13,
+        "performance_quality": 17,
+        "operations_infra": 6
+      },
+      "topCategories": [
+        "performance_quality",
+        "product_flow",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 27,
+      "id": "pwllAnUE_wg",
+      "title": "[프로젝트 4차 데모] F12 - 개발자의 모든 도구",
+      "duration": "5:21",
+      "url": "https://www.youtube.com/watch?v=pwllAnUE_wg",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "F12",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/027-pwllAnUE_wg.ko.txt",
+      "transcriptLineCount": 143,
+      "transcriptCharCount": 3840,
+      "categoryCounts": {
+        "problem_context": 2,
+        "collaboration_culture": 0,
+        "product_flow": 18,
+        "performance_quality": 9,
+        "operations_infra": 7
+      },
+      "topCategories": [
+        "product_flow",
+        "performance_quality",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 28,
+      "id": "4De9K7QZQQk",
+      "title": "[프로젝트 4차 데모] 회고덕 - 함께 성장하는 회고 플랫폼",
+      "duration": "4:56",
+      "url": "https://www.youtube.com/watch?v=4De9K7QZQQk",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "회고덕",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/028-4De9K7QZQQk.ko.txt",
+      "transcriptLineCount": 100,
+      "transcriptCharCount": 2734,
+      "categoryCounts": {
+        "problem_context": 2,
+        "collaboration_culture": 19,
+        "product_flow": 3,
+        "performance_quality": 0,
+        "operations_infra": 4
+      },
+      "topCategories": [
+        "collaboration_culture",
+        "operations_infra",
+        "product_flow"
+      ]
+    },
+    {
+      "index": 29,
+      "id": "tRIjRhsq-0k",
+      "title": "[프로젝트 4차 데모] 티타임 - 서로를 따뜻하게 채워주는 시간",
+      "duration": "5:41",
+      "url": "https://www.youtube.com/watch?v=tRIjRhsq-0k",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "티타임",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/029-tRIjRhsq-0k.ko.txt",
+      "transcriptLineCount": 144,
+      "transcriptCharCount": 3320,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 18,
+        "product_flow": 11,
+        "performance_quality": 6,
+        "operations_infra": 14
+      },
+      "topCategories": [
+        "collaboration_culture",
+        "operations_infra",
+        "product_flow"
+      ]
+    },
+    {
+      "index": 30,
+      "id": "-Y4DfIsRrzA",
+      "title": "[프로젝트 4차 데모] 터놓고 - 면담은 찐하게, 예약은 손쉽게! 면담 예약 서비스",
+      "duration": "5:04",
+      "url": "https://www.youtube.com/watch?v=-Y4DfIsRrzA",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "터놓고",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/030--Y4DfIsRrzA.ko.txt",
+      "transcriptLineCount": 121,
+      "transcriptCharCount": 2830,
+      "categoryCounts": {
+        "problem_context": 1,
+        "collaboration_culture": 7,
+        "product_flow": 5,
+        "performance_quality": 1,
+        "operations_infra": 1
+      },
+      "topCategories": [
+        "collaboration_culture",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 31,
+      "id": "GKlQswzUzq0",
+      "title": "[프로젝트 4차 데모] 체크 메이트 - 주제만 정해주세요 출첵은 제가할게요!",
+      "duration": "4:39",
+      "url": "https://www.youtube.com/watch?v=GKlQswzUzq0",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "체크 메이트",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/031-GKlQswzUzq0.ko.txt",
+      "transcriptLineCount": 128,
+      "transcriptCharCount": 3445,
+      "categoryCounts": {
+        "problem_context": 4,
+        "collaboration_culture": 14,
+        "product_flow": 11,
+        "performance_quality": 21,
+        "operations_infra": 11
+      },
+      "topCategories": [
+        "performance_quality",
+        "collaboration_culture",
+        "product_flow"
+      ]
+    },
+    {
+      "index": 32,
+      "id": "VmXdJLkfBVE",
+      "title": "[프로젝트 4차 데모] 줍줍 - 사라지는 Slack 메시지 우리가 주워줄게!",
+      "duration": "4:43",
+      "url": "https://www.youtube.com/watch?v=VmXdJLkfBVE",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "줍줍",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/032-VmXdJLkfBVE.ko.txt",
+      "transcriptLineCount": 15,
+      "transcriptCharCount": 238,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": []
+    },
+    {
+      "index": 33,
+      "id": "xjJZGaYFAs0",
+      "title": "[프로젝트 4차 데모] 스모디 - 작심삼일에 지쳤을 때, Three More Days",
+      "duration": "5:20",
+      "url": "https://www.youtube.com/watch?v=xjJZGaYFAs0",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "스모디",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/033-xjJZGaYFAs0.ko.txt",
+      "transcriptLineCount": 129,
+      "transcriptCharCount": 3318,
+      "categoryCounts": {
+        "problem_context": 2,
+        "collaboration_culture": 4,
+        "product_flow": 11,
+        "performance_quality": 5,
+        "operations_infra": 15
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "performance_quality"
+      ]
+    },
+    {
+      "index": 34,
+      "id": "7pvIzC4A-UY",
+      "title": "[프로젝트 4차 데모] 속닥속닥 - 우리들만의 비밀이야기",
+      "duration": "8:01",
+      "url": "https://www.youtube.com/watch?v=7pvIzC4A-UY",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "속닥속닥",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/034-7pvIzC4A-UY.ko.txt",
+      "transcriptLineCount": 194,
+      "transcriptCharCount": 5152,
+      "categoryCounts": {
+        "problem_context": 1,
+        "collaboration_culture": 1,
+        "product_flow": 23,
+        "performance_quality": 27,
+        "operations_infra": 18
+      },
+      "topCategories": [
+        "performance_quality",
+        "product_flow",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 35,
+      "id": "u_INarrFVZ0",
+      "title": "[프로젝트 4차 데모] 모락 - 모임을 즐겁게, 편리하게! 모락",
+      "duration": "6:13",
+      "url": "https://www.youtube.com/watch?v=u_INarrFVZ0",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "모락",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/035-u_INarrFVZ0.ko.txt",
+      "transcriptLineCount": 171,
+      "transcriptCharCount": 4515,
+      "categoryCounts": {
+        "problem_context": 6,
+        "collaboration_culture": 4,
+        "product_flow": 15,
+        "performance_quality": 29,
+        "operations_infra": 21
+      },
+      "topCategories": [
+        "performance_quality",
+        "operations_infra",
+        "product_flow"
+      ]
+    },
+    {
+      "index": 36,
+      "id": "r1vOel1zDn8",
+      "title": "[프로젝트 4차 데모] 레벨로그 - 레벨 인터뷰의 모든 것",
+      "duration": "5:02",
+      "url": "https://www.youtube.com/watch?v=r1vOel1zDn8",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "레벨로그",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/036-r1vOel1zDn8.ko.txt",
+      "transcriptLineCount": 115,
+      "transcriptCharCount": 3063,
+      "categoryCounts": {
+        "problem_context": 7,
+        "collaboration_culture": 7,
+        "product_flow": 5,
+        "performance_quality": 9,
+        "operations_infra": 7
+      },
+      "topCategories": [
+        "performance_quality",
+        "problem_context",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "index": 37,
+      "id": "TCiGf6nsG3E",
+      "title": "[프로젝트 4차 데모] 땡쿠 - 당신의 마음을 전달하세요",
+      "duration": "3:40",
+      "url": "https://www.youtube.com/watch?v=TCiGf6nsG3E",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "땡쿠",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/037-TCiGf6nsG3E.ko.txt",
+      "transcriptLineCount": 91,
+      "transcriptCharCount": 2360,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 5,
+        "performance_quality": 5,
+        "operations_infra": 5
+      },
+      "topCategories": [
+        "product_flow",
+        "performance_quality",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 38,
+      "id": "29Q7xo68kk0",
+      "title": "[프로젝트 4차 데모] 달록 - 달력이 기록을 공유할 때",
+      "duration": "4:43",
+      "url": "https://www.youtube.com/watch?v=29Q7xo68kk0",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "달록",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/038-29Q7xo68kk0.ko.txt",
+      "transcriptLineCount": 98,
+      "transcriptCharCount": 2625,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 10,
+        "product_flow": 2,
+        "performance_quality": 1,
+        "operations_infra": 8
+      },
+      "topCategories": [
+        "collaboration_culture",
+        "operations_infra",
+        "product_flow"
+      ]
+    },
+    {
+      "index": 39,
+      "id": "FjJhHlkk7iw",
+      "title": "[프로젝트 4차 데모] 내편 - 내 마음을 편지로",
+      "duration": "5:02",
+      "url": "https://www.youtube.com/watch?v=FjJhHlkk7iw",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "내편",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/039-FjJhHlkk7iw.ko.txt",
+      "transcriptLineCount": 138,
+      "transcriptCharCount": 3867,
+      "categoryCounts": {
+        "problem_context": 2,
+        "collaboration_culture": 11,
+        "product_flow": 15,
+        "performance_quality": 6,
+        "operations_infra": 11
+      },
+      "topCategories": [
+        "product_flow",
+        "collaboration_culture",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 40,
+      "id": "ssseI1nySmI",
+      "title": "[프로젝트 4차 데모] 공책 - 함께 사용하는 우리의 공간 우리가 체크하자!",
+      "duration": "5:00",
+      "url": "https://www.youtube.com/watch?v=ssseI1nySmI",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "공책",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/040-ssseI1nySmI.ko.txt",
+      "transcriptLineCount": 135,
+      "transcriptCharCount": 3804,
+      "categoryCounts": {
+        "problem_context": 4,
+        "collaboration_culture": 2,
+        "product_flow": 6,
+        "performance_quality": 18,
+        "operations_infra": 11
+      },
+      "topCategories": [
+        "performance_quality",
+        "operations_infra",
+        "product_flow"
+      ]
+    },
+    {
+      "index": 41,
+      "id": "0TahIz00h0I",
+      "title": "[프로젝트 3차 데모] F12 - 개발자의 모든 도구",
+      "duration": "16:00",
+      "url": "https://www.youtube.com/watch?v=0TahIz00h0I",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "F12",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/041-0TahIz00h0I.ko.txt",
+      "transcriptLineCount": 389,
+      "transcriptCharCount": 10533,
+      "categoryCounts": {
+        "problem_context": 19,
+        "collaboration_culture": 2,
+        "product_flow": 34,
+        "performance_quality": 0,
+        "operations_infra": 12
+      },
+      "topCategories": [
+        "product_flow",
+        "problem_context",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 42,
+      "id": "50t1gt_IJ60",
+      "title": "[프로젝트 3차 데모] 티타임 - 서로를 따뜻하게 채워주는 시간",
+      "duration": "8:06",
+      "url": "https://www.youtube.com/watch?v=50t1gt_IJ60",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "티타임",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/042-50t1gt_IJ60.ko.txt",
+      "transcriptLineCount": 174,
+      "transcriptCharCount": 4327,
+      "categoryCounts": {
+        "problem_context": 4,
+        "collaboration_culture": 0,
+        "product_flow": 2,
+        "performance_quality": 2,
+        "operations_infra": 6
+      },
+      "topCategories": [
+        "operations_infra",
+        "problem_context",
+        "product_flow"
+      ]
+    },
+    {
+      "index": 43,
+      "id": "y2cudTZ8seY",
+      "title": "[프로젝트 3차 데모] 터놓고 - 면담은 찐하게, 예약은 손쉽게! 면담 예약 서비스",
+      "duration": "12:00",
+      "url": "https://www.youtube.com/watch?v=y2cudTZ8seY",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "터놓고",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/043-y2cudTZ8seY.ko.txt",
+      "transcriptLineCount": 261,
+      "transcriptCharCount": 6961,
+      "categoryCounts": {
+        "problem_context": 8,
+        "collaboration_culture": 6,
+        "product_flow": 10,
+        "performance_quality": 0,
+        "operations_infra": 9
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 44,
+      "id": "3rsD_n4DXnQ",
+      "title": "[프로젝트 3차 데모] 체크 메이트 - 주제만 정해주세요 출첵은 제가할게요!",
+      "duration": "15:15",
+      "url": "https://www.youtube.com/watch?v=3rsD_n4DXnQ",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "체크 메이트",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/044-3rsD_n4DXnQ.ko.txt",
+      "transcriptLineCount": 325,
+      "transcriptCharCount": 8258,
+      "categoryCounts": {
+        "problem_context": 3,
+        "collaboration_culture": 4,
+        "product_flow": 8,
+        "performance_quality": 0,
+        "operations_infra": 18
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "index": 45,
+      "id": "LQOhHfKPuC0",
+      "title": "[프로젝트 3차 데모] 줍줍 - 사라지는 Slack 메시지 우리가 주워줄게!",
+      "duration": "11:53",
+      "url": "https://www.youtube.com/watch?v=LQOhHfKPuC0",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "줍줍",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/045-LQOhHfKPuC0.ko.txt",
+      "transcriptLineCount": 275,
+      "transcriptCharCount": 7274,
+      "categoryCounts": {
+        "problem_context": 7,
+        "collaboration_culture": 2,
+        "product_flow": 10,
+        "performance_quality": 1,
+        "operations_infra": 17
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 46,
+      "id": "gQmDpuuukW0",
+      "title": "[프로젝트 3차 데모] 속닥속닥 - 우리들만의 비밀이야기",
+      "duration": "15:19",
+      "url": "https://www.youtube.com/watch?v=gQmDpuuukW0",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "속닥속닥",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/046-gQmDpuuukW0.ko.txt",
+      "transcriptLineCount": 355,
+      "transcriptCharCount": 9000,
+      "categoryCounts": {
+        "problem_context": 9,
+        "collaboration_culture": 4,
+        "product_flow": 13,
+        "performance_quality": 0,
+        "operations_infra": 13
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 47,
+      "id": "RSkr2x3n9B8",
+      "title": "[프로젝트 3차 데모] 모락 - 모임을 즐겁게, 편리하게! 모락",
+      "duration": "11:22",
+      "url": "https://www.youtube.com/watch?v=RSkr2x3n9B8",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "모락",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/047-RSkr2x3n9B8.ko.txt",
+      "transcriptLineCount": 255,
+      "transcriptCharCount": 6324,
+      "categoryCounts": {
+        "problem_context": 15,
+        "collaboration_culture": 4,
+        "product_flow": 35,
+        "performance_quality": 0,
+        "operations_infra": 25
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 48,
+      "id": "GeKxtyNXY3M",
+      "title": "[프로젝트 3차 데모] 회고덕 - 함께 성장하는 회고 플랫폼",
+      "duration": "8:45",
+      "url": "https://www.youtube.com/watch?v=GeKxtyNXY3M",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "회고덕",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/048-GeKxtyNXY3M.ko.txt",
+      "transcriptLineCount": 210,
+      "transcriptCharCount": 5816,
+      "categoryCounts": {
+        "problem_context": 16,
+        "collaboration_culture": 5,
+        "product_flow": 7,
+        "performance_quality": 0,
+        "operations_infra": 11
+      },
+      "topCategories": [
+        "problem_context",
+        "operations_infra",
+        "product_flow"
+      ]
+    },
+    {
+      "index": 49,
+      "id": "ejbJowHNG-0",
+      "title": "[프로젝트 3차 데모] 스모디 - 작심삼일에 지쳤을 때, Three More Days",
+      "duration": "11:29",
+      "url": "https://www.youtube.com/watch?v=ejbJowHNG-0",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "스모디",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/049-ejbJowHNG-0.ko.txt",
+      "transcriptLineCount": 249,
+      "transcriptCharCount": 6389,
+      "categoryCounts": {
+        "problem_context": 3,
+        "collaboration_culture": 3,
+        "product_flow": 17,
+        "performance_quality": 15,
+        "operations_infra": 30
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "performance_quality"
+      ]
+    },
+    {
+      "index": 50,
+      "id": "8BeDIiLa450",
+      "title": "[프로젝트 3차 데모] 모아모아 - 스터디를 더 쉽고, 편리하게!",
+      "duration": "11:27",
+      "url": "https://www.youtube.com/watch?v=8BeDIiLa450",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "모아모아",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/050-8BeDIiLa450.ko.txt",
+      "transcriptLineCount": 276,
+      "transcriptCharCount": 7358,
+      "categoryCounts": {
+        "problem_context": 8,
+        "collaboration_culture": 5,
+        "product_flow": 5,
+        "performance_quality": 1,
+        "operations_infra": 13
+      },
+      "topCategories": [
+        "operations_infra",
+        "problem_context",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "index": 51,
+      "id": "W5Rloao4zuQ",
+      "title": "[프로젝트 3차 데모] 모두모여라 - 한눈에 보는 모임 서비스",
+      "duration": "10:55",
+      "url": "https://www.youtube.com/watch?v=W5Rloao4zuQ",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "모두모여라",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/051-W5Rloao4zuQ.ko.txt",
+      "transcriptLineCount": 259,
+      "transcriptCharCount": 7197,
+      "categoryCounts": {
+        "problem_context": 7,
+        "collaboration_culture": 8,
+        "product_flow": 16,
+        "performance_quality": 3,
+        "operations_infra": 5
+      },
+      "topCategories": [
+        "product_flow",
+        "collaboration_culture",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 52,
+      "id": "gh6KwrB3oX0",
+      "title": "[프로젝트 3차 데모] 땡쿠 - 당신의 마음을 전달하세요",
+      "duration": "11:26",
+      "url": "https://www.youtube.com/watch?v=gh6KwrB3oX0",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "땡쿠",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/052-gh6KwrB3oX0.ko.txt",
+      "transcriptLineCount": 301,
+      "transcriptCharCount": 7920,
+      "categoryCounts": {
+        "problem_context": 4,
+        "collaboration_culture": 4,
+        "product_flow": 33,
+        "performance_quality": 2,
+        "operations_infra": 24
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 53,
+      "id": "sP1F-wWO0sY",
+      "title": "[프로젝트 3차 데모] 달록 - 달력이 기록을 공유할 때",
+      "duration": "11:37",
+      "url": "https://www.youtube.com/watch?v=sP1F-wWO0sY",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "달록",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/053-sP1F-wWO0sY.ko.txt",
+      "transcriptLineCount": 302,
+      "transcriptCharCount": 8120,
+      "categoryCounts": {
+        "problem_context": 6,
+        "collaboration_culture": 2,
+        "product_flow": 17,
+        "performance_quality": 1,
+        "operations_infra": 12
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 54,
+      "id": "LBkKcpwh7Yg",
+      "title": "[프로젝트 3차 데모] 내편 - 내 마음을 편지로",
+      "duration": "10:34",
+      "url": "https://www.youtube.com/watch?v=LBkKcpwh7Yg",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "내편",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/054-LBkKcpwh7Yg.ko.txt",
+      "transcriptLineCount": 261,
+      "transcriptCharCount": 7356,
+      "categoryCounts": {
+        "problem_context": 10,
+        "collaboration_culture": 2,
+        "product_flow": 17,
+        "performance_quality": 1,
+        "operations_infra": 39
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 55,
+      "id": "N5IB9lCsjbI",
+      "title": "[프로젝트 3차 데모] 꼭꼭 - 약속을 전달해요 꼭꼭으로 간편하게!",
+      "duration": "10:59",
+      "url": "https://www.youtube.com/watch?v=N5IB9lCsjbI",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "꼭꼭",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/055-N5IB9lCsjbI.ko.txt",
+      "transcriptLineCount": 267,
+      "transcriptCharCount": 7224,
+      "categoryCounts": {
+        "problem_context": 8,
+        "collaboration_culture": 2,
+        "product_flow": 34,
+        "performance_quality": 1,
+        "operations_infra": 7
+      },
+      "topCategories": [
+        "product_flow",
+        "problem_context",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 56,
+      "id": "ZA48GkZuEYY",
+      "title": "[프로젝트 3차 데모] 공식 - 공유해줘 너의 지식",
+      "duration": "12:57",
+      "url": "https://www.youtube.com/watch?v=ZA48GkZuEYY",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "공식",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/056-ZA48GkZuEYY.ko.txt",
+      "transcriptLineCount": 311,
+      "transcriptCharCount": 8611,
+      "categoryCounts": {
+        "problem_context": 5,
+        "collaboration_culture": 6,
+        "product_flow": 26,
+        "performance_quality": 8,
+        "operations_infra": 29
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "performance_quality"
+      ]
+    },
+    {
+      "index": 57,
+      "id": "HaT3Owu-3Dk",
+      "title": "[프로젝트 2차 데모] 회고덕 - 함께 성장하는 회고 플랫폼",
+      "duration": "10:23",
+      "url": "https://www.youtube.com/watch?v=HaT3Owu-3Dk",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "회고덕",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/057-HaT3Owu-3Dk.ko.txt",
+      "transcriptLineCount": 274,
+      "transcriptCharCount": 7626,
+      "categoryCounts": {
+        "problem_context": 9,
+        "collaboration_culture": 11,
+        "product_flow": 22,
+        "performance_quality": 1,
+        "operations_infra": 29
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "index": 58,
+      "id": "LQRxmFMnFfo",
+      "title": "[프로젝트 2차 데모] 터놓고 - 면담은 찐하게, 예약은 손쉽게! 면담 예약 서비스",
+      "duration": "7:59",
+      "url": "https://www.youtube.com/watch?v=LQRxmFMnFfo",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "터놓고",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/058-LQRxmFMnFfo.ko.txt",
+      "transcriptLineCount": 201,
+      "transcriptCharCount": 5007,
+      "categoryCounts": {
+        "problem_context": 3,
+        "collaboration_culture": 7,
+        "product_flow": 24,
+        "performance_quality": 0,
+        "operations_infra": 10
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "index": 59,
+      "id": "G4uQTNYNanY",
+      "title": "[프로젝트 2차 데모] 모락 - 모임을 즐겁게, 편리하게!",
+      "duration": "11:15",
+      "url": "https://www.youtube.com/watch?v=G4uQTNYNanY",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "모락",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/059-G4uQTNYNanY.ko.txt",
+      "transcriptLineCount": 254,
+      "transcriptCharCount": 6616,
+      "categoryCounts": {
+        "problem_context": 11,
+        "collaboration_culture": 4,
+        "product_flow": 12,
+        "performance_quality": 0,
+        "operations_infra": 8
+      },
+      "topCategories": [
+        "product_flow",
+        "problem_context",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 60,
+      "id": "LeAnzN4oizU",
+      "title": "[프로젝트 2차 데모] 땡쿠 - 당신의 마음을 전달하세요",
+      "duration": "11:08",
+      "url": "https://www.youtube.com/watch?v=LeAnzN4oizU",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "땡쿠",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/060-LeAnzN4oizU.ko.txt",
+      "transcriptLineCount": 267,
+      "transcriptCharCount": 7168,
+      "categoryCounts": {
+        "problem_context": 5,
+        "collaboration_culture": 3,
+        "product_flow": 39,
+        "performance_quality": 0,
+        "operations_infra": 26
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 61,
+      "id": "QVOQI4lYX6Y",
+      "title": "[프로젝트 2차 데모] 꼭꼭 - 약속을 전달해요. 꼭꼭으로 간편하게!",
+      "duration": "14:04",
+      "url": "https://www.youtube.com/watch?v=QVOQI4lYX6Y",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "꼭꼭",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/061-QVOQI4lYX6Y.ko.txt",
+      "transcriptLineCount": 373,
+      "transcriptCharCount": 9917,
+      "categoryCounts": {
+        "problem_context": 13,
+        "collaboration_culture": 4,
+        "product_flow": 16,
+        "performance_quality": 2,
+        "operations_infra": 11
+      },
+      "topCategories": [
+        "product_flow",
+        "problem_context",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 62,
+      "id": "OwqWexXC80E",
+      "title": "[프로젝트 2차 데모] 체크메이트(구 모라고라) - 주제만 정해주세요 출첵은 제가 할게요!",
+      "duration": "10:07",
+      "url": "https://www.youtube.com/watch?v=OwqWexXC80E",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "체크 메이트",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/062-OwqWexXC80E.ko.txt",
+      "transcriptLineCount": 254,
+      "transcriptCharCount": 6890,
+      "categoryCounts": {
+        "problem_context": 4,
+        "collaboration_culture": 5,
+        "product_flow": 6,
+        "performance_quality": 0,
+        "operations_infra": 28
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "index": 63,
+      "id": "yH1d5MF6s54",
+      "title": "[프로젝트 2차 데모] 레벨로그 - 레벨 인터뷰의 모든 것",
+      "duration": "9:23",
+      "url": "https://www.youtube.com/watch?v=yH1d5MF6s54",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "레벨로그",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/063-yH1d5MF6s54.ko.txt",
+      "transcriptLineCount": 219,
+      "transcriptCharCount": 5829,
+      "categoryCounts": {
+        "problem_context": 10,
+        "collaboration_culture": 10,
+        "product_flow": 4,
+        "performance_quality": 1,
+        "operations_infra": 22
+      },
+      "topCategories": [
+        "operations_infra",
+        "problem_context",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "index": 64,
+      "id": "4rlNaKAW3Q4",
+      "title": "[프로젝트 2차 데모] F12 - 개발자의 모든 도구 F12",
+      "duration": "13:20",
+      "url": "https://www.youtube.com/watch?v=4rlNaKAW3Q4",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "F12",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/064-4rlNaKAW3Q4.ko.txt",
+      "transcriptLineCount": 320,
+      "transcriptCharCount": 8887,
+      "categoryCounts": {
+        "problem_context": 13,
+        "collaboration_culture": 2,
+        "product_flow": 24,
+        "performance_quality": 2,
+        "operations_infra": 24
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 65,
+      "id": "Opi3nITlQXc",
+      "title": "[프로젝트 2차 데모] 티타임 - 서로를 따뜻하게 채워주는 시간 티타임",
+      "duration": "7:11",
+      "url": "https://www.youtube.com/watch?v=Opi3nITlQXc",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "티타임",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/065-Opi3nITlQXc.ko.txt",
+      "transcriptLineCount": 175,
+      "transcriptCharCount": 4274,
+      "categoryCounts": {
+        "problem_context": 2,
+        "collaboration_culture": 5,
+        "product_flow": 7,
+        "performance_quality": 0,
+        "operations_infra": 1
+      },
+      "topCategories": [
+        "product_flow",
+        "collaboration_culture",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 66,
+      "id": "ZbXjua2uDC8",
+      "title": "[프로젝트 2차 데모] 공책 - 함께 사용하는 우리의 공간 우리가 체크하자!",
+      "duration": "9:41",
+      "url": "https://www.youtube.com/watch?v=ZbXjua2uDC8",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "공책",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/066-ZbXjua2uDC8.ko.txt",
+      "transcriptLineCount": 252,
+      "transcriptCharCount": 6824,
+      "categoryCounts": {
+        "problem_context": 7,
+        "collaboration_culture": 4,
+        "product_flow": 10,
+        "performance_quality": 0,
+        "operations_infra": 32
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 67,
+      "id": "H6rm16DesPo",
+      "title": "[프로젝트 2차 데모] 줍줍 - 사라지는 Slack 메시지 우리가 주워줄게!",
+      "duration": "12:09",
+      "url": "https://www.youtube.com/watch?v=H6rm16DesPo",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "줍줍",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/067-H6rm16DesPo.ko.txt",
+      "transcriptLineCount": 292,
+      "transcriptCharCount": 7674,
+      "categoryCounts": {
+        "problem_context": 5,
+        "collaboration_culture": 1,
+        "product_flow": 18,
+        "performance_quality": 2,
+        "operations_infra": 9
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 68,
+      "id": "ZZzh4RHO-Io",
+      "title": "[프로젝트 2차 데모] 속닥속닥 - 우리들만의 비밀 이야기",
+      "duration": "13:45",
+      "url": "https://www.youtube.com/watch?v=ZZzh4RHO-Io",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "속닥속닥",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/068-ZZzh4RHO-Io.ko.txt",
+      "transcriptLineCount": 333,
+      "transcriptCharCount": 8479,
+      "categoryCounts": {
+        "problem_context": 5,
+        "collaboration_culture": 1,
+        "product_flow": 14,
+        "performance_quality": 1,
+        "operations_infra": 17
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 69,
+      "id": "sgWyRIc5kUQ",
+      "title": "[프로젝트 2차 데모] 모아모아 - 스터디를 더 쉽고, 편리하게!",
+      "duration": "10:31",
+      "url": "https://www.youtube.com/watch?v=sgWyRIc5kUQ",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "모아모아",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/069-sgWyRIc5kUQ.ko.txt",
+      "transcriptLineCount": 233,
+      "transcriptCharCount": 6403,
+      "categoryCounts": {
+        "problem_context": 10,
+        "collaboration_culture": 12,
+        "product_flow": 17,
+        "performance_quality": 1,
+        "operations_infra": 24
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "index": 70,
+      "id": "FvhTuj_Cxvk",
+      "title": "[프로젝트 2차 데모] 모두 모여라 - 한눈에 보는 모임 서비스",
+      "duration": "8:57",
+      "url": "https://www.youtube.com/watch?v=FvhTuj_Cxvk",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "모두모여라",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/070-FvhTuj_Cxvk.ko.txt",
+      "transcriptLineCount": 187,
+      "transcriptCharCount": 4683,
+      "categoryCounts": {
+        "problem_context": 4,
+        "collaboration_culture": 12,
+        "product_flow": 2,
+        "performance_quality": 0,
+        "operations_infra": 5
+      },
+      "topCategories": [
+        "collaboration_culture",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 71,
+      "id": "ngafnm7K7O0",
+      "title": "[프로젝트 2차 데모] 달록 -달력이 기록을 공유할 때",
+      "duration": "10:23",
+      "url": "https://www.youtube.com/watch?v=ngafnm7K7O0",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "달록 -달력이 기록을 공유할 때",
+      "cohort": "기타",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/071-ngafnm7K7O0.ko.txt",
+      "transcriptLineCount": 283,
+      "transcriptCharCount": 7694,
+      "categoryCounts": {
+        "problem_context": 12,
+        "collaboration_culture": 2,
+        "product_flow": 20,
+        "performance_quality": 1,
+        "operations_infra": 45
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 72,
+      "id": "6fya54RMtzA",
+      "title": "[프로젝트 2차 데모] 공식 - 공유해줘 너의 지식",
+      "duration": "10:13",
+      "url": "https://www.youtube.com/watch?v=6fya54RMtzA",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "공식",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/072-6fya54RMtzA.ko.txt",
+      "transcriptLineCount": 217,
+      "transcriptCharCount": 5817,
+      "categoryCounts": {
+        "problem_context": 6,
+        "collaboration_culture": 6,
+        "product_flow": 16,
+        "performance_quality": 0,
+        "operations_infra": 12
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 73,
+      "id": "15sLUcwRz_U",
+      "title": "[프로젝트 2차 데모] 스모디 - 작심삼일에 지쳤을 때, Three More Days 스모디",
+      "duration": "12:39",
+      "url": "https://www.youtube.com/watch?v=15sLUcwRz_U",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "스모디",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/073-15sLUcwRz_U.ko.txt",
+      "transcriptLineCount": 326,
+      "transcriptCharCount": 9044,
+      "categoryCounts": {
+        "problem_context": 10,
+        "collaboration_culture": 3,
+        "product_flow": 34,
+        "performance_quality": 1,
+        "operations_infra": 38
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 74,
+      "id": "0ianPJCqdec",
+      "title": "[프로젝트 2차 데모] 내편 - 내 마음을 편지로",
+      "duration": "11:41",
+      "url": "https://www.youtube.com/watch?v=0ianPJCqdec",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "내편",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/074-0ianPJCqdec.ko.txt",
+      "transcriptLineCount": 288,
+      "transcriptCharCount": 8084,
+      "categoryCounts": {
+        "problem_context": 10,
+        "collaboration_culture": 12,
+        "product_flow": 3,
+        "performance_quality": 0,
+        "operations_infra": 32
+      },
+      "topCategories": [
+        "operations_infra",
+        "collaboration_culture",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 75,
+      "id": "AD5pNHNMyrA",
+      "title": "[프로젝트 1차 데모] 꼭꼭 - 약속을 전달해요. 꼭꼭으로 간편하게!",
+      "duration": "9:57",
+      "url": "https://www.youtube.com/watch?v=AD5pNHNMyrA",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "꼭꼭",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/075-AD5pNHNMyrA.ko.txt",
+      "transcriptLineCount": 248,
+      "transcriptCharCount": 6592,
+      "categoryCounts": {
+        "problem_context": 14,
+        "collaboration_culture": 8,
+        "product_flow": 6,
+        "performance_quality": 0,
+        "operations_infra": 2
+      },
+      "topCategories": [
+        "problem_context",
+        "collaboration_culture",
+        "product_flow"
+      ]
+    },
+    {
+      "index": 76,
+      "id": "AISjvmuPpM4",
+      "title": "[Private video]",
+      "duration": "NA",
+      "url": "https://www.youtube.com/watch?v=AISjvmuPpM4",
+      "stage": "비공개",
+      "projectName": "비공개 영상",
+      "cohort": "기타",
+      "transcriptStatus": "private",
+      "transcriptPath": ".temp/demo-day/clean/076-AISjvmuPpM4.ko.txt",
+      "transcriptLineCount": 1,
+      "transcriptCharCount": 36,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": []
+    },
+    {
+      "index": 77,
+      "id": "77dPR8V_yB4",
+      "title": "[프로젝트 1차 데모] 내편 - 내 마음을 편지로",
+      "duration": "8:06",
+      "url": "https://www.youtube.com/watch?v=77dPR8V_yB4",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "내편",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/077-77dPR8V_yB4.ko.txt",
+      "transcriptLineCount": 170,
+      "transcriptCharCount": 4779,
+      "categoryCounts": {
+        "problem_context": 6,
+        "collaboration_culture": 26,
+        "product_flow": 37,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": [
+        "product_flow",
+        "collaboration_culture",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 78,
+      "id": "aCVpyqzl5og",
+      "title": "[프로젝트 1차 데모] 회고덕 - 함께 성장하는 회고 플랫폼",
+      "duration": "11:58",
+      "url": "https://www.youtube.com/watch?v=aCVpyqzl5og",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "회고덕",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/078-aCVpyqzl5og.ko.txt",
+      "transcriptLineCount": 283,
+      "transcriptCharCount": 7699,
+      "categoryCounts": {
+        "problem_context": 10,
+        "collaboration_culture": 13,
+        "product_flow": 15,
+        "performance_quality": 0,
+        "operations_infra": 4
+      },
+      "topCategories": [
+        "product_flow",
+        "collaboration_culture",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 79,
+      "id": "HtgLVkDciRo",
+      "title": "[프로젝트 1차 데모] 스모디 - 작심삼일에 지쳤을 때, Three More Days 스모디",
+      "duration": "12:37",
+      "url": "https://www.youtube.com/watch?v=HtgLVkDciRo",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "스모디",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/079-HtgLVkDciRo.ko.txt",
+      "transcriptLineCount": 295,
+      "transcriptCharCount": 8346,
+      "categoryCounts": {
+        "problem_context": 8,
+        "collaboration_culture": 1,
+        "product_flow": 4,
+        "performance_quality": 1,
+        "operations_infra": 6
+      },
+      "topCategories": [
+        "problem_context",
+        "operations_infra",
+        "product_flow"
+      ]
+    },
+    {
+      "index": 80,
+      "id": "KTH4QVDk5Tc",
+      "title": "[프로젝트 1차 데모] 모아모아 - 스터디를 더 쉽고, 편리하게! 모아모아",
+      "duration": "7:16",
+      "url": "https://www.youtube.com/watch?v=KTH4QVDk5Tc",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "모아모아",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/080-KTH4QVDk5Tc.ko.txt",
+      "transcriptLineCount": 167,
+      "transcriptCharCount": 4419,
+      "categoryCounts": {
+        "problem_context": 5,
+        "collaboration_culture": 10,
+        "product_flow": 16,
+        "performance_quality": 2,
+        "operations_infra": 1
+      },
+      "topCategories": [
+        "product_flow",
+        "collaboration_culture",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 81,
+      "id": "-86HlsrqgJY",
+      "title": "[프로젝트 1차 데모] 모두모여라 - 한눈에 보는 모임 서비스",
+      "duration": "8:26",
+      "url": "https://www.youtube.com/watch?v=-86HlsrqgJY",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "모두모여라",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/081--86HlsrqgJY.ko.txt",
+      "transcriptLineCount": 198,
+      "transcriptCharCount": 5193,
+      "categoryCounts": {
+        "problem_context": 3,
+        "collaboration_culture": 39,
+        "product_flow": 12,
+        "performance_quality": 0,
+        "operations_infra": 1
+      },
+      "topCategories": [
+        "collaboration_culture",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 82,
+      "id": "4YsK4z3q2DI",
+      "title": "[프로젝트 1차 데모] 땡쿠 - 당신의 마음을 전달하세요. 땡쿠",
+      "duration": "8:51",
+      "url": "https://www.youtube.com/watch?v=4YsK4z3q2DI",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "땡쿠",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/082-4YsK4z3q2DI.ko.txt",
+      "transcriptLineCount": 214,
+      "transcriptCharCount": 5714,
+      "categoryCounts": {
+        "problem_context": 4,
+        "collaboration_culture": 16,
+        "product_flow": 6,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": [
+        "collaboration_culture",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 83,
+      "id": "CpEPET2jXO4",
+      "title": "[프로젝트 1차 데모] 달록 - 달력이 기록을 공유할 때, 달록",
+      "duration": "10:26",
+      "url": "https://www.youtube.com/watch?v=CpEPET2jXO4",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "달록",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/083-CpEPET2jXO4.ko.txt",
+      "transcriptLineCount": 269,
+      "transcriptCharCount": 7471,
+      "categoryCounts": {
+        "problem_context": 11,
+        "collaboration_culture": 13,
+        "product_flow": 24,
+        "performance_quality": 0,
+        "operations_infra": 4
+      },
+      "topCategories": [
+        "product_flow",
+        "collaboration_culture",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 84,
+      "id": "REILvP6YXy4",
+      "title": "[프로젝트 1차 데모] 공식 - 공유해줘 너의 지식",
+      "duration": "10:18",
+      "url": "https://www.youtube.com/watch?v=REILvP6YXy4",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "공식",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/084-REILvP6YXy4.ko.txt",
+      "transcriptLineCount": 256,
+      "transcriptCharCount": 7113,
+      "categoryCounts": {
+        "problem_context": 3,
+        "collaboration_culture": 6,
+        "product_flow": 10,
+        "performance_quality": 0,
+        "operations_infra": 11
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "index": 85,
+      "id": "6rfkFdJCxDw",
+      "title": "[프로젝트 1차 데모] 줍줍 - 사라지는 Slack 메시지 우리가 주워줄게!",
+      "duration": "8:44",
+      "url": "https://www.youtube.com/watch?v=6rfkFdJCxDw",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "줍줍",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/085-6rfkFdJCxDw.ko.txt",
+      "transcriptLineCount": 224,
+      "transcriptCharCount": 6379,
+      "categoryCounts": {
+        "problem_context": 20,
+        "collaboration_culture": 9,
+        "product_flow": 20,
+        "performance_quality": 0,
+        "operations_infra": 1
+      },
+      "topCategories": [
+        "problem_context",
+        "product_flow",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "index": 86,
+      "id": "VIvnIeUW0Dk",
+      "title": "[프로젝트 1차 데모] 속닥속닥 - 우리들만의 비밀이야기",
+      "duration": "10:19",
+      "url": "https://www.youtube.com/watch?v=VIvnIeUW0Dk",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "속닥속닥",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/086-VIvnIeUW0Dk.ko.txt",
+      "transcriptLineCount": 276,
+      "transcriptCharCount": 7445,
+      "categoryCounts": {
+        "problem_context": 10,
+        "collaboration_culture": 23,
+        "product_flow": 11,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": [
+        "collaboration_culture",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 87,
+      "id": "WbK7vyQ0azw",
+      "title": "[프로젝트 1차 데모] 모라고라 - 주제만 정해주세요. 출첵은 제가할게요!",
+      "duration": "11:23",
+      "url": "https://www.youtube.com/watch?v=WbK7vyQ0azw",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "체크 메이트",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/087-WbK7vyQ0azw.ko.txt",
+      "transcriptLineCount": 291,
+      "transcriptCharCount": 7956,
+      "categoryCounts": {
+        "problem_context": 11,
+        "collaboration_culture": 22,
+        "product_flow": 15,
+        "performance_quality": 0,
+        "operations_infra": 2
+      },
+      "topCategories": [
+        "collaboration_culture",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 88,
+      "id": "-WfwFTYKa90",
+      "title": "[프로젝트 1차 데모] 레벨로그 - 레벨 인터뷰의 모든 것",
+      "duration": "7:32",
+      "url": "https://www.youtube.com/watch?v=-WfwFTYKa90",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "레벨로그",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/088--WfwFTYKa90.ko.txt",
+      "transcriptLineCount": 171,
+      "transcriptCharCount": 4608,
+      "categoryCounts": {
+        "problem_context": 9,
+        "collaboration_culture": 7,
+        "product_flow": 3,
+        "performance_quality": 0,
+        "operations_infra": 4
+      },
+      "topCategories": [
+        "problem_context",
+        "collaboration_culture",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 89,
+      "id": "fUG-_s4z6Ww",
+      "title": "[프로젝트 1차 데모] 공책 - 함께 사용하는 우리의 공간 우리가 체크하자!",
+      "duration": "9:07",
+      "url": "https://www.youtube.com/watch?v=fUG-_s4z6Ww",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "공책",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/089-fUG-_s4z6Ww.ko.txt",
+      "transcriptLineCount": 227,
+      "transcriptCharCount": 5993,
+      "categoryCounts": {
+        "problem_context": 7,
+        "collaboration_culture": 14,
+        "product_flow": 10,
+        "performance_quality": 0,
+        "operations_infra": 3
+      },
+      "topCategories": [
+        "collaboration_culture",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 90,
+      "id": "hD-ItzSmBY8",
+      "title": "[프로젝트 1차 데모] F12 - 개발자의 모든 도구 F12",
+      "duration": "11:03",
+      "url": "https://www.youtube.com/watch?v=hD-ItzSmBY8",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "F12",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/090-hD-ItzSmBY8.ko.txt",
+      "transcriptLineCount": 278,
+      "transcriptCharCount": 7420,
+      "categoryCounts": {
+        "problem_context": 8,
+        "collaboration_culture": 6,
+        "product_flow": 28,
+        "performance_quality": 0,
+        "operations_infra": 5
+      },
+      "topCategories": [
+        "product_flow",
+        "problem_context",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "index": 91,
+      "id": "jpRnUjBax2A",
+      "title": "[프로젝트 1차 데모] 티타임 - 서로를 따뜻하게 채워주는 시간 티타임",
+      "duration": "5:09",
+      "url": "https://www.youtube.com/watch?v=jpRnUjBax2A",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "티타임",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/091-jpRnUjBax2A.ko.txt",
+      "transcriptLineCount": 124,
+      "transcriptCharCount": 3257,
+      "categoryCounts": {
+        "problem_context": 4,
+        "collaboration_culture": 11,
+        "product_flow": 17,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": [
+        "product_flow",
+        "collaboration_culture",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 92,
+      "id": "mKV3osPRtdc",
+      "title": "[프로젝트 1차 데모] 터놓고 - 면담은 찐하게, 예약은 손쉽게! 면담예약서비스",
+      "duration": "12:26",
+      "url": "https://www.youtube.com/watch?v=mKV3osPRtdc",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "터놓고",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/092-mKV3osPRtdc.ko.txt",
+      "transcriptLineCount": 313,
+      "transcriptCharCount": 8145,
+      "categoryCounts": {
+        "problem_context": 13,
+        "collaboration_culture": 32,
+        "product_flow": 28,
+        "performance_quality": 0,
+        "operations_infra": 1
+      },
+      "topCategories": [
+        "collaboration_culture",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 93,
+      "id": "R7JO6cLeyhU",
+      "title": "[프로젝트 1차 데모] 모락 - 모임을 즐겁게, 편리하게 모락",
+      "duration": "9:16",
+      "url": "https://www.youtube.com/watch?v=R7JO6cLeyhU",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "모락",
+      "cohort": "4기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/093-R7JO6cLeyhU.ko.txt",
+      "transcriptLineCount": 262,
+      "transcriptCharCount": 7363,
+      "categoryCounts": {
+        "problem_context": 7,
+        "collaboration_culture": 13,
+        "product_flow": 28,
+        "performance_quality": 1,
+        "operations_infra": 3
+      },
+      "topCategories": [
+        "product_flow",
+        "collaboration_culture",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 94,
+      "id": "AgMOaoXH758",
+      "title": "[프로젝트 5차 데모] 코드봐줘",
+      "duration": "10:11",
+      "url": "https://www.youtube.com/watch?v=AgMOaoXH758",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "코드봐줘",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/094-AgMOaoXH758.ko.txt",
+      "transcriptLineCount": 233,
+      "transcriptCharCount": 6560,
+      "categoryCounts": {
+        "problem_context": 8,
+        "collaboration_culture": 3,
+        "product_flow": 50,
+        "performance_quality": 18,
+        "operations_infra": 25
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "performance_quality"
+      ]
+    },
+    {
+      "index": 95,
+      "id": "Lpm0Jm5NMXM",
+      "title": "[프로젝트 5차 데모] 놀토",
+      "duration": "8:54",
+      "url": "https://www.youtube.com/watch?v=Lpm0Jm5NMXM",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "놀토",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/095-Lpm0Jm5NMXM.ko.txt",
+      "transcriptLineCount": 233,
+      "transcriptCharCount": 6417,
+      "categoryCounts": {
+        "problem_context": 7,
+        "collaboration_culture": 3,
+        "product_flow": 18,
+        "performance_quality": 16,
+        "operations_infra": 14
+      },
+      "topCategories": [
+        "product_flow",
+        "performance_quality",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 96,
+      "id": "-O9Tjhadb_0",
+      "title": "[프로젝트 5차 데모] Thank you for ___",
+      "duration": "9:47",
+      "url": "https://www.youtube.com/watch?v=-O9Tjhadb_0",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "Thank you for ___",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/096--O9Tjhadb_0.ko.txt",
+      "transcriptLineCount": 246,
+      "transcriptCharCount": 6611,
+      "categoryCounts": {
+        "problem_context": 6,
+        "collaboration_culture": 4,
+        "product_flow": 22,
+        "performance_quality": 7,
+        "operations_infra": 8
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "performance_quality"
+      ]
+    },
+    {
+      "index": 97,
+      "id": "at0f1d1xWlY",
+      "title": "[프로젝트 5차 데모] GPU 내껀데",
+      "duration": "10:14",
+      "url": "https://www.youtube.com/watch?v=at0f1d1xWlY",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "GPU 내껀데",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/097-at0f1d1xWlY.ko.txt",
+      "transcriptLineCount": 270,
+      "transcriptCharCount": 7632,
+      "categoryCounts": {
+        "problem_context": 5,
+        "collaboration_culture": 0,
+        "product_flow": 8,
+        "performance_quality": 25,
+        "operations_infra": 16
+      },
+      "topCategories": [
+        "performance_quality",
+        "operations_infra",
+        "product_flow"
+      ]
+    },
+    {
+      "index": 98,
+      "id": "06esvMK9oY0",
+      "title": "[프로젝트 5차 데모] 깃-들다",
+      "duration": "10:05",
+      "url": "https://www.youtube.com/watch?v=06esvMK9oY0",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "깃-들다",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/098-06esvMK9oY0.ko.txt",
+      "transcriptLineCount": 298,
+      "transcriptCharCount": 8464,
+      "categoryCounts": {
+        "problem_context": 12,
+        "collaboration_culture": 7,
+        "product_flow": 18,
+        "performance_quality": 43,
+        "operations_infra": 26
+      },
+      "topCategories": [
+        "performance_quality",
+        "operations_infra",
+        "product_flow"
+      ]
+    },
+    {
+      "index": 99,
+      "id": "h6XROPKDXvk",
+      "title": "[프로젝트 5차 데모] 여기서 만나",
+      "duration": "8:27",
+      "url": "https://www.youtube.com/watch?v=h6XROPKDXvk",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "여기서 만나",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/099-h6XROPKDXvk.ko.txt",
+      "transcriptLineCount": 212,
+      "transcriptCharCount": 5843,
+      "categoryCounts": {
+        "problem_context": 15,
+        "collaboration_culture": 1,
+        "product_flow": 8,
+        "performance_quality": 28,
+        "operations_infra": 9
+      },
+      "topCategories": [
+        "performance_quality",
+        "problem_context",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 100,
+      "id": "iWCHAB_vSOY",
+      "title": "[프로젝트 5차 데모] 백중원",
+      "duration": "8:50",
+      "url": "https://www.youtube.com/watch?v=iWCHAB_vSOY",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "백중원",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/100-iWCHAB_vSOY.ko.txt",
+      "transcriptLineCount": 229,
+      "transcriptCharCount": 6317,
+      "categoryCounts": {
+        "problem_context": 12,
+        "collaboration_culture": 2,
+        "product_flow": 23,
+        "performance_quality": 26,
+        "operations_infra": 42
+      },
+      "topCategories": [
+        "operations_infra",
+        "performance_quality",
+        "product_flow"
+      ]
+    },
+    {
+      "index": 101,
+      "id": "eKcaqWc2tLY",
+      "title": "[프로젝트 5차 데모] 찜꽁",
+      "duration": "8:18",
+      "url": "https://www.youtube.com/watch?v=eKcaqWc2tLY",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "찜꽁",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/101-eKcaqWc2tLY.ko.txt",
+      "transcriptLineCount": 225,
+      "transcriptCharCount": 6289,
+      "categoryCounts": {
+        "problem_context": 10,
+        "collaboration_culture": 0,
+        "product_flow": 24,
+        "performance_quality": 4,
+        "operations_infra": 20
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 102,
+      "id": "e6-KCS5I74k",
+      "title": "[프로젝트 5차 데모] babble",
+      "duration": "10:16",
+      "url": "https://www.youtube.com/watch?v=e6-KCS5I74k",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "babble",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/102-e6-KCS5I74k.ko.txt",
+      "transcriptLineCount": 306,
+      "transcriptCharCount": 8749,
+      "categoryCounts": {
+        "problem_context": 28,
+        "collaboration_culture": 3,
+        "product_flow": 27,
+        "performance_quality": 33,
+        "operations_infra": 13
+      },
+      "topCategories": [
+        "performance_quality",
+        "problem_context",
+        "product_flow"
+      ]
+    },
+    {
+      "index": 103,
+      "id": "o1kUk3MRGsM",
+      "title": "[프로젝트 5차 데모] 보고 또 보고",
+      "duration": "9:20",
+      "url": "https://www.youtube.com/watch?v=o1kUk3MRGsM",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "보고 또 보고",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/103-o1kUk3MRGsM.ko.txt",
+      "transcriptLineCount": 273,
+      "transcriptCharCount": 7667,
+      "categoryCounts": {
+        "problem_context": 28,
+        "collaboration_culture": 4,
+        "product_flow": 37,
+        "performance_quality": 26,
+        "operations_infra": 12
+      },
+      "topCategories": [
+        "product_flow",
+        "problem_context",
+        "performance_quality"
+      ]
+    },
+    {
+      "index": 104,
+      "id": "SaF-LEq3vxg",
+      "title": "[프로젝트 5차 데모] 다라쓰",
+      "duration": "9:37",
+      "url": "https://www.youtube.com/watch?v=SaF-LEq3vxg",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "다라쓰",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/104-SaF-LEq3vxg.ko.txt",
+      "transcriptLineCount": 260,
+      "transcriptCharCount": 7167,
+      "categoryCounts": {
+        "problem_context": 18,
+        "collaboration_culture": 1,
+        "product_flow": 9,
+        "performance_quality": 13,
+        "operations_infra": 39
+      },
+      "topCategories": [
+        "operations_infra",
+        "problem_context",
+        "performance_quality"
+      ]
+    },
+    {
+      "index": 105,
+      "id": "42xBB2aWSr4",
+      "title": "[프로젝트 5차 데모] 주절주절",
+      "duration": "10:01",
+      "url": "https://www.youtube.com/watch?v=42xBB2aWSr4",
+      "stage": "프로젝트 5차 데모",
+      "projectName": "주절주절",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/105-42xBB2aWSr4.ko.txt",
+      "transcriptLineCount": 282,
+      "transcriptCharCount": 7942,
+      "categoryCounts": {
+        "problem_context": 7,
+        "collaboration_culture": 4,
+        "product_flow": 7,
+        "performance_quality": 21,
+        "operations_infra": 8
+      },
+      "topCategories": [
+        "performance_quality",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 106,
+      "id": "Cbqglq4L6qg",
+      "title": "[프로젝트 4차 데모] babble",
+      "duration": "9:56",
+      "url": "https://www.youtube.com/watch?v=Cbqglq4L6qg",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "babble",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/106-Cbqglq4L6qg.ko.txt",
+      "transcriptLineCount": 292,
+      "transcriptCharCount": 8194,
+      "categoryCounts": {
+        "problem_context": 24,
+        "collaboration_culture": 3,
+        "product_flow": 21,
+        "performance_quality": 29,
+        "operations_infra": 37
+      },
+      "topCategories": [
+        "operations_infra",
+        "performance_quality",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 107,
+      "id": "dcPXY9-t4D8",
+      "title": "[프로젝트 4차 데모] 깃-들다",
+      "duration": "10:25",
+      "url": "https://www.youtube.com/watch?v=dcPXY9-t4D8",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "깃-들다",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/107-dcPXY9-t4D8.ko.txt",
+      "transcriptLineCount": 281,
+      "transcriptCharCount": 7842,
+      "categoryCounts": {
+        "problem_context": 11,
+        "collaboration_culture": 5,
+        "product_flow": 16,
+        "performance_quality": 13,
+        "operations_infra": 21
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "performance_quality"
+      ]
+    },
+    {
+      "index": 108,
+      "id": "DTIYDm8qzBg",
+      "title": "[프로젝트 4차 데모] Thank you for___",
+      "duration": "9:26",
+      "url": "https://www.youtube.com/watch?v=DTIYDm8qzBg",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "Thank you for ___",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/108-DTIYDm8qzBg.ko.txt",
+      "transcriptLineCount": 244,
+      "transcriptCharCount": 6493,
+      "categoryCounts": {
+        "problem_context": 3,
+        "collaboration_culture": 0,
+        "product_flow": 27,
+        "performance_quality": 4,
+        "operations_infra": 20
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "performance_quality"
+      ]
+    },
+    {
+      "index": 109,
+      "id": "FgZ9tAd-DGg",
+      "title": "[프로젝트 4차 데모] GPU 내껀데",
+      "duration": "10:02",
+      "url": "https://www.youtube.com/watch?v=FgZ9tAd-DGg",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "GPU 내껀데",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/109-FgZ9tAd-DGg.ko.txt",
+      "transcriptLineCount": 275,
+      "transcriptCharCount": 7671,
+      "categoryCounts": {
+        "problem_context": 12,
+        "collaboration_culture": 7,
+        "product_flow": 5,
+        "performance_quality": 16,
+        "operations_infra": 57
+      },
+      "topCategories": [
+        "operations_infra",
+        "performance_quality",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 110,
+      "id": "TKcpOz9visY",
+      "title": "[프로젝트 4차 데모] 보고 또 보고",
+      "duration": "9:38",
+      "url": "https://www.youtube.com/watch?v=TKcpOz9visY",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "보고 또 보고",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/110-TKcpOz9visY.ko.txt",
+      "transcriptLineCount": 261,
+      "transcriptCharCount": 7154,
+      "categoryCounts": {
+        "problem_context": 27,
+        "collaboration_culture": 3,
+        "product_flow": 27,
+        "performance_quality": 12,
+        "operations_infra": 27
+      },
+      "topCategories": [
+        "problem_context",
+        "product_flow",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 111,
+      "id": "hgxik8kFSHI",
+      "title": "[프로젝트 4차 데모] 찜꽁",
+      "duration": "9:22",
+      "url": "https://www.youtube.com/watch?v=hgxik8kFSHI",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "찜꽁",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/111-hgxik8kFSHI.ko.txt",
+      "transcriptLineCount": 206,
+      "transcriptCharCount": 5746,
+      "categoryCounts": {
+        "problem_context": 9,
+        "collaboration_culture": 0,
+        "product_flow": 42,
+        "performance_quality": 18,
+        "operations_infra": 17
+      },
+      "topCategories": [
+        "product_flow",
+        "performance_quality",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 112,
+      "id": "_Rolldacpik",
+      "title": "[프로젝트 4차 데모] 다라쓰",
+      "duration": "10:08",
+      "url": "https://www.youtube.com/watch?v=_Rolldacpik",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "다라쓰",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/112-_Rolldacpik.ko.txt",
+      "transcriptLineCount": 273,
+      "transcriptCharCount": 7735,
+      "categoryCounts": {
+        "problem_context": 19,
+        "collaboration_culture": 8,
+        "product_flow": 10,
+        "performance_quality": 16,
+        "operations_infra": 35
+      },
+      "topCategories": [
+        "operations_infra",
+        "problem_context",
+        "performance_quality"
+      ]
+    },
+    {
+      "index": 113,
+      "id": "3brLxRzKA2k",
+      "title": "[프로젝트 4차 데모] 놀토",
+      "duration": "9:20",
+      "url": "https://www.youtube.com/watch?v=3brLxRzKA2k",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "놀토",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/113-3brLxRzKA2k.ko.txt",
+      "transcriptLineCount": 227,
+      "transcriptCharCount": 6234,
+      "categoryCounts": {
+        "problem_context": 10,
+        "collaboration_culture": 4,
+        "product_flow": 15,
+        "performance_quality": 14,
+        "operations_infra": 21
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "performance_quality"
+      ]
+    },
+    {
+      "index": 114,
+      "id": "uxTmWUNJHm0",
+      "title": "[프로젝트 4차 데모] 백중원",
+      "duration": "10:15",
+      "url": "https://www.youtube.com/watch?v=uxTmWUNJHm0",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "백중원",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/114-uxTmWUNJHm0.ko.txt",
+      "transcriptLineCount": 256,
+      "transcriptCharCount": 7056,
+      "categoryCounts": {
+        "problem_context": 7,
+        "collaboration_culture": 3,
+        "product_flow": 13,
+        "performance_quality": 13,
+        "operations_infra": 36
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "performance_quality"
+      ]
+    },
+    {
+      "index": 115,
+      "id": "bUScDb_M1B8",
+      "title": "[프로젝트 4차 데모] 여기서 만나",
+      "duration": "8:28",
+      "url": "https://www.youtube.com/watch?v=bUScDb_M1B8",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "여기서 만나",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/115-bUScDb_M1B8.ko.txt",
+      "transcriptLineCount": 210,
+      "transcriptCharCount": 5856,
+      "categoryCounts": {
+        "problem_context": 5,
+        "collaboration_culture": 2,
+        "product_flow": 32,
+        "performance_quality": 14,
+        "operations_infra": 9
+      },
+      "topCategories": [
+        "product_flow",
+        "performance_quality",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 116,
+      "id": "jAVF3R6FGO4",
+      "title": "[프로젝트 4차 데모] 주절주절",
+      "duration": "9:56",
+      "url": "https://www.youtube.com/watch?v=jAVF3R6FGO4",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "주절주절",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/116-jAVF3R6FGO4.ko.txt",
+      "transcriptLineCount": 253,
+      "transcriptCharCount": 7018,
+      "categoryCounts": {
+        "problem_context": 20,
+        "collaboration_culture": 1,
+        "product_flow": 14,
+        "performance_quality": 24,
+        "operations_infra": 34
+      },
+      "topCategories": [
+        "operations_infra",
+        "performance_quality",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 117,
+      "id": "RnO8PfhAgWg",
+      "title": "[프로젝트 4차 데모] 코드봐줘",
+      "duration": "9:22",
+      "url": "https://www.youtube.com/watch?v=RnO8PfhAgWg",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "코드봐줘",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/117-RnO8PfhAgWg.ko.txt",
+      "transcriptLineCount": 241,
+      "transcriptCharCount": 6597,
+      "categoryCounts": {
+        "problem_context": 7,
+        "collaboration_culture": 3,
+        "product_flow": 38,
+        "performance_quality": 12,
+        "operations_infra": 28
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "performance_quality"
+      ]
+    },
+    {
+      "index": 118,
+      "id": "vzAw3ACZ_SA",
+      "title": "[프로젝트 3차 데모] 여기서 만나",
+      "duration": "6:23",
+      "url": "https://www.youtube.com/watch?v=vzAw3ACZ_SA",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "여기서 만나",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/118-vzAw3ACZ_SA.ko.txt",
+      "transcriptLineCount": 162,
+      "transcriptCharCount": 4472,
+      "categoryCounts": {
+        "problem_context": 8,
+        "collaboration_culture": 1,
+        "product_flow": 13,
+        "performance_quality": 2,
+        "operations_infra": 32
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 119,
+      "id": "x146_oAnB-c",
+      "title": "[프로젝트 3차 데모] 찜꽁",
+      "duration": "9:05",
+      "url": "https://www.youtube.com/watch?v=x146_oAnB-c",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "찜꽁",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/119-x146_oAnB-c.ko.txt",
+      "transcriptLineCount": 254,
+      "transcriptCharCount": 7208,
+      "categoryCounts": {
+        "problem_context": 17,
+        "collaboration_culture": 3,
+        "product_flow": 28,
+        "performance_quality": 1,
+        "operations_infra": 16
+      },
+      "topCategories": [
+        "product_flow",
+        "problem_context",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 120,
+      "id": "D-uOPTNPrT8",
+      "title": "[프로젝트 3차 데모] 백중원",
+      "duration": "8:13",
+      "url": "https://www.youtube.com/watch?v=D-uOPTNPrT8",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "백중원",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/120-D-uOPTNPrT8.ko.txt",
+      "transcriptLineCount": 207,
+      "transcriptCharCount": 5628,
+      "categoryCounts": {
+        "problem_context": 11,
+        "collaboration_culture": 7,
+        "product_flow": 14,
+        "performance_quality": 2,
+        "operations_infra": 47
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 121,
+      "id": "VOSoIIGjdI8",
+      "title": "[프로젝트 3차 데모] 깃-들다",
+      "duration": "9:15",
+      "url": "https://www.youtube.com/watch?v=VOSoIIGjdI8",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "깃-들다",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/121-VOSoIIGjdI8.ko.txt",
+      "transcriptLineCount": 254,
+      "transcriptCharCount": 7014,
+      "categoryCounts": {
+        "problem_context": 6,
+        "collaboration_culture": 2,
+        "product_flow": 16,
+        "performance_quality": 1,
+        "operations_infra": 48
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 122,
+      "id": "F6GWmmGNmUY",
+      "title": "[프로젝트 3차 데모] babble",
+      "duration": "9:26",
+      "url": "https://www.youtube.com/watch?v=F6GWmmGNmUY",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "babble",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/122-F6GWmmGNmUY.ko.txt",
+      "transcriptLineCount": 237,
+      "transcriptCharCount": 6340,
+      "categoryCounts": {
+        "problem_context": 9,
+        "collaboration_culture": 4,
+        "product_flow": 16,
+        "performance_quality": 4,
+        "operations_infra": 40
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 123,
+      "id": "UU12hbulYB0",
+      "title": "[프로젝트 3차 데모] 코드봐줘",
+      "duration": "9:48",
+      "url": "https://www.youtube.com/watch?v=UU12hbulYB0",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "코드봐줘",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/123-UU12hbulYB0.ko.txt",
+      "transcriptLineCount": 257,
+      "transcriptCharCount": 7120,
+      "categoryCounts": {
+        "problem_context": 4,
+        "collaboration_culture": 7,
+        "product_flow": 32,
+        "performance_quality": 3,
+        "operations_infra": 67
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "index": 124,
+      "id": "XGExdqUYBBY",
+      "title": "[프로젝트 3차 데모] 놀토",
+      "duration": "9:15",
+      "url": "https://www.youtube.com/watch?v=XGExdqUYBBY",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "놀토",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/124-XGExdqUYBBY.ko.txt",
+      "transcriptLineCount": 146,
+      "transcriptCharCount": 5955,
+      "categoryCounts": {
+        "problem_context": 8,
+        "collaboration_culture": 7,
+        "product_flow": 25,
+        "performance_quality": 0,
+        "operations_infra": 43
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 125,
+      "id": "8hru3T-U_AE",
+      "title": "[프로젝트 3차 데모] Thank you for___",
+      "duration": "9:44",
+      "url": "https://www.youtube.com/watch?v=8hru3T-U_AE",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "Thank you for ___",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/125-8hru3T-U_AE.ko.txt",
+      "transcriptLineCount": 153,
+      "transcriptCharCount": 5932,
+      "categoryCounts": {
+        "problem_context": 1,
+        "collaboration_culture": 2,
+        "product_flow": 32,
+        "performance_quality": 8,
+        "operations_infra": 31
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "performance_quality"
+      ]
+    },
+    {
+      "index": 126,
+      "id": "cI6DcSxg__g",
+      "title": "[프로젝트 3차 데모] GPU 내껀데",
+      "duration": "9:24",
+      "url": "https://www.youtube.com/watch?v=cI6DcSxg__g",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "GPU 내껀데",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/126-cI6DcSxg__g.ko.txt",
+      "transcriptLineCount": 149,
+      "transcriptCharCount": 6055,
+      "categoryCounts": {
+        "problem_context": 14,
+        "collaboration_culture": 0,
+        "product_flow": 8,
+        "performance_quality": 2,
+        "operations_infra": 26
+      },
+      "topCategories": [
+        "operations_infra",
+        "problem_context",
+        "product_flow"
+      ]
+    },
+    {
+      "index": 127,
+      "id": "RjfRiJBg65M",
+      "title": "[프로젝트 3차 데모] 다라쓰",
+      "duration": "9:13",
+      "url": "https://www.youtube.com/watch?v=RjfRiJBg65M",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "다라쓰",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/127-RjfRiJBg65M.ko.txt",
+      "transcriptLineCount": 247,
+      "transcriptCharCount": 6777,
+      "categoryCounts": {
+        "problem_context": 9,
+        "collaboration_culture": 2,
+        "product_flow": 15,
+        "performance_quality": 6,
+        "operations_infra": 28
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 128,
+      "id": "Syd2tk40Xp0",
+      "title": "[프로젝트 3차 데모] 보고 또 보고",
+      "duration": "9:35",
+      "url": "https://www.youtube.com/watch?v=Syd2tk40Xp0",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "보고 또 보고",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/128-Syd2tk40Xp0.ko.txt",
+      "transcriptLineCount": 150,
+      "transcriptCharCount": 5749,
+      "categoryCounts": {
+        "problem_context": 17,
+        "collaboration_culture": 4,
+        "product_flow": 6,
+        "performance_quality": 1,
+        "operations_infra": 26
+      },
+      "topCategories": [
+        "operations_infra",
+        "problem_context",
+        "product_flow"
+      ]
+    },
+    {
+      "index": 129,
+      "id": "eumEIMeQ7n4",
+      "title": "[프로젝트 3차 데모] 주절주절",
+      "duration": "9:48",
+      "url": "https://www.youtube.com/watch?v=eumEIMeQ7n4",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "주절주절",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/129-eumEIMeQ7n4.ko.txt",
+      "transcriptLineCount": 154,
+      "transcriptCharCount": 6201,
+      "categoryCounts": {
+        "problem_context": 9,
+        "collaboration_culture": 7,
+        "product_flow": 17,
+        "performance_quality": 3,
+        "operations_infra": 34
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 130,
+      "id": "qXhA1myioA8",
+      "title": "[프로젝트 2차 데모] 코드봐줘",
+      "duration": "9:05",
+      "url": "https://www.youtube.com/watch?v=qXhA1myioA8",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "코드봐줘",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/130-qXhA1myioA8.ko.txt",
+      "transcriptLineCount": 130,
+      "transcriptCharCount": 5031,
+      "categoryCounts": {
+        "problem_context": 3,
+        "collaboration_culture": 2,
+        "product_flow": 20,
+        "performance_quality": 2,
+        "operations_infra": 23
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 131,
+      "id": "N23qrGi9PJk",
+      "title": "[프로젝트 2차 데모] GPU 내껀데",
+      "duration": "8:04",
+      "url": "https://www.youtube.com/watch?v=N23qrGi9PJk",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "GPU 내껀데",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/131-N23qrGi9PJk.ko.txt",
+      "transcriptLineCount": 109,
+      "transcriptCharCount": 4365,
+      "categoryCounts": {
+        "problem_context": 4,
+        "collaboration_culture": 0,
+        "product_flow": 20,
+        "performance_quality": 1,
+        "operations_infra": 19
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 132,
+      "id": "sHMJUhPcDJI",
+      "title": "[프로젝트 2차 데모] 놀토",
+      "duration": "9:30",
+      "url": "https://www.youtube.com/watch?v=sHMJUhPcDJI",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "놀토",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/132-sHMJUhPcDJI.ko.txt",
+      "transcriptLineCount": 141,
+      "transcriptCharCount": 5274,
+      "categoryCounts": {
+        "problem_context": 3,
+        "collaboration_culture": 2,
+        "product_flow": 10,
+        "performance_quality": 1,
+        "operations_infra": 29
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 133,
+      "id": "7vFGSX2K-nw",
+      "title": "[프로젝트 2차 데모] 여기서 만나",
+      "duration": "9:14",
+      "url": "https://www.youtube.com/watch?v=7vFGSX2K-nw",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "여기서 만나",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/133-7vFGSX2K-nw.ko.txt",
+      "transcriptLineCount": 125,
+      "transcriptCharCount": 5019,
+      "categoryCounts": {
+        "problem_context": 5,
+        "collaboration_culture": 6,
+        "product_flow": 23,
+        "performance_quality": 0,
+        "operations_infra": 29
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "index": 134,
+      "id": "A9fWj1cC_i8",
+      "title": "[프로젝트 2차 데모] 찜꽁",
+      "duration": "7:58",
+      "url": "https://www.youtube.com/watch?v=A9fWj1cC_i8",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "찜꽁",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/134-A9fWj1cC_i8.ko.txt",
+      "transcriptLineCount": 131,
+      "transcriptCharCount": 5128,
+      "categoryCounts": {
+        "problem_context": 6,
+        "collaboration_culture": 2,
+        "product_flow": 23,
+        "performance_quality": 4,
+        "operations_infra": 22
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 135,
+      "id": "ysz3Zbiy11I",
+      "title": "[프로젝트 2차 데모] 다라쓰",
+      "duration": "8:17",
+      "url": "https://www.youtube.com/watch?v=ysz3Zbiy11I",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "다라쓰",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/135-ysz3Zbiy11I.ko.txt",
+      "transcriptLineCount": 125,
+      "transcriptCharCount": 4891,
+      "categoryCounts": {
+        "problem_context": 4,
+        "collaboration_culture": 4,
+        "product_flow": 10,
+        "performance_quality": 2,
+        "operations_infra": 30
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 136,
+      "id": "-tM9mIZM88Q",
+      "title": "[프로젝트 2차 데모] Thank you for ___",
+      "duration": "8:43",
+      "url": "https://www.youtube.com/watch?v=-tM9mIZM88Q",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "Thank you for ___",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/136--tM9mIZM88Q.ko.txt",
+      "transcriptLineCount": 136,
+      "transcriptCharCount": 5101,
+      "categoryCounts": {
+        "problem_context": 3,
+        "collaboration_culture": 4,
+        "product_flow": 27,
+        "performance_quality": 1,
+        "operations_infra": 11
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "index": 137,
+      "id": "cqjXMq9cmKA",
+      "title": "[프로젝트 2차 데모] 주절주절",
+      "duration": "9:13",
+      "url": "https://www.youtube.com/watch?v=cqjXMq9cmKA",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "주절주절",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/137-cqjXMq9cmKA.ko.txt",
+      "transcriptLineCount": 158,
+      "transcriptCharCount": 6409,
+      "categoryCounts": {
+        "problem_context": 6,
+        "collaboration_culture": 7,
+        "product_flow": 13,
+        "performance_quality": 2,
+        "operations_infra": 33
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "index": 138,
+      "id": "2tsH6a-CFlQ",
+      "title": "[프로젝트 2차 데모] 깃-들다",
+      "duration": "8:25",
+      "url": "https://www.youtube.com/watch?v=2tsH6a-CFlQ",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "깃-들다",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/138-2tsH6a-CFlQ.ko.txt",
+      "transcriptLineCount": 130,
+      "transcriptCharCount": 5469,
+      "categoryCounts": {
+        "problem_context": 7,
+        "collaboration_culture": 3,
+        "product_flow": 11,
+        "performance_quality": 8,
+        "operations_infra": 18
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "performance_quality"
+      ]
+    },
+    {
+      "index": 139,
+      "id": "hOUv1KaJ0pQ",
+      "title": "[프로젝트 2차 데모] 백중원",
+      "duration": "8:22",
+      "url": "https://www.youtube.com/watch?v=hOUv1KaJ0pQ",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "백중원",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/139-hOUv1KaJ0pQ.ko.txt",
+      "transcriptLineCount": 135,
+      "transcriptCharCount": 5069,
+      "categoryCounts": {
+        "problem_context": 2,
+        "collaboration_culture": 7,
+        "product_flow": 12,
+        "performance_quality": 2,
+        "operations_infra": 35
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "index": 140,
+      "id": "83-FOn22OvQ",
+      "title": "[프로젝트 2차 데모] 보고 또 보고",
+      "duration": "7:02",
+      "url": "https://www.youtube.com/watch?v=83-FOn22OvQ",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "보고 또 보고",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/140-83-FOn22OvQ.ko.txt",
+      "transcriptLineCount": 111,
+      "transcriptCharCount": 4504,
+      "categoryCounts": {
+        "problem_context": 9,
+        "collaboration_culture": 4,
+        "product_flow": 26,
+        "performance_quality": 5,
+        "operations_infra": 14
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 141,
+      "id": "0XjzcG01kPk",
+      "title": "[프로젝트 1차 데모] 코드봐줘",
+      "duration": "7:40",
+      "url": "https://www.youtube.com/watch?v=0XjzcG01kPk",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "코드봐줘",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/141-0XjzcG01kPk.ko.txt",
+      "transcriptLineCount": 96,
+      "transcriptCharCount": 3771,
+      "categoryCounts": {
+        "problem_context": 2,
+        "collaboration_culture": 5,
+        "product_flow": 52,
+        "performance_quality": 0,
+        "operations_infra": 7
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "index": 142,
+      "id": "eNDTbh6q8h4",
+      "title": "[프로젝트 1차 데모] 여기서 만나",
+      "duration": "5:49",
+      "url": "https://www.youtube.com/watch?v=eNDTbh6q8h4",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "여기서 만나",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/142-eNDTbh6q8h4.ko.txt",
+      "transcriptLineCount": 90,
+      "transcriptCharCount": 3538,
+      "categoryCounts": {
+        "problem_context": 1,
+        "collaboration_culture": 6,
+        "product_flow": 14,
+        "performance_quality": 0,
+        "operations_infra": 3
+      },
+      "topCategories": [
+        "product_flow",
+        "collaboration_culture",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 143,
+      "id": "BkGC7_OUYCI",
+      "title": "[프로젝트 1차 데모] 보고 또 보고",
+      "duration": "7:44",
+      "url": "https://www.youtube.com/watch?v=BkGC7_OUYCI",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "보고 또 보고",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/143-BkGC7_OUYCI.ko.txt",
+      "transcriptLineCount": 119,
+      "transcriptCharCount": 4580,
+      "categoryCounts": {
+        "problem_context": 15,
+        "collaboration_culture": 3,
+        "product_flow": 33,
+        "performance_quality": 0,
+        "operations_infra": 3
+      },
+      "topCategories": [
+        "product_flow",
+        "problem_context",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "index": 144,
+      "id": "sgl9uh205UE",
+      "title": "[프로젝트 1차 데모] 백중원",
+      "duration": "4:06",
+      "url": "https://www.youtube.com/watch?v=sgl9uh205UE",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "백중원",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/144-sgl9uh205UE.ko.txt",
+      "transcriptLineCount": 63,
+      "transcriptCharCount": 2120,
+      "categoryCounts": {
+        "problem_context": 1,
+        "collaboration_culture": 4,
+        "product_flow": 15,
+        "performance_quality": 0,
+        "operations_infra": 4
+      },
+      "topCategories": [
+        "product_flow",
+        "collaboration_culture",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 145,
+      "id": "5kRDbvO1eKI",
+      "title": "[프로젝트 1차 데모] 놀토",
+      "duration": "7:49",
+      "url": "https://www.youtube.com/watch?v=5kRDbvO1eKI",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "놀토",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/145-5kRDbvO1eKI.ko.txt",
+      "transcriptLineCount": 112,
+      "transcriptCharCount": 4313,
+      "categoryCounts": {
+        "problem_context": 5,
+        "collaboration_culture": 2,
+        "product_flow": 15,
+        "performance_quality": 0,
+        "operations_infra": 2
+      },
+      "topCategories": [
+        "product_flow",
+        "problem_context",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "index": 146,
+      "id": "ifTJ5Cee72s",
+      "title": "[프로젝트 1차 데모] babble",
+      "duration": "8:02",
+      "url": "https://www.youtube.com/watch?v=ifTJ5Cee72s",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "babble",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/146-ifTJ5Cee72s.ko.txt",
+      "transcriptLineCount": 129,
+      "transcriptCharCount": 4919,
+      "categoryCounts": {
+        "problem_context": 5,
+        "collaboration_culture": 5,
+        "product_flow": 31,
+        "performance_quality": 0,
+        "operations_infra": 5
+      },
+      "topCategories": [
+        "product_flow",
+        "problem_context",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "index": 147,
+      "id": "A_CtcuMcieY",
+      "title": "[프로젝트 1차 데모] 다라쓰",
+      "duration": "7:50",
+      "url": "https://www.youtube.com/watch?v=A_CtcuMcieY",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "다라쓰",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/147-A_CtcuMcieY.ko.txt",
+      "transcriptLineCount": 117,
+      "transcriptCharCount": 4438,
+      "categoryCounts": {
+        "problem_context": 4,
+        "collaboration_culture": 11,
+        "product_flow": 42,
+        "performance_quality": 0,
+        "operations_infra": 27
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "index": 148,
+      "id": "NVrhdrd9z4o",
+      "title": "[프로젝트 1차 데모] 찜꽁",
+      "duration": "5:45",
+      "url": "https://www.youtube.com/watch?v=NVrhdrd9z4o",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "찜꽁",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/148-NVrhdrd9z4o.ko.txt",
+      "transcriptLineCount": 78,
+      "transcriptCharCount": 2880,
+      "categoryCounts": {
+        "problem_context": 8,
+        "collaboration_culture": 0,
+        "product_flow": 34,
+        "performance_quality": 0,
+        "operations_infra": 8
+      },
+      "topCategories": [
+        "product_flow",
+        "problem_context",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 149,
+      "id": "qLuCzTckx98",
+      "title": "[프로젝트 1차 데모] 주절주절",
+      "duration": "7:58",
+      "url": "https://www.youtube.com/watch?v=qLuCzTckx98",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "주절주절",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/149-qLuCzTckx98.ko.txt",
+      "transcriptLineCount": 121,
+      "transcriptCharCount": 5039,
+      "categoryCounts": {
+        "problem_context": 10,
+        "collaboration_culture": 7,
+        "product_flow": 14,
+        "performance_quality": 0,
+        "operations_infra": 6
+      },
+      "topCategories": [
+        "product_flow",
+        "problem_context",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "index": 150,
+      "id": "BtscqlLijPE",
+      "title": "[프로젝트 1차 데모] Thank you for___",
+      "duration": "7:42",
+      "url": "https://www.youtube.com/watch?v=BtscqlLijPE",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "Thank you for ___",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/150-BtscqlLijPE.ko.txt",
+      "transcriptLineCount": 115,
+      "transcriptCharCount": 4335,
+      "categoryCounts": {
+        "problem_context": 2,
+        "collaboration_culture": 5,
+        "product_flow": 24,
+        "performance_quality": 3,
+        "operations_infra": 3
+      },
+      "topCategories": [
+        "product_flow",
+        "collaboration_culture",
+        "performance_quality"
+      ]
+    },
+    {
+      "index": 151,
+      "id": "3GnU2OLGoAI",
+      "title": "[프로젝트 1차 데모] GPU 내껀데",
+      "duration": "6:42",
+      "url": "https://www.youtube.com/watch?v=3GnU2OLGoAI",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "GPU 내껀데",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/151-3GnU2OLGoAI.ko.txt",
+      "transcriptLineCount": 101,
+      "transcriptCharCount": 4020,
+      "categoryCounts": {
+        "problem_context": 9,
+        "collaboration_culture": 6,
+        "product_flow": 20,
+        "performance_quality": 1,
+        "operations_infra": 16
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 152,
+      "id": "kMf7Zt5NEnI",
+      "title": "[프로젝트 1차 데모] 깃-들다",
+      "duration": "8:12",
+      "url": "https://www.youtube.com/watch?v=kMf7Zt5NEnI",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "깃-들다",
+      "cohort": "5기",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/152-kMf7Zt5NEnI.ko.txt",
+      "transcriptLineCount": 123,
+      "transcriptCharCount": 4697,
+      "categoryCounts": {
+        "problem_context": 8,
+        "collaboration_culture": 5,
+        "product_flow": 7,
+        "performance_quality": 1,
+        "operations_infra": 2
+      },
+      "topCategories": [
+        "problem_context",
+        "product_flow",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "index": 153,
+      "id": "EuMUMu4TJZ4",
+      "title": "[프로젝트 소개] Taggle",
+      "duration": "4:09",
+      "url": "https://www.youtube.com/watch?v=EuMUMu4TJZ4",
+      "stage": "프로젝트 소개",
+      "projectName": "Taggle",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/153-EuMUMu4TJZ4.ko.txt",
+      "transcriptLineCount": 14,
+      "transcriptCharCount": 216,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": []
+    },
+    {
+      "index": 154,
+      "id": "ZcFQoPsrsRk",
+      "title": "[프로젝트 소개] Slidemd",
+      "duration": "1:27",
+      "url": "https://www.youtube.com/watch?v=ZcFQoPsrsRk",
+      "stage": "프로젝트 소개",
+      "projectName": "Slidemd",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "no_captions",
+      "transcriptPath": ".temp/demo-day/clean/154-ZcFQoPsrsRk.ko.txt",
+      "transcriptLineCount": 1,
+      "transcriptCharCount": 39,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": []
+    },
+    {
+      "index": 155,
+      "id": "ECl14dt7sQU",
+      "title": "[프로젝트 소개] 직고래",
+      "duration": "2:53",
+      "url": "https://www.youtube.com/watch?v=ECl14dt7sQU",
+      "stage": "프로젝트 소개",
+      "projectName": "직고래",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/155-ECl14dt7sQU.ko.txt",
+      "transcriptLineCount": 5,
+      "transcriptCharCount": 108,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": []
+    },
+    {
+      "index": 156,
+      "id": "YkgeXlQC_ak",
+      "title": "[프로젝트 소개] Peloton",
+      "duration": "3:19",
+      "url": "https://www.youtube.com/watch?v=YkgeXlQC_ak",
+      "stage": "프로젝트 소개",
+      "projectName": "Peloton",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "no_captions",
+      "transcriptPath": ".temp/demo-day/clean/156-YkgeXlQC_ak.ko.txt",
+      "transcriptLineCount": 1,
+      "transcriptCharCount": 39,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": []
+    },
+    {
+      "index": 157,
+      "id": "Dq5JfeE-u7c",
+      "title": "[프로젝트 소개] 도란도란",
+      "duration": "1:55",
+      "url": "https://www.youtube.com/watch?v=Dq5JfeE-u7c",
+      "stage": "프로젝트 소개",
+      "projectName": "도란도란",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/157-Dq5JfeE-u7c.ko.txt",
+      "transcriptLineCount": 29,
+      "transcriptCharCount": 747,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 1,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": [
+        "product_flow"
+      ]
+    },
+    {
+      "index": 158,
+      "id": "RcDSNdenpho",
+      "title": "[프로젝트 소개] CocktailPick",
+      "duration": "4:44",
+      "url": "https://www.youtube.com/watch?v=RcDSNdenpho",
+      "stage": "프로젝트 소개",
+      "projectName": "CocktailPick",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/158-RcDSNdenpho.ko.txt",
+      "transcriptLineCount": 74,
+      "transcriptCharCount": 2887,
+      "categoryCounts": {
+        "problem_context": 1,
+        "collaboration_culture": 1,
+        "product_flow": 16,
+        "performance_quality": 0,
+        "operations_infra": 5
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 159,
+      "id": "YFzIuaXG4AE",
+      "title": "[프로젝트 소개] 우리 동네 캡짱",
+      "duration": "6:09",
+      "url": "https://www.youtube.com/watch?v=YFzIuaXG4AE",
+      "stage": "프로젝트 소개",
+      "projectName": "우리 동네 캡짱",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "no_captions",
+      "transcriptPath": ".temp/demo-day/clean/159-YFzIuaXG4AE.ko.txt",
+      "transcriptLineCount": 1,
+      "transcriptCharCount": 39,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": []
+    },
+    {
+      "index": 160,
+      "id": "VRKsV9JpTEQ",
+      "title": "[프로젝트 소개] Devbie",
+      "duration": "4:04",
+      "url": "https://www.youtube.com/watch?v=VRKsV9JpTEQ",
+      "stage": "프로젝트 소개",
+      "projectName": "Devbie",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/160-VRKsV9JpTEQ.ko.txt",
+      "transcriptLineCount": 52,
+      "transcriptCharCount": 1101,
+      "categoryCounts": {
+        "problem_context": 2,
+        "collaboration_culture": 0,
+        "product_flow": 1,
+        "performance_quality": 0,
+        "operations_infra": 2
+      },
+      "topCategories": [
+        "problem_context",
+        "operations_infra",
+        "product_flow"
+      ]
+    },
+    {
+      "index": 161,
+      "id": "2xjXCl2Hdp8",
+      "title": "[프로젝트 소개] 미소",
+      "duration": "1:36",
+      "url": "https://www.youtube.com/watch?v=2xjXCl2Hdp8",
+      "stage": "프로젝트 소개",
+      "projectName": "미소",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/161-2xjXCl2Hdp8.ko.txt",
+      "transcriptLineCount": 7,
+      "transcriptCharCount": 106,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": []
+    },
+    {
+      "index": 162,
+      "id": "atpizUjsY68",
+      "title": "[프로젝트 소개] 새벽",
+      "duration": "2:59",
+      "url": "https://www.youtube.com/watch?v=atpizUjsY68",
+      "stage": "프로젝트 소개",
+      "projectName": "새벽",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "no_captions",
+      "transcriptPath": ".temp/demo-day/clean/162-atpizUjsY68.ko.txt",
+      "transcriptLineCount": 1,
+      "transcriptCharCount": 39,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": []
+    },
+    {
+      "index": 163,
+      "id": "7rT2heghh3M",
+      "title": "[프로젝트 4차 데모] 언더독스의 Devbie",
+      "duration": "8:37",
+      "url": "https://www.youtube.com/watch?v=7rT2heghh3M",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "Devbie",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/163-7rT2heghh3M.ko.txt",
+      "transcriptLineCount": 125,
+      "transcriptCharCount": 4661,
+      "categoryCounts": {
+        "problem_context": 6,
+        "collaboration_culture": 11,
+        "product_flow": 5,
+        "performance_quality": 0,
+        "operations_infra": 1
+      },
+      "topCategories": [
+        "collaboration_culture",
+        "problem_context",
+        "product_flow"
+      ]
+    },
+    {
+      "index": 164,
+      "id": "shq5CLRWB_I",
+      "title": "[프로젝트 4차 데모] 셀러리컴퍼니의 Seller, lee",
+      "duration": "7:41",
+      "url": "https://www.youtube.com/watch?v=shq5CLRWB_I",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "Seller, lee",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/164-shq5CLRWB_I.ko.txt",
+      "transcriptLineCount": 107,
+      "transcriptCharCount": 3920,
+      "categoryCounts": {
+        "problem_context": 7,
+        "collaboration_culture": 2,
+        "product_flow": 6,
+        "performance_quality": 0,
+        "operations_infra": 3
+      },
+      "topCategories": [
+        "problem_context",
+        "product_flow",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 165,
+      "id": "fuAeAjQB2cc",
+      "title": "[프로젝트 4차 데모] 이따비의 우리동네캡짱",
+      "duration": "9:56",
+      "url": "https://www.youtube.com/watch?v=fuAeAjQB2cc",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "우리 동네 캡짱",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/165-fuAeAjQB2cc.ko.txt",
+      "transcriptLineCount": 144,
+      "transcriptCharCount": 5289,
+      "categoryCounts": {
+        "problem_context": 2,
+        "collaboration_culture": 21,
+        "product_flow": 4,
+        "performance_quality": 0,
+        "operations_infra": 1
+      },
+      "topCategories": [
+        "collaboration_culture",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 166,
+      "id": "QfM_UYUbv48",
+      "title": "[프로젝트 4차 데모] 마시는 여섯들의 칵테일픽",
+      "duration": "13:22",
+      "url": "https://www.youtube.com/watch?v=QfM_UYUbv48",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "칵테일픽",
+      "cohort": "기타",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/166-QfM_UYUbv48.ko.txt",
+      "transcriptLineCount": 204,
+      "transcriptCharCount": 8021,
+      "categoryCounts": {
+        "problem_context": 13,
+        "collaboration_culture": 37,
+        "product_flow": 8,
+        "performance_quality": 1,
+        "operations_infra": 12
+      },
+      "topCategories": [
+        "collaboration_culture",
+        "problem_context",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 167,
+      "id": "qLrSQ_Yi_Ms",
+      "title": "[프로젝트 4차 데모] 14층녀석들의 Peloton",
+      "duration": "7:54",
+      "url": "https://www.youtube.com/watch?v=qLrSQ_Yi_Ms",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "Peloton",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/167-qLrSQ_Yi_Ms.ko.txt",
+      "transcriptLineCount": 117,
+      "transcriptCharCount": 4949,
+      "categoryCounts": {
+        "problem_context": 15,
+        "collaboration_culture": 10,
+        "product_flow": 7,
+        "performance_quality": 0,
+        "operations_infra": 1
+      },
+      "topCategories": [
+        "problem_context",
+        "collaboration_culture",
+        "product_flow"
+      ]
+    },
+    {
+      "index": 168,
+      "id": "5m3KX__EcrY",
+      "title": "[프로젝트 4차 데모] 풀하우스의 도란도란",
+      "duration": "5:26",
+      "url": "https://www.youtube.com/watch?v=5m3KX__EcrY",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "도란도란",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/168-5m3KX__EcrY.ko.txt",
+      "transcriptLineCount": 86,
+      "transcriptCharCount": 3531,
+      "categoryCounts": {
+        "problem_context": 6,
+        "collaboration_culture": 5,
+        "product_flow": 4,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": [
+        "problem_context",
+        "collaboration_culture",
+        "product_flow"
+      ]
+    },
+    {
+      "index": 169,
+      "id": "9r9rTYY7V74",
+      "title": "[프로젝트 4차 데모] Around Thirty의 Taggle",
+      "duration": "13:54",
+      "url": "https://www.youtube.com/watch?v=9r9rTYY7V74",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "Taggle",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/169-9r9rTYY7V74.ko.txt",
+      "transcriptLineCount": 199,
+      "transcriptCharCount": 6946,
+      "categoryCounts": {
+        "problem_context": 9,
+        "collaboration_culture": 6,
+        "product_flow": 5,
+        "performance_quality": 0,
+        "operations_infra": 2
+      },
+      "topCategories": [
+        "problem_context",
+        "collaboration_culture",
+        "product_flow"
+      ]
+    },
+    {
+      "index": 170,
+      "id": "izBSdfwKdpo",
+      "title": "[프로젝트 4차 데모] 5Geul의 새벽",
+      "duration": "9:19",
+      "url": "https://www.youtube.com/watch?v=izBSdfwKdpo",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "새벽",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/170-izBSdfwKdpo.ko.txt",
+      "transcriptLineCount": 153,
+      "transcriptCharCount": 5871,
+      "categoryCounts": {
+        "problem_context": 4,
+        "collaboration_culture": 24,
+        "product_flow": 6,
+        "performance_quality": 0,
+        "operations_infra": 1
+      },
+      "topCategories": [
+        "collaboration_culture",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 171,
+      "id": "uT2b0Qo9ZTc",
+      "title": "[프로젝트 4차 데모] 송파구 사람들의 미소",
+      "duration": "4:24",
+      "url": "https://www.youtube.com/watch?v=uT2b0Qo9ZTc",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "미소",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/171-uT2b0Qo9ZTc.ko.txt",
+      "transcriptLineCount": 62,
+      "transcriptCharCount": 2312,
+      "categoryCounts": {
+        "problem_context": 2,
+        "collaboration_culture": 9,
+        "product_flow": 9,
+        "performance_quality": 1,
+        "operations_infra": 2
+      },
+      "topCategories": [
+        "collaboration_culture",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 172,
+      "id": "KVNRJ9ONM1Y",
+      "title": "[프로젝트 4차 데모] Minguinho의 Slidemd",
+      "duration": "6:15",
+      "url": "https://www.youtube.com/watch?v=KVNRJ9ONM1Y",
+      "stage": "프로젝트 4차 데모",
+      "projectName": "Slidemd",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/172-KVNRJ9ONM1Y.ko.txt",
+      "transcriptLineCount": 99,
+      "transcriptCharCount": 3709,
+      "categoryCounts": {
+        "problem_context": 4,
+        "collaboration_culture": 14,
+        "product_flow": 6,
+        "performance_quality": 0,
+        "operations_infra": 1
+      },
+      "topCategories": [
+        "collaboration_culture",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 173,
+      "id": "w0tWiW3mzUQ",
+      "title": "[프로젝트 3차 데모] Around Thirty의 Taggle",
+      "duration": "7:13",
+      "url": "https://www.youtube.com/watch?v=w0tWiW3mzUQ",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "Taggle",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/173-w0tWiW3mzUQ.ko.txt",
+      "transcriptLineCount": 101,
+      "transcriptCharCount": 3599,
+      "categoryCounts": {
+        "problem_context": 3,
+        "collaboration_culture": 2,
+        "product_flow": 3,
+        "performance_quality": 0,
+        "operations_infra": 7
+      },
+      "topCategories": [
+        "operations_infra",
+        "problem_context",
+        "product_flow"
+      ]
+    },
+    {
+      "index": 174,
+      "id": "OYnQt2kHWug",
+      "title": "[프로젝트 3차 데모] 송파구 사람들의 미소",
+      "duration": "4:04",
+      "url": "https://www.youtube.com/watch?v=OYnQt2kHWug",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "미소",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/174-OYnQt2kHWug.ko.txt",
+      "transcriptLineCount": 59,
+      "transcriptCharCount": 1925,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 1,
+        "product_flow": 4,
+        "performance_quality": 0,
+        "operations_infra": 3
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "index": 175,
+      "id": "Q5vkA2mndqI",
+      "title": "[프로젝트 3차 데모] 마시는 여섯들의 칵테일픽",
+      "duration": "8:25",
+      "url": "https://www.youtube.com/watch?v=Q5vkA2mndqI",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "칵테일픽",
+      "cohort": "기타",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/175-Q5vkA2mndqI.ko.txt",
+      "transcriptLineCount": 117,
+      "transcriptCharCount": 4078,
+      "categoryCounts": {
+        "problem_context": 8,
+        "collaboration_culture": 3,
+        "product_flow": 2,
+        "performance_quality": 0,
+        "operations_infra": 12
+      },
+      "topCategories": [
+        "operations_infra",
+        "problem_context",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "index": 176,
+      "id": "aMtPlyUz0xI",
+      "title": "[프로젝트 3차 데모] 5Geul의 새벽",
+      "duration": "9:09",
+      "url": "https://www.youtube.com/watch?v=aMtPlyUz0xI",
+      "stage": "프로젝트 3차 데모",
+      "projectName": "새벽",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/176-aMtPlyUz0xI.ko.txt",
+      "transcriptLineCount": 127,
+      "transcriptCharCount": 4773,
+      "categoryCounts": {
+        "problem_context": 3,
+        "collaboration_culture": 1,
+        "product_flow": 8,
+        "performance_quality": 1,
+        "operations_infra": 17
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 177,
+      "id": "ncmcGYh8cRY",
+      "title": "[프로젝트 2차 데모] 이따비의 우리동네캡짱",
+      "duration": "8:06",
+      "url": "https://www.youtube.com/watch?v=ncmcGYh8cRY",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "우리 동네 캡짱",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/177-ncmcGYh8cRY.ko.txt",
+      "transcriptLineCount": 97,
+      "transcriptCharCount": 3358,
+      "categoryCounts": {
+        "problem_context": 4,
+        "collaboration_culture": 5,
+        "product_flow": 2,
+        "performance_quality": 1,
+        "operations_infra": 7
+      },
+      "topCategories": [
+        "operations_infra",
+        "collaboration_culture",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 178,
+      "id": "q2NF6tJEZOQ",
+      "title": "[프로젝트 2차 데모]14층 녀석들의 Peloton",
+      "duration": "10:40",
+      "url": "https://www.youtube.com/watch?v=q2NF6tJEZOQ",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "Peloton",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/178-q2NF6tJEZOQ.ko.txt",
+      "transcriptLineCount": 147,
+      "transcriptCharCount": 5372,
+      "categoryCounts": {
+        "problem_context": 4,
+        "collaboration_culture": 0,
+        "product_flow": 5,
+        "performance_quality": 0,
+        "operations_infra": 21
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 179,
+      "id": "VLnIZ6oGKbs",
+      "title": "[프로젝트 2차 데모] Minguinho의 Slidemd",
+      "duration": "11:05",
+      "url": "https://www.youtube.com/watch?v=VLnIZ6oGKbs",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "Slidemd",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/179-VLnIZ6oGKbs.ko.txt",
+      "transcriptLineCount": 178,
+      "transcriptCharCount": 7009,
+      "categoryCounts": {
+        "problem_context": 5,
+        "collaboration_culture": 1,
+        "product_flow": 8,
+        "performance_quality": 2,
+        "operations_infra": 9
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 180,
+      "id": "67TDNiSYRTM",
+      "title": "[프로젝트 2차 데모] 셀러리컴퍼니의 Seller, lee",
+      "duration": "8:14",
+      "url": "https://www.youtube.com/watch?v=67TDNiSYRTM",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "Seller, lee",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/180-67TDNiSYRTM.ko.txt",
+      "transcriptLineCount": 99,
+      "transcriptCharCount": 3858,
+      "categoryCounts": {
+        "problem_context": 1,
+        "collaboration_culture": 0,
+        "product_flow": 10,
+        "performance_quality": 3,
+        "operations_infra": 9
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "performance_quality"
+      ]
+    },
+    {
+      "index": 181,
+      "id": "Oqt1OFo_jpA",
+      "title": "[프로젝트 2차 데모] 송파구 사람들의 Hashtagmap",
+      "duration": "7:17",
+      "url": "https://www.youtube.com/watch?v=Oqt1OFo_jpA",
+      "stage": "프로젝트 2차 데모",
+      "projectName": "Hashtagmap",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/181-Oqt1OFo_jpA.ko.txt",
+      "transcriptLineCount": 107,
+      "transcriptCharCount": 4171,
+      "categoryCounts": {
+        "problem_context": 5,
+        "collaboration_culture": 0,
+        "product_flow": 7,
+        "performance_quality": 3,
+        "operations_infra": 8
+      },
+      "topCategories": [
+        "operations_infra",
+        "product_flow",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 182,
+      "id": "XcKIlsWAd10",
+      "title": "[프로젝트 1차 데모] Minguinho의 Slidemd",
+      "duration": "9:51",
+      "url": "https://www.youtube.com/watch?v=XcKIlsWAd10",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "Slidemd",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/182-XcKIlsWAd10.ko.txt",
+      "transcriptLineCount": 151,
+      "transcriptCharCount": 5687,
+      "categoryCounts": {
+        "problem_context": 8,
+        "collaboration_culture": 4,
+        "product_flow": 2,
+        "performance_quality": 1,
+        "operations_infra": 4
+      },
+      "topCategories": [
+        "problem_context",
+        "collaboration_culture",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 183,
+      "id": "BuzU9usQDhc",
+      "title": "[프로젝트 1차 데모] 마시는 여섯들의 칵테일픽",
+      "duration": "7:04",
+      "url": "https://www.youtube.com/watch?v=BuzU9usQDhc",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "칵테일픽",
+      "cohort": "기타",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/183-BuzU9usQDhc.ko.txt",
+      "transcriptLineCount": 104,
+      "transcriptCharCount": 3726,
+      "categoryCounts": {
+        "problem_context": 1,
+        "collaboration_culture": 2,
+        "product_flow": 3,
+        "performance_quality": 0,
+        "operations_infra": 3
+      },
+      "topCategories": [
+        "product_flow",
+        "operations_infra",
+        "collaboration_culture"
+      ]
+    },
+    {
+      "index": 184,
+      "id": "JPmA2tIt8ME",
+      "title": "[프로젝트 1차 데모] 셀러리컴퍼니의 Seller, lee",
+      "duration": "10:33",
+      "url": "https://www.youtube.com/watch?v=JPmA2tIt8ME",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "Seller, lee",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/184-JPmA2tIt8ME.ko.txt",
+      "transcriptLineCount": 173,
+      "transcriptCharCount": 6902,
+      "categoryCounts": {
+        "problem_context": 7,
+        "collaboration_culture": 13,
+        "product_flow": 26,
+        "performance_quality": 1,
+        "operations_infra": 6
+      },
+      "topCategories": [
+        "product_flow",
+        "collaboration_culture",
+        "problem_context"
+      ]
+    },
+    {
+      "index": 185,
+      "id": "XMETX19bo3o",
+      "title": "[프로젝트 1차 데모] 14층 녀석들의 Peloton",
+      "duration": "9:37",
+      "url": "https://www.youtube.com/watch?v=XMETX19bo3o",
+      "stage": "프로젝트 1차 데모",
+      "projectName": "Peloton",
+      "cohort": "초기 프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/185-XMETX19bo3o.ko.txt",
+      "transcriptLineCount": 132,
+      "transcriptCharCount": 4763,
+      "categoryCounts": {
+        "problem_context": 10,
+        "collaboration_culture": 2,
+        "product_flow": 5,
+        "performance_quality": 0,
+        "operations_infra": 5
+      },
+      "topCategories": [
+        "problem_context",
+        "product_flow",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 186,
+      "id": "6KLoR21XFWk",
+      "title": "[미니프로젝트] 자료구조 team의 woostagram",
+      "duration": "4:55",
+      "url": "https://www.youtube.com/watch?v=6KLoR21XFWk",
+      "stage": "미니프로젝트",
+      "projectName": "woostagram",
+      "cohort": "미니프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/186-6KLoR21XFWk.ko.txt",
+      "transcriptLineCount": 16,
+      "transcriptCharCount": 240,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": []
+    },
+    {
+      "index": 187,
+      "id": "aFqw6a7gvyE",
+      "title": "[미니프로젝트] IOI team의 Wootube",
+      "duration": "4:16",
+      "url": "https://www.youtube.com/watch?v=aFqw6a7gvyE",
+      "stage": "미니프로젝트",
+      "projectName": "Wootube",
+      "cohort": "미니프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/187-aFqw6a7gvyE.ko.txt",
+      "transcriptLineCount": 2,
+      "transcriptCharCount": 29,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": []
+    },
+    {
+      "index": 188,
+      "id": "jdUaHB5hjP4",
+      "title": "[미니프로젝트] 찐브로스 team의 wootecobook",
+      "duration": "5:33",
+      "url": "https://www.youtube.com/watch?v=jdUaHB5hjP4",
+      "stage": "미니프로젝트",
+      "projectName": "wootecobook",
+      "cohort": "미니프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/188-jdUaHB5hjP4.ko.txt",
+      "transcriptLineCount": 79,
+      "transcriptCharCount": 2343,
+      "categoryCounts": {
+        "problem_context": 5,
+        "collaboration_culture": 0,
+        "product_flow": 1,
+        "performance_quality": 3,
+        "operations_infra": 2
+      },
+      "topCategories": [
+        "problem_context",
+        "performance_quality",
+        "operations_infra"
+      ]
+    },
+    {
+      "index": 189,
+      "id": "Arb29ai26GU",
+      "title": "[미니프로젝트] SunShine team의 Sunbook",
+      "duration": "5:43",
+      "url": "https://www.youtube.com/watch?v=Arb29ai26GU",
+      "stage": "미니프로젝트",
+      "projectName": "Sunbook",
+      "cohort": "미니프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/189-Arb29ai26GU.ko.txt",
+      "transcriptLineCount": 81,
+      "transcriptCharCount": 1838,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 5,
+        "product_flow": 5,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": [
+        "collaboration_culture",
+        "product_flow"
+      ]
+    },
+    {
+      "index": 190,
+      "id": "BmbWEdGQZhw",
+      "title": "[미니프로젝트] EDD team의 Wootube",
+      "duration": "3:11",
+      "url": "https://www.youtube.com/watch?v=BmbWEdGQZhw",
+      "stage": "미니프로젝트",
+      "projectName": "Wootube",
+      "cohort": "미니프로젝트",
+      "transcriptStatus": "no_captions",
+      "transcriptPath": ".temp/demo-day/clean/190-BmbWEdGQZhw.ko.txt",
+      "transcriptLineCount": 1,
+      "transcriptCharCount": 39,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": []
+    },
+    {
+      "index": 191,
+      "id": "7b0xSwC-Oc8",
+      "title": "[미니프로젝트] 칠면조 team의 TurkeyBook",
+      "duration": "3:49",
+      "url": "https://www.youtube.com/watch?v=7b0xSwC-Oc8",
+      "stage": "미니프로젝트",
+      "projectName": "TurkeyBook",
+      "cohort": "미니프로젝트",
+      "transcriptStatus": "no_captions",
+      "transcriptPath": ".temp/demo-day/clean/191-7b0xSwC-Oc8.ko.txt",
+      "transcriptLineCount": 1,
+      "transcriptCharCount": 39,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": []
+    },
+    {
+      "index": 192,
+      "id": "lltWISAg3BU",
+      "title": "[미니프로젝트] Zzazan team의 zzazanstagram",
+      "duration": "2:06",
+      "url": "https://www.youtube.com/watch?v=lltWISAg3BU",
+      "stage": "미니프로젝트",
+      "projectName": "zzazanstagram",
+      "cohort": "미니프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/192-lltWISAg3BU.ko.txt",
+      "transcriptLineCount": 32,
+      "transcriptCharCount": 559,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": []
+    },
+    {
+      "index": 193,
+      "id": "pIQQxW4tXJw",
+      "title": "[미니프로젝트] 우아한구조대 team의 fakebook",
+      "duration": "3:53",
+      "url": "https://www.youtube.com/watch?v=pIQQxW4tXJw",
+      "stage": "미니프로젝트",
+      "projectName": "fakebook",
+      "cohort": "미니프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/193-pIQQxW4tXJw.ko.txt",
+      "transcriptLineCount": 10,
+      "transcriptCharCount": 167,
+      "categoryCounts": {
+        "problem_context": 0,
+        "collaboration_culture": 0,
+        "product_flow": 0,
+        "performance_quality": 0,
+        "operations_infra": 0
+      },
+      "topCategories": []
+    },
+    {
+      "index": 194,
+      "id": "z__lVXIjDOw",
+      "title": "[미니프로젝트] w3팀의 woostagram",
+      "duration": "8:53",
+      "url": "https://www.youtube.com/watch?v=z__lVXIjDOw",
+      "stage": "미니프로젝트",
+      "projectName": "woostagram",
+      "cohort": "미니프로젝트",
+      "transcriptStatus": "ok",
+      "transcriptPath": ".temp/demo-day/clean/194-z__lVXIjDOw.ko.txt",
+      "transcriptLineCount": 120,
+      "transcriptCharCount": 4450,
+      "categoryCounts": {
+        "problem_context": 2,
+        "collaboration_culture": 1,
+        "product_flow": 10,
+        "performance_quality": 2,
+        "operations_infra": 1
+      },
+      "topCategories": [
+        "product_flow",
+        "problem_context",
+        "performance_quality"
+      ]
+    }
+  ]
+}

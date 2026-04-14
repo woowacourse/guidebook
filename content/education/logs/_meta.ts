@@ -20,6 +20,7 @@ export default {
   'android-level0': hidden('레벨0: 자기주도 학습 설계 (안드로이드 8기)'),
   'async-quiz-explanation': hidden('비동기 퀴즈 해설지 만들기'),
   'codelab-lotto-domain-ui': hidden('코드랩으로 관심사 분리 체험하기'),
+  'coaching-squad-training-loop': hidden('코칭 스쿼드 전문성 강화 루프'),
   'demo-day-retrospective': hidden('데모데이 회고의 점진적 설계'),
   'drama-onboarding': hidden('온보딩 연극 미션'),
   'drama-retrospective': hidden('연극 회고: 취약함 공유로 심리적 안전감 만들기'),

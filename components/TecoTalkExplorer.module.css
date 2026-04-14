@@ -1,0 +1,435 @@
+.root {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.hero {
+  display: grid;
+  gap: 1rem;
+  padding: 1.25rem;
+  border: 1px solid var(--fd-border);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at top right, rgba(16, 185, 129, 0.08), transparent 32%),
+    linear-gradient(180deg, rgba(15, 23, 42, 0.02), transparent);
+}
+
+.kicker {
+  margin: 0 0 0.35rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #0f766e;
+}
+
+.heading {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.lead {
+  margin: 0.45rem 0 0;
+  color: var(--fd-muted-foreground);
+  line-height: 1.65;
+}
+
+.summaryBox {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.summaryBox > div {
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.summaryLabel {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.82rem;
+  color: var(--fd-muted-foreground);
+}
+
+.summaryValue {
+  font-size: 1.1rem;
+}
+
+.categoryGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.categoryCard {
+  display: grid;
+  gap: 0.9rem;
+  padding: 1rem;
+  border: 1px solid var(--fd-border);
+  border-radius: 18px;
+  background: rgba(15, 23, 42, 0.025);
+  transition:
+    border-color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.18s ease;
+}
+
+.categoryCard:hover {
+  transform: translateY(-1px);
+  border-color: rgba(15, 118, 110, 0.28);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+}
+
+.categoryCardActive {
+  border-color: rgba(15, 118, 110, 0.38);
+  box-shadow: 0 12px 26px rgba(15, 118, 110, 0.08);
+}
+
+.categoryHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.categoryTitle {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.categoryDescription {
+  margin: 0.4rem 0 0;
+  color: var(--fd-muted-foreground);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.categoryCount {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3.5rem;
+  height: 2rem;
+  padding: 0 0.7rem;
+  border-radius: 999px;
+  background: rgba(15, 118, 110, 0.12);
+  color: #0f766e;
+  font-size: 0.84rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.pillRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.pill {
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  background: rgba(255, 255, 255, 0.85);
+  color: inherit;
+  border-radius: 999px;
+  padding: 0.32rem 0.7rem;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+
+.pillActive {
+  border-color: rgba(15, 118, 110, 0.28);
+  background: rgba(15, 118, 110, 0.12);
+  color: #0f766e;
+}
+
+.recommendations {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.recommendationLink {
+  display: grid;
+  gap: 0.1rem;
+  padding: 0.7rem 0.8rem;
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.recommendationLink:hover {
+  border-color: rgba(15, 118, 110, 0.24);
+}
+
+.recommendationTopic {
+  font-weight: 600;
+}
+
+.recommendationMeta {
+  color: var(--fd-muted-foreground);
+  font-size: 0.82rem;
+}
+
+.filterButton {
+  border: none;
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.06);
+  color: inherit;
+  padding: 0.72rem 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.filterButtonActive {
+  background: rgba(15, 118, 110, 0.12);
+  color: #0f766e;
+}
+
+.toolbar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 180px auto;
+  gap: 0.75rem;
+  align-items: flex-end;
+}
+
+.searchBox,
+.sortBox {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.searchLabel,
+.sectionLabel {
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--fd-muted-foreground);
+}
+
+.searchInput,
+.select {
+  width: 100%;
+  min-height: 2.8rem;
+  border: 1px solid var(--fd-border);
+  border-radius: 12px;
+  background: transparent;
+  color: inherit;
+  padding: 0.72rem 0.9rem;
+  font: inherit;
+}
+
+.resetButton {
+  min-height: 2.8rem;
+  border: 1px solid var(--fd-border);
+  border-radius: 12px;
+  background: transparent;
+  color: inherit;
+  padding: 0.72rem 1rem;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tagSection {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.tagGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tagButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.03);
+  color: inherit;
+  padding: 0.42rem 0.78rem;
+  cursor: pointer;
+}
+
+.tagButtonActive {
+  border-color: rgba(15, 118, 110, 0.28);
+  background: rgba(15, 118, 110, 0.12);
+  color: #0f766e;
+}
+
+.tagCount {
+  font-size: 0.8rem;
+  color: var(--fd-muted-foreground);
+}
+
+.resultHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.resultTitle {
+  margin: 0.18rem 0 0;
+  font-size: 1.05rem;
+}
+
+.resultMeta {
+  margin: 0;
+  color: var(--fd-muted-foreground);
+  font-size: 0.9rem;
+}
+
+.tableWrap {
+  overflow-x: auto;
+  border: 1px solid var(--fd-border);
+  border-radius: 18px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.table th,
+.table td {
+  padding: 0.85rem 0.75rem;
+  border-bottom: 1px solid var(--fd-border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.table th {
+  background: rgba(15, 23, 42, 0.04);
+  color: var(--fd-muted-foreground);
+  font-weight: 700;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.index,
+.durationCell,
+.viewCountCell,
+.categoryCell {
+  white-space: nowrap;
+  color: var(--fd-muted-foreground);
+}
+
+.entryLink {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.entryLink:hover {
+  text-decoration: underline;
+}
+
+.entryMeta {
+  margin-top: 0.22rem;
+  color: var(--fd-muted-foreground);
+  font-size: 0.84rem;
+}
+
+.inlineTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.inlineTag {
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.inlineTagActive {
+  border-color: rgba(15, 118, 110, 0.28);
+  background: rgba(15, 118, 110, 0.12);
+  color: #0f766e;
+}
+
+.muted {
+  color: var(--fd-muted-foreground);
+}
+
+.moreButton {
+  justify-self: center;
+  border: none;
+  border-radius: 999px;
+  background: #0f766e;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.emptyState {
+  padding: 1.4rem;
+  border-radius: 18px;
+  border: 1px dashed var(--fd-border);
+  background: rgba(15, 23, 42, 0.025);
+}
+
+.emptyTitle {
+  margin: 0;
+  font-weight: 700;
+}
+
+.emptyDescription {
+  margin: 0.35rem 0 0;
+  color: var(--fd-muted-foreground);
+}
+
+@media (max-width: 960px) {
+  .toolbar {
+    grid-template-columns: 1fr;
+  }
+
+  .resultHeader {
+    display: grid;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero,
+  .categoryCard {
+    padding: 1rem;
+  }
+
+  .summaryBox {
+    grid-template-columns: 1fr;
+  }
+}
+
+:global(.dark) .hero {
+  background:
+    radial-gradient(circle at top right, rgba(16, 185, 129, 0.16), transparent 32%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent);
+}
+
+:global(.dark) .summaryBox > div,
+:global(.dark) .recommendationLink,
+:global(.dark) .pill {
+  background: rgba(15, 23, 42, 0.34);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+:global(.dark) .categoryCard,
+:global(.dark) .table th,
+:global(.dark) .tagButton,
+:global(.dark) .filterButton,
+:global(.dark) .emptyState {
+  background: rgba(255, 255, 255, 0.03);
+}

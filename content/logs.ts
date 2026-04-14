@@ -137,6 +137,16 @@ export function getLogBadges(log: Log): string[] {
 // 최신 항목을 맨 위에 추가하세요.
 const logs: Log[] = [
   {
+    slug: 'coaching-squad-training-loop',
+    title: '코칭 스쿼드 전문성 강화 루프: 회상에서 표준화 크루, AI 피드백까지',
+    description: '회상, 표준화 크루, 클린 랭귀지, GPT 반복 훈련, 원온원 준비 템플릿까지 이어진 11회차 코치 훈련 기록.',
+    href: '/education/logs/coaching-squad-training-loop',
+    date: '2026-04-14',
+    phases: [],
+    tracks: [],
+    themes: ['코치훈련'],
+  },
+  {
     slug: 'fe-accessibility-report',
     title: 'FE 접근성 리포트: 자기 서비스를 진단하는 6기·7기 반복 실험',
     description: '성능 리포트 구조를 접근성으로 확장. 6기 리포트를 7기 디스커션에 누적 자산으로 명시한 반복 실험.',

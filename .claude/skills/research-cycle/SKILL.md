@@ -77,5 +77,5 @@ B등급(16점) 미만 로그를 `log-quality-agent`로 순차 개선.
 
 - 품질 루브릭: `.claude/log-quality-rubric.md`
 - 승격 루브릭: `.claude/promotion-rubric.md`
-- 상세 커맨드: `.claude/commands/research-cycle.md`
+- 상세 커맨드: `.claude/commands/로그승격.md` (기존 `research-cycle.md`는 한국어 커맨드로 리디렉션하는 shim)
 - 에이전트 정의: `.claude/agents/research-cycle-orchestrator.md`

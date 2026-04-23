@@ -1,7 +1,7 @@
 # javascript-lotto PR 자산화 실험 계획
 
 - 작성일: 2026-04-14
-- 상태: 1차 실험 설계 + 코어 표본 생성 완료
+- 상태: 2022~2026 코어 표본 프레임 확장 완료
 - 대상 저장소: `woowacourse/javascript-lotto`
 - 목적: PR, 리뷰, 크루-리뷰어 대화에서 교육적으로 재사용 가능한 자산을 추출하고, 향후 woowacourse org 전체 미션 저장소 연구 파이프라인의 첫 검증 사례로 삼는다.
 
@@ -24,13 +24,18 @@
 
 ## 현재 실행 결과
 
-2026-04-14 현재 아래 산출물을 생성했다.
+2026-04-21 현재 아래 산출물을 생성했다.
 
 - `docs/plans/pr-data/javascript-lotto/pr-list.tsv`
 - `docs/plans/pr-data/javascript-lotto/core-sample.tsv`
 - `docs/plans/pr-data/javascript-lotto/core-sample.json`
 - `docs/plans/pr-data/javascript-lotto/core-sample-details.json`
 - `docs/plans/pr-data/javascript-lotto/pilot-conversations.json`
+- `docs/plans/pr-data/javascript-lotto/core-sample-2022-2023-2024-2025-2026.tsv`
+- `docs/plans/pr-data/javascript-lotto/core-sample-2022-2023-2024-2025-2026.json`
+- `docs/plans/pr-data/javascript-lotto/sample-2023-conversations.json`
+- `docs/plans/pr-data/javascript-lotto/sample-2023-pattern-catalog.md`
+- `docs/plans/pr-data/javascript-lotto/coverage-2022-2026.md`
 
 실행 결과 요약:
 
@@ -38,12 +43,18 @@
 - 비교용 코어 표본 `30`건 생성
 - 코어 표본 `30`건의 PR 본문/메타데이터 정규화 완료
 - 연도별 고밀도 대화 파일럿 `3`건의 issue comments / reviews / review comments 정규화 완료
-- 비교 표본에서는 `1단계`, `2단계`만 사용했고, `2021-3단계` `24`건은 별도 holdout으로 남겨두었다
+- `2022~2026` 범위를 반영한 비교용 코어 표본 `50`건 생성
+- `2023` 코호트 core sample `10`건의 대화 정규화 완료
+- `2023` 코호트 1차 패턴 카탈로그 작성 완료
+- 멀티이어 비교 표본에서는 `1단계`, `2단계`만 사용했고, `2024-미상` `2`건, `2025-미상` `2`건, `2026-미상` `3`건은 별도 holdout으로 남겨두었다
 
 참고:
 
 - `docs/plans/pr-data/`는 `.gitignore` 대상이라 위 산출물은 현재 로컬 작업 산출물이다.
 - 재실행은 `node scripts/javascript-lotto/build-core-sample.mjs --pull-details --pilot-conversations`로 가능하다.
+- 멀티이어 코어 표본 재생성은 `node scripts/javascript-lotto/build-core-sample.mjs --years=2022,2023,2024,2025,2026`처럼 실행한다.
+- 특정 연도 대화 수집은 `node scripts/javascript-lotto/build-core-sample.mjs --years=2022,2023,2024,2025,2026 --conversation-year=2023`처럼 실행한다.
+- public GitHub API는 시간당 한도가 낮아서, `2022~2026`의 대화 원문 수집은 연도별 배치로 진행하는 것이 안전하다.
 
 ## 목표
 
@@ -91,11 +102,13 @@
 
 #### 2. 심층 대화 표본
 
-심층 분석은 총 `30`개 PR로 시작한다.
+심층 분석은 현재 총 `50`개 PR 비교 표본으로 확장했다.
 
-- 초기 코호트: 2021년 구간에서 `10`개
-- 중간 코호트: 2023년 구간에서 `10`개
-- 최근 코호트: 2026년 구간에서 `10`개
+- `2022` 구간에서 `10`개
+- `2023` 구간에서 `10`개
+- `2024` 구간에서 `10`개
+- `2025` 구간에서 `10`개
+- `2026` 구간에서 `10`개
 
 각 코호트 안에서는 아래를 균형 있게 섞는다.
 
@@ -103,7 +116,7 @@
 - 댓글 수 낮음 / 중간 / 높음
 - 빠르게 끝난 PR / 라운드가 길었던 PR
 
-이 `30`개 심층 표본으로 먼저 태그 체계와 분석 축을 검증한다. 신호가 충분하면 이후 표본을 `60`개 이상으로 늘리거나, 특정 패턴만 골라 전수 검증한다.
+이 `50`개 심층 비교 표본으로 먼저 태그 체계와 분석 축을 검증한다. 대화 원문 수집은 API 한도를 고려해 연도별로 배치 진행한다. 신호가 충분하면 이후 표본을 더 늘리거나, 특정 패턴만 골라 전수 검증한다.
 
 ## 수집 원천
 

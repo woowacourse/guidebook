@@ -2,7 +2,7 @@ import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 
 const INPUT_PATH = 'docs/plans/pr-data/javascript-lotto/pr-list.tsv';
 const OUTPUT_DIR = 'docs/plans/pr-data/javascript-lotto';
-const YEARS = ['2021', '2023', '2026'];
+const DEFAULT_YEARS = ['2021', '2022', '2023', '2024', '2025', '2026'];
 const STAGES = ['1단계', '2단계'];
 const QUANTILES = [
   ['min', 0],
@@ -12,9 +12,32 @@ const QUANTILES = [
   ['max', 1],
 ];
 
-const args = new Set(process.argv.slice(2));
+const rawArgs = process.argv.slice(2);
+const args = new Set(rawArgs);
 const shouldFetchPullDetails = args.has('--pull-details');
 const shouldFetchPilotConversations = args.has('--pilot-conversations');
+const yearsArg = rawArgs.find((argument) => argument.startsWith('--years='));
+const conversationYearArg = rawArgs.find((argument) => argument.startsWith('--conversation-year='));
+const conversationYearsArg = rawArgs.find((argument) =>
+  argument.startsWith('--conversation-years='),
+);
+const selectedYears = yearsArg?.split('=')[1]?.split(',').filter(Boolean) ?? DEFAULT_YEARS;
+const conversationYear = conversationYearArg?.split('=')[1] ?? null;
+const conversationYears =
+  conversationYearsArg?.split('=')[1]?.split(',').filter(Boolean) ??
+  (conversationYear ? [conversationYear] : []);
+
+function buildYearLabel(years) {
+  if (years.length === 0) {
+    return 'none';
+  }
+
+  if (years.length === 1) {
+    return years[0];
+  }
+
+  return years.join('-');
+}
 
 function parseTsv(path) {
   const [headerLine, ...lines] = readFileSync(path, 'utf8').trim().split('\n');
@@ -87,10 +110,10 @@ function pickDistinctQuantiles(rows) {
   return picks;
 }
 
-function buildCoreSample(rows) {
+function buildCoreSample(rows, years) {
   const picks = [];
 
-  for (const year of YEARS) {
+  for (const year of years) {
     for (const stage of STAGES) {
       const subset = rows.filter((row) => row.year === year && row.stage === stage);
       picks.push(...pickDistinctQuantiles(subset));
@@ -133,9 +156,9 @@ function writeSampleTsv(path, picks) {
   writeFileSync(path, `${lines.join('\n')}\n`);
 }
 
-function buildSampleSummary(rows, picks) {
+function buildSampleSummary(rows, picks, years) {
   const yearSummaries = Object.fromEntries(
-    YEARS.map((year) => {
+    years.map((year) => {
       const subset = rows.filter((row) => row.year === year);
       const selected = picks.filter((pick) => pick.year === year);
 
@@ -159,7 +182,7 @@ function buildSampleSummary(rows, picks) {
   );
 
   const deferredStages = rows
-    .filter((row) => YEARS.includes(row.year) && !STAGES.includes(row.stage))
+    .filter((row) => years.includes(row.year) && !STAGES.includes(row.stage))
     .reduce((accumulator, row) => {
       const key = `${row.year}-${row.stage}`;
       accumulator[key] = (accumulator[key] || 0) + 1;
@@ -168,7 +191,7 @@ function buildSampleSummary(rows, picks) {
 
   return {
     method: {
-      years: YEARS,
+      years,
       stages: STAGES,
       quantiles: QUANTILES.map(([label, percentile]) => ({ label, percentile })),
       note: '연도/단계별로 댓글 수 분위(min/q1/median/q3/max)에 가까운 PR을 1개씩 선택한다.',
@@ -283,8 +306,8 @@ async function buildPullDetails(picks) {
   return details;
 }
 
-async function buildPilotConversations(picks) {
-  const pilotPicks = YEARS.map((year) =>
+async function buildPilotConversations(picks, years) {
+  const pilotPicks = years.map((year) =>
     picks
       .filter((pick) => pick.year === year)
       .sort((left, right) => right.comment_count - left.comment_count || left.pr_number - right.pr_number)[0],
@@ -327,25 +350,79 @@ async function buildPilotConversations(picks) {
   };
 }
 
+async function buildYearConversations(picks, year) {
+  const yearPicks = picks.filter((pick) => pick.year === year);
+  const conversations = [];
+
+  for (const pick of yearPicks) {
+    const [pull, issueComments, reviews, reviewComments] = await Promise.all([
+      fetchJson(`https://api.github.com/repos/woowacourse/javascript-lotto/pulls/${pick.pr_number}`),
+      fetchJson(
+        `https://api.github.com/repos/woowacourse/javascript-lotto/issues/${pick.pr_number}/comments?per_page=100`,
+      ),
+      fetchJson(
+        `https://api.github.com/repos/woowacourse/javascript-lotto/pulls/${pick.pr_number}/reviews?per_page=100`,
+      ),
+      fetchJson(
+        `https://api.github.com/repos/woowacourse/javascript-lotto/pulls/${pick.pr_number}/comments?per_page=100`,
+      ),
+    ]);
+
+    conversations.push({
+      pr_number: pick.pr_number,
+      year: pick.year,
+      stage: pick.stage,
+      quantile: pick.quantile,
+      cohort: pick.cohort,
+      title: pick.title,
+      comment_count: pick.comment_count,
+      pull: sanitizePullDetail(pull, pick),
+      issue_comments: sanitizeIssueComments(issueComments),
+      reviews: sanitizeReviews(reviews),
+      review_comments: sanitizeReviewComments(reviewComments),
+    });
+  }
+
+  return {
+    note: `${year} 코호트 core sample의 대화를 정규화했다.`,
+    year,
+    picks: yearPicks,
+    conversations,
+  };
+}
+
 mkdirSync(OUTPUT_DIR, { recursive: true });
 
 const rows = parseTsv(INPUT_PATH);
-const picks = buildCoreSample(rows);
-const sampleSummary = buildSampleSummary(rows, picks);
+const picks = buildCoreSample(rows, selectedYears);
+const sampleSummary = buildSampleSummary(rows, picks, selectedYears);
+const yearLabel = buildYearLabel(selectedYears);
+const coreSampleBaseName = `${OUTPUT_DIR}/core-sample-${yearLabel}`;
 
-writeSampleTsv(`${OUTPUT_DIR}/core-sample.tsv`, picks);
-writeFileSync(`${OUTPUT_DIR}/core-sample.json`, `${JSON.stringify(sampleSummary, null, 2)}\n`);
+writeSampleTsv(`${coreSampleBaseName}.tsv`, picks);
+writeFileSync(`${coreSampleBaseName}.json`, `${JSON.stringify(sampleSummary, null, 2)}\n`);
 
 if (shouldFetchPullDetails) {
   const pullDetails = await buildPullDetails(picks);
-  writeFileSync(`${OUTPUT_DIR}/core-sample-details.json`, `${JSON.stringify(pullDetails, null, 2)}\n`);
+  writeFileSync(
+    `${OUTPUT_DIR}/core-sample-details-${yearLabel}.json`,
+    `${JSON.stringify(pullDetails, null, 2)}\n`,
+  );
 }
 
 if (shouldFetchPilotConversations) {
-  const pilotConversations = await buildPilotConversations(picks);
+  const pilotConversations = await buildPilotConversations(picks, selectedYears);
   writeFileSync(
-    `${OUTPUT_DIR}/pilot-conversations.json`,
+    `${OUTPUT_DIR}/pilot-conversations-${yearLabel}.json`,
     `${JSON.stringify(pilotConversations, null, 2)}\n`,
+  );
+}
+
+for (const year of conversationYears) {
+  const yearConversations = await buildYearConversations(picks, year);
+  writeFileSync(
+    `${OUTPUT_DIR}/sample-${year}-conversations.json`,
+    `${JSON.stringify(yearConversations, null, 2)}\n`,
   );
 }
 
@@ -353,9 +430,12 @@ console.log(
   JSON.stringify(
     {
       selected: picks.length,
+      selected_years: selectedYears,
       output_dir: OUTPUT_DIR,
       wrote_pull_details: shouldFetchPullDetails,
       wrote_pilot_conversations: shouldFetchPilotConversations,
+      wrote_conversation_years: conversationYears,
+      core_sample_base_name: coreSampleBaseName,
     },
     null,
     2,

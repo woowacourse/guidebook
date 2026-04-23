@@ -10,6 +10,13 @@ export interface Update {
 const updates: Update[] = [
   {
     date: '아카이브',
+    title: '우테코 유튜브 채널 아카이브',
+    description: '새로 분리된 우테코 유튜브 채널의 공개 영상 5편을 읽고, 지원·데일리미팅·페어프로그래밍·팀프로젝트·브이로그 흐름으로 다시 엮은 안내 페이지.',
+    href: '/education/conversations/uteco-youtube-archive',
+    status: 'active',
+  },
+  {
+    date: '아카이브',
     title: '테코톡 아카이브',
     description: '테코톡 재생목록 669편을 서버·프론트엔드·모바일·DB·네트워크 같은 카테고리와 키워드로 다시 묶고, 검색형 탐색 UI로 궁금한 주제부터 바로 찾을 수 있게 구성.',
     href: '/education/conversations/techtalk-archive',

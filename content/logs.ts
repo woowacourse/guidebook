@@ -137,6 +137,15 @@ export function getLogBadges(log: Log): string[] {
 // 최신 항목을 맨 위에 추가하세요.
 const logs: Log[] = [
   {
+    slug: 'crew-autonomy',
+    title: '크루 자율성 강화 - 선택 미션',
+    description: '레벨1에서 기존 필수로 수행하게 했던 미션을 선택해서 진행하게 하여 크루들의 학습 능동성과 자율성 강화를 기대하는 실험.',
+    href: '/education/logs/crew-autonomy',
+    date: '2026-04-27',
+    phases: ['레벨1'],
+    tracks: ['웹 백엔드'],
+  },
+  {
     slug: 'coaching-squad-training-loop',
     title: '코칭 스쿼드 전문성 강화 루프: 회상에서 표준화 크루, AI 피드백까지',
     description: '회상, 표준화 크루, 클린 랭귀지, GPT 반복 훈련, 원온원 준비 템플릿까지 이어진 11회차 코치 훈련 기록.',

@@ -137,6 +137,15 @@ export function getLogBadges(log: Log): string[] {
 // 최신 항목을 맨 위에 추가하세요.
 const logs: Log[] = [
   {
+    slug: 'android-participatory',
+    title: '레벨2 안드로이드 강의형에서 참여형으로',
+    description: '레벨2 안드로이드 수업을 강의형에서 참여형으로 전환한 실험 기록.',
+    href: '/education/logs/android-participatory',
+    date: '2026-04-28',
+    phases: ['레벨2'],
+    tracks: ['모바일'],
+  },
+  {
     slug: 'coaching-squad-training-loop',
     title: '코칭 스쿼드 전문성 강화 루프: 회상에서 표준화 크루, AI 피드백까지',
     description: '회상, 표준화 크루, 클린 랭귀지, GPT 반복 훈련, 원온원 준비 템플릿까지 이어진 11회차 코치 훈련 기록.',

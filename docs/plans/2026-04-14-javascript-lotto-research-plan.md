@@ -1,7 +1,7 @@
 # javascript-lotto PR 자산화 실험 계획
 
 - 작성일: 2026-04-14
-- 상태: 2022~2026 코어 표본 프레임 확장 완료
+- 상태: 2022~2026 코어 표본 프레임 확장, 2022~2026 1차 대화 분석 완료
 - 대상 저장소: `woowacourse/javascript-lotto`
 - 목적: PR, 리뷰, 크루-리뷰어 대화에서 교육적으로 재사용 가능한 자산을 추출하고, 향후 woowacourse org 전체 미션 저장소 연구 파이프라인의 첫 검증 사례로 삼는다.
 
@@ -24,7 +24,7 @@
 
 ## 현재 실행 결과
 
-2026-04-21 현재 아래 산출물을 생성했다.
+2026-04-28 현재 아래 산출물을 생성했다.
 
 - `docs/plans/pr-data/javascript-lotto/pr-list.tsv`
 - `docs/plans/pr-data/javascript-lotto/core-sample.tsv`
@@ -33,9 +33,31 @@
 - `docs/plans/pr-data/javascript-lotto/pilot-conversations.json`
 - `docs/plans/pr-data/javascript-lotto/core-sample-2022-2023-2024-2025-2026.tsv`
 - `docs/plans/pr-data/javascript-lotto/core-sample-2022-2023-2024-2025-2026.json`
+- `docs/plans/pr-data/javascript-lotto/sample-2022-html-conversations.json`
+- `docs/plans/pr-data/javascript-lotto/sample-2022-html-summary.md`
+- `docs/plans/pr-data/javascript-lotto/sample-2022-pattern-catalog.md`
 - `docs/plans/pr-data/javascript-lotto/sample-2023-conversations.json`
 - `docs/plans/pr-data/javascript-lotto/sample-2023-pattern-catalog.md`
+- `docs/plans/pr-data/javascript-lotto/sample-2023-summary.md`
+- `docs/plans/pr-data/javascript-lotto/sample-2024-conversations.json`
+- `docs/plans/pr-data/javascript-lotto/sample-2024-pattern-catalog.md`
+- `docs/plans/pr-data/javascript-lotto/sample-2024-summary.md`
+- `docs/plans/pr-data/javascript-lotto/sample-2025-conversations.json`
+- `docs/plans/pr-data/javascript-lotto/sample-2025-pattern-catalog.md`
+- `docs/plans/pr-data/javascript-lotto/sample-2025-summary.md`
+- `docs/plans/pr-data/javascript-lotto/sample-2025-pilot-conversations.json`
+- `docs/plans/pr-data/javascript-lotto/sample-2025-pilot-pattern-catalog.md`
+- `docs/plans/pr-data/javascript-lotto/sample-2026-conversations.json`
+- `docs/plans/pr-data/javascript-lotto/sample-2026-pattern-catalog.md`
+- `docs/plans/pr-data/javascript-lotto/sample-2026-summary.md`
+- `docs/plans/pr-data/javascript-lotto/compare-2023-2026.md`
+- `docs/plans/pr-data/javascript-lotto/compare-2023-2025-2026.md`
+- `docs/plans/pr-data/javascript-lotto/compare-2023-2024-2025-2026.md`
+- `docs/plans/pr-data/javascript-lotto/compare-2022-2026.md`
 - `docs/plans/pr-data/javascript-lotto/coverage-2022-2026.md`
+- `docs/plans/pr-data/javascript-lotto/next-collection-queue.md`
+- `docs/plans/pr-data/javascript-lotto/insight-candidates-2023-2025-2026.md`
+- `docs/plans/pr-data/javascript-lotto/insight-candidates-2022-2026.md`
 
 실행 결과 요약:
 
@@ -44,8 +66,27 @@
 - 코어 표본 `30`건의 PR 본문/메타데이터 정규화 완료
 - 연도별 고밀도 대화 파일럿 `3`건의 issue comments / reviews / review comments 정규화 완료
 - `2022~2026` 범위를 반영한 비교용 코어 표본 `50`건 생성
+- `2022` 코호트 core sample `10`건의 HTML 기반 대화 스냅샷 수집 완료
+- `2022` 코호트 1차 패턴 카탈로그 작성 완료
 - `2023` 코호트 core sample `10`건의 대화 정규화 완료
 - `2023` 코호트 1차 패턴 카탈로그 작성 완료
+- `2024` 코호트 core sample `10`건의 대화 정규화 완료
+- `2024` 코호트 1차 패턴 카탈로그 작성 완료
+- `2025` 코호트 core sample `10`건의 대화 정규화 완료
+- `2025` 코호트 1차 패턴 카탈로그 작성 완료
+- `2025` 코호트 고밀도 파일럿 `5`건은 중간 산출물로 보존
+- `2026` 코호트 core sample `10`건의 대화 정규화 완료
+- `2026` 코호트 1차 패턴 카탈로그 작성 완료
+- `scripts/javascript-lotto/summarize-conversations.mjs` 요약 도구 추가
+- `scripts/javascript-lotto/scrape-html-conversations.mjs` HTML 보조 수집 도구 추가
+- `2023/2024/2025/2026` 코호트 단계별 밀도, 키워드, 리뷰어, 파일별 요약 생성
+- `2023 vs 2026` 비교 메모 작성 완료
+- `2023 vs 2025 vs 2026` 비교 메모 작성 완료
+- `2023 vs 2024 vs 2025 vs 2026` 비교 메모 작성 완료
+- `2022~2026` 전체 비교 메모 작성 완료
+- `2022` 후속 수집 큐 작성 완료
+- `2023/2025/2026` 기반 교육 자산 후보 `5`개 도출
+- `2022~2026` 기반 교육 자산 후보 `5`개로 확장
 - 멀티이어 비교 표본에서는 `1단계`, `2단계`만 사용했고, `2024-미상` `2`건, `2025-미상` `2`건, `2026-미상` `3`건은 별도 holdout으로 남겨두었다
 
 참고:
@@ -202,11 +243,29 @@
 
 ```text
 docs/plans/pr-data/javascript-lotto/pr-list.tsv
-docs/plans/pr-data/javascript-lotto/sample-2021.json
-docs/plans/pr-data/javascript-lotto/sample-2023.json
-docs/plans/pr-data/javascript-lotto/sample-2026.json
-docs/plans/pr-data/javascript-lotto/tagging-notes.md
-docs/plans/pr-data/javascript-lotto/pattern-catalog.md
+docs/plans/pr-data/javascript-lotto/core-sample-2022-2023-2024-2025-2026.json
+docs/plans/pr-data/javascript-lotto/sample-2022-html-conversations.json
+docs/plans/pr-data/javascript-lotto/sample-2022-html-summary.md
+docs/plans/pr-data/javascript-lotto/sample-2022-pattern-catalog.md
+docs/plans/pr-data/javascript-lotto/sample-2023-conversations.json
+docs/plans/pr-data/javascript-lotto/sample-2023-pattern-catalog.md
+docs/plans/pr-data/javascript-lotto/sample-2023-summary.md
+docs/plans/pr-data/javascript-lotto/sample-2024-conversations.json
+docs/plans/pr-data/javascript-lotto/sample-2024-pattern-catalog.md
+docs/plans/pr-data/javascript-lotto/sample-2024-summary.md
+docs/plans/pr-data/javascript-lotto/sample-2025-conversations.json
+docs/plans/pr-data/javascript-lotto/sample-2025-pattern-catalog.md
+docs/plans/pr-data/javascript-lotto/sample-2025-summary.md
+docs/plans/pr-data/javascript-lotto/sample-2026-conversations.json
+docs/plans/pr-data/javascript-lotto/sample-2026-pattern-catalog.md
+docs/plans/pr-data/javascript-lotto/sample-2026-summary.md
+docs/plans/pr-data/javascript-lotto/compare-2023-2025-2026.md
+docs/plans/pr-data/javascript-lotto/compare-2023-2024-2025-2026.md
+docs/plans/pr-data/javascript-lotto/compare-2022-2026.md
+docs/plans/pr-data/javascript-lotto/coverage-2022-2026.md
+docs/plans/pr-data/javascript-lotto/next-collection-queue.md
+docs/plans/pr-data/javascript-lotto/insight-candidates-2023-2025-2026.md
+docs/plans/pr-data/javascript-lotto/insight-candidates-2022-2026.md
 ```
 
 수집 JSON은 최소 아래 필드를 가진다.
@@ -284,18 +343,15 @@ docs/plans/pr-data/javascript-lotto/pattern-catalog.md
 ## 리스크와 대응
 
 - `gh` 인증 만료: 표본 실험은 public HTML + patch로 진행하고, 전수 수집 전에 인증을 복구한다
-- 댓글 구조 파싱 난이도: 먼저 전량 메타데이터와 심층 표본 30개로 스키마를 고정한 뒤 확장한다
+- 댓글 구조 파싱 난이도: 먼저 전량 메타데이터와 심층 표본 50개로 스키마를 고정한 뒤 확장한다
 - 단순 코드 품질 리뷰로만 축소될 위험: 구현 팁이 아니라 교육적 상호작용 패턴을 우선 태깅한다
 - 특정 리뷰어 스타일에 과도하게 끌릴 위험: 코호트와 리뷰어를 섞어 표본을 구성한다
 
 ## 다음 단계
 
-1. `docs/plans/pr-data/javascript-lotto/` 경로를 만들고 PR 목록 `472`건 스냅샷을 저장한다.
-2. 코호트별 심층 표본 `10`개씩 선정한다.
-3. 표본 PR를 JSON으로 정규화한다.
-4. 태그 체계를 한번 적용해보고 중복/애매한 태그를 줄인다.
-5. 패턴 카탈로그 초안을 만든다.
-6. 신호가 충분하면 대화 표본을 `60`개 이상으로 확장하거나, 특정 패턴에 한해 전수 검증한다.
+1. `2022` 코호트 core sample `10`건을 API로 backfill해 HTML 스냅샷과 수치 차이를 확인한다.
+2. 질문형 리뷰를 rough count가 아니라 명시 태그로 재분류한다.
+3. 반복성이 높은 패턴을 `content/education/logs/*` 또는 `content/education/insights/*` 초안으로 승격한다.
 
 ## 연결 포인트
 

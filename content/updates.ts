@@ -9,6 +9,13 @@ export interface Update {
 // 최신 항목을 맨 위에 추가하세요.
 const updates: Update[] = [
   {
+    date: '아카이브',
+    title: '포수타 코치 Q&A 5회 누적 패턴 로그',
+    description: '2024-2025년 포수타 5회 전사를 묶어, 시간 부족·완벽주의·관계·취업·재미라는 반복 주제와 코치들의 우테코식 가이드 어법을 정리한 메타 로그.',
+    href: '/education/logs/posuta-coach-qa-archive',
+    status: 'active',
+  },
+  {
     date: '2026년 연구',
     title: '자바 @MVC 미션 (스프링 MVC 프레임워크 직접 구현, Java)',
     description: '스프링 @MVC를 직접 구현하며 379회 포크·400+ PR 누적. Controller 반환 타입 일관성·Handler 추상화·JsonView 응답 형식·점진적 리팩토링이 핵심 리뷰 주제.',

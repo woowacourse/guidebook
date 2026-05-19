@@ -137,6 +137,16 @@ export function getLogBadges(log: Log): string[] {
 // 최신 항목을 맨 위에 추가하세요.
 const logs: Log[] = [
   {
+    slug: 'posuta-coach-qa-archive',
+    title: '포수타 코치 Q&A 5회 아카이브 — 학습·관계·삶에 대한 누적 대화',
+    description: '2024-2025년 포수타 5회 전사를 모아 시간 부족·완벽주의·관계·취업·재미라는 반복 주제와 코치들의 우테코식 가이드 어법을 정리.',
+    href: '/education/logs/posuta-coach-qa-archive',
+    date: '2026-05-19',
+    phases: [],
+    tracks: [],
+    themes: ['소프트스킬'],
+  },
+  {
     slug: 'android-participatory',
     title: '레벨2 안드로이드 강의형에서 참여형으로',
     description: '레벨2 안드로이드 수업을 강의형에서 참여형으로 전환한 실험 기록.',

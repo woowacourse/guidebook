@@ -1,5 +1,5 @@
 {
-  "lastSyncCommit": "44e44f26c4e644409c48d7f126d39a9ffe0809c0",
+  "lastSyncCommit": "82d290049e7a58ff17398240fadc355cafda8a67",
   "lastSyncDate": "2026-05-19",
   "config": {
     "threshold": 3,
@@ -18,8 +18,14 @@
       "crew-autonomy (17/20) → insights/learning-analytics"
     ],
     "skipped": [
-      {"slug": "android-participatory", "score": 11},
-      {"slug": "writing-sessions", "score": 14}
+      {
+        "slug": "android-participatory",
+        "score": 11
+      },
+      {
+        "slug": "writing-sessions",
+        "score": 14
+      }
     ],
     "insights": [],
     "modelFilesChanged": [

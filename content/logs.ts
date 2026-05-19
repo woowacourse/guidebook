@@ -137,6 +137,25 @@ export function getLogBadges(log: Log): string[] {
 // 최신 항목을 맨 위에 추가하세요.
 const logs: Log[] = [
   {
+    slug: 'android-participatory',
+    title: '레벨2 안드로이드 강의형에서 참여형으로',
+    description: '레벨2 안드로이드 수업을 강의형에서 참여형으로 전환한 실험 기록.',
+    href: '/education/logs/android-participatory',
+    date: '2026-04-28',
+    phases: ['레벨2'],
+    tracks: ['모바일'],
+  },
+  {
+    slug: 'writing-sessions',
+    title: '레벨1 글쓰기 회고 미션',
+    description: '레벨1 글쓰기 회고 미션 에세이 사례 모음',
+    href: '/education/logs/writing-sessions',
+    date: '2026-04-28',
+    phases: ['레벨1'],
+    tracks: ['웹 백엔드', '웹 프론트엔드', '모바일'],
+    themes: ['소프트스킬'],
+  },
+  {
     slug: 'crew-autonomy',
     title: '크루 자율성 강화 - 선택 미션',
     description: '레벨1에서 기존 필수로 수행하게 했던 미션을 선택해서 진행하게 하여 크루들의 학습 능동성과 자율성 강화를 기대하는 실험.',

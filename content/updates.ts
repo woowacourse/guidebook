@@ -10,6 +10,13 @@ export interface Update {
 const updates: Update[] = [
   {
     date: '2026년 연구',
+    title: '안드로이드 레벨2 미니 프로젝트 수업 계획',
+    description: '안드로이드 레벨2 크루 17명을 대상으로 4주 8회차 MVP 빌더 성장을 목표로 설계된 미니 프로젝트 수업 계획서.',
+    href: '/education/logs/android-level2-mini-project',
+    status: 'active',
+  },
+  {
+    date: '2026년 연구',
     title: '자바 @MVC 미션 (스프링 MVC 프레임워크 직접 구현, Java)',
     description: '스프링 @MVC를 직접 구현하며 379회 포크·400+ PR 누적. Controller 반환 타입 일관성·Handler 추상화·JsonView 응답 형식·점진적 리팩토링이 핵심 리뷰 주제.',
     href: '/education-experiment/repositories/java-mvc',

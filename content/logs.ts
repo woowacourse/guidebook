@@ -137,6 +137,15 @@ export function getLogBadges(log: Log): string[] {
 // 최신 항목을 맨 위에 추가하세요.
 const logs: Log[] = [
   {
+    slug: 'android-level2-mini-project',
+    title: '안드로이드 레벨2 미니 프로젝트 수업 계획',
+    description: '안드로이드 레벨2 크루 17명을 대상으로 4주 8회차 MVP 빌더 성장을 목표로 설계된 미니 프로젝트 수업 계획서.',
+    href: '/education/logs/android-level2-mini-project',
+    date: '2026-05-19',
+    phases: ['레벨2'],
+    tracks: ['모바일'],
+  },
+  {
     slug: 'android-participatory',
     title: '레벨2 안드로이드 강의형에서 참여형으로',
     description: '레벨2 안드로이드 수업을 강의형에서 참여형으로 전환한 실험 기록.',

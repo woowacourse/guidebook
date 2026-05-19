@@ -1,6 +1,6 @@
 {
   "lastSyncCommit": "44e44f26c4e644409c48d7f126d39a9ffe0809c0",
-  "lastSyncDate": "2026-04-14",
+  "lastSyncDate": "2026-05-19",
   "config": {
     "threshold": 3,
     "promotionMinScore": 16,
@@ -8,31 +8,26 @@
   },
   "lastBatch": {
     "logs": [
-      "async-quiz-explanation",
-      "fe-ssr-discussion",
-      "fe-rendering-strategy-workshop",
-      "fe-react-typescript-convention",
-      "fe-layout-component-workshop",
-      "fe-accessibility-report"
+      "android-participatory",
+      "coaching-squad-training-loop",
+      "crew-autonomy",
+      "writing-sessions"
     ],
     "promoted": [
-      "rendering-strategy-workshop → tools/ (P2=5)",
-      "argumentation-based-learning → insights/ (4-log cross-pattern)"
+      "coaching-squad-training-loop (20/20) → insights/progressive-scaffolding + tools/clean-language-mentoring",
+      "crew-autonomy (17/20) → insights/learning-analytics"
     ],
-    "skipped": [],
-    "insights": [
-      "argumentation-based-learning"
+    "skipped": [
+      {"slug": "android-participatory", "score": 11},
+      {"slug": "writing-sessions", "score": 14}
     ],
+    "insights": [],
     "modelFilesChanged": [
-      "content/education/tools/rendering-strategy-workshop.mdx",
-      "content/education/insights/argumentation-based-learning.mdx",
-      "content/education/tools/_meta.ts",
-      "content/education/insights/_meta.ts",
-      "content/education/tools/index.mdx",
-      "content/education/logs/fe-rendering-strategy-workshop.mdx",
-      "content/updates.ts"
+      "content/education/insights/progressive-scaffolding.mdx",
+      "content/education/insights/learning-analytics.mdx",
+      "content/education/tools/clean-language-mentoring.mdx"
     ],
-    "note": "2026-04-14 manual cycle: 6 logs evaluated (date:2026-04-07); 2 promotions executed; argumentation-based-learning insight created from 4-log cross-pattern; rendering-strategy-workshop tool extracted from fe-rendering-strategy-workshop log"
+    "note": "2026-05-19 auto cycle: 4 logs since last sync. 2 promoted to existing model files via auto-sync markers (3 marker sections total, within maxAutoSectionsPerFile=5 limit). Skipped 2 below promotionMinScore=16."
   },
   "needsHumanReview": []
 }

@@ -2,3 +2,4 @@ date	mode	logs_measured	logs_promoted	insights_created	model_files_changed	notes
 2026-04-07	manual	29	3	3	2	first cycle: POE discovery / self-diagnostic framework / progressive scaffolding
 2026-04-07	auto	0	0	0	0	baseline-advance after folder consolidation (no substantive log changes)
 2026-04-14	manual	6	2	1	3	targets: 6 logs (date:2026-04-07); tool: rendering-strategy-workshop (P2=5); insight: argumentation-based-learning (4-log cross-pattern); _meta.ts+index.mdx+updates.ts updated
+2026-05-19	auto	4	2	0	3	auto-sync: 4 logs evaluated; promoted coaching-squad-training-loop (20/20) and crew-autonomy (17/20); 3 marker sections added to progressive-scaffolding, learning-analytics, clean-language-mentoring; skipped android-participatory (11), writing-sessions (14)

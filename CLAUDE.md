@@ -55,6 +55,14 @@ content/
     └── logs/                  실험 로그 (매주 쌓이는 원재료)
 ```
 
+## 임시 작업 디렉터리: `.inbox/`
+
+저장소 루트의 `.inbox/`는 **임시·일회성 작업물** 전용 공간이다. 스크래치 메모, 실험 스크립트, 외부에서 받아 정리 중인 원본 파일, 한 번 쓰고 버릴 산출물 등은 모두 여기에 둔다.
+
+- `.gitignore`에 등록되어 있으므로 커밋되지 않는다. 팀에 공유할 필요가 없는 모든 임시 산출물은 이 디렉터리를 사용한다.
+- 정식 콘텐츠(`content/` 하위)나 도구(`.claude/`, `scripts/` 등)로 승격할 가치가 있다고 판단되면, 해당 위치로 옮기고 `.inbox/`에서는 제거한다.
+- 디렉터리 자체는 비어 있을 수 있다(git에 추적되지 않음). 사라져도 무방하며, 필요 시 다시 만들면 된다.
+
 ## 컴포넌트
 
 MDX에서 사용 가능한 커스텀 컴포넌트: Hero, Card, CardGrid, Timeline, TimelineItem, Toggle, Callout, AssetCard, Placeholder, RecentUpdates, LogList, Mermaid

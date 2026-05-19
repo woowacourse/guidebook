@@ -8,6 +8,7 @@ docs/plans/pr-data/
 .playwright-mcp/
 .temp/
 .worktrees/
+.inbox/
 public/_pagefind/
 
 # Claude Code 개인 설정 (팀 공유 금지)

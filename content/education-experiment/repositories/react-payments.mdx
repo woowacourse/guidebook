@@ -1,0 +1,25 @@
+---
+title: 리액트 페이먼츠 미션 (UI 컴포넌트 설계, TypeScript)
+---
+
+# 리액트 페이먼츠 미션 (UI 컴포넌트 설계, TypeScript)
+
+> [GitHub: woowacourse/react-payments](https://github.com/woowacourse/react-payments)
+>
+> 분석 티어: T2 · 점수: 20/25 · 마지막 스캔: 2026-04-07
+
+## 개요
+
+우아한테크코스 프론트엔드 트랙 레벨2 학습자를 대상으로 결제 카드 UI를 TypeScript·React로 구현하는 미션 레포지토리. 207회 포크·496개 PR이 누적된 다기수 미션으로, PR 템플릿에 2단계 학습 목표와 리뷰어 가이드가 명시되어 있다. 커스텀 훅 설계·접근성·TypeScript 타이핑이 핵심 리뷰 주제다.
+
+## 주요 발견
+
+- **커스텀 훅 관심사 분리**: 재사용성 높은 커스텀 훅 분리가 권고·칭찬 동시에 등장. 카드 상태 관리를 Context API로 이관하는 논의도 반복됨.
+- **컴포넌트 Props 인터페이스 설계**: 과도하게 제어권을 가져가는 props 설계 vs HTML select 인터페이스 참고, 디자인시스템 라이브러리 패턴 권고.
+- **CSS 뷰포트 단위**: dvh vs vh 차이, 모바일 환경 뷰포트 단위 선택 기준 논의가 다수 PR에 등장.
+- **접근성 (a11y) 리뷰**: 스크린리더 의미 있는 정보 전달, aria-* 속성 적용 권고. 레벨4 접근성 미션(a11y-airline)과 연결되는 주제.
+- **TypeScript 타입 정확성**: `Record<CARD_COMPANIES_ENGLISH, string>` 등 정밀한 타이핑 권고, 네이밍 일반화(Item, custom 등) 지적.
+
+## 원본 데이터
+
+`.research/repos/react-payments.md` 에 전체 분석 노트가 있습니다.

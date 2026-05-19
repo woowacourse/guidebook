@@ -1,0 +1,25 @@
+---
+title: 자바 로또 미션 (구현→리팩토링 2단계, Java)
+---
+
+# 자바 로또 미션 (구현→리팩토링 2단계, Java)
+
+> [GitHub: woowacourse/java-lotto](https://github.com/woowacourse/java-lotto)
+>
+> 분석 티어: T2 · 점수: 19/25 · 마지막 스캔: 2026-04-07
+
+## 개요
+
+우아한테크코스 레벨1 Java 학습자를 대상으로 로또 시스템을 구현하는 미션 레포지토리. 1단계(구현)에서 2단계(리팩토링)로 이어지는 2단계 학습 구조가 명확하게 설계되어 있다. 327회 포크·676개 PR이 누적된 다기수 대규모 미션으로, kotlin-lotto·javascript-lotto와 함께 다언어 비교 허브 역할을 한다.
+
+## 주요 발견
+
+- **단일 책임 원칙 위반**: Controller가 비즈니스 로직(금액 계산, 로또 생성)을 직접 수행하는 패턴이 가장 빈번하게 지적됨. requestAmountForLotto()가 Lotto를 반환하는 부조화가 대표 사례.
+- **일급 컬렉션 패턴**: 로또 목록을 Lottos 래퍼 클래스로 캡슐화하는 패턴 권고가 다수 PR에 등장. 참고 링크(jojoldu 블로그) 첨부 사례 확인.
+- **예외 처리 일관성**: IllegalArgumentException 메시지 고정/동적 선택, 예외 범위 적절성 논의가 반복됨. 2단계 리팩토링에서 집중적으로 개선됨.
+- **LottoGenerator 책임 경계**: 생성기의 반환 타입(Lotto vs Lottos)이 설계 의도를 드러내는지에 대한 구조적 토론.
+- **UI·도메인 분리**: WebUI와 콘솔 구현에서 공통 추상화 필요성, DAO 인터페이스 추상화 권고가 누적됨.
+
+## 원본 데이터
+
+`.research/repos/java-lotto.md` 에 전체 분석 노트가 있습니다.

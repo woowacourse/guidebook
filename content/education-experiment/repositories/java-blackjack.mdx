@@ -1,0 +1,29 @@
+---
+title: 자바 블랙잭 미션 (다기수 누적, Java)
+---
+
+# 자바 블랙잭 미션 (다기수 누적, Java)
+
+> [GitHub: woowacourse/java-blackjack](https://github.com/woowacourse/java-blackjack)
+>
+> 분석 티어: T2 · 점수: 20/25 · 마지막 스캔: 2026-04-07
+
+## 개요
+
+자바로 블랙잭 게임을 구현하는 우아한테크코스 핵심 미션. 2020년부터 운영되며 549개 이상의 포크와 1,000+ PR이 누적된 대표 교육 저장소다. OOP 설계 원칙(단일 책임, 값 객체 분리)과 입력 검증 책임 위치 결정이 핵심 학습 목표로 수렴된다.
+
+## 주요 발견
+
+1. **입력 검증 책임 분리가 반복 피드백 주제**: 도메인 vs InputView vs 별도 Validator 클래스 중 어디서 validate 할지에 대한 질문이 다수 PR에서 반복 등장. 코치가 일관되게 "역할 순수성" 기준으로 지도.
+
+2. **원시 타입 포장 패턴 (VO 설계)**: Betting, Name 등 값 객체 분리, equals/hashCode 직접 구현, Map 키 활용 패턴을 리뷰에서 적극 권장. kotlin-blackjack과 교차 비교 가능한 핵심 패턴.
+
+3. **테스트 품질 피드백 일관성**: assertThrows에 message 검증 추가, @ParameterizedTest 활용, 성공/실패 케이스 분리 — 매 PR에서 반복 지적되는 공통 개선 포인트.
+
+4. **게임 판정 로직 버그 패턴**: isBlackjack() 조건에서 플레이어/딜러 변수 혼동, bust 시 판정 누락 — 도메인 로직 테스트 부재에서 기인하는 전형적 오류.
+
+5. **컬렉션 인터페이스 추상화**: LinkedHashMap → Map 인터페이스 추상화 권고가 반복 등장. 구현체에 직접 의존하는 코드 냄새에 대한 코치 일관 지도.
+
+## 원본 데이터
+
+`.research/repos/java-blackjack.md` 에 전체 분석 노트가 있습니다.

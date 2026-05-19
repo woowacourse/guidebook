@@ -10,6 +10,13 @@ export interface Update {
 const updates: Update[] = [
   {
     date: '2026년 연구',
+    title: '크루들과의 포수타 5회 스크립트 아카이브',
+    description: '포비 캡틴과 6~7기 크루들의 포수타 5회 전사를 정리하고, 방향 설정에서 학습 태도·관계 맺기로 이동한 질문 흐름을 함께 읽었다.',
+    href: '/education/logs/posuta-archive',
+    status: 'active',
+  },
+  {
+    date: '2026년 연구',
     title: '자바 @MVC 미션 (스프링 MVC 프레임워크 직접 구현, Java)',
     description: '스프링 @MVC를 직접 구현하며 379회 포크·400+ PR 누적. Controller 반환 타입 일관성·Handler 추상화·JsonView 응답 형식·점진적 리팩토링이 핵심 리뷰 주제.',
     href: '/education-experiment/repositories/java-mvc',

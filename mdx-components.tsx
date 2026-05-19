@@ -11,6 +11,11 @@ import { RecentUpdates } from './components/RecentUpdates'
 import { LogList } from './components/LogList'
 import { Mermaid } from './components/Mermaid'
 import { RepoList } from './components/RepoList'
+import { DemoDayFullList } from './components/DemoDayFullList'
+import { EducationBriefingFullList } from './components/EducationBriefingFullList'
+import { TecoTalkExplorer } from './components/TecoTalkExplorer'
+import { TecobleArchiveExplorer } from './components/TecobleArchiveExplorer'
+import { VlogArchiveExplorer } from './components/VlogArchiveExplorer'
 
 const docsComponents = getDocsMDXComponents()
 
@@ -30,6 +35,11 @@ export function useMDXComponents(components?: Record<string, React.FC>) {
     LogList,
     Mermaid,
     RepoList,
+    DemoDayFullList,
+    EducationBriefingFullList,
+    TecoTalkExplorer,
+    TecobleArchiveExplorer,
+    VlogArchiveExplorer,
     ...components
   }
 }

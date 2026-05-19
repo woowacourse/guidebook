@@ -1,5 +1,6 @@
 node_modules/
 .next/
+.next.broken-*/
 out/
 *.tsbuildinfo
 next-env.d.ts
@@ -7,6 +8,10 @@ docs/plans/pr-data/
 .playwright-mcp/
 .temp/
 .worktrees/
+public/_pagefind/
+
+# Claude Code 개인 설정 (팀 공유 금지)
+.claude/settings.local.json
 
 # woowacourse org research pipeline — 분석 노트·배치 로그는 재생성 가능하므로 gitignore
 # repo-scores.tsv 와 _index.json 은 커밋한다 (autoresearch의 results.tsv 역할)

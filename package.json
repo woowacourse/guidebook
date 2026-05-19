@@ -5,6 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "npm run build:search-index && npm run check:search-index",
+    "build:search-index": "node scripts/search/build-pagefind.mjs",
+    "check:search-index": "node scripts/search/verify-pagefind.mjs",
     "start": "next start"
   },
   "dependencies": {
@@ -18,6 +21,7 @@
   "devDependencies": {
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
+    "pagefind": "^1.5.2",
     "typescript": "^5.7.0"
   }
 }

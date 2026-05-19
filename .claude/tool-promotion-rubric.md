@@ -7,7 +7,7 @@
 ## 목적
 
 실험 로그 안에 **다른 코치가 복사해서 바로 사용할 수 있는 도구**(프롬프트, 워크플로우, 템플릿, 체크리스트)가
-포함되어 있는지 판정한다. 승격 대상이 있으면 `content/education-experiment/tools/`로 분리한다.
+포함되어 있는지 판정한다. 승격 대상이 있으면 `content/education/tools/`로 분리한다.
 
 ## 승격 기준 (4개 차원, 각 Yes/No, 3개 이상 Yes면 승격)
 
@@ -53,13 +53,13 @@
 
 - **4/4 Yes** → 즉시 승격. 산출물을 `tools/`에 독립 MDX로 분리.
 - **3/4 Yes** → 승격 후 보강. 산출물을 분리하되, No인 차원을 도구 페이지에서 보완.
-- **2/4 이하** → 승격 보류. 로그 개선(`/improve-log`)으로 산출물 품질을 먼저 올린다.
+- **2/4 이하** → 승격 보류. 로그 개선(`/로그개선`)으로 산출물 품질을 먼저 올린다.
 
 ## 승격 시 수행 작업
 
-1. `content/education-experiment/tools/{slug}.mdx` 생성 — 산출물 + 사용법 + 출처 로그 링크
-2. `content/education-experiment/tools/_meta.ts`에 항목 추가
-3. `content/education-experiment/tools/index.mdx`에 링크 추가
+1. `content/education/tools/{slug}.mdx` 생성 — 산출물 + 사용법 + 출처 로그 링크
+2. `content/education/tools/_meta.ts`에 항목 추가
+3. `content/education/tools/index.mdx`에 링크 추가
 4. `content/updates.ts` 배열 맨 위에 항목 추가 (status: 'active')
 5. 원본 로그에 도구 링크 추가 (Callout으로 "이 실험에서 검증된 도구" 안내)
 

@@ -13,12 +13,8 @@ export default {
       typesetting: 'article'
     }
   },
-  'education-model': {
-    title: '교육 모델',
-    type: 'page'
-  },
-  'education-experiment': {
-    title: '교육 실험',
+  education: {
+    title: '교육',
     type: 'page'
   }
 }

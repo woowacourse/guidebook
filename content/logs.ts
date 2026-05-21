@@ -137,6 +137,16 @@ export function getLogBadges(log: Log): string[] {
 // 최신 항목을 맨 위에 추가하세요.
 const logs: Log[] = [
   {
+    slug: 'thanks-feedback-workshop',
+    title: '레벨2 지키미 선택 과목 - 고맙다 피드백 워크숍',
+    description: 'Stone & Heen의 Thanks for the Feedback 프레임(3종 피드백, 3트리거, SSCC, 7일 약속)을 레벨2 지키미 선택 과목 90분 워크숍 6활동으로 설계합니다.',
+    href: '/education/logs/thanks-feedback-workshop',
+    date: '2026-05-19',
+    phases: ['레벨2'],
+    tracks: [],
+    themes: ['소프트스킬'],
+  },
+  {
     slug: 'android-participatory',
     title: '레벨2 안드로이드 강의형에서 참여형으로',
     description: '레벨2 안드로이드 수업을 강의형에서 참여형으로 전환한 실험 기록.',

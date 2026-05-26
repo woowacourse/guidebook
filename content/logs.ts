@@ -137,6 +137,35 @@ export function getLogBadges(log: Log): string[] {
 // 최신 항목을 맨 위에 추가하세요.
 const logs: Log[] = [
   {
+    slug: 'posuta-coach-qa-archive',
+    title: '포수타 코치 Q&A 5회 아카이브 — 학습·관계·삶에 대한 누적 대화',
+    description: '2024-2025년 포수타 5회 전사를 모아 시간 부족·완벽주의·관계·취업·재미라는 반복 주제와 코치들의 우테코식 가이드 어법을 정리.',
+    href: '/education/logs/posuta-coach-qa-archive',
+    date: '2026-05-19',
+    phases: [],
+    tracks: [],
+    themes: ['소프트스킬'],
+  },
+  {
+    slug: 'posuta-archive',
+    title: '크루들과의 포수타 5회 스크립트 아카이브',
+    description: '포비 캡틴과 6~7기 크루들의 포수타 5회 전사를 정리하고, 방향 설정에서 학습 태도·관계 맺기로 이동한 질문 흐름을 함께 읽었다.',
+    href: '/education/logs/posuta-archive',
+    date: '2026-05-19',
+    phases: ['레벨2', '레벨4'],
+    tracks: [],
+    themes: ['소프트스킬'],
+  },
+  {
+    slug: 'android-level2-mini-project',
+    title: '안드로이드 레벨2 미니 프로젝트 수업 계획',
+    description: '안드로이드 레벨2 크루 17명을 대상으로 4주 8회차 MVP 빌더 성장을 목표로 설계된 미니 프로젝트 수업 계획서.',
+    href: '/education/logs/android-level2-mini-project',
+    date: '2026-05-19',
+    phases: ['레벨2'],
+    tracks: ['모바일'],
+  },
+  {
     slug: 'thanks-feedback-workshop',
     title: '레벨2 지키미 선택 과목 - 고맙다 피드백 워크숍',
     description: 'Stone & Heen의 Thanks for the Feedback 프레임(3종 피드백, 3트리거, SSCC, 7일 약속)을 레벨2 지키미 선택 과목 90분 워크숍 6활동으로 설계합니다.',

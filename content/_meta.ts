@@ -16,5 +16,9 @@ export default {
   education: {
     title: '교육',
     type: 'page'
+  },
+  'education-experiment': {
+    title: 'Education Experiment',
+    display: 'hidden'
   }
 }

@@ -31,6 +31,13 @@ const updates: Update[] = [
   },
   {
     date: '2026년 연구',
+    title: '레벨2 지키미 선택 과목 - 고맙다 피드백 워크숍',
+    description: 'Stone & Heen의 Thanks for the Feedback 프레임(3종 피드백, 3트리거, SSCC, 7일 약속)을 레벨2 지키미 선택 과목 90분 워크숍 6활동으로 설계합니다.',
+    href: '/education/logs/thanks-feedback-workshop',
+    status: 'active',
+  },
+  {
+    date: '2026년 연구',
     title: '자바 @MVC 미션 (스프링 MVC 프레임워크 직접 구현, Java)',
     description: '스프링 @MVC를 직접 구현하며 379회 포크·400+ PR 누적. Controller 반환 타입 일관성·Handler 추상화·JsonView 응답 형식·점진적 리팩토링이 핵심 리뷰 주제.',
     href: '/education-experiment/repositories/java-mvc',

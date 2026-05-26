@@ -5,6 +5,14 @@ const hidden = (title: string) => ({
 
 export default {
   index: '개요',
+  tools: {
+    title: '검증된 도구',
+    href: '/education/tools',
+  },
+  conversations: {
+    title: '우테코 콘텐츠 아카이브',
+    href: '/education/conversations',
+  },
   onboarding: '온보딩',
   level0: '레벨0',
   level1: '레벨1',

@@ -137,6 +137,15 @@ export function getLogBadges(log: Log): string[] {
 // 최신 항목을 맨 위에 추가하세요.
 const logs: Log[] = [
   {
+    slug: 'react-payments-555prs-analysis',
+    title: 'React 페이먼츠 미션 5년치 PR 555개 데이터 분석',
+    description: 'woowacourse/react-payments 저장소 555개 PR(2021–2026)의 본문·리뷰 코멘트 2,360건을 정량 분석해 학습 주제 진화·리뷰어 코칭 패턴·미션 재설계 흔적을 추적했다.',
+    href: '/education/logs/react-payments-555prs-analysis',
+    date: '2026-05-26',
+    phases: [],
+    tracks: ['웹 프론트엔드'],
+  },
+  {
     slug: 'posuta-archive',
     title: '크루들과의 포수타 5회 스크립트 아카이브',
     description: '포비 캡틴과 6~7기 크루들의 포수타 5회 전사를 정리하고, 방향 설정에서 학습 태도·관계 맺기로 이동한 질문 흐름을 함께 읽었다.',

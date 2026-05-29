@@ -2,6 +2,12 @@
 
 우아한테크코스 공식 교육 가이드북. Nextra 4 + Next.js App Router 기반.
 
+## LLM이 이 저장소를 읽고 기여하려면
+
+- 외부 LLM은 [`public/llms.txt`](./public/llms.txt) 를 먼저 읽어 사이트 구조를 파악.
+- 전체 콘텐츠를 한 번에 ingest 하려면 [`public/llms-full.txt`](./public/llms-full.txt) 사용.
+- 기여 규약은 [`AGENTS.md`](./AGENTS.md), 내부 워크플로우는 [`CLAUDE.md`](./CLAUDE.md) 참고.
+
 ## 빠른 시작
 
 ```bash

@@ -2,6 +2,23 @@
 
 Nextra 4 + Next.js App Router 기반 교육 가이드북.
 
+## LLM Wiki 패턴 (Karpathy + llms.txt)
+
+이 저장소는 LLM 친화적 위키 구조를 따른다. 자세한 규약은 다음 문서를 참고한다:
+
+- **`AGENTS.md`** — 외부 LLM 에이전트가 이 저장소에 기여할 때의 규약 (OpenAI/Codex/Cursor 호환).
+- **`.claude/conventions/frontmatter-spec.md`** — MDX frontmatter 표준 (새 페이지부터 점진 적용).
+- **`.claude/templates/`** — 새 페이지 작성 템플릿.
+- **`public/llms.txt` / `public/llms-full.txt`** — 외부 LLM이 사이트를 빠르게 훑을 수 있는 진입점. `npm run build` 시 자동 생성.
+- **`/위키정리`** — 위키 정합성 lint 커맨드.
+
+| 역할 | 파일 | 대상 독자 |
+|------|------|-----------|
+| 워크플로우/schema | `CLAUDE.md` | Claude Code (이 저장소 내부) |
+| 컨트리뷰션 규약 | `AGENTS.md` | 모든 LLM 에이전트 |
+| 사이트 카탈로그 | `public/llms.txt` | 외부 LLM (ChatGPT/Claude/Gemini 등) |
+| 전체 콘텐츠 평탄화 | `public/llms-full.txt` | 일괄 ingest 가 필요한 외부 LLM |
+
 ## 콘텐츠 추가 시 필수 작업
 
 `content/` 디렉토리에 새 MDX 파일을 추가하거나 기존 문서에 의미 있는 내용을 추가했을 때, 반드시 아래 두 가지를 함께 수행해야 한다:

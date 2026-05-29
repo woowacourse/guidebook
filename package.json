@@ -5,9 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "npm run build:search-index && npm run check:search-index",
+    "postbuild": "npm run build:llms-txt && npm run check:llms-txt && npm run build:search-index && npm run check:search-index",
+    "build:llms-txt": "node scripts/llms-txt/build.mjs",
+    "check:llms-txt": "node scripts/llms-txt/verify.mjs",
     "build:search-index": "node scripts/search/build-pagefind.mjs",
     "check:search-index": "node scripts/search/verify-pagefind.mjs",
+    "test:llms-txt": "node --test scripts/llms-txt/__tests__/build.test.mjs",
     "start": "next start"
   },
   "dependencies": {

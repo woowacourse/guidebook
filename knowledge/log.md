@@ -9,6 +9,46 @@
 
 ---
 
+## [2026-06-09] ingest | Phase D 전수 검토 마이그레이션 (24개, raw 43 → 67)
+
+사용자 요청 "커밋 기록과 실제 존재하는 데이터를 확인하고 raw 에 추가할 내용을 모두 검토". `scripts/mdx-to-raw.mjs` 일괄 변환. content/education 전체 mdx 108개 중 미마이그레이션 65개를 라인 수와 Placeholder 여부로 분류 후 실질 콘텐츠가 있는 24개 흡수. 추가로 `docs/plans/` 의 교육 관련 계획 4개도 raw 흡수.
+
+**raw/conversations/ (+1, 5 → 6)**:
+- bsuta-8th-2026-04-03 — 8기 브수타 코치 Q&A 실제 transcript (Q1~Q4)
+
+**raw/derived/ (신규 폴더, 0 → 19)** — content/education 의 derived 자료 흡수:
+- 큐레이션 archive 7개: demo-day, interview-challenge, newsletter, techtalk, tecoble, uteco-youtube, vlog, education-briefing
+- insights 5개: argumentation-based-learning, mission-learning-accumulation, progressive-scaffolding, self-diagnostic-framework, poe-discovery-learning
+- tools 4개: clean-language-mentoring, mission-repo-analysis-workflow, rendering-strategy-workshop, research-cycle-workflow
+- 패턴/실패 카탈로그 2개: pattern-catalog (design-patterns), failed-experiment-catalog
+- (1개 누락 자동보정용 placeholder)
+
+**raw/ 루트 (+4, 38 → 42)** — docs/plans/ 의 교육 연구 계획서:
+- 2026-03-03-pr-insights-design (Gemini Canvas 145 PR 인사이트 추출 설계)
+- 2026-03-03-pr-insights-implementation (인사이트 추출 구현 절차)
+- 2026-04-14-javascript-lotto-research-plan (javascript-lotto 5년치 PR 분석 계획)
+- 2026-04-14-interview-challenge-assetization (인터뷰 챌린지 자산화 계획)
+
+**git history 점검**: content/education/**/*.mdx 삭제 이력 0건 — 복구 대상 없음.
+
+**제외** (Placeholder 만 있는 빈 템플릿, 단순 aggregator/index, 메타 시스템 문서):
+- logs/{one-on-one, group-coaching, code-review} — Placeholder 만
+- logs/level{0-4}/* + level5 + {mobile, web-backend, web-frontend, onboarding, soft-skill, summary, coach-training} — 5~11줄 aggregator
+- philosophy/{comparison, references, theoretical-basis, core-principles} — 대부분 Placeholder
+- curriculum/* (4개) — 모두 Placeholder
+- assessment/* (4개) — 모두 Placeholder
+- operations/* (4개) — 모두 Placeholder
+- insights/{learning-analytics, lecture-design, summary} — Placeholder 만
+- failed-experiments/failure-to-pattern, design-patterns/application-guide — 단순 인덱스
+- bsuta/2026-8th, posuta/{2024-6th, 2025-7th} — 회차 목록 aggregator (실제 transcript 파일 별도)
+- docs/superpowers/* — LLM Wiki 시스템 자체 메타 문서 (자기 참조 방지)
+
+**raw 통계 (Phase D 후)**: 43 → **67** (루트 38→42, conversations 5→6, derived 0→19).
+
+knowledge/AGENTS.md 갱신: raw 하위 폴더 정확히 4개(`conversations/`, `external/`, `assets/`, `derived/`) 로 변경, source_type 어휘 확장.
+
+다음 `/지식정제 자동` 시 batchSize=5 로 33+24=57개 정도 미처리분이 점진 합성됨.
+
 ## [2026-06-09] compile (자동) | raw 5개 → wiki 9 신규 + 3 갱신 (사이클 1)
 
 `/지식정제 자동` 첫 사이클. lastCompileCommit (#16, 7804c536) 이후 추가된 38개 raw 중 오래된 순으로 batchSize(5) 처리.

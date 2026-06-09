@@ -1,0 +1,85 @@
+---
+source_type: derived-archive
+captured: 2026-06-09
+published_at: content/education/conversations/newsletter-archive.mdx
+---
+
+# 뉴스레터 아카이브
+
+> 우테코 메일리 뉴스레터를 처음부터 끝까지 다시 읽기 쉽게 정리한 안내 페이지입니다.
+>
+> - 발행처: [우테코 뉴스레터](https://maily.so/wooteco.newsletter/)
+> - 분석 범위: 2025년 5월 2일 ~ 2025년 10월 31일
+> - 전체 발행 수: 19개
+> - 성격: 캠퍼스 소식, 성장 콘텐츠, 팀 프로젝트 기록, 지원자 안내를 함께 담는 외부 커뮤니케이션 아카이브
+
+## 이 아카이브가 유용한 이유
+
+우테코 뉴스레터 19개를 순서대로 읽어보면, 이것은 단순한 행사 소식 모음이 아닙니다. 매 호마다 `캠퍼스에서 실제로 벌어지는 장면`, `크루에게 지금 필요한 성장 주제`, `다음 주 테코톡`, 그리고 때로는 `지원자나 외부 독자를 위한 설명`이 함께 들어 있습니다.
+
+즉 이 뉴스레터는 우테코를 바깥에 설명하는 가장 생활감 있는 창구입니다. 공식 철학 문서가 “왜 이렇게 운영하는가”를 보여준다면, 뉴스레터는 “그래서 캠퍼스 안에서는 무엇이 벌어지는가”를 보여줍니다.
+
+## 19개를 다 읽고 나면 보이는 네 가지 흐름
+
+### 1. 시작은 적응보다 `관계 만들기`에 가깝습니다
+
+1호부터 5호까지는 피카츄 배구, 롤링페이퍼, 실패 자랑대회, 추천 글 공유 같은 장면이 반복됩니다. 우테코의 출발선이 단순한 수업 개시가 아니라, 말을 트고 실패를 공유하고 서로의 리듬을 읽는 공동체 형성 과정이라는 점이 뚜렷합니다.
+
+### 2. 학습 콘텐츠는 늘 `지금 필요한 것`에 맞춰 붙습니다
+
+초반에는 맛집, 블로그 플랫폼, 키보드, 생산성 도구처럼 생활과 학습 습관에 가까운 주제가 붙고, 중반 이후에는 협업 잡음, 코드 리뷰, UT, 책 추천, 휴식 전략처럼 팀 프로젝트와 성장 고민에 더 가까운 주제로 이동합니다. 뉴스레터가 별도 매거진이 아니라, 교육 흐름을 따라가는 보조 리듬이라는 뜻입니다.
+
+### 3. 레벨 3 이후에는 `프로젝트를 배우는 과정` 자체가 전면에 나옵니다
+
+9호부터 14호, 19호까지는 팀 소개, 워크숍, 사용자 테스트, 론칭 페스티벌, 최종 데모데이가 이어집니다. 단순히 “무엇을 만들었다”가 아니라, 사용자 니즈를 어떻게 찾았는지, 협업 방식이 어떻게 바뀌었는지, 피드백을 어떻게 반영했는지까지 함께 드러납니다.
+
+### 4. 마지막에는 내부 기록이 외부 안내로 확장됩니다
+
+15호, 16호, 18호는 특히 지원자와 외부 독자를 강하게 의식한 호수입니다. 8기 지원 팁, 입학설명회의 핵심 메시지, 7기 생활 회고를 통해 우테코 바깥의 사람도 “여기서는 어떤 시간을 보내게 되는가”를 상상할 수 있게 도와줍니다.
+
+## 반복해서 드러나는 우테코의 얼굴
+
+| 관찰 포인트 | 19개 뉴스레터에서 반복되는 모습 |
+|---|---|
+| 공동체 문화 | 이벤트가 단순한 친목이 아니라 대화, 감사, 실패 공유, 관계 회복의 장치로 쓰입니다. |
+| 성장 방식 | 공부법 자체보다 몰입, 선택과 집중, 기록, 회고, 협업 같은 학습 태도를 더 자주 다룹니다. |
+| 프로젝트 교육 | 기획, 팀워크, 유저 테스트, 론칭, 유지보수까지 이어지는 실제 서비스 경험을 꾸준히 보여줍니다. |
+| 외부 소통 | 크루 내부 기록을 외부 독자에게도 이해 가능한 언어로 번역하려는 시도가 후반부로 갈수록 강해집니다. |
+| 아카이브 가치 | 각 호는 짧지만, 19개를 이어 읽으면 한 기수의 생활 리듬과 계절감이 거의 다 드러납니다. |
+
+## 무엇이 궁금하면 어디서부터 읽을까
+
+| 궁금한 것 | 먼저 읽을 호수 | 이유 |
+|---|---|---|
+| 우테코 캠퍼스 분위기를 빠르게 알고 싶다 | [1호](https://maily.so/wooteco.newsletter/posts/e9o0em2nz8w), [2호](https://maily.so/wooteco.newsletter/posts/8do781k0rgq), [17호](https://maily.so/wooteco.newsletter/posts/x1zgw00voqg) | 첫 발행 시기의 톤, 데일리조 분위기, 감사 이벤트처럼 공동체의 결이 잘 드러납니다. |
+| 크루들이 어떻게 배우고 버티는지 보고 싶다 | [3호](https://maily.so/wooteco.newsletter/posts/mjz63xkyzwk), [7호](https://maily.so/wooteco.newsletter/posts/2nznk526zp5), [10호](https://maily.so/wooteco.newsletter/posts/2qzpl6lwr4x), [17호](https://maily.so/wooteco.newsletter/posts/x1zgw00voqg) | 학습 회고, 협업 조언, 회의 문화, 휴식 전략처럼 과정의 언어가 모여 있습니다. |
+| 팀 프로젝트 흐름을 따라가고 싶다 | [9호](https://maily.so/wooteco.newsletter/posts/1gz2vyy5r3q), [11호](https://maily.so/wooteco.newsletter/posts/92zewpmpzep), [12호](https://maily.so/wooteco.newsletter/posts/32z8w751zn4), [14호](https://maily.so/wooteco.newsletter/posts/xyowxw51r28), [19호](https://maily.so/wooteco.newsletter/posts/knrjp265rld) | 팀 소개에서 워크숍, 사용자 테스트, 중간 공개, 최종 런칭까지 한 줄기로 이어집니다. |
+| 지원자 관점에서 우테코를 알고 싶다 | [15호](https://maily.so/wooteco.newsletter/posts/8mo54v2nz9p), [16호](https://maily.so/wooteco.newsletter/posts/g0zmwk93oql), [18호](https://maily.so/wooteco.newsletter/posts/l1zqgv1yr5x) | 지원 준비, 선발 키워드, 실제 생활 리듬까지 외부 독자에게 설명하려는 의도가 가장 선명합니다. |
+
+## 전체 뉴스레터 목록
+
+| 호수 | 날짜 | 읽을 포인트 | 링크 |
+|---|---|---|---|
+| 1호 | 2025.05.02 | 첫 발행호. 캠퍼스 이벤트와 주간 콘텐츠, 테코톡 공지를 함께 싣는 기본 포맷의 출발점 | [바로가기](https://maily.so/wooteco.newsletter/posts/e9o0em2nz8w) |
+| 2호 | 2025.05.09 | 피카츄 배구, 데일리조 롤링페이퍼, 크루위키와 맛집 추천으로 공동체 톤을 강하게 보여주는 호수 | [바로가기](https://maily.so/wooteco.newsletter/posts/8do781k0rgq) |
+| 3호 | 2025.05.23 | “레벨 1으로 돌아간다면?”이라는 질문으로 학습 습관과 후회를 집단 회고하는 호수 | [바로가기](https://maily.so/wooteco.newsletter/posts/mjz63xkyzwk) |
+| 4호 | 2025.05.30 | 추천 글 공유 스레드와 키보드 추천을 통해 학습 자원 공유 문화와 취향의 결을 담은 호수 | [바로가기](https://maily.so/wooteco.newsletter/posts/92zewykdzep) |
+| 5호 | 2025.06.05 | 실패 자랑대회와 블로그 플랫폼 비교를 통해 성장 서사를 기록과 연결한 호수 | [바로가기](https://maily.so/wooteco.newsletter/posts/xyowm832z28) |
+| 6호 | 2025.07.11 | 방학 이후 다시 달리는 시점의 뉴스레터. 프로젝트 진입 전환기의 분위기를 읽기 좋은 호수 | [바로가기](https://maily.so/wooteco.newsletter/posts/5xrx6w35r2v) |
+| 7호 | 2025.07.18 | 레크리에이션과 5기 수료생 도기의 협업 조언으로, 팀 프로젝트 초반의 관계 맺기와 소프트 스킬을 함께 보여주는 호수 | [바로가기](https://maily.so/wooteco.newsletter/posts/2nznk526zp5) |
+| 8호 | 2025.07.25 | 미니게임과 생산성 도구 추천을 묶어, 프로젝트 몰입기 속 생활 생산성을 다루는 호수 | [바로가기](https://maily.so/wooteco.newsletter/posts/1do19099zx6) |
+| 9호 | 2025.08.01 | 팀 프로젝트 팀들을 직접 소개하며 서비스 아이디어, 어려움, 협업 소감을 본격적으로 드러내는 호수 | [바로가기](https://maily.so/wooteco.newsletter/posts/1gz2vyy5r3q) |
+| 10호 | 2025.08.08 | 질문 카드를 활용한 회의 문화 개선과 리뷰어 인터뷰를 통해 건강한 협업을 전면에 세운 호수 | [바로가기](https://maily.so/wooteco.newsletter/posts/2qzpl6lwr4x) |
+| 11호 | 2025.08.14 | 팀별 워크숍을 통해 프로젝트 팀이 어떻게 친밀감과 팀워크를 쌓는지 보여주는 호수 | [바로가기](https://maily.so/wooteco.newsletter/posts/92zewpmpzep) |
+| 12호 | 2025.08.22 | 리프레쉬 패키지와 사용자 테스트(UT) 인사이트를 함께 담아, 교육 중반의 격려와 검증 문화를 보여주는 호수 | [바로가기](https://maily.so/wooteco.newsletter/posts/32z8w751zn4) |
+| 13호 | 2025.09.12 | 크루와 코치의 추천 도서로 몰입, 커리어, 협업, 의식적 연습을 큐레이션한 호수 | [바로가기](https://maily.so/wooteco.newsletter/posts/2qzpgxewz4x) |
+| 14호 | 2025.09.19 | 론칭 페스티벌 현장을 통해 서비스 시연, 부스 운영, 피드백 순환을 기록한 중간 성과 정리 호수 | [바로가기](https://maily.so/wooteco.newsletter/posts/xyowxw51r28) |
+| 15호 | 2025.09.26 | 8기 지원자를 염두에 두고, 7기 크루의 지원 경험과 준비 팁을 바깥 언어로 번역한 호수 | [바로가기](https://maily.so/wooteco.newsletter/posts/8mo54v2nz9p) |
+| 16호 | 2025.10.02 | 입학설명회의 핵심 키워드인 `도전`을 정리하며, 코치 메시지를 지원자 관점으로 재구성한 호수 | [바로가기](https://maily.so/wooteco.newsletter/posts/g0zmwk93oql) |
+| 17호 | 2025.10.17 | 감사 편지 이벤트와 휴식 전략을 통해, 치열한 과정 속 회복의 방식을 다루는 호수 | [바로가기](https://maily.so/wooteco.newsletter/posts/x1zgw00voqg) |
+| 18호 | 2025.10.24 | 레벨 1 중심으로 7기 생활 전체를 설명해, 우테코의 하루와 학습 구조를 외부에 소개하는 호수 | [바로가기](https://maily.so/wooteco.newsletter/posts/l1zqgv1yr5x) |
+| 19호 | 2025.10.31 | 최종 데모데이와 런칭 현장을 담아 한 기수의 마무리와 다음 출발점을 함께 보여주는 호수 | [바로가기](https://maily.so/wooteco.newsletter/posts/knrjp265rld) |
+
+## 한 줄로 요약하면
+
+이 19개의 뉴스레터는 우테코를 “교육 철학을 가진 과정”으로만이 아니라, `함께 배우고`, `함께 만들고`, `함께 회고하는 커뮤니티`로 보이게 만드는 기록입니다. 그래서 이 아카이브는 단순한 외부 홍보 자료라기보다, 한 기수의 생활 리듬을 바깥으로 번역한 공개 일지에 가깝습니다.

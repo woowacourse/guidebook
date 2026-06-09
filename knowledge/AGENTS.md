@@ -18,14 +18,19 @@ knowledge/
 ## raw/ 규약
 
 1. **불변 (immutable)**: 한 번 들어온 raw는 절대 수정하지 않는다. 오류 정정은 wiki에서 한다. 이게 깨지면 wiki의 모든 주장이 출처 추적 불가능해진다.
-2. **하위 폴더 정확히 3개만**: `conversations/`, `external/`, `assets/`. 그 외 분류가 필요하면 frontmatter로 해결한다. 새 폴더를 만들지 말 것.
-3. **파일명**: `YYYY-MM-DD-슬러그.md`. 슬러그는 kebab-case 한국어 가능.
+2. **하위 폴더 정확히 4개만**: `conversations/`, `external/`, `assets/`, `derived/`. 그 외 분류가 필요하면 frontmatter로 해결한다. 새 폴더를 만들지 말 것.
+   - `conversations/` — 대화 전사, 비공식 Q&A 기록 (1차 자료)
+   - `external/` — 외부 책·논문·아티클 발췌 (3차 자료)
+   - `derived/` — `content/education/` 의 derived 자료 (insights/tools/design-patterns 등). 2차 자료. wiki 합성 시 1차 raw 와 충돌하면 1차 raw 우선.
+   - `assets/` — 이미지·스크린샷
+3. **파일명**: `YYYY-MM-DD-슬러그.md` (날짜 있는 raw). `derived/` 의 경우 날짜 없는 `슬러그.md` 도 허용.
 4. **frontmatter** (권장):
    ```yaml
    ---
-   source_type: log | retrospective | conversation | external | observation
+   source_type: log | retrospective | conversation | external | observation | planning | derived-insight | derived-tool | derived-pattern | derived-archive | derived-failed-experiment
    author: 작성자
    captured: 2026-06-09
+   published_at: content/education/.../slug.mdx   # 원본 출처 추적 (선택)
    ---
    ```
 

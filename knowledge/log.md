@@ -9,6 +9,29 @@
 
 ---
 
+## [2026-06-09] promote | 보류 5개 → stub 노트로 승격
+
+지난 compile 에서 wiki-compiler 가 자기 검증으로 보류 처리한 6개 중 5개를 **stub** 태그로 승격. 자매 raw 가 부족해 본격 노트는 안 되지만, 개념을 위키 그래프에 등록해 두면 다음 raw 흡수 시 자연스럽게 본격 노트로 진화 가능.
+
+신규 stub (5):
+- `wiki/knowledge-transfer-not-presentation.md` (sources: expedition) — 핵심 개념 그룹은 아니므로 미발달 섹션
+- `wiki/stone-and-heen.md` (sources: thanks-feedback) — 인물·개체 그룹
+- `wiki/pro-sdls-scale.md` (sources: crew-autonomy) — 외부 영향 그룹
+- `wiki/wild-learning.md` (sources: expedition) — 미발달 섹션
+- `wiki/psychological-safety-classroom.md` (sources: android-participatory) — 미발달 섹션
+
+기존 6개 wiki 노트의 `links:` 복구 — 첫 compile 때 죽은 링크라 제거됐던 항목들이 이제 stub 으로 살아남:
+- `self-directed-learning` ← + `pro-sdls-scale`, `wild-learning`
+- `measurable-learning-goal` ← + `knowledge-transfer-not-presentation`, `wild-learning`
+- `sdl-four-stage-framework` ← + `pro-sdls-scale`
+- `feedback-trigger-recognition` ← + `stone-and-heen`
+- `feedback-request-direct` ← + `stone-and-heen`
+- `teach-by-silence` ← + `psychological-safety-classroom`
+
+index.md 갱신: 인물·개체 1, 외부영향 +1, 미발달 3. 위키 총 10 → 15 노트.
+
+미승격 1: `elective-mission-design` — 자매 raw (`web-backend-level1-elective-missions`) 가 아직 raw 에 없음. 그 raw 가 들어와야 노트로 만들 수 있음.
+
 ## [2026-06-09] query | "코치 강의 비중 줄이기 시작" (첫 query)
 
 `/지식질의` 첫 실행. index.md 라우팅으로 wiki 노트 2개(`agent-debate-curriculum-design`, `teach-by-silence`)를 통째로 읽고 인용과 함께 답변. RAG 없이 위키 단위 라우팅이 작동하는지 첫 검증.

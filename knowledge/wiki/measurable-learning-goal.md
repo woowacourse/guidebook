@@ -5,6 +5,8 @@ sources:
   - raw/2026-03-10-expedition.md
 links:
   - self-directed-learning
+  - knowledge-transfer-not-presentation
+  - wild-learning
 updated: 2026-06-09
 ---
 

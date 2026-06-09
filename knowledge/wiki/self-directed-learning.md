@@ -7,6 +7,8 @@ sources:
 links:
   - measurable-learning-goal
   - sdl-four-stage-framework
+  - pro-sdls-scale
+  - wild-learning
 updated: 2026-06-09
 ---
 

@@ -6,6 +6,7 @@ sources:
 links:
   - feedback-trigger-recognition
   - implementation-intention
+  - stone-and-heen
 updated: 2026-06-09
 ---
 

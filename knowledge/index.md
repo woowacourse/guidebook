@@ -1,6 +1,6 @@
 # Knowledge Wiki Index
 
-> Last updated: 2026-06-09 · 0 articles · 0 raw sources
+> Last updated: 2026-06-09 · 10 articles · 5 raw sources
 
 이 파일은 `wiki/` 안 모든 노트의 한 줄 카탈로그다. LLM은 질의 응답 시 먼저 이 파일을 읽고, 어떤 wiki 노트를 통째로 열지 결정한다.
 
@@ -15,11 +15,18 @@
 
 ## 핵심 개념
 
-_(빈 카탈로그 — 첫 노트가 생기면 여기 등록)_
+- [self-directed-learning](wiki/self-directed-learning.md) — 환경·측정·선택이 함께 작동해야 자기주도성이 생긴다. (sources: 2, updated: 2026-06-09)
+- [feedback-trigger-recognition](wiki/feedback-trigger-recognition.md) — 피드백 반응의 차이는 메시지가 아니라 듣는 사람 안의 사실·관계·정체성 트리거에서 온다. (sources: 1, updated: 2026-06-09)
 
 ## 디자인 패턴
 
-_(비어 있음)_
+- [agent-debate-curriculum-design](wiki/agent-debate-curriculum-design.md) — 기존 방식과 새 방향을 각각 AI 에이전트로 모델링해 토론시키는 커리큘럼 설계법. (sources: 1, updated: 2026-06-09)
+- [declare-feedback-revise-cycle](wiki/declare-feedback-revise-cycle.md) — 기술 결정을 선언·팀×팀 피드백·개정의 3단으로 검증한다. (sources: 1, updated: 2026-06-09)
+- [feedback-request-direct](wiki/feedback-request-direct.md) — SSCC 4질문 + 페어 증인 + 7일 약속으로 수동 수신을 능동 요청으로 뒤집는다. (sources: 1, updated: 2026-06-09)
+- [measurable-learning-goal](wiki/measurable-learning-goal.md) — 작다·깊다·실행가능·측정가능 4조건을 만족하는 학습 목표만 자기주도로 작동한다. (sources: 1, updated: 2026-06-09)
+- [page-level-technical-decision](wiki/page-level-technical-decision.md) — 기술 결정을 페이지·기능·의존성 단위로 쪼개 사고 해상도를 높인다. (sources: 1, updated: 2026-06-09)
+- [sdl-four-stage-framework](wiki/sdl-four-stage-framework.md) — 자기주도성을 준비·주도·조정·책임 4단계 행동으로 분해해 채점한다. (sources: 1, updated: 2026-06-09)
+- [teach-by-silence](wiki/teach-by-silence.md) — 코치 발화를 줄이고 크루 발견을 늘리는 참여형 수업 전환. (sources: 1, updated: 2026-06-09)
 
 ## 인물·개체
 
@@ -27,7 +34,7 @@ _(비어 있음)_
 
 ## 외부 영향
 
-_(비어 있음)_
+- [implementation-intention](wiki/implementation-intention.md) — Gollwitzer(1999): if-then 형태 약속이 막연한 다짐보다 실행률 약 2.5배. (sources: 1, updated: 2026-06-09)
 
 ## 미발달 (stub)
 

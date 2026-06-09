@@ -9,6 +9,19 @@
 
 ---
 
+## [2026-06-09] ingest | Phase B 마이그레이션 (4개)
+
+지난 OLD `/로그승격 자동` 사이클의 lastBatch.logs 6개 중 knowledge/raw/ 미반영 4개를 마이그레이션. Phase A (5개 시드) 와 동일 변환 규칙(MDX → 평문, Callout → blockquote, Mermaid → 코드블록) 적용.
+
+- `raw/2026-05-19-android-level2-mini-project.md` (안드 레벨2 미니 프로젝트 4주 8회차 수업 계획, 평가 기준 = 선택 근거)
+- `raw/2026-05-19-posuta-archive.md` (포비 캡틴 포수타 5회 전사 아카이브, 3층 구조: 원문/년도/메타)
+- `raw/2026-05-19-posuta-coach-qa-archive.md` (포수타 5회 메타 분석, 8가지 반복 패턴, 우테코식 가이드 어법)
+- `raw/2026-05-26-react-payments-555prs-analysis.md` (5년치 PR 555개 정량 분석, 24개 카테고리 시계열, 리뷰 코멘트 2,178건 테마 분류)
+
+이번 흡수는 위키의 깊이를 강화한다 — 특히 코칭 어법(포수타 5회 메타·페이먼츠 555 PR 코멘트) 자료가 누적되어 다음 /지식정제 가 코칭 패턴 wiki 노트를 만들 수 있는 토양이 됨.
+
+raw 총 5 → 9.
+
 ## [2026-06-09] promote | 보류 5개 → stub 노트로 승격
 
 지난 compile 에서 wiki-compiler 가 자기 검증으로 보류 처리한 6개 중 5개를 **stub** 태그로 승격. 자매 raw 가 부족해 본격 노트는 안 되지만, 개념을 위키 그래프에 등록해 두면 다음 raw 흡수 시 자연스럽게 본격 노트로 진화 가능.

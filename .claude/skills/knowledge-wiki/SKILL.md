@@ -80,7 +80,7 @@ description: "knowledge/ 디렉터리(Karpathy LLM Wiki 패턴) 운영 스킬. /
 
 - **흡수(ingest)**: raw 파일 추가 + frontmatter 보강. wiki 안 건드림. 컴파일 트리거 안 함.
 - **정제(compile)**: 누적 raw → wiki 노트 합성/갱신 + index.md 등록 + log.md 기록. `wiki-compiler` 에이전트가 수행.
-- **점검(lint)**: 4종 검사 — 모순·고아·미생성 개념·낡은 주장. (별도 PR에서 추가 예정)
+- **점검(lint)**: 4종 검사 — 모순·고아·미생성 개념·낡은 주장 + 정합성 검사. `wiki-linter` 에이전트가 수행. 읽기 전용.
 
 ## 워크플로우 진입점
 
@@ -88,7 +88,7 @@ description: "knowledge/ 디렉터리(Karpathy LLM Wiki 패턴) 운영 스킬. /
 |---|---|---|
 | raw 새로 추가 | `/지식흡수 [파일경로]` | (없음, 직접 처리) |
 | 누적 raw를 wiki로 합성 | `/지식정제 [N개\|전부\|특정 raw]` | `wiki-compiler` |
-| 위키 정합성 검사 | `/지식점검` (PR2 예정) | `wiki-linter` (예정) |
+| 위키 정합성 lint (모순·고아·미생성·낡음 4종 + 정합성) | `/지식점검 [--요약\|--차원 <name>]` | `wiki-linter` (읽기 전용) |
 
 ## 호출 받았을 때 점검 순서
 

@@ -1,0 +1,127 @@
+---
+source_type: derived-tool
+captured: 2026-06-09
+published_at: content/education/tools/mission-repo-analysis-workflow.mdx
+---
+
+# 미션 저장소 PR 데이터 분석 워크플로우
+
+> 우테코 단일 미션 저장소(예: `woowacourse/react-payments`)에 누적된 PR 본문·리뷰 코멘트를 정량 분석해 학습 주제 진화·리뷰 코칭 패턴·미션 재설계 흔적을 추적하는 절차.
+
+> **대상**: 미션 저장소 한 곳을 깊게 들여다보고 싶은 코치·교육 모델 설계자
+>
+> **입력**: `woowacourse/{repo}` 형태의 GitHub 저장소 1곳, `gh` CLI 인증
+>
+> **산출**: 연도×단계 매트릭스, 주제 카테고리 시계열, 리뷰 코멘트 테마 분포, 코치 인용구 사례, 시각화 가능한 JSON
+
+이 워크플로우는 [React 페이먼츠 미션 5년치 PR 555개 데이터 분석](/education/logs/react-payments-555prs-analysis) 로그에서 실증되어 [`/research-cycle`](/education/tools/research-cycle-workflow)에서 도구로 승격되었다.
+
+## 언제 쓰는가
+
+- 한 미션 저장소가 5년 이상 살아남았고, 그 동안 학습 목표가 변했는지 의심될 때
+- 코치 리뷰 문화를 정성적 인상이 아니라 정량 데이터로 확인하고 싶을 때
+- 다른 미션과 비교 가능한 형식으로 한 미션을 요약하고 싶을 때
+- 미션 재설계 결정에 5년치 데이터를 근거로 활용하고 싶을 때
+
+## 4단계 절차
+
+### 1단계. 메타데이터 전수 수집
+
+```bash
+# 총 PR 수 확인 (Link 헤더의 rel="last")
+gh api 'repos/woowacourse/{repo}/pulls?state=all&per_page=1' -i | grep -i 'link:'
+
+# 페이지네이션으로 전수 수집 (100개/페이지)
+for page in $(seq 1 N); do
+  gh api "repos/woowacourse/{repo}/pulls?state=all&per_page=100&page=$page&sort=created&direction=desc" \
+    --jq '[.[] | {number, title, author: .user.login, body, state, created_at, comments: .review_comments, labels: [.labels[].name]}]' \
+    > "pulls_page_$page.json"
+done
+jq -s 'add' pulls_page_*.json > all_pulls.json
+```
+
+> 주의: `pulls` list endpoint는 `review_comments` 카운트를 반환하지 않는다. 코멘트 수가 필요하면 다음 단계의 search API로 별도 수집한다.
+
+### 2단계. 상위 PR 코멘트 수집
+
+```bash
+# search/issues로 PR을 코멘트 수 내림차순 정렬 (issue 코멘트 기준)
+gh api 'search/issues?q=repo:woowacourse/{repo}+type:pr&sort=comments&order=desc&per_page=100' \
+  --jq '[.items[] | {number, title, comments}]' > top_comments.json
+
+# 상위 30개 PR의 코멘트 가져오기 (issue + review 모두)
+jq -r '.[0:30] | .[].number' top_comments.json | while read pr; do
+  gh api "repos/woowacourse/{repo}/issues/${pr}/comments" \
+    --jq "[.[] | {pr: ${pr}, type: \"issue\", user: .user.login, body, created_at}]" \
+    >> review_comments.jsonl
+  gh api "repos/woowacourse/{repo}/pulls/${pr}/comments?per_page=100" \
+    --jq "[.[] | {pr: ${pr}, type: \"review\", user: .user.login, body, path, line, created_at}]" \
+    >> review_comments.jsonl
+done
+```
+
+### 3단계. 주제·테마 분류 (Python)
+
+본문과 코멘트에 키워드 사전을 정규식으로 매칭해 카테고리 출현 빈도를 시계열로 측정한다. 24개 본문 카테고리, 20개 리뷰 코멘트 테마가 페이먼츠 분석에서 검증된 사전이다.
+
+```python
+# 본문 카테고리 예시 (페이먼츠 검증판)
+topics = {
+    'state-management': ['상태 관리', 'state', 'useState', 'useReducer', 'context'],
+    'controlled-uncontrolled': ['controlled', 'uncontrolled', '제어', '비제어'],
+    'msw': ['MSW', 'msw', 'mock service', '모킹', 'handler'],
+    'error-handling': ['에러 처리', '에러 핸들링', 'ErrorBoundary', 'try', 'catch'],
+    # ... 24개
+}
+
+# 리뷰 코멘트 테마 예시
+review_themes = {
+    'positive-feedback': ['좋', '잘', '깔끔', '👍', '훌륭', 'LGTM'],
+    'question': ['궁금', '여쭤', '질문', '?'],
+    'why-question': ['왜', '이유', '의도', '어떻게'],
+    'suggestion': ['해보', '어떨까', '제안', 'suggest'],
+    # ... 20개
+}
+```
+
+전체 사전과 매칭 스크립트는 [페이먼츠 로그의 원본 자료 섹션](/education/logs/react-payments-555prs-analysis#원본-자료)에 보존된 `.inbox/react-payments-analysis/` 디렉터리 구조를 그대로 복제해 사용한다.
+
+### 4단계. 시각화 자산 산출
+
+| 산출물 | 형식 | 용도 |
+| --- | --- | --- |
+| 연도별 PR 분포 막대 | ASCII bar 또는 표 | 미션의 활성도 추세 |
+| 연도×단계 매트릭스 | 마크다운 표 | 단계 구성의 변화 추적 |
+| 주제 카테고리 × 연도 매트릭스 | 마크다운 표 (% 표시) | 학습 주제 진화 |
+| 리뷰 테마 분포 | Mermaid `pie` | 리뷰 코칭 문화 |
+| 본문 평균 길이 시계열 | 표 | 학습 문화 변화 신호 |
+| 코치 인용구 5선 | Markdown 인용 | 정성 사례 |
+
+## 결과물 체크리스트
+
+분석 로그 1편이 갖춰야 할 최소 산출:
+
+- [ ] 저장소 메타 (총 PR, 작성자 수, fork 수, 별 수)
+- [ ] 연도×단계 매트릭스 (단계 변화 패턴 시각화)
+- [ ] 최소 10개 카테고리의 시계열 매트릭스 (% 표시)
+- [ ] 본문 평균 길이 시계열
+- [ ] 리뷰 테마 분포 (긍정/질문/제안/관심사 분리/네이밍 등)
+- [ ] 코치 인용구 최소 3선 (PR 링크 포함)
+- [ ] 자기 성찰 어휘 빈도 (고민/책임/관심사/추상화 등)
+- [ ] 외부 라이브러리 의존성 통계 (Redux/Zustand 등 → React 기본기 대비)
+
+## 검증된 사례
+
+- [React 페이먼츠 미션 5년치 PR 555개 데이터 분석](/education/logs/react-payments-555prs-analysis) — 이 워크플로우의 원본 적용 사례
+
+## 관련 도구·인사이트
+
+- [연구 사이클 워크플로우](/education/tools/research-cycle-workflow) — 이 도구가 산출한 로그를 인사이트·교육 모델로 승격하는 다음 단계 파이프라인
+- [미션은 누적 학습 모델이다](/education/insights/mission-learning-accumulation) — 이 도구로 발견된 핵심 패턴
+- [논증 기반 학습 설계](/education/insights/argumentation-based-learning) — 리뷰 테마 분포 분석이 이 인사이트의 정량 증거를 제공한다
+
+## 한계와 주의
+
+- **표본 편향**: 상위 30 PR만 코멘트를 수집하면 코멘트가 적은 PR(자기 완결성이 높았거나, 빠른 통과)이 분석에서 빠진다. 가능하면 모든 PR의 코멘트 수만이라도 수집해 분포를 봐야 한다.
+- **키워드 사전 의존**: 매칭 정확도가 사전 품질에 의존한다. 한 사전을 다른 미션 저장소에 적용할 때는 검증 샘플로 정밀도를 측정한다.
+- **인용은 동의서가 아니다**: 코치·크루의 코멘트를 인용할 때는 원본 PR 링크를 함께 남겨 출처를 분명히 한다. 직접 인용은 짧게 하되 의미가 살아 있어야 한다.

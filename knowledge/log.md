@@ -9,6 +9,33 @@
 
 ---
 
+## [2026-06-09] compile (자동) | raw 5개 → wiki 9 신규 + 3 갱신 (사이클 1)
+
+`/지식정제 자동` 첫 사이클. lastCompileCommit (#16, 7804c536) 이후 추가된 38개 raw 중 오래된 순으로 batchSize(5) 처리.
+
+처리 대상 5개:
+- raw/2026-03-03-mission-design.md
+- raw/2026-03-10-android-level0.md
+- raw/2026-03-10-senior-code-review.md
+- raw/2026-03-10-standardized-crew-coaching.md
+- raw/2026-03-17-codelab-lotto-domain-ui.md
+
+신규 wiki 노트 9개:
+- 핵심 개념: coaching-first-principle-do-no-harm
+- 디자인 패턴: structured-prompt-pattern, personal-utility-test, predict-observe-explain, as-is-judge-then-compare, standardized-learner-simulation
+- 외부 영향: krashen-i-plus-one, kolb-experiential-learning, piaget-cognitive-conflict
+
+갱신 wiki 노트 3개:
+- measurable-learning-goal (+android-level0, +personal-utility-test 링크)
+- self-directed-learning (+android-level0)
+- teach-by-silence (+codelab-lotto-domain-ui, +senior-code-review, +predict-observe-explain·as-is-judge-then-compare 링크)
+
+위키 통계: 15 → 24 (정식 14 → 19 + stub 5).
+
+자기 검증 5단계 모두 통과. 보류 3건 (peer-observation-by-suggestion, commit-confront-cycle, barrows-standardized-patient) 은 단일 사례라 단독 노트화 보류, 관련 노트 본문에 흡수.
+
+다음 사이클: 33개 남음.
+
 ## [2026-06-09] ingest | Phase C — 일괄 마이그레이션 (34개, raw 9 → 43)
 
 `content/` 의 raw-eligible 자료 전부를 `knowledge/raw/` 에 흡수. Phase A·B(9개) 이후 미반영 분 일괄 처리. `scripts/mdx-to-raw.mjs` 자동 변환 스크립트로 일관성 보장.

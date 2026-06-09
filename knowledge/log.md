@@ -9,6 +9,31 @@
 
 ---
 
+## [2026-06-09] ingest | Phase C — 일괄 마이그레이션 (34개, raw 9 → 43)
+
+`content/` 의 raw-eligible 자료 전부를 `knowledge/raw/` 에 흡수. Phase A·B(9개) 이후 미반영 분 일괄 처리. `scripts/mdx-to-raw.mjs` 자동 변환 스크립트로 일관성 보장.
+
+**실험 로그 29개 → `raw/` 루트** (logs.ts 등록 기준):
+- 2026-04-28: writing-sessions
+- 2026-04-14: coaching-squad-training-loop
+- 2026-04-07: fe-accessibility-report, fe-ssr-discussion, fe-react-typescript-convention, layout-component-workshop, level3-team-project-retrospective-series
+- 2026-03-27: ux-research-training, demo-day-retrospective, fe-level2-16steps, async-quiz-explanation, feedback-refactoring, growth-graph, team-building-ground-rules, finding-tech-strengths, reinventing-the-wheel, fe-performance-report, ux-lecture-level3
+- 2026-03-24: web-backend-level1-elective-missions, expedition-tech-salon
+- 2026-03-17: pair-programming-manifesto, soft-skill-one-step-study, codelab-lotto-domain-ui, drama-retrospective, drama-onboarding
+- 2026-03-10: android-level0, senior-code-review, standardized-crew-coaching
+- 2026-03-03: mission-design
+
+**Posuta 대화 전사 5개 → `raw/conversations/`** (Whisper 원문):
+- 2024-09-20 (포비 캡틴), 2025-04-18 (검프), 2025-05-02 (저스틴), 2025-05-16 (시지프), 2025-05-30 (디노)
+
+raw 총 9 → **43** (raw 루트 38 + conversations 5).
+
+**변환 도구**: `scripts/mdx-to-raw.mjs` — MDX frontmatter·import 제거, `<Callout>` → blockquote, `<Mermaid>` → 코드블록, 기타 JSX 제거, 본문 markdown 보존. `published_at` 으로 원본 mdx 추적.
+
+**제외**: insights, tools, design-patterns, curriculum, philosophy 디렉터리 — 카파시 정통상 derived 자료이므로 raw 부적합. wiki 합성 후 별도 비교 대상으로 활용 가능.
+
+다음: `/지식정제` 가 wiki 노트 폭증을 처리할 때 한 번에 너무 많이 끌어오지 않게 5~10개씩 점진 합성. 첫 우선순위 후보 — 코칭 패턴(posuta 5회 + senior-code-review + coaching-squad-training-loop + standardized-crew-coaching) 클러스터.
+
 ## [2026-06-09] ingest | Phase B 마이그레이션 (4개)
 
 지난 OLD `/로그승격 자동` 사이클의 lastBatch.logs 6개 중 knowledge/raw/ 미반영 4개를 마이그레이션. Phase A (5개 시드) 와 동일 변환 규칙(MDX → 평문, Callout → blockquote, Mermaid → 코드블록) 적용.

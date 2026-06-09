@@ -6,6 +6,13 @@
     "promotionMinScore": 16,
     "maxAutoSectionsPerFile": 5
   },
+  "lastCompileCommit": "7804c5362183ad453365694e7f218ac86284b208",
+  "lastCompileDate": "2026-06-09",
+  "compileConfig": {
+    "threshold": 5,
+    "batchSize": 5,
+    "maxBatchSize": 7
+  },
   "lastBatch": {
     "logs": [
       "android-level2-mini-project",

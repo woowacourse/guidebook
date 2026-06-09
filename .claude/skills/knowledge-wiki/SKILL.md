@@ -87,9 +87,16 @@ description: "knowledge/ 디렉터리(Karpathy LLM Wiki 패턴) 운영 스킬. /
 | 사용자 의도 | 커맨드 | 위임 에이전트 |
 |---|---|---|
 | raw 새로 추가 | `/지식흡수 [파일경로]` | (없음, 직접 처리) |
-| 누적 raw를 wiki로 합성 | `/지식정제 [N개\|전부\|특정 raw]` | `wiki-compiler` |
+| 누적 raw를 wiki로 합성 (대화형) | `/지식정제 [전부\|특정 raw\|--미리보기]` | `wiki-compiler` |
+| **누적 raw를 자동 합성** (비대화형, batchSize 만큼) | `/지식정제 자동` | `wiki-compiler` (자기 검증 통과분만 자동 반영) |
 | 위키 정합성 lint (모순·고아·미생성·낡음 4종 + 정합성) | `/지식점검 [--요약\|--차원 <name>]` | `wiki-linter` (읽기 전용) |
 | 위키에 질문 — index 라우팅 → wiki 인용 답변 | `/지식질의 [질문\|--no-log]` | 없음 (메인이 직접 처리, RAG 대체) |
+
+## 자동화 메커니즘
+
+- **`auto-compile-check.sh` Stop 훅**: 매 턴 종료 시 `sync-state.json` 의 `lastCompileCommit` 이후 추가된 raw 수를 세서 `compileConfig.threshold` (기본 5) 이상이면 *"다음 턴에 `/지식정제 자동` 실행 권장"* 메시지를 띄움. 누적분 폭증 방지의 자연 압력.
+- **`protect-raw.sh` PreToolUse 훅**: `knowledge/raw/` 기존 파일 수정 차단, 새 파일 Write 는 허용. raw 불변성 강제.
+- **`/로그추가` dual-write 자동화**: 새 실험 로그 작성 시 `scripts/mdx-to-raw.mjs` 를 직접 호출해 raw 동기화. LLM 수기 변환이 아닌 결정론적 스크립트로 일관성 보장.
 
 ## 호출 받았을 때 점검 순서
 

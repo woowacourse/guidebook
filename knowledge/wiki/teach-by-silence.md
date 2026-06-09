@@ -5,6 +5,7 @@ sources:
   - raw/2026-04-28-android-participatory.md
 links:
   - agent-debate-curriculum-design
+  - psychological-safety-classroom
 updated: 2026-06-09
 ---
 

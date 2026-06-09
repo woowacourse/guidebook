@@ -6,6 +6,7 @@ sources:
 links:
   - feedback-request-direct
   - implementation-intention
+  - stone-and-heen
 updated: 2026-06-09
 ---
 

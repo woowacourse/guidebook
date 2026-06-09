@@ -5,6 +5,7 @@ sources:
   - raw/2026-04-27-crew-autonomy.md
 links:
   - self-directed-learning
+  - pro-sdls-scale
 updated: 2026-06-09
 ---
 

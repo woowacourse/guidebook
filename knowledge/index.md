@@ -1,6 +1,6 @@
 # Knowledge Wiki Index
 
-> Last updated: 2026-06-09 · 10 articles · 5 raw sources
+> Last updated: 2026-06-09 · 15 articles (10 정식 + 5 stub) · 5 raw sources
 
 이 파일은 `wiki/` 안 모든 노트의 한 줄 카탈로그다. LLM은 질의 응답 시 먼저 이 파일을 읽고, 어떤 wiki 노트를 통째로 열지 결정한다.
 
@@ -30,12 +30,15 @@
 
 ## 인물·개체
 
-_(비어 있음)_
+- [stone-and-heen](wiki/stone-and-heen.md) **stub** — Thanks for the Feedback 저자, 피드백 워크숍 프레임의 출처. (sources: 1, updated: 2026-06-09)
 
 ## 외부 영향
 
 - [implementation-intention](wiki/implementation-intention.md) — Gollwitzer(1999): if-then 형태 약속이 막연한 다짐보다 실행률 약 2.5배. (sources: 1, updated: 2026-06-09)
+- [pro-sdls-scale](wiki/pro-sdls-scale.md) **stub** — Stockdale & Brockett(2011): 자기주도 학습 성향 측정 4요인 25문항 척도. (sources: 1, updated: 2026-06-09)
 
 ## 미발달 (stub)
 
-_(비어 있음)_
+- [knowledge-transfer-not-presentation](wiki/knowledge-transfer-not-presentation.md) **stub** — 공유는 발표가 아니라 다른 사람이 그대로 따라 할 수 있게 만드는 시간. (sources: 1, updated: 2026-06-09)
+- [psychological-safety-classroom](wiki/psychological-safety-classroom.md) **stub** — 참여형 수업 전환의 핵심 관찰 지점은 코치·크루 양쪽의 심리적 안전감. (sources: 1, updated: 2026-06-09)
+- [wild-learning](wiki/wild-learning.md) **stub** — 순차 학습 대신 목적 명확화 후 모든 자원을 활용하는 학습 태도. (sources: 1, updated: 2026-06-09)

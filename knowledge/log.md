@@ -9,6 +9,29 @@
 
 ---
 
+## [2026-06-09] compile | raw 5개 → wiki 10개 (첫 합성)
+
+`/지식정제` 첫 실행. `wiki-compiler` 에이전트가 5개 raw 를 읽고 10개 wiki 노트 draft 생성. 자기 검증으로 죽은 링크 6개 자체 발견하여 정리 후 반영.
+
+신규 wiki 노트 (10개):
+- `wiki/self-directed-learning.md` (sources: expedition + crew-autonomy)
+- `wiki/measurable-learning-goal.md` (sources: expedition)
+- `wiki/sdl-four-stage-framework.md` (sources: crew-autonomy)
+- `wiki/declare-feedback-revise-cycle.md` (sources: fe-rendering-strategy-workshop)
+- `wiki/page-level-technical-decision.md` (sources: fe-rendering-strategy-workshop)
+- `wiki/teach-by-silence.md` (sources: android-participatory)
+- `wiki/agent-debate-curriculum-design.md` (sources: android-participatory)
+- `wiki/feedback-trigger-recognition.md` (sources: thanks-feedback-workshop)
+- `wiki/feedback-request-direct.md` (sources: thanks-feedback-workshop)
+- `wiki/implementation-intention.md` (sources: thanks-feedback-workshop)
+
+`index.md` 갱신: 핵심 개념 2, 디자인 패턴 7, 외부 영향 1 (총 10라인).
+
+에이전트 자체 보류 (다음 raw 누적 후 wiki 노트로 승격 검토):
+- knowledge-transfer-not-presentation, stone-and-heen, pro-sdls-scale, wild-learning, psychological-safety-classroom, elective-mission-design
+
+다음: 위키 거동 검증 — `/지식점검` 또는 `/지식질의` 로 lint·라우팅 테스트.
+
 ## [2026-06-09] ingest | Phase A 시드 마이그레이션 (5개)
 
 기존 `content/education/logs/` 에서 다양성(phase·track·theme) 균형 잡힌 실험 로그 5개를 평문 마크다운으로 변환·복사. Karpathy 권고 "start with ten sources" 의 절반 규모로 위키 거동 검증용 시드.

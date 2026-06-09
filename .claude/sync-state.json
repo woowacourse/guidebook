@@ -1,6 +1,6 @@
 {
-  "lastSyncCommit": "aaf234b2094b8e99618b08fa4f58bb91efa58980",
-  "lastSyncDate": "2026-05-19",
+  "lastSyncCommit": "5532eabc4f2fa803fb0956ae0d272c9b5c59d0db",
+  "lastSyncDate": "2026-06-09",
   "config": {
     "threshold": 3,
     "promotionMinScore": 16,
@@ -8,32 +8,49 @@
   },
   "lastBatch": {
     "logs": [
-      "android-participatory",
-      "coaching-squad-training-loop",
+      "android-level2-mini-project",
       "crew-autonomy",
-      "writing-sessions"
+      "posuta-archive",
+      "posuta-coach-qa-archive",
+      "react-payments-555prs-analysis",
+      "thanks-feedback-workshop"
     ],
     "promoted": [
-      "coaching-squad-training-loop (20/20) → insights/progressive-scaffolding + tools/clean-language-mentoring",
-      "crew-autonomy (17/20) → insights/learning-analytics"
+      "react-payments-555prs-analysis (20/20) → already synced in mission-learning-accumulation + argumentation-based-learning (PROMOTED marker) + mission-repo-analysis-workflow tool (inline references)",
+      "posuta-coach-qa-archive (16/20) → argumentation-based-learning.mdx (auto-sync marker, non-formal Q&A coaching language evidence)"
     ],
     "skipped": [
       {
-        "slug": "android-participatory",
-        "score": 11
+        "slug": "android-level2-mini-project",
+        "score": 8
       },
       {
-        "slug": "writing-sessions",
-        "score": 14
+        "slug": "posuta-archive",
+        "score": 13
+      },
+      {
+        "slug": "thanks-feedback-workshop",
+        "score": 13
+      },
+      {
+        "slug": "crew-autonomy",
+        "note": "1-line edit only; previously promoted at 17/20 in 2026-05-19 cycle"
       }
     ],
     "insights": [],
     "modelFilesChanged": [
-      "content/education/insights/progressive-scaffolding.mdx",
-      "content/education/insights/learning-analytics.mdx",
-      "content/education/tools/clean-language-mentoring.mdx"
+      "content/education/insights/argumentation-based-learning.mdx"
     ],
-    "note": "2026-05-19 auto cycle: 4 logs since last sync. 2 promoted to existing model files via auto-sync markers (3 marker sections total, within maxAutoSectionsPerFile=5 limit). Skipped 2 below promotionMinScore=16."
+    "note": "2026-06-09 auto cycle: 6 changed log files since 2026-05-19. react-payments was already integrated into mission-learning-accumulation (CardGrid) and argumentation-based-learning (PROMOTED marker) and mission-repo-analysis-workflow tool when its PR landed, so this cycle's only new work was adding posuta-coach-qa-archive as non-formal Q&A evidence to argumentation-based-learning. Other 3 logs scored below promotionMinScore=16. crew-autonomy had only a 1-line edit and was already promoted in the previous cycle."
   },
-  "needsHumanReview": []
+  "needsHumanReview": [
+    {
+      "candidate": "posuta-coach-qa-archive",
+      "reason": "8 recurring patterns from 5 sessions across 2 cohorts may warrant a dedicated insight (e.g. 'informal coaching rhetoric') beyond the marker added to argumentation-based-learning. Deferred to human review per auto mode's conservative posture."
+    },
+    {
+      "candidate": "thanks-feedback-workshop",
+      "reason": "P2=5 (very extractable: 6-activity 90-min workshop with SSCC + 7-day card). 13/20 because not yet run. After 1 operation, recommend re-evaluating for tool/ promotion."
+    }
+  ]
 }

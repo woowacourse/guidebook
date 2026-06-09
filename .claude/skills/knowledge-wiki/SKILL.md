@@ -89,6 +89,7 @@ description: "knowledge/ 디렉터리(Karpathy LLM Wiki 패턴) 운영 스킬. /
 | raw 새로 추가 | `/지식흡수 [파일경로]` | (없음, 직접 처리) |
 | 누적 raw를 wiki로 합성 | `/지식정제 [N개\|전부\|특정 raw]` | `wiki-compiler` |
 | 위키 정합성 lint (모순·고아·미생성·낡음 4종 + 정합성) | `/지식점검 [--요약\|--차원 <name>]` | `wiki-linter` (읽기 전용) |
+| 위키에 질문 — index 라우팅 → wiki 인용 답변 | `/지식질의 [질문\|--no-log]` | 없음 (메인이 직접 처리, RAG 대체) |
 
 ## 호출 받았을 때 점검 순서
 

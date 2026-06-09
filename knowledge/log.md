@@ -9,6 +9,20 @@
 
 ---
 
+## [2026-06-09] lint | wiki 10개 검사 (첫 lint)
+
+`/지식점검` 첫 실행. `wiki-linter` 에이전트가 4종 + 정합성 검사 수행.
+
+발견: **모순 1건** — `wiki/declare-feedback-revise-cycle.md` 본문 첫 단락 "8기" 가 같은 노트 뒷부분과 raw·자매 노트(`page-level-technical-decision.md`)의 "7기" 와 충돌. wiki-compiler 합성 단계의 미세한 오기를 lint 가 즉시 포착.
+
+발견 없음: 고아 0, 미생성 개념 0, 낡은 주장 0, 정합성 0.
+
+조치: 같은 PR 안에서 "8기" → "7기" 수정 적용.
+
+## [2026-06-09] refactor | declare-feedback-revise-cycle.md 기수 표기 수정
+
+`/지식점검` 결과에 따라 "8기 FE 레벨4" → "7기 FE 레벨4" 한 줄 수정. raw 및 자매 wiki 노트와 일치.
+
 ## [2026-06-09] compile | raw 5개 → wiki 10개 (첫 합성)
 
 `/지식정제` 첫 실행. `wiki-compiler` 에이전트가 5개 raw 를 읽고 10개 wiki 노트 draft 생성. 자기 검증으로 죽은 링크 6개 자체 발견하여 정리 후 반영.

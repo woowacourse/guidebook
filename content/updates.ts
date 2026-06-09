@@ -10,6 +10,13 @@ export interface Update {
 const updates: Update[] = [
   {
     date: '2026년 연구',
+    title: '승격: 미션은 누적 학습 모델이다 (인사이트 + 도구 + 디자인 패턴)',
+    description: '페이먼츠 5년 분석 로그를 승격해 인사이트 1개·도구 1개를 신설하고, 디자인 패턴 카탈로그와 커리큘럼 설계 원칙에 정량 증거 마커 섹션을 추가.',
+    href: '/education/insights/mission-learning-accumulation',
+    status: 'active',
+  },
+  {
+    date: '2026년 연구',
     title: 'React 페이먼츠 미션 5년치 PR 555개 데이터 분석',
     description: 'woowacourse/react-payments 저장소 555개 PR(2021–2026)의 본문·리뷰 코멘트 2,360건을 정량 분석해 학습 주제 진화·리뷰어 코칭 패턴·미션 재설계 흔적을 추적했다.',
     href: '/education/logs/react-payments-555prs-analysis',

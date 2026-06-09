@@ -195,3 +195,32 @@
 → 근거 패턴: [인사이트 > 점진적 스캐폴딩](/education/insights/progressive-scaffolding)
 
 </Toggle>
+
+{/* PROMOTED FROM: react-payments-555prs-analysis (2026-05-26) */}
+## 패턴 9. 누적 학습 미션 설계
+
+> 한 미션 저장소를 매년 새로 만드는 게 아니라, 변하지 않는 골격 위에 매년 새 학습 목표를 한 층씩 누적해 5~6년 단위로 누적 학습 자산을 만든다.
+
+**맥락** — 같은 이름의 미션을 매년 운영하면서 학습 목표를 진화시켜야 하는 상황. 매년 저장소를 새로 만들면 데이터가 단절되고, 그대로 두면 학습 깊이가 정체된다.
+
+<Toggle title="해결책 · 사례 · 변형">
+
+**해결책**
+
+영구 골격(form/state/component처럼 모든 기수에서 다뤄지는 핵심)과 누적 층(매년 한 단계씩 추상화돼 추가되는 새 목표)을 분리해 설계한다. 미션 재설계 결정은 5년치 PR 데이터로 카테고리×연도 매트릭스를 만들어 데이터 기반으로 한다.
+
+**사례**
+
+- [React 페이먼츠 미션 5년치 PR 555개 데이터 분석](/education/logs/react-payments-555prs-analysis) — form/state/component 4개 영구 골격 위에 2025 testing/error-handling, 2026 async/MSW가 누적된 패턴
+- [자바 @MVC 미션](/education-experiment/repositories/java-mvc) — Controller 일관성 → Handler 추상화 → JsonView로 단계 누적
+- [자바 로또 미션](/education-experiment/repositories/java-lotto) — 구현 1단계 → 리팩토링 2단계 구조 자체가 누적 학습 설계
+
+**변형**
+
+매년 폐지된 단계가 영구 폐지인지 일시 보류인지를 데이터로 재평가한다. 페이먼츠 3단계는 2024–2025 폐지 후 2026 부활. 폐지된 단계의 학습 목표가 다른 미션으로 이전 가능한지를 본문 데이터에서 검증하면 폐지 결정의 정확도가 올라간다.
+
+→ 근거 패턴: [인사이트 > 미션은 누적 학습 모델이다](/education/insights/mission-learning-accumulation)
+→ 분석 도구: [도구 > 미션 저장소 PR 데이터 분석 워크플로우](/education/tools/mission-repo-analysis-workflow)
+
+</Toggle>
+{/* END PROMOTED */}

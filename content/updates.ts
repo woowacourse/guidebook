@@ -10,6 +10,14 @@ export interface Update {
 const updates: Update[] = [
   {
     date: '2026년 연구',
+    title: '커리큘럼 연도별 변화 타임라인 신설',
+    description:
+      '2021–2026 커리큘럼의 진화를 "영구 골격 + 누적 추상화" 모델로 정리한 연도별 타임라인을 추가. react-payments 5년 분석을 원본으로 distill했고, 데이터가 얇은 해는 "기록 보강 중"으로 솔직히 표시한다.',
+    href: '/education/curriculum/evolution',
+    status: 'active',
+  },
+  {
+    date: '2026년 연구',
     title: '교육 철학 핵심 원칙을 실험 로그로 채우다 (자기주도·몰입·협업)',
     description: '비어 있던 자기주도 학습·몰입 기반 성장·함께 성장하는 문화 3개 원칙을 자기 진단·점진적 스캐폴딩·논증 기반 학습 인사이트와 12개 로그·555 PR 정량 데이터에 연결해 정리했다. 철학이 추상적 선언이 아니라 경험에서 귀납됨을 드러낸다.',
     href: '/education/philosophy/core-principles',

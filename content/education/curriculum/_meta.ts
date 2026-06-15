@@ -3,6 +3,7 @@ export default {
     title: '개요',
     display: 'hidden'
   },
+  evolution: '연도별 변화',
   'design-principles': '설계 원칙',
   levels: '레벨 구성',
   'mission-design': '미션 설계',

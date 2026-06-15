@@ -9,6 +9,34 @@
 
 ---
 
+## [2026-06-16] compile (자동) | raw 5개 → wiki 4 신규 + 1 stub→정식 (사이클 2)
+
+`/지식정제 자동` 두 번째 사이클. 사이클 1 이후 다음 5개 raw 를 wiki-compiler 에이전트가 합성. 자기 검증 5단계 통과.
+
+처리 대상 5개:
+- raw/2026-03-03-pr-insights-design.md
+- raw/2026-03-03-pr-insights-implementation.md
+- raw/2026-03-17-drama-onboarding.md
+- raw/2026-03-17-drama-retrospective.md
+- raw/2026-03-17-pair-programming-manifesto.md
+
+신규 wiki 노트 4개 (모두 디자인 패턴 그룹):
+- parallel-collect-then-synthesize — 멀티에이전트 작업 분배 (수집 병렬·분석 단일)
+- non-technical-first-mission — 입학 1주차 비-기술 첫 미션 (연극) 으로 관계 불안 분리
+- vulnerability-sharing-retro — 강점+취약점 이중 공유 + 4가지 안전 규칙
+- crew-authored-manifesto — 외부 규칙 대신 크루가 KPT 회고로 직접 쓴 선언문
+
+stub → 정식 승격 1개:
+- psychological-safety-classroom — sources 1→3 (drama-onboarding·drama-retrospective 추가). stub 태그 제거, 미발달 → 핵심 개념 그룹 이동, 본문에 온보딩 적용 단락 확장.
+
+위키 통계: 24 → 29 (정식 19→25 + stub 5→4).
+
+흥미로운 패턴: 온보딩 1주차 3개 raw (연극 온보딩 + 회고 + 페어 매니페스토) 가 한 사이클에 합쳐지면서 "신뢰의 4중 메커니즘" 그래프 (비-기술 첫 미션 → 취약함 공유 회고 → 페어 매니페스토 → 심리적 안전감) 가 자연 형성됨.
+
+다음 사이클: ~69개 raw 남음.
+
+## [2026-06-16] compile | curriculum-evolution 노트 신규 (타깃 합성: react-payments 5년 분석 + mission-design). 연도별 커리큘럼 진화 모델(영구 골격 + 누적 추상화) + 2021–2026 델타. content/ 커리큘럼 연도별 타임라인의 원본.
+
 ## [2026-06-09] ingest | woowacourse.io 외부 공식 사이트 큐레이션 (12개, raw/external/ 0 → 12)
 
 사용자 요청 "노션을 홈페이지처럼 사용하던 페이지의 핵심 메시지·FAQ·문의 등을 가져오기". www.woowacourse.io sitemap 의 19개 URL 중 raw-eligible 12개를 WebFetch 로 큐레이션 추출.

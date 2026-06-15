@@ -1,6 +1,6 @@
 # Knowledge Wiki Index
 
-> Last updated: 2026-06-16 · 29 articles (25 정식 + 4 stub) · 14 raw sources (raw 13 + posuta 5)
+> Last updated: 2026-06-16 · 30 articles (26 정식 + 4 stub) · 14 raw sources (raw 13 + posuta 5)
 
 이 파일은 `wiki/` 안 모든 노트의 한 줄 카탈로그다. LLM은 질의 응답 시 먼저 이 파일을 읽고, 어떤 wiki 노트를 통째로 열지 결정한다.
 
@@ -34,6 +34,7 @@
 - [parallel-collect-then-synthesize](wiki/parallel-collect-then-synthesize.md) — 대량 자료에서 인사이트 추출 시 수집은 병렬 N에이전트, 분석은 단일 에이전트로 쪼갠다. (sources: 2, updated: 2026-06-16)
 - [personal-utility-test](wiki/personal-utility-test.md) — "본인이 실제로 이 앱을 쓸 것인가?" 단일 질문으로 문제 정의의 진정성을 점검한다. (sources: 1, updated: 2026-06-09)
 - [predict-observe-explain](wiki/predict-observe-explain.md) — 예측 → 관찰 → 설명 순서로 인지적 갈등을 의도적으로 만든다. POE를 코드 학습에 이식. (sources: 1, updated: 2026-06-09)
+- [product-review-not-code-review](wiki/product-review-not-code-review.md) — 리뷰 단위를 코드에서 프로덕트로 옮기면 참여 장벽이 낮아진다. 132개 피어 프로덕트 리뷰·43개 리뷰어=사용자·108개 자발적 회고. (sources: 1, updated: 2026-06-16)
 - [sdl-four-stage-framework](wiki/sdl-four-stage-framework.md) — 자기주도성을 준비·주도·조정·책임 4단계 행동으로 분해해 채점한다. (sources: 1, updated: 2026-06-09)
 - [standardized-learner-simulation](wiki/standardized-learner-simulation.md) — 의학의 표준화 환자 모델을 차용해 GPTs로 표준화 크루를 만들어 코칭을 안전하게 연습한다. (sources: 1, updated: 2026-06-09)
 - [structured-prompt-pattern](wiki/structured-prompt-pattern.md) — 섹션화 + 기술 스택 선언 + 부정 제약 보조의 3요소가 AI 협업 시 반복 수정을 줄인다. (sources: 1, updated: 2026-06-09)

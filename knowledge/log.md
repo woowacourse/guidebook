@@ -9,6 +9,9 @@
 
 ---
 
+## [2026-06-16] compile (수동 보강) | mission-design → wiki 1 신규
+세션 중 수동 `/지식정제 자동` 실행. 자동 사이클 1·2가 mission-design(145-PR 분석)에서 structured-prompt-pattern·personal-utility-test 등은 뽑았으나 "리뷰 단위=코드→프로덕트" 패턴은 놓쳐, product-review-not-code-review 노트로 보강(132/43/108 PR 근거). android-level0·senior-code-review·pr-insights ×2는 기존 노트에 이미 흡수돼 신규 없음. ⚠️ sync-state.lastCompileCommit 이 사이클 1·2 후에도 7804c536(2026-06-09)에 멈춰 있어 auto-compile 훅이 매 턴 오탐 발생 — 인프라 점검 필요(마커 미advance).
+
 ## [2026-06-16] compile (자동) | raw 5개 → wiki 4 신규 + 1 stub→정식 (사이클 2)
 
 `/지식정제 자동` 두 번째 사이클. 사이클 1 이후 다음 5개 raw 를 wiki-compiler 에이전트가 합성. 자기 검증 5단계 통과.

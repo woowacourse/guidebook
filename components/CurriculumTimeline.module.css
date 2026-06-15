@@ -1,0 +1,81 @@
+.change {
+  margin: 0 0 8px 0;
+  font-size: 0.92em;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #374151;
+}
+
+.highlights {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 0.88em;
+  line-height: 1.6;
+  color: #6b7280;
+}
+
+.highlights li {
+  margin: 2px 0;
+}
+
+/* 기수 배지 */
+.badge {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: rgba(66, 133, 244, 0.1);
+  color: #4285f4;
+  font-size: 0.78em;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+/* "기록 보강 중" 칩 — 데이터가 얇은 해를 솔직히 표시 */
+.chip {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: #f3f4f6;
+  color: #9ca3af;
+  font-size: 0.72em;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+/* sparse 연도 전체를 살짝 흐리게 */
+.sparse {
+  opacity: 0.75;
+}
+
+.detailLink {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 0.85em;
+  font-weight: 500;
+  color: #4285f4;
+  text-decoration: none;
+}
+
+.detailLink:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Dark mode */
+[data-theme='dark'] .change,
+:global(.dark) .change {
+  color: #d1d5db;
+}
+
+[data-theme='dark'] .highlights,
+:global(.dark) .highlights {
+  color: #9ca3af;
+}
+
+[data-theme='dark'] .chip,
+:global(.dark) .chip {
+  background: #333;
+  color: #9ca3af;
+}

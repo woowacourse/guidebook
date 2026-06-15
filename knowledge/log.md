@@ -9,6 +9,8 @@
 
 ---
 
+## [2026-06-16] compile | curriculum-evolution 노트 신규 (타깃 합성: react-payments 5년 분석 + mission-design). 연도별 커리큘럼 진화 모델(영구 골격 + 누적 추상화) + 2021–2026 델타. content/ 커리큘럼 연도별 타임라인의 원본.
+
 ## [2026-06-09] ingest | woowacourse.io 외부 공식 사이트 큐레이션 (12개, raw/external/ 0 → 12)
 
 사용자 요청 "노션을 홈페이지처럼 사용하던 페이지의 핵심 메시지·FAQ·문의 등을 가져오기". www.woowacourse.io sitemap 의 19개 URL 중 raw-eligible 12개를 WebFetch 로 큐레이션 추출.

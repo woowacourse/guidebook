@@ -1,6 +1,6 @@
 # Knowledge Wiki Index
 
-> Last updated: 2026-06-09 · 24 articles (19 정식 + 5 stub) · 14 raw sources (raw 13 + posuta 5)
+> Last updated: 2026-06-16 · 25 articles (20 정식 + 5 stub) · 14 raw sources (raw 13 + posuta 5)
 
 이 파일은 `wiki/` 안 모든 노트의 한 줄 카탈로그다. LLM은 질의 응답 시 먼저 이 파일을 읽고, 어떤 wiki 노트를 통째로 열지 결정한다.
 
@@ -16,6 +16,7 @@
 ## 핵심 개념
 
 - [coaching-first-principle-do-no-harm](wiki/coaching-first-principle-do-no-harm.md) — 코치의 마음 상태도 코칭의 변수다. 미숙할 때는 미루고, 정답보다 인식을 먼저 본다. (sources: 1, updated: 2026-06-09)
+- [curriculum-evolution](wiki/curriculum-evolution.md) — 우테코 커리큘럼은 영구 골격을 유지한 채 매년 새 학습 목표를 한 층씩 누적하며 진화한다. (sources: 2, updated: 2026-06-16)
 - [feedback-trigger-recognition](wiki/feedback-trigger-recognition.md) — 피드백 반응의 차이는 메시지가 아니라 듣는 사람 안의 사실·관계·정체성 트리거에서 온다. (sources: 1, updated: 2026-06-09)
 - [self-directed-learning](wiki/self-directed-learning.md) — 환경·측정·선택이 함께 작동해야 자기주도성이 생긴다. (sources: 3, updated: 2026-06-09)
 

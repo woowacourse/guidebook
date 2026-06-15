@@ -46,6 +46,7 @@
 - [우테코 브이로그 아카이브](https://docs.woowahan.com/education/conversations/vlog-archive)
 - [커리큘럼](https://docs.woowahan.com/education/curriculum)
 - [커리큘럼 설계 원칙](https://docs.woowahan.com/education/curriculum/design-principles)
+- [연도별 변화](https://docs.woowahan.com/education/curriculum/evolution)
 - [커리큘럼 개선 프로세스](https://docs.woowahan.com/education/curriculum/improvement)
 - [레벨 구성](https://docs.woowahan.com/education/curriculum/levels)
 - [미션 설계](https://docs.woowahan.com/education/curriculum/mission-design)

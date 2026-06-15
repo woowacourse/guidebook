@@ -9,6 +9,35 @@
 
 ---
 
+## [2026-06-09] ingest | woowacourse.io 외부 공식 사이트 큐레이션 (12개, raw/external/ 0 → 12)
+
+사용자 요청 "노션을 홈페이지처럼 사용하던 페이지의 핵심 메시지·FAQ·문의 등을 가져오기". www.woowacourse.io sitemap 의 19개 URL 중 raw-eligible 12개를 WebFetch 로 큐레이션 추출.
+
+흡수된 12개 (raw/external/ 신규):
+- **핵심 콘텐츠** (풍부히 추출): faq, contact, intro, apply-2026, backend, frontend, android, softskill, hero-berlin
+- **부분 콘텐츠** (SPA 렌더링 한계로 thin, fetch_note 명시): main, curriculum, notice
+
+제외 (raw 부적합):
+- /privacy*, /privacy-2024, /privacy/notice — 개인정보 처리방침 (raw 가치 없음)
+- /apply/2024 — 과거 기수 (apply-2026 으로 갈음)
+- /2023-recruiting-day — 과거 단발성 이벤트
+- /test_demoday, /test_main_popup — 테스트 페이지
+
+frontmatter 표준:
+```yaml
+source_type: external-website
+captured: 2026-06-09
+source_url: https://www.woowacourse.io/<path>
+fetch_note: (SPA 렌더링 한계 있을 때만 명시)
+```
+
+raw 통계: 67 → **79** (external/ 0→12).
+
+다음 권장:
+- firecrawl 인증 후 SPA-렌더링 페이지 (main, curriculum, notice 본문) 재캡처
+- 개별 notice 본문 (공지사항 상세) 흡수
+- 모집 시즌마다 apply-YYYY.md 갱신
+
 ## [2026-06-09] ingest | Phase D 전수 검토 마이그레이션 (24개, raw 43 → 67)
 
 사용자 요청 "커밋 기록과 실제 존재하는 데이터를 확인하고 raw 에 추가할 내용을 모두 검토". `scripts/mdx-to-raw.mjs` 일괄 변환. content/education 전체 mdx 108개 중 미마이그레이션 65개를 라인 수와 Placeholder 여부로 분류 후 실질 콘텐츠가 있는 24개 흡수. 추가로 `docs/plans/` 의 교육 관련 계획 4개도 raw 흡수.

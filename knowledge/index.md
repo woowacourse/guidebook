@@ -1,6 +1,6 @@
 # Knowledge Wiki Index
 
-> Last updated: 2026-06-16 · 25 articles (20 정식 + 5 stub) · 14 raw sources (raw 13 + posuta 5)
+> Last updated: 2026-06-16 · 29 articles (25 정식 + 4 stub) · 14 raw sources (raw 13 + posuta 5)
 
 이 파일은 `wiki/` 안 모든 노트의 한 줄 카탈로그다. LLM은 질의 응답 시 먼저 이 파일을 읽고, 어떤 wiki 노트를 통째로 열지 결정한다.
 
@@ -18,22 +18,27 @@
 - [coaching-first-principle-do-no-harm](wiki/coaching-first-principle-do-no-harm.md) — 코치의 마음 상태도 코칭의 변수다. 미숙할 때는 미루고, 정답보다 인식을 먼저 본다. (sources: 1, updated: 2026-06-09)
 - [curriculum-evolution](wiki/curriculum-evolution.md) — 우테코 커리큘럼은 영구 골격을 유지한 채 매년 새 학습 목표를 한 층씩 누적하며 진화한다. (sources: 2, updated: 2026-06-16)
 - [feedback-trigger-recognition](wiki/feedback-trigger-recognition.md) — 피드백 반응의 차이는 메시지가 아니라 듣는 사람 안의 사실·관계·정체성 트리거에서 온다. (sources: 1, updated: 2026-06-09)
+- [psychological-safety-classroom](wiki/psychological-safety-classroom.md) — 코치·크루 양쪽이 첫 미션 압박·회고 구조·명시적 규칙·코치 발화 비율로 함께 만드는 합성 상태. (sources: 3, updated: 2026-06-16)
 - [self-directed-learning](wiki/self-directed-learning.md) — 환경·측정·선택이 함께 작동해야 자기주도성이 생긴다. (sources: 3, updated: 2026-06-09)
 
 ## 디자인 패턴
 
 - [agent-debate-curriculum-design](wiki/agent-debate-curriculum-design.md) — 기존 방식과 새 방향을 각각 AI 에이전트로 모델링해 토론시키는 커리큘럼 설계법. (sources: 1, updated: 2026-06-09)
 - [as-is-judge-then-compare](wiki/as-is-judge-then-compare.md) — AS-IS만 먼저 보고 자기 판단을 내린 뒤 TO-BE와 비교해 "못 보던 것"을 드러낸다. (sources: 1, updated: 2026-06-09)
+- [crew-authored-manifesto](wiki/crew-authored-manifesto.md) — 외부 규칙 대신 KPT 회고에서 크루 스스로 원칙을 언어화·오픈소스화. (sources: 1, updated: 2026-06-16)
 - [declare-feedback-revise-cycle](wiki/declare-feedback-revise-cycle.md) — 기술 결정을 선언·팀×팀 피드백·개정의 3단으로 검증한다. (sources: 1, updated: 2026-06-09)
 - [feedback-request-direct](wiki/feedback-request-direct.md) — SSCC 4질문 + 페어 증인 + 7일 약속으로 수동 수신을 능동 요청으로 뒤집는다. (sources: 1, updated: 2026-06-09)
 - [measurable-learning-goal](wiki/measurable-learning-goal.md) — 작다·깊다·실행가능·측정가능 4조건을 만족하는 학습 목표만 자기주도로 작동한다. (sources: 2, updated: 2026-06-09)
+- [non-technical-first-mission](wiki/non-technical-first-mission.md) — 입학 1주차 첫 미션을 비-기술(연극)로 두어 역량 불안과 관계 불안을 분리해 다룬다. (sources: 1, updated: 2026-06-16)
 - [page-level-technical-decision](wiki/page-level-technical-decision.md) — 기술 결정을 페이지·기능·의존성 단위로 쪼개 사고 해상도를 높인다. (sources: 1, updated: 2026-06-09)
+- [parallel-collect-then-synthesize](wiki/parallel-collect-then-synthesize.md) — 대량 자료에서 인사이트 추출 시 수집은 병렬 N에이전트, 분석은 단일 에이전트로 쪼갠다. (sources: 2, updated: 2026-06-16)
 - [personal-utility-test](wiki/personal-utility-test.md) — "본인이 실제로 이 앱을 쓸 것인가?" 단일 질문으로 문제 정의의 진정성을 점검한다. (sources: 1, updated: 2026-06-09)
 - [predict-observe-explain](wiki/predict-observe-explain.md) — 예측 → 관찰 → 설명 순서로 인지적 갈등을 의도적으로 만든다. POE를 코드 학습에 이식. (sources: 1, updated: 2026-06-09)
 - [sdl-four-stage-framework](wiki/sdl-four-stage-framework.md) — 자기주도성을 준비·주도·조정·책임 4단계 행동으로 분해해 채점한다. (sources: 1, updated: 2026-06-09)
 - [standardized-learner-simulation](wiki/standardized-learner-simulation.md) — 의학의 표준화 환자 모델을 차용해 GPTs로 표준화 크루를 만들어 코칭을 안전하게 연습한다. (sources: 1, updated: 2026-06-09)
 - [structured-prompt-pattern](wiki/structured-prompt-pattern.md) — 섹션화 + 기술 스택 선언 + 부정 제약 보조의 3요소가 AI 협업 시 반복 수정을 줄인다. (sources: 1, updated: 2026-06-09)
 - [teach-by-silence](wiki/teach-by-silence.md) — 코치 발화를 줄이고 크루 발견을 늘리는 참여형 수업 전환. (sources: 3, updated: 2026-06-09)
+- [vulnerability-sharing-retro](wiki/vulnerability-sharing-retro.md) — 강점+취약점 이중 공유와 4가지 명시적 안전 규칙으로 첫 회고에서 신뢰 토대를 만든다. (sources: 1, updated: 2026-06-16)
 
 ## 인물·개체
 
@@ -50,5 +55,4 @@
 ## 미발달 (stub)
 
 - [knowledge-transfer-not-presentation](wiki/knowledge-transfer-not-presentation.md) **stub** — 공유는 발표가 아니라 다른 사람이 그대로 따라 할 수 있게 만드는 시간. (sources: 1, updated: 2026-06-09)
-- [psychological-safety-classroom](wiki/psychological-safety-classroom.md) **stub** — 참여형 수업 전환의 핵심 관찰 지점은 코치·크루 양쪽의 심리적 안전감. (sources: 1, updated: 2026-06-09)
 - [wild-learning](wiki/wild-learning.md) **stub** — 순차 학습 대신 목적 명확화 후 모든 자원을 활용하는 학습 태도. (sources: 1, updated: 2026-06-09)

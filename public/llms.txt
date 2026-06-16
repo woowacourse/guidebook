@@ -56,7 +56,7 @@
 - [실패한 교육](https://docs.woowahan.com/education/failed-experiments)
 - [실패 사례 카탈로그](https://docs.woowahan.com/education/failed-experiments/catalog)
 - [실패에서 패턴으로](https://docs.woowahan.com/education/failed-experiments/failure-to-pattern)
-- [인사이트](https://docs.woowahan.com/education/insights)
+- [검증된 패턴](https://docs.woowahan.com/education/insights)
 - [논증 기반 학습 설계: 정답을 주지 않고 설명하게 만들기](https://docs.woowahan.com/education/insights/argumentation-based-learning)
 - [학습 분석](https://docs.woowahan.com/education/insights/learning-analytics)
 - [강의 설계](https://docs.woowahan.com/education/insights/lecture-design)

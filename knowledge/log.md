@@ -9,6 +9,10 @@
 
 ---
 
+## [2026-06-16] compile (deliberate 드레인) | raw 21개 → 신규 14개·갱신 4개
+
+`knowledge/raw/` 루트의 미합성 백로그 21개를 wiki 노트로 직접 정제(draft 아닌 파일 반영). 신규 14개: progressive-constraint-curriculum, self-service-diagnostic-report(성능+접근성 리포트 합본), feedback-as-refactoring, identity-declaration-learning, surprise-peer-feedback, flipped-pre-essay, self-manual-then-ground-rules, ux-research-scaffolding(UX 특강+리서치 훈련 합본), team-convention-workshop, concrete-review-checklist, verbatim-conversation-archive(포수타 2종 합본), unstructured-archive-staged-promotion(인터뷰챌린지+lotto 연구 합본), retrospective-essay-narrative-arc, decision-rationale-over-completion. 갱신 4개: explanation-as-learning(+SSR OX퀴즈), progressive-retrospective-design(+레벨3 회고 3부작), standardized-learner-simulation(+코칭 스쿼드 11회 루프), 그리고 index 정합성 차원에서 기존 미등재 노트 product-review-not-code-review 를 카탈로그에 추가. 21개 raw 전부 어떤 노트의 sources 에 등재 확인(MISSING 0). index.md 50 articles(47 정식+3 stub)·42 raw sources 로 갱신.
+
 ## [2026-06-16] compile (자동) | raw 5개 → wiki 6 신규 + 5 갱신 (사이클 3)
 
 `/지식정제 자동` 세 번째 사이클. 사이클 1·2 이후 다음 5개 raw 처리.

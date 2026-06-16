@@ -9,8 +9,7 @@
   "lastCompileCommit": "9a9e071313a7752ed86b187f8ca14b48462c317e",
   "lastCompileDate": "2026-06-16",
   "compileConfig": {
-    "threshold": 30,
-    "_thresholdNote": "2026-06-16 임시 5→30: dual-write 마이그레이션이 한 번에 부은 21개 루트 raw 백로그의 증분 nag 묵음용. 이 backlog 는 deliberate /지식정제 로 드레인 예정(증분 도구 대상 아님). 드레인 후 5로 복원할 것.",
+    "threshold": 5,
     "batchSize": 5,
     "maxBatchSize": 7
   },

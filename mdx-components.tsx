@@ -10,6 +10,7 @@ import { Hero } from './components/Hero'
 import { RecentUpdates } from './components/RecentUpdates'
 import { LogList } from './components/LogList'
 import { Mermaid } from './components/Mermaid'
+import { ManifestoHero, Claim, ManifestoClose } from './components/Manifesto'
 import { RepoList } from './components/RepoList'
 import { CurriculumTimeline } from './components/CurriculumTimeline'
 import { DemoDayFullList } from './components/DemoDayFullList'
@@ -35,6 +36,9 @@ export function useMDXComponents(components?: Record<string, React.FC>) {
     RecentUpdates,
     LogList,
     Mermaid,
+    ManifestoHero,
+    Claim,
+    ManifestoClose,
     RepoList,
     CurriculumTimeline,
     DemoDayFullList,

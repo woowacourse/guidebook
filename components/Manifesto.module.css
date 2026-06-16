@@ -1,0 +1,100 @@
+/* Manifesto — 교육 철학 페이지의 강조용 선언 형태.
+   라이트 문서 테마를 따르되, 크기·번호·액센트 바로 위계를 과장해 매니페스토 느낌을 낸다. */
+
+/* --manifesto-accent 는 app/globals.css :root 에 정의 (CSS Modules pure 제약). 귀납 다이어그램의 '교육 철학' 노드와 같은 계열 #ea580c */
+
+/* ── 히어로 선언 ───────────────────────────── */
+.hero {
+  margin: 1.75rem 0 2.25rem;
+  padding: 1.5rem 0 1.5rem 1.5rem;
+  border-left: 4px solid #ea580c;
+}
+
+.heroStatement {
+  margin: 0;
+  font-size: clamp(1.7rem, 1.1rem + 2.6vw, 2.7rem);
+  font-weight: 800;
+  line-height: 1.16;
+  letter-spacing: -0.02em;
+  color: rgba(23, 23, 23, 0.93);
+  text-wrap: balance;
+}
+
+:global(.dark) .heroStatement {
+  color: rgba(245, 245, 245, 0.96);
+}
+
+/* ── 번호 붙은 원칙 선언 ───────────────────── */
+.claim {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+  margin: 0.4rem 0 1.1rem;
+}
+
+.num {
+  flex-shrink: 0;
+  font-size: clamp(1.6rem, 1rem + 2vw, 2.4rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: #ea580c;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.9;
+}
+
+.claimText {
+  margin: 0;
+  font-size: clamp(1.08rem, 0.95rem + 0.7vw, 1.32rem);
+  font-weight: 700;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+  color: rgba(23, 23, 23, 0.9);
+  text-wrap: pretty;
+}
+
+:global(.dark) .claimText {
+  color: rgba(245, 245, 245, 0.92);
+}
+
+/* ── 마무리 선언 ───────────────────────────── */
+.close {
+  margin: 2.5rem 0 1rem;
+  padding: 1.5rem 1.6rem;
+  border-radius: 12px;
+  background: rgba(234, 88, 12, 0.06);
+  border: 1px solid rgba(234, 88, 12, 0.18);
+}
+
+.closeStatement {
+  margin: 0;
+  font-size: clamp(1.3rem, 0.9rem + 1.5vw, 1.7rem);
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  color: #ea580c;
+}
+
+.closeNote {
+  margin: 0.6rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(23, 23, 23, 0.62);
+}
+
+:global(.dark) .closeStatement {
+  color: #fb923c;
+}
+
+:global(.dark) .closeNote {
+  color: rgba(245, 245, 245, 0.6);
+}
+
+:global(.dark) .close {
+  background: rgba(234, 88, 12, 0.1);
+  border-color: rgba(234, 88, 12, 0.28);
+}
+
+@media (max-width: 640px) {
+  .claim { gap: 0.7rem; }
+}

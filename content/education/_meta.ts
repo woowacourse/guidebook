@@ -24,9 +24,8 @@ export default {
   philosophy: '🎯 교육 철학',
   curriculum: '🗺️ 커리큘럼',
   insights: `🧩 검증된 패턴 (${insightsCount})`,
-  '--raw': { type: 'separator', title: '원재료' },
-  logs: `🧪 실험 로그 (${logs.length})`,
-  tools: '🛠️ 검증된 도구',
+  logs: { title: `실험 로그 (${logs.length})`, display: 'hidden' },
+  tools: { title: '검증된 도구', display: 'hidden' },
   conversations: {
     title: '🗂️ 우테코 콘텐츠 아카이브',
     display: 'hidden'

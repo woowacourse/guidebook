@@ -2,36 +2,10 @@
    액센트는 사이트 테마 primary 변수를 그대로 따른다(이 사이트는 무채색 모노크롬).
    강조는 색이 아니라 크기·번호·여백·위계로 만든다. */
 
+/* ── 번호 붙은 원칙 선언 ───────────────────── */
 /* 테마 primary (라이트=짙은 회색, 다크=옅은 회색). 사이트 링크/액티브와 동일 톤. */
-.hero,
 .claim {
   --m-accent: hsl(var(--nextra-primary-hue) var(--nextra-primary-saturation) var(--nextra-primary-lightness));
-}
-
-/* ── 히어로 선언 ───────────────────────────── */
-.hero {
-  margin: 1.75rem 0 2.25rem;
-  padding: 1.25rem 0 1.25rem 1.5rem;
-  border-left: 3px solid var(--m-accent);
-}
-
-.heroStatement {
-  margin: 0;
-  font-size: clamp(1.6rem, 1.1rem + 2.3vw, 2.4rem);
-  font-weight: 800;
-  line-height: 1.22;
-  letter-spacing: -0.02em;
-  word-break: keep-all;       /* 한국어 단어가 줄바꿈에서 쪼개지지 않게 */
-  text-wrap: balance;
-  color: rgba(23, 23, 23, 0.92);
-}
-
-:global(.dark) .heroStatement {
-  color: rgba(245, 245, 245, 0.95);
-}
-
-/* ── 번호 붙은 원칙 선언 ───────────────────── */
-.claim {
   display: flex;
   gap: 1rem;
   align-items: baseline;

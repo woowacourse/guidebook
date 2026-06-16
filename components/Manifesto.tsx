@@ -19,13 +19,3 @@ export function Claim({ n, children }: { n?: string; children: ReactNode }) {
     </div>
   )
 }
-
-// 마무리 선언 — 페이지를 닫는 짧고 강한 한 줄(+ 부연).
-export function ManifestoClose({ children, note }: { children: ReactNode; note?: ReactNode }) {
-  return (
-    <div className={styles.close}>
-      <p className={styles.closeStatement}>{children}</p>
-      {note && <p className={styles.closeNote}>{note}</p>}
-    </div>
-  )
-}

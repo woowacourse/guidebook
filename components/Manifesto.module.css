@@ -1,27 +1,33 @@
 /* Manifesto — 교육 철학 페이지의 강조용 선언 형태.
-   라이트 문서 테마를 따르되, 크기·번호·액센트 바로 위계를 과장해 매니페스토 느낌을 낸다. */
+   액센트는 사이트 테마 primary 변수를 그대로 따른다(이 사이트는 무채색 모노크롬).
+   강조는 색이 아니라 크기·번호·여백·위계로 만든다. */
 
-/* 액센트 #ea580c — 귀납 다이어그램의 '교육 철학' 노드와 같은 계열. CSS Modules는 pure 제약상 :root에 변수를 둘 수 없어 값을 직접 쓴다. */
+/* 테마 primary (라이트=짙은 회색, 다크=옅은 회색). 사이트 링크/액티브와 동일 톤. */
+.hero,
+.claim {
+  --m-accent: hsl(var(--nextra-primary-hue) var(--nextra-primary-saturation) var(--nextra-primary-lightness));
+}
 
 /* ── 히어로 선언 ───────────────────────────── */
 .hero {
   margin: 1.75rem 0 2.25rem;
-  padding: 1.5rem 0 1.5rem 1.5rem;
-  border-left: 4px solid #ea580c;
+  padding: 1.25rem 0 1.25rem 1.5rem;
+  border-left: 3px solid var(--m-accent);
 }
 
 .heroStatement {
   margin: 0;
-  font-size: clamp(1.7rem, 1.1rem + 2.6vw, 2.7rem);
+  font-size: clamp(1.6rem, 1.1rem + 2.3vw, 2.4rem);
   font-weight: 800;
-  line-height: 1.16;
+  line-height: 1.22;
   letter-spacing: -0.02em;
-  color: rgba(23, 23, 23, 0.93);
+  word-break: keep-all;       /* 한국어 단어가 줄바꿈에서 쪼개지지 않게 */
   text-wrap: balance;
+  color: rgba(23, 23, 23, 0.92);
 }
 
 :global(.dark) .heroStatement {
-  color: rgba(245, 245, 245, 0.96);
+  color: rgba(245, 245, 245, 0.95);
 }
 
 /* ── 번호 붙은 원칙 선언 ───────────────────── */
@@ -34,65 +40,28 @@
 
 .num {
   flex-shrink: 0;
-  font-size: clamp(1.6rem, 1rem + 2vw, 2.4rem);
+  font-size: clamp(1.5rem, 1rem + 1.8vw, 2.1rem);
   font-weight: 800;
   line-height: 1;
   letter-spacing: -0.04em;
-  color: #ea580c;
+  color: var(--m-accent);
+  opacity: 0.55;              /* 모노크롬에서 번호는 장식 — 본문보다 한 단계 옅게 */
   font-variant-numeric: tabular-nums;
-  opacity: 0.9;
 }
 
 .claimText {
   margin: 0;
-  font-size: clamp(1.08rem, 0.95rem + 0.7vw, 1.32rem);
+  font-size: clamp(1.05rem, 0.95rem + 0.6vw, 1.28rem);
   font-weight: 700;
-  line-height: 1.45;
+  line-height: 1.5;
   letter-spacing: -0.01em;
-  color: rgba(23, 23, 23, 0.9);
+  word-break: keep-all;
   text-wrap: pretty;
+  color: rgba(23, 23, 23, 0.9);
 }
 
 :global(.dark) .claimText {
   color: rgba(245, 245, 245, 0.92);
-}
-
-/* ── 마무리 선언 ───────────────────────────── */
-.close {
-  margin: 2.5rem 0 1rem;
-  padding: 1.5rem 1.6rem;
-  border-radius: 12px;
-  background: rgba(234, 88, 12, 0.06);
-  border: 1px solid rgba(234, 88, 12, 0.18);
-}
-
-.closeStatement {
-  margin: 0;
-  font-size: clamp(1.3rem, 0.9rem + 1.5vw, 1.7rem);
-  font-weight: 800;
-  line-height: 1.25;
-  letter-spacing: -0.015em;
-  color: #ea580c;
-}
-
-.closeNote {
-  margin: 0.6rem 0 0;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: rgba(23, 23, 23, 0.62);
-}
-
-:global(.dark) .closeStatement {
-  color: #fb923c;
-}
-
-:global(.dark) .closeNote {
-  color: rgba(245, 245, 245, 0.6);
-}
-
-:global(.dark) .close {
-  background: rgba(234, 88, 12, 0.1);
-  border-color: rgba(234, 88, 12, 0.28);
 }
 
 @media (max-width: 640px) {

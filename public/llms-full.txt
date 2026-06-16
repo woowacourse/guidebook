@@ -5100,36 +5100,11 @@ SNS를 끊으면
 
 # 커리큘럼
 
-우아한테크코스 10개월 과정의 커리큘럼 설계 원칙과 구성 요소를 설명합니다.
+우아한테크코스 커리큘럼은 매 기수 피드백을 반영해 진화합니다. 큰 골격(Form·상태·컴포넌트 같은 핵심 역량)은 그대로 두고, 그 위에 매년 새 학습 목표를 한 층씩 쌓는 **누적 학습 모델**입니다.
 
-<Callout type="info">
-커리큘럼은 매 기수마다 피드백을 반영하여 개선됩니다. 이 문서는 커리큘럼의 핵심 구조와 설계 원칙에 초점을 맞춥니다.
-</Callout>
+연도를 눌러 그 해 커리큘럼이 어떻게 바뀌었는지 살펴보세요. **기록 보강 중**으로 표시된 해는 아직 부분 관측이라, 데이터가 쌓이는 대로 계속 채워집니다.
 
-## 연도별로 어떻게 바뀌어 왔나
-
-<CardGrid columns={1}>
-  <Card title="연도별 변화 →" icon="🗓️" href="/education/curriculum/evolution">
-    2021년부터 지금까지, 커리큘럼이 한 층씩 어떻게 누적·진화했는지 타임라인으로
-  </Card>
-</CardGrid>
-
-## 핵심 구조
-
-<CardGrid columns={2}>
-  <Card title="설계 원칙" icon="📐" href="/education/curriculum/design-principles">
-    역순 설계, 나선형 커리큘럼, 실전 중심 구성
-  </Card>
-  <Card title="레벨 구성" icon="📊" href="/education/curriculum/levels">
-    레벨 1~4의 학습 목표, 핵심 미션, 기대 역량
-  </Card>
-  <Card title="미션 설계" icon="🎯" href="/education/curriculum/mission-design">
-    미션의 구성 요소, 단계별 난이도 설계
-  </Card>
-  <Card title="개선 프로세스" icon="🔄" href="/education/curriculum/improvement">
-    기수별 회고와 개선 사이클
-  </Card>
-</CardGrid>
+<CurriculumTimeline />
 
 ---
 
@@ -5150,372 +5125,12 @@ SNS를 끊으면
 
 [React 페이먼츠 미션 5년치 PR 555개 분석](/education/logs/react-payments-555prs-analysis)에서 같은 미션 저장소가 5년 동안 form/state/component라는 영구 핵심을 유지한 채 매년 새 학습 목표(2025 testing/error-handling, 2026 async/MSW)를 한 층씩 누적한 패턴이 데이터로 확인됐다. 나선형 커리큘럼이 단순한 반복 강화가 아니라 **영구 골격 + 누적 추상화**의 이중 구조임을 시사한다.
 
-→ 관련 패턴: [디자인 패턴 9 - 누적 학습 미션 설계](/education/design-patterns/catalog#패턴-9-누적-학습-미션-설계)
-→ 관련 인사이트: [미션은 누적 학습 모델이다](/education/insights/mission-learning-accumulation)
+→ 관련 패턴: [미션은 누적 학습 모델이다](/education/insights/mission-learning-accumulation)
 {/* END PROMOTED */}
 
 ## 실전 중심 구성
 
 <Placeholder>미션과 프로젝트 중심의 학습 경험</Placeholder>
-
----
-
-<!-- source: https://docs.woowahan.com/education/curriculum/evolution -->
-
-# 연도별 변화
-
-우아한테크코스 커리큘럼은 매 기수 피드백을 반영해 조금씩 진화합니다. 큰 골격(Form·상태·컴포넌트 같은 핵심 역량)은 그대로 두고, 그 위에 매년 새로운 학습 목표를 한 층씩 쌓는 **누적 학습 모델**입니다.
-
-<Callout type="info">
-아래 타임라인은 "그 해 커리큘럼은 이런 모습이었다"를 한눈에 보여줍니다. **기록 보강 중**으로 표시된 해는 아직 단일 미션 중심의 부분 관측이라, 데이터가 쌓이는 대로 계속 채워집니다.
-</Callout>
-
-<CurriculumTimeline />
-
----
-
-이 타임라인은 [설계 원칙](/education/curriculum/design-principles)이 실제로 어떻게 작동해 왔는지를 보여주는 "진화" 축입니다. 커리큘럼의 "구조"가 궁금하다면 [레벨 구성](/education/curriculum/levels)과 [미션 설계](/education/curriculum/mission-design)를 함께 보세요.
-
----
-
-<!-- source: https://docs.woowahan.com/education/curriculum/improvement -->
-
-# 커리큘럼 개선 프로세스
-
-<Placeholder>기수별 회고와 개선 사이클</Placeholder>
-
----
-
-<!-- source: https://docs.woowahan.com/education/curriculum/levels -->
-
-# 레벨 구성
-
-<CardGrid>
-  <Card title="레벨 1" icon="🌱">프로그래밍 기초</Card>
-  <Card title="레벨 2" icon="🌿">웹 프로그래밍</Card>
-  <Card title="레벨 3" icon="🌳">팀 프로젝트</Card>
-  <Card title="레벨 4" icon="🏔️">협업과 성장</Card>
-</CardGrid>
-
-## 레벨 1: 프로그래밍 기초
-
-<Placeholder>학습 목표, 핵심 미션, 기대 역량</Placeholder>
-
-## 레벨 2: 웹 프로그래밍
-
-<Placeholder>학습 목표, 핵심 미션, 기대 역량</Placeholder>
-
-## 레벨 3: 팀 프로젝트
-
-<Placeholder>학습 목표, 프로젝트 구조, 기대 역량</Placeholder>
-
-## 레벨 4: 협업과 성장
-
-<Placeholder>학습 목표, 활동 구성, 기대 역량</Placeholder>
-
----
-
-<!-- source: https://docs.woowahan.com/education/curriculum/mission-design -->
-
-# 미션 설계
-
-## 미션의 구성 요소
-
-<Placeholder>요구사항, 제약 조건, 학습 목표의 관계</Placeholder>
-
-## 단계별 미션 난이도 설계
-
-<Placeholder>레벨별 미션 난이도 그래프와 설계 원칙</Placeholder>
-
----
-
-<!-- source: https://docs.woowahan.com/education/design-patterns -->
-
-# 디자인 패턴
-
-교육 현장에서 반복적으로 등장하는 문제 상황과 검증된 해결 방법을 패턴 형태로 정리했습니다.
-각 패턴은 소프트웨어 디자인 패턴에서 영감을 받아 **문제 → 맥락 → 해결책 → 사례 → 변형** 구조로 기술합니다.
-
-<Callout type="tip">
-각 패턴은 독립적으로 참조할 수 있습니다. 교육 현장에서 특정 문제에 직면했을 때 해당 패턴을 찾아 적용해 보세요.
-</Callout>
-
-<CardGrid columns={2}>
-  <Card title="패턴 카탈로그" icon="📖" href="/education/design-patterns/catalog">
-    6가지 교육 디자인 패턴의 상세 설명
-  </Card>
-  <Card title="패턴 적용 가이드" icon="🧭" href="/education/design-patterns/application-guide">
-    상황별 패턴 선택 매트릭스, 패턴 조합 활용법
-  </Card>
-</CardGrid>
-
----
-
-<!-- source: https://docs.woowahan.com/education/design-patterns/application-guide -->
-
-# 패턴 적용 가이드
-
-<Placeholder>상황별 패턴 선택 매트릭스, 패턴 조합 활용법</Placeholder>
-
----
-
-<!-- source: https://docs.woowahan.com/education/design-patterns/catalog -->
-
-# 패턴 카탈로그
-
-## 패턴 1. 단계적 제약 제거
-
-> 학습자에게 처음부터 높은 자유도를 주면 방향을 잃고 학습 효과가 떨어진다.
-
-**맥락** — 신규 학습자가 새로운 기술이나 개념을 처음 접할 때 발생하는 상황.
-
-<Toggle title="해결책 · 사례 · 변형">
-
-**해결책**
-
-<Placeholder>제약 조건을 점진적으로 완화하는 구체적 방법</Placeholder>
-
-**사례**
-
-<Placeholder>미션 레벨별 요구사항 변화 예시</Placeholder>
-
-**변형**
-
-<Placeholder>상황에 따른 패턴 변형</Placeholder>
-
-</Toggle>
-
-## 패턴 2. 반복적 재도전
-
-> 한 번의 시도로는 깊은 이해에 도달하기 어렵다.
-
-**맥락** — 학습자가 미션을 수행한 후 피드백을 받는 과정에서 발생하는 상황.
-
-<Toggle title="해결책 · 사례 · 변형">
-
-**해결책**
-
-<Placeholder>피드백 루프와 재시도 메커니즘</Placeholder>
-
-**사례**
-
-<Placeholder>코드 리뷰 기반 재도전 프로세스</Placeholder>
-
-**변형**
-
-<Placeholder />
-
-</Toggle>
-
-## 패턴 3. 동료 학습 촉진
-
-> 개인 학습만으로는 다양한 관점과 문제 해결 능력을 기르기 어렵다.
-
-**맥락** — 학습자 간 실력 차이가 있는 그룹에서의 협업 학습 상황.
-
-<Toggle title="해결책 · 사례 · 변형">
-
-**해결책**
-
-<Placeholder>페어 프로그래밍, 팀 프로젝트, 코드 리뷰 등</Placeholder>
-
-**사례**
-
-<Placeholder />
-
-**변형: 클린 랭귀지 기반 상호 멘토링**
-
-크루들이 AI로 생성한 열린 질문 가이드를 활용해 서로의 고민을 탐색하는 방식입니다.
-솔루션을 주는 대신 질문만으로 대화하므로, 실력 차이와 무관하게 누구나 멘토 역할을 수행할 수 있습니다.
-
-→ 자세한 내용은 [AI 전략 > 클린 랭귀지 기반 상호 멘토링](/education/ai-strategy/usage-policy#사례-클린-랭귀지-기반-상호-멘토링) 참고
-
-</Toggle>
-
-## 패턴 4. 실전 기반 학습
-
-> 이론만으로는 실무 적응력을 기를 수 없다.
-
-**맥락** — 교육 과정에서 실무 역량을 키워야 하는 상황.
-
-<Toggle title="해결책 · 사례 · 변형">
-
-**해결책**
-
-<Placeholder>미션 기반 학습, 프로젝트 기반 학습 설계</Placeholder>
-
-**사례**
-
-<Placeholder />
-
-**변형**
-
-<Placeholder />
-
-</Toggle>
-
-## 패턴 5. 점진적 복잡도 증가
-
-> 난이도 급상승은 학습 의욕을 떨어뜨리고, 너무 쉬운 과제는 성장을 멈추게 한다.
-
-**맥락** — 10개월 과정에서 학습자의 역량이 점진적으로 성장하는 상황.
-
-<Toggle title="해결책 · 사례 · 변형">
-
-**해결책**
-
-<Placeholder>레벨별 미션 설계와 난이도 조절 전략</Placeholder>
-
-**사례**
-
-<Placeholder />
-
-**변형**
-
-<Placeholder />
-
-</Toggle>
-
-## 패턴 6. 안전한 실패 환경
-
-> 실패에 대한 두려움이 도전적인 시도를 가로막는다.
-
-**맥락** — 학습자가 새로운 기술이나 설계 방식을 시도하려 할 때.
-
-<Toggle title="해결책 · 사례 · 변형">
-
-**해결책**
-
-<Placeholder>심리적 안전감 확보와 실패를 학습으로 전환하는 메커니즘</Placeholder>
-
-**사례**
-
-<Placeholder />
-
-**변형**
-
-<Placeholder />
-
-</Toggle>
-
-## 패턴 7. 자기 진단 프레임워크
-
-> "좋은 X를 만들어라" 같은 추상어는 크루가 소화할 수 없다. 크루가 직접 돌릴 수 있는 진단 기준으로 번역해야 실행 가능해진다.
-
-**맥락** — 학습 목표가 "성능을 높여라", "피드백을 잘 해라", "사용자 관점으로 다듬어라"처럼
-추상적이어서 크루가 무엇을 어떻게 해야 할지 막막해하는 상황.
-
-<Toggle title="해결책 · 사례 · 변형">
-
-**해결책**
-
-추상 가치를 **진단 차원 3~5개 + 점수 체계 + 자기 대상 적용**의 3박자로 분해한다.
-크루가 자기 팀 산출물에 직접 템플릿을 적용해 리포트를 작성하게 하고, 다음 기수가 이 리포트를
-입력 자료로 받아 누적 자산으로 만든다.
-
-**사례**
-
-- [FE 성능 리포트](/education/logs/fe-performance-report) — 측정→분석→개선 3단계 프레임워크를 5·6·7기에 걸쳐 진화
-- [FE 접근성 리포트](/education/logs/fe-accessibility-report) — 성능 프레임워크를 접근성 도메인으로 이식, 6기 리포트를 7기의 누적 자산으로 명시
-- [피드백 리팩터링](/education/logs/feedback-refactoring) — 5가지 진단 기준으로 기존 피드백을 "코드처럼" 진단
-
-**변형**
-
-성장 그래프처럼 **자기 자신이 진단 대상**이 되는 변형도 가능하다.
-[나의 성장 그래프](/education/logs/growth-graph)는 기술/소프트스킬 성장 곡선과
-감정 키워드를 결합한 시각적 자기 진단이다.
-
-→ 근거 패턴: [인사이트 > 자기 진단 프레임워크](/education/insights/self-diagnostic-framework)
-
-</Toggle>
-
-## 패턴 8. 점진적 스캐폴딩
-
-> 한 번의 강의로 전달하면 증발하는 내용이 있다. 그런 주제는 3~5회의 시퀀스로 분산해 앞 회차가 뒤 회차의 토양이 되게 해야 한다.
-
-**맥락** — 추상 개념이거나 실습·피드백·통합이 모두 필요한 주제를 "하루 특강"으로 전달했을 때
-크루가 다음 주에 아무것도 기억하지 못하는 상황.
-
-<Toggle title="해결책 · 사례 · 변형">
-
-**해결책**
-
-최종 목표 산출물을 정한 뒤 구성 요소를 역순으로 쪼개고, 각 회차의 산출물이 다음 회차의
-입력이 되도록 순서를 맞춘다. 회차 사이에 1주 이상의 간격을 두고, 마지막 회차는 새 내용이
-아니라 앞 회차들을 되짚는 회고 전용으로 예약한다.
-
-**사례**
-
-- [UX 리서치 3단계 훈련](/education/logs/ux-research-training) — 페어 글쓰기 → JTBD 인터뷰 설계 → UT 실전
-- [FE 레벨2 16단계](/education/logs/fe-level2-16steps) — 적게 읽기/거꾸로 만들기/관점 전환 3가지 제약으로 16단계 설계
-- [데모데이 회고의 점진적 설계](/education/logs/demo-day-retrospective) — 5회 연속 회고를 매회 다른 형식으로 설계해 성찰 깊이 점증
-
-**변형**
-
-제약을 매 회차마다 미세하게 조정하는 변형이 가장 효과적이다.
-같은 주제를 단순 반복하면 지루해지고, 완전히 다른 주제면 연결이 끊긴다.
-
-→ 근거 패턴: [인사이트 > 점진적 스캐폴딩](/education/insights/progressive-scaffolding)
-
-</Toggle>
-
-{/* PROMOTED FROM: react-payments-555prs-analysis (2026-05-26) */}
-## 패턴 9. 누적 학습 미션 설계
-
-> 한 미션 저장소를 매년 새로 만드는 게 아니라, 변하지 않는 골격 위에 매년 새 학습 목표를 한 층씩 누적해 5~6년 단위로 누적 학습 자산을 만든다.
-
-**맥락** — 같은 이름의 미션을 매년 운영하면서 학습 목표를 진화시켜야 하는 상황. 매년 저장소를 새로 만들면 데이터가 단절되고, 그대로 두면 학습 깊이가 정체된다.
-
-<Toggle title="해결책 · 사례 · 변형">
-
-**해결책**
-
-영구 골격(form/state/component처럼 모든 기수에서 다뤄지는 핵심)과 누적 층(매년 한 단계씩 추상화돼 추가되는 새 목표)을 분리해 설계한다. 미션 재설계 결정은 5년치 PR 데이터로 카테고리×연도 매트릭스를 만들어 데이터 기반으로 한다.
-
-**사례**
-
-- [React 페이먼츠 미션 5년치 PR 555개 데이터 분석](/education/logs/react-payments-555prs-analysis) — form/state/component 4개 영구 골격 위에 2025 testing/error-handling, 2026 async/MSW가 누적된 패턴
-- [자바 @MVC 미션](/education-experiment/repositories/java-mvc) — Controller 일관성 → Handler 추상화 → JsonView로 단계 누적
-- [자바 로또 미션](/education-experiment/repositories/java-lotto) — 구현 1단계 → 리팩토링 2단계 구조 자체가 누적 학습 설계
-
-**변형**
-
-매년 폐지된 단계가 영구 폐지인지 일시 보류인지를 데이터로 재평가한다. 페이먼츠 3단계는 2024–2025 폐지 후 2026 부활. 폐지된 단계의 학습 목표가 다른 미션으로 이전 가능한지를 본문 데이터에서 검증하면 폐지 결정의 정확도가 올라간다.
-
-→ 근거 패턴: [인사이트 > 미션은 누적 학습 모델이다](/education/insights/mission-learning-accumulation)
-→ 분석 도구: [도구 > 미션 저장소 PR 데이터 분석 워크플로우](/education/tools/mission-repo-analysis-workflow)
-
-</Toggle>
-{/* END PROMOTED */}
-
-{/* PROMOTED FROM: demo-day-retrospective, level3-team-project-retrospective-series, drama-retrospective, growth-graph (2026-06-16) */}
-## 패턴 10. 회고 형식의 점진적 전환
-
-> "좋았던 점 / 아쉬운 점"을 반복하면 회고는 통과 의례가 된다. 회고를 매 시점·매 회차마다 형식 자체를 바꾸는 설계 대상으로 다뤄야 회고 피로를 막고 성찰을 감상에서 메타인지까지 끌어올릴 수 있다.
-
-**맥락** — 데모데이·레벨 종료·팀 프로젝트처럼 회고가 반복되는 상황에서, 같은 틀의 반복으로 "또 회고야?"라는 피로가 형성되고 크루의 이야기가 "팀 분위기가 좋았다" 수준의 표면적 감상에 머무는 상황.
-
-<Toggle title="해결책 · 사례 · 변형">
-
-**해결책**
-
-회차/시점별로 성찰 목표를 다르게 정해 깊이 사다리(감상 → 정량화 → 역설 → 시각화 → 메타인지)를 먼저 설계한다. 각 회차에 추상 감상을 구체화하는 장치(10점 척도·감정 키워드 테이블·타임라인·자원 배분 비율)를 하나씩 걸고, 인지 비대칭과 사각지대를 드러내는 장치(점수 공유·서프라이즈 피드백·역설 질문)를 최소 1회 넣는다. 3회차 이후 진행은 크루(MC)에게 넘긴다.
-
-**사례**
-
-- [데모데이 회고의 점진적 설계](/education/logs/demo-day-retrospective) — 5회 연속 회고를 감상→정량화→역설→시각화→메타인지로 배열, MC 시스템으로 진행 주체를 크루에게 이전
-- [레벨3 팀 프로젝트 회고 3부작](/education/logs/level3-team-project-retrospective-series) — 시점별 시야 이동(나↔팀↔서비스↔사용자), 점수화가 같은 팀 안의 인지 비대칭(10점 vs 6점)을 노출
-- [나의 성장 그래프](/education/logs/growth-graph) — 42개 감정 키워드 테이블 + 서프라이즈 피드백으로 자기 인식의 사각지대 발견
-
-**변형**
-
-[연극 회고](/education/logs/drama-retrospective)처럼 **심리적 안전감 형성**이 목표일 때는, 강점/취약점 이중 공유와 명시적 규칙("판단하지 않기"·"여기서만")을 결합한다. 회고 형식 전환이 성찰 깊이뿐 아니라 신뢰 형성의 장치로도 작동한다.
-
-→ 근거 패턴: [인사이트 > 회고 설계](/education/insights/retrospective-design)
-→ 설계 도구: [도구 > 회고 형식 설계 키트](/education/tools/retrospective-format-kit)
-
-</Toggle>
-{/* END PROMOTED */}
 
 ---
 
@@ -5536,14 +5151,14 @@ SNS를 끊으면
 
 - **생존자 편향 방지** — 성공한 교육만 보면 "이렇게 하면 된다"고 착각하기 쉽습니다. 실패 사례는 그 착각을 깨뜨립니다.
 - **같은 실수 반복 방지** — 조직의 교육 담당자가 바뀌어도 실패 기록이 있으면 같은 시행착오를 줄일 수 있습니다.
-- **설계 근거 제공** — 현재 교육 모델의 디자인 패턴이 왜 이런 형태인지, 실패를 통해 역으로 설명할 수 있습니다.
+- **설계 근거 제공** — 현재 교육 모델의 검증된 패턴이 왜 이런 형태인지, 실패를 통해 역으로 설명할 수 있습니다.
 
 <CardGrid columns={2}>
   <Card title="실패 사례 카탈로그" icon="📋" href="/education/failed-experiments/catalog">
     7년간의 교육 실험에서 기대한 효과를 얻지 못한 사례들
   </Card>
   <Card title="실패에서 패턴으로" icon="🔄" href="/education/failed-experiments/failure-to-pattern">
-    실패 사례와 디자인 패턴 간의 대응 관계 매핑
+    실패 사례와 검증된 패턴 간의 대응 관계 매핑
   </Card>
 </CardGrid>
 
@@ -5565,10 +5180,10 @@ SNS를 끊으면
 | **실험** | 구체적으로 무엇을 시도했는가 |
 | **결과** | 실제로 어떤 일이 일어났는가 (가능하면 데이터 포함) |
 | **분석** | 왜 기대와 달랐는가 |
-| **전환** | 이 실패가 어떤 디자인 패턴이나 방침으로 전환되었는가 |
+| **전환** | 이 실패가 어떤 검증된 패턴이나 방침으로 전환되었는가 |
 
 <Callout type="tip">
-각 실패 사례의 "전환" 항목은 이 문서의 다른 장(디자인 패턴, 커리큘럼, 평가 등)으로 연결됩니다.
+각 실패 사례의 "전환" 항목은 이 문서의 다른 장(검증된 패턴, 커리큘럼, 평가 등)으로 연결됩니다.
 실패가 어떻게 현재의 교육 모델로 진화했는지 추적할 수 있습니다.
 </Callout>
 
@@ -5578,7 +5193,7 @@ SNS를 끊으면
 
 # 실패에서 패턴으로
 
-<Placeholder>실패 사례와 디자인 패턴 간의 대응 관계를 매핑합니다. 예: "자유도 높은 첫 미션의 실패 → 패턴 1. 단계적 제약 제거"</Placeholder>
+<Placeholder>실패 사례와 검증된 패턴 간의 대응 관계를 매핑합니다. 예: "강의로 한 번에 전달한 추상 개념의 증발 → 점진적 스캐폴딩"</Placeholder>
 
 ---
 
@@ -5677,7 +5292,7 @@ SNS를 끊으면
 | 팀 컨벤션 정립 | "왜 그렇게 쓰는가" 메타 질문 포함 | 나열이 아닌 논거를 요구하는 템플릿 설계 |
 | 자기 서비스 분석 | 일반 사례가 아닌 자기 코드·서비스 대상 | 자기 서비스 진단은 발견 즉시 코드베이스 반영으로 연결 |
 
-## 관련 인사이트 및 교육 모델
+## 관련 패턴 및 교육 모델
 
 - [POE 발견 학습](/education/insights/poe-discovery-learning) — 예측→관찰→설명 구조는 이 패턴의 선행 형식
 - [점진적 스캐폴딩](/education/insights/progressive-scaffolding) — 논증 수준을 회차별로 높여가는 설계와 결합 가능
@@ -5706,7 +5321,7 @@ SNS를 끊으면
 - **추상 정의 대신 구체 비유** — 시지프의 "메타몽 — 상대 색에 맞춰주는 투명함"(자기 색깔 질문에 대한 답), 포비의 "주식 손절·역베팅"(신입의 본능 회피 설명). 정의를 내리지 않고 이미지로 답한다.
 - **짧은 원리 답변** — 디노의 "많이 하는 것보다 의식적으로 하는 게 좋다"는 답변은 "피카츄 배구 잘하는 법"이라는 게임 질문에까지 동일하게 적용됐다. 영역을 가리지 않는 한 줄 원리로 학습자가 다시 자기 맥락에 끌어가게 한다.
 
-페이먼츠 데이터가 **리뷰 코멘트라는 글 매체에서의 정량 증거**(질문 51%)였다면, 포수타는 **공개 Q&A라는 음성 매체에서의 정성 증거**다. 두 채널 모두에서 "답이 아닌 질문/되묻기/비유/원리 한 줄"이 동일한 결로 반복된다는 점이 이 인사이트의 매체 독립성을 뒷받침한다.
+페이먼츠 데이터가 **리뷰 코멘트라는 글 매체에서의 정량 증거**(질문 51%)였다면, 포수타는 **공개 Q&A라는 음성 매체에서의 정성 증거**다. 두 채널 모두에서 "답이 아닌 질문/되묻기/비유/원리 한 줄"이 동일한 결로 반복된다는 점이 이 패턴의 매체 독립성을 뒷받침한다.
 {/* </auto-sync> */}
 
 ---
@@ -5811,9 +5426,9 @@ SNS를 끊으면
 | 미션 단계 폐지 | 폐지 전 해당 단계 PR의 마지막 3년치 본문에서 학습 목표가 다른 미션으로 이전 가능한지 확인 | 페이먼츠 3단계는 2024–2025 폐지 후 2026 부활. 폐지가 영구적이지 않을 수 있음을 데이터가 보여줌 |
 | 외부 라이브러리 도입 시점 | 영구 골격이 안정된 후에 도입. 페이먼츠 5년치에서 Redux/Zustand 합 9회 vs Context 306회 — 기본기 체화가 라이브러리 도입 시점을 미룬 사례 | 라이브러리는 학습이 아니라 추상화 도구. 도입 전 기본기로 풀어보는 단계가 누적의 토대 |
 
-## 관련 인사이트 및 도구
+## 관련 패턴 및 도구
 
-- [점진적 스캐폴딩](/education/insights/progressive-scaffolding) — 한 미션 내 회차 단위 누적. 본 인사이트는 **여러 기수·여러 해에 걸친 누적**이라는 더 큰 시간 단위.
+- [점진적 스캐폴딩](/education/insights/progressive-scaffolding) — 한 미션 내 회차 단위 누적. 본 패턴은 **여러 기수·여러 해에 걸친 누적**이라는 더 큰 시간 단위.
 - [자기 진단 프레임워크](/education/insights/self-diagnostic-framework) — 누적된 미션의 상태를 매년 진단해 재설계 결정의 근거를 만든다.
 - [미션 저장소 PR 데이터 분석 워크플로우](/education/tools/mission-repo-analysis-workflow) — 이 패턴을 다른 미션 저장소에서 검증할 때 사용하는 표준 절차.
 - [교육 철학 > 핵심 교육 원칙 > 몰입 기반 성장](/education/philosophy/core-principles#몰입-기반-성장) — ✅ 반영 완료 (2026-06-16). "같은 저장소로 반복해 돌아오는 누적 구조"가 한 기수를 넘는 몰입의 근거로 인용됨.
@@ -5901,7 +5516,6 @@ Predict(예측) → Observe(관찰) → Explain(설명)의 3단 사이클로 학
 
 ## 교육 모델 연결
 
-- [교육 모델 > 디자인 패턴 > 패턴 카탈로그 > 점진적 스캐폴딩](/education/design-patterns/catalog#패턴-8-점진적-스캐폴딩)
 - [교육 철학 > 핵심 교육 원칙 > 몰입 기반 성장](/education/philosophy/core-principles#몰입-기반-성장) — ✅ 반영 완료 (2026-06-16). "다회차 시퀀스로 인지 부하를 관리한다"가 몰입 기반 성장 원칙의 근거로 인용됨.
 
 {/* <auto-sync slug="coaching-squad-training-loop" date="2026-05-19" logs={["coaching-squad-training-loop"]}> */}
@@ -5955,15 +5569,14 @@ Predict(예측) → Observe(관찰) → Explain(설명)의 3단 사이클로 학
   - 퍼실리테이터/MC 없이 자유 형식만 반복하기 — 4개 로그가 공통으로 지적한 약점이 **조별 깊이 편차**다. 초기일수록 최소 구조를 제공해야 한다.
   - 합의되지 않은 개념을 점수화하기 — "찐한 협업이 뭔지 몰라서 모르겠음"(깃짱)처럼, 점수화 전에 개념을 정의하는 5분을 두지 않으면 합의되지 않은 것을 합의된 척 다루게 된다.
 
-## 관련 인사이트
+## 관련 패턴
 
 - [점진적 스캐폴딩](/education/insights/progressive-scaffolding) — 매 회차 형식을 바꾸는 **리듬**을 공유한다. 다만 스캐폴딩은 *무거운 주제를 전달*하기 위한 설계이고, 회고 설계는 *성찰을 심화*하기 위한 설계다. 회고는 종종 스캐폴딩 시퀀스의 마지막 회차를 닫는 형식이기도 하다.
 - [자기 진단 프레임워크](/education/insights/self-diagnostic-framework) — 점수화·감정 키워드 같은 구체화 장치가 겹친다. 자기 진단이 *산출물의 품질*을 진단한다면, 회고 설계는 *경험과 협업*을 진단한다.
 
 ## 교육 모델 연결
 
-- [교육 모델 > 디자인 패턴 > 패턴 카탈로그 > 회고 형식의 점진적 전환](/education/design-patterns/catalog#패턴-10-회고-형식의-점진적-전환)
-- [도구 > 회고 형식 설계 키트](/education/tools/retrospective-format-kit) — 이 인사이트에서 추출한, 복사해 바로 쓰는 회고 형식 카탈로그
+- [도구 > 회고 형식 설계 키트](/education/tools/retrospective-format-kit) — 이 패턴에서 추출한, 복사해 바로 쓰는 회고 형식 카탈로그
 - [교육 철학 > 핵심 교육 원칙 > 몰입 기반 성장](/education/philosophy/core-principles#몰입-기반-성장) — ✅ 반영 완료 (2026-06-16). "성찰의 깊이 사다리"가 시간을 들인 점진적 심화의 근거로 인용됨.
 
 ---
@@ -6006,7 +5619,6 @@ Predict(예측) → Observe(관찰) → Explain(설명)의 3단 사이클로 학
 
 ## 교육 모델 연결
 
-- [교육 모델 > 디자인 패턴 > 패턴 카탈로그 > 자기 진단 프레임워크](/education/design-patterns/catalog#패턴-7-자기-진단-프레임워크)
 - [교육 철학 > 핵심 교육 원칙 > 자기주도 학습](/education/philosophy/core-principles#자기주도-학습) — ✅ 반영 완료 (2026-06-16). "자기 자신을 진단 대상으로 삼는 구조"가 자기주도 학습 원칙의 근거로 인용됨.
 
 ---
@@ -10692,7 +10304,7 @@ Redux/Zustand/Recoil/React Query의 합계 언급이 555개 본문에서 단 16�
 
 4. **2021–2026 코치 핵심 인용구 50개를 추출**해 우테코 리뷰 코칭의 "패턴 카탈로그" 초안 작성
 5. **PR 본문 길이가 5,000자 이상인 64개 PR을 정성 코딩**하여 "장문 PR이 다루는 주제"의 분포 파악
-6. 본 분석 결과를 [`/education/design-patterns`](/education/design-patterns)와 [`/education/curriculum`](/education/curriculum)로 승격할 수 있는 후보로 검토
+6. 본 분석 결과를 [검증된 패턴](/education/insights)과 [커리큘럼](/education/curriculum)으로 승격할 수 있는 후보로 검토
 
 ### 장기
 
@@ -12469,7 +12081,7 @@ Predict(예측) → Observe(관찰) → Explain(설명)의 순서를 뒤집지 �
 
 ## 워크플로우
 
-- [연구 사이클 워크플로우](/education/tools/research-cycle-workflow) — 실험 로그에서 검증된 도구, 인사이트, 교육 모델까지의 승격 파이프라인 시각화
+- [연구 사이클 워크플로우](/education/tools/research-cycle-workflow) — 실험 로그에서 검증된 도구, 검증된 패턴, 교육 모델까지의 승격 파이프라인 시각화
 
 ## 교육 설계
 
@@ -12733,11 +12345,11 @@ review_themes = {
 
 - [React 페이먼츠 미션 5년치 PR 555개 데이터 분석](/education/logs/react-payments-555prs-analysis) — 이 워크플로우의 원본 적용 사례
 
-## 관련 도구·인사이트
+## 관련 도구·패턴
 
-- [연구 사이클 워크플로우](/education/tools/research-cycle-workflow) — 이 도구가 산출한 로그를 인사이트·교육 모델로 승격하는 다음 단계 파이프라인
+- [연구 사이클 워크플로우](/education/tools/research-cycle-workflow) — 이 도구가 산출한 로그를 검증된 패턴·교육 모델로 승격하는 다음 단계 파이프라인
 - [미션은 누적 학습 모델이다](/education/insights/mission-learning-accumulation) — 이 도구로 발견된 핵심 패턴
-- [논증 기반 학습 설계](/education/insights/argumentation-based-learning) — 리뷰 테마 분포 분석이 이 인사이트의 정량 증거를 제공한다
+- [논증 기반 학습 설계](/education/insights/argumentation-based-learning) — 리뷰 테마 분포 분석이 이 패턴의 정량 증거를 제공한다
 
 ## 한계와 주의
 
@@ -12844,7 +12456,7 @@ review_themes = {
 
 실험 로그는 한 기수의 한 장면을 담은 **원본 데이터**입니다. 그 자체로는 다른 코치가 재사용하기 어렵고, 시간이 지나면 묻혀버립니다.
 
-연구 사이클은 이 원본 데이터를 한 단계씩 끌어올려, 누구나 꺼내 쓸 수 있는 **도구 → 인사이트 → 교육 모델**로 승격시키는 장치입니다. 한 사람의 경험을 팀 전체의 자산으로 바꾸는 게 목표예요.
+연구 사이클은 이 원본 데이터를 한 단계씩 끌어올려, 누구나 꺼내 쓸 수 있는 **도구 → 검증된 패턴 → 교육 모델**로 승격시키는 장치입니다. 한 사람의 경험을 팀 전체의 자산으로 바꾸는 게 목표예요.
 
 ## 콘텐츠는 어떻게 흘러가는가
 
@@ -12852,8 +12464,8 @@ review_themes = {
 graph TB
     L1["📝 실험 로그<br/>한 기수의 원본 기록"]
     L2["🔧 검증된 도구<br/>재사용 가능한 워크플로우/프롬프트"]
-    L3["💡 인사이트<br/>여러 실험에서 반복되는 패턴"]
-    L4["📐 교육 모델<br/>철학·디자인 패턴·커리큘럼"]
+    L3["💡 검증된 패턴<br/>여러 실험에서 반복 검증된 해결책"]
+    L4["📐 교육 모델<br/>철학·커리큘럼"]
 
     L1 -->|"승격 평가"| L2
     L1 -->|"교차 분석"| L3
@@ -12899,7 +12511,7 @@ graph TB
 회고를 매번 다른 형식으로 설계하기 위한 **복사해 쓰는 형식 카탈로그**입니다. 4개의 검증된 회고 로그(데모데이 5회 시리즈, 레벨3 팀 프로젝트 3부작, 연극 회고, 성장 그래프)에서 실제로 작동한 형식만 모았습니다.
 
 <Callout type="tip">
-  하나씩 쓰지 말고 **깊이 사다리로 배열**하세요. 같은 형식의 반복이 회고 피로를 부릅니다. 왜 형식을 바꿔야 하는지는 [인사이트 > 회고 설계](/education/insights/retrospective-design)를 참고하세요.
+  하나씩 쓰지 말고 **깊이 사다리로 배열**하세요. 같은 형식의 반복이 회고 피로를 부릅니다. 왜 형식을 바꿔야 하는지는 [검증된 패턴 > 회고 설계](/education/insights/retrospective-design)를 참고하세요.
 </Callout>
 
 ## 깊이 사다리 — 형식을 배열하는 순서
@@ -12993,6 +12605,6 @@ A3 모눈종이에 성장 곡선을 그리고 감정 어휘로 정밀하게 언�
 - [연극 회고](/education/logs/drama-retrospective) — 강점/취약점 이중 공유, 명시적 규칙
 - [나의 성장 그래프](/education/logs/growth-graph) — 감정 키워드 테이블, 서프라이즈 피드백
 
-→ 근거 패턴: [인사이트 > 회고 설계](/education/insights/retrospective-design)
+→ 근거 패턴: [검증된 패턴 > 회고 설계](/education/insights/retrospective-design)
 
 ---

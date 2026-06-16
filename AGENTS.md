@@ -4,7 +4,7 @@ LLM 에이전트(Claude Code, Codex, Cursor, 기타)가 이 저장소를 읽고 
 
 ## 이 저장소가 뭔가요?
 
-우아한테크코스의 교육 철학·디자인 패턴·커리큘럼·실험 로그를 모은 공식 가이드북. Nextra 4 + Next.js 15 App Router 기반.
+우아한테크코스의 교육 철학·검증된 패턴·커리큘럼·실험 로그를 모은 공식 가이드북. Nextra 4 + Next.js 15 App Router 기반.
 세부 워크플로우와 데이터 구조는 [`CLAUDE.md`](./CLAUDE.md), 외부 LLM이 빠르게 훑을 카탈로그는 [`public/llms.txt`](./public/llms.txt) 참고.
 
 ## 3계층 컨텐츠 구조 (Karpathy LLM Wiki 패턴)

@@ -1,6 +1,6 @@
 ---
 name: promotion
-description: "실험 로그와 인사이트를 교육 모델(design-patterns, curriculum, philosophy)에 반영하고, 검증된 도구(tools/)를 추출한다. /sync-model 커맨드와 동일한 기준 적용. 승격 실행, 교육 모델 동기화, sync-model, 인사이트를 디자인 패턴에 반영, 커리큘럼에 반영, 교육 철학에 반영 요청 시 반드시 이 스킬을 사용할 것."
+description: "실험 로그와 검증된 패턴을 교육 모델(curriculum, philosophy)에 반영하고, 검증된 도구(tools/)와 검증된 패턴(insights/)을 추출한다. /sync-model 커맨드와 동일한 기준 적용. 승격 실행, 교육 모델 동기화, sync-model, 검증된 패턴 정리, 커리큘럼에 반영, 교육 철학에 반영 요청 시 반드시 이 스킬을 사용할 것."
 ---
 
 # 승격 실행 — 교육 모델 동기화
@@ -14,8 +14,8 @@ description: "실험 로그와 인사이트를 교육 모델(design-patterns, cu
 | 조건 | 승격 대상 | 위치 |
 |------|-----------|------|
 | P2 ≥ 4 | 검증된 도구 | `content/education/tools/` |
-| P3 ≥ 4 | 인사이트 | `content/education/insights/` |
-| P4 ≥ 4 + P1 ≥ 3 | 디자인 패턴 | `content/education/design-patterns/catalog.mdx` |
+| P3 ≥ 4 | 검증된 패턴 | `content/education/insights/` |
+| P4 ≥ 4 + P1 ≥ 3 | 검증된 패턴 강화 | `content/education/insights/` 해당 패턴 문서 |
 | P4 ≥ 4 + P1 ≥ 3 | 커리큘럼 원칙 | `content/education/curriculum/` 해당 문서 |
 | P4 ≥ 4 + P1 ≥ 4 | 교육 철학 | `content/education/philosophy/core-principles.mdx` |
 
@@ -25,20 +25,15 @@ description: "실험 로그와 인사이트를 교육 모델(design-patterns, cu
 
 - 기존 문장·문단을 삭제하거나 재작성하지 않는다. **추가만 한다.**
 - 반영하는 내용에 원본 로그·인사이트 링크를 반드시 포함한다.
-- 한 사이클에 교육 모델(design-patterns + curriculum + philosophy) 반영은 **최대 3건**.
+- 한 사이클에 교육 모델(curriculum + philosophy) 반영은 **최대 3건**.
 - 각 반영을 개별 커밋한다.
 
 ## 섹션별 반영 패턴
 
-### 디자인 패턴 추가 (catalog.mdx)
-```mdx
-### {패턴명}
+### 검증된 패턴 강화 (insights/)
 
-**문제**: {이 패턴이 해결하는 교육 문제}
-**해결**: {패턴의 핵심 메커니즘}
-**적용 사례**: [{로그1 제목}]({링크}), [{로그2 제목}]({링크})
-**효과**: {관찰된 교육 효과 요약}
-```
+P4 ≥ 4 + P1 ≥ 3 후보는 별도 카탈로그가 아니라 `content/education/insights/`의 해당 패턴 문서에 반영한다.
+대응 패턴 문서가 없으면 새로 만들고(insight-extraction 스킬 협력), 있으면 "적용 가이드"·"근거 로그"를 보강해 검증 강도를 높인다.
 
 ### 기존 섹션에 사례 추가 (curriculum/, philosophy/)
 ```mdx
@@ -64,10 +59,10 @@ description: "실험 로그와 인사이트를 교육 모델(design-patterns, cu
 
 ## 역참조 추가
 
-반영 완료 후, 인사이트 문서의 "관련 교육 모델" 섹션을 업데이트한다:
+반영 완료 후, 검증된 패턴 문서의 "교육 모델 연결" 섹션을 업데이트한다:
 
 ```mdx
-- [디자인 패턴 카탈로그](/education/design-patterns/catalog#{앵커}) — ✅ 반영 완료 ({날짜})
+- [교육 철학 > 핵심 교육 원칙 > {원칙}](/education/philosophy/core-principles#{앵커}) — ✅ 반영 완료 ({날짜})
 ```
 
 ## 메타데이터 업데이트

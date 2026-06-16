@@ -21,7 +21,7 @@
       type: extends
   ```
 
-- `source_logs` — 이 페이지의 근거가 된 실험 로그 슬러그 배열 (insights/design-patterns/curriculum 페이지에서 사용).
+- `source_logs` — 이 페이지의 근거가 된 실험 로그 슬러그 배열 (insights/curriculum 페이지에서 사용).
 - `tags` — 자유 태그. 기존 `logs.ts`의 `phases/tracks/themes`와 다름. 검색 보조용.
 
 ## 예시

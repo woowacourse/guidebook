@@ -47,6 +47,7 @@
 - [우테코 브이로그 아카이브](https://docs.woowahan.com/education/conversations/vlog-archive)
 - [커리큘럼](https://docs.woowahan.com/education/curriculum)
 - [커리큘럼 설계 원칙 (승격 staging)](https://docs.woowahan.com/education/curriculum/design-principles)
+- [발견 학습 설계하기 — 답을 먼저 주지 않는 환경](https://docs.woowahan.com/education/design-poe): 발견 학습(예측→관찰→설명)을 당신의 미션·수업·리뷰에 설계하는 법 — 우테코 실전 사례와 설계용 LLM 스킬.
 - [실패한 교육](https://docs.woowahan.com/education/failed-experiments)
 - [실패 사례 카탈로그](https://docs.woowahan.com/education/failed-experiments/catalog)
 - [실패에서 패턴으로](https://docs.woowahan.com/education/failed-experiments/failure-to-pattern)

@@ -19,6 +19,7 @@ export default {
   },
   '--build': { type: 'separator', title: '만들기' },
   start: '🚀 시작하기',
+  'design-poe': '🔭 발견 학습 설계하기',
   '--understand': { type: 'separator', title: '교육 모델 이해하기' },
   philosophy: '🎯 교육 철학',
   curriculum: '🗺️ 커리큘럼',

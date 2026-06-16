@@ -4,7 +4,7 @@
 
 # 교육
 
-우아한테크코스는 8년째 10개월짜리 교육을 굴려 왔습니다. 그 경험과, 현장에서 진행 중인 실험을 한 자리에 모은 공식문서입니다. 이 문서는 두 길로 읽을 수 있습니다 — 그 설계를 **이해**하거나, 당신의 자리에서 직접 **시작**하거나.
+우아한테크코스는 8년째 10개월짜리 교육을 굴려 왔습니다. 그 경험과, 현장에서 진행 중인 실험을 한 자리에 모은 공식문서입니다. 이 문서는 두 길로 읽을 수 있습니다 — 그 설계를 **이해**하거나, 여러분의 경험으로 직접 **시작**할 수도 있습니다.
 
 <CardGrid columns={2}>
   <Card title="모델 이해하기" icon="🧭" href="/education/philosophy" meta="철학 → 커리큘럼 → 검증된 패턴">
@@ -26,15 +26,15 @@
   <Card title="커리큘럼" icon="🗺️" href="/education/curriculum" variant="row">
     철학을 10개월 과정으로 구조화한 설계
   </Card>
-  <Card title="검증된 패턴" icon="⬆️" href="/education/insights" variant="row">
+  <Card title="검증된 패턴" icon="🧩" href="/education/insights" variant="row">
     반복되는 교육 문제와, 여러 실험에서 검증된 해결 패턴
   </Card>
-  <Card title="실험 로그" icon="⬆️" href="/education/logs" variant="row">
+  <Card title="실험 로그" icon="🧪" href="/education/logs" variant="row">
     교육 현장에서 시도한 실험의 원본 기록과 파생 자산
   </Card>
 </CardGrid>
 
-`⬆️` 아이콘이 붙은 항목은 승격 파이프라인의 출발점입니다. 실험 로그에서 반복 패턴이 발견되면 검증된 패턴으로, 검증된 패턴이 실전 절차로 정제되면 검증된 도구로 묶입니다. 패턴과 도구가 더 일반화되면 커리큘럼과 교육 철학으로 올라갑니다. 승격 과정의 세부는 [연구 사이클 워크플로우](/education/tools/research-cycle-workflow)에서 확인할 수 있습니다.
+🧪 **실험 로그**와 🧩 **검증된 패턴**은 승격 파이프라인의 출발점입니다. 실험 로그에서 반복 패턴이 발견되면 검증된 패턴으로, 검증된 패턴이 실전 절차로 정제되면 검증된 도구로 묶입니다. 패턴과 도구가 더 일반화되면 커리큘럼과 교육 철학으로 올라갑니다. 승격 과정의 세부는 [연구 사이클 워크플로우](/education/tools/research-cycle-workflow)에서 확인할 수 있습니다.
 
 ---
 
@@ -5200,6 +5200,58 @@ _철학을 10개월로 옮기는 법_
 ## 실전 중심 구성
 
 → 큐레이션 본문: [커리큘럼 · 한 단계씩 스스로 서기](/education/curriculum#한-단계씩-스스로-서기)
+
+---
+
+<!-- source: https://docs.woowahan.com/education/design-poe -->
+
+# 발견 학습 설계하기 — 답을 먼저 주지 않는 환경
+
+[교육 철학](/education/philosophy#발견-학습-poe-사이클)에서 **왜** 답을 먼저 주지 않는지를 봤다면, 이 페이지는 그 원칙을 **여러분의 미션·수업·코드 리뷰에 어떻게 심는가**를 다룹니다. 우테코가 실제로 건 사례를 보고, 여러분의 환경에 맞게 설계하도록 돕는 LLM 스킬로 이어집니다.
+
+## 한 줄 원리
+
+**예측(Predict) → 관찰(Observe) → 설명(Explain).** 정답을 주입하지 않고, 배우는 사람이 먼저 예측하고 판단하고 설명한 뒤에야 정답과 마주치게 합니다. 핵심은 순서를 뒤집지 않는 것입니다 — 강의를 먼저 하면 "이해한 척"이 생깁니다. 교차 증거는 [POE 발견 학습 패턴](/education/insights/poe-discovery-learning)에서 확인할 수 있습니다.
+
+## 실전 적용 사례
+
+우테코가 서로 다른 기술 도메인에서 같은 메커니즘을 건 사례입니다. 자기 상황과 가장 가까운 한 가지부터 빌려 보세요.
+
+<CardGrid columns={1}>
+  <Card title="비동기 — '말로는 아는데 코드로는 못 쓰는' 개념" icon="🔭" href="/education/logs/async-quiz-explanation">
+    강의 대신 **퀴즈 해설지를 먼저 쓰게** 해, 설명 능력 자체를 관찰 대상으로 삼았습니다. 5·6·7기에 걸쳐 반복됐습니다.
+  </Card>
+  <Card title="코드 리뷰 — 선배 코드로 눈 키우기" icon="🔭" href="/education/logs/senior-code-review">
+    모범 답안을 보여주기 전에 **AS-IS를 먼저 스스로 판단**하게 하고, 이후 TO-BE와 비교해 '못 보던 것'을 발견하게 했습니다.
+  </Card>
+  <Card title="재구현 — 바퀴의 재발명 사전 에세이" icon="🔭" href="/education/logs/reinventing-the-wheel">
+    강의 전에 **사전 에세이로 재구현의 가치를 스스로 탐구**하게 한 뒤 강의와 대조했습니다. 3개 기수에서 반복됐습니다.
+  </Card>
+</CardGrid>
+
+설계할 때 빠지기 쉬운 함정은 하나입니다 — 설명을 먼저 하고 과제를 나중에 내는 "강의 → 실습" 순서. POE는 순서가 뒤집혀야 작동합니다.
+
+## 여러분 환경에 설계하기 — LLM 스킬
+
+<Callout type="tip">
+**설계용 LLM 스킬을 GitHub에 공개합니다.** [발견 학습 설계 스킬 저장소](https://github.com/woowacourse/uteco-llm-skills)를 받아 여러분이 쓰는 LLM(ChatGPT·Claude 등)에 붙여넣으면, 여러분의 미션·수업·리뷰 맥락을 입력으로 받아 **예측 과제 → 공개 시점 → 비교 회고**까지 POE 사이클 한 벌을 설계해 줍니다.
+</Callout>
+
+스킬은 다음을 묻고 채워 줍니다 — 어떤 개념에 인지적 불일치를 만들 것인가, 무엇을 예측 산출물(해설지·에세이·리뷰 글)로 받을 것인가, 정답을 언제 공개할 것인가, 비교 회고를 어떻게 배치할 것인가.
+
+## 다음
+
+<CardGrid variant="list">
+  <Card title="시작하기로 — 이번 주 가장 작은 변화" icon="🚀" href="/education/start" variant="row">
+    먼저 가장 작은 한 걸음부터.
+  </Card>
+  <Card title="왜 이렇게 가르치나 — 교육 철학 § 발견 학습" icon="🎯" href="/education/philosophy#발견-학습-poe-사이클" variant="row">
+    이 원칙이 작동하는 이유.
+  </Card>
+  <Card title="POE 발견 학습 패턴 — 교차 증거" icon="🧩" href="/education/insights/poe-discovery-learning" variant="row">
+    5개 로그에서 검증된 패턴 전체.
+  </Card>
+</CardGrid>
 
 ---
 
@@ -12086,7 +12138,7 @@ Predict → Observe → Explain의 순서를 뒤집지 않습니다. 비동기 �
 
 가르치는 사람(코치)은 답을 주는 사람이 아니라 '기준'과 '환경'을 까는 사람이고, 배우는 사람(크루)은 가르침의 대상이 아니라 자기 학습을 직접 진단하고 설계하는 주체입니다. 그래서 강의를 먼저 하지 않고 먼저 예측하게 한 뒤 부딪히게 하고(발견 학습), 무거운 주제는 한 번에 쏟지 않고 여러 회차로 나눠 깊이를 쌓으며(점진적 스캐폴딩), 답 대신 질문을 던지는 회고로 협업을 '분위기'가 아니라 '구조'로 깝니다. 이 원칙들은 누군가의 신념이 아니라 매주 쌓이는 실험에서 데이터로 귀납한 결과입니다.
 
-<CardGrid columns={2}>
+<CardGrid columns={1}>
   <Card title="자기주도 학습" icon="🧭" href="/education/insights/self-diagnostic-framework">
     배우는 사람이 학습의 주체입니다.
   </Card>
@@ -12096,8 +12148,8 @@ Predict → Observe → Explain의 순서를 뒤집지 않습니다. 비동기 �
   <Card title="함께 성장하는 문화" icon="🤝" href="/education/insights/argumentation-based-learning">
     협업은 분위기가 아니라 구조입니다.
   </Card>
-  <Card title="점진적 스캐폴딩" icon="🪜" href="/education/insights/progressive-scaffolding">
-    한 번에 쏟지 않고 발판을 댑니다.
+  <Card title="몰입 기반 성장" icon="🌊" href="/education/philosophy#몰입-기반-성장">
+    도전과 역량이 균형을 이룰 때 몰입이 성장으로 이어집니다.
   </Card>
 </CardGrid>
 
@@ -12107,7 +12159,7 @@ Predict → Observe → Explain의 순서를 뒤집지 않습니다. 비동기 �
 
 **자기 한 장만 고르세요.** 코드와 사람을 마주하면 멘토, 팀을 운영하면 팀리더, 커리큘럼·미션을 설계하면 운영자, 아직 권한이 없으면 누구나 카드입니다.
 
-<CardGrid columns={2}>
+<CardGrid columns={1}>
   <Card title="누구나 · 권한 0 · 20분" icon="🌱">
     **내가 최근 남긴 코멘트 1줄을 5가지 기준으로 다시 씁니다.** 내가 쓴 피드백 한 줄을 구체성·균형성·실행가능성·관찰기반·성장지향성 5기준으로 점수화하고, 가장 낮은 기준 1개를 Before/After로 고쳐 씁니다. 이번 주 약속은 다음에 글을 남길 때 이 다시 쓴 버전처럼 쓰는 것입니다. [근거·전체 절차 보기](/education/logs/feedback-refactoring) · [자기 진단 패턴](/education/insights/self-diagnostic-framework)
   </Card>
@@ -12137,7 +12189,7 @@ Predict → Observe → Explain의 순서를 뒤집지 않습니다. 비동기 �
   <Card title="철학을 10개월로 — 커리큘럼" icon="🗺️" href="/education/curriculum" variant="row">
     원리를 레벨0~5의 시간표로 옮기는 설계.
   </Card>
-  <Card title="검증된 패턴 전체" icon="⬆️" href="/education/insights" variant="row">
+  <Card title="검증된 패턴 전체" icon="🧩" href="/education/insights" variant="row">
     여러 실험에서 반복 검증된 해결 패턴 모음.
   </Card>
   <Card title="검증된 도구 모음" icon="🛠️" href="/education/tools" variant="row">

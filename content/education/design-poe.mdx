@@ -1,0 +1,53 @@
+---
+id: design-poe
+summary: 발견 학습(예측→관찰→설명)을 당신의 미션·수업·리뷰에 설계하는 법 — 우테코 실전 사례와 설계용 LLM 스킬.
+last_verified: 2026-06-16
+---
+
+# 발견 학습 설계하기 — 답을 먼저 주지 않는 환경
+
+[교육 철학](/education/philosophy#발견-학습-poe-사이클)에서 **왜** 답을 먼저 주지 않는지를 봤다면, 이 페이지는 그 원칙을 **여러분의 미션·수업·코드 리뷰에 어떻게 심는가**를 다룹니다. 우테코가 실제로 건 사례를 보고, 여러분의 환경에 맞게 설계하도록 돕는 LLM 스킬로 이어집니다.
+
+## 한 줄 원리
+
+**예측(Predict) → 관찰(Observe) → 설명(Explain).** 정답을 주입하지 않고, 배우는 사람이 먼저 예측하고 판단하고 설명한 뒤에야 정답과 마주치게 합니다. 핵심은 순서를 뒤집지 않는 것입니다 — 강의를 먼저 하면 "이해한 척"이 생깁니다. 교차 증거는 [POE 발견 학습 패턴](/education/insights/poe-discovery-learning)에서 확인할 수 있습니다.
+
+## 실전 적용 사례
+
+우테코가 서로 다른 기술 도메인에서 같은 메커니즘을 건 사례입니다. 자기 상황과 가장 가까운 한 가지부터 빌려 보세요.
+
+<CardGrid columns={1}>
+  <Card title="비동기 — '말로는 아는데 코드로는 못 쓰는' 개념" icon="🔭" href="/education/logs/async-quiz-explanation">
+    강의 대신 **퀴즈 해설지를 먼저 쓰게** 해, 설명 능력 자체를 관찰 대상으로 삼았습니다. 5·6·7기에 걸쳐 반복됐습니다.
+  </Card>
+  <Card title="코드 리뷰 — 선배 코드로 눈 키우기" icon="🔭" href="/education/logs/senior-code-review">
+    모범 답안을 보여주기 전에 **AS-IS를 먼저 스스로 판단**하게 하고, 이후 TO-BE와 비교해 '못 보던 것'을 발견하게 했습니다.
+  </Card>
+  <Card title="재구현 — 바퀴의 재발명 사전 에세이" icon="🔭" href="/education/logs/reinventing-the-wheel">
+    강의 전에 **사전 에세이로 재구현의 가치를 스스로 탐구**하게 한 뒤 강의와 대조했습니다. 3개 기수에서 반복됐습니다.
+  </Card>
+</CardGrid>
+
+설계할 때 빠지기 쉬운 함정은 하나입니다 — 설명을 먼저 하고 과제를 나중에 내는 "강의 → 실습" 순서. POE는 순서가 뒤집혀야 작동합니다.
+
+## 여러분 환경에 설계하기 — LLM 스킬
+
+<Callout type="tip">
+**설계용 LLM 스킬을 GitHub에 공개합니다.** [발견 학습 설계 스킬 저장소](https://github.com/woowacourse/uteco-llm-skills)를 받아 여러분이 쓰는 LLM(ChatGPT·Claude 등)에 붙여넣으면, 여러분의 미션·수업·리뷰 맥락을 입력으로 받아 **예측 과제 → 공개 시점 → 비교 회고**까지 POE 사이클 한 벌을 설계해 줍니다.
+</Callout>
+
+스킬은 다음을 묻고 채워 줍니다 — 어떤 개념에 인지적 불일치를 만들 것인가, 무엇을 예측 산출물(해설지·에세이·리뷰 글)로 받을 것인가, 정답을 언제 공개할 것인가, 비교 회고를 어떻게 배치할 것인가.
+
+## 다음
+
+<CardGrid variant="list">
+  <Card title="시작하기로 — 이번 주 가장 작은 변화" icon="🚀" href="/education/start" variant="row">
+    먼저 가장 작은 한 걸음부터.
+  </Card>
+  <Card title="왜 이렇게 가르치나 — 교육 철학 § 발견 학습" icon="🎯" href="/education/philosophy#발견-학습-poe-사이클" variant="row">
+    이 원칙이 작동하는 이유.
+  </Card>
+  <Card title="POE 발견 학습 패턴 — 교차 증거" icon="🧩" href="/education/insights/poe-discovery-learning" variant="row">
+    5개 로그에서 검증된 패턴 전체.
+  </Card>
+</CardGrid>

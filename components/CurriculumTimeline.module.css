@@ -1,81 +1,175 @@
-.change {
-  margin: 0 0 8px 0;
-  font-size: 0.92em;
-  font-weight: 500;
+.root {
+  margin: 20px 0;
+}
+
+/* ---------- 가로 스텝퍼 ---------- */
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 18px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.step {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  color: #9ca3af;
+  font-weight: 600;
+  padding: 6px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 60px;
+  flex-shrink: 0;
+}
+
+.step .yr {
+  font-size: 0.9rem;
+}
+
+.dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #d1d5db;
+}
+
+.step.done {
+  color: #6b7280;
+}
+.step.done .dot {
+  background: #9ca3af;
+  border-color: #9ca3af;
+}
+
+.step.active {
+  color: #4285f4;
+}
+.step.active .dot {
+  background: #4285f4;
+  border-color: #4285f4;
+  box-shadow: 0 0 0 4px rgba(66, 133, 244, 0.2);
+}
+
+.connector {
+  flex: 1;
+  height: 2px;
+  background: #e5e7eb;
+  min-width: 16px;
+  margin-top: 18px;
+}
+
+/* ---------- 상세 패널 ---------- */
+.panel {
+  background: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 20px 22px;
+}
+
+.ptop {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.pyear {
+  font-weight: 800;
+  font-size: 1.05rem;
+}
+
+.phead {
+  font-weight: 700;
+}
+
+.pchange {
+  margin: 6px 0 12px;
+  color: #6b7280;
+  font-size: 0.95em;
   line-height: 1.6;
-  color: #374151;
 }
 
 .highlights {
   margin: 0;
   padding-left: 18px;
-  font-size: 0.88em;
+  font-size: 0.9em;
   line-height: 1.6;
   color: #6b7280;
 }
-
 .highlights li {
-  margin: 2px 0;
+  margin: 4px 0;
 }
 
-/* 기수 배지 */
 .badge {
   display: inline-block;
-  margin-right: 8px;
   padding: 1px 8px;
   border-radius: 999px;
   background: rgba(66, 133, 244, 0.1);
   color: #4285f4;
   font-size: 0.78em;
   font-weight: 600;
-  vertical-align: middle;
 }
 
-/* "기록 보강 중" 칩 — 데이터가 얇은 해를 솔직히 표시 */
 .chip {
   display: inline-block;
-  margin-left: 8px;
-  padding: 1px 8px;
+  padding: 2px 9px;
   border-radius: 999px;
   background: #f3f4f6;
   color: #9ca3af;
   font-size: 0.72em;
   font-weight: 600;
-  vertical-align: middle;
 }
 
-/* sparse 연도 전체를 살짝 흐리게 */
-.sparse {
-  opacity: 0.75;
-}
-
-.detailLink {
+.more {
   display: inline-block;
-  margin-top: 8px;
-  font-size: 0.85em;
-  font-weight: 500;
+  margin-top: 14px;
   color: #4285f4;
+  font-weight: 600;
+  font-size: 0.88em;
   text-decoration: none;
 }
-
-.detailLink:hover {
+.more:hover {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 
-/* Dark mode */
-[data-theme='dark'] .change,
-:global(.dark) .change {
-  color: #d1d5db;
+/* ---------- 다크 모드 ---------- */
+[data-theme='dark'] .dot,
+:global(.dark) .dot {
+  background: #1e1e1e;
+  border-color: #555;
 }
-
+[data-theme='dark'] .step.done .dot,
+:global(.dark) .step.done .dot {
+  background: #4b5563;
+  border-color: #4b5563;
+}
+[data-theme='dark'] .connector,
+:global(.dark) .connector {
+  background: #333;
+}
+[data-theme='dark'] .panel,
+:global(.dark) .panel {
+  background: #232323;
+  border-color: #333;
+}
+[data-theme='dark'] .pchange,
+:global(.dark) .pchange,
 [data-theme='dark'] .highlights,
 :global(.dark) .highlights {
   color: #9ca3af;
 }
-
 [data-theme='dark'] .chip,
 :global(.dark) .chip {
-  background: #333;
+  background: #2c2c2c;
   color: #9ca3af;
 }

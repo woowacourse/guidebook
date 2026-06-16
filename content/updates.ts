@@ -13,7 +13,7 @@ const updates: Update[] = [
     title: '커리큘럼 연도별 변화 타임라인 신설',
     description:
       '2021–2026 커리큘럼의 진화를 "영구 골격 + 누적 추상화" 모델로 정리한 연도별 타임라인을 추가. react-payments 5년 분석을 원본으로 distill했고, 데이터가 얇은 해는 "기록 보강 중"으로 솔직히 표시한다.',
-    href: '/education/curriculum/evolution',
+    href: '/education/curriculum',
     status: 'active',
   },
   {

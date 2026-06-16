@@ -3,9 +3,8 @@ export default {
     title: '개요',
     display: 'hidden'
   },
-  evolution: '연도별 변화',
-  'design-principles': '설계 원칙',
-  levels: '레벨 구성',
-  'mission-design': '미션 설계',
-  improvement: '개선 프로세스'
+  // 설계 원칙: 본문은 비워뒀지만 승격 자동화(PROMOTED 마커)의 대상이라 파일은 유지하고 사이드바에서만 숨김.
+  'design-principles': {
+    display: 'hidden'
+  }
 }

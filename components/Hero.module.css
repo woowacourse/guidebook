@@ -5,13 +5,13 @@
   padding: 5.5rem 0 4.5rem;
 }
 
-/* 손그림 별 — 상단 중앙에 아주 작게 딱 하나 */
+/* 손그림 별 — 상단 중앙에 딱 하나 */
 .star {
   position: absolute;
   top: 1.75rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 6px;
+  width: 30px;
   height: auto;
   z-index: 0;
   pointer-events: none;

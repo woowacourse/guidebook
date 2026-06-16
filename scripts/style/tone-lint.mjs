@@ -36,7 +36,12 @@ function maskNonProse(text) {
   const lines = text.split('\n');
   let inFence = false;
   let inFrontmatter = false;
+  let inIgnore = false;
   return lines.map((l, i) => {
+    // 의도 예외 블록: {/* tone-lint:ignore-start */} ~ {/* tone-lint:ignore-end */}
+    if (/tone-lint:ignore-start/.test(l)) { inIgnore = true; return ''; }
+    if (/tone-lint:ignore-end/.test(l)) { inIgnore = false; return ''; }
+    if (inIgnore) return '';
     if (i === 0 && /^---\s*$/.test(l)) { inFrontmatter = true; return ''; }
     if (inFrontmatter) { if (/^---\s*$/.test(l)) inFrontmatter = false; return ''; }
     if (/^\s*```/.test(l)) { inFence = !inFence; return ''; }

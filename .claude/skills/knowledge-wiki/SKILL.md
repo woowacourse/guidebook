@@ -94,7 +94,7 @@ description: "knowledge/ 디렉터리(Karpathy LLM Wiki 패턴) 운영 스킬. /
 
 ## 자동화 메커니즘
 
-- **`auto-compile-check.sh` Stop 훅**: 매 턴 종료 시 `sync-state.json` 의 `lastCompileCommit` 이후 추가된 raw 수를 세서 `compileConfig.threshold` (기본 5) 이상이면 *"다음 턴에 `/지식정제 자동` 실행 권장"* 메시지를 띄움. 누적분 폭증 방지의 자연 압력.
+- **`auto-compile-check.sh` Stop 훅**: 매 턴 종료 시 `scripts/knowledge/compile-state.mjs pending --count` (wiki `sources:` 에 없는 루트 raw 수, 동적 계산) 가 `compileConfig.threshold` (기본 5) 이상이면 *"다음 턴에 `/지식정제 자동` 실행 권장"* 메시지를 띄움. 누적분 폭증 방지의 자연 압력. **2026-06-16 전환**: 과거엔 `git diff <lastCompileCommit> HEAD` 로 셌는데 마커 미advance 시 무한 오탐 + batch orphan 결함이 있었다. 이제 "합성됐다 = 어떤 wiki 노트의 `sources:` 에 그 raw 가 있다" 로 정의해 wiki 에서 매번 파생 계산 → 동기화할 별도 상태가 없어 stale·orphan 불가능. 하위 폴더(external/derived/conversations)는 deliberate-only 라 카운트 제외.
 - **`protect-raw.sh` PreToolUse 훅**: `knowledge/raw/` 기존 파일 수정 차단, 새 파일 Write 는 허용. raw 불변성 강제.
 - **`/로그추가` dual-write 자동화**: 새 실험 로그 작성 시 `scripts/mdx-to-raw.mjs` 를 직접 호출해 raw 동기화. LLM 수기 변환이 아닌 결정론적 스크립트로 일관성 보장.
 

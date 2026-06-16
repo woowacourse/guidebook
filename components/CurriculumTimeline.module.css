@@ -2,14 +2,13 @@
   margin: 20px 0;
 }
 
-/* ---------- 가로 스텝퍼 ---------- */
+/* ---------- 기수 스텝퍼 ---------- */
 .stepper {
   display: flex;
   align-items: center;
-  gap: 0;
-  margin-bottom: 18px;
   overflow-x: auto;
-  padding-bottom: 4px;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
 }
 
 .step {
@@ -20,17 +19,22 @@
   font: inherit;
   color: #9ca3af;
   font-weight: 600;
-  padding: 6px 4px;
+  padding: 6px 2px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
-  min-width: 60px;
+  gap: 7px;
+  min-width: 62px;
   flex-shrink: 0;
 }
 
-.step .yr {
-  font-size: 0.9rem;
+.gi {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+.yr {
+  font-size: 0.8rem;
+  color: #9ca3af;
 }
 
 .dot {
@@ -52,94 +56,152 @@
 .step.active {
   color: #4285f4;
 }
+.step.active .yr {
+  color: #4285f4;
+}
 .step.active .dot {
   background: #4285f4;
   border-color: #4285f4;
   box-shadow: 0 0 0 4px rgba(66, 133, 244, 0.2);
 }
 
-.connector {
+.conn {
   flex: 1;
   height: 2px;
   background: #e5e7eb;
-  min-width: 16px;
-  margin-top: 18px;
+  min-width: 14px;
+  margin-top: 24px;
 }
 
-/* ---------- 상세 패널 ---------- */
+/* ---------- 패널 ---------- */
 .panel {
   background: #fafafa;
   border: 1px solid #e5e7eb;
   border-radius: 14px;
-  padding: 20px 22px;
+  padding: 22px;
 }
 
-.ptop {
+.ptitle {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 8px;
   flex-wrap: wrap;
-  margin-bottom: 6px;
 }
-
-.pyear {
+.pgi {
   font-weight: 800;
-  font-size: 1.05rem;
+  font-size: 1.15rem;
 }
-
-.phead {
-  font-weight: 700;
-}
-
-.pchange {
-  margin: 6px 0 12px;
-  color: #6b7280;
-  font-size: 0.95em;
-  line-height: 1.6;
-}
-
-.highlights {
-  margin: 0;
-  padding-left: 18px;
-  font-size: 0.9em;
-  line-height: 1.6;
-  color: #6b7280;
-}
-.highlights li {
-  margin: 4px 0;
-}
-
-.badge {
-  display: inline-block;
-  padding: 1px 8px;
-  border-radius: 999px;
-  background: rgba(66, 133, 244, 0.1);
-  color: #4285f4;
-  font-size: 0.78em;
+.pyr {
+  color: #9ca3af;
   font-weight: 600;
 }
-
-.chip {
-  display: inline-block;
+.badgeNow {
+  align-self: center;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #fff;
+  background: #4285f4;
   padding: 2px 9px;
   border-radius: 999px;
-  background: #f3f4f6;
+}
+.chip {
+  align-self: center;
+  font-size: 0.7rem;
+  font-weight: 700;
   color: #9ca3af;
-  font-size: 0.72em;
-  font-weight: 600;
+  background: #f3f4f6;
+  padding: 2px 9px;
+  border-radius: 999px;
 }
 
-.more {
-  display: inline-block;
-  margin-top: 14px;
-  color: #4285f4;
-  font-weight: 600;
-  font-size: 0.88em;
-  text-decoration: none;
+/* 이 해의 핵심 */
+.core {
+  margin: 14px 0 4px;
+  padding: 14px 16px;
+  background: rgba(66, 133, 244, 0.08);
+  border-radius: 10px;
 }
-.more:hover {
-  text-decoration: underline;
-  text-underline-offset: 2px;
+.coreLbl {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: #4285f4;
+  text-transform: uppercase;
+}
+.core ul {
+  margin: 6px 0 0;
+  padding-left: 18px;
+  font-size: 0.92em;
+}
+.core li {
+  margin: 3px 0;
+}
+
+/* 트랙 토글 */
+.tracks {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin: 20px 0 14px;
+}
+.trk {
+  appearance: none;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  color: #6b7280;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.82em;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 999px;
+}
+.trkOn {
+  background: #4285f4;
+  border-color: #4285f4;
+  color: #ffffff;
+}
+
+/* 레벨 0~5 */
+.levels {
+  display: flex;
+  flex-direction: column;
+}
+.lv {
+  display: grid;
+  grid-template-columns: 76px 1fr;
+  gap: 14px;
+  padding: 11px 0;
+  border-top: 1px solid #e5e7eb;
+}
+.lv:first-child {
+  border-top: 0;
+}
+.lvtag {
+  font-weight: 700;
+  font-size: 0.82em;
+  color: #4285f4;
+}
+.lvtag small {
+  display: block;
+  color: #9ca3af;
+  font-weight: 500;
+  font-size: 0.92em;
+}
+.lvname {
+  font-weight: 700;
+  font-size: 0.92em;
+  margin-bottom: 1px;
+}
+.lvdesc {
+  color: #6b7280;
+  font-size: 0.88em;
+}
+
+.legend {
+  margin-top: 12px;
+  font-size: 0.8em;
+  color: #9ca3af;
 }
 
 /* ---------- 다크 모드 ---------- */
@@ -153,8 +215,8 @@
   background: #4b5563;
   border-color: #4b5563;
 }
-[data-theme='dark'] .connector,
-:global(.dark) .connector {
+[data-theme='dark'] .conn,
+:global(.dark) .conn {
   background: #333;
 }
 [data-theme='dark'] .panel,
@@ -162,14 +224,31 @@
   background: #232323;
   border-color: #333;
 }
-[data-theme='dark'] .pchange,
-:global(.dark) .pchange,
-[data-theme='dark'] .highlights,
-:global(.dark) .highlights {
+[data-theme='dark'] .core,
+:global(.dark) .core {
+  background: rgba(91, 155, 255, 0.12);
+}
+[data-theme='dark'] .trk,
+:global(.dark) .trk {
+  background: #1e1e1e;
+  border-color: #333;
+  color: #9ca3af;
+}
+[data-theme='dark'] .trkOn,
+:global(.dark) .trkOn {
+  background: #4285f4;
+  border-color: #4285f4;
+  color: #fff;
+}
+[data-theme='dark'] .lv,
+:global(.dark) .lv {
+  border-color: #333;
+}
+[data-theme='dark'] .lvdesc,
+:global(.dark) .lvdesc {
   color: #9ca3af;
 }
 [data-theme='dark'] .chip,
 :global(.dark) .chip {
   background: #2c2c2c;
-  color: #9ca3af;
 }

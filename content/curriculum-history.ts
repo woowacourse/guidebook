@@ -1,95 +1,122 @@
-// 연도별 커리큘럼 변화의 단일 진실 원천 (웹 표시용 요약 데이터).
+// 기수별 커리큘럼의 단일 진실 원천 (웹 표시용).
 //
-// 원본/상세는 knowledge/wiki/curriculum-evolution.md 에 있다 (LLM 위키, 웹 비공개).
-// 이 파일은 거기서 distill 한 요약이며, <CurriculumTimeline> 이 렌더링한다.
+// 원본/상세는 knowledge/wiki/curriculum-evolution.md, 레벨 골격은 공식 트랙 페이지
+// (woowacourse.io/{frontend,backend,android,softskill}) 기반.
 //
-// depth: 데이터 신뢰도를 솔직히 표시한다.
-//   - 'rich'   : 다수 출처로 교차 확인됨 (강조)
-//   - 'sparse' : 단일 미션 중심 부분 관측 ("기록 보강 중"으로 표시, muted)
-// 새 연도를 추가하려면 배열 맨 아래(최신)에 객체 하나만 더하면 된다.
+// 구조: 기수(gi)별로 "이 해의 핵심" + 그 기수에 존재한 트랙만 노출.
+//   - 레벨 0~5 골격은 트랙별로 거의 안정적이라 LEVELS_BY_TRACK 에 한 번만 정의(현재 기준).
+//   - 매년 바뀐 미션·강조점의 차이는 각 기수의 core[] 에 담는다.
+//   - depth 'sparse' = 핵심 데이터가 얇음("기록 보강 중"). 'rich' = 교차 확인됨.
+// 트랙 시작: 웹 백엔드·프론트엔드 1기~, 안드로이드 5기(2023)~, 소프트스킬 6기(2024)~.
 
-export interface CurriculumYear {
-  /** 연도 (정렬·라벨 기준) */
-  year: number
-  /** 기수 — 확정된 경우에만. 없으면 배지 생략 */
-  cohort?: string
-  /** 그 해를 한 줄로 요약한 제목 */
-  headline: string
-  /** 전년 대비 가장 큰 변화 한 줄 */
-  change: string
-  /** 레벨/미션/주제의 키 변화 2~4개 */
-  highlights: string[]
-  /** 데이터 신뢰도 */
-  depth: 'sparse' | 'rich'
-  /** 더 깊이 — 웹에 발행된 로그/인사이트만 (없으면 펼침만 제공) */
-  detailHref?: string
+export type TrackKey = '웹 프론트엔드' | '웹 백엔드' | '안드로이드' | '소프트스킬'
+
+export const TRACK_ORDER: TrackKey[] = [
+  '웹 프론트엔드',
+  '웹 백엔드',
+  '안드로이드',
+  '소프트스킬',
+]
+
+export interface CurriculumLevel {
+  level: string // '레벨 0' ~ '레벨 5'
+  stage: string // 단계 한 단어 (온보딩·기초·심화 …)
+  name: string
+  desc: string
 }
 
-// 오래된 → 최신 순. 진화 서사로 읽히도록 배열 순서를 유지한다.
-const curriculumHistory: CurriculumYear[] = [
+export interface CurriculumCohort {
+  gi: number // 기수
+  year: number
+  headline: string // 이 해를 한 줄로
+  core: string[] // 핵심 요소 2~3개
+  tracks: TrackKey[] // 그 기수에 존재한 트랙
+  depth: 'sparse' | 'rich'
+  current?: boolean // 현재 진행 중 기수
+}
+
+// 레벨 0~5 골격 — 공식 트랙 페이지(현재 기준)에서 합성. 트랙별로 강조점이 다르다.
+export const LEVELS_BY_TRACK: Record<TrackKey, CurriculumLevel[]> = {
+  '웹 프론트엔드': [
+    { level: '레벨 0', stage: '온보딩', name: '적응 · 기초', desc: '심리적 안정감 형성, 소프트스킬 시작' },
+    { level: '레벨 1', stage: '기초', name: '프로그래밍 기초', desc: 'HTML·CSS·JS 기본, 테스트 작성·리팩터링' },
+    { level: '레벨 2', stage: '중급', name: 'React 애플리케이션', desc: '컴포넌트 설계, 상태 관리 라이브러리 활용' },
+    { level: '레벨 3', stage: '협업', name: '팀 프로젝트', desc: '실제 개발 프로세스, 서비스 배포 경험' },
+    { level: '레벨 4', stage: '심화', name: '심화 + 협업', desc: '레거시 리팩터링, 성능 최적화, 접근성, 배포 전략' },
+    { level: '레벨 5', stage: '취업', name: '취업 준비', desc: '개인 학습 보충, 이력서, 기업 면담' },
+  ],
+  '웹 백엔드': [
+    { level: '레벨 0', stage: '온보딩', name: '적응 · 기초', desc: '기초 개념, 소프트스킬 시작' },
+    { level: '레벨 1', stage: '기초', name: '프로그래밍 기초', desc: '콘솔 앱으로 핵심 역량 정립, 코드 가독성 강조' },
+    { level: '레벨 2', stage: '웹', name: '웹 프로그래밍', desc: '웹 애플리케이션 구현, 백엔드 기술 학습' },
+    { level: '레벨 3', stage: '협업', name: '팀 프로젝트', desc: '협업 프로세스, 기획·구현·실 사용자 배포' },
+    { level: '레벨 4', stage: '심화', name: '심화 웹 + 팀', desc: '레거시 리팩토링, 시스템 아키텍처, CS 기초' },
+    { level: '레벨 5', stage: '취업', name: '개인 학습 & 취업', desc: '역량 보완, 이력서, 레벨 인터뷰, 리크루팅 데이' },
+  ],
+  '안드로이드': [
+    { level: '레벨 0', stage: '온보딩', name: '적응 · 기초', desc: '코틀린 기본 문법 시작, 소프트스킬' },
+    { level: '레벨 1', stage: '기초', name: '프로그래밍 기초', desc: '코틀린 문법, 코드 품질 향상' },
+    { level: '레벨 2', stage: '입문', name: '모바일 개발 입문', desc: '안드로이드 프레임워크, UI, 테스트, 서버 통신' },
+    { level: '레벨 3', stage: '협업', name: '팀 협업 프로젝트', desc: '의존성 주입, 비동기 프로그래밍, 선언형 UI' },
+    { level: '레벨 4', stage: '심화', name: '팀 프로젝트 심화', desc: '아키텍처·심화 협업 (레벨 3~4 연속)' },
+    { level: '레벨 5', stage: '취업', name: '취업 준비', desc: '이력서, 인터뷰, 기업 매칭' },
+  ],
+  '소프트스킬': [
+    { level: '레벨 0', stage: '적응', name: '적응', desc: '심리적 안정감, 팀원 간 신뢰 구축' },
+    { level: '레벨 1', stage: '마인드셋', name: '마인드셋 전환', desc: '기존 마인드셋 점검 → 협력 중심 사고' },
+    { level: '레벨 2', stage: '개인', name: '개인 역량 강화', desc: '강점·약점 인식, 목표 설정, 피드백 성장' },
+    { level: '레벨 3', stage: '협업', name: '협업 역량', desc: '협업 소프트스킬 정의·실천 (팀 프로젝트)' },
+    { level: '레벨 4', stage: '지속', name: '지속 성장', desc: '피드백 중심 성장, 글쓰기 문화(테코톡)' },
+    { level: '레벨 5', stage: '취업', name: '취업 준비', desc: '이력서, 면접 특강, 레벨 인터뷰' },
+  ],
+}
+
+const BE_FE: TrackKey[] = ['웹 프론트엔드', '웹 백엔드']
+const PLUS_ANDROID: TrackKey[] = ['웹 프론트엔드', '웹 백엔드', '안드로이드']
+const ALL_TRACKS: TrackKey[] = ['웹 프론트엔드', '웹 백엔드', '안드로이드', '소프트스킬']
+
+// 오래된 → 최신. 핵심(core)은 1·8기 외 임시 — 추후 보강 예정.
+const cohorts: CurriculumCohort[] = [
   {
-    year: 2021,
-    headline: '학습 골격이 자리잡다',
-    change: 'FE 페이먼츠 미션 개설 — Form·Custom Hook·컴포넌트 분리가 핵심.',
-    highlights: [
-      'Form 상태 관리와 재사용 가능한 컴포넌트가 React 학습의 축으로 설정',
-      '이후 5년간 변하지 않는 영구 골격(form·상태·컴포넌트·재사용)의 출발점',
-    ],
-    depth: 'sparse',
+    gi: 1, year: 2019, headline: '우아한테크코스의 시작',
+    core: ['우아한테크코스의 시작 — 첫 기수 출범', '웹 백엔드·웹 프론트엔드 과정으로 출발'],
+    tracks: BE_FE, depth: 'sparse',
   },
   {
-    year: 2022,
-    headline: '배포 경험을 더하다',
-    change: '3단계(라이브러리 배포) 도입, TypeScript 비중이 한 단계 상승.',
-    highlights: [
-      '미션에 "직접 만든 것을 배포해보는" 단계가 추가',
-      'TypeScript를 다루는 PR 비중이 눈에 띄게 증가',
-    ],
-    depth: 'sparse',
+    gi: 2, year: 2020, headline: '과정 정착기',
+    core: ['(임시) 기록 보강 중'],
+    tracks: BE_FE, depth: 'sparse',
   },
   {
-    year: 2023,
-    headline: 'Storybook 문화의 정착',
-    change: '컴포넌트 문서화(Storybook)가 대부분의 제출에 자리잡음.',
-    highlights: [
-      'Storybook 사용이 일부 실험에서 표준 관행으로 전환',
-      '컴포넌트를 "문서화 가능한 단위"로 설계하는 감각 확산',
-    ],
-    depth: 'sparse',
+    gi: 3, year: 2021, headline: '미션 기반 학습의 확장',
+    core: ['(임시) FE 페이먼츠 미션 개설 — 이후 5년 최장수 단일 미션'],
+    tracks: BE_FE, depth: 'sparse',
   },
   {
-    year: 2024,
-    headline: '곁가지를 쳐내고 기본기로',
-    change: '3단계를 축소하고 FE 기본기에 다시 집중.',
-    highlights: [
-      '확장 단계를 덜어내고 핵심 학습 목표에 자원을 모음',
-      '"무엇을 더할까"만큼 "무엇을 뺄까"도 커리큘럼 설계임을 보여준 해',
-    ],
-    depth: 'sparse',
+    gi: 4, year: 2022, headline: '배포 경험의 도입',
+    core: ['(임시) FE 3단계(라이브러리 배포) 단계 도입'],
+    tracks: BE_FE, depth: 'sparse',
   },
   {
-    year: 2025,
-    headline: '"동작"에서 "책임"으로 기준 상향',
-    change: '에러 처리와 테스트가 사실상 필수가 됨. PR이 사고 과정 공유의 장으로.',
-    highlights: [
-      '테스트·에러 처리를 다루는 PR 비중이 급증 (정상 동작 → 예외까지 책임)',
-      'PR 본문 평균 길이가 늘며 셀프 리뷰·고민 명시 문화 정착',
-    ],
-    depth: 'rich',
-    detailHref: '/education/logs/react-payments-555prs-analysis',
+    gi: 5, year: 2023, headline: '안드로이드 트랙 신설',
+    core: ['안드로이드(모바일) 트랙 신설', '(임시) FE Storybook 문화 정착'],
+    tracks: PLUS_ANDROID, depth: 'sparse',
   },
   {
-    year: 2026,
-    headline: '서버 경계 설계 + AI 협업 미션',
-    change: '페이먼츠 미션이 비동기·서버 통신·통합 테스트로 재설계되고, 레벨 1에 AI 협업 미션 신설.',
-    highlights: [
-      '비동기 상태·MSW 모킹·통합 테스트 도입 — 학습 단위가 "기능 동작"에서 "서버 경계·계약 설계"로 상향',
-      '레벨 1에 Gemini Canvas 기반 AI 협업 미션 신설(전 트랙 공통) — "동작하는 무언가를 세상에 내놓는 경험"',
-      'PR 본문 평균 길이 2021년 대비 약 2.5배 — 테크 스펙·자기 분석 동반',
-    ],
-    depth: 'rich',
-    detailHref: '/education/logs/react-payments-555prs-analysis',
+    gi: 6, year: 2024, headline: '소프트스킬 트랙 신설',
+    core: ['소프트스킬을 정식 트랙으로 분리·신설', '(임시) FE 곁가지 축소 → 기본기 집중'],
+    tracks: ALL_TRACKS, depth: 'sparse',
+  },
+  {
+    gi: 7, year: 2025, headline: '"동작"에서 "책임"으로',
+    core: ['에러 처리·테스트가 사실상 필수로 상향', 'PR이 사고 과정 공유의 장으로(본문 길이 급증)'],
+    tracks: ALL_TRACKS, depth: 'rich',
+  },
+  {
+    gi: 8, year: 2026, headline: '서버 경계 설계 + AI 협업 미션',
+    core: ['현재 진행 중인 기수', '페이먼츠 미션을 비동기·서버 통신·통합 테스트로 재설계', '레벨1에 AI 협업 미션(Gemini Canvas) 신설 — 전 트랙 공통'],
+    tracks: ALL_TRACKS, depth: 'rich', current: true,
   },
 ]
 
-export default curriculumHistory
+export default cohorts

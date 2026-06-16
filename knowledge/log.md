@@ -9,6 +9,40 @@
 
 ---
 
+## [2026-06-16] compile (자동) | raw 5개 → wiki 6 신규 + 5 갱신 (사이클 3)
+
+`/지식정제 자동` 세 번째 사이클. 사이클 1·2 이후 다음 5개 raw 처리.
+
+처리 대상 5개:
+- raw/2026-03-17-soft-skill-one-step-study.md (한 발짝 스터디)
+- raw/2026-03-24-expedition-tech-salon.md (원정대 테크살롱)
+- raw/2026-03-24-web-backend-level1-elective-missions.md (선택 미션)
+- raw/2026-03-27-async-quiz-explanation.md (해설지 작성)
+- raw/2026-03-27-demo-day-retrospective.md (5회 회고 시리즈)
+
+신규 wiki 노트 6개 (모두 디자인 패턴):
+- time-machine-retrospective — 과거-현재-미래 시간축 회고
+- parallel-session-tech-salon — 학회 컨퍼런스 형식 차용
+- six-tier-feedback-system — 코치 리소스별 6단계 피드백 채널
+- evaluation-deferment — 자기주도적 실패 회복 장치
+- explanation-as-learning — 해설지 작성으로서의 학습 (외부영향 결합)
+- progressive-retrospective-design — 5회 회고 형식 점진 진화
+
+갱신 wiki 노트 5개:
+- self-directed-learning (+2 sources, +3 links → 5/8)
+- sdl-four-stage-framework (+1 source, +2 links → 2/4)
+- measurable-learning-goal (+1 source, +2 links → 3/6)
+- knowledge-transfer-not-presentation — **stub → 정식 승격** (sources 1→2)
+- predict-observe-explain (+1 source, +1 link)
+
+위키 통계: 29 → 35 (정식 25→32, stub 4→3).
+
+흥미로운 발견: 한 발짝 스터디 / 테크살롱 / 선택 미션 / 해설지 / 5회 회고 — 다섯 raw 가 모두 "자기주도 학습의 다른 표면" 으로 수렴. self-directed-learning 노트가 sources 2→5 로 가장 빠르게 두꺼워짐. 이 노트가 위키의 중력 중심이 되고 있다는 신호.
+
+knowledge-transfer-not-presentation 도 stub 에서 풀어짐 — 원정대 활동 사후 결과(테크살롱 회고) 가 들어오면서 1년 묵은 보류가 해소.
+
+다음 사이클: ~64개 raw 남음.
+
 ## [2026-06-16] refactor | sync-state.lastCompileCommit 마커 전진 (7804c536 → 9a9e0713)
 이전 entry 가 지적한 "마커 미advance" 인프라 버그 수정. 사이클 1·2·수동 보강이 끝났는데도 lastCompileCommit 이 2026-06-09 commit 에 멈춰 있어 auto-compile 훅이 매 턴 "74개 미합성" 알림을 재발화(긴 단일 세션 내내 루프). 마커를 현재 main HEAD(9a9e0713) 로 전진시켜 정상화. ⚠️ 주의: 이는 "마지막 합성 패스 시점" 의미의 전진이며, 실제로는 Phase C/D·external 로 흡수된 raw 약 70개가 아직 미합성 backlog 로 남아 있다(개별 사이클 노트 참조). 이후 `/지식정제 자동` 을 의도적으로 여러 번 돌려 backlog 를 소진해야 한다.
 

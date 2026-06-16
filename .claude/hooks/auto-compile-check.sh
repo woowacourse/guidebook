@@ -40,7 +40,7 @@ case "$PENDING" in
 esac
 
 if [ "$PENDING" -ge "$THRESHOLD" ]; then
-  echo "[auto-compile] knowledge/raw/ 에 ${PENDING}개 auto-eligible raw 가 미합성 누적 (임계값 ${THRESHOLD}). 다음 턴에 /지식정제 자동 실행을 권장합니다. (하위 폴더 external/derived/conversations 는 deliberate 대상이라 제외; sync-state.compileBacklog 참조)" >&2
+  echo "[auto-compile] knowledge/raw/ 에 ${PENDING}개 auto-eligible raw 가 미합성 누적 (임계값 ${THRESHOLD}). 다음 턴에 /지식정제 자동 실행을 권장합니다. (하위 폴더 external/derived/conversations 는 deliberate-only 라 제외)" >&2
   exit 2
 fi
 

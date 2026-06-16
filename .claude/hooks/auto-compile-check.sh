@@ -6,35 +6,41 @@
 # wiki 합성이 드물 수 있는데, 그 격차가 너무 벌어지면 위키가 식는다. 이 훅이
 # "raw 가 N개 쌓였다, 정제할 때다" 라는 자연 압력을 만든다.
 #
+# 탐지 방식 (2026-06-16 ledger 전환):
+# - 과거: `git diff --diff-filter=A <lastCompileCommit> HEAD` 로 "마지막 compile 이후
+#   추가된 raw" 를 셌다. 두 결함 — (1) 사이클이 마커를 advance 안 하면 같은 raw 를 매 턴
+#   다시 세서 무한 오탐, (2) 한 커밋이 batchSize 보다 많이 추가하면 일부가 orphan.
+# - 현재: scripts/knowledge/compile-state.mjs 의 파일 단위 ledger(compiledRaw) 로
+#   "실제로 wiki 에 합성 안 된 auto-eligible raw" 수를 직접 센다. 마커 불일치/orphan 소멸.
+#   auto-eligible = knowledge/raw/*.md (루트). 하위 폴더는 deliberate-only 라 제외.
+#
 # 동작:
-# - lastCompileCommit (sync-state.json) 이후 추가된 knowledge/raw/**/*.md 파일 수 세기
-# - threshold 이상이면 exit 2 (stderr 메시지)
-# - lastCompileCommit 미설정 / 임계값 미달 / 위키 비활성 → exit 0
+# - compile-state.mjs pending --count >= threshold 이면 exit 2 (stderr 메시지)
+# - node/스크립트/상태파일 부재, 임계값 미달 → exit 0 (조용히)
 
 set -e
 PROJECT_DIR="${CLAUDE_PROJECT_DIR:-$(pwd)}"
 STATE="$PROJECT_DIR/.claude/sync-state.json"
+SCRIPT="$PROJECT_DIR/scripts/knowledge/compile-state.mjs"
 
+# 위키 비활성 / 도구 부재 → 조용히 종료 (훅이 깨지지 않도록)
 if [ ! -f "$STATE" ]; then exit 0; fi
+if [ ! -f "$SCRIPT" ]; then exit 0; fi
 if ! command -v jq >/dev/null 2>&1; then exit 0; fi
+if ! command -v node >/dev/null 2>&1; then exit 0; fi
 
 THRESHOLD=$(jq -r '.compileConfig.threshold // 5' "$STATE" 2>/dev/null || echo 5)
-LAST_COMPILE=$(jq -r '.lastCompileCommit // empty' "$STATE" 2>/dev/null || true)
 
-# lastCompileCommit 미설정: 위키 운영 시작 전 → 조용히 종료
-if [ -z "$LAST_COMPILE" ]; then exit 0; fi
+# ledger 기반 미합성 auto-eligible raw 수
+PENDING=$(CLAUDE_PROJECT_DIR="$PROJECT_DIR" node "$SCRIPT" pending --count 2>/dev/null || echo 0)
 
-# 커밋 SHA 가 실제로 존재하는지 확인 (squash merge 등으로 사라질 수 있음)
-if ! git -C "$PROJECT_DIR" cat-file -e "$LAST_COMPILE" 2>/dev/null; then
-  echo "[auto-compile] sync-state.json 의 lastCompileCommit($LAST_COMPILE) 이 더 이상 존재하지 않습니다. 사람이 직접 갱신하세요." >&2
-  exit 0
-fi
-
-# lastCompileCommit 이후 추가된 knowledge/raw/ 파일 수
-PENDING=$(git -C "$PROJECT_DIR" diff --name-only --diff-filter=A "$LAST_COMPILE" HEAD -- 'knowledge/raw/**.md' 'knowledge/raw/*.md' 2>/dev/null | grep -c . || true)
+# 숫자 검증 (스크립트 오류 시 0 처리)
+case "$PENDING" in
+  ''|*[!0-9]*) PENDING=0 ;;
+esac
 
 if [ "$PENDING" -ge "$THRESHOLD" ]; then
-  echo "[auto-compile] knowledge/raw/ 에 ${PENDING}개 raw 가 미합성 상태로 누적 (임계값 ${THRESHOLD}). 다음 턴에 /지식정제 자동 실행을 권장합니다." >&2
+  echo "[auto-compile] knowledge/raw/ 에 ${PENDING}개 auto-eligible raw 가 미합성 누적 (임계값 ${THRESHOLD}). 다음 턴에 /지식정제 자동 실행을 권장합니다. (하위 폴더 external/derived/conversations 는 deliberate 대상이라 제외; sync-state.compileBacklog 참조)" >&2
   exit 2
 fi
 

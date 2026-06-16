@@ -9,6 +9,9 @@
 
 ---
 
+## [2026-06-16] refactor | sync-state.lastCompileCommit 마커 전진 (7804c536 → 9a9e0713)
+이전 entry 가 지적한 "마커 미advance" 인프라 버그 수정. 사이클 1·2·수동 보강이 끝났는데도 lastCompileCommit 이 2026-06-09 commit 에 멈춰 있어 auto-compile 훅이 매 턴 "74개 미합성" 알림을 재발화(긴 단일 세션 내내 루프). 마커를 현재 main HEAD(9a9e0713) 로 전진시켜 정상화. ⚠️ 주의: 이는 "마지막 합성 패스 시점" 의미의 전진이며, 실제로는 Phase C/D·external 로 흡수된 raw 약 70개가 아직 미합성 backlog 로 남아 있다(개별 사이클 노트 참조). 이후 `/지식정제 자동` 을 의도적으로 여러 번 돌려 backlog 를 소진해야 한다.
+
 ## [2026-06-16] compile (수동 보강) | mission-design → wiki 1 신규
 세션 중 수동 `/지식정제 자동` 실행. 자동 사이클 1·2가 mission-design(145-PR 분석)에서 structured-prompt-pattern·personal-utility-test 등은 뽑았으나 "리뷰 단위=코드→프로덕트" 패턴은 놓쳐, product-review-not-code-review 노트로 보강(132/43/108 PR 근거). android-level0·senior-code-review·pr-insights ×2는 기존 노트에 이미 흡수돼 신규 없음. ⚠️ sync-state.lastCompileCommit 이 사이클 1·2 후에도 7804c536(2026-06-09)에 멈춰 있어 auto-compile 훅이 매 턴 오탐 발생 — 인프라 점검 필요(마커 미advance).
 

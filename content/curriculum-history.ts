@@ -7,7 +7,7 @@
 //   - 레벨 0~5 골격은 트랙별로 거의 안정적이라 LEVELS_BY_TRACK 에 한 번만 정의(현재 기준).
 //   - 매년 바뀐 미션·강조점의 차이는 각 기수의 core[] 에 담는다.
 //   - depth 'sparse' = 핵심 데이터가 얇음("기록 보강 중"). 'rich' = 교차 확인됨.
-// 트랙 시작: 웹 백엔드·프론트엔드 1기~, 안드로이드 5기(2023)~, 소프트스킬 6기(2024)~.
+// 트랙 시작: 웹 백엔드 1기~, 웹 프론트엔드 3기(2021)~, 안드로이드 5기(2023)~, 소프트스킬 6기(2024)~.
 
 export type TrackKey = '웹 프론트엔드' | '웹 백엔드' | '안드로이드' | '소프트스킬'
 
@@ -71,6 +71,7 @@ export const LEVELS_BY_TRACK: Record<TrackKey, CurriculumLevel[]> = {
   ],
 }
 
+const BE_ONLY: TrackKey[] = ['웹 백엔드']
 const BE_FE: TrackKey[] = ['웹 프론트엔드', '웹 백엔드']
 const PLUS_ANDROID: TrackKey[] = ['웹 프론트엔드', '웹 백엔드', '안드로이드']
 const ALL_TRACKS: TrackKey[] = ['웹 프론트엔드', '웹 백엔드', '안드로이드', '소프트스킬']
@@ -79,17 +80,17 @@ const ALL_TRACKS: TrackKey[] = ['웹 프론트엔드', '웹 백엔드', '안드�
 const cohorts: CurriculumCohort[] = [
   {
     gi: 1, year: 2019, headline: '우아한테크코스의 시작',
-    core: ['우아한테크코스의 시작 — 첫 기수 출범', '웹 백엔드·웹 프론트엔드 과정으로 출발'],
-    tracks: BE_FE, depth: 'sparse',
+    core: ['우아한테크코스의 시작 — 첫 기수 출범', '웹 백엔드 과정으로 출발'],
+    tracks: BE_ONLY, depth: 'sparse',
   },
   {
     gi: 2, year: 2020, headline: '과정 정착기',
     core: ['(임시) 기록 보강 중'],
-    tracks: BE_FE, depth: 'sparse',
+    tracks: BE_ONLY, depth: 'sparse',
   },
   {
-    gi: 3, year: 2021, headline: '미션 기반 학습의 확장',
-    core: ['(임시) FE 페이먼츠 미션 개설 — 이후 5년 최장수 단일 미션'],
+    gi: 3, year: 2021, headline: '웹 프론트엔드 트랙 신설',
+    core: ['웹 프론트엔드 과정 신설', '(임시) 페이먼츠 미션 개설 — 이후 5년 최장수 단일 미션'],
     tracks: BE_FE, depth: 'sparse',
   },
   {

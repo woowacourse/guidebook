@@ -1,14 +1,27 @@
-/* Hero — 랜딩 '선언' (manifesto) */
+/* Hero — 랜딩 '선언' (manifesto) — 뷰포트 상단 살짝 위(광학적 중앙)에 배치 */
 .hero {
   position: relative;
+  min-height: calc(100svh - var(--nextra-navbar-height, 64px));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   text-align: center;
-  padding: 5.5rem 0 4.5rem;
+  padding: 18vh 0 5rem;
 }
 
-/* 손그림 별 — 상단 중앙에 딱 하나 */
+/* 콘텐츠 래퍼 — 별·광원이 텍스트와 함께 세로 중앙으로 움직이도록 */
+.inner {
+  position: relative;
+  width: 100%;
+  max-width: 42rem;
+  padding-top: 3.5rem; /* 별이 eyebrow 위에 놓일 여백 */
+}
+
+/* 손그림 별 — 콘텐츠 상단 중앙에 딱 하나 */
 .star {
   position: absolute;
-  top: 1.75rem;
+  top: 0.75rem;
   left: 50%;
   transform: translateX(-50%);
   width: 30px;
@@ -17,18 +30,56 @@
   pointer-events: none;
 }
 
-/* 바깥선: 라이트=먹색 / 다크=흰색 */
+/* 별 중심 광원 — 은은한 따뜻한 빛 */
+.starGlow {
+  position: absolute;
+  top: calc(0.75rem + 15px);
+  left: 50%;
+  width: 300px;
+  height: 240px;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 236, 200, 0.6),
+    rgba(255, 236, 200, 0) 70%
+  );
+}
+
+:global(.dark) .starGlow {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 246, 228, 0.16),
+    rgba(255, 246, 228, 0) 70%
+  );
+}
+
+/* 텍스트는 항상 별·광원 위에 */
+.eyebrow,
+.title,
+.description,
+.actions {
+  position: relative;
+  z-index: 1;
+}
+
+/* 별 — 라이트: 검은 테두리 + 흰 내부 */
 .starInk {
-  fill: rgba(55, 53, 47, 0.85);
+  fill: rgb(40, 38, 34);
 }
 
-:global(.dark) .starInk {
-  fill: rgba(255, 255, 255, 0.85);
-}
-
-/* 안쪽: 페이지 배경색과 일치시켜 외곽선만 남긴다 */
 .starFill {
-  fill: var(--nextra-bg, #ffffff);
+  fill: #ffffff;
+}
+
+/* 별 — 다크: 흰 테두리 + 어두운 내부 (종이 배경색과 일치) */
+:global(.dark) .starInk {
+  fill: rgba(255, 255, 255, 0.92);
+}
+
+:global(.dark) .starFill {
+  fill: #0d0d10;
 }
 
 /* 아이브로 — 이 사이트가 무엇인지 (제목 위 작은 라벨) */
@@ -61,11 +112,11 @@
   color: rgba(255, 255, 255, 0.95);
 }
 
-/* 부제 — 독자에게 이 문서가 어떤 의미인지 */
+/* 부제 — 독자에게 이 문서가 어떤 의미인지. 노션 본문 컬러로 가독성 확보 */
 .description {
   font-size: 1.1rem;
   line-height: 1.75;
-  color: rgba(55, 53, 47, 0.5);
+  color: rgb(55, 53, 47);
   max-width: 34rem;
   margin: 0 auto;
   word-break: keep-all;
@@ -73,7 +124,7 @@
 }
 
 :global(.dark) .description {
-  color: rgba(255, 255, 255, 0.42);
+  color: rgba(255, 255, 255, 0.81);
 }
 
 .description p {

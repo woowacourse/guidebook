@@ -20,17 +20,20 @@ interface HeroProps {
 export function Hero({ title, eyebrow, description, cta }: HeroProps) {
   return (
     <div className={styles.hero} data-landing-hero>
-      <StarMark />
-      {eyebrow && <span className={styles.eyebrow}>{eyebrow}</span>}
-      <h1 className={styles.title}>{title}</h1>
-      {description && <div className={styles.description}>{description}</div>}
-      {cta && (
-        <div className={styles.actions}>
-          <Link className={styles.cta} href={cta.href}>
-            {cta.label}
-          </Link>
-        </div>
-      )}
+      <div className={styles.inner}>
+        <div className={styles.starGlow} aria-hidden="true" />
+        <StarMark />
+        {eyebrow && <span className={styles.eyebrow}>{eyebrow}</span>}
+        <h1 className={styles.title}>{title}</h1>
+        {description && <div className={styles.description}>{description}</div>}
+        {cta && (
+          <div className={styles.actions}>
+            <Link className={styles.cta} href={cta.href}>
+              {cta.label}
+            </Link>
+          </div>
+        )}
+      </div>
     </div>
   )
 }

@@ -17,14 +17,15 @@ export default {
       typesetting: 'article'
     }
   },
+  '--build': { type: 'separator', title: '만들기' },
+  start: '🚀 시작하기',
+  '--understand': { type: 'separator', title: '교육 모델 이해하기' },
   philosophy: '🎯 교육 철학',
   curriculum: '🗺️ 커리큘럼',
   insights: `⬆️ 검증된 패턴 (${insightsCount})`,
+  '--raw': { type: 'separator', title: '원재료' },
   logs: `⬆️ 실험 로그 (${logs.length})`,
-  tools: {
-    title: '🛠️ 검증된 도구',
-    display: 'hidden'
-  },
+  tools: '🛠️ 검증된 도구',
   conversations: {
     title: '🗂️ 우테코 콘텐츠 아카이브',
     display: 'hidden'

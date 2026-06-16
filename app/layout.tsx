@@ -37,6 +37,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           }
           pageMap={await getPageMap()}
           docsRepositoryBase="https://github.com/woowacourse/2026-okr/tree/main/docs-site"
+          copyPageButton={false}
+          editLink={null}
+          feedback={{ link: 'https://github.com/woowacourse/guidebook/issues/new?labels=feedback' }}
           sidebar={{
             defaultMenuCollapseLevel: 1,
             toggleButton: true

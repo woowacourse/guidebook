@@ -10,7 +10,7 @@ LLM 에이전트(Claude Code, Codex, Cursor, 기타)가 이 저장소를 읽고 
 ## 3계층 컨텐츠 구조 (Karpathy LLM Wiki 패턴)
 
 - **Raw sources** — `content/education/logs/` (매주 추가되는 실험 로그). 직접 수정 지양, 새 로그 추가는 `/로그추가` 사용.
-- **Wiki pages** — `content/education/{philosophy,design-patterns,curriculum,insights,tools}/`. 실험 로그에서 추출·승격된 안정화된 지식.
+- **Wiki pages** — `content/education/{philosophy,curriculum,insights,tools}/`. 실험 로그에서 추출·승격된 안정화된 지식.
 - **Schema** — `CLAUDE.md`, `.claude/conventions/`, `.claude/promotion-rubric.md`, `.claude/log-quality-rubric.md`.
 
 ## 기여 시 따라야 할 규약

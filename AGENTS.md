@@ -44,6 +44,13 @@ LLM 에이전트(Claude Code, Codex, Cursor, 기타)가 이 저장소를 읽고 
 - **`.claude/log-quality-rubric.md` 와 `.claude/promotion-rubric.md` 수정.** 사람이 직접 수정한다 (autoresearch 의 `prepare.py` 원칙 — 평가 기준을 에이전트가 바꾸면 모든 이전 점수와 비교 불가능해진다).
 - **`_meta.ts` 의 `display: 'hidden'` 항목 삭제.** 의도된 숨김이다.
 
+### 6. 문체 (말투) — 합니다체로 통일
+
+- `content/` 본문 문장은 **합니다체**(`~합니다`/`~습니다`/`~입니다`)로 쓴다. 한다체(`~한다`/`~다`)·해요체(`~해요`/`~예요`)를 섞지 않는다.
+- **예외(그대로 둔다):** 코드블록, 따옴표 안 크루·코치 실제 발화 인용, 도구의 질문/프롬프트 템플릿. 의도된 예외 블록은 `{/* tone-lint:ignore-start */}` ~ `{/* tone-lint:ignore-end */}` 로 감싼다.
+- **점검:** `npm run lint:tone` 또는 `/말투점검`. 큐레이션 교육 콘텐츠(philosophy·insights·design-patterns·curriculum·tools)를 검사하며, 본문 위반이 있으면 종료코드 1.
+- 선언·매니페스토 톤이어도 어미는 합니다체를 지킨다.
+
 ## 외부 LLM(ChatGPT/Claude/Gemini 등) 진입 흐름
 
 ```

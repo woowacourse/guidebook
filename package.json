@@ -11,6 +11,7 @@
     "build:search-index": "node scripts/search/build-pagefind.mjs",
     "check:search-index": "node scripts/search/verify-pagefind.mjs",
     "test:llms-txt": "node --test scripts/llms-txt/__tests__/build.test.mjs",
+    "lint:tone": "node scripts/style/tone-lint.mjs",
     "start": "next start"
   },
   "dependencies": {

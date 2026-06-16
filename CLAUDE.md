@@ -11,6 +11,7 @@ Nextra 4 + Next.js App Router 기반 교육 가이드북.
 - **`.claude/templates/`** — 새 페이지 작성 템플릿.
 - **`public/llms.txt` / `public/llms-full.txt`** — 외부 LLM이 사이트를 빠르게 훑을 수 있는 진입점. `npm run build` 시 자동 생성.
 - **`/위키정리`** — 위키 정합성 lint 커맨드.
+- **`/말투점검`** (`npm run lint:tone`) — content 본문 문체 점검. **본문은 합니다체로 통일한다**(한다체·해요체 금지). 규약: `AGENTS.md` > 6. 문체.
 
 | 역할 | 파일 | 대상 독자 |
 |------|------|-----------|

@@ -10,7 +10,7 @@
 **산출**: 연도×단계 매트릭스, 주제 카테고리 시계열, 리뷰 코멘트 테마 분포, 코치 인용구 사례, 시각화 가능한 JSON
 </Callout>
 
-이 워크플로우는 [React 페이먼츠 미션 5년치 PR 555개 데이터 분석](/education/logs/react-payments-555prs-analysis) 로그에서 실증되어 [`/research-cycle`](/education/tools/research-cycle-workflow)에서 도구로 승격되었다.
+이 워크플로우는 [React 페이먼츠 미션 5년치 PR 555개 데이터 분석](/education/logs/react-payments-555prs-analysis) 로그에서 실증되어 [`/research-cycle`](/education/tools/research-cycle-workflow)에서 도구로 승격되었습니다.
 
 ## 언제 쓰는가
 
@@ -36,7 +36,7 @@ done
 jq -s 'add' pulls_page_*.json > all_pulls.json
 ```
 
-> 주의: `pulls` list endpoint는 `review_comments` 카운트를 반환하지 않는다. 코멘트 수가 필요하면 다음 단계의 search API로 별도 수집한다.
+> 주의: `pulls` list endpoint는 `review_comments` 카운트를 반환하지 않습니다. 코멘트 수가 필요하면 다음 단계의 search API로 별도 수집합니다.
 
 ### 2단계. 상위 PR 코멘트 수집
 
@@ -58,7 +58,7 @@ done
 
 ### 3단계. 주제·테마 분류 (Python)
 
-본문과 코멘트에 키워드 사전을 정규식으로 매칭해 카테고리 출현 빈도를 시계열로 측정한다. 24개 본문 카테고리, 20개 리뷰 코멘트 테마가 페이먼츠 분석에서 검증된 사전이다.
+본문과 코멘트에 키워드 사전을 정규식으로 매칭해 카테고리 출현 빈도를 시계열로 측정합니다. 24개 본문 카테고리, 20개 리뷰 코멘트 테마가 페이먼츠 분석에서 검증된 사전입니다.
 
 ```python
 # 본문 카테고리 예시 (페이먼츠 검증판)
@@ -80,7 +80,7 @@ review_themes = {
 }
 ```
 
-전체 사전과 매칭 스크립트는 [페이먼츠 로그의 원본 자료 섹션](/education/logs/react-payments-555prs-analysis#원본-자료)에 보존된 `.inbox/react-payments-analysis/` 디렉터리 구조를 그대로 복제해 사용한다.
+전체 사전과 매칭 스크립트는 [페이먼츠 로그의 원본 자료 섹션](/education/logs/react-payments-555prs-analysis#원본-자료)에 보존된 `.inbox/react-payments-analysis/` 디렉터리 구조를 그대로 복제해 사용합니다.
 
 ### 4단계. 시각화 자산 산출
 
@@ -114,10 +114,10 @@ review_themes = {
 
 - [연구 사이클 워크플로우](/education/tools/research-cycle-workflow) — 이 도구가 산출한 로그를 검증된 패턴·교육 모델로 승격하는 다음 단계 파이프라인
 - [미션은 누적 학습 모델이다](/education/insights/mission-learning-accumulation) — 이 도구로 발견된 핵심 패턴
-- [논증 기반 학습 설계](/education/insights/argumentation-based-learning) — 리뷰 테마 분포 분석이 이 패턴의 정량 증거를 제공한다
+- [논증 기반 학습 설계](/education/insights/argumentation-based-learning) — 리뷰 테마 분포 분석이 이 패턴의 정량 증거를 제공합니다
 
 ## 한계와 주의
 
-- **표본 편향**: 상위 30 PR만 코멘트를 수집하면 코멘트가 적은 PR(자기 완결성이 높았거나, 빠른 통과)이 분석에서 빠진다. 가능하면 모든 PR의 코멘트 수만이라도 수집해 분포를 봐야 한다.
-- **키워드 사전 의존**: 매칭 정확도가 사전 품질에 의존한다. 한 사전을 다른 미션 저장소에 적용할 때는 검증 샘플로 정밀도를 측정한다.
-- **인용은 동의서가 아니다**: 코치·크루의 코멘트를 인용할 때는 원본 PR 링크를 함께 남겨 출처를 분명히 한다. 직접 인용은 짧게 하되 의미가 살아 있어야 한다.
+- **표본 편향**: 상위 30 PR만 코멘트를 수집하면 코멘트가 적은 PR(자기 완결성이 높았거나, 빠른 통과)이 분석에서 빠집니다. 가능하면 모든 PR의 코멘트 수만이라도 수집해 분포를 봐야 합니다.
+- **키워드 사전 의존**: 매칭 정확도가 사전 품질에 의존합니다. 한 사전을 다른 미션 저장소에 적용할 때는 검증 샘플로 정밀도를 측정합니다.
+- **인용은 동의서가 아니다**: 코치·크루의 코멘트를 인용할 때는 원본 PR 링크를 함께 남겨 출처를 분명히 합니다. 직접 인용은 짧게 하되 의미가 살아 있어야 합니다.

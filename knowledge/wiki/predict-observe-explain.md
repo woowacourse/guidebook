@@ -3,11 +3,13 @@ title: 예측-관찰-설명 (Predict-Observe-Explain)
 tags: [패턴, 외부영향]
 sources:
   - raw/2026-03-17-codelab-lotto-domain-ui.md
+  - raw/2026-03-27-async-quiz-explanation.md
 links:
   - as-is-judge-then-compare
   - piaget-cognitive-conflict
   - teach-by-silence
-updated: 2026-06-09
+  - explanation-as-learning
+updated: 2026-06-16
 ---
 
 원리를 강의로 전달하는 대신, **크루가 먼저 결과를 예측하고 → 실제로 관찰하고 → 자신의 예측과 실제의 차이를 설명하는** 수업 구조. 과학교육 분야에서 White & Gunstone(1992)이 정식화한 POE(Predict-Observe-Explain) 기법을 코드 학습에 이식했다. 로또 2단계(도메인-UI 분리) 수업에서 검증됐다.
@@ -19,3 +21,5 @@ updated: 2026-06-09
 실제 수업에서 크루 응답 분포는 흥미로웠다. Q2 "미션의 핵심"에 대해 거의 전원이 "도메인과 UI의 관심사 분리"를 답했다. 이미 개념적으로는 알고 있다는 뜻이다. 그래서 코드랩은 "아는 것이 실제 코드에서 왜 어떻게 작동하는지를 느끼는 시간"이 됐다. Step 2에서 `console.log`를 `return`으로 바꾸자 도메인 테스트 5개 중 1개가 깨졌다 — 코치가 설명하는 것보다 직접 보는 것이 훨씬 강렬했다.
 
 POE는 [[as-is-judge-then-compare]]와 같은 인지적 갈등 계열이지만, 차이가 있다. AS-IS 판단은 "타인의 결과물"을 진단 대상으로 삼고, POE는 "내 머릿속 모델"을 진단 대상으로 삼는다.
+
+FE 비동기 퀴즈 해설지 활동(5기·6기·7기 3년 연속)이 POE의 변형 사례다. 표준 POE는 예측 → 관찰 → 설명 순서지만, 해설지 작성은 **이미 작동한 코드를 거꾸로 설명**하는 역방향 변형이다. 결과(코드 실행)부터 출발해 원인(왜 이 순서로 실행되는지)을 재구성한다. 두 패턴 모두 [[piaget-cognitive-conflict]]를 매개로 작동하지만, POE가 "내 예측이 틀렸을 때" 갈등이 발생하는 반면 해설지는 "내가 설명할 수 없을 때" 갈등이 발생한다. 자세한 활동 설계는 [[explanation-as-learning]] 참고.

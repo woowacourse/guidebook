@@ -59,5 +59,28 @@
       "candidate": "thanks-feedback-workshop",
       "reason": "P2=5 (very extractable: 6-activity 90-min workshop with SSCC + 7-day card). 13/20 because not yet run. After 1 operation, recommend re-evaluating for tool/ promotion."
     }
+  ],
+  "compiledRaw": [
+    "2026-03-03-mission-design.md",
+    "2026-03-03-pr-insights-design.md",
+    "2026-03-03-pr-insights-implementation.md",
+    "2026-03-10-android-level0.md",
+    "2026-03-10-expedition.md",
+    "2026-03-10-senior-code-review.md",
+    "2026-03-10-standardized-crew-coaching.md",
+    "2026-03-17-codelab-lotto-domain-ui.md",
+    "2026-03-17-drama-onboarding.md",
+    "2026-03-17-drama-retrospective.md",
+    "2026-03-17-pair-programming-manifesto.md",
+    "2026-03-17-soft-skill-one-step-study.md",
+    "2026-03-24-expedition-tech-salon.md",
+    "2026-03-24-web-backend-level1-elective-missions.md",
+    "2026-03-27-async-quiz-explanation.md",
+    "2026-03-27-demo-day-retrospective.md",
+    "2026-04-07-fe-rendering-strategy-workshop.md",
+    "2026-04-27-crew-autonomy.md",
+    "2026-04-28-android-participatory.md",
+    "2026-05-19-thanks-feedback-workshop.md",
+    "2026-05-26-react-payments-555prs-analysis.md"
   ]
 }

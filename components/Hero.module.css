@@ -1,13 +1,13 @@
-/* Hero — 랜딩 '선언' (manifesto) — 뷰포트를 채워 세로 중앙 정렬 */
+/* Hero — 랜딩 '선언' (manifesto) — 뷰포트 상단 살짝 위(광학적 중앙)에 배치 */
 .hero {
   position: relative;
   min-height: calc(100svh - var(--nextra-navbar-height, 64px));
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
-  padding: 2rem 0 5rem;
+  padding: 18vh 0 5rem;
 }
 
 /* 콘텐츠 래퍼 — 별·광원이 텍스트와 함께 세로 중앙으로 움직이도록 */

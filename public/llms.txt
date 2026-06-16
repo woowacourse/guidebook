@@ -1,9 +1,10 @@
 # 우아한테크코스 공식문서
 
 <Hero
+  eyebrow="우아한테크코스 공식문서"
   title="소프트웨어 생태계에 선한 영향력을"
-  subtitle="우아한테크코스 공식문서"
-  description="7년간의 교육 경험과 시행착오를, 자산으로 정리하고 있습니다."
+  description="우리가 한 교육 실험과 경험들이 우테코를 넘어 누군가의 성장과 변화를 돕는 데 쓰이길 바랍니다."
+  cta={{ label: '스스로 성장하는 교육 보기 →', href: '/education' }}
 />
 
 ## Pages
@@ -140,3 +141,4 @@
 - [렌더링 전략 결정 워크숍 템플릿](https://docs.woowahan.com/education/tools/rendering-strategy-workshop)
 - [연구 사이클 워크플로우](https://docs.woowahan.com/education/tools/research-cycle-workflow)
 - [회고 형식 설계 키트](https://docs.woowahan.com/education/tools/retrospective-format-kit)
+- [타임라인](https://docs.woowahan.com/timeline)

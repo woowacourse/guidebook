@@ -20,6 +20,7 @@ interface HeroProps {
 export function Hero({ title, eyebrow, description, cta }: HeroProps) {
   return (
     <div className={styles.hero} data-landing-hero>
+      <div className={styles.starGlow} aria-hidden="true" />
       <StarMark />
       {eyebrow && <span className={styles.eyebrow}>{eyebrow}</span>}
       <h1 className={styles.title}>{title}</h1>

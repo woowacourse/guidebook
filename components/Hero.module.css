@@ -17,6 +17,40 @@
   pointer-events: none;
 }
 
+/* 별 중심 광원 — 은은한 따뜻한 빛 */
+.starGlow {
+  position: absolute;
+  top: 2.7rem;
+  left: 50%;
+  width: 300px;
+  height: 240px;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 236, 200, 0.6),
+    rgba(255, 236, 200, 0) 70%
+  );
+}
+
+:global(.dark) .starGlow {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 246, 228, 0.16),
+    rgba(255, 246, 228, 0) 70%
+  );
+}
+
+/* 텍스트는 항상 별·광원 위에 */
+.eyebrow,
+.title,
+.description,
+.actions {
+  position: relative;
+  z-index: 1;
+}
+
 /* 바깥선: 라이트=먹색 / 다크=흰색 */
 .starInk {
   fill: rgba(55, 53, 47, 0.85);

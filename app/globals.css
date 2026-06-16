@@ -7,6 +7,9 @@
   --nextra-primary-hue: 0deg;
   --nextra-primary-saturation: 0%;
   --nextra-primary-lightness: 20%;
+
+  /* 랜딩 종이 그레인 — 알파를 SVG에 구워 라이트/다크 한 자산으로 */
+  --paper-noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='table' tableValues='0 0.05'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
 .dark {
@@ -212,6 +215,18 @@ div.nextra-body-typesetting-article:has([data-landing-hero]) > * {
   max-width: 42rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* 랜딩 페이지 — 종이 그레인 배경 (풀블리드).
+   hero를 감싸는 article 컨테이너(w-full · min-h-screen)에 깔아 항상 콘텐츠 뒤·전체를 덮는다. */
+div.nextra-body-typesetting-article:has([data-landing-hero]) {
+  background-color: #fdfcfa;
+  background-image: var(--paper-noise);
+  background-size: 180px 180px;
+}
+
+.dark div.nextra-body-typesetting-article:has([data-landing-hero]) {
+  background-color: #0d0d10;
 }
 
 /* ===== 사이드바 footer 재배치 ===== */

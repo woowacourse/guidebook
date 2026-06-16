@@ -19,8 +19,7 @@ export default {
   },
   philosophy: '🎯 교육 철학',
   curriculum: '🗺️ 커리큘럼',
-  'design-patterns': '🧩 디자인 패턴',
-  insights: `⬆️ 핵심 인사이트 (${insightsCount})`,
+  insights: `⬆️ 검증된 패턴 (${insightsCount})`,
   logs: `⬆️ 실험 로그 (${logs.length})`,
   tools: {
     title: '🛠️ 검증된 도구',

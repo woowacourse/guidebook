@@ -1,49 +1,61 @@
 # 핵심 교육 원칙
 
-> 이 원칙들은 책상에서 먼저 세운 선언이 아니다. 매주 쌓이는 실험 로그에서 반복 관찰된 패턴을 귀납해 정리한 것이다.
+> 이 원칙들은 책상에서 먼저 세운 선언이 아니다. 매주 쌓이는 실험 로그에서 귀납했다.
 
-각 원칙은 끝에 **`→ 근거 패턴`** 으로 실제 실험·데이터와 연결된다. 원칙이 먼저 있고 사례를 끼워 맞춘 것이 아니라, 여러 기수의 사례가 먼저 있고 원칙이 뒤따라 드러났다. 근거가 약한 주장은 이 페이지에 올리지 않는다. 더 깊은 교차 분석은 [인사이트](/education/insights), 재사용 가능한 절차는 [검증된 도구](/education/tools)에서 이어 읽을 수 있다.
+<Mermaid chart={`flowchart LR
+  L["실험 로그<br/>매주 누적되는 원재료"] --> I["인사이트<br/>여러 로그의 교차 패턴"]
+  I --> P["교육 철학<br/>4가지 핵심 원칙"]
+  classDef log fill:#eef2ff,stroke:#6366f1,color:#1e1b4b;
+  classDef ins fill:#ecfdf5,stroke:#10b981,color:#064e3b;
+  classDef phi fill:#fff7ed,stroke:#f97316,color:#7c2d12;
+  class L log; class I ins; class P phi;
+`} />
+
+원칙이 먼저 있고 사례를 끼워 맞춘 게 아니라, 여러 기수의 사례가 먼저 있고 원칙이 뒤따라 드러났다. 아래 네 원칙은 모두 끝의 **근거 패턴**으로 실제 실험과 연결된다.
+
+<CardGrid columns={2}>
+  <Card title="자기주도 학습" icon="🧭" href="#자기주도-학습" meta="자가진단 리포트 · 선택 미션">
+    크루는 학습의 진단자이자 설계자다.
+  </Card>
+  <Card title="몰입 기반 성장" icon="🌱" href="#몰입-기반-성장" meta="페이먼츠 5년 · 재제출 97%">
+    깊이는 반복과 누적에서 나온다.
+  </Card>
+  <Card title="함께 성장하는 문화" icon="🤝" href="#함께-성장하는-문화" meta="리뷰 코멘트 질문 51%">
+    협업은 분위기가 아니라 구조다.
+  </Card>
+  <Card title="발견 학습 (POE)" icon="🔍" href="#발견-학습-poe-사이클" meta="5개 기술 도메인 반복">
+    먼저 예측하게 하고 나중에 보여준다.
+  </Card>
+</CardGrid>
 
 ## 자기주도 학습
 
 > 크루는 학습의 대상이 아니라 학습의 진단자이자 설계자다. 코치는 정답이 아니라 기준과 환경을 준다.
 
-자기주도성은 "알아서 공부하라"는 방치가 아니다. 우테코에서 그것은 **크루가 자기 자신을 진단 대상으로 삼는 구조**로 구현된다. "성능을 높여라", "접근성을 챙겨라" 같은 추상적 목표를 크루가 직접 돌릴 수 있는 진단 기준으로 번역해 주고, 그 기준을 남의 코드가 아니라 자기 팀의 서비스에 적용하게 한다. [FE 성능 리포트](/education/logs/fe-performance-report)와 [FE 접근성 리포트](/education/logs/fe-accessibility-report)에서 크루는 전문가가 만든 리포트를 받아 읽는 대신, 직접 측정·분석·개선 리포트를 작성했다 — 그래야 개선 액션이 실제로 실행되기 때문이다.
+자기주도성은 방치가 아니라 **크루가 자기 자신을 진단 대상으로 삼는 구조**다. "성능을 높여라" 같은 추상 목표를 직접 돌릴 수 있는 진단 기준으로 번역해 주고, 남의 코드가 아니라 자기 팀 서비스에 적용하게 한다([성능 리포트](/education/logs/fe-performance-report), [접근성 리포트](/education/logs/fe-accessibility-report)). "무엇을 깊게 팔지"도 크루가 고른다([강점 선언 딥다이브](/education/logs/finding-tech-strengths), [선택 미션](/education/logs/crew-autonomy)). 공통점은 하나 — 코치가 학습 목표를 대신 정해주지 않는다.
 
-자기주도성은 "무엇을 깊게 팔지"를 크루가 고르는 선택권으로도 나타난다. [나만의 기술적 강점 찾기](/education/logs/finding-tech-strengths)는 정체성 선언에서 출발하는 딥다이브 학습이고, [크루 자율성 강화 — 선택 미션](/education/logs/crew-autonomy)과 [레벨0: 자기주도 학습 설계](/education/logs/android-level0)는 학습 경로의 선택권을 크루에게 넘긴 설계다. 공통점은 하나다 — 코치가 학습 목표를 대신 정해주지 않는다.
-
-→ 근거 패턴: [인사이트 > 자기 진단 프레임워크](/education/insights/self-diagnostic-framework)
+**근거 패턴** → [자기 진단 프레임워크](/education/insights/self-diagnostic-framework)
 
 ## 몰입 기반 성장
 
-> 깊이는 한 번의 강의에서 나오지 않는다. 시간을 들인 반복과 누적, 그리고 앞 단계가 다음 단계의 토양이 되는 설계에서 나온다.
+> 깊이는 한 번의 강의가 아니라, 시간을 들인 반복과 누적에서 나온다.
 
-10개월이라는 긴 호흡은 그 자체가 교육 설계의 결정이다. 무거운 주제를 하루 특강으로 전달하면 다음 주에 증발한다는 것을 우테코는 반복 실험으로 확인했다. 그래서 학습은 **다회차 시퀀스로 분산**된다. [FE 레벨2 16단계 학습 체계](/education/logs/fe-level2-16steps)는 리액트를 16단계의 점진적 깊이로 쪼개 체화시키고, [데모데이 회고의 점진적 설계](/education/logs/demo-day-retrospective)는 5회 연속 회고를 매번 다른 형식으로 설계해 성찰의 깊이를 점증시킨다. 회차를 늘리면 한 회차에 담는 양을 줄일 수 있고, 줄어든 인지 부하만큼 몰입이 깊어진다.
+10개월의 긴 호흡은 그 자체가 설계 결정이다. 무거운 주제를 하루 특강으로 주면 다음 주에 증발하기에, 학습을 **다회차 시퀀스로 분산**한다([16단계 학습 체계](/education/logs/fe-level2-16steps), [5회 연속 회고](/education/logs/demo-day-retrospective)). 몰입은 한 기수에 그치지 않는다 — [페이먼츠 5년 555 PR](/education/logs/react-payments-555prs-analysis)에서 215명 중 97%가 같은 저장소로 2회 이상 돌아왔다. 같은 문제로 반복해 돌아오는 구조가 깊이를 만든다.
 
-몰입은 한 기수 안에서만 일어나지 않는다. [React 페이먼츠 미션 5년치 PR 555개 분석](/education/logs/react-payments-555prs-analysis)은 같은 미션 저장소가 5년에 걸쳐 form·state·component라는 영구 골격을 유지하면서 매년 새 학습 목표(2025 error-handling, 2026 async·MSW)를 한 층씩 쌓아 올렸음을 보여준다. 215명 중 97%가 같은 저장소로 2회 이상 돌아왔다. 몰입은 한 번 통과하고 떠나는 것이 아니라, 같은 문제로 반복해 돌아오는 구조에서 만들어진다. 크루는 [나의 성장 그래프](/education/logs/growth-graph)로 이 곡선을 직접 시각화하며 자기 성장을 확인한다.
-
-→ 근거 패턴: [인사이트 > 점진적 스캐폴딩](/education/insights/progressive-scaffolding), [인사이트 > 미션은 누적 학습 모델이다](/education/insights/mission-learning-accumulation), [인사이트 > 회고 설계](/education/insights/retrospective-design)
+**근거 패턴** → [점진적 스캐폴딩](/education/insights/progressive-scaffolding) · [미션은 누적 학습 모델이다](/education/insights/mission-learning-accumulation) · [회고 설계](/education/insights/retrospective-design)
 
 ## 함께 성장하는 문화
 
 > 함께 성장은 따뜻한 분위기가 아니라 구조다. 답을 주는 대신 질문하고, 선언한 뒤 피드백받고, 약점을 먼저 드러낸다.
 
-우테코의 협업 문화는 측정된 적이 있다. [React 페이먼츠 미션 5년치 PR 555개 분석](/education/logs/react-payments-555prs-analysis)에서 인간 리뷰 코멘트 2,178건을 분류한 결과, **절반이 넘는 51%가 답이 아니라 질문**이었다(질문 형식 35.2% + "왜?" 형태로 의도를 묻는 코멘트 16.0%). 긍정 피드백이 36.8%로, 리뷰의 주된 형태는 부정 지적이 아니라 질문·발견·격려였다. "함께 성장한다"는 슬로건이 아니라, 5년·2,178건으로 검증된 리뷰 문화의 실제 특성이다.
+우테코의 협업은 측정된 적이 있다 — [페이먼츠 5년 리뷰 코멘트 2,178건](/education/logs/react-payments-555prs-analysis) 중 **51%가 답이 아니라 질문**이었고(긍정 피드백 37%), 리뷰의 주된 형태는 지적이 아니라 질문·발견·격려였다. 이 문화는 [짝 프로그래밍 선언문](/education/logs/pair-programming-manifesto)과 [팀×팀 렌더링 워크숍](/education/logs/fe-rendering-strategy-workshop)으로 설계되고, [연극 회고](/education/logs/drama-retrospective)·[고맙다 피드백 워크숍](/education/logs/thanks-feedback-workshop)처럼 약점과 감사를 먼저 꺼내는 안전 장치 위에서 작동한다.
 
-이 문화는 여러 형식으로 설계된다. [짝 프로그래밍 선언문](/education/logs/pair-programming-manifesto)은 협업의 규범을 크루 스스로 명문화하게 하고, [렌더링 전략 워크숍](/education/logs/fe-rendering-strategy-workshop)에서는 12팀이 "선언 → 팀×팀 피드백 → 개정" 구조로 서로의 기술 결정을 단단하게 만들었다. 협업이 작동하려면 안전한 바닥이 먼저 필요하기에, [연극 회고: 취약함 공유로 심리적 안전감 만들기](/education/logs/drama-retrospective)와 [고맙다 피드백 워크숍](/education/logs/thanks-feedback-workshop)처럼 약점과 감사를 먼저 드러내는 장치를 의도적으로 배치한다.
-
-→ 근거 패턴: [인사이트 > 논증 기반 학습 설계](/education/insights/argumentation-based-learning)
+**근거 패턴** → [논증 기반 학습 설계](/education/insights/argumentation-based-learning)
 
 ## 발견 학습 (POE 사이클)
 
 > 답을 먼저 주지 않는다. 크루가 예측하고, 관찰하고, 설명한 뒤에야 정답과 마주치게 한다.
 
-Predict(예측) → Observe(관찰) → Explain(설명)의 순서를 뒤집지 않는 것이 이 원칙의 핵심이다.
-강의를 먼저 하고 실습을 나중에 하면 크루는 "이해한 척"을 하게 되지만, 판단을 먼저 강제하면
-자기 머릿속 모델의 허점이 드러나는 순간을 피할 수 없다.
+Predict(예측) → Observe(관찰) → Explain(설명)의 순서를 뒤집지 않는 것이 핵심이다. 강의를 먼저 하면 크루는 "이해한 척"을 하지만, 판단을 먼저 강제하면 자기 머릿속 모델의 허점이 드러난다. 이건 단일 수업 기법이 아니라 **커리큘럼 배치 순서를 뒤집는 결정**이다 — 비동기 퀴즈 해설지, 코드랩 관심사 분리, 선배 코드 AS-IS/TO-BE, SSR 토론, 재발명 사전 에세이까지 기술 도메인을 가로질러 같은 메커니즘이 반복 관찰됐다.
 
-이 원칙은 단일 수업 설계 기법이 아니라 **커리큘럼 배치 순서를 뒤집는 결정**이다.
-비동기 퀴즈 해설지(5·6·7기), 코드랩 관심사 분리, 선배 코드 AS-IS/TO-BE, SSR 토론+OX퀴즈,
-바퀴의 재발명 사전 에세이까지 — 기술 도메인을 가로질러 같은 메커니즘이 반복 관찰되었다.
-
-→ 근거 패턴: [인사이트 > POE 발견 학습](/education/insights/poe-discovery-learning)
+**근거 패턴** → [POE 발견 학습](/education/insights/poe-discovery-learning)

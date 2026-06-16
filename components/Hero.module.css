@@ -112,11 +112,11 @@
   color: rgba(255, 255, 255, 0.95);
 }
 
-/* 부제 — 독자에게 이 문서가 어떤 의미인지 */
+/* 부제 — 독자에게 이 문서가 어떤 의미인지. 노션 본문 컬러로 가독성 확보 */
 .description {
   font-size: 1.1rem;
   line-height: 1.75;
-  color: rgba(55, 53, 47, 0.5);
+  color: rgb(55, 53, 47);
   max-width: 34rem;
   margin: 0 auto;
   word-break: keep-all;
@@ -124,7 +124,7 @@
 }
 
 :global(.dark) .description {
-  color: rgba(255, 255, 255, 0.42);
+  color: rgba(255, 255, 255, 0.81);
 }
 
 .description p {

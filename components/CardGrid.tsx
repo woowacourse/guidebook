@@ -3,7 +3,7 @@ import styles from './Card.module.css'
 
 interface CardGridProps {
   children: ReactNode
-  columns?: 2 | 3
+  columns?: 1 | 2 | 3
   variant?: 'grid' | 'list'
 }
 

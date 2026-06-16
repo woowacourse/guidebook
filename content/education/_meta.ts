@@ -1,11 +1,4 @@
 import logs from '../logs'
-import insightsMeta from './insights/_meta'
-
-const insightsCount = Object.entries(insightsMeta).filter(
-  ([key, value]) =>
-    key !== 'index' &&
-    !(typeof value === 'object' && value !== null && 'display' in value && value.display === 'hidden')
-).length
 
 export default {
   index: {
@@ -23,7 +16,7 @@ export default {
   '--understand': { type: 'separator', title: '교육 모델 이해하기' },
   philosophy: '🎯 교육 철학',
   curriculum: '🗺️ 커리큘럼',
-  insights: `🧩 검증된 패턴 (${insightsCount})`,
+  insights: '🧩 검증된 패턴',
   logs: { title: `실험 로그 (${logs.length})`, display: 'hidden' },
   tools: { title: '검증된 도구', display: 'hidden' },
   conversations: {

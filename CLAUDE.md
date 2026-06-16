@@ -65,9 +65,8 @@ content/
 ├── logs.ts                    실험 로그 메타데이터 (LogList 데이터 소스)
 └── education/
     ├── philosophy/            교육 철학
-    ├── design-patterns/       디자인 패턴 카탈로그
     ├── curriculum/            커리큘럼 (레벨별 설계 원칙)
-    ├── insights/              인사이트 (실험 로그에서 추출한 교차 패턴)
+    ├── insights/              검증된 패턴 (실험 로그에서 추출·검증된 해결 패턴)
     ├── tools/                 검증된 도구 (복사해서 바로 쓰는 워크플로우)
     └── logs/                  실험 로그 (매주 쌓이는 원재료)
 ```
@@ -198,8 +197,7 @@ T2 이상 승급된 레포만 `content/education-experiment/repositories/` 에 �
     ↓ log-quality-agent (품질 평가 + 개선)
     ↓ insight-agent (교차 패턴 탐지)
     ├→ tools/          (검증된 도구, P2 ≥ 4)
-    ├→ insights/       (교차 패턴, P3 ≥ 4)
-    ├→ design-patterns/ (디자인 패턴, P4 ≥ 4 + P1 ≥ 3)
+    ├→ insights/       (검증된 패턴, P3 ≥ 4 또는 P4 ≥ 4 + P1 ≥ 3)
     ├→ curriculum/     (커리큘럼 원칙, P4 ≥ 4 + P1 ≥ 3)
     └→ philosophy/     (교육 철학, P4 ≥ 4 + P1 ≥ 4, 엄격)
 ```

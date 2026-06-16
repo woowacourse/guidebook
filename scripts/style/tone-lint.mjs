@@ -1,13 +1,13 @@
 #!/usr/bin/env node
-// tone-lint — 큐레이션 교육 문서의 문체(말투)를 점검한다.
+// tone-lint — 큐레이션 교육 문서의 문체(말투)를 점검합니다.
 //
-// 규약: content/education 의 큐레이션 문서 본문은 **한다체**(평서형 -ㄴ다/-다)로 쓴다.
-//       합니다체("~합니다/~습니다")·해요체("~해요/~예요")는 지양한다.
-//       단, 크루·코치의 실제 발화 인용은 원문(합니다체)을 유지한다 — 이 린트는
-//       자동 차단이 아니라 사람이 판단하는 온디맨드 리포트다.
+// 규칙: content/education 의 큐레이션 문서 본문 문장은 **합니다체**(~합니다/~습니다/~입니다)로
+//       씁니다. 한다체("~한다/~다")·해요체("~해요/~예요")는 지양합니다.
+//       단, 코드·인용 발화·도구의 질문 템플릿은 예외이므로, 이 린트는 자동 차단이 아니라
+//       사람이 판단하는 온디맨드 리포트입니다.
 //
 // 사용: node scripts/style/tone-lint.mjs
-// 종료코드: 위반 0 → 0, 위반 있음 → 1 (CI/precommit 게이트로도 쓸 수 있음)
+// 종료코드: 위반 0 → 0, 본문 위반 있음 → 1 (CI/precommit 게이트로도 쓸 수 있습니다)
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -23,17 +23,12 @@ const SCOPE = [
   'content/education/tools',
 ];
 
-// '요'로 끝나지만 어미가 아닌 흔한 명사/표현 (오탐 제거)
-const YO_NOUN_DENY = /(중요|필요|개요|내용|상호|용도|효용|범위|이유|자유|비유|여유|소요|수요|공유|소유|점유|보유|함유|고유)$/;
-
 function listFiles(rel) {
   const abs = path.join(ROOT, rel);
   if (!fs.existsSync(abs)) return [];
   const st = fs.statSync(abs);
   if (st.isFile()) return /\.mdx?$/.test(abs) ? [abs] : [];
-  return fs
-    .readdirSync(abs)
-    .flatMap((e) => listFiles(path.join(rel, e)));
+  return fs.readdirSync(abs).flatMap((e) => listFiles(path.join(rel, e)));
 }
 
 // 펜스 코드블록 / 인라인 코드 / frontmatter 제거 (라인 번호 보존 위해 빈 줄 치환)
@@ -46,36 +41,39 @@ function maskNonProse(text) {
     if (inFrontmatter) { if (/^---\s*$/.test(l)) inFrontmatter = false; return ''; }
     if (/^\s*```/.test(l)) { inFence = !inFence; return ''; }
     if (inFence) return '';
-    return l.replace(/`[^`]*`/g, ' ');
+    return l
+      .replace(/`[^`]*`/g, ' ')           // 인라인 코드
+      .replace(/\[[^\]]*\]\([^)]*\)/g, ' ') // 마크다운 링크([제목](url)) — 제목은 다른 문서명이라 제외
+      .replace(/https?:\/\/\S+/g, ' ');     // 맨 URL
   });
 }
 
-// 한 줄에서 합니다체/해요체 어미를 검출한다.
+// 문장 끝 구두점(또는 줄 끝). 닫는 마크다운/괄호/따옴표도 허용.
+const SENT_END = `[.!?…"'“”‘’．」)\\]*~]`;
+
+// 한 줄에서 비-합니다체(한다체·해요체) 어미를 검출합니다.
 function findEndings(line, isHeading) {
+  if (isHeading) return [];
   const hits = [];
-  // 합니다체: 습니다 / 습니까
-  for (const m of line.matchAll(/[가-힣]*(습니다|습니까)/g)) {
-    hits.push({ kind: '합니다체', text: m[0] });
+  // 한다체: 문장 끝 'X다' (단 합니다체 '-니다'는 정답이므로 제외, 조사 '마다/보다' 제외)
+  // 문장 끝(구두점/EOL)만 매칭해 '현재보다 약간'·'할 때마다' 같은 조사 오탐을 피합니다.
+  const PARTICLE = new Set(['마', '보', '부', '까']); // 마다/보다/부터아님... '~다' 조사·연결 어미 오탐 방지
+  for (const m of line.matchAll(new RegExp(`([가-힣])다(?=${SENT_END}|$)`, 'g'))) {
+    if (m[1] === '니') continue;       // 합니다/습니다/입니다 = 합니다체(정답)
+    if (PARTICLE.has(m[1])) continue;  // 마다(=each)/보다(=than) 등 조사
+    hits.push({ kind: '한다체', text: `${m[1]}다` });
   }
-  // 합니다체: ~ㅂ니다 (받침 ㅂ + 니다). '아니다'(한다체)와 '습니다'(위 처리)는 제외
-  for (const m of line.matchAll(/([가-힣])니다/g)) {
-    if (m[1] === '아') continue;            // 아니다 = 한다체
-    if (/습니다$/.test(m[0])) continue;      // 위에서 처리
-    hits.push({ kind: '합니다체', text: m[0] });
-  }
-  // 해요체: 문장 끝 ~요 (헤딩 제외, 명사 오탐 제외)
-  if (!isHeading) {
-    for (const m of line.matchAll(/[가-힣]{2,}요(?=[.!?…"'」)\]]|$)/g)) {
-      if (YO_NOUN_DENY.test(m[0])) continue;
-      hits.push({ kind: '해요체', text: m[0] });
-    }
+  // 해요체: 문장 끝 'X요'
+  for (const m of line.matchAll(new RegExp(`([가-힣]{2,}요)(?=${SENT_END}|$)`, 'g'))) {
+    if (/(중요|필요|개요|내용|상호|용도|효용|범위|이유|자유|비유|여유|소요|수요|공유|소유|점유|보유|함유|고유|주요)$/.test(m[1])) continue;
+    hits.push({ kind: '해요체', text: m[1] });
   }
   return hits;
 }
 
-// 매치가 인용("..."/'...'/「...」/> blockquote) 안일 가능성 — 사람 판단용 표시
+// 인용("...")/블록쿼트(>) 안 — 원문 발화일 수 있어 사람 검토용으로 분리
 function looksQuoted(rawLine) {
-  return /^\s*>/.test(rawLine) || /["'"'「][^"'"'」]*["'"'」]/.test(rawLine);
+  return /^\s*>/.test(rawLine) || /["'“‘「][^"'”’」]*["'”’」]/.test(rawLine);
 }
 
 const files = SCOPE.flatMap(listFiles);
@@ -86,8 +84,7 @@ const report = [];
 for (const abs of files) {
   const raw = fs.readFileSync(abs, 'utf8');
   const rawLines = raw.split('\n');
-  const masked = maskNonProse(raw);
-  masked.forEach((line, idx) => {
+  maskNonProse(raw).forEach((line, idx) => {
     const isHeading = /^\s*#/.test(rawLines[idx]);
     const hits = findEndings(line, isHeading);
     if (!hits.length) return;
@@ -106,28 +103,24 @@ for (const abs of files) {
   });
 }
 
-// 출력
 if (report.length === 0) {
-  console.log(`✓ tone-lint: 위반 없음 (${files.length}개 파일, 한다체 일관 ✓)`);
+  console.log(`✓ tone-lint: 위반 없음 (${files.length}개 파일, 합니다체 일관 ✓)`);
   process.exit(0);
 }
 
-console.log(`tone-lint: ${files.length}개 파일 점검 — 본문 위반 ${violationCount}건, 인용 추정 ${quotedCount}건\n`);
+console.log(`tone-lint: ${files.length}개 파일 점검 — 본문 위반 ${violationCount}건, 인용 추정 ${quotedCount}건`);
+console.log('규칙: 본문은 합니다체. 아래 한다체/해요체를 합니다체로 고칩니다.\n');
+
 const prose = report.filter((r) => !r.quoted);
 const quoted = report.filter((r) => r.quoted);
 
 if (prose.length) {
-  console.log('■ 수정 권장 (본문 — 한다체로):');
-  for (const r of prose) {
-    console.log(`  ${r.file}:${r.line}  [${r.kind} "${r.text}"]  ${r.snippet}`);
-  }
+  console.log('■ 수정 권장 (본문 — 합니다체로):');
+  for (const r of prose) console.log(`  ${r.file}:${r.line}  [${r.kind} "${r.text}"]  ${r.snippet}`);
 }
 if (quoted.length) {
-  console.log('\n□ 검토 필요 (인용/블록쿼트 안 — 원문이면 유지):');
-  for (const r of quoted) {
-    console.log(`  ${r.file}:${r.line}  [${r.kind} "${r.text}"]  ${r.snippet}`);
-  }
+  console.log('\n□ 검토 필요 (인용/블록쿼트 안 — 원문 발화면 유지):');
+  for (const r of quoted) console.log(`  ${r.file}:${r.line}  [${r.kind} "${r.text}"]  ${r.snippet}`);
 }
 
-// 본문 위반이 있으면 1로 종료(인용 추정만 있으면 0)
 process.exit(violationCount > 0 ? 1 : 0);

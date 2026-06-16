@@ -5,7 +5,6 @@
 /* ── 번호 붙은 원칙 선언 ───────────────────── */
 /* 테마 primary (라이트=짙은 회색, 다크=옅은 회색). 사이트 링크/액티브와 동일 톤. */
 .claim {
-  --m-accent: hsl(var(--nextra-primary-hue) var(--nextra-primary-saturation) var(--nextra-primary-lightness));
   display: flex;
   gap: 1rem;
   align-items: baseline;
@@ -18,9 +17,12 @@
   font-weight: 800;
   line-height: 1;
   letter-spacing: -0.04em;
-  color: var(--m-accent);
-  opacity: 0.55;              /* 모노크롬에서 번호는 장식 — 본문보다 한 단계 옅게 */
+  color: rgba(23, 23, 23, 0.9);   /* 본문과 통일 — 검은색 */
   font-variant-numeric: tabular-nums;
+}
+
+:global(.dark) .num {
+  color: rgba(245, 245, 245, 0.92);
 }
 
 .claimText {

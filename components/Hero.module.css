@@ -1,66 +1,97 @@
-/* Hero section for landing page */
+/* Hero — 랜딩 '선언' (manifesto) */
 .hero {
   text-align: center;
-  padding: 3.5rem 0 2.5rem;
-  margin-bottom: 0.5rem;
+  padding: 5.5rem 0 4.5rem;
 }
 
+/* 아이브로 — 이 사이트가 무엇인지 (제목 위 작은 라벨) */
+.eyebrow {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: rgba(55, 53, 47, 0.45);
+  margin: 0 0 1.4rem;
+}
+
+:global(.dark) .eyebrow {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* 제목 — 미션 한 줄. 한국어 어절 보존 + 균형 줄바꿈 */
 .title {
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 6vw, 3.4rem);
   font-weight: 800;
-  letter-spacing: -0.03em;
-  line-height: 1.2;
-  margin: 0 0 0.75rem;
+  letter-spacing: -0.035em;
+  line-height: 1.14;
+  margin: 0 0 1.6rem;
   color: rgb(55, 53, 47);
+  word-break: keep-all;
+  text-wrap: balance;
 }
 
 :global(.dark) .title {
   color: rgba(255, 255, 255, 0.95);
 }
 
-/* 서브타이틀 — 이 사이트가 무엇인지 */
-.subtitle {
-  font-size: 1.125rem;
-  font-weight: 500;
-  color: rgba(55, 53, 47, 0.5);
-  margin: 0 0 1rem;
-  letter-spacing: -0.01em;
-}
-
-:global(.dark) .subtitle {
-  color: rgba(255, 255, 255, 0.4);
-}
-
+/* 부제 — 독자에게 이 문서가 어떤 의미인지 */
 .description {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: rgba(55, 53, 47, 0.45);
-  max-width: 32rem;
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: rgba(55, 53, 47, 0.5);
+  max-width: 34rem;
   margin: 0 auto;
+  word-break: keep-all;
+  text-wrap: pretty;
 }
 
 :global(.dark) .description {
-  color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.42);
 }
 
 .description p {
   margin: 0;
 }
 
+/* CTA — 우테코 철학을 담은 초대 버튼 */
+.actions {
+  margin-top: 2.2rem;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+  background: rgb(55, 53, 47);
+  border-radius: 8px;
+  padding: 0.7rem 1.25rem;
+  text-decoration: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.cta:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+:global(.dark) .cta {
+  background: rgba(255, 255, 255, 0.95);
+  color: rgb(28, 27, 24);
+}
+
 @media (max-width: 640px) {
   .hero {
-    padding: 2.5rem 0 1.5rem;
-  }
-
-  .title {
-    font-size: 1.75rem;
-  }
-
-  .subtitle {
-    font-size: 1rem;
+    padding: 3.5rem 0 2.5rem;
   }
 
   .description {
-    font-size: 0.875rem;
+    font-size: 0.95rem;
+  }
+
+  .actions {
+    margin-top: 1.6rem;
   }
 }

@@ -17,6 +17,10 @@ export default {
     title: '교육',
     type: 'page'
   },
+  timeline: {
+    title: '타임라인',
+    display: 'hidden'
+  },
   'education-experiment': {
     title: 'Education Experiment',
     display: 'hidden'

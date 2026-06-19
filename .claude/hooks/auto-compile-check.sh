@@ -1,5 +1,5 @@
 #!/bin/bash
-# auto-compile-check — Stop 훅. knowledge/raw/ 에 미합성분 raw 가 임계값 이상 누적되면
+# auto-compile-check — Stop 훅. llm-wiki/raw/ 에 미합성분 raw 가 임계값 이상 누적되면
 # 다음 턴에 /지식정제 자동 실행을 추천한다.
 #
 # 카파시 LLM Wiki 패턴의 ingest/compile 분리 원칙에 따라 raw 가 자주 쌓이고
@@ -10,9 +10,9 @@
 # - 과거: `git diff --diff-filter=A <lastCompileCommit> HEAD` 로 "마지막 compile 이후
 #   추가된 raw" 를 셌다. 두 결함 — (1) 사이클이 마커를 advance 안 하면 같은 raw 를 매 턴
 #   다시 세서 무한 오탐, (2) 한 커밋이 batchSize 보다 많이 추가하면 일부가 orphan.
-# - 현재: scripts/knowledge/compile-state.mjs 의 파일 단위 ledger(compiledRaw) 로
+# - 현재: scripts/llm-wiki/compile-state.mjs 의 파일 단위 ledger(compiledRaw) 로
 #   "실제로 wiki 에 합성 안 된 auto-eligible raw" 수를 직접 센다. 마커 불일치/orphan 소멸.
-#   auto-eligible = knowledge/raw/*.md (루트). 하위 폴더는 deliberate-only 라 제외.
+#   auto-eligible = llm-wiki/raw/*.md (루트). 하위 폴더는 deliberate-only 라 제외.
 #
 # 동작:
 # - compile-state.mjs pending --count >= threshold 이면 exit 2 (stderr 메시지)
@@ -21,7 +21,7 @@
 set -e
 PROJECT_DIR="${CLAUDE_PROJECT_DIR:-$(pwd)}"
 STATE="$PROJECT_DIR/.claude/sync-state.json"
-SCRIPT="$PROJECT_DIR/scripts/knowledge/compile-state.mjs"
+SCRIPT="$PROJECT_DIR/scripts/llm-wiki/compile-state.mjs"
 
 # 위키 비활성 / 도구 부재 → 조용히 종료 (훅이 깨지지 않도록)
 if [ ! -f "$STATE" ]; then exit 0; fi
@@ -40,7 +40,7 @@ case "$PENDING" in
 esac
 
 if [ "$PENDING" -ge "$THRESHOLD" ]; then
-  echo "[auto-compile] knowledge/raw/ 에 ${PENDING}개 auto-eligible raw 가 미합성 누적 (임계값 ${THRESHOLD}). 다음 턴에 /지식정제 자동 실행을 권장합니다. (하위 폴더 external/derived/conversations 는 deliberate-only 라 제외)" >&2
+  echo "[auto-compile] llm-wiki/raw/ 에 ${PENDING}개 auto-eligible raw 가 미합성 누적 (임계값 ${THRESHOLD}). 다음 턴에 /지식정제 자동 실행을 권장합니다. (하위 폴더 external/derived/conversations 는 deliberate-only 라 제외)" >&2
   exit 2
 fi
 

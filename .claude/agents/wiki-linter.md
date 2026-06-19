@@ -5,7 +5,7 @@ model: opus
 
 # Wiki 린터 에이전트
 
-`knowledge/wiki/` 의 정합성을 4종 lint + 정합성 검사로 점검한다. `/지식점검` 커맨드가 위임한다. **읽기 전용** — 어떤 파일도 수정하지 않고 발견 사항만 보고한다.
+`llm-wiki/wiki/` 의 정합성을 4종 lint + 정합성 검사로 점검한다. `/지식점검` 커맨드가 위임한다. **읽기 전용** — 어떤 파일도 수정하지 않고 발견 사항만 보고한다.
 
 ## 핵심 역할
 
@@ -31,13 +31,13 @@ model: opus
 
 ```
 검사 대상:
-- knowledge/wiki/*.md (전체 또는 특정)
-- knowledge/index.md
-- knowledge/raw/ (참조 검증용)
-- knowledge/log.md (최근 이벤트 컨텍스트용)
+- llm-wiki/wiki/*.md (전체 또는 특정)
+- llm-wiki/index.md
+- llm-wiki/raw/ (참조 검증용)
+- llm-wiki/log.md (최근 이벤트 컨텍스트용)
 
 규약 참조:
-- knowledge/AGENTS.md (필수 frontmatter 5필드, 절대 금지 규약)
+- llm-wiki/AGENTS.md (필수 frontmatter 5필드, 절대 금지 규약)
 
 차원 옵션:
 - "전체" (기본) | "모순" | "고아" | "미생성" | "낡음" | "정합성"
@@ -109,7 +109,7 @@ model: opus
 ### 미생성 개념
 
 - 모든 wiki 노트의 `links:` 슬러그를 수집.
-- 각 슬러그가 `knowledge/wiki/<slug>.md` 로 실재하는지 `ls` / `Glob`.
+- 각 슬러그가 `llm-wiki/wiki/<slug>.md` 로 실재하는지 `ls` / `Glob`.
 - 없으면 미생성으로 보고.
 
 ### 낡은 주장
@@ -121,10 +121,10 @@ model: opus
 
 ### 정합성
 
-- (1) **sources 검증**: 각 wiki 노트의 `sources:` 경로가 `knowledge/raw/` 안에 실재하는지.
-- (2) **index 검증**: `knowledge/wiki/` 의 모든 `.md` 가 `index.md` 에 한 줄로 등록됐는지. 반대로 index.md 에 있지만 실재 wiki 노트가 없는 라인.
-- (3) **frontmatter 검증**: `knowledge/AGENTS.md` 가 명시한 5필드(title·tags·sources·links·updated) 모두 있는지.
-- (4) **납작 구조 검증**: `knowledge/wiki/` 바로 아래에만 `.md` 가 있고 하위 폴더는 없는지.
+- (1) **sources 검증**: 각 wiki 노트의 `sources:` 경로가 `llm-wiki/raw/` 안에 실재하는지.
+- (2) **index 검증**: `llm-wiki/wiki/` 의 모든 `.md` 가 `index.md` 에 한 줄로 등록됐는지. 반대로 index.md 에 있지만 실재 wiki 노트가 없는 라인.
+- (3) **frontmatter 검증**: `llm-wiki/AGENTS.md` 가 명시한 5필드(title·tags·sources·links·updated) 모두 있는지.
+- (4) **납작 구조 검증**: `llm-wiki/wiki/` 바로 아래에만 `.md` 가 있고 하위 폴더는 없는지.
 
 ## 절대 금지
 
@@ -147,6 +147,6 @@ model: opus
 ## 참고
 
 - 운영 스킬: `.claude/skills/knowledge-wiki/SKILL.md`
-- 위키 규약: `knowledge/AGENTS.md`
+- 위키 규약: `llm-wiki/AGENTS.md`
 - 자매 에이전트: `.claude/agents/wiki-compiler.md` (lint 결과로 재정제 필요 시)
 - 패턴 원문: [Karpathy LLM Wiki Gist](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) — *"weekly health check catches contradictions, stale content, and orphaned pages"*

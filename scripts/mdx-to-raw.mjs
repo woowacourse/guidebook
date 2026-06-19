@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// mdx-to-raw.mjs — content/ 의 MDX 파일을 knowledge/raw/ 의 평문 markdown 으로 변환.
+// mdx-to-raw.mjs — content/ 의 MDX 파일을 llm-wiki/raw/ 의 평문 markdown 으로 변환.
 //
 // 변환 규칙 (Phase A 시드 마이그레이션과 동일):
 //   - MDX frontmatter (---...---) 제거 (입력에서 제목·설명만 추출해 참고)
@@ -10,7 +10,7 @@
 //   - <Card>, <CardGrid>, <Hero>, <Toggle> 등 그 외 JSX 태그는 제거하되 내용은 유지
 //   - 본문 markdown 은 한 글자도 손대지 않음
 //
-// 출력 frontmatter (knowledge/raw 표준):
+// 출력 frontmatter (llm-wiki/raw 표준):
 //   ---
 //   source_type: <log|external|conversation|...>
 //   captured: <YYYY-MM-DD>

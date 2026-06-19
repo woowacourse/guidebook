@@ -10,7 +10,7 @@ import styles from './CurriculumTimeline.module.css'
 
 // content/curriculum-history.ts 를 기수별 커리큘럼 뷰로 렌더링한다.
 // 기수 스텝퍼 → 그 해의 핵심 + 트랙 토글 + 레벨 0~5.
-// 원본/상세는 knowledge/wiki/curriculum-evolution.md.
+// 원본/상세는 llm-wiki/wiki/curriculum-evolution.md.
 export function CurriculumTimeline() {
   const latest = cohorts.reduce((m, c, i) => (c.year >= cohorts[m].year ? i : m), 0)
   const [active, setActive] = useState(latest)

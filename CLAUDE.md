@@ -20,6 +20,20 @@ Nextra 4 + Next.js App Router 기반 교육 가이드북.
 | 사이트 카탈로그 | `public/llms.txt` | 외부 LLM (ChatGPT/Claude/Gemini 등) |
 | 전체 콘텐츠 평탄화 | `public/llms-full.txt` | 일괄 ingest 가 필요한 외부 LLM |
 
+## 지식 위키 분리 — 원본(llm-wiki)과 발행본(content)
+
+이 저장소에는 **두 개의 위키**가 있다. 용어가 비슷하니 구분한다:
+
+| | **발행 위키** (공개) | **원본 위키** (비공개) |
+|---|---|---|
+| 위치 | `content/` (이 repo) | `./llm-wiki/` — `woowacourse-projects/llm-wiki` 클론 |
+| 성격 | 독자용으로 분석·정리한 발행 문서 | 모든 raw 1차자료 + 합성 wiki 노트 (source of truth) |
+| 추적 | 이 repo가 커밋 | `/llm-wiki/` 는 **gitignore** — 별도 비공개 repo |
+| 커맨드 | `/위키정리`(lint) · `/말투점검`(문체) | `/위키흡수` · `/위키정제` · `/위키점검` · `/위키질의` |
+
+- **부트스트랩**: 원본 위키 작업(`/위키*`) 전, 새 체크아웃에서는 한 번 클론한다 — `git clone https://github.com/woowacourse-projects/llm-wiki.git llm-wiki`.
+- **dual-write**: `/로그추가` 는 발행본(`content/`)을 이 repo에, 원본(`raw/`)을 `./llm-wiki`(비공개)에 각각 커밋한다.
+
 ## 콘텐츠 추가 시 필수 작업
 
 `content/` 디렉토리에 새 MDX 파일을 추가하거나 기존 문서에 의미 있는 내용을 추가했을 때, 반드시 아래 두 가지를 함께 수행해야 한다:

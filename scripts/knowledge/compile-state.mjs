@@ -11,23 +11,23 @@
 //   정의하고, 매 호출 시 wiki 를 스캔해 파생시킨다. wiki 노트가 곧 합성 기록의 진실 원천이므로
 //   동기화할 별도 상태가 없다 — 누가(사람/자동화) 합성하든 항상 정확하다.
 //
-// auto-eligible 범위: knowledge/raw/*.md (루트) 만.
+// auto-eligible 범위: llm-wiki/raw/*.md (루트) 만.
 //   하위 폴더(conversations/·external/·derived/·assets/)는 새 유형/큐레이션 자료라
 //   사람 검토가 필요한 deliberate-only. auto 훅 대상에서 제외한다.
 //   (deliberate `/지식정제 raw/<subdir>/...` 로 처리.)
 //
 // 사용법:
-//   node scripts/knowledge/compile-state.mjs pending [--count]
+//   node scripts/llm-wiki/compile-state.mjs pending [--count]
 //     --count 없으면 미합성 auto-eligible raw 목록(JSON), 있으면 개수만.
 
 import fs from 'node:fs';
 import path from 'node:path';
 
 const ROOT = process.env.CLAUDE_PROJECT_DIR || process.cwd();
-const RAW_DIR = path.join(ROOT, 'knowledge/raw');
-const WIKI_DIR = path.join(ROOT, 'knowledge/wiki');
+const RAW_DIR = path.join(ROOT, 'llm-wiki/raw');
+const WIKI_DIR = path.join(ROOT, 'llm-wiki/wiki');
 
-// auto-eligible raw = knowledge/raw/ 루트의 *.md (하위 폴더 제외)
+// auto-eligible raw = llm-wiki/raw/ 루트의 *.md (하위 폴더 제외)
 function rootRawFiles() {
   if (!fs.existsSync(RAW_DIR)) return [];
   return fs

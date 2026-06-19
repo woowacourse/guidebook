@@ -1,5 +1,5 @@
 #!/bin/bash
-# protect-raw — PreToolUse 훅. knowledge/raw/ 안 파일에 대한 Write/Edit 시도를 차단한다.
+# protect-raw — PreToolUse 훅. llm-wiki/raw/ 안 파일에 대한 Write/Edit 시도를 차단한다.
 #
 # 카파시 LLM Wiki 패턴의 절대 규약: "raw 는 불변. 한 번 들어오면 절대 수정 안 함."
 # 오타·오류조차 wiki 에서 정정한다 — 그래야 모든 wiki 주장이 출처로 역추적된다.
@@ -10,14 +10,14 @@
 #   - exit 2: 차단 (stderr 메시지를 Claude 에 전달)
 #
 # 차단 대상 도구: Write, Edit, NotebookEdit
-# 차단 대상 경로: knowledge/raw/** (단, 새 파일 추가는 허용 — 기존 파일 수정만 차단)
+# 차단 대상 경로: llm-wiki/raw/** (단, 새 파일 추가는 허용 — 기존 파일 수정만 차단)
 #
 # Karpathy Gist: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
 
 set -e
 
 PROJECT_DIR="${CLAUDE_PROJECT_DIR:-$(pwd)}"
-RAW_DIR="$PROJECT_DIR/knowledge/raw"
+RAW_DIR="$PROJECT_DIR/llm-wiki/raw"
 
 # stdin 에서 JSON 읽기
 INPUT="$(cat)"
@@ -42,7 +42,7 @@ case "$FILE_PATH" in
   *)  ABS_PATH="$PROJECT_DIR/$FILE_PATH" ;;
 esac
 
-# knowledge/raw/ 안에 있는지 확인
+# llm-wiki/raw/ 안에 있는지 확인
 case "$ABS_PATH" in
   "$RAW_DIR"/*) ;;
   *) exit 0 ;;
@@ -56,7 +56,7 @@ fi
 # Edit / 기존 파일 Write / NotebookEdit → 차단
 REL_PATH="${ABS_PATH#$PROJECT_DIR/}"
 cat <<EOF >&2
-[protect-raw] knowledge/raw/ 안 기존 파일은 절대 수정 금지입니다.
+[protect-raw] llm-wiki/raw/ 안 기존 파일은 절대 수정 금지입니다.
 
 차단된 경로: $REL_PATH
 도구: $TOOL_NAME
@@ -68,6 +68,6 @@ cat <<EOF >&2
 - 출처 보강이라면 → 새 raw 파일을 추가 (다른 파일명으로)
 - 정말 raw 자체를 바꿔야 한다면 → 사용자에게 명시적으로 확인 후 hook 일시 비활성화
 
-규약: knowledge/AGENTS.md
+규약: llm-wiki/AGENTS.md
 EOF
 exit 2

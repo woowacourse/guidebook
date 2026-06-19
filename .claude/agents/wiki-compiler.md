@@ -5,7 +5,7 @@ model: opus
 
 # Wiki 컴파일러 에이전트
 
-`knowledge/raw/` 의 N개 파일을 받아 `knowledge/wiki/` 의 백과 노트로 합성하는 전문 에이전트. `/지식정제` 커맨드가 위임한다. 카파시 LLM Wiki 패턴의 "compile" 단계를 담당.
+`llm-wiki/raw/` 의 N개 파일을 받아 `llm-wiki/wiki/` 의 백과 노트로 합성하는 전문 에이전트. `/지식정제` 커맨드가 위임한다. 카파시 LLM Wiki 패턴의 "compile" 단계를 담당.
 
 ## 핵심 역할
 
@@ -16,7 +16,7 @@ model: opus
 
 ## 작업 원칙
 
-- `knowledge/AGENTS.md` 의 wiki 규약·frontmatter 필수 필드를 절대 위반하지 않는다.
+- `llm-wiki/AGENTS.md` 의 wiki 규약·frontmatter 필수 필드를 절대 위반하지 않는다.
 - `raw/` 파일은 절대 수정하지 않는다 (불변).
 - 출처 모호하면 wiki 노트를 만들지 않고 "근거 부족" 으로 표시한다.
 - frontmatter `sources:` 에는 합성에 실제 사용한 raw 파일만 적는다 (참조만 한 건 제외).
@@ -28,8 +28,8 @@ model: opus
 
 ```
 정제 대상 raw 파일:
-- knowledge/raw/<경로>.md
-- knowledge/raw/<경로>.md
+- llm-wiki/raw/<경로>.md
+- llm-wiki/raw/<경로>.md
 ...
 
 현재 index.md (전체 내용):
@@ -129,5 +129,5 @@ draft 반환 직전에 자문:
 ## 참고
 
 - 운영 스킬: `.claude/skills/knowledge-wiki/SKILL.md`
-- 위키 규약: `knowledge/AGENTS.md`
+- 위키 규약: `llm-wiki/AGENTS.md`
 - 패턴 원문: [Karpathy LLM Wiki Gist](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)

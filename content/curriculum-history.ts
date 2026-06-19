@@ -1,6 +1,6 @@
 // 기수별 커리큘럼의 단일 진실 원천 (웹 표시용).
 //
-// 원본/상세는 knowledge/wiki/curriculum-evolution.md, 레벨 골격은 공식 트랙 페이지
+// 원본/상세는 llm-wiki/wiki/curriculum-evolution.md, 레벨 골격은 공식 트랙 페이지
 // (woowacourse.io/{frontend,backend,android,softskill}) 기반.
 //
 // 구조: 기수(gi)별로 "이 해의 핵심" + 그 기수에 존재한 트랙만 노출.

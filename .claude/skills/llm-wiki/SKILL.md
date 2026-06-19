@@ -1,9 +1,9 @@
 ---
 name: llm-wiki
-description: "llm-wiki/ 디렉터리(Karpathy LLM Wiki 패턴) 운영 스킬. /위키흡수, /위키정제, /위키점검, /위키질의, 위키 흡수, raw 추가, wiki 합성, 위키 정제, wiki 노트 생성, knowledge 위키 작업, raw에서 wiki 만들기, index.md 갱신 요청 시 반드시 이 스킬을 사용할 것. content/ 가 아닌 llm-wiki/ 안에서의 작업 전용."
+description: "llm-wiki/ 디렉터리(Karpathy LLM Wiki 패턴) 운영 스킬. /위키흡수, /위키정제, /위키점검, /위키질의, 위키 흡수, raw 추가, wiki 합성, 위키 정제, wiki 노트 생성, llm-wiki 위키 작업, raw에서 wiki 만들기, index.md 갱신 요청 시 반드시 이 스킬을 사용할 것. content/ 가 아닌 llm-wiki/ 안에서의 작업 전용."
 ---
 
-# Knowledge Wiki 운영 스킬
+# LLM Wiki 운영 스킬
 
 `llm-wiki/` 디렉터리(카파시 LLM Wiki 패턴, [Gist](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f))를 유지보수할 때의 공통 컨텍스트와 규약. 모든 `/위키*` 커맨드가 이 스킬을 공유한다.
 
@@ -64,7 +64,7 @@ description: "llm-wiki/ 디렉터리(Karpathy LLM Wiki 패턴) 운영 스킬. /�
 - ❌ index.md 한 줄을 단락으로 늘림
 - ❌ frontmatter 없이 wiki 노트 작성
 - ❌ raw → wiki 복붙 (반드시 자기 언어로 재작성)
-- ❌ `content/` 직접 편집 (knowledge → content는 별도 큐레이션 단계)
+- ❌ `content/` 직접 편집 (llm-wiki → content는 별도 큐레이션 단계)
 
 ## ingest와 compile의 분리
 

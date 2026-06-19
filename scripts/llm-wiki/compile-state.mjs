@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// knowledge compile-state — "아직 wiki 로 합성 안 된 raw" 를 wiki sources 에서 동적 계산한다.
+// llm-wiki compile-state — "아직 wiki 로 합성 안 된 raw" 를 wiki sources 에서 동적 계산한다.
 //
 // 왜 동적 계산인가:
 //   기존 auto-compile 훅은 `git diff --diff-filter=A <lastCompileCommit> HEAD` 로 raw 수를 셌다.

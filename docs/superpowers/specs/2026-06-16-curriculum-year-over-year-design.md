@@ -8,7 +8,7 @@
 
 `content/education/curriculum/` 의 5개 페이지(개요·설계 원칙·레벨 구성·미션 설계·개선 프로세스)는 대부분 `<Placeholder>` 스텁이다. 우테코 커리큘럼이 매 기수 피드백으로 **진화한다**는 사실이 문서에 드러나지 않는다.
 
-목표는 **"연도별로 커리큘럼이 어떻게 변화했는가"를 독자 중심으로, 최대한 심플하게** 보여주는 것이다. 자세한 원본은 `knowledge/`(LLM 위키)에 두고, 웹 페이지에는 거기서 distill 한 요약만 노출한다.
+목표는 **"연도별로 커리큘럼이 어떻게 변화했는가"를 독자 중심으로, 최대한 심플하게** 보여주는 것이다. 자세한 원본은 `llm-wiki/`(LLM 위키)에 두고, 웹 페이지에는 거기서 distill 한 요약만 노출한다.
 
 ## 2. 합의된 핵심 결정 (사용자 확정)
 
@@ -20,17 +20,17 @@
 
 ## 3. 핵심 제약 (조사로 확인)
 
-- **`knowledge/` 는 웹에 서빙되지 않는다.** Nextra `contentDirBasePath: '/'` 로 `content/` 만 렌더. → 웹 카드는 knowledge 노트를 링크할 수 없고, 자체 distill 사본을 가져야 한다.
+- **`llm-wiki/` 는 웹에 서빙되지 않는다.** Nextra `contentDirBasePath: '/'` 로 `content/` 만 렌더. → 웹 카드는 knowledge 노트를 링크할 수 없고, 자체 distill 사본을 가져야 한다.
 - **데이터 깊이가 최근으로 갈수록 쏠려 있다.** 연도 언급: 2021(20) → 2026(232). 가장 단단한 출처는 react-payments 5년 분석(2021–2026 연도별 실데이터).
 - **트랙은 셋 다 있으나 불균형**: FE(29 files) > BE(19) > Android(10).
 
 ## 4. 아키텍처 / 데이터 흐름
 
 ```
-knowledge/raw/        1차 자료 (2026-05-26-react-payments-555prs-analysis.md, mission-design 등)
-      │  /지식정제 (합성·큐레이션)
+llm-wiki/raw/        1차 자료 (2026-05-26-react-payments-555prs-analysis.md, mission-design 등)
+      │  /위키정제 (합성·큐레이션)
       ▼
-knowledge/wiki/curriculum-evolution.md     ← 원본/detail (연도별 섹션 + 근거·출처). LLM 질의 대상.
+llm-wiki/wiki/curriculum-evolution.md     ← 원본/detail (연도별 섹션 + 근거·출처). LLM 질의 대상.
       │  사람이 한두 줄로 distill
       ▼
 content/curriculum-history.ts              ← 웹의 단일 진실 원천 (요약 데이터)
@@ -42,7 +42,7 @@ components/CurriculumTimeline.tsx          ← 기존 <Timeline>/<TimelineItem> 
 content/education/curriculum/evolution.mdx ← <CurriculumTimeline /> + 짧은 인트로 (심플)
 ```
 
-원본 깊이는 `knowledge/` 에만 존재한다. 웹은 항상 distill 한 요약만 보여준다 — 사용자 요구("원본은 knowledge, 웹은 심플")와 1:1 대응.
+원본 깊이는 `llm-wiki/` 에만 존재한다. 웹은 항상 distill 한 요약만 보여준다 — 사용자 요구("원본은 knowledge, 웹은 심플")와 1:1 대응.
 
 ## 5. 데이터 모델 — `content/curriculum-history.ts`
 
@@ -84,9 +84,9 @@ export default curriculumHistory
 
 ## 9. knowledge 측 (원본 생성)
 
-- `knowledge/wiki/curriculum-evolution.md` 신규 — 연도별 섹션, 근거·출처(react-payments 분석 등) 포함. `/지식정제` 로 합성.
+- `llm-wiki/wiki/curriculum-evolution.md` 신규 — 연도별 섹션, 근거·출처(react-payments 분석 등) 포함. `/위키정제` 로 합성.
 - **범위: 커리큘럼 관련 raw 만 골라 정제** (62~66개 전체가 아니라). 훅이 요청하는 백로그를 이 작업이 일부 소비한다.
-- `knowledge/index.md` 에 노트 등록.
+- `llm-wiki/index.md` 에 노트 등록.
 
 ## 10. 등록 체크리스트 (CLAUDE.md 규약)
 
@@ -94,7 +94,7 @@ export default curriculumHistory
 - [ ] `content/education/curriculum/index.mdx` — CardGrid 에 진입 카드 추가
 - [ ] `content/updates.ts` — 새 문서 항목 맨 위 추가
 - [ ] `mdx-components.tsx` + `components/index.ts` — `CurriculumTimeline` 등록
-- [ ] `knowledge/index.md` — `curriculum-evolution` 노트 등록
+- [ ] `llm-wiki/index.md` — `curriculum-evolution` 노트 등록
 - [ ] (logs.ts 무관 — 로그 아님)
 
 ## 11. 열린 결정 → 기본값 (사용자가 뒤집을 수 있음)
@@ -115,7 +115,7 @@ export default curriculumHistory
 
 ## 13. 구현 순서 (상위 — 상세는 writing-plans 에서)
 
-1. `knowledge/wiki/curriculum-evolution.md` 합성 (`/지식정제` 타깃 범위) + `knowledge/index.md` 등록.
+1. `llm-wiki/wiki/curriculum-evolution.md` 합성 (`/위키정제` 타깃 범위) + `llm-wiki/index.md` 등록.
 2. `content/curriculum-history.ts` 작성 (위 노트에서 distill, 2021–2026 시드).
 3. `components/CurriculumTimeline.tsx` 작성 + 등록(`mdx-components.tsx`, `components/index.ts`).
 4. `content/education/curriculum/evolution.mdx` 작성.

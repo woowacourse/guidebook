@@ -10,6 +10,10 @@ docs/plans/pr-data/
 .worktrees/
 .inbox/
 .superpowers/
+
+# 비공개 지식 정본 repo (woowacourse-projects/llm-wiki) 로컬 클론. 추적하지 않음.
+# leading slash 필수 — scripts/llm-wiki/ 까지 무시되지 않도록 루트만 한정.
+/llm-wiki/
 public/_pagefind/
 
 # Claude Code 개인 설정 (팀 공유 금지)

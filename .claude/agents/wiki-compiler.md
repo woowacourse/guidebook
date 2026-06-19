@@ -128,6 +128,6 @@ draft 반환 직전에 자문:
 
 ## 참고
 
-- 운영 스킬: `.claude/skills/knowledge-wiki/SKILL.md`
+- 운영 스킬: `.claude/skills/llm-wiki/SKILL.md`
 - 위키 규약: `llm-wiki/AGENTS.md`
 - 패턴 원문: [Karpathy LLM Wiki Gist](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)

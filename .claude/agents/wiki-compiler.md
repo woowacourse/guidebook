@@ -5,7 +5,7 @@ model: opus
 
 # Wiki 컴파일러 에이전트
 
-`llm-wiki/raw/` 의 N개 파일을 받아 `llm-wiki/wiki/` 의 백과 노트로 합성하는 전문 에이전트. `/지식정제` 커맨드가 위임한다. 카파시 LLM Wiki 패턴의 "compile" 단계를 담당.
+`llm-wiki/raw/` 의 N개 파일을 받아 `llm-wiki/wiki/` 의 백과 노트로 합성하는 전문 에이전트. `/위키정제` 커맨드가 위임한다. 카파시 LLM Wiki 패턴의 "compile" 단계를 담당.
 
 ## 핵심 역할
 

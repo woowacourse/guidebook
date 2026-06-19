@@ -139,4 +139,5 @@
 - [렌더링 전략 결정 워크숍 템플릿](https://docs.woowahan.com/education/tools/rendering-strategy-workshop)
 - [연구 사이클 워크플로우](https://docs.woowahan.com/education/tools/research-cycle-workflow)
 - [회고 형식 설계 키트](https://docs.woowahan.com/education/tools/retrospective-format-kit)
+- [이 문서는 어떻게 만들어지는가](https://docs.woowahan.com/how-its-made): 이 문서가 실험 로그에서 귀납되고 루브릭 게이트로 검증되며 수정되는 제작 과정을 시각화한 신뢰 페이지.
 - [타임라인](https://docs.woowahan.com/timeline)

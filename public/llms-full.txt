@@ -5111,20 +5111,32 @@ SNS를 끊으면
 
 # 커리큘럼 - 철학을 10개월로 옮기는 법
 
-<Callout type="info">
+<Callout type="note" emoji="💡">
 철학을 10개월로 옮기기 위해서 우리는 거꾸로 갑니다.
 </Callout>
 
 [교육 철학](/education/philosophy)이 **무엇이 자율 성장을 만드는가**를 다룬다면, 커리큘럼은 그 원리를 **약 10개월, 레벨 0~5라는 실제 시간에 어떻게 풀어놓는가**를 다룹니다. 같은 이야기를 한 걸음 더 구체적으로 내려온 것이고, 자기만의 학습 환경을 직접 짜보려는 사람이 보는 칸입니다. 아래 내용은 책상에서 미리 그린 설계도가 아닙니다. 7년 동안 커리큘럼을 굴리며 반복해서 관찰된 방식을 정리한 것이고, 곳곳의 **근거** 링크로 실제 기록·데이터와 이어집니다.
 
-<CardGrid columns={1}>
-  <Card title="수료의 모습부터 거꾸로" icon="🎯" href="#수료의-모습부터-거꾸로" meta="끝부터 거꾸로">
-    수료할 때 어떤 모습이면 좋을지 먼저 정하고, 거기서 거꾸로 10개월을 짭니다.
-  </Card>
-  <Card title="쌓아 올리는 학습" icon="🧱" href="#쌓아-올리는-학습" meta="핵심은 그대로, 매년 한 층">
-    바뀌지 않는 기본기는 그대로 두고, 매년 새 목표를 한 층씩 올립니다.
-  </Card>
-</CardGrid>
+<div style={{ margin: '1.75rem 0' }}>
+  <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.78rem', opacity: 0.5, marginBottom: '0.4rem' }}>
+    <span>시작 · 레벨 0</span>
+    <span>수료 · 레벨 5</span>
+  </div>
+  <div style={{ height: '2px', background: 'currentColor', opacity: 0.18, borderRadius: '2px' }} />
+  <div style={{ display: 'flex', gap: '1.5rem', marginTop: '0.8rem', alignItems: 'flex-start' }}>
+    <div style={{ flex: 1, textAlign: 'right' }}>
+      <a href="#쌓아-올리는-학습" style={{ color: 'inherit', fontWeight: 700, textDecoration: 'underline', textUnderlineOffset: '3px' }}>쌓아 올리는 학습 →</a>
+      <div style={{ fontSize: '0.8rem', opacity: 0.6, marginTop: '0.2rem' }}>핵심은 그대로, 매년 한 층</div>
+    </div>
+    <div style={{ flex: 1, textAlign: 'left' }}>
+      <a href="#수료의-모습부터-거꾸로" style={{ color: 'inherit', fontWeight: 700, textDecoration: 'underline', textUnderlineOffset: '3px' }}>← 수료의 모습부터 거꾸로</a>
+      <div style={{ fontSize: '0.8rem', opacity: 0.6, marginTop: '0.2rem' }}>끝부터 거꾸로</div>
+    </div>
+  </div>
+  <div style={{ textAlign: 'center', fontSize: '0.84rem', opacity: 0.75, marginTop: '0.9rem' }}>
+    시작에서 쌓아 올리는 힘과 끝에서 거꾸로 짜는 힘이 가운데서 만나 <strong>10개월 커리큘럼</strong>이 됩니다.
+  </div>
+</div>
 
 ## 수료의 모습부터 거꾸로
 
@@ -12045,9 +12057,7 @@ import { Callout } from 'nextra/components'
 
 # 교육 철학
 
-<Callout type="note" emoji="🧭">
-**우리는 가르치지 않습니다. 스스로 발견하게 합니다.**
-</Callout>
+## 우리는 가르치지 않습니다. 스스로 발견하게 합니다.
 
 그렇다고 이 말이 멋있어서 내건 구호는 아닙니다. 우테코의 교육 원칙은 책상에서 먼저 세운 신념이 아니라, 매주 쌓이는 실험 로그에서 귀납한 결론입니다. 원칙이 먼저 있고 사례를 끼워 맞춘 게 아니라, 여러 기수의 사례가 먼저 있고 원칙이 뒤따라 드러났습니다.
 
@@ -12087,6 +12097,8 @@ import { Callout } from 'nextra/components'
 
 <Callout type="note" emoji="📐">
 **이 철학은 믿음이 아니라, 경험에서 나온 패턴들입니다.** 이 원칙들은 우리의 실험으로 다시 검증되는 가설이며, 새 로그가 쌓일 때마다 언제든 수정되고 업데이트됩니다.
+
+→ [이 원칙들이 어떻게 검증되는지 보기](/how-its-made)
 </Callout>
 
 <Toggle title="이론적 배경 — 구성주의 · 경험 학습 · 근접 발달 영역">
@@ -12715,6 +12727,81 @@ A3 모눈종이에 성장 곡선을 그리고 감정 어휘로 정밀하게 언�
 - [나의 성장 그래프](/education/logs/growth-graph) — 감정 키워드 테이블, 서프라이즈 피드백
 
 → 근거 패턴: [검증된 패턴 > 회고 설계](/education/insights/retrospective-design)
+
+---
+
+<!-- source: https://docs.woowahan.com/how-its-made -->
+
+# 이 문서는 어떻게 만들어지는가
+
+여러분이 보는 건 다듬어진 결과물입니다. 철학과 커리큘럼, 검증된 패턴은 깔끔하게 정리돼 있지만, 그것만 보면 한 가지 의심이 듭니다 — "이건 그냥 멋진 말 아닐까? 위에서 내려온 선언이거나 누군가의 인상에 불과한 건 아닐까?"
+
+이 페이지는 그 의심에 답하기 위해 **결과물이 만들어지는 과정 자체**를 펼쳐 보입니다.
+
+<Callout type="note" emoji="🔍">
+**이 문서의 주장은 세 가지 방식으로 떠받쳐집니다.** ① 위에서 떨어진 게 아니라 실험 로그에서 **귀납**되고, ② 감이 아니라 루브릭 **점수와 게이트**를 통과하며, ③ 박제된 교리가 아니라 새 기록이 쌓이면 언제든 **수정**됩니다.
+</Callout>
+
+## 콘텐츠는 아래에서 위로 승격됩니다
+
+이 문서의 콘텐츠는 위에서 아래로 쓰이지 않습니다. 매주 쌓이는 실험 로그를 원재료로, 검증을 통과한 것만 한 단계씩 위로 올라갑니다.
+
+<PromotionPipeline />
+
+## 게이트는 감이 아니라 점수입니다
+
+위 게이트를 눌러보면 알 수 있듯, 무엇이 위로 올라갈지는 인상으로 정하지 않습니다. 실험 로그는 **5개 차원·25점**의 품질 루브릭으로, 승격은 **4개 차원·20점**의 승격 루브릭으로 채점됩니다. 점수가 임계값을 넘지 못하면 올라가지 않고, 보강한 뒤 다시 채점됩니다.
+
+## 주장은 수사가 아니라 측정입니다
+
+추상적인 원칙도 가능한 한 숫자로 받칩니다. 아래는 한 미션 저장소(react-payments) 5년치를 분석한 기록에서 나온 값입니다.
+
+<CardGrid>
+  <Card title="555 PR · 5년" icon="📦">한 미션 저장소에 5년간 쌓인 풀 리퀘스트</Card>
+  <Card title="97% 재방문" icon="🔁">215명 중 97%가 같은 저장소로 두 번 이상 돌아왔습니다 — "몰입 기반 성장"의 증거</Card>
+  <Card title="51% 질문" icon="💬">리뷰 코멘트 2,178건 중 51%가 답이 아닌 질문이었습니다 — "협업은 구조다"의 증거</Card>
+</CardGrid>
+
+> 출처: [react-payments 5년 555 PR 분석](/education/logs/react-payments-555prs-analysis)
+
+## 한 주장을 끝까지 따라가 보면
+
+철학의 한 문장은 다음처럼 데이터와 원본 로그, 게이트로 거슬러 추적됩니다. 모든 주장이 이렇게 근거로 연결돼 있습니다.
+
+<Mermaid chart={`
+flowchart TD
+    C["🎯 철학: 협업은 구조다"]
+    D["💬 데이터: 코멘트 2,178건 중 51%가 질문"]
+    L["📝 원본: react-payments 5년 로그"]
+    G["✅ 게이트: 품질·승격 루브릭 통과"]
+    C -->|근거| D
+    D -->|측정 대상| L
+    L -->|통과한 검증| G
+    style C fill:#fff0f0,stroke:#c4554d
+    style D fill:#e9f3f7,stroke:#487ca5
+    style L fill:#f0f4ff,stroke:#4285f4
+    style G fill:#eef3ed,stroke:#2f9e6b
+`} />
+
+## 박제된 교리가 아닙니다
+
+이 문서는 완성된 정답집이 아니라 **계속 갱신되는 가설의 집합**입니다. 새 실험 로그가 들어오면 점수가 다시 매겨지고, 패턴이 바뀌면 위층의 원칙도 수정됩니다. 아래는 실제로 이 문서가 갱신돼 온 기록입니다.
+
+<RecentUpdates />
+
+## 잣대는 사람만 바꿉니다
+
+<Callout type="warning" emoji="📏">
+채점 루브릭(`.claude/log-quality-rubric.md`, `.claude/promotion-rubric.md`)은 **에이전트가 수정하지 않습니다.** 평가 기준이 바뀌면 모든 이전 점수와 비교가 불가능해지기 때문입니다. 기준 변경은 사람이 직접 합니다 — 그래서 점수는 사후에 끼워 맞춰지지 않습니다.
+</Callout>
+
+## 더 깊이 보고 싶다면
+
+<CardGrid>
+  <Card title="연구 사이클 워크플로우" icon="🔧" href="/education/tools/research-cycle-workflow">코치가 이 파이프라인을 실제로 돌리는 방법(슬래시 커맨드 포함)</Card>
+  <Card title="검증된 패턴" icon="💡" href="/education/insights">여러 실험에서 교차 검증된 해결 패턴</Card>
+  <Card title="실험 로그" icon="📝" href="/education/logs">이 모든 것의 원재료가 되는 매주의 기록</Card>
+</CardGrid>
 
 ---
 

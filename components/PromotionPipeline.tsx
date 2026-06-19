@@ -1,0 +1,138 @@
+'use client'
+
+import { useState } from 'react'
+import styles from './PromotionPipeline.module.css'
+
+type RubricDim = { code: string; name: string; en: string; desc: string }
+type Rubric = {
+  id: 'quality' | 'promotion'
+  name: string
+  max: number
+  threshold: number
+  scale: string
+  verdict: string
+  dims: RubricDim[]
+}
+
+// .claude/log-quality-rubric.md (25점) — 1:1 일치
+const QUALITY: Rubric = {
+  id: 'quality',
+  name: '품질 루브릭',
+  max: 25,
+  threshold: 16,
+  scale: '5차원 × 1~5점',
+  verdict: '21~25 A · 16~20 B · 11~15 C · 6~10 D · 5 F',
+  dims: [
+    { code: 'D1', name: '구조 완성도', en: 'Structure', desc: '대상·배경·설계·결과·교훈·다음 실험 등 필수 섹션을 갖췄는가' },
+    { code: 'D2', name: '구체성', en: 'Specificity', desc: '수치 데이터·크루 인용·구체적 타임라인이 있는가' },
+    { code: 'D3', name: '전이 가능성', en: 'Transferability', desc: '다른 코치가 이 로그만 읽고 동일 활동을 재현할 수 있는가' },
+    { code: 'D4', name: '교훈의 양면성', en: 'Balanced Lessons', desc: '성공과 실패가 균형 있고 다음 행동으로 연결되는가' },
+    { code: 'D5', name: '원본 자료 연결', en: 'Source Linkage', desc: '디스커션·슬라이드·크루 결과물 원본이 링크됐는가' },
+  ],
+}
+
+// .claude/promotion-rubric.md (20점) — 1:1 일치
+const PROMOTION: Rubric = {
+  id: 'promotion',
+  name: '승격 루브릭',
+  max: 20,
+  threshold: 16,
+  scale: '4차원 × 1~5점',
+  verdict: '16~20 승격 가능 · 12~15 조건부 · 8~11 보류',
+  dims: [
+    { code: 'P1', name: '반복 검증', en: 'Replication', desc: '같은 활동이 다른 기수·맥락에서 반복되었는가' },
+    { code: 'P2', name: '추출 가능성', en: 'Extractability', desc: '독립적인 도구·패턴·원칙을 뽑아낼 수 있는가' },
+    { code: 'P3', name: '교차 연결', en: 'Cross-Reference', desc: '다른 로그·인사이트·교육 모델과 연결되는가' },
+    { code: 'P4', name: '실행 영향력', en: 'Impact', desc: '실제 교육 과정에 미치는 영향이 큰가' },
+  ],
+}
+
+const RUBRICS: Record<'quality' | 'promotion', Rubric> = { quality: QUALITY, promotion: PROMOTION }
+
+type Stage = { icon: string; title: string; sub: string; tone: string }
+const STAGES: Stage[] = [
+  { icon: '📝', title: '실험 로그', sub: '한 기수의 원본 기록', tone: 'log' },
+  { icon: '🛠️', title: '검증된 도구 · 패턴', sub: '재사용 가능한 워크플로우와 교차 패턴', tone: 'mid' },
+  { icon: '📐', title: '커리큘럼 · 철학', sub: '원칙으로 일반화된 교육 모델', tone: 'top' },
+]
+
+// STAGES 사이에 끼는 게이트 (stage i → i+1)
+const GATE_ORDER: Array<'quality' | 'promotion'> = ['quality', 'promotion']
+
+export function PromotionPipeline() {
+  const [open, setOpen] = useState<'quality' | 'promotion' | null>('quality')
+
+  return (
+    <div className={styles.root}>
+      <div className={styles.flow} role="list">
+        {STAGES.map((s, i) => (
+          <div key={s.title} className={styles.cell} role="listitem">
+            <div className={`${styles.stage} ${styles[s.tone]}`}>
+              <span className={styles.stageIcon} aria-hidden>{s.icon}</span>
+              <span className={styles.stageTitle}>{s.title}</span>
+              <span className={styles.stageSub}>{s.sub}</span>
+            </div>
+            {i < STAGES.length - 1 && (
+              <button
+                type="button"
+                className={`${styles.gate} ${open === GATE_ORDER[i] ? styles.gateOpen : ''}`}
+                aria-expanded={open === GATE_ORDER[i]}
+                onClick={() => setOpen(open === GATE_ORDER[i] ? null : GATE_ORDER[i])}
+              >
+                <span className={styles.gateArrow} aria-hidden>→</span>
+                <span className={styles.gateBody}>
+                  <span className={styles.gateLabel}>{RUBRICS[GATE_ORDER[i]].name}</span>
+                  <span className={styles.gateMax}>{RUBRICS[GATE_ORDER[i]].max}점 만점 · 통과선 {RUBRICS[GATE_ORDER[i]].threshold}</span>
+                </span>
+                <span className={styles.gateToggle} aria-hidden>{open === GATE_ORDER[i] ? '−' : '+'}</span>
+              </button>
+            )}
+          </div>
+        ))}
+      </div>
+
+      <p className={styles.hint}>
+        모든 로그가 위로 올라가는 게 아닙니다. 게이트의 점수를 통과한 것만 승격됩니다.
+        게이트를 눌러 실제 채점 기준을 펼쳐 보세요.
+      </p>
+
+      {open && <Scorecard rubric={RUBRICS[open]} />}
+    </div>
+  )
+}
+
+function Scorecard({ rubric }: { rubric: Rubric }) {
+  const pct = Math.round((rubric.threshold / rubric.max) * 100)
+  return (
+    <div className={styles.panel}>
+      <div className={styles.panelHead}>
+        <div>
+          <div className={styles.panelName}>{rubric.name}</div>
+          <div className={styles.panelScale}>{rubric.scale} · 총점 {rubric.max}점</div>
+        </div>
+        <div className={styles.thresholdBox}>
+          <div className={styles.thresholdLabel}>통과선 {rubric.threshold} / {rubric.max}</div>
+          <div className={styles.thresholdBar}>
+            <div className={styles.thresholdFill} style={{ width: `${pct}%` }} />
+          </div>
+          <div className={styles.verdict}>{rubric.verdict}</div>
+        </div>
+      </div>
+      <ul className={styles.dimList}>
+        {rubric.dims.map((d) => (
+          <li key={d.code} className={styles.dimRow}>
+            <span className={styles.dimCode}>{d.code}</span>
+            <span className={styles.dimMain}>
+              <span className={styles.dimName}>{d.name}<span className={styles.dimEn}>{d.en}</span></span>
+              <span className={styles.dimDesc}>{d.desc}</span>
+            </span>
+            <span className={styles.dimScale}>1–5점</span>
+          </li>
+        ))}
+      </ul>
+      <div className={styles.source}>
+        이 점수표는 실제 채점 루브릭(<code>.claude/{rubric.id === 'quality' ? 'log-quality' : 'promotion'}-rubric.md</code>)과 동일합니다.
+      </div>
+    </div>
+  )
+}

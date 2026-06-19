@@ -17,6 +17,10 @@ export default {
     title: '교육',
     type: 'page'
   },
+  'how-its-made': {
+    title: '문서가 만들어지는 법',
+    type: 'page'
+  },
   timeline: {
     title: '타임라인',
     display: 'hidden'

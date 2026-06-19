@@ -13,6 +13,7 @@ import { Mermaid } from './components/Mermaid'
 import { Claim } from './components/Manifesto'
 import { RepoList } from './components/RepoList'
 import { CurriculumTimeline } from './components/CurriculumTimeline'
+import { PromotionPipeline } from './components/PromotionPipeline'
 import { DemoDayFullList } from './components/DemoDayFullList'
 import { EducationBriefingFullList } from './components/EducationBriefingFullList'
 import { TecoTalkExplorer } from './components/TecoTalkExplorer'
@@ -39,6 +40,7 @@ export function useMDXComponents(components?: Record<string, React.FC>) {
     Claim,
     RepoList,
     CurriculumTimeline,
+    PromotionPipeline,
     DemoDayFullList,
     EducationBriefingFullList,
     TecoTalkExplorer,

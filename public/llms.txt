@@ -58,6 +58,7 @@
 - [미션은 누적 학습 모델이다](https://docs.woowahan.com/education/insights/mission-learning-accumulation)
 - [POE 발견 학습: 먼저 말하게 하고 나중에 보여주기](https://docs.woowahan.com/education/insights/poe-discovery-learning)
 - [점진적 스캐폴딩: 한 번의 강의 대신 다회차 시퀀스](https://docs.woowahan.com/education/insights/progressive-scaffolding)
+- [공개 합작 회고: 함께 써서 공개로 남기기](https://docs.woowahan.com/education/insights/public-retrospective): 회고를 한 곳에 함께 써서 공개로 남기면 1회성 성찰이 기수를 넘는 학습 아카이브가 됩니다. 공개 회고 저장소에서 추출한 운영 패턴.
 - [회고 설계: 형식을 매번 바꿔 성찰의 깊이를 끌어올리기](https://docs.woowahan.com/education/insights/retrospective-design)
 - [자기 진단 프레임워크: 추상 가치를 측정 가능한 기준으로 전환하기](https://docs.woowahan.com/education/insights/self-diagnostic-framework)
 - [학습 영역 종합 정리](https://docs.woowahan.com/education/insights/summary)
@@ -132,7 +133,7 @@
 - [학습 환경 구성](https://docs.woowahan.com/education/operations/learning-environment)
 - [일정 및 프로세스 관리](https://docs.woowahan.com/education/operations/process-management)
 - [교육 철학](https://docs.woowahan.com/education/philosophy)
-- [시작하기 — 이번 주, 가장 작은 변화 하나](https://docs.woowahan.com/education/start): 우테코 교육 모델을 5분 안에 이해하고, 이번 주에 시도할 가장 작은 변화 행동 1개를 손에 쥐고 나가는 시작점.
+- [시작하기 — 5분 안에 우테코 모델](https://docs.woowahan.com/education/start): 우테코 교육 모델을 5분 안에 이해하고, 더 깊이 들어갈 문으로 안내하는 시작점.
 - [검증된 도구](https://docs.woowahan.com/education/tools)
 - [클린 랭귀지 상호 멘토링 가이드](https://docs.woowahan.com/education/tools/clean-language-mentoring)
 - [미션 저장소 PR 데이터 분석 워크플로우](https://docs.woowahan.com/education/tools/mission-repo-analysis-workflow)

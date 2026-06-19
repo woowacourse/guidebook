@@ -7,6 +7,8 @@ description: "llm-wiki/ 디렉터리(Karpathy LLM Wiki 패턴) 운영 스킬. /�
 
 `llm-wiki/` 디렉터리(카파시 LLM Wiki 패턴, [Gist](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f))를 유지보수할 때의 공통 컨텍스트와 규약. 모든 `/위키*` 커맨드가 이 스킬을 공유한다.
 
+> **전제 (부트스트랩):** `llm-wiki/` 는 별도 비공개 정본 repo(`woowacourse-projects/llm-wiki`)의 로컬 클론이며 guidebook 에서 gitignore 된다. `./llm-wiki/` 가 없으면 먼저 `git clone https://github.com/woowacourse-projects/llm-wiki.git llm-wiki` 안내 후 중단한다. 원본 변경은 그 repo 에 커밋·push 한다.
+
 ## 적용 범위
 
 - 대상: `llm-wiki/` 디렉터리 (raw/wiki/index.md/log.md/AGENTS.md)

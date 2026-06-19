@@ -13,6 +13,8 @@ LLM 에이전트(Claude Code, Codex, Cursor, 기타)가 이 저장소를 읽고 
 - **Wiki pages** — `content/education/{philosophy,curriculum,insights,tools}/`. 실험 로그에서 추출·승격된 안정화된 지식.
 - **Schema** — `CLAUDE.md`, `.claude/conventions/`, `.claude/promotion-rubric.md`, `.claude/log-quality-rubric.md`.
 
+> 원본 raw 1차자료와 합성 wiki 노트는 별도 비공개 정본 repo `woowacourse-projects/llm-wiki`(로컬 `./llm-wiki/`, gitignore)에 있다. 이 repo의 `content/`는 거기서 분석·정리한 **발행 문서**다. 원본 위키 작업은 `/위키흡수·정제·점검·질의`, 발행 문서 lint는 `/위키정리`.
+
 ## 기여 시 따라야 할 규약
 
 ### 1. 새 페이지를 만들 때

@@ -9,7 +9,7 @@
   "lastCompileCommit": "7efbb76573821ff5f3c1364a49bb8b2d165d5960",
   "lastCompileDate": "2026-06-16",
   "compileConfig": {
-    "threshold": 5,
+    "threshold": 999,
     "batchSize": 5,
     "maxBatchSize": 7
   },

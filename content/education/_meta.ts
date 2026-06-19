@@ -10,10 +10,10 @@ export default {
       typesetting: 'article'
     }
   },
-  '--build': { type: 'separator', title: '직접 만들기' },
+  '--build': { type: 'separator', title: '적용하기' },
   start: '🚀 시작하기',
   'design-poe': '🔭 발견 학습 설계하기',
-  '--understand': { type: 'separator', title: '모델 이해하기' },
+  '--understand': { type: 'separator', title: '이해하기' },
   philosophy: '🎯 교육 철학',
   curriculum: '🗺️ 커리큘럼',
   insights: '🧩 검증된 패턴',

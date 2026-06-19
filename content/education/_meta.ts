@@ -13,12 +13,12 @@ export default {
   '--build': { type: 'separator', title: '적용하기' },
   start: '🚀 시작하기',
   'design-poe': '🔭 발견 학습 설계하기',
+  tools: '🛠️ 검증된 도구',
   '--understand': { type: 'separator', title: '이해하기' },
   philosophy: '🎯 교육 철학',
   curriculum: '🗺️ 커리큘럼',
   insights: '🧩 검증된 패턴',
   logs: { title: `실험 로그 (${logs.length})`, display: 'hidden' },
-  tools: { title: '검증된 도구', display: 'hidden' },
   conversations: {
     title: '🗂️ 우테코 콘텐츠 아카이브',
     display: 'hidden'

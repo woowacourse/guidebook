@@ -14,7 +14,7 @@
 // auto-eligible 범위: llm-wiki/raw/*.md (루트) 만.
 //   하위 폴더(conversations/·external/·derived/·assets/)는 새 유형/큐레이션 자료라
 //   사람 검토가 필요한 deliberate-only. auto 훅 대상에서 제외한다.
-//   (deliberate `/지식정제 raw/<subdir>/...` 로 처리.)
+//   (deliberate `/위키정제 raw/<subdir>/...` 로 처리.)
 //
 // 사용법:
 //   node scripts/llm-wiki/compile-state.mjs pending [--count]

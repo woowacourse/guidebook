@@ -1,6 +1,6 @@
 #!/bin/bash
 # auto-compile-check — Stop 훅. llm-wiki/raw/ 에 미합성분 raw 가 임계값 이상 누적되면
-# 다음 턴에 /지식정제 자동 실행을 추천한다.
+# 다음 턴에 /위키정제 자동 실행을 추천한다.
 #
 # 카파시 LLM Wiki 패턴의 ingest/compile 분리 원칙에 따라 raw 가 자주 쌓이고
 # wiki 합성이 드물 수 있는데, 그 격차가 너무 벌어지면 위키가 식는다. 이 훅이
@@ -40,7 +40,7 @@ case "$PENDING" in
 esac
 
 if [ "$PENDING" -ge "$THRESHOLD" ]; then
-  echo "[auto-compile] llm-wiki/raw/ 에 ${PENDING}개 auto-eligible raw 가 미합성 누적 (임계값 ${THRESHOLD}). 다음 턴에 /지식정제 자동 실행을 권장합니다. (하위 폴더 external/derived/conversations 는 deliberate-only 라 제외)" >&2
+  echo "[auto-compile] llm-wiki/raw/ 에 ${PENDING}개 auto-eligible raw 가 미합성 누적 (임계값 ${THRESHOLD}). 다음 턴에 /위키정제 자동 실행을 권장합니다. (하위 폴더 external/derived/conversations 는 deliberate-only 라 제외)" >&2
   exit 2
 fi
 

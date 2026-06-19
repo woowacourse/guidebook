@@ -1,5 +1,5 @@
 ---
-name: knowledge-wiki
+name: llm-wiki
 description: "llm-wiki/ 디렉터리(Karpathy LLM Wiki 패턴) 운영 스킬. /지식흡수, /지식정제, /지식점검, /지식질의, 지식 흡수, raw 추가, wiki 합성, 위키 정제, wiki 노트 생성, knowledge 위키 작업, raw에서 wiki 만들기, index.md 갱신 요청 시 반드시 이 스킬을 사용할 것. content/ 가 아닌 llm-wiki/ 안에서의 작업 전용."
 ---
 

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { Mermaid } from './Mermaid'
 import styles from './PromotionPipeline.module.css'
 
 type RubricDim = { code: string; name: string; en: string; desc: string }
@@ -49,52 +50,52 @@ const PROMOTION: Rubric = {
 
 const RUBRICS: Record<'quality' | 'promotion', Rubric> = { quality: QUALITY, promotion: PROMOTION }
 
-type Stage = { icon: string; title: string; sub: string; tone: string }
-const STAGES: Stage[] = [
-  { icon: '📝', title: '실험 로그', sub: '한 기수의 원본 기록', tone: 'log' },
-  { icon: '🛠️', title: '검증된 도구 · 패턴', sub: '재사용 가능한 워크플로우와 교차 패턴', tone: 'mid' },
-  { icon: '📐', title: '커리큘럼 · 철학', sub: '원칙으로 일반화된 교육 모델', tone: 'top' },
-]
+// 아래(원재료) → 위(일반화)로 승격되는 흐름. 게이트(루브릭)는 단계 사이의 필터.
+const PIPELINE = `
+flowchart BT
+    L["📝 실험 로그"]
+    Q{"🔍 품질 루브릭 · 16/25 통과"}
+    M["🛠️ 검증된 도구 · 패턴"]
+    P{"🔍 승격 루브릭 · 16/20 통과"}
+    T["📐 커리큘럼 · 철학"]
+    L --> Q --> M --> P --> T
+    style L fill:#f0f4ff,stroke:#4285f4
+    style M fill:#eef3ed,stroke:#2f9e6b
+    style T fill:#fff0f0,stroke:#c4554d
+    style Q fill:#fff8e8,stroke:#d9a441
+    style P fill:#fff8e8,stroke:#d9a441
+`
 
-// STAGES 사이에 끼는 게이트 (stage i → i+1)
-const GATE_ORDER: Array<'quality' | 'promotion'> = ['quality', 'promotion']
+const GATES: Array<'quality' | 'promotion'> = ['quality', 'promotion']
 
 export function PromotionPipeline() {
   const [open, setOpen] = useState<'quality' | 'promotion' | null>('quality')
 
   return (
     <div className={styles.root}>
-      <div className={styles.flow} role="list">
-        {STAGES.map((s, i) => (
-          <div key={s.title} className={styles.cell} role="listitem">
-            <div className={`${styles.stage} ${styles[s.tone]}`}>
-              <span className={styles.stageIcon} aria-hidden>{s.icon}</span>
-              <span className={styles.stageTitle}>{s.title}</span>
-              <span className={styles.stageSub}>{s.sub}</span>
-            </div>
-            {i < STAGES.length - 1 && (
-              <button
-                type="button"
-                className={`${styles.gate} ${open === GATE_ORDER[i] ? styles.gateOpen : ''}`}
-                aria-expanded={open === GATE_ORDER[i]}
-                onClick={() => setOpen(open === GATE_ORDER[i] ? null : GATE_ORDER[i])}
-              >
-                <span className={styles.gateArrow} aria-hidden>→</span>
-                <span className={styles.gateBody}>
-                  <span className={styles.gateLabel}>{RUBRICS[GATE_ORDER[i]].name}</span>
-                  <span className={styles.gateMax}>{RUBRICS[GATE_ORDER[i]].max}점 만점 · 통과선 {RUBRICS[GATE_ORDER[i]].threshold}</span>
-                </span>
-                <span className={styles.gateToggle} aria-hidden>{open === GATE_ORDER[i] ? '−' : '+'}</span>
-              </button>
-            )}
-          </div>
-        ))}
-      </div>
+      <Mermaid chart={PIPELINE} />
 
       <p className={styles.hint}>
         모든 로그가 위로 올라가는 게 아닙니다. 게이트의 점수를 통과한 것만 승격됩니다.
-        게이트를 눌러 실제 채점 기준을 펼쳐 보세요.
+        아래 루브릭을 눌러 실제 채점 기준을 펼쳐 보세요.
       </p>
+
+      <div className={styles.gateButtons} role="tablist" aria-label="채점 루브릭">
+        {GATES.map((id) => (
+          <button
+            key={id}
+            type="button"
+            role="tab"
+            aria-selected={open === id}
+            className={`${styles.gateBtn} ${open === id ? styles.gateBtnOpen : ''}`}
+            onClick={() => setOpen(open === id ? null : id)}
+          >
+            <span className={styles.gateBtnName}>{RUBRICS[id].name}</span>
+            <span className={styles.gateBtnMax}>{RUBRICS[id].max}점 만점 · 통과선 {RUBRICS[id].threshold}</span>
+            <span className={styles.gateBtnToggle} aria-hidden>{open === id ? '−' : '+'}</span>
+          </button>
+        ))}
+      </div>
 
       {open && <Scorecard rubric={RUBRICS[open]} />}
     </div>

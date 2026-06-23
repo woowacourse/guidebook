@@ -101,6 +101,10 @@ MDX에서 사용 가능한 커스텀 컴포넌트: Hero, Card, CardGrid, Timelin
 - **LogList** — 실험 로그 목록을 날짜 최신 순으로 렌더링. 카테고리 필터 탭 포함. `content/logs.ts`를 데이터 소스로 사용.
 - **Mermaid** — Mermaid 다이어그램 렌더링. `<Mermaid chart={\`flowchart TD ...\`} />` 형식으로 사용.
 
+## 이미지·캐릭터 리소스
+
+문서에 일러스트가 필요하면 **새로 만들지 말고 공식 캐릭터 행성이를 쓴다.** 18가지 포즈 라인아트 + 주황 대표 1종이 `public/images/characters/`에 있고, 카탈로그는 같은 폴더의 `index.md`다. "추천 사용 맥락" 태그(축하·협업·코딩·과열 등)로 후보를 좁히고 파일명으로 고른다. 본문 참조 경로는 `/images/characters/행성이-걷기.png` 형식.
+
 ## hidden 처리
 
 `_meta.ts`에서 `display: 'hidden'`으로 설정된 항목은 사이드바에 표시되지 않지만 폴더는 존재함. 삭제하지 말 것.

@@ -121,6 +121,15 @@ article :not(pre) > code {
   color: #ff7b72;
 }
 
+/* 코드블록 빈 줄 보정 — Shiki는 각 줄을 빈 <span>으로 만드는데,
+   내용이 없는 줄은 인라인 콘텐츠가 없어 height가 0으로 접힌다.
+   그 결과 코드블록 안 빈 줄(섹션 구분)이 화면에서 모두 사라져 가독성이 깨진다.
+   각 줄이 비어 있어도 한 줄 높이를 유지하게 한다. (1lh 미지원 브라우저는 rem 폴백) */
+.nextra-code > span {
+  min-height: 1.25rem;
+  min-height: 1lh;
+}
+
 /* 리스트 - 노션 스타일 간격 */
 article ul,
 article ol {

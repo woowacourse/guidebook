@@ -12,5 +12,6 @@ export default {
   'research-cycle-workflow': '연구 사이클 워크플로우',
   'rendering-strategy-workshop': '렌더링 전략 결정 워크숍',
   'mission-repo-analysis-workflow': '미션 저장소 PR 데이터 분석',
-  'retrospective-format-kit': '회고 형식 설계 키트'
+  'retrospective-format-kit': '회고 형식 설계 키트',
+  'drama-onboarding-kit': '연극 온보딩 설계 키트'
 }

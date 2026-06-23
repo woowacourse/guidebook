@@ -9,6 +9,14 @@ export interface Update {
 // 최신 항목을 맨 위에 추가하세요.
 const updates: Update[] = [
   {
+    date: '2026년 8기',
+    title: '검증된 도구: 연극 온보딩 설계 키트 신설',
+    description:
+      '입학 첫 주 연극 미션을 복사해 설계하는 키트를 검증된 도구에 추가했다. 역량 불안과 관계 불안을 분리하는 첫 장치로서 운영 구조 템플릿·요구사항의 교육적 의도·MC 제도·8기 28개 주제 카탈로그를 담았고, 회고 설계는 회고 형식 키트로 연결한다. 8기 연극 미션·연극 회고 로그가 근거.',
+    href: '/education/tools/drama-onboarding-kit',
+    status: 'active',
+  },
+  {
     date: '2026년 연구',
     title: '공개 합작 회고 패턴 신설 — 우테코 회고 저장소에서 추출',
     description:

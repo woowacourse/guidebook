@@ -5233,10 +5233,57 @@ SNS를 끊으면
 ## 여러분 환경에 설계하기 — LLM 스킬
 
 <Callout type="tip">
-**설계용 LLM 스킬을 GitHub에 공개합니다.** [발견 학습 설계 스킬 저장소](https://github.com/woowacourse/uteco-llm-skills)를 받아 여러분이 쓰는 LLM(ChatGPT·Claude 등)에 붙여넣으면, 여러분의 미션·수업·리뷰 맥락을 입력으로 받아 **예측 과제 → 공개 시점 → 비교 회고**까지 POE 사이클 한 벌을 설계해 줍니다.
+**설계용 LLM 스킬을 GitHub에 공개합니다.** [발견 학습 설계 스킬 저장소](https://github.com/woowacourse/llm-skills)를 받아 여러분이 쓰는 LLM(ChatGPT·Claude 등)에 붙여넣으면, 여러분의 미션·수업·리뷰 맥락을 입력으로 받아 **예측 과제 → 공개 시점 → 비교 회고**까지 POE 사이클 한 벌을 설계해 줍니다.
 </Callout>
 
 스킬은 다음을 묻고 채워 줍니다 — 어떤 개념에 인지적 불일치를 만들 것인가, 무엇을 예측 산출물(해설지·에세이·리뷰 글)로 받을 것인가, 정답을 언제 공개할 것인가, 비교 회고를 어떻게 배치할 것인가.
+
+### 프롬프트 예시 — 스킬 없이 바로 써보기
+
+저장소를 붙이기 전에, 아래 프롬프트를 복사해 `{중괄호}`만 여러분 맥락으로 바꿔 LLM(Claude·ChatGPT 등)에 넣어도 됩니다. Anthropic Opus 4.8 프롬프트 엔지니어링 가이드의 권장 — **역할 부여 · XML 태그 구조화 · 명시적 제약 · 먼저 오개념을 짚게 하는 추론 단계 · 예시(멀티샷) · 출력 형식 고정** — 을 그대로 따랐습니다.
+
+```text
+당신은 우아한테크코스의 발견 학습(POE) 설계를 돕는 교육 코치입니다.
+발견 학습의 핵심은 예측(Predict) → 관찰(Observe) → 설명(Explain) 순서이며,
+이 순서를 절대 뒤집지 않습니다 — 정답·강의를 먼저 주면 "이해한 척"이 생기기 때문입니다.
+
+<배경>
+- 학습자: {예: 백엔드 레벨2 크루 16명}
+- 다룰 개념: {예: 자바 비동기·동시성 — 말로는 아는데 코드로는 못 쓰는 개념}
+- 형식·시간: {예: 90분 수업 1회}
+- 내가 평소 쓰던 방식: {예: 강의 먼저, 실습 나중}
+</배경>
+
+<설계_원칙>
+1. 정답·강의는 학습자가 예측·판단·설명을 먼저 산출한 뒤에야 공개한다.
+2. 예측 산출물은 채점 대상이 아니라 "관찰 대상"이다 — 머릿속 모델의 허점을 드러내는 게 목적.
+3. 비교 회고에서 "내 예측 vs 실제"의 간극을 학습자가 스스로 언어화하게 한다.
+</설계_원칙>
+
+<할_일>
+먼저 이 개념에서 학습자가 가장 흔히 빠지는 오개념(인지적 불일치 지점)을 1~2개 짚어라.
+그다음 그 지점을 정확히 건드리는 POE 사이클 한 벌을 설계하라.
+</할_일>
+
+<출력_형식>
+## 겨냥할 오개념
+- ...
+## 1. 예측 (Predict)
+- 예측 과제 · 산출물(관찰 대상):
+## 2. 관찰 (Observe)
+- 정답·실제와 마주치는 방법 · 공개 시점:
+## 3. 설명 (Explain)
+- 비교 회고 질문 · 코치가 던질 되묻는 질문:
+## 설계 의도
+- 왜 이 오개념을 겨냥했고 왜 이 순서인가:
+</출력_형식>
+
+<예시>
+우테코 비동기 수업: 강의 대신 "비동기 퀴즈 해설지를 먼저 쓰게"(예측) 해
+설명 능력 자체를 관찰 대상으로 삼고, 실제 실행 결과와 마주친 뒤(관찰)
+"내 해설과 실제가 어디서 갈렸나"를 회고하게 했다(설명).
+</예시>
+```
 
 ## 다음
 
@@ -6410,6 +6457,13 @@ hateWaiting(getPopularMovies, 3000)
 - [6기 FE 영화 리뷰 — 비동기 퀴즈 해설지 만들기 (GitHub Discussion #46, 2024.03.26)](https://github.com/woowacourse/retrospective/discussions/46)
 - [7기 FE 영화 리뷰 — 비동기 퀴즈 해설지 만들기 (GitHub Discussion #58, 2025.03.25)](https://github.com/woowacourse/retrospective/discussions/58)
 
+## 이 실험에서 검증된 패턴·도구로
+
+이 로그는 원재료입니다. 여기서 반복 검증된 내용은 아래에 바로 적용할 수 있게 정리돼 있습니다.
+
+- [논증 기반 학습 설계](/education/insights/argumentation-based-learning) — 검증된 패턴
+- [POE 발견 학습](/education/insights/poe-discovery-learning) — 검증된 패턴
+
 ---
 
 <!-- source: https://docs.woowahan.com/education/logs/coach-training -->
@@ -6713,6 +6767,13 @@ AI는 코칭을 대신하는 도구라기보다, **반복 훈련의 빈도를 �
 - 원온원 준비 워크숍 설계 메모
 - 표준화 크루 GPTs 및 대화 링크 모음
 
+## 이 실험에서 검증된 패턴·도구로
+
+이 로그는 원재료입니다. 여기서 반복 검증된 내용은 아래에 바로 적용할 수 있게 정리돼 있습니다.
+
+- [점진적 스캐폴딩](/education/insights/progressive-scaffolding) — 검증된 패턴
+- [클린 랭귀지 상호 멘토링](/education/tools/clean-language-mentoring) — 검증된 도구
+
 ---
 
 <!-- source: https://docs.woowahan.com/education/logs/code-review -->
@@ -6968,6 +7029,12 @@ Step 1의 자기진단은 성적 평가가 아닙니다. Step 3에서 실제 코
 - **피드백 수업의 Step 5 시간**: 선배 PR 힌트와 코치 원칙을 연결하는 단계(7분)가 짧았습니다. 원칙을 내 코드의 구체적인 위치에 대입하는 데 더 많은 시간이 필요합니다.
 - **벤지 논점 후속 처리**: "renderLottoToHTML이 Lotto 클래스 안에 있어야 한다"는 관점은 공개 토론으로 다룰 만한 논점입니다. 피드백 수업에서 A그룹 공유 시간에 포함하는 것을 검토 중입니다.
 
+## 이 실험에서 검증된 패턴·도구로
+
+이 로그는 원재료입니다. 여기서 반복 검증된 내용은 아래에 바로 적용할 수 있게 정리돼 있습니다.
+
+- [POE 발견 학습](/education/insights/poe-discovery-learning) — 검증된 패턴
+
 ---
 
 <!-- source: https://docs.woowahan.com/education/logs/crew-autonomy -->
@@ -7111,6 +7178,12 @@ import { Callout } from 'nextra/components'
 - [관련 보고서 1](https://cloud.wiki.woowa.in/wiki/spaces/COURSEDEV/pages/1099900733) — 보고서 참고문헌으로 연결된 사내 자료
 - [관련 보고서 2](https://cloud.wiki.woowa.in/wiki/spaces/COURSEDEV/pages/1101922453) — 보고서 참고문헌으로 연결된 사내 자료
 - Stockdale, S. L., & Brockett, R. G. (2011). Development of the PRO-SDLS: A measure of self-direction in learning based on the personal responsibility orientation model. *Adult Education Quarterly, 61*(2), 161–180.
+
+## 이 실험에서 검증된 패턴·도구로
+
+이 로그는 원재료입니다. 여기서 반복 검증된 내용은 아래에 바로 적용할 수 있게 정리돼 있습니다.
+
+- [학습 분석](/education/insights/learning-analytics) — 검증된 패턴
 
 ---
 
@@ -7323,6 +7396,14 @@ import { Callout } from 'nextra/components'
 - [레벨3 세 번째 데모데이까지의 회고 (GitHub Discussion #25)](https://github.com/woowacourse/retrospective/discussions/25)
 - [레벨3 네 번째 데모데이까지의 회고 (GitHub Discussion #26)](https://github.com/woowacourse/retrospective/discussions/26)
 - [레벨4 다섯 번째 데모데이까지의 회고 (GitHub Discussion #27)](https://github.com/woowacourse/retrospective/discussions/27)
+
+## 이 실험에서 검증된 패턴·도구로
+
+이 로그는 원재료입니다. 여기서 반복 검증된 내용은 아래에 바로 적용할 수 있게 정리돼 있습니다.
+
+- [점진적 스캐폴딩](/education/insights/progressive-scaffolding) — 검증된 패턴
+- [회고 설계](/education/insights/retrospective-design) — 검증된 패턴
+- [회고 형식 설계 키트](/education/tools/retrospective-format-kit) — 검증된 도구
 
 ---
 
@@ -7584,6 +7665,13 @@ MC 선착순 모집에 예상보다 빠르게 지원이 마감됐습니다. 아�
 
 - 에이미 에드먼슨, 『두려움 없는 조직』, 다산북스, 2019
 - [Google re:Work — Understand team effectiveness](https://rework.withgoogle.com/guides/understanding-team-effectiveness/steps/introduction/)
+
+## 이 실험에서 검증된 패턴·도구로
+
+이 로그는 원재료입니다. 여기서 반복 검증된 내용은 아래에 바로 적용할 수 있게 정리돼 있습니다.
+
+- [회고 설계](/education/insights/retrospective-design) — 검증된 패턴
+- [회고 형식 설계 키트](/education/tools/retrospective-format-kit) — 검증된 도구
 
 ---
 
@@ -7944,6 +8032,12 @@ Gemini Canvas로 제작한 함수형 프로그래밍 홍보물
 - [6기 FE 레벨4 접근성 리포트 (GitHub Discussion #53, 2024.10.24)](https://github.com/woowacourse/retrospective/discussions/53)
 - [7기 FE 레벨4 접근성 리포트 (GitHub Discussion #72, 2025.10.23)](https://github.com/woowacourse/retrospective/discussions/72)
 
+## 이 실험에서 검증된 패턴·도구로
+
+이 로그는 원재료입니다. 여기서 반복 검증된 내용은 아래에 바로 적용할 수 있게 정리돼 있습니다.
+
+- [자기 진단 프레임워크](/education/insights/self-diagnostic-framework) — 검증된 패턴
+
 ---
 
 <!-- source: https://docs.woowahan.com/education/logs/fe-level2-16steps -->
@@ -8173,6 +8267,12 @@ interface DataContextType<T> {
 - [Step 13/16 — RFC: Designing a Data Fetching Hook in React (Discussion #67)](https://github.com/woowacourse/retrospective/discussions/67)
 - [Step 15~16/16 — 레벨2 돌아보기 공유 (Discussion #68)](https://github.com/woowacourse/retrospective/discussions/68)
 
+## 이 실험에서 검증된 패턴·도구로
+
+이 로그는 원재료입니다. 여기서 반복 검증된 내용은 아래에 바로 적용할 수 있게 정리돼 있습니다.
+
+- [점진적 스캐폴딩](/education/insights/progressive-scaffolding) — 검증된 패턴
+
 ---
 
 <!-- source: https://docs.woowahan.com/education/logs/fe-performance-report -->
@@ -8325,6 +8425,12 @@ interface DataContextType<T> {
 - [7기 FE 성능 리포트 (GitHub Discussion #70)](https://github.com/woowacourse/retrospective/discussions/70)
 - [7기 FE 성능 베이스캠프 구축 — 사전 단계 (GitHub Discussion #71)](https://github.com/woowacourse/retrospective/discussions/71)
 
+## 이 실험에서 검증된 패턴·도구로
+
+이 로그는 원재료입니다. 여기서 반복 검증된 내용은 아래에 바로 적용할 수 있게 정리돼 있습니다.
+
+- [자기 진단 프레임워크](/education/insights/self-diagnostic-framework) — 검증된 패턴
+
 ---
 
 <!-- source: https://docs.woowahan.com/education/logs/fe-react-typescript-convention -->
@@ -8445,6 +8551,12 @@ TypeScript는 "어떻게 쓰는가"에 정답이 없다. 컴포넌트 선언 방
 - [5기 FE React&TypeScript 컨벤션 (GitHub Discussion #37, 2023.08.01)](https://github.com/woowacourse/retrospective/discussions/37)
 - [7기 FE React&TypeScript 컨벤션 (GitHub Discussion #69, 2025.08.05)](https://github.com/woowacourse/retrospective/discussions/69)
 
+## 이 실험에서 검증된 패턴·도구로
+
+이 로그는 원재료입니다. 여기서 반복 검증된 내용은 아래에 바로 적용할 수 있게 정리돼 있습니다.
+
+- [논증 기반 학습 설계](/education/insights/argumentation-based-learning) — 검증된 패턴
+
 ---
 
 <!-- source: https://docs.woowahan.com/education/logs/fe-rendering-strategy-workshop -->
@@ -8547,6 +8659,13 @@ TypeScript는 "어떻게 쓰는가"에 정답이 없다. 컴포넌트 선언 방
 
 > 이 실험에서 검증된 도구: [렌더링 전략 결정 워크숍 템플릿](/education/tools/rendering-strategy-workshop)
 
+## 이 실험에서 검증된 패턴·도구로
+
+이 로그는 원재료입니다. 여기서 반복 검증된 내용은 아래에 바로 적용할 수 있게 정리돼 있습니다.
+
+- [논증 기반 학습 설계](/education/insights/argumentation-based-learning) — 검증된 패턴
+- [렌더링 전략 결정 워크숍](/education/tools/rendering-strategy-workshop) — 검증된 도구
+
 ---
 
 <!-- source: https://docs.woowahan.com/education/logs/fe-ssr-discussion -->
@@ -8648,6 +8767,13 @@ private field가 WeakMap으로 변환되거나 numeric separator(ES2021)가 일�
 
 - [FE 레벨4 SSR | JS의 평행세계, 서버와 클라이언트 - 토론 (GitHub Discussion #55)](https://github.com/woowacourse/retrospective/discussions/55)
 - [FE 레벨4 SSR | OX퀴즈 해설지 만들기 (GitHub Discussion #56)](https://github.com/woowacourse/retrospective/discussions/56)
+
+## 이 실험에서 검증된 패턴·도구로
+
+이 로그는 원재료입니다. 여기서 반복 검증된 내용은 아래에 바로 적용할 수 있게 정리돼 있습니다.
+
+- [논증 기반 학습 설계](/education/insights/argumentation-based-learning) — 검증된 패턴
+- [POE 발견 학습](/education/insights/poe-discovery-learning) — 검증된 패턴
 
 ---
 
@@ -8782,6 +8908,12 @@ GPTs 활용 단계에 대한 크루들의 반응은 두 갈래로 나뉘었습�
 ## 참고 자료
 
 - [GitHub Discussions #66 — 피드백 리팩터링 활동 기록](https://github.com/woowacourse/retrospective/discussions/66)
+
+## 이 실험에서 검증된 패턴·도구로
+
+이 로그는 원재료입니다. 여기서 반복 검증된 내용은 아래에 바로 적용할 수 있게 정리돼 있습니다.
+
+- [자기 진단 프레임워크](/education/insights/self-diagnostic-framework) — 검증된 패턴
 
 ---
 
@@ -9133,6 +9265,14 @@ Step 5에서 크루들이 "다음 2개월 동안 만들고 싶은 장면"으로 
 
 - [GitHub Discussions #47 — 6기 레벨1 회고 활동 기록](https://github.com/woowacourse/retrospective/discussions/47)
 - [GitHub Discussions #57 — 7기 레벨1 회고 활동 기록](https://github.com/woowacourse/retrospective/discussions/57)
+
+## 이 실험에서 검증된 패턴·도구로
+
+이 로그는 원재료입니다. 여기서 반복 검증된 내용은 아래에 바로 적용할 수 있게 정리돼 있습니다.
+
+- [회고 설계](/education/insights/retrospective-design) — 검증된 패턴
+- [자기 진단 프레임워크](/education/insights/self-diagnostic-framework) — 검증된 패턴
+- [회고 형식 설계 키트](/education/tools/retrospective-format-kit) — 검증된 도구
 
 ---
 
@@ -9571,6 +9711,13 @@ VoTogether 팀의 우스(10점)와 루쿠(6점) 사이의 4점 차이:
 - [레벨3 팀 프로젝트 중간 회고 (GitHub Discussion #38, 2023.07.21)](https://github.com/woowacourse/retrospective/discussions/38)
 - [레벨3 팀 프로젝트 최종 회고 (GitHub Discussion #39, 2023.08.18)](https://github.com/woowacourse/retrospective/discussions/39)
 - [레벨4 팀 프로젝트 사용자 유치 계획 (GitHub Discussion #40, 2023.09.08)](https://github.com/woowacourse/retrospective/discussions/40)
+
+## 이 실험에서 검증된 패턴·도구로
+
+이 로그는 원재료입니다. 여기서 반복 검증된 내용은 아래에 바로 적용할 수 있게 정리돼 있습니다.
+
+- [회고 설계](/education/insights/retrospective-design) — 검증된 패턴
+- [회고 형식 설계 키트](/education/tools/retrospective-format-kit) — 검증된 도구
 
 ---
 
@@ -10175,6 +10322,12 @@ import { Callout } from 'nextra/components'
 - [2025-05-30 디노 코치 — 의식적 연습·협업·개발의 재미](/education/conversations/posuta-2025-05-30)
 - 인덱스: [/education/conversations/posuta](/education/conversations/posuta)
 
+## 이 실험에서 검증된 패턴·도구로
+
+이 로그는 원재료입니다. 여기서 반복 검증된 내용은 아래에 바로 적용할 수 있게 정리돼 있습니다.
+
+- [논증 기반 학습 설계](/education/insights/argumentation-based-learning) — 검증된 패턴
+
 ---
 
 <!-- source: https://docs.woowahan.com/education/logs/react-payments-555prs-analysis -->
@@ -10561,6 +10714,14 @@ Redux/Zustand/Recoil/React Query의 합계 언급이 555개 본문에서 단 16�
 └── review_theme_examples.json  # 테마별 예시
 ```
 
+## 이 실험에서 검증된 패턴·도구로
+
+이 로그는 원재료입니다. 여기서 반복 검증된 내용은 아래에 바로 적용할 수 있게 정리돼 있습니다.
+
+- [논증 기반 학습 설계](/education/insights/argumentation-based-learning) — 검증된 패턴
+- [미션은 누적 학습 모델이다](/education/insights/mission-learning-accumulation) — 검증된 패턴
+- [미션 저장소 PR 데이터 분석](/education/tools/mission-repo-analysis-workflow) — 검증된 도구
+
 ---
 
 <!-- source: https://docs.woowahan.com/education/logs/reinventing-the-wheel -->
@@ -10695,6 +10856,12 @@ Redux/Zustand/Recoil/React Query의 합계 언급이 555개 본문에서 단 16�
 - [5기 바퀴의 재발명 에세이 (GitHub Discussion #41)](https://github.com/woowacourse/retrospective/discussions/41)
 - [6기 바퀴의 재발명 에세이 (GitHub Discussion #54)](https://github.com/woowacourse/retrospective/discussions/54)
 - [7기 바퀴의 재발명 에세이 (GitHub Discussion #73)](https://github.com/woowacourse/retrospective/discussions/73)
+
+## 이 실험에서 검증된 패턴·도구로
+
+이 로그는 원재료입니다. 여기서 반복 검증된 내용은 아래에 바로 적용할 수 있게 정리돼 있습니다.
+
+- [POE 발견 학습](/education/insights/poe-discovery-learning) — 검증된 패턴
 
 ---
 
@@ -10924,6 +11091,12 @@ TDD를 "완벽한 테스트를 먼저 짜는 것"이 아니라 "**작은 단위�
 - **Step 5(내 코드 연결)의 시간 부족**: 5분은 실제 코드를 열어 변경 지점을 찾기에 짧았습니다. 핵심 포인트를 "적기"까지는 되었지만 "실제로 고치기"까지는 도달하기 어려웠습니다. 다음에는 Step 5 이후 별도 실습 시간을 두는 것이 좋겠습니다.
 - **주제 편중**: Q4/Q5에 집중되면서 다른 주제(Q7 Model/View, Q10 디자인 패턴 등)를 선택한 크루가 적었습니다. 소수 주제 선택자끼리의 교류 기회가 부족했습니다.
 - **보물창고(NotebookLM) 활용도**: 수업 중 안내한 NotebookLM 기반 보충 자료의 활용은 제한적이었습니다. 수업 후 비동기적으로 탐색하도록 유도하는 설계가 필요합니다.
+
+## 이 실험에서 검증된 패턴·도구로
+
+이 로그는 원재료입니다. 여기서 반복 검증된 내용은 아래에 바로 적용할 수 있게 정리돼 있습니다.
+
+- [POE 발견 학습](/education/insights/poe-discovery-learning) — 검증된 패턴
 
 ---
 
@@ -11584,6 +11757,12 @@ UX Writing은 사용자가 서비스를 이해하고 쉽게 사용할 수 있도
 - [JTBD 인터뷰를 위한 질문 설계 (GitHub Discussion #50)](https://github.com/woowacourse/retrospective/discussions/50)
 - [UT 인터뷰 (GitHub Discussion #51)](https://github.com/woowacourse/retrospective/discussions/51)
 
+## 이 실험에서 검증된 패턴·도구로
+
+이 로그는 원재료입니다. 여기서 반복 검증된 내용은 아래에 바로 적용할 수 있게 정리돼 있습니다.
+
+- [점진적 스캐폴딩](/education/insights/progressive-scaffolding) — 검증된 패턴
+
 ---
 
 <!-- source: https://docs.woowahan.com/education/logs/ux-research-training -->
@@ -11774,6 +11953,12 @@ UX Writing은 사용자가 서비스를 이해하고 쉽게 사용할 수 있도
 - [UX Writing — 서비스 소개글 쓰기 (GitHub Discussion #49)](https://github.com/woowacourse/retrospective/discussions/49)
 - [JTBD 인터뷰를 위한 질문 설계 (GitHub Discussion #50)](https://github.com/woowacourse/retrospective/discussions/50)
 - [UT 인터뷰 (GitHub Discussion #51)](https://github.com/woowacourse/retrospective/discussions/51)
+
+## 이 실험에서 검증된 패턴·도구로
+
+이 로그는 원재료입니다. 여기서 반복 검증된 내용은 아래에 바로 적용할 수 있게 정리돼 있습니다.
+
+- [점진적 스캐폴딩](/education/insights/progressive-scaffolding) — 검증된 패턴
 
 ---
 
@@ -12724,6 +12909,7 @@ graph TB
 - **장치**: 한 단어로 된 추상 개념 + 0~10점 + "왜 그 점수인가" 코멘트 의무화
 - **드러나는 것**: 같은 경험의 다른 해석 (예: 같은 작업량을 한 명은 협업 10점, 다른 한 명은 분업 6점으로 평가)
 - **주의**: 점수화 전에 "그 개념이 무엇인가"를 팀별로 정의하는 5분을 둡니다. 합의되지 않은 개념을 점수화하면 "뭔지 몰라서 모르겠음"이라는 거부가 나옵니다.
+- **예시**: [레벨3 팀 프로젝트 회고 3부작](/education/logs/level3-team-project-retrospective-series) — 중간 회고에서 "찐한 협업" 점수가 같은 팀 안에서 10점/6점으로 갈린 인지 비대칭
 
 ### 2. 역설 질문
 
@@ -12731,6 +12917,7 @@ graph TB
 
 - **질문**: "달성했지만 불만족스러운 경우 3가지" / "달성하지 못했지만 만족스러운 경우 3가지"
 - **드러나는 것**: 명시되지 않은 팀의 진짜 우선순위 (예: "사이좋게 지내기" → "사이좋게 지내면서도 공적으로 일 진행하기"로 목표 재조정)
+- **예시**: [데모데이 회고의 점진적 설계](/education/logs/demo-day-retrospective) — 3회차 역설 질문으로 팀 목표를 재조정한 사례
 
 ### 3. 시점별 시야 이동 (3층위)
 
@@ -12739,6 +12926,7 @@ graph TB
 - **구조**: 팀 문화(거시) → 나(미시) → 서비스/사용자(외부 독자 시점)
 - **변형**: 마지막 단계를 "사용자 유치 계획"처럼 코드 밖 비기술 영역으로 전환하면 시야가 사용자까지 확장됩니다
 - **드러나는 것**: 코드만 보던 크루가 마케팅·사용자 경험을 고민하게 되는 전환 (#39 다짐 → #40 build-measure-learn 루프로 구체화)
+- **예시**: [레벨3 팀 프로젝트 회고 3부작](/education/logs/level3-team-project-retrospective-series) — 최종 회고(#39) 3층위에서 사용자 유치 계획(#40)으로 시야가 코드 밖까지 확장된 흐름
 
 ### 4. 타임라인 회고 + 감정 색상
 
@@ -12746,6 +12934,7 @@ graph TB
 
 - **장치**: 따뜻한 사건=핑크 / 차가운 사건=파랑 / 중간=노랑 포스트잇 → 투표로 중요 사건 선별 → 팀 문화와 연결
 - **확장**: 부스 발표 + 리스펙 스티커(1인 4개)로 팀 내부 회고를 팀 간 학습으로 확장
+- **예시**: [데모데이 회고의 점진적 설계](/education/logs/demo-day-retrospective) — 4회차 타임라인 회고 + 부스 발표 + 리스펙 스티커
 
 ### 5. 성장 그래프 + 감정 키워드 + 서프라이즈 피드백
 
@@ -12755,6 +12944,7 @@ A3 모눈종이에 성장 곡선을 그리고 감정 어휘로 정밀하게 언�
 - **감정 어휘 확장**: 42개 감정 키워드 테이블 제공 — "힘들었다"를 "부담/좌절/무력감"으로 재분류합니다
 - **서프라이즈 피드백**: 발표자가 설명하는 동안 동료가 **몰래** 키워드를 적었다가 끝나면 공개. 자기 인식과 타인 시선의 간극이 학습 재료가 됩니다
 - **마무리**: 받은 키워드 중 가장 와닿는 것으로 그래프에 "성장 제목" 붙이기 (추상화 훈련)
+- **예시**: [나의 성장 그래프](/education/logs/growth-graph) — A3 모눈종이 이중 곡선부터 감정 키워드·서프라이즈 피드백·성장 제목까지 7단계 전체 진행
 
 <Toggle title="42개 감정 키워드 테이블 (복사용)">
 
@@ -12770,6 +12960,7 @@ A3 모눈종이에 성장 곡선을 그리고 감정 어휘로 정밀하게 언�
 
 - **장치**: "미션 5 → 4 / 프로젝트 4.5 → 5.5 / 취업 0.5 → 0.5"처럼 계획 vs 실제 비율을 나란히 적고 이유 서술
 - **주의**: 취업 준비 같은 민감한 주제가 섞이면 공유 범위를 팀 내로 한정하고 공개는 선택적으로 합니다
+- **예시**: [데모데이 회고의 점진적 설계](/education/logs/demo-day-retrospective) — 5회차, 레벨4의 미션·프로젝트·취업 자원 배분 계획 vs 실제 비교
 
 ### 7. 강점/취약점 이중 공유 (심리적 안전감)
 
@@ -12777,6 +12968,7 @@ A3 모눈종이에 성장 곡선을 그리고 감정 어휘로 정밀하게 언�
 
 - **장치**: 포스트잇에 먼저 쓰기(말하기 전) → 전지에 붙여 시각적 앵커 만들기 → 돌아가며 공유
 - **명시적 규칙**: "먼저 듣기" · "판단하지 않기('그게 뭐가 힘들어?' 금지)" · "공감하기" · "여기서만(밖으로 옮기지 않기)"
+- **예시**: [연극 회고](/education/logs/drama-retrospective) — 온보딩 1주차, 연극 직후 강점을 먼저 적고 취약점을 꺼낸 활동
 
 ## 진행 공통 체크리스트
 
@@ -12900,12 +13092,6 @@ flowchart TD
 이 문서는 완성된 정답집이 아니라 **계속 갱신되는 가설의 집합**입니다. 새 실험 로그가 들어오면 점수가 다시 매겨지고, 패턴이 바뀌면 위층의 원칙도 수정됩니다. 아래는 실제로 이 문서가 갱신돼 온 기록입니다.
 
 <RecentUpdates limit={5} />
-
-## 잣대는 사람만 바꿉니다
-
-<Callout type="warning" emoji="📏">
-채점 루브릭(`.claude/log-quality-rubric.md`, `.claude/promotion-rubric.md`)은 **에이전트가 수정하지 않습니다.** 평가 기준이 바뀌면 모든 이전 점수와 비교가 불가능해지기 때문입니다. 기준 변경은 사람이 직접 합니다 — 그래서 점수는 사후에 끼워 맞춰지지 않습니다.
-</Callout>
 
 ## 더 깊이 보고 싶다면
 

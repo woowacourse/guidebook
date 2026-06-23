@@ -53,6 +53,12 @@ LLM 에이전트(Claude Code, Codex, Cursor, 기타)가 이 저장소를 읽고 
 - **점검:** `npm run lint:tone` 또는 `/말투점검`. 큐레이션 교육 콘텐츠(philosophy·insights·design-patterns·curriculum·tools)를 검사하며, 본문 위반이 있으면 종료코드 1.
 - 선언·매니페스토 톤이어도 어미는 합니다체를 지킨다.
 
+### 7. 이미지·일러스트
+
+- 문서에 일러스트가 필요하면 **새 이미지를 만들지 말고 공식 캐릭터 행성이를 쓴다.** 카탈로그는 `public/images/characters/index.md` 에 있다.
+- 18가지 포즈(걷기·축하·협업·코딩·과열·발표 등)가 "추천 사용 맥락" 태그와 함께 정리돼 있다. 맥락으로 후보를 좁히고 파일명으로 고른다.
+- 본문 참조 경로는 `/images/characters/행성이-걷기.png` 형식. 주황 컬러는 `행성이-대표-주황.png` 한 장뿐이고 나머지는 라인아트다.
+
 ## 외부 LLM(ChatGPT/Claude/Gemini 등) 진입 흐름
 
 ```

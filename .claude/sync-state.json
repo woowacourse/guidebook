@@ -1,6 +1,6 @@
 {
-  "lastSyncCommit": "30a367b4f4544b02d20d23cc978f35f31770d126",
-  "lastSyncDate": "2026-06-23",
+  "lastSyncCommit": "7f8bda7816de85dd0230a5bc1af2fe1ee736e9d6",
+  "lastSyncDate": "2026-06-24",
   "config": {
     "threshold": 9,
     "promotionMinScore": 16,
@@ -15,56 +15,30 @@
   },
   "lastBatch": {
     "logs": [
-      "async-quiz-explanation",
-      "coaching-squad-training-loop",
-      "codelab-lotto-domain-ui",
-      "crew-autonomy",
-      "demo-day-retrospective",
-      "drama-retrospective",
-      "fe-accessibility-report",
-      "fe-level2-16steps",
-      "fe-performance-report",
-      "fe-react-typescript-convention",
-      "fe-rendering-strategy-workshop",
-      "fe-ssr-discussion",
-      "feedback-refactoring",
-      "growth-graph",
-      "level3-team-project-retrospective-series",
-      "posuta-coach-qa-archive",
-      "react-payments-555prs-analysis",
-      "reinventing-the-wheel",
-      "senior-code-review",
-      "ux-lecture-level3",
-      "ux-research-training"
+      "drama-onboarding",
+      "fe-lotto-2026-prs",
+      "fe-movie-review-2026-prs",
+      "fe-ts-learning-2026-prs",
+      "mission-design"
     ],
     "promoted": [
-      "react-payments-555prs-analysis (20/20) → already integrated: mission-learning-accumulation + argumentation-based-learning + mission-repo-analysis-workflow tool + curriculum/design-principles marker",
-      "coaching-squad-training-loop (19/20) → already integrated: progressive-scaffolding (auto-sync marker) + clean-language-mentoring tool",
-      "async-quiz-explanation (18/20) → already integrated: poe-discovery-learning + argumentation-based-learning",
-      "fe-performance-report (18/20) → already integrated: self-diagnostic-framework",
-      "growth-graph (18/20) → already integrated: self-diagnostic-framework + retrospective-design + retrospective-format-kit tool",
-      "demo-day-retrospective (18/20) → already integrated: retrospective-design + progressive-scaffolding + retrospective-format-kit tool",
-      "fe-level2-16steps (17/20) → already integrated: progressive-scaffolding",
-      "fe-rendering-strategy-workshop (16/20) → already integrated: argumentation-based-learning + rendering-strategy-workshop tool",
-      "level3-team-project-retrospective-series (16/20) → already integrated: retrospective-design + retrospective-format-kit tool",
-      "ux-research-training (16/20) → already integrated: progressive-scaffolding",
-      "senior-code-review (16/20) → already integrated: poe-discovery-learning"
+      "fe-lotto-2026-prs / fe-movie-review-2026-prs / fe-ts-learning-2026-prs (조건부 12~14) → augmented insights/mission-learning-accumulation (8기 미션 3종 재확인 marker, 근거 로그로)"
     ],
     "skipped": [
-      { "slug": "fe-accessibility-report", "score": 15 },
-      { "slug": "reinventing-the-wheel", "score": 15 },
-      { "slug": "codelab-lotto-domain-ui", "score": 15 },
-      { "slug": "fe-react-typescript-convention", "score": 15 },
-      { "slug": "posuta-coach-qa-archive", "score": 14, "note": "below threshold on re-eval; already integrated in argumentation-based-learning (2026-06-09)" },
-      { "slug": "drama-retrospective", "score": 14 },
-      { "slug": "feedback-refactoring", "score": 14 },
-      { "slug": "ux-lecture-level3", "score": 14 },
-      { "slug": "fe-ssr-discussion", "score": 13 },
-      { "slug": "crew-autonomy", "score": 12, "note": "already integrated in learning-analytics (2026-05-19)" }
+      {
+        "slug": "drama-onboarding",
+        "note": "modified: tool back-link only (drama-onboarding-kit), no new content"
+      },
+      {
+        "slug": "mission-design",
+        "note": "modified: tool back-link only (ai-collaboration-mission-kit), no new content"
+      }
     ],
     "insights": [],
-    "modelFilesChanged": [],
-    "note": "2026-06-23 auto cycle (chosen via option A). 21 changed log files were captured because they were re-edited by /로그개선 quality-polish passes, not new experiments. Re-evaluation (5 parallel scoring agents): 11 logs scored >=16, but ALL 11 are already substantively integrated into existing insights/tools (verified by grep + reading progressive-scaffolding, retrospective-design, self-diagnostic-framework, argumentation-based-learning, poe-discovery-learning). The 2026-06-16 manual full cycle already promoted this same set ('21 logs 승격가능 but most re-validate existing insights'). No new promotable content; 0 new insights, 0 model files. NOTE: lastSyncCommit was advanced to 30a367b by a concurrent session DURING this run (race); diff 30a367b..HEAD for logs is empty, so the backlog is cleared and the alert is silenced. lastBatch refreshed here to match the today-dated pointer (it had held stale 2026-06-09 data)."
+    "modelFilesChanged": [
+      "content/education/insights/mission-learning-accumulation.mdx"
+    ],
+    "note": "2026-06-24 auto cycle. 5 changed logs since 30a367b: 3 new FE 8기 PR-analysis (lotto/movie-review/ts-learning), 2 modified (drama-onboarding/mission-design = tool back-links only). Promotion P1~P4: lotto 12, movie-review 12, ts-learning 14 — all below auto threshold 16, so handled as 조건부 (evidence-only): augmented into mission-learning-accumulation as 근거 로그 (already committed in HEAD by a concurrent session). 0 new insight files. HEAVY concurrent multi-session race observed: sync-state pointer thrashed 30a367b→35259e4→30a367b and HEAD diverged (35259e4 became non-ancestor); a transient argumentation-based-learning marker was added then reverted. This finalize advances the pointer to the current HEAD that contains the persisted mission-learning-accumulation augmentation, clearing the backlog. ts-learning flagged in needsHumanReview as candidate for a dedicated 메타학습/AI-as-learning-tool insight."
   },
   "needsHumanReview": [
     {
@@ -78,6 +52,10 @@
     {
       "candidate": "coaching-squad-training-loop",
       "reason": "19/20 (P3=5, P4=4). Currently distributed across progressive-scaffolding (auto-sync marker) + clean-language-mentoring (tool). Consider extracting a dedicated insight for the '문제 해결보다 문제 인식을 먼저 두는 코칭 스탠스' (problem-awareness-before-solving coaching stance). Beyond auto mode's conservative scope."
+    },
+    {
+      "candidate": "fe-ts-learning-2026-prs",
+      "reason": "2026 신설 메타학습 미션(학습법을 학습 + AI를 학습 도구로 길들이기). P2=4/P4=4로 추출·영향력은 높으나 P1=2(단일 기수·미반복)라 자동 임계값 16 미만(14). 기존 인사이트가 안 다루는 신규 주제이므로 전용 인사이트 승격 여부는 사람이 판단."
     }
   ]
 }

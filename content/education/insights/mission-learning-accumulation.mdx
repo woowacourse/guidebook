@@ -27,6 +27,18 @@
   </Card>
 </CardGrid>
 
+{/* <auto-sync slug="mission-learning-accumulation" date="2026-06-24" logs={["fe-lotto-2026-prs","fe-movie-review-2026-prs","fe-ts-learning-2026-prs"]}> */}
+
+### 8기 프론트엔드 미션 3종에서의 재확인 (2026)
+
+같은 누적 구조는 페이먼츠 한 저장소에 그치지 않습니다. 8기 프론트엔드 미션 세 곳의 2026년 PR을 분석한 결과, 동일한 이중 층(영구 골격 + 매년 누적되는 새 목표)이 반복됩니다.
+
+- **로또** — 콘솔(1단계)에서 웹(2단계)으로 같은 도메인을 두 번 짓는 구조 자체가 누적 학습 설계입니다(자바 로또의 구현→리팩토링 2단계와 같은 형태). 1단계의 관심사 분리 품질이 2단계에서 검증됩니다. [로또 8기 PR 57개 분석](/education/logs/fe-lotto-2026-prs)
+- **영화리뷰** — 영화 목록(1단계) → 상세·UX(2단계) 골격 위에 2026년 비동기 에러 경로·상태 기반 설계라는 새 층이 누적됐습니다. [영화리뷰 8기 PR 54개 분석](/education/logs/fe-movie-review-2026-prs)
+- **ts러닝** — 2026년 신설 미션으로, 'TypeScript 입문' 골격 위에 '학습법 튜닝(메타학습)'이라는 새 층을 함께 얹은 사례입니다. [ts러닝 8기 PR 26개 분석](/education/logs/fe-ts-learning-2026-prs)
+
+{/* </auto-sync> */}
+
 ## 핵심 원칙
 
 1. **영구 골격을 먼저 식별합니다** — 어떤 주제가 모든 기수에서 60% 이상 다뤄지는지를 데이터로 확인하고, 그것이 미션의 진짜 학습 목적임을 명시합니다. 페이먼츠에서는 form-handling, state-management, component-design, custom-hooks가 영구 층이었습니다.

@@ -137,6 +137,33 @@ export function getLogBadges(log: Log): string[] {
 // 최신 항목을 맨 위에 추가하세요.
 const logs: Log[] = [
   {
+    slug: 'fe-lotto-2026-prs',
+    title: '로또 미션 8기 — PR 57개로 본 콘솔에서 웹으로의 관심사 분리',
+    description: 'woowacourse/javascript-lotto 2026년 PR 57건·리뷰 코멘트 983건에서 레벨1 크루가 콘솔에서 웹으로 같은 도메인을 옮기며 관심사 분리·검증 위치·TDD를 어떻게 익혔는지 정리했다.',
+    href: '/education/logs/fe-lotto-2026-prs',
+    date: '2026-06-23',
+    phases: ['레벨1'],
+    tracks: ['웹 프론트엔드'],
+  },
+  {
+    slug: 'fe-ts-learning-2026-prs',
+    title: 'ts러닝 미션 8기 — PR 26개로 본 "학습법을 학습하는" 신설 미션',
+    description: '2026년 신설된 woowacourse/ts-and-learning PR 26건·리뷰 코멘트 177건에서, 크루가 TypeScript를 익히는 동시에 자신의 학습법 자체를 설계·측정·개선하도록 한 메타학습 실험을 정리했다.',
+    href: '/education/logs/fe-ts-learning-2026-prs',
+    date: '2026-06-23',
+    phases: ['레벨1'],
+    tracks: ['웹 프론트엔드'],
+  },
+  {
+    slug: 'fe-movie-review-2026-prs',
+    title: '영화리뷰 미션 8기 — PR 54개로 본 비동기 에러와 상태 기반 설계의 첫 만남',
+    description: 'woowacourse/javascript-movie-review 2026년 PR 54건·리뷰 코멘트 1,786건에서 레벨1 크루가 fetch 비동기 통신·에러 경로 설계·상태 기반 렌더링을 처음 부딪히며 익힌 과정을 정리했다.',
+    href: '/education/logs/fe-movie-review-2026-prs',
+    date: '2026-06-23',
+    phases: ['레벨1'],
+    tracks: ['웹 프론트엔드'],
+  },
+  {
     slug: 'react-payments-555prs-analysis',
     title: 'React 페이먼츠 미션 5년치 PR 555개 데이터 분석',
     description: 'woowacourse/react-payments 저장소 555개 PR(2021–2026)의 본문·리뷰 코멘트 2,360건을 정량 분석해 학습 주제 진화·리뷰어 코칭 패턴·미션 재설계 흔적을 추적했다.',

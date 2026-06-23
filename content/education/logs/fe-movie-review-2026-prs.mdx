@@ -1,0 +1,80 @@
+---
+title: 영화리뷰 미션 8기 — PR 54개로 본 비동기 에러와 상태 기반 설계의 첫 만남
+description: woowacourse/javascript-movie-review 2026년 PR 54건·리뷰 코멘트 1,786건에서 레벨1 크루가 fetch 비동기 통신·에러 경로 설계·상태 기반 렌더링을 처음 부딪히며 익힌 과정을 정리했습니다.
+---
+
+import { Callout } from 'nextra/components'
+
+# 영화리뷰 미션 8기 — PR 54개로 본 비동기 에러와 상태 기반 설계의 첫 만남
+
+<Callout>
+**대상**: 레벨1 후반 비동기 통신 미션을 설계하고 코칭하는 코치, 교육 모델 설계자
+
+**맥락**: `woowacourse/javascript-movie-review`는 2023년에 연 레벨1 미션입니다. 2026년(8기)에는 25명의 크루가 54개의 PR을 올렸고, 1,786건의 리뷰 코멘트가 쌓였습니다(세 미션 중 코멘트가 가장 많습니다). TMDB API를 `fetch`로 호출하는 구조라, 크루가 비동기 통신과 에러 처리를 처음 본격적으로 마주하는 자리입니다.
+
+**핵심 질문**: 레벨1 크루가 비동기·에러·상태를 처음 만났을 때 어디서 막혔고, 우리는 어떻게 다음 단계로 넘겼는가?
+</Callout>
+
+## 2026 PR 한눈에
+
+올해 PR은 두 단계로 나뉩니다.
+
+| 단계 | PR 수 | 학습 초점 |
+| --- | --- | --- |
+| 1단계 — 영화 목록 불러오기 | 29 | `fetch`로 비동기 통신, 페이지네이션, 환경변수로 API 키 분리 |
+| 2단계 — 상세 정보 & UI/UX 개선 | 25 | 상세 모달, 로딩·에러 UI, 상태 기반 렌더링 |
+
+1,786건의 코멘트(코치·크루 리뷰 1,059건, AI 봇 727건)에서 가장 강하게 반복된 주제는 비동기 에러 처리였습니다.
+
+- **비동기 에러를 경로별로 설계하기** — `fetch`가 4xx·5xx에 reject하지 않는다는 사실, 네트워크 오류는 `TypeError`로 온다는 사실을 직접 부딪혀 깨닫는 과정.
+- **상태 기반 렌더링** — 명령 기반으로 화면을 직접 그리던 사고에서 상태가 화면을 결정하는 사고로의 전환.
+- **관심사 분리** — 한 함수가 상태·API·DOM·로직을 모두 떠안는 구조를 단일 책임으로 쪼개기.
+- **운영 품질** — `.env`로 API 키 분리, 기술적 에러 메시지를 사용자에게 그대로 노출하지 않기, 실제 API에 의존하지 않는 E2E 모킹.
+
+## 인상적인 리뷰·학습 장면
+
+### 우연히 통과하는 테스트를 짚다 — [PR #264](https://github.com/woowacourse/javascript-movie-review/pull/264)
+
+> [필수] 응답 자체를 `{ statusCode: 500 }` 형태의 값으로 모킹했고 (…) fetch는 4xx/5xx 응답에 reject를 내리지 않습니다. 그러니 이 테스트는 실제 fetch 동작과는 다른 가정 위에서 작성된 것 (…) 우연히 통과하고 있을 가능성이 있으니
+
+`fetch`의 가장 흔한 오개념을 테스트와 연결해 교정합니다. "동작한다"와 "의도대로 동작한다"가 다르다는 것을 거짓으로 통과하는 테스트로 보여 줍니다.
+
+### 에러 핸들러는 만들었지만 호출 경로가 없다 — [PR #287](https://github.com/woowacourse/javascript-movie-review/pull/287)
+
+> `main().catch()`는 초기 페이지 로드 시점의 에러만 잡습니다. 더보기 버튼 클릭이나 검색 실행은 별도의 async 이벤트 핸들러에서 수행되는데, 이 핸들러들에는 try/catch가 없어요. (…) 이 에러는 unhandled promise rejection이 됩니다.
+
+에러 처리를 "한 군데 만들어 두면 끝"이 아니라 사용자 인터랙션 단위로 사고하게 만듭니다. 초기 로드, 더보기, 검색 — 모든 비동기 진입점마다 에러 경로를 따져야 한다는 깨달음입니다.
+
+### 지금 고칠 것과 사고만 해 둘 것을 나누다 — [PR #266](https://github.com/woowacourse/javascript-movie-review/pull/266)
+
+> P3; 뷰 렌더링이 상태 기반이 아니라 명령 기반이에요. (…) 순서를 실수하면 버그가 생길 수 있어요. (…) 당장 적용할 필요는 없지만 '상태 기반으로 화면을 설계한다' 측면에서 사고해보시는 것을 추천해요.
+
+P1~P3 우선순위를 달아 "지금 고칠 것"과 "사고만 해 둘 것"을 구분합니다. 레벨1 크루가 과부하 없이 상태 기반 설계라는 큰 개념을 받아들이게 하는 코칭 화법입니다.
+
+### 에러 타입 보존과 사용자 메시지 — [PR #285](https://github.com/woowacourse/javascript-movie-review/pull/285)
+
+> fetchMoviesApi에서 TypeError를 catch해서 일반 Error로 throw하기 때문에 userErrorMessage에서 TypeError 분기에 걸리지 않게 될 것 같아요!
+
+이어서 같은 리뷰어가 "기술적인 에러 메시지가 사용자에게 그대로 노출되는데 괜찮을까요?"라고 묻습니다. 에러 타입 보존과 변환, 그리고 사용자 경험·보안 관점까지 한 스레드에서 다층으로 다룹니다.
+
+### 피드백이 코드로 전이되다 — [PR #269](https://github.com/woowacourse/javascript-movie-review/pull/269)
+
+크루가 코치 피드백을 받아 직접 고쳐 옵니다.
+
+> 말씀해주신 것처럼 fetch() 자체가 reject되는 네트워크 오류는 response.ok로 잡을 수 없어서, try/catch로 감싸 HTTP 오류와 네트워크 오류를 분리해서 처리하도록 수정했습니다.
+
+리뷰에서 받은 개념이 크루의 코드로 옮겨 가는 학습 전이가 그대로 기록된 장면입니다.
+
+## 올해 길러진 핵심 교육 경험
+
+1. **"비동기 에러는 happy path가 아니라 경로별로 설계한다"는 감각을 얻었습니다.** 올해 영화리뷰의 가장 큰 학습은 `fetch`의 실제 동작(4xx·5xx 비-reject, 네트워크 오류는 `TypeError`)을 직접 부딪혀 깨닫고, 초기 로드·더보기·검색 등 모든 비동기 진입점마다 에러 전파 경로를 검증하게 된 것입니다.
+
+2. **명령 기반에서 상태 기반 사고로 처음 전환했습니다.** 한 함수가 상태·API·DOM·로직을 모두 떠안는 절차적 구조에서, 우리는 P1~P3 우선순위로 단일 책임과 상태 기반 렌더링을 점진적으로 제시했습니다. 크루는 레벨1이 감당할 만큼 관심사를 분리하며 레벨2 이후 설계 사고의 토대를 놓았습니다.
+
+3. **운영 관점을 코드 리뷰로 처음 익혔습니다.** `.env`로 API 키를 분리하되 `Bearer undefined`를 빠르게 잡아내는 방어, 기술 에러 메시지를 사용자에게 노출하지 않는 정제, 실제 API에 의존하지 않는 E2E 모킹 — 기능 구현을 넘어 실제 서비스에서 마주칠 운영 품질을 동료·코치 리뷰로 처음 인식한 미션이었습니다.
+
+## 원본 자료
+
+- **분석 대상 저장소**: [woowacourse/javascript-movie-review](https://github.com/woowacourse/javascript-movie-review) — 2026년 PR 54건, 작성자 25명, 리뷰 코멘트 1,786건
+- 인용 PR: [#264](https://github.com/woowacourse/javascript-movie-review/pull/264) · [#287](https://github.com/woowacourse/javascript-movie-review/pull/287) · [#266](https://github.com/woowacourse/javascript-movie-review/pull/266) · [#285](https://github.com/woowacourse/javascript-movie-review/pull/285) · [#269](https://github.com/woowacourse/javascript-movie-review/pull/269)
+- PR 본문과 전체 리뷰 코멘트 원본은 LLM Wiki(비공개) `raw/2026-06-23-fe-movie-review-2026-prs.md`에 평문으로 보존돼 있습니다. 수집 절차는 [미션 저장소 PR 데이터 분석 워크플로우](/education/tools/mission-repo-analysis-workflow)를 따릅니다.

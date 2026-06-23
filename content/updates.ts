@@ -10,6 +10,22 @@ export interface Update {
 const updates: Update[] = [
   {
     date: '2026년 8기',
+    title: '검증된 패턴: 비기술 첫 미션 승격',
+    description:
+      '연극 온보딩에서 "비-기술 첫 미션으로 역량 불안과 관계 불안을 분리한다"는 설계 원칙을 검증된 패턴으로 승격했다. 기수가 바뀌어도 첫 미션을 연극으로 고정해 온 반복 검증이 근거이며, 연극 온보딩 설계 키트·회고 설계와 연결된다.',
+    href: '/education/insights/non-technical-first-mission',
+    status: 'active',
+  },
+  {
+    date: '2026년 8기',
+    title: '검증된 도구: AI 협업 미션 설계 키트 신설',
+    description:
+      '올해 전 트랙 공통으로 진행한 Gemini Canvas 웹앱 미션을 복사해 설계하는 키트를 추가했다. 1주 4개 앱·페어 프롬프트 릴레이·피드백 즉시 개선 데모데이·AI 사용 일지 구조와, 145개 PR에서 반복된 프롬프팅 패턴(구조화 프롬프트·제약 선언·반복 개선)을 담았다. 미션 설계 로그가 근거.',
+    href: '/education/tools/ai-collaboration-mission-kit',
+    status: 'active',
+  },
+  {
+    date: '2026년 8기',
     title: '검증된 도구: 연극 온보딩 설계 키트 신설',
     description:
       '입학 첫 주 연극 미션을 복사해 설계하는 키트를 검증된 도구에 추가했다. 역량 불안과 관계 불안을 분리하는 첫 장치로서 운영 구조 템플릿·요구사항의 교육적 의도·MC 제도·8기 28개 주제 카탈로그를 담았고, 회고 설계는 회고 형식 키트로 연결한다. 8기 연극 미션·연극 회고 로그가 근거.',

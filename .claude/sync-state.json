@@ -15,40 +15,56 @@
   },
   "lastBatch": {
     "logs": [
-      "android-level2-mini-project",
+      "async-quiz-explanation",
+      "coaching-squad-training-loop",
+      "codelab-lotto-domain-ui",
       "crew-autonomy",
-      "posuta-archive",
+      "demo-day-retrospective",
+      "drama-retrospective",
+      "fe-accessibility-report",
+      "fe-level2-16steps",
+      "fe-performance-report",
+      "fe-react-typescript-convention",
+      "fe-rendering-strategy-workshop",
+      "fe-ssr-discussion",
+      "feedback-refactoring",
+      "growth-graph",
+      "level3-team-project-retrospective-series",
       "posuta-coach-qa-archive",
       "react-payments-555prs-analysis",
-      "thanks-feedback-workshop"
+      "reinventing-the-wheel",
+      "senior-code-review",
+      "ux-lecture-level3",
+      "ux-research-training"
     ],
     "promoted": [
-      "react-payments-555prs-analysis (20/20) → already synced in mission-learning-accumulation + argumentation-based-learning (PROMOTED marker) + mission-repo-analysis-workflow tool (inline references)",
-      "posuta-coach-qa-archive (16/20) → argumentation-based-learning.mdx (auto-sync marker, non-formal Q&A coaching language evidence)"
+      "react-payments-555prs-analysis (20/20) → already integrated: mission-learning-accumulation + argumentation-based-learning + mission-repo-analysis-workflow tool + curriculum/design-principles marker",
+      "coaching-squad-training-loop (19/20) → already integrated: progressive-scaffolding (auto-sync marker) + clean-language-mentoring tool",
+      "async-quiz-explanation (18/20) → already integrated: poe-discovery-learning + argumentation-based-learning",
+      "fe-performance-report (18/20) → already integrated: self-diagnostic-framework",
+      "growth-graph (18/20) → already integrated: self-diagnostic-framework + retrospective-design + retrospective-format-kit tool",
+      "demo-day-retrospective (18/20) → already integrated: retrospective-design + progressive-scaffolding + retrospective-format-kit tool",
+      "fe-level2-16steps (17/20) → already integrated: progressive-scaffolding",
+      "fe-rendering-strategy-workshop (16/20) → already integrated: argumentation-based-learning + rendering-strategy-workshop tool",
+      "level3-team-project-retrospective-series (16/20) → already integrated: retrospective-design + retrospective-format-kit tool",
+      "ux-research-training (16/20) → already integrated: progressive-scaffolding",
+      "senior-code-review (16/20) → already integrated: poe-discovery-learning"
     ],
     "skipped": [
-      {
-        "slug": "android-level2-mini-project",
-        "score": 8
-      },
-      {
-        "slug": "posuta-archive",
-        "score": 13
-      },
-      {
-        "slug": "thanks-feedback-workshop",
-        "score": 13
-      },
-      {
-        "slug": "crew-autonomy",
-        "note": "1-line edit only; previously promoted at 17/20 in 2026-05-19 cycle"
-      }
+      { "slug": "fe-accessibility-report", "score": 15 },
+      { "slug": "reinventing-the-wheel", "score": 15 },
+      { "slug": "codelab-lotto-domain-ui", "score": 15 },
+      { "slug": "fe-react-typescript-convention", "score": 15 },
+      { "slug": "posuta-coach-qa-archive", "score": 14, "note": "below threshold on re-eval; already integrated in argumentation-based-learning (2026-06-09)" },
+      { "slug": "drama-retrospective", "score": 14 },
+      { "slug": "feedback-refactoring", "score": 14 },
+      { "slug": "ux-lecture-level3", "score": 14 },
+      { "slug": "fe-ssr-discussion", "score": 13 },
+      { "slug": "crew-autonomy", "score": 12, "note": "already integrated in learning-analytics (2026-05-19)" }
     ],
     "insights": [],
-    "modelFilesChanged": [
-      "content/education/insights/argumentation-based-learning.mdx"
-    ],
-    "note": "2026-06-09 auto cycle: 6 changed log files since 2026-05-19. react-payments was already integrated into mission-learning-accumulation (CardGrid) and argumentation-based-learning (PROMOTED marker) and mission-repo-analysis-workflow tool when its PR landed, so this cycle's only new work was adding posuta-coach-qa-archive as non-formal Q&A evidence to argumentation-based-learning. Other 3 logs scored below promotionMinScore=16. crew-autonomy had only a 1-line edit and was already promoted in the previous cycle."
+    "modelFilesChanged": [],
+    "note": "2026-06-23 auto cycle (chosen via option A). 21 changed log files were captured because they were re-edited by /로그개선 quality-polish passes, not new experiments. Re-evaluation (5 parallel scoring agents): 11 logs scored >=16, but ALL 11 are already substantively integrated into existing insights/tools (verified by grep + reading progressive-scaffolding, retrospective-design, self-diagnostic-framework, argumentation-based-learning, poe-discovery-learning). The 2026-06-16 manual full cycle already promoted this same set ('21 logs 승격가능 but most re-validate existing insights'). No new promotable content; 0 new insights, 0 model files. NOTE: lastSyncCommit was advanced to 30a367b by a concurrent session DURING this run (race); diff 30a367b..HEAD for logs is empty, so the backlog is cleared and the alert is silenced. lastBatch refreshed here to match the today-dated pointer (it had held stale 2026-06-09 data)."
   },
   "needsHumanReview": [
     {
@@ -58,6 +74,10 @@
     {
       "candidate": "thanks-feedback-workshop",
       "reason": "P2=5 (very extractable: 6-activity 90-min workshop with SSCC + 7-day card). 13/20 because not yet run. After 1 operation, recommend re-evaluating for tool/ promotion."
+    },
+    {
+      "candidate": "coaching-squad-training-loop",
+      "reason": "19/20 (P3=5, P4=4). Currently distributed across progressive-scaffolding (auto-sync marker) + clean-language-mentoring (tool). Consider extracting a dedicated insight for the '문제 해결보다 문제 인식을 먼저 두는 코칭 스탠스' (problem-awareness-before-solving coaching stance). Beyond auto mode's conservative scope."
     }
   ]
 }

@@ -7,6 +7,7 @@ import { AssetCard } from './components/AssetCard'
 import { Timeline, TimelineItem } from './components/Timeline'
 import { Placeholder } from './components/Placeholder'
 import { Hero } from './components/Hero'
+import { CrewJourney } from './components/CrewJourney'
 import { RecentUpdates } from './components/RecentUpdates'
 import { LogList } from './components/LogList'
 import { Mermaid } from './components/Mermaid'
@@ -34,6 +35,7 @@ export function useMDXComponents(components?: Record<string, React.FC>) {
     TimelineItem,
     Placeholder,
     Hero,
+    CrewJourney,
     RecentUpdates,
     LogList,
     Mermaid,

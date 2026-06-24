@@ -1,0 +1,181 @@
+/* CrewVoiceMap — "크루들이 가장 많이 한 말" : 글자 크기=빈도. 차트 크롬 없이 타이포로만 */
+.section {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 0 1rem 1rem;
+  text-align: center;
+}
+
+.heading {
+  font-size: clamp(1.45rem, 3.4vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: rgb(55, 53, 47);
+  margin: 0 0 0.5rem;
+  word-break: keep-all;
+}
+
+:global(.dark) .heading {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.sub {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(55, 53, 47, 0.6);
+  margin: 0 auto 1.75rem;
+  word-break: keep-all;
+}
+
+:global(.dark) .sub {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.tag {
+  margin-left: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: rgba(55, 53, 47, 0.55);
+  background: rgba(55, 53, 47, 0.07);
+  border: 1px solid rgba(55, 53, 47, 0.14);
+  border-radius: 999px;
+  padding: 0.1rem 0.5rem;
+  white-space: nowrap;
+}
+
+:global(.dark) .tag {
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+/* 빈도 맵 — 주제들이 가운데 기준선으로 흐른다. 회전·랜덤색 없이 크기로만 위계 */
+.cloud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 1.1rem;
+  max-width: 46rem;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* 각 주제는 버튼 — 호버(데스크톱)·포커스(키보드)·탭(모바일) 모두 반응 */
+.word {
+  appearance: none;
+  border: 0;
+  background: none;
+  padding: 0.1rem 0.15rem;
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: rgb(55, 53, 47);
+  cursor: pointer;
+  word-break: keep-all;
+  transition: color 0.15s ease, opacity 0.15s ease;
+  border-radius: 6px;
+}
+
+:global(.dark) .word {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.word:hover,
+.word.active {
+  color: rgb(196, 85, 77); /* Hero/Mermaid 계열 포인트 톤 */
+}
+
+:global(.dark) .word:hover,
+:global(.dark) .word.active {
+  color: rgb(232, 150, 142);
+}
+
+.word:focus-visible {
+  outline: 2px solid rgba(196, 85, 77, 0.6);
+  outline-offset: 2px;
+}
+
+/* 빈도 숫자 — 주제명 어깨에 작게 */
+.count {
+  font-size: 0.5em;
+  font-weight: 600;
+  margin-left: 0.12em;
+  color: rgba(55, 53, 47, 0.5);
+  vertical-align: super;
+}
+
+:global(.dark) .count {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* 캡션 — 선택된 주제의 대표 문장. 높이 고정으로 레이아웃 점프 방지 */
+.caption {
+  max-width: 36rem;
+  min-height: 5.5rem;
+  margin: 2rem auto 0;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid rgba(55, 53, 47, 0.12);
+  border-radius: 12px;
+  background: rgba(55, 53, 47, 0.015);
+}
+
+:global(.dark) .caption {
+  border-color: rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.quote {
+  margin: 0 0 0.55rem;
+  font-size: 1.02rem;
+  line-height: 1.65;
+  color: rgb(55, 53, 47);
+  word-break: keep-all;
+  text-wrap: pretty;
+}
+
+.quote::before {
+  content: '“';
+  color: rgba(55, 53, 47, 0.35);
+  font-weight: 700;
+}
+
+.quote::after {
+  content: '”';
+  color: rgba(55, 53, 47, 0.35);
+  font-weight: 700;
+}
+
+:global(.dark) .quote {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+:global(.dark) .quote::before,
+:global(.dark) .quote::after {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.meta {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: rgba(55, 53, 47, 0.6);
+}
+
+:global(.dark) .meta {
+  color: rgba(255, 255, 255, 0.58);
+}
+
+.more {
+  margin: 1.5rem 0 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+  .cloud {
+    gap: 0.3rem 0.8rem;
+  }
+  .caption {
+    min-height: 6.5rem;
+  }
+}

@@ -21,6 +21,10 @@ const COMPANIES = [
   '쿠팡',
   '라인',
   '핵클',
+  '두나무',
+  '한국신용데이터',
+  'CJ 올리브영',
+  '당근',
   '딜리버리히어로즈',
   '탈라밧'
 ]
@@ -55,7 +59,7 @@ export function CrewJourney() {
 
       <p className={styles.global}>
         크루는 한국에만 있지 않습니다. 그 영향력은{' '}
-        <span className={styles.cities}>도쿄·베를린·두바이</span>까지 이어집니다.
+        <span className={styles.cities}>베를린·두바이</span>까지 이어집니다.
       </p>
     </section>
   )

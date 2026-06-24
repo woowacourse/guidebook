@@ -38,7 +38,7 @@ export interface CurriculumCohort {
 // 레벨 0~5 골격 — 공식 트랙 페이지(현재 기준)에서 합성. 트랙별로 강조점이 다르다.
 export const LEVELS_BY_TRACK: Record<TrackKey, CurriculumLevel[]> = {
   '웹 프론트엔드': [
-    { level: '레벨 0', stage: '온보딩', name: '적응 · 기초', desc: '심리적 안정감 형성, 소프트스킬 시작' },
+    { level: '레벨 0', stage: '온보딩', name: '적응 · 기초', desc: '연극 온보딩으로 시작, 심리적 안정감 형성' },
     { level: '레벨 1', stage: '기초', name: '프로그래밍 기초', desc: 'HTML·CSS·JS 기본, 테스트 작성·리팩터링' },
     { level: '레벨 2', stage: '중급', name: 'React 애플리케이션', desc: '컴포넌트 설계, 상태 관리 라이브러리 활용' },
     { level: '레벨 3', stage: '협업', name: '팀 프로젝트', desc: '실제 개발 프로세스, 서비스 배포 경험' },
@@ -46,7 +46,7 @@ export const LEVELS_BY_TRACK: Record<TrackKey, CurriculumLevel[]> = {
     { level: '레벨 5', stage: '취업', name: '취업 준비', desc: '개인 학습 보충, 이력서, 기업 면담' },
   ],
   '웹 백엔드': [
-    { level: '레벨 0', stage: '온보딩', name: '적응 · 기초', desc: '기초 개념, 소프트스킬 시작' },
+    { level: '레벨 0', stage: '온보딩', name: '적응 · 기초', desc: '연극 온보딩으로 시작, 기초 개념' },
     { level: '레벨 1', stage: '기초', name: '프로그래밍 기초', desc: '콘솔 앱으로 핵심 역량 정립, 코드 가독성 강조' },
     { level: '레벨 2', stage: '웹', name: '웹 프로그래밍', desc: '웹 애플리케이션 구현, 백엔드 기술 학습' },
     { level: '레벨 3', stage: '협업', name: '팀 프로젝트', desc: '협업 프로세스, 기획·구현·실 사용자 배포' },
@@ -54,7 +54,7 @@ export const LEVELS_BY_TRACK: Record<TrackKey, CurriculumLevel[]> = {
     { level: '레벨 5', stage: '취업', name: '개인 학습 & 취업', desc: '역량 보완, 이력서, 레벨 인터뷰, 리크루팅 데이' },
   ],
   '안드로이드': [
-    { level: '레벨 0', stage: '온보딩', name: '적응 · 기초', desc: '코틀린 기본 문법 시작, 소프트스킬' },
+    { level: '레벨 0', stage: '온보딩', name: '적응 · 기초', desc: '연극 온보딩으로 시작, 코틀린 문법' },
     { level: '레벨 1', stage: '기초', name: '프로그래밍 기초', desc: '코틀린 문법, 코드 품질 향상' },
     { level: '레벨 2', stage: '입문', name: '모바일 개발 입문', desc: '안드로이드 프레임워크, UI, 테스트, 서버 통신' },
     { level: '레벨 3', stage: '협업', name: '팀 협업 프로젝트', desc: '의존성 주입, 비동기 프로그래밍, 선언형 UI' },
@@ -62,7 +62,7 @@ export const LEVELS_BY_TRACK: Record<TrackKey, CurriculumLevel[]> = {
     { level: '레벨 5', stage: '취업', name: '취업 준비', desc: '이력서, 인터뷰, 기업 매칭' },
   ],
   '소프트스킬': [
-    { level: '레벨 0', stage: '적응', name: '적응', desc: '심리적 안정감, 팀원 간 신뢰 구축' },
+    { level: '레벨 0', stage: '적응', name: '적응', desc: '연극 온보딩 미션 — 심리적 안정감·신뢰 구축' },
     { level: '레벨 1', stage: '마인드셋', name: '마인드셋 전환', desc: '기존 마인드셋 점검 → 협력 중심 사고' },
     { level: '레벨 2', stage: '개인', name: '개인 역량 강화', desc: '강점·약점 인식, 목표 설정, 피드백 성장' },
     { level: '레벨 3', stage: '협업', name: '협업 역량', desc: '협업 소프트스킬 정의·실천 (팀 프로젝트)' },

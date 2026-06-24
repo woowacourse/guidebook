@@ -32,12 +32,7 @@ export function RecruitingSchedule() {
       {infoSessionEmbed && (
         <div className={styles.info}>
           <h3>입학 설명회 라이브 영상</h3>
-          <Embed
-            src={infoSessionEmbed}
-            title="입학 설명회 라이브 영상"
-            fallbackHref={infoSessionUrl}
-            fallbackLabel="유튜브에서 보기"
-          />
+          <Embed src={infoSessionEmbed} title="입학 설명회 라이브 영상" />
         </div>
       )}
 

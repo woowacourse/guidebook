@@ -9,6 +9,14 @@ export interface Update {
 // 최신 항목을 맨 위에 추가하세요.
 const updates: Update[] = [
   {
+    date: '2026년 연구',
+    title: '크루의 목소리 — 랜딩 큐레이션 + 아카이브 신설',
+    description:
+      '우테코를 거쳐 간 크루들이 남긴 메시지·추천사를 모으는 자리를 열었다. 랜딩에서는 "크루는 어디로 갔나(결과)" 다음에 엄선한 목소리(의미) 3개를 보여주고, 콘텐츠 아카이브에 전체 페이지를 두어 "누구에게 권하고 싶은가"라는 크루 자신의 답까지 함께 읽게 했다. 현재 문구는 실제 메시지를 받기 전 예시다.',
+    href: '/education/conversations/crew-voices',
+    status: 'active',
+  },
+  {
     date: '2026년 8기',
     title: '실험 로그: 8기 프론트엔드 미션 3종 PR 분석',
     description:

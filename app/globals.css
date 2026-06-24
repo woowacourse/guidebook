@@ -247,6 +247,12 @@ div.nextra-body-typesetting-article:has([data-landing-hero]) {
   display: none !important;
 }
 
+/* footer 바를 없애면 첫 메뉴가 헤더에 바짝 붙어 어색하므로,
+   사이드바 스크롤 영역 상단에 여백을 더해 자연스럽게 띄운다. (기본 p-4 = 1rem) */
+.nextra-sidebar .nextra-scrollbar {
+  padding-top: 2rem;
+}
+
 /* 헤더 외 중복 ThemeSwitch 숨기기 (방어적) */
 button[title="Change theme"]:not(.theme-switch-navbar) {
   display: none !important;

@@ -106,12 +106,12 @@
 }
 
 .node.intl {
-  color: rgb(196, 85, 77);
+  color: rgb(214, 104, 48);
   font-weight: 700;
 }
 
 :global(.dark) .node.intl {
-  color: rgb(232, 150, 142);
+  color: rgb(240, 165, 112);
 }
 
 /* 모바일 폴백 (기본 숨김) */
@@ -135,13 +135,13 @@
 }
 
 .chipIntl {
-  color: rgb(196, 85, 77);
-  border-color: rgba(196, 85, 77, 0.4);
+  color: rgb(214, 104, 48);
+  border-color: rgba(214, 104, 48, 0.4);
 }
 
 :global(.dark) .chipIntl {
-  color: rgb(232, 150, 142);
-  border-color: rgba(232, 150, 142, 0.4);
+  color: rgb(240, 165, 112);
+  border-color: rgba(240, 165, 112, 0.4);
 }
 
 /* 글로벌 한 줄 */

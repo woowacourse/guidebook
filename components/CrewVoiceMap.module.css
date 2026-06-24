@@ -1,98 +1,78 @@
-/* CrewVoiceMap — "크루들이 가장 많이 한 말" : 손그림 별무리(밤하늘). 연결선 없이 광원·잔별로 깊이 */
+/* CrewVoiceMap — "크루들이 가장 많이 한 말" : 항상 어두운 '밤하늘' 밴드 패널.
+   흰 섹션들 사이의 어두운 밴드로 스크롤 리듬을 만들고, 별 메타포를 강화한다.
+   테마 무관 night-default (라이트/다크 모두 어두운 패널). 액센트는 따뜻한 오렌지. */
 .section {
-  max-width: 52rem;
-  margin: 0 auto;
-  padding: 3.75rem 1rem 0.5rem;
+  max-width: 58rem;
+  margin: 3rem auto;
+  padding: 3.25rem 1.5rem 2.75rem;
   text-align: center;
+  background: #15141c;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  box-shadow: 0 12px 44px rgba(18, 16, 28, 0.22);
 }
 
 .heading {
   font-size: clamp(1.5rem, 3.6vw, 2.05rem);
   font-weight: 800;
   letter-spacing: -0.03em;
-  color: rgb(55, 53, 47);
+  color: rgba(255, 255, 255, 0.95);
   margin: 0 0 0.5rem;
   word-break: keep-all;
 }
 
-:global(.dark) .heading {
-  color: rgba(255, 255, 255, 0.95);
-}
-
 .sub {
   font-size: 0.95rem;
-  color: rgba(55, 53, 47, 0.6);
+  color: rgba(255, 255, 255, 0.58);
   margin: 0 auto;
   word-break: keep-all;
-}
-
-:global(.dark) .sub {
-  color: rgba(255, 255, 255, 0.55);
 }
 
 .tag {
   margin-left: 0.5rem;
   font-size: 0.7rem;
   font-weight: 700;
-  color: rgba(55, 53, 47, 0.55);
-  background: rgba(55, 53, 47, 0.07);
-  border: 1px solid rgba(55, 53, 47, 0.14);
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 999px;
   padding: 0.1rem 0.5rem;
   white-space: nowrap;
 }
 
-:global(.dark) .tag {
-  color: rgba(255, 255, 255, 0.6);
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.18);
-}
-
 /* 별무리 판 */
 .field {
   position: relative;
-  height: 380px;
-  max-width: 660px;
+  height: 360px;
+  max-width: 600px;
   margin: 1.5rem auto 0;
 }
 
-/* 따뜻한 광원 — 별무리 중심을 은은히 밝힌다 (Hero starGlow 계열) */
+/* 따뜻한 광원 — 밤하늘 속 따뜻한 빛 */
 .glow {
   position: absolute;
   left: 50%;
   top: 46%;
-  width: 70%;
-  height: 70%;
+  width: 72%;
+  height: 72%;
   transform: translate(-50%, -50%);
   z-index: 0;
   pointer-events: none;
   background: radial-gradient(
     50% 50% at 50% 50%,
-    rgba(255, 236, 200, 0.55),
-    rgba(255, 236, 200, 0) 70%
+    rgba(255, 233, 196, 0.18),
+    rgba(255, 233, 196, 0) 70%
   );
 }
 
-:global(.dark) .glow {
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgba(255, 246, 228, 0.12),
-    rgba(255, 246, 228, 0) 70%
-  );
-}
-
-/* 배경 잔별 — 밤하늘 깊이 (장식) */
+/* 배경 잔별 */
 .spark {
   position: absolute;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: rgba(55, 53, 47, 0.18);
+  background: rgba(255, 255, 255, 0.32);
   z-index: 0;
   pointer-events: none;
-}
-
-:global(.dark) .spark {
-  background: rgba(255, 255, 255, 0.28);
 }
 
 /* 말=별 */
@@ -109,78 +89,51 @@
   cursor: pointer;
   font-family: inherit;
   padding: 0.2rem;
-  color: rgb(55, 53, 47);
-}
-
-:global(.dark) .star {
   color: rgba(255, 255, 255, 0.9);
 }
 
 .starSvg {
   display: block;
   fill: currentColor;
-  transition: transform 0.18s ease, filter 0.18s ease;
+  transition: filter 0.18s ease;
 }
 
 .star .lab {
   font-size: 0.84rem;
   font-weight: 700;
-  color: rgb(55, 53, 47);
+  color: rgba(255, 255, 255, 0.9);
   white-space: nowrap;
   transition: color 0.15s ease;
-}
-
-:global(.dark) .star .lab {
-  color: rgba(255, 255, 255, 0.9);
 }
 
 .star .ct {
   font-size: 0.66rem;
   font-weight: 600;
-  color: rgba(55, 53, 47, 0.42);
-}
-
-:global(.dark) .star .ct {
   color: rgba(255, 255, 255, 0.42);
 }
 
 .star:hover,
 .star.on {
-  color: rgb(196, 85, 77);
-}
-
-:global(.dark) .star:hover,
-:global(.dark) .star.on {
-  color: rgb(232, 150, 142);
+  color: rgb(240, 165, 112);
 }
 
 .star:hover .lab,
 .star.on .lab {
-  color: rgb(196, 85, 77);
-}
-
-:global(.dark) .star:hover .lab,
-:global(.dark) .star.on .lab {
-  color: rgb(232, 150, 142);
+  color: rgb(240, 165, 112);
 }
 
 .star:hover .starSvg,
 .star.on .starSvg {
-  filter: drop-shadow(0 0 7px rgba(196, 85, 77, 0.45));
-}
-
-:global(.dark) .star:hover .starSvg,
-:global(.dark) .star.on .starSvg {
-  filter: drop-shadow(0 0 8px rgba(232, 150, 142, 0.5));
+  filter: drop-shadow(0 0 8px rgba(240, 165, 112, 0.55));
 }
 
 .star:focus-visible {
-  outline: 2px solid rgba(196, 85, 77, 0.6);
+  outline: 2px solid rgba(240, 165, 112, 0.7);
   outline-offset: 2px;
   border-radius: 6px;
 }
 
-/* 캡션 — 말풍선(별무리에서 내려온 한마디). 네모 박스·왼쪽 border 없이 */
+/* 캡션 — 말풍선 (별무리에서 내려온 한마디) */
 .cap {
   position: relative;
   z-index: 1;
@@ -190,16 +143,9 @@
   padding: 1.2rem 1.5rem;
   border: 0;
   border-radius: 18px;
-  background: rgba(55, 53, 47, 0.05);
-  box-shadow: 0 6px 18px rgba(55, 53, 47, 0.07);
+  background: rgba(255, 255, 255, 0.07);
 }
 
-:global(.dark) .cap {
-  background: rgba(255, 255, 255, 0.06);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.32);
-}
-
-/* 위로 향한 꼬리 — 말이 별에서 내려온 느낌 */
 .cap::before {
   content: '';
   position: absolute;
@@ -210,14 +156,9 @@
   height: 0;
   border-left: 9px solid transparent;
   border-right: 9px solid transparent;
-  border-bottom: 9px solid rgba(55, 53, 47, 0.05);
+  border-bottom: 9px solid rgba(255, 255, 255, 0.07);
 }
 
-:global(.dark) .cap::before {
-  border-bottom-color: rgba(255, 255, 255, 0.06);
-}
-
-/* <p>로 두어 테마 blockquote(왼쪽 border) 스타일을 받지 않게 한다 */
 .quote {
   margin: 0;
   padding: 0;
@@ -225,13 +166,9 @@
   font-size: 1.06rem;
   line-height: 1.65;
   font-weight: 500;
-  color: rgb(55, 53, 47);
+  color: rgba(255, 255, 255, 0.92);
   word-break: keep-all;
   text-wrap: pretty;
-}
-
-:global(.dark) .quote {
-  color: rgba(255, 255, 255, 0.92);
 }
 
 .meta {
@@ -239,10 +176,6 @@
   margin-top: 0.6rem;
   font-size: 0.8rem;
   font-weight: 600;
-  color: rgba(55, 53, 47, 0.55);
-}
-
-:global(.dark) .meta {
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -251,7 +184,21 @@
   font-size: 0.9rem;
 }
 
+.more a {
+  color: rgb(240, 165, 112);
+  text-decoration: none;
+}
+
+.more a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 680px) {
+  .section {
+    border-radius: 18px;
+    padding: 2.5rem 1rem 2.25rem;
+    margin: 2rem auto;
+  }
   .field {
     height: auto;
     display: flex;
@@ -268,10 +215,6 @@
   }
   .star {
     position: static;
-    transform: none;
-  }
-  .star:hover .starSvg,
-  .star.on .starSvg {
     transform: none;
   }
 }

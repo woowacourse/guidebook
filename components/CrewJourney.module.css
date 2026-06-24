@@ -51,12 +51,6 @@
   gap: 0.9rem 1.4rem;
   max-width: 46rem;
   margin: 0 auto;
-  padding-bottom: 1.9rem;
-  border-bottom: 1.5px dashed rgba(55, 53, 47, 0.2); /* 손그림 길/지면 */
-}
-
-:global(.dark) .journey {
-  border-bottom-color: rgba(255, 255, 255, 0.18);
 }
 
 /* 걸어가는 행성이 — 정적(움직임 제거). 흰 배경 라인아트를 배경에 합성 */
@@ -99,20 +93,6 @@
 :global(.dark) .company {
   color: rgba(255, 255, 255, 0.9);
   border-color: rgba(255, 255, 255, 0.2);
-}
-
-/* "그 외 여러 곳" — 칩 없이 여운만 */
-.more {
-  font-size: 0.96rem;
-  font-weight: 500;
-  font-style: italic;
-  color: rgba(55, 53, 47, 0.5);
-  white-space: nowrap;
-  padding: 0.34rem 0.2rem;
-}
-
-:global(.dark) .more {
-  color: rgba(255, 255, 255, 0.5);
 }
 
 @media (max-width: 640px) {

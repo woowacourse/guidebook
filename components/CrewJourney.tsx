@@ -50,7 +50,6 @@ export function CrewJourney() {
               {name}
             </li>
           ))}
-          <li className={styles.more}>그 외 여러 곳</li>
         </ul>
       </div>
     </section>

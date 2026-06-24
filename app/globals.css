@@ -278,3 +278,13 @@ div:has(> button[title="Change theme"]):not(.nextra-sidebar-footer):not(nav):not
   margin-left: 0.25rem;
 }
 
+/* ===== 헤더 로고 (워드마크 SVG) ===== */
+.site-logo {
+  display: block;
+}
+
+/* 워드마크는 단색(black) 패스 — 다크 모드에서 흰색으로 반전해 가독성 유지 */
+.dark .site-logo {
+  filter: invert(1);
+}
+

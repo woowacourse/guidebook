@@ -10,12 +10,13 @@ export const metadata = {
 }
 
 const logo = (
-  <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-    <span style={{ fontSize: '1.25rem' }}>W</span>
-    <span style={{ fontWeight: 700, fontSize: '0.9375rem', letterSpacing: '-0.01em' }}>
-      우아한테크코스
-    </span>
-  </span>
+  // eslint-disable-next-line @next/next/no-img-element
+  <img
+    src="/images/brand/logo-wordmark.svg"
+    alt="우아한테크코스"
+    className="site-logo"
+    style={{ height: '1.5rem', width: 'auto', display: 'block' }}
+  />
 )
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {

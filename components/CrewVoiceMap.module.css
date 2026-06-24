@@ -4,7 +4,7 @@
 .section {
   max-width: 58rem;
   margin: 3rem auto;
-  padding: 3.25rem 1.5rem 2.75rem;
+  padding: 3.25rem 1.5rem 2.25rem;
   text-align: center;
   background: #15141c;
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -43,7 +43,7 @@
 /* 별무리 판 */
 .field {
   position: relative;
-  height: 360px;
+  height: 320px;
   max-width: 600px;
   margin: 1.5rem auto 0;
 }

@@ -52,6 +52,11 @@ export function CrewJourney() {
           ))}
         </ul>
       </div>
+
+      <p className={styles.global}>
+        크루는 한국에만 있지 않습니다. 그 영향력은{' '}
+        <span className={styles.cities}>도쿄·베를린·두바이</span>까지 이어집니다.
+      </p>
     </section>
   )
 }

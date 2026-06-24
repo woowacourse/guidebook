@@ -95,6 +95,30 @@
   border-color: rgba(255, 255, 255, 0.2);
 }
 
+/* 글로벌 한 줄 — 칩(국내 중심) 다음에 "국경 밖으로"를 짚는다 */
+.global {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: rgba(55, 53, 47, 0.68);
+  max-width: 32rem;
+  margin: 1.6rem auto 0;
+  word-break: keep-all;
+  text-wrap: pretty;
+}
+
+:global(.dark) .global {
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.cities {
+  font-weight: 700;
+  color: rgb(55, 53, 47);
+}
+
+:global(.dark) .cities {
+  color: rgba(255, 255, 255, 0.92);
+}
+
 @media (max-width: 640px) {
   .walker {
     width: 78px;

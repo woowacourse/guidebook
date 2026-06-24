@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import styles from './CrewVoiceMap.module.css'
 import { crewThemes, crewThemesAreExample } from '../content/crew-voices'
+import { Eyebrow } from './Eyebrow'
 
 /**
  * CrewVoiceMap — "크루들이 가장 많이 한 말"을 손그림 별무리로.
@@ -70,6 +71,7 @@ export function CrewVoiceMap() {
 
   return (
     <section className={styles.section} aria-label="크루들이 가장 많이 한 말">
+      <Eyebrow>크루의 목소리</Eyebrow>
       <h2 className={styles.heading}>크루들이 가장 많이 한 말</h2>
       <p className={styles.sub}>
         자주 나온 말일수록 큰 별이 됩니다

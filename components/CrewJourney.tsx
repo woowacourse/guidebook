@@ -1,4 +1,5 @@
 import styles from './CrewJourney.module.css'
+import { Eyebrow } from './Eyebrow'
 
 /**
  * CrewJourney — "우테코를 넘어 소프트웨어 생태계로"
@@ -48,6 +49,7 @@ const NODES = COMPANIES.map((name, i) => {
 export function CrewJourney() {
   return (
     <section className={styles.section} aria-label="우테코를 거쳐 간 크루들의 행선지">
+      <Eyebrow>크루의 행선지</Eyebrow>
       <h2 className={styles.heading}>우테코를 넘어 소프트웨어 생태계로</h2>
       <p className={styles.lede}>
         이 문서에 담긴 경험과 문화로 자란 크루 <strong>{CREW_COUNT}명</strong>이,

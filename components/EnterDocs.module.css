@@ -1,0 +1,140 @@
+/* EnterDocs — 랜딩의 닫는 초대. 증거 다음에 문서로 들어가는 두 입구를 연다 */
+.section {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 3.25rem 1rem 1rem;
+  text-align: center;
+}
+
+.heading {
+  font-size: clamp(1.45rem, 3.4vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: rgb(55, 53, 47);
+  margin: 0 0 0.85rem;
+  word-break: keep-all;
+}
+
+:global(.dark) .heading {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.lede {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: rgba(55, 53, 47, 0.82);
+  max-width: 34rem;
+  margin: 0 auto 2rem;
+  word-break: keep-all;
+  text-wrap: pretty;
+}
+
+:global(.dark) .lede {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+/* 두 입구 — 나란히, 모바일에서 세로로 */
+.doors {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.door {
+  flex: 1 1 16rem;
+  max-width: 19rem;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 1.15rem 1.3rem;
+  border: 1px solid rgba(55, 53, 47, 0.16);
+  border-radius: 14px;
+  text-decoration: none;
+  text-align: left;
+  background: rgba(55, 53, 47, 0.015);
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.door:hover {
+  transform: translateY(-2px);
+  border-color: rgba(55, 53, 47, 0.4);
+  box-shadow: 0 6px 20px rgba(55, 53, 47, 0.08);
+}
+
+:global(.dark) .door {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+:global(.dark) .door:hover {
+  border-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+  font-size: 1.7rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.doorBody {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.doorTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: rgb(55, 53, 47);
+}
+
+:global(.dark) .doorTitle {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.doorDesc {
+  font-size: 0.92rem;
+  color: rgba(55, 53, 47, 0.6);
+}
+
+:global(.dark) .doorDesc {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.arrow {
+  font-size: 1.1rem;
+  color: rgba(55, 53, 47, 0.4);
+  flex-shrink: 0;
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.door:hover .arrow {
+  transform: translateX(3px);
+  color: rgb(55, 53, 47);
+}
+
+:global(.dark) .arrow {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+:global(.dark) .door:hover .arrow {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding-top: 2.5rem;
+  }
+  .doors {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .door {
+    max-width: none;
+  }
+}

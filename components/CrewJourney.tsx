@@ -28,11 +28,11 @@ const COMPANIES = [
 export function CrewJourney() {
   return (
     <section className={styles.section} aria-label="우테코를 거쳐 간 크루들의 행선지">
-      <h2 className={styles.heading}>크루들은 지금 여기 있습니다</h2>
+      <h2 className={styles.heading}>우테코를 넘어, 생태계로</h2>
       <p className={styles.lede}>
-        지금까지 <strong>{CREW_COUNT}명</strong>의 크루가 우테코를 거쳐 갔습니다.
+        이 문서에 담긴 경험과 문화로 자란 크루 <strong>{CREW_COUNT}명</strong>이,
         <br />
-        그리고 지금, 이런 회사들에서 일하고 있습니다.
+        지금 이런 회사들에서 IT 생태계에 영향력을 펼치고 있습니다.
       </p>
 
       <div className={styles.journey}>

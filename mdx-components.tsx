@@ -24,6 +24,9 @@ import { EducationBriefingFullList } from './components/EducationBriefingFullLis
 import { TecoTalkExplorer } from './components/TecoTalkExplorer'
 import { TecobleArchiveExplorer } from './components/TecobleArchiveExplorer'
 import { VlogArchiveExplorer } from './components/VlogArchiveExplorer'
+import { RecruitingStatus } from './components/RecruitingStatus'
+import { RecruitingSchedule } from './components/RecruitingSchedule'
+import { NoticeList } from './components/NoticeList'
 
 const docsComponents = getDocsMDXComponents()
 
@@ -56,6 +59,9 @@ export function useMDXComponents(components?: Record<string, React.FC>) {
     TecoTalkExplorer,
     TecobleArchiveExplorer,
     VlogArchiveExplorer,
+    RecruitingStatus,
+    RecruitingSchedule,
+    NoticeList,
     ...components
   }
 }

@@ -1,0 +1,17 @@
+.wrap {
+  margin: 1.5rem 0;
+}
+.info {
+  margin: 0.75rem 0 0;
+  font-size: 0.9rem;
+}
+.questions {
+  margin-top: 1.5rem;
+}
+.questions ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.2rem;
+}
+.questions li {
+  margin: 0.35rem 0;
+}

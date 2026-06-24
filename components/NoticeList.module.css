@@ -1,0 +1,29 @@
+.list {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+.item {
+  display: flex;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--nextra-border, #e5e7eb);
+}
+.date {
+  flex: 0 0 4rem;
+  color: #64748b;
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+}
+.title {
+  font-weight: 600;
+  text-decoration: none;
+}
+.desc {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  color: #475569;
+}
+.empty {
+  color: #64748b;
+}

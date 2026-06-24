@@ -247,10 +247,11 @@ div.nextra-body-typesetting-article:has([data-landing-hero]) {
   display: none !important;
 }
 
-/* footer 바를 없애면 첫 메뉴가 헤더에 바짝 붙어 어색하므로,
-   사이드바 스크롤 영역 상단에 여백을 더해 자연스럽게 띄운다. (기본 p-4 = 1rem) */
+/* footer 바를 없애면 첫 메뉴가 헤더에 바짝 붙어 어색하므로, 스크롤 영역 상단에
+   여백을 더해 첫 메뉴 항목을 본문 제목(H1) 줄에 맞춘다 — 사이드바와 본문이 같은
+   줄에서 시작해 정돈돼 보인다. (navbar 64px + 브레드크럼 영역 ≈ H1 위치) */
 .nextra-sidebar .nextra-scrollbar {
-  padding-top: 2rem;
+  padding-top: 4.5rem;
 }
 
 /* 헤더 외 중복 ThemeSwitch 숨기기 (방어적) */

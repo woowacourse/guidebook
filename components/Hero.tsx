@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import type { ReactNode } from 'react'
 import styles from './Hero.module.css'
+import { Eyebrow } from './Eyebrow'
+import { Underline } from './Underline'
 
 interface HeroCta {
   label: string
@@ -15,24 +17,64 @@ interface HeroProps {
   description?: string | ReactNode
   /** 주요 행동 버튼 (우테코 철학을 담은 초대) */
   cta?: HeroCta
+  /** 제목 안에서 손그림 밑줄을 칠 키워드 (정확히 일치하는 부분만) */
+  underline?: string
+  /** 레이아웃 — center(기본 가운데 정렬) | split(좌측 2단: 제목 왼쪽 / 설명 오른쪽) */
+  align?: 'center' | 'split'
 }
 
-export function Hero({ title, eyebrow, description, cta }: HeroProps) {
+/** 제목에서 underline 키워드만 손그림 밑줄로 감싼다 */
+function renderTitle(title: string, underline?: string): ReactNode {
+  if (!underline) return title
+  const idx = title.indexOf(underline)
+  if (idx === -1) return title
+  return (
+    <>
+      {title.slice(0, idx)}
+      <Underline>{underline}</Underline>
+      {title.slice(idx + underline.length)}
+    </>
+  )
+}
+
+export function Hero({ title, eyebrow, description, cta, underline, align = 'center' }: HeroProps) {
+  const titleNode = renderTitle(title, underline)
+  const ctaNode = cta && (
+    <div className={styles.actions}>
+      <Link className={styles.cta} href={cta.href}>
+        {cta.label}
+      </Link>
+    </div>
+  )
+
+  if (align === 'split') {
+    return (
+      <div className={`${styles.hero} ${styles.split}`} data-landing-hero>
+        <div className={styles.splitInner}>
+          <div className={styles.splitLeft}>
+            <div className={styles.starGlow} aria-hidden="true" />
+            <StarMark />
+            {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
+            <h1 className={styles.title}>{titleNode}</h1>
+          </div>
+          <div className={styles.splitRight}>
+            {description && <div className={styles.description}>{description}</div>}
+            {ctaNode}
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className={styles.hero} data-landing-hero>
       <div className={styles.inner}>
         <div className={styles.starGlow} aria-hidden="true" />
         <StarMark />
-        {eyebrow && <span className={styles.eyebrow}>{eyebrow}</span>}
-        <h1 className={styles.title}>{title}</h1>
+        {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
+        <h1 className={styles.title}>{titleNode}</h1>
         {description && <div className={styles.description}>{description}</div>}
-        {cta && (
-          <div className={styles.actions}>
-            <Link className={styles.cta} href={cta.href}>
-              {cta.label}
-            </Link>
-          </div>
-        )}
+        {ctaNode}
       </div>
     </div>
   )

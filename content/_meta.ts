@@ -13,6 +13,14 @@ export default {
       typesetting: 'article'
     }
   },
+  about: {
+    title: '소개',
+    type: 'page'
+  },
+  apply: {
+    title: '지원',
+    type: 'page'
+  },
   education: {
     title: '교육',
     type: 'page'

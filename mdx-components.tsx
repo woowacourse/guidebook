@@ -29,6 +29,7 @@ import { RecruitingSchedule } from './components/RecruitingSchedule'
 import { NoticeList } from './components/NoticeList'
 import { Embed } from './components/Embed'
 import { FaqList } from './components/FaqList'
+import { CopyField } from './components/CopyField'
 
 const docsComponents = getDocsMDXComponents()
 
@@ -66,6 +67,7 @@ export function useMDXComponents(components?: Record<string, React.FC>) {
     NoticeList,
     Embed,
     FaqList,
+    CopyField,
     ...components
   }
 }

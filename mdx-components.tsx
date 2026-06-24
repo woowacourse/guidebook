@@ -27,6 +27,8 @@ import { VlogArchiveExplorer } from './components/VlogArchiveExplorer'
 import { RecruitingStatus } from './components/RecruitingStatus'
 import { RecruitingSchedule } from './components/RecruitingSchedule'
 import { NoticeList } from './components/NoticeList'
+import { Embed } from './components/Embed'
+import { FaqList } from './components/FaqList'
 
 const docsComponents = getDocsMDXComponents()
 
@@ -62,6 +64,8 @@ export function useMDXComponents(components?: Record<string, React.FC>) {
     RecruitingStatus,
     RecruitingSchedule,
     NoticeList,
+    Embed,
+    FaqList,
     ...components
   }
 }

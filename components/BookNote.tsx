@@ -8,7 +8,7 @@ import styles from './BookNote.module.css'
 export function BookNote() {
   return (
     <p className={styles.note}>
-      이 문서가 나오기까지의 생생한 이야기는 곧 책으로 — <span className={styles.tag}>발간 예정</span>
+      이 문서가 나오기까지의 생생한 이야기는 곧 책으로 — <span className={styles.tag}>2026년 11월 발간 예정</span>
     </p>
   )
 }

@@ -1,13 +1,13 @@
-/* CrewVoiceMap — "크루들이 가장 많이 한 말" : 글자 크기=빈도. 차트 크롬 없이 타이포로만 */
+/* CrewVoiceMap — "크루들이 가장 많이 한 말" : 말=별, 별자리. 데스크톱 별자리 / 모바일 별무리 */
 .section {
   max-width: 52rem;
   margin: 0 auto;
-  padding: 0 1rem 1rem;
+  padding: 3.75rem 1rem 0.5rem;
   text-align: center;
 }
 
 .heading {
-  font-size: clamp(1.45rem, 3.4vw, 2rem);
+  font-size: clamp(1.5rem, 3.6vw, 2.05rem);
   font-weight: 800;
   letter-spacing: -0.03em;
   color: rgb(55, 53, 47);
@@ -21,9 +21,8 @@
 
 .sub {
   font-size: 0.95rem;
-  line-height: 1.6;
   color: rgba(55, 53, 47, 0.6);
-  margin: 0 auto 1.75rem;
+  margin: 0 auto;
   word-break: keep-all;
 }
 
@@ -35,7 +34,6 @@
   margin-left: 0.5rem;
   font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: 0.03em;
   color: rgba(55, 53, 47, 0.55);
   background: rgba(55, 53, 47, 0.07);
   border: 1px solid rgba(55, 53, 47, 0.14);
@@ -50,86 +48,120 @@
   border-color: rgba(255, 255, 255, 0.18);
 }
 
-/* 빈도 맵 — 주제들이 가운데 기준선으로 흐른다. 회전·랜덤색 없이 크기로만 위계 */
-.cloud {
+/* 별자리 판 */
+.field {
+  position: relative;
+  height: 360px;
+  max-width: 640px;
+  margin: 1.75rem auto 0;
+}
+
+.lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  color: rgba(55, 53, 47, 0.22);
+  pointer-events: none;
+}
+
+:global(.dark) .lines {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.star {
+  position: absolute;
+  transform: translate(-50%, -50%);
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: center;
-  gap: 0.35rem 1.1rem;
-  max-width: 46rem;
-  margin: 0 auto;
-  line-height: 1.5;
-}
-
-/* 각 주제는 버튼 — 호버(데스크톱)·포커스(키보드)·탭(모바일) 모두 반응 */
-.word {
-  appearance: none;
-  border: 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
   background: none;
-  padding: 0.1rem 0.15rem;
-  margin: 0;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  color: rgb(55, 53, 47);
+  border: 0;
   cursor: pointer;
-  word-break: keep-all;
-  transition: color 0.15s ease, opacity 0.15s ease;
-  border-radius: 6px;
+  font-family: inherit;
+  padding: 0.2rem;
 }
 
-:global(.dark) .word {
-  color: rgba(255, 255, 255, 0.92);
+.star svg {
+  display: block;
+  fill: rgb(55, 53, 47);
+  transition: fill 0.15s ease, transform 0.15s ease;
 }
 
-.word:hover,
-.word.active {
-  color: rgb(196, 85, 77); /* Hero/Mermaid 계열 포인트 톤 */
+:global(.dark) .star svg {
+  fill: rgba(255, 255, 255, 0.9);
 }
 
-:global(.dark) .word:hover,
-:global(.dark) .word.active {
+.star .lab {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: rgb(55, 53, 47);
+  white-space: nowrap;
+  transition: color 0.15s ease;
+}
+
+:global(.dark) .star .lab {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.star .ct {
+  font-size: 0.66rem;
+  font-weight: 600;
+  color: rgba(55, 53, 47, 0.4);
+}
+
+:global(.dark) .star .ct {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.star:hover svg,
+.star.on svg {
+  fill: rgb(196, 85, 77);
+  transform: scale(1.12);
+}
+
+.star:hover .lab,
+.star.on .lab {
+  color: rgb(196, 85, 77);
+}
+
+:global(.dark) .star:hover svg,
+:global(.dark) .star.on svg {
+  fill: rgb(232, 150, 142);
+}
+
+:global(.dark) .star:hover .lab,
+:global(.dark) .star.on .lab {
   color: rgb(232, 150, 142);
 }
 
-.word:focus-visible {
+.star:focus-visible {
   outline: 2px solid rgba(196, 85, 77, 0.6);
   outline-offset: 2px;
+  border-radius: 6px;
 }
 
-/* 빈도 숫자 — 주제명 어깨에 작게 */
-.count {
-  font-size: 0.5em;
-  font-weight: 600;
-  margin-left: 0.12em;
-  color: rgba(55, 53, 47, 0.5);
-  vertical-align: super;
-}
-
-:global(.dark) .count {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-/* 캡션 — 선택된 주제의 대표 문장. 높이 고정으로 레이아웃 점프 방지 */
-.caption {
+/* 캡션 — 선택된 별의 대표 문장. 높이 고정으로 점프 방지 */
+.cap {
   max-width: 36rem;
-  min-height: 5.5rem;
-  margin: 2rem auto 0;
-  padding: 1.1rem 1.25rem;
+  min-height: 4.8rem;
+  margin: 1.25rem auto 0;
+  padding: 1.05rem 1.25rem;
   border: 1px solid rgba(55, 53, 47, 0.12);
   border-radius: 12px;
   background: rgba(55, 53, 47, 0.015);
 }
 
-:global(.dark) .caption {
+:global(.dark) .cap {
   border-color: rgba(255, 255, 255, 0.14);
   background: rgba(255, 255, 255, 0.03);
 }
 
 .quote {
-  margin: 0 0 0.55rem;
+  margin: 0 0 0.5rem;
   font-size: 1.02rem;
-  line-height: 1.65;
+  line-height: 1.6;
   color: rgb(55, 53, 47);
   word-break: keep-all;
   text-wrap: pretty;
@@ -171,11 +203,25 @@
   font-size: 0.9rem;
 }
 
-@media (max-width: 640px) {
-  .cloud {
-    gap: 0.3rem 0.8rem;
+@media (max-width: 680px) {
+  .field {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem 1.2rem;
+    max-width: 30rem;
   }
-  .caption {
-    min-height: 6.5rem;
+  .lines {
+    display: none;
+  }
+  .star {
+    position: static;
+    transform: none;
+  }
+  .star:hover svg,
+  .star.on svg {
+    transform: none;
   }
 }

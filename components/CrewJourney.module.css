@@ -1,13 +1,13 @@
-/* CrewJourney — "크루들은 지금 여기 있습니다" : 행성이가 앞장서고 회사명이 뒤따르는 여정 */
+/* CrewJourney — "우테코를 넘어 소프트웨어 생태계로" : 행성이 중심 궤도(데스크톱) / 칩(모바일) */
 .section {
   max-width: 52rem;
   margin: 0 auto;
-  padding: 0 1rem 1rem;
+  padding: 3.75rem 1rem 0.5rem;
   text-align: center;
 }
 
 .heading {
-  font-size: clamp(1.45rem, 3.4vw, 2rem);
+  font-size: clamp(1.5rem, 3.6vw, 2.05rem);
   font-weight: 800;
   letter-spacing: -0.03em;
   color: rgb(55, 53, 47);
@@ -24,7 +24,7 @@
   line-height: 1.7;
   color: rgba(55, 53, 47, 0.82);
   max-width: 34rem;
-  margin: 0 auto 2.25rem;
+  margin: 0 auto;
   word-break: keep-all;
   text-wrap: pretty;
 }
@@ -42,66 +42,115 @@
   color: rgba(255, 255, 255, 0.95);
 }
 
-/* 여정 — 행성이(앞장) + 뒤따르는 회사 칩들. 손그림 점선 길 위에 놓인다 */
-.journey {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 0.9rem 1.4rem;
-  max-width: 46rem;
-  margin: 0 auto;
+/* 궤도 */
+.orbit {
+  position: relative;
+  height: 400px;
+  max-width: 720px;
+  margin: 1.75rem auto 0;
 }
 
-/* 걸어가는 행성이 — 정적(움직임 제거). 흰 배경 라인아트를 배경에 합성 */
-.walker {
-  width: 96px;
+.ring {
+  position: absolute;
+  inset: 15% 3%;
+  border: 1.5px dashed rgba(55, 53, 47, 0.2);
+  border-radius: 50%;
+}
+
+:global(.dark) .ring {
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.core {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.planet {
   height: auto;
-  flex-shrink: 0;
   mix-blend-mode: multiply; /* 라이트: 흰 배경이 종이에 녹는다 */
 }
 
-:global(.dark) .walker {
+:global(.dark) .planet {
   filter: invert(1); /* 다크: 검은 선 → 흰 선 */
-  mix-blend-mode: screen; /* 검은 배경이 어두운 종이에 녹는다 */
+  mix-blend-mode: screen;
 }
 
-/* 회사 칩들 — 별 없이, 줄바꿈되며 흐른다 */
-.companies {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 0.55rem 0.55rem;
-  flex: 1 1 24rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.coreN {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: rgba(55, 53, 47, 0.6);
 }
 
-.company {
-  font-size: 1rem;
+:global(.dark) .coreN {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.node {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 0.84rem;
   font-weight: 600;
-  letter-spacing: -0.01em;
-  color: rgb(55, 53, 47);
   white-space: nowrap;
-  padding: 0.34rem 0.78rem;
+  color: rgb(55, 53, 47);
+}
+
+:global(.dark) .node {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.node.intl {
+  color: rgb(196, 85, 77);
+  font-weight: 700;
+}
+
+:global(.dark) .node.intl {
+  color: rgb(232, 150, 142);
+}
+
+/* 모바일 폴백 (기본 숨김) */
+.fallback {
+  display: none;
+}
+
+.chip {
+  font-size: 0.92rem;
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 0.3rem 0.68rem;
   border: 1px solid rgba(55, 53, 47, 0.16);
   border-radius: 999px;
+  color: rgb(55, 53, 47);
 }
 
-:global(.dark) .company {
-  color: rgba(255, 255, 255, 0.9);
+:global(.dark) .chip {
+  color: rgba(255, 255, 255, 0.88);
   border-color: rgba(255, 255, 255, 0.2);
 }
 
-/* 글로벌 한 줄 — 칩(국내 중심) 다음에 "국경 밖으로"를 짚는다 */
+.chipIntl {
+  color: rgb(196, 85, 77);
+  border-color: rgba(196, 85, 77, 0.4);
+}
+
+:global(.dark) .chipIntl {
+  color: rgb(232, 150, 142);
+  border-color: rgba(232, 150, 142, 0.4);
+}
+
+/* 글로벌 한 줄 */
 .global {
   font-size: 0.98rem;
   line-height: 1.7;
   color: rgba(55, 53, 47, 0.68);
   max-width: 32rem;
-  margin: 1.6rem auto 0;
+  margin: 1.75rem auto 0;
   word-break: keep-all;
   text-wrap: pretty;
 }
@@ -119,16 +168,26 @@
   color: rgba(255, 255, 255, 0.92);
 }
 
-@media (max-width: 640px) {
-  .walker {
-    width: 78px;
+@media (max-width: 680px) {
+  .orbit {
+    display: none;
   }
-  .company {
-    font-size: 0.92rem;
-    padding: 0.3rem 0.68rem;
+  .fallback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.1rem;
+    margin: 1.5rem auto 0;
   }
-  .companies {
-    gap: 0.45rem 0.45rem;
-    flex-basis: 100%;
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 30rem;
   }
 }

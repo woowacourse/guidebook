@@ -166,7 +166,12 @@
 
 .star:hover .starSvg,
 .star.on .starSvg {
-  transform: scale(1.12) rotate(-4deg);
+  filter: drop-shadow(0 0 7px rgba(196, 85, 77, 0.45));
+}
+
+:global(.dark) .star:hover .starSvg,
+:global(.dark) .star.on .starSvg {
+  filter: drop-shadow(0 0 8px rgba(232, 150, 142, 0.5));
 }
 
 .star:focus-visible {
@@ -175,62 +180,70 @@
   border-radius: 6px;
 }
 
-/* 캡션 */
+/* 캡션 — 말풍선(별무리에서 내려온 한마디). 네모 박스·왼쪽 border 없이 */
 .cap {
   position: relative;
   z-index: 1;
-  max-width: 36rem;
-  min-height: 4.8rem;
-  margin: 1.25rem auto 0;
-  padding: 1.05rem 1.25rem;
-  border: 1px solid rgba(55, 53, 47, 0.12);
-  border-radius: 12px;
-  background: rgba(55, 53, 47, 0.015);
+  max-width: 34rem;
+  min-height: 3.2rem;
+  margin: 2rem auto 0;
+  padding: 1.2rem 1.5rem;
+  border: 0;
+  border-radius: 18px;
+  background: rgba(55, 53, 47, 0.05);
+  box-shadow: 0 6px 18px rgba(55, 53, 47, 0.07);
 }
 
 :global(.dark) .cap {
-  border-color: rgba(255, 255, 255, 0.14);
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.32);
 }
 
+/* 위로 향한 꼬리 — 말이 별에서 내려온 느낌 */
+.cap::before {
+  content: '';
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid rgba(55, 53, 47, 0.05);
+}
+
+:global(.dark) .cap::before {
+  border-bottom-color: rgba(255, 255, 255, 0.06);
+}
+
+/* <p>로 두어 테마 blockquote(왼쪽 border) 스타일을 받지 않게 한다 */
 .quote {
-  margin: 0 0 0.5rem;
-  font-size: 1.02rem;
-  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1.06rem;
+  line-height: 1.65;
+  font-weight: 500;
   color: rgb(55, 53, 47);
   word-break: keep-all;
   text-wrap: pretty;
 }
 
-.quote::before {
-  content: '“';
-  color: rgba(55, 53, 47, 0.35);
-  font-weight: 700;
-}
-
-.quote::after {
-  content: '”';
-  color: rgba(55, 53, 47, 0.35);
-  font-weight: 700;
-}
-
 :global(.dark) .quote {
-  color: rgba(255, 255, 255, 0.9);
-}
-
-:global(.dark) .quote::before,
-:global(.dark) .quote::after {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.92);
 }
 
 .meta {
-  font-size: 0.82rem;
+  display: block;
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
   font-weight: 600;
-  color: rgba(55, 53, 47, 0.6);
+  color: rgba(55, 53, 47, 0.55);
 }
 
 :global(.dark) .meta {
-  color: rgba(255, 255, 255, 0.58);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .more {

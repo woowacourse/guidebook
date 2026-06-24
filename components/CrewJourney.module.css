@@ -50,15 +50,29 @@
   margin: 1.75rem auto 0;
 }
 
+/* 바깥 궤도 — 또렷한 얇은 링 */
 .ring {
   position: absolute;
   inset: 15% 3%;
-  border: 1.5px dashed rgba(55, 53, 47, 0.2);
+  border: 1.5px solid rgba(55, 53, 47, 0.16);
+  border-radius: 50%;
+}
+
+/* 안쪽 궤도 — 희미한 점선으로 '궤도계' 깊이를 만든다 */
+.ring::after {
+  content: '';
+  position: absolute;
+  inset: 12%;
+  border: 1px dashed rgba(214, 104, 48, 0.22);
   border-radius: 50%;
 }
 
 :global(.dark) .ring {
-  border-color: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+:global(.dark) .ring::after {
+  border-color: rgba(240, 165, 112, 0.24);
 }
 
 .core {
@@ -70,6 +84,31 @@
   flex-direction: column;
   align-items: center;
   gap: 0.3rem;
+}
+
+/* 중심 행성 뒤 따뜻한 광원 — Hero의 별 광원과 같은 호박빛으로 통일감 */
+.coreGlow {
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  width: 280px;
+  height: 280px;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 219, 170, 0.5),
+    rgba(255, 219, 170, 0) 70%
+  );
+}
+
+:global(.dark) .coreGlow {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 230, 195, 0.16),
+    rgba(255, 230, 195, 0) 70%
+  );
 }
 
 .planet {
@@ -92,26 +131,41 @@
   color: rgba(255, 255, 255, 0.55);
 }
 
+/* 노드 — '궤도 위 정거장'처럼 읽히도록 옅은 pill 처리 */
 .node {
   position: absolute;
   transform: translate(-50%, -50%);
-  font-size: 0.84rem;
+  font-size: 0.82rem;
   font-weight: 600;
   white-space: nowrap;
-  color: rgb(55, 53, 47);
+  color: rgba(55, 53, 47, 0.92);
+  background: rgba(255, 253, 249, 0.92);
+  border: 1px solid rgba(55, 53, 47, 0.1);
+  border-radius: 999px;
+  padding: 0.26rem 0.62rem;
+  box-shadow: 0 1px 4px rgba(40, 38, 34, 0.06);
+  backdrop-filter: blur(2px);
 }
 
 :global(.dark) .node {
-  color: rgba(255, 255, 255, 0.88);
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(28, 28, 32, 0.82);
+  border-color: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
+/* 해외 거점 — 따뜻한 오렌지 강조 pill */
 .node.intl {
   color: rgb(214, 104, 48);
   font-weight: 700;
+  background: rgba(214, 104, 48, 0.09);
+  border-color: rgba(214, 104, 48, 0.34);
 }
 
 :global(.dark) .node.intl {
   color: rgb(240, 165, 112);
+  background: rgba(240, 165, 112, 0.12);
+  border-color: rgba(240, 165, 112, 0.36);
 }
 
 /* 모바일 폴백 (기본 숨김) */

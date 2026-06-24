@@ -54,7 +54,11 @@ export function Hero({ title, eyebrow, description, cta, underline, align = 'cen
           <div className={styles.splitLeft}>
             <div className={styles.starGlow} aria-hidden="true" />
             <StarMark />
-            {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
+            {eyebrow && (
+              <span className={styles.eyebrowReveal}>
+                <Eyebrow>{eyebrow}</Eyebrow>
+              </span>
+            )}
             <h1 className={styles.title}>{titleNode}</h1>
           </div>
           <div className={styles.splitRight}>
@@ -71,7 +75,11 @@ export function Hero({ title, eyebrow, description, cta, underline, align = 'cen
       <div className={styles.inner}>
         <div className={styles.starGlow} aria-hidden="true" />
         <StarMark />
-        {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
+        {eyebrow && (
+          <span className={styles.eyebrowReveal}>
+            <Eyebrow>{eyebrow}</Eyebrow>
+          </span>
+        )}
         <h1 className={styles.title}>{titleNode}</h1>
         {description && <div className={styles.description}>{description}</div>}
         {ctaNode}

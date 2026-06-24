@@ -6,7 +6,30 @@
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  padding: clamp(2.5rem, 9vh, 6rem) 0 2.5rem;
+  padding: clamp(3rem, 10vh, 7rem) 0 3rem;
+}
+
+/* 넓고 은은한 따뜻한 환경광 — 별 광원(.starGlow)과 2겹으로 깊이를 만든다 */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: -8% -18% auto;
+  height: 78%;
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    58% 78% at 50% 2%,
+    rgba(255, 234, 198, 0.4),
+    rgba(255, 234, 198, 0) 70%
+  );
+}
+
+:global(.dark) .hero::before {
+  background: radial-gradient(
+    58% 78% at 50% 2%,
+    rgba(255, 244, 224, 0.08),
+    rgba(255, 244, 224, 0) 70%
+  );
 }
 
 /* 콘텐츠 래퍼 — 별·광원이 텍스트와 함께 세로 중앙으로 움직이도록 */
@@ -14,44 +37,56 @@
   position: relative;
   width: 100%;
   max-width: 42rem;
-  padding-top: 3.5rem; /* 별이 eyebrow 위에 놓일 여백 */
+  padding-top: 4.5rem; /* 더 커진 별이 eyebrow 위에 놓일 여백 */
 }
 
-/* 손그림 별 — 콘텐츠 상단 중앙에 딱 하나 */
+/* 손그림 별 — 콘텐츠 상단 중앙에 딱 하나. 작은 점이 아니라 또렷한 초점이 되도록 키운다 */
 .star {
   position: absolute;
-  top: 0.75rem;
+  top: 0.4rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 30px;
+  width: 48px;
   height: auto;
-  z-index: 0;
+  z-index: 1;
   pointer-events: none;
+  animation: heroFadeIn 0.8s ease both;
 }
 
-/* 별 중심 광원 — 은은한 따뜻한 빛 */
+/* 별 중심 광원 — 따뜻한 호박빛 코어 + 크림빛 헤일로 2겹 (깊이) */
 .starGlow {
   position: absolute;
-  top: calc(0.75rem + 15px);
+  top: 2rem;
   left: 50%;
-  width: 300px;
-  height: 240px;
+  width: 440px;
+  height: 360px;
   transform: translate(-50%, -50%);
   z-index: 0;
   pointer-events: none;
   background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgba(255, 236, 200, 0.6),
-    rgba(255, 236, 200, 0) 70%
-  );
+      42% 42% at 50% 50%,
+      rgba(255, 219, 170, 0.62),
+      rgba(255, 219, 170, 0) 68%
+    ),
+    radial-gradient(
+      62% 62% at 50% 48%,
+      rgba(255, 240, 216, 0.55),
+      rgba(255, 240, 216, 0) 72%
+    );
+  animation: heroFadeIn 1.1s ease 0.1s both;
 }
 
 :global(.dark) .starGlow {
   background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgba(255, 246, 228, 0.16),
-    rgba(255, 246, 228, 0) 70%
-  );
+      42% 42% at 50% 50%,
+      rgba(255, 230, 195, 0.2),
+      rgba(255, 230, 195, 0) 68%
+    ),
+    radial-gradient(
+      62% 62% at 50% 48%,
+      rgba(255, 244, 224, 0.12),
+      rgba(255, 244, 224, 0) 72%
+    );
 }
 
 /* 텍스트는 항상 별·광원 위에 */
@@ -95,16 +130,17 @@
   color: rgba(255, 255, 255, 0.4);
 }
 
-/* 제목 — 미션 한 줄. 한국어 어절 보존 + 균형 줄바꿈 */
+/* 제목 — 미션 한 줄. 큰 글자 + 더 좁은 행간·자간 = 단단한 '선언'. 한국어 어절 보존 + 균형 줄바꿈 */
 .title {
-  font-size: clamp(2rem, 6vw, 3.4rem);
+  font-size: clamp(2.15rem, 6.5vw, 4.4rem);
   font-weight: 800;
-  letter-spacing: -0.035em;
-  line-height: 1.14;
-  margin: 0 0 1.6rem;
-  color: rgb(55, 53, 47);
+  letter-spacing: -0.042em;
+  line-height: 1.07;
+  margin: 0 0 1.7rem;
+  color: rgb(38, 36, 32);
   word-break: keep-all;
   text-wrap: balance;
+  animation: heroFadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.16s both;
 }
 
 :global(.dark) .title {
@@ -113,13 +149,14 @@
 
 /* 부제 — 독자에게 이 문서가 어떤 의미인지. 노션 본문 컬러로 가독성 확보 */
 .description {
-  font-size: 1.1rem;
+  font-size: 1.13rem;
   line-height: 1.75;
-  color: rgb(55, 53, 47);
+  color: rgba(55, 53, 47, 0.92);
   max-width: 34rem;
   margin: 0 auto;
   word-break: keep-all;
   text-wrap: pretty;
+  animation: heroFadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.28s both;
 }
 
 :global(.dark) .description {
@@ -132,31 +169,79 @@
 
 /* CTA — 우테코 철학을 담은 초대 버튼 */
 .actions {
-  margin-top: 2.2rem;
+  margin-top: 2.4rem;
+  animation: heroFadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.4s both;
 }
 
 .cta {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  font-size: 0.95rem;
+  gap: 0.45rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #fff;
-  background: rgb(55, 53, 47);
-  border-radius: 8px;
-  padding: 0.7rem 1.25rem;
+  background: rgb(38, 36, 32);
+  border-radius: 10px;
+  padding: 0.82rem 1.6rem;
   text-decoration: none;
-  transition: opacity 0.15s ease, transform 0.15s ease;
+  box-shadow: 0 1px 2px rgba(38, 36, 32, 0.18);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
 }
 
 .cta:hover {
-  opacity: 0.88;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  background: rgb(28, 27, 24);
+  box-shadow: 0 10px 26px rgba(214, 104, 48, 0.3);
 }
 
 :global(.dark) .cta {
   background: rgba(255, 255, 255, 0.95);
   color: rgb(28, 27, 24);
+}
+
+:global(.dark) .cta:hover {
+  background: #fff;
+  box-shadow: 0 10px 26px rgba(240, 165, 112, 0.26);
+}
+
+/* ── 페이지 로드 오케스트레이션 — 별 → 아이브로 → 제목 → 설명 → CTA 순차 등장 ── */
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 아이브로 pill 등장 (Hero.tsx에서 .eyebrowReveal 래퍼로 감싼다) */
+.eyebrowReveal {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  animation: heroFadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.08s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .star,
+  .starGlow,
+  .eyebrowReveal,
+  .title,
+  .description,
+  .actions {
+    animation: none;
+  }
 }
 
 @media (max-width: 640px) {

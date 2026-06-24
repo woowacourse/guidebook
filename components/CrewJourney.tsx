@@ -34,8 +34,9 @@ const COMPANIES = [
 const INTL = ['딜리버리히어로즈', '탈라밧']
 
 // 궤도 좌표 — 결정적 계산(12시 방향부터 시계방향으로 균등 배치)
-const RX = 46
-const RY = 40
+// pill 노드가 좌우 가장자리에서 잘리지 않도록 RX를 살짝 좁힌다
+const RX = 44
+const RY = 39
 const NODES = COMPANIES.map((name, i) => {
   const ang = (i / COMPANIES.length) * Math.PI * 2 - Math.PI / 2
   return {
@@ -65,7 +66,8 @@ export function CrewJourney() {
       >
         <div className={styles.ring} aria-hidden="true" />
         <div className={styles.core}>
-          <img className={styles.planet} src="/images/characters/행성이-걷기.png" alt="" width={92} />
+          <span className={styles.coreGlow} aria-hidden="true" />
+          <img className={styles.planet} src="/images/characters/행성이-걷기.png" alt="" width={104} />
           <span className={styles.coreN}>{CREW_COUNT}명</span>
         </div>
         {NODES.map((n) => (

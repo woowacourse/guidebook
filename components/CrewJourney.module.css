@@ -1,17 +1,17 @@
-/* CrewJourney — "크루는 어디로 갔나" : 행성이가 걸어가는 여정으로 졸업 크루의 행선지를 보여준다 */
+/* CrewJourney — "크루들은 지금 여기 있습니다" : 행성이가 앞장서고 회사명이 뒤따르는 여정 */
 .section {
   max-width: 52rem;
-  margin: 1rem auto 0;
-  padding: 2.5rem 1rem 0.5rem;
+  margin: 0 auto;
+  padding: 0 1rem 1rem;
   text-align: center;
 }
 
 .heading {
-  font-size: clamp(1.4rem, 3.4vw, 1.9rem);
+  font-size: clamp(1.45rem, 3.4vw, 2rem);
   font-weight: 800;
   letter-spacing: -0.03em;
   color: rgb(55, 53, 47);
-  margin: 0 0 0.9rem;
+  margin: 0 0 0.85rem;
   word-break: keep-all;
 }
 
@@ -22,44 +22,49 @@
 .lede {
   font-size: 1.05rem;
   line-height: 1.7;
-  color: rgb(55, 53, 47);
+  color: rgba(55, 53, 47, 0.82);
   max-width: 34rem;
-  margin: 0 auto 2rem;
+  margin: 0 auto 2.25rem;
   word-break: keep-all;
   text-wrap: pretty;
 }
 
 :global(.dark) .lede {
-  color: rgba(255, 255, 255, 0.81);
+  color: rgba(255, 255, 255, 0.74);
 }
 
 .lede strong {
   font-weight: 800;
+  color: rgb(55, 53, 47);
 }
 
-/* 여정 — 행성이(출발점) + 거쳐 가는 회사들(워드마크) */
+:global(.dark) .lede strong {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* 여정 — 행성이(앞장) + 뒤따르는 회사 칩들. 손그림 점선 길 위에 놓인다 */
 .journey {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 0.6rem 1rem;
-  padding-bottom: 1.75rem;
-  border-bottom: 1.5px dashed rgba(55, 53, 47, 0.22); /* 손그림 길/지면 */
+  gap: 0.9rem 1.4rem;
+  max-width: 46rem;
+  margin: 0 auto;
+  padding-bottom: 1.9rem;
+  border-bottom: 1.5px dashed rgba(55, 53, 47, 0.2); /* 손그림 길/지면 */
 }
 
 :global(.dark) .journey {
-  border-bottom-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(255, 255, 255, 0.18);
 }
 
-/* 걸어가는 행성이 — 흰 배경 라인아트를 배경에 자연스럽게 합성 */
+/* 걸어가는 행성이 — 정적(움직임 제거). 흰 배경 라인아트를 배경에 합성 */
 .walker {
-  width: 116px;
+  width: 96px;
   height: auto;
   flex-shrink: 0;
-  margin-right: 0.25rem;
   mix-blend-mode: multiply; /* 라이트: 흰 배경이 종이에 녹는다 */
-  animation: walkBob 1.4s ease-in-out infinite;
 }
 
 :global(.dark) .walker {
@@ -67,86 +72,59 @@
   mix-blend-mode: screen; /* 검은 배경이 어두운 종이에 녹는다 */
 }
 
-@keyframes walkBob {
-  0%,
-  100% {
-    transform: translateY(0) rotate(-1deg);
-  }
-  50% {
-    transform: translateY(-4px) rotate(1deg);
-  }
-}
-
-/* 거쳐 가는 회사들 — 별 마커 + 워드마크가 줄바꿈되며 흐른다 */
-.trail {
+/* 회사 칩들 — 별 없이, 줄바꿈되며 흐른다 */
+.companies {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem 1.1rem;
+  gap: 0.55rem 0.55rem;
+  flex: 1 1 24rem;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.stop {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.32rem;
-  white-space: nowrap;
-}
-
-.star {
-  width: 13px;
-  height: 13px;
-  flex-shrink: 0;
-  fill: rgb(55, 53, 47);
-  opacity: 0.7;
-}
-
-:global(.dark) .star {
-  fill: rgba(255, 255, 255, 0.85);
-}
-
 .company {
-  font-size: 1.02rem;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: -0.01em;
   color: rgb(55, 53, 47);
+  white-space: nowrap;
+  padding: 0.34rem 0.78rem;
+  border: 1px solid rgba(55, 53, 47, 0.16);
+  border-radius: 999px;
 }
 
 :global(.dark) .company {
-  color: rgba(255, 255, 255, 0.88);
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
-/* "그리고 더" — 여정이 계속된다는 여운 */
-.more .company {
+/* "그 외 여러 곳" — 칩 없이 여운만 */
+.more {
+  font-size: 0.96rem;
   font-weight: 500;
   font-style: italic;
-  color: rgba(55, 53, 47, 0.55);
+  color: rgba(55, 53, 47, 0.5);
+  white-space: nowrap;
+  padding: 0.34rem 0.2rem;
 }
 
-:global(.dark) .more .company {
+:global(.dark) .more {
   color: rgba(255, 255, 255, 0.5);
 }
 
 @media (max-width: 640px) {
-  .section {
-    padding-top: 2rem;
-  }
   .walker {
-    width: 92px;
+    width: 78px;
   }
   .company {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
+    padding: 0.3rem 0.68rem;
   }
-  .trail {
-    gap: 0.4rem 0.85rem;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .walker {
-    animation: none;
+  .companies {
+    gap: 0.45rem 0.45rem;
+    flex-basis: 100%;
   }
 }

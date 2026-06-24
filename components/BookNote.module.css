@@ -1,0 +1,25 @@
+/* BookNote — 랜딩 맨 아래 조용한 한 줄. CTA가 아니라 여운 */
+.note {
+  max-width: 34rem;
+  margin: 3rem auto 0;
+  padding: 0 1rem;
+  text-align: center;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: rgba(55, 53, 47, 0.55);
+  word-break: keep-all;
+}
+
+:global(.dark) .note {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.tag {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: rgba(55, 53, 47, 0.7);
+}
+
+:global(.dark) .tag {
+  color: rgba(255, 255, 255, 0.65);
+}

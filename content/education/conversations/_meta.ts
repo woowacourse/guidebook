@@ -13,6 +13,7 @@ export default {
       typesetting: 'article'
     }
   },
+  'crew-voices': '크루의 목소리',
   posuta: '포수타',
   bsuta: '브수타',
   'education-briefing-archive': '교육 설명회 아카이브',

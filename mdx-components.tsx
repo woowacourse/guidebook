@@ -8,6 +8,8 @@ import { Timeline, TimelineItem } from './components/Timeline'
 import { Placeholder } from './components/Placeholder'
 import { Hero } from './components/Hero'
 import { CrewJourney } from './components/CrewJourney'
+import { CrewVoices } from './components/CrewVoices'
+import { BookNote } from './components/BookNote'
 import { RecentUpdates } from './components/RecentUpdates'
 import { LogList } from './components/LogList'
 import { Mermaid } from './components/Mermaid'
@@ -36,6 +38,8 @@ export function useMDXComponents(components?: Record<string, React.FC>) {
     Placeholder,
     Hero,
     CrewJourney,
+    CrewVoices,
+    BookNote,
     RecentUpdates,
     LogList,
     Mermaid,

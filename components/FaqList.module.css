@@ -25,6 +25,31 @@
   padding-bottom: 0.35rem;
   border-bottom: 1px solid var(--nextra-border, #e5e7eb);
 }
+.list {
+  margin: 0;
+}
+.item {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--nextra-border, rgba(55, 53, 47, 0.09));
+}
+.item:last-child {
+  border-bottom: none;
+}
+.question {
+  margin: 0;
+  font-size: 0.975rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.answer {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: rgba(55, 53, 47, 0.72);
+}
+:global(.dark) .answer {
+  color: rgba(255, 255, 255, 0.7);
+}
 .empty {
   color: #64748b;
   padding: 1rem 0;

@@ -31,7 +31,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <body>
         <Layout
           navbar={
-            <Navbar logo={logo}>
+            <Navbar logo={logo} logoLink="/">
               <ThemeSwitch lite className="theme-switch-navbar" />
             </Navbar>
           }

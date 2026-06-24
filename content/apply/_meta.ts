@@ -5,9 +5,5 @@ export default {
   notices: {
     title: '공지사항',
     display: 'hidden'
-  },
-  hero: {
-    title: '히어로테크코스',
-    display: 'hidden'
   }
 }

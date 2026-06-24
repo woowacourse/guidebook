@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import faq, { FAQ_CATEGORIES } from '../content/faq'
-import { Toggle } from './Toggle'
 import styles from './FaqList.module.css'
 
 export function FaqList() {
@@ -29,11 +28,14 @@ export function FaqList() {
         return (
           <section key={category} className={styles.section}>
             <h2 className={styles.category}>{category}</h2>
-            {items.map((f) => (
-              <Toggle key={f.question + q} title={f.question} defaultOpen={q.length > 0}>
-                {f.answer}
-              </Toggle>
-            ))}
+            <dl className={styles.list}>
+              {items.map((f) => (
+                <div key={f.question} className={styles.item}>
+                  <dt className={styles.question}>{f.question}</dt>
+                  <dd className={styles.answer}>{f.answer}</dd>
+                </div>
+              ))}
+            </dl>
           </section>
         )
       })}

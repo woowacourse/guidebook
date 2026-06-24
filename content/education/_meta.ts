@@ -12,6 +12,7 @@ export default {
   },
   '--understand': { type: 'separator', title: '이해하기' },
   about: '👋 우테코 소개',
+  hero: '🌍 글로벌 확장 (베를린)',
   philosophy: '🎯 교육 철학',
   curriculum: '🗺️ 커리큘럼',
   insights: '🧩 검증된 패턴',

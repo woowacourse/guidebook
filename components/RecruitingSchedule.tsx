@@ -1,6 +1,7 @@
 import recruiting from '../content/recruiting'
 import { Timeline, TimelineItem } from './Timeline'
 import { Embed } from './Embed'
+import { Callout } from './Callout'
 import styles from './RecruitingSchedule.module.css'
 
 function toYouTubeEmbed(url: string): string | null {
@@ -37,14 +38,14 @@ export function RecruitingSchedule() {
       )}
 
       {questions.length > 0 && (
-        <div className={styles.questions}>
-          <h3>미리 생각해 볼 질문</h3>
-          <ul>
-            {questions.map((q) => (
-              <li key={q}>{q}</li>
-            ))}
-          </ul>
-        </div>
+        <Callout type="note" emoji="💭">
+          <p>
+            <strong>미리 생각해 볼 질문</strong>
+          </p>
+          {questions.map((q) => (
+            <p key={q}>{q}</p>
+          ))}
+        </Callout>
       )}
     </div>
   )

@@ -13,20 +13,12 @@ export default {
       typesetting: 'article'
     }
   },
-  about: {
-    title: '소개',
-    type: 'page'
-  },
-  apply: {
-    title: '지원',
-    type: 'page'
-  },
   education: {
     title: '교육',
     type: 'page'
   },
-  'how-its-made': {
-    title: '문서가 만들어지는 법',
+  apply: {
+    title: '지원',
     type: 'page'
   },
   timeline: {

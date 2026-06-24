@@ -11,6 +11,7 @@ export default {
     }
   },
   '--understand': { type: 'separator', title: '이해하기' },
+  about: '👋 우테코 소개',
   philosophy: '🎯 교육 철학',
   curriculum: '🗺️ 커리큘럼',
   insights: '🧩 검증된 패턴',
@@ -18,6 +19,8 @@ export default {
   start: '🚀 시작하기',
   'design-poe': '🔭 발견 학습 설계하기',
   tools: '🛠️ 검증된 도구',
+  '--meta': { type: 'separator', title: '이 문서에 대해' },
+  'how-its-made': '🏗️ 문서가 만들어지는 법',
   logs: { title: `실험 로그 (${logs.length})`, display: 'hidden' },
   conversations: {
     title: '🗂️ 우테코 콘텐츠 아카이브',

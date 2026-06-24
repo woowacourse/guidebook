@@ -5,21 +5,52 @@ import styles from './CrewVoiceMap.module.css'
 import { crewThemes, crewThemesAreExample } from '../content/crew-voices'
 
 /**
- * CrewVoiceMap — "크루들이 가장 많이 한 말"을 별자리로.
- * 크루의 말 = 별(크기=빈도), 별들을 잇는 선이 별자리를 만든다.
- * Hero 별 모티프("크루가 별이 되길")를 그대로 시각화한다.
+ * CrewVoiceMap — "크루들이 가장 많이 한 말"을 손그림 별무리로.
+ * 크루의 말 = 별(크기=빈도). Hero의 손그림 별(StarMark)과 같은 모양을 쓴다.
+ * 억지 연결선 대신 따뜻한 광원 + 희미한 잔별로 밤하늘 분위기를 만든다.
  * 호버/포커스/탭하면 대표 문장이 아래 캡션에 뜬다. 데이터: content/crew-voices.ts
  */
 
-// 별자리 좌표(%, 결정적) — 빈도 내림차순 기준 배치. 큰 별이 가운데 위쪽.
+// Hero StarMark와 동일한 손그림 별 모양(외곽 실루엣, 솔리드)
+const STAR_PATH =
+  'M47.4503 55.4507C43.6684 58.9605 39.8864 62.3888 36.1861 65.9531C33.955 68.1025 31.9416 70.4697 29.8465 72.7007C28.1596 74.4965 26.5543 76.4011 24.7041 78.0336C23.507 79.0947 21.7929 79.2035 20.378 78.3601C19.1264 77.5982 19.0176 76.3195 19.2353 74.9046C20.0515 69.9255 20.7045 64.9192 21.5752 59.94C21.9017 58.1171 22.6635 56.3485 23.3437 54.2807C18.936 54.2807 14.8275 54.3351 10.6918 54.2807C7.59009 54.2263 4.59718 53.4917 1.76751 52.2401C0.543131 51.6959 -0.218703 50.7436 0.0261726 49.1927C0.271048 47.7507 0.89684 46.8528 2.31167 46.2814C3.78092 45.6829 5.11413 44.7306 6.52897 43.9143C11.4265 41.0302 16.324 38.1734 21.4391 35.1532C20.6229 33.4119 19.589 31.5073 18.8544 29.4939C17.0042 24.4059 15.2356 19.2908 13.6303 14.1484C13.3311 13.1689 13.5215 11.6724 14.1201 10.8834C14.8275 9.95829 16.1607 9.38692 17.5483 10.1215C20.5685 11.6996 23.6702 13.1689 26.6631 14.8014C30.2002 16.7604 33.6557 18.8554 37.2744 20.9505C38.009 19.2635 38.7709 17.495 39.5599 15.7537C41.2468 11.9445 42.9609 8.13533 44.6479 4.32616C44.9744 3.56433 45.2464 2.8025 45.5457 2.01345C46.3892 -0.136006 49.1372 -0.680173 50.5521 1.11558C51.2867 2.04066 51.9669 3.129 52.2934 4.27175C53.3001 7.78162 54.1436 11.3459 55.1503 15.2095C57.5174 14.23 59.939 13.1145 62.4421 12.2166C64.7548 11.4003 67.122 10.6657 69.5163 10.1488C71.965 9.63179 73.5431 11.7268 72.8357 14.0668C71.8018 17.3862 69.7068 19.971 67.6389 22.6646C65.5711 25.3582 63.6937 28.2151 61.7619 31.0176C61.517 31.3985 61.2994 31.9698 61.381 32.378C62.687 37.5748 64.2107 42.7171 65.3534 47.9684C66.1425 51.5326 66.4962 55.2058 66.9043 58.8245C67.122 60.5386 66.5234 62.1439 65.1085 63.1778C63.8298 64.1029 62.4421 63.7492 61.0545 62.9602C56.7284 60.5386 52.3206 58.2803 47.9401 55.9404C47.668 55.8044 47.4503 55.5323 47.4231 55.5051L47.4503 55.4507Z'
+
+function HandStar({ size }: { size: number }) {
+  return (
+    <svg
+      className={styles.starSvg}
+      width={size}
+      height={size}
+      viewBox="0 0 73 79"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path d={STAR_PATH} />
+    </svg>
+  )
+}
+
+// 별 위치(%, 빈도 내림차순). 손그림 별무리답게 살짝 흐트러 배치.
 const POS = [
-  [48, 28],
-  [26, 50],
-  [72, 38],
-  [40, 72],
-  [64, 63],
-  [16, 76],
-  [84, 70]
+  [50, 30],
+  [27, 47],
+  [72, 40],
+  [38, 67],
+  [64, 61],
+  [17, 73],
+  [84, 69]
+]
+
+// 배경 잔별 (장식, 빈도와 무관) — 밤하늘 깊이
+const SPARKS: Array<[number, number, number]> = [
+  [11, 26, 4],
+  [89, 30, 5],
+  [44, 86, 3],
+  [72, 84, 4],
+  [7, 56, 3],
+  [93, 58, 4],
+  [60, 16, 3],
+  [31, 20, 4]
 ]
 
 export function CrewVoiceMap() {
@@ -29,10 +60,8 @@ export function CrewVoiceMap() {
 
   const max = Math.max(...themes.map((t) => t.count))
   const min = Math.min(...themes.map((t) => t.count))
-  // 빈도 → 별 크기(px). 제곱근 스케일로 큰 값의 지배를 누른다 (18 ~ 48px)
-  const starPx = (count: number) => Math.round(18 + Math.sqrt((count - min) / (max - min || 1)) * 30)
-
-  const linePoints = themes.map((_, i) => (POS[i] ?? [50, 50]).join(',')).join(' ')
+  // 빈도 → 별 크기(px). 제곱근 스케일 (22 ~ 56px)
+  const starPx = (count: number) => Math.round(22 + Math.sqrt((count - min) / (max - min || 1)) * 34)
 
   return (
     <section className={styles.section} aria-label="크루들이 가장 많이 한 말">
@@ -43,21 +72,19 @@ export function CrewVoiceMap() {
       </p>
 
       <div className={styles.field}>
-        <svg className={styles.lines} viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-          <polyline
-            points={linePoints}
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1"
-            vectorEffect="non-scaling-stroke"
-            strokeDasharray="3 3"
+        <div className={styles.glow} aria-hidden="true" />
+        {SPARKS.map(([x, y, s], i) => (
+          <span
+            key={`s${i}`}
+            className={styles.spark}
+            style={{ left: `${x}%`, top: `${y}%`, width: s, height: s }}
+            aria-hidden="true"
           />
-        </svg>
+        ))}
 
         {themes.map((t, i) => {
           const [x, y] = POS[i] ?? [50, 50]
           const isActive = t.key === active?.key
-          const px = starPx(t.count)
           return (
             <button
               key={t.key}
@@ -69,9 +96,7 @@ export function CrewVoiceMap() {
               onClick={() => setActiveKey(t.key)}
               aria-pressed={isActive}
             >
-              <svg width={px} height={px} viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 1.7l2.85 6.5 7.15.6-5.45 4.65 1.7 6.85L12 17.1 5.75 20.7l1.7-6.85L2 8.8l7.15-.6z" />
-              </svg>
+              <HandStar size={starPx(t.count)} />
               <span className={styles.lab}>{t.label}</span>
               <span className={styles.ct}>{t.count}</span>
             </button>

@@ -1,4 +1,4 @@
-/* CrewVoiceMap — "크루들이 가장 많이 한 말" : 말=별, 별자리. 데스크톱 별자리 / 모바일 별무리 */
+/* CrewVoiceMap — "크루들이 가장 많이 한 말" : 손그림 별무리(밤하늘). 연결선 없이 광원·잔별로 깊이 */
 .section {
   max-width: 52rem;
   margin: 0 auto;
@@ -48,49 +48,78 @@
   border-color: rgba(255, 255, 255, 0.18);
 }
 
-/* 별자리 판 */
+/* 별무리 판 */
 .field {
   position: relative;
-  height: 360px;
-  max-width: 640px;
-  margin: 1.75rem auto 0;
+  height: 380px;
+  max-width: 660px;
+  margin: 1.5rem auto 0;
 }
 
-.lines {
+/* 따뜻한 광원 — 별무리 중심을 은은히 밝힌다 (Hero starGlow 계열) */
+.glow {
   position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  color: rgba(55, 53, 47, 0.22);
+  left: 50%;
+  top: 46%;
+  width: 70%;
+  height: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 236, 200, 0.55),
+    rgba(255, 236, 200, 0) 70%
+  );
+}
+
+:global(.dark) .glow {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 246, 228, 0.12),
+    rgba(255, 246, 228, 0) 70%
+  );
+}
+
+/* 배경 잔별 — 밤하늘 깊이 (장식) */
+.spark {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: rgba(55, 53, 47, 0.18);
+  z-index: 0;
   pointer-events: none;
 }
 
-:global(.dark) .lines {
-  color: rgba(255, 255, 255, 0.2);
+:global(.dark) .spark {
+  background: rgba(255, 255, 255, 0.28);
 }
 
+/* 말=별 */
 .star {
   position: absolute;
   transform: translate(-50%, -50%);
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.2rem;
+  gap: 0.28rem;
   background: none;
   border: 0;
   cursor: pointer;
   font-family: inherit;
   padding: 0.2rem;
+  color: rgb(55, 53, 47);
 }
 
-.star svg {
+:global(.dark) .star {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.starSvg {
   display: block;
-  fill: rgb(55, 53, 47);
-  transition: fill 0.15s ease, transform 0.15s ease;
-}
-
-:global(.dark) .star svg {
-  fill: rgba(255, 255, 255, 0.9);
+  fill: currentColor;
+  transition: transform 0.18s ease, filter 0.18s ease;
 }
 
 .star .lab {
@@ -108,17 +137,21 @@
 .star .ct {
   font-size: 0.66rem;
   font-weight: 600;
-  color: rgba(55, 53, 47, 0.4);
+  color: rgba(55, 53, 47, 0.42);
 }
 
 :global(.dark) .star .ct {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.42);
 }
 
-.star:hover svg,
-.star.on svg {
-  fill: rgb(196, 85, 77);
-  transform: scale(1.12);
+.star:hover,
+.star.on {
+  color: rgb(196, 85, 77);
+}
+
+:global(.dark) .star:hover,
+:global(.dark) .star.on {
+  color: rgb(232, 150, 142);
 }
 
 .star:hover .lab,
@@ -126,14 +159,14 @@
   color: rgb(196, 85, 77);
 }
 
-:global(.dark) .star:hover svg,
-:global(.dark) .star.on svg {
-  fill: rgb(232, 150, 142);
-}
-
 :global(.dark) .star:hover .lab,
 :global(.dark) .star.on .lab {
   color: rgb(232, 150, 142);
+}
+
+.star:hover .starSvg,
+.star.on .starSvg {
+  transform: scale(1.12) rotate(-4deg);
 }
 
 .star:focus-visible {
@@ -142,8 +175,10 @@
   border-radius: 6px;
 }
 
-/* 캡션 — 선택된 별의 대표 문장. 높이 고정으로 점프 방지 */
+/* 캡션 */
 .cap {
+  position: relative;
+  z-index: 1;
   max-width: 36rem;
   min-height: 4.8rem;
   margin: 1.25rem auto 0;
@@ -210,18 +245,20 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 0.6rem 1.2rem;
+    gap: 0.8rem 1.3rem;
     max-width: 30rem;
+    padding: 0.5rem 0;
   }
-  .lines {
+  .glow,
+  .spark {
     display: none;
   }
   .star {
     position: static;
     transform: none;
   }
-  .star:hover svg,
-  .star.on svg {
+  .star:hover .starSvg,
+  .star.on .starSvg {
     transform: none;
   }
 }

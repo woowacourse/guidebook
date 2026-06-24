@@ -53,7 +53,6 @@ export function CopyField({ value, mailto = false }: CopyFieldProps) {
         aria-label={copied ? '복사됨' : `${value} 복사하기`}
       >
         {copied ? <CheckIcon /> : <CopyIcon />}
-        {copied ? '복사됨' : '복사'}
       </button>
     </span>
   )

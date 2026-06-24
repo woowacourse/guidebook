@@ -9,6 +9,11 @@
 
 ## Pages
 
+- [지원하기](https://docs.woowahan.com/apply)
+- [문의하기](https://docs.woowahan.com/apply/contact)
+- [자주 묻는 질문 (FAQ)](https://docs.woowahan.com/apply/faq)
+- [Hero Tech Course: Berlin Edition](https://docs.woowahan.com/apply/hero)
+- [공지사항](https://docs.woowahan.com/apply/notices)
 - [교육](https://docs.woowahan.com/education)
 - [우아한테크코스 저장소 연구](https://docs.woowahan.com/education-experiment/repositories)
 - [자바 블랙잭 미션 (다기수 누적, Java)](https://docs.woowahan.com/education-experiment/repositories/java-blackjack)
@@ -20,6 +25,7 @@
 - [자바스크립트 영화 리뷰 미션 (DOM 설계, JavaScript)](https://docs.woowahan.com/education-experiment/repositories/javascript-movie-review)
 - [프론트엔드 성능 베이스캠프 (Memegle 최적화, JavaScript)](https://docs.woowahan.com/education-experiment/repositories/perf-basecamp)
 - [리액트 페이먼츠 미션 (UI 컴포넌트 설계, TypeScript)](https://docs.woowahan.com/education-experiment/repositories/react-payments)
+- [우테코 소개](https://docs.woowahan.com/education/about): 우아한테크코스가 무엇이고, 어떻게 배우며, 누구를 위한 교육인지 소개합니다.
 - [평가](https://docs.woowahan.com/education/assessment)
 - [피드백 설계](https://docs.woowahan.com/education/assessment/feedback-design)
 - [레벨별 평가 기준](https://docs.woowahan.com/education/assessment/level-criteria)
@@ -29,6 +35,7 @@
 - [브수타](https://docs.woowahan.com/education/conversations/bsuta)
 - [2026년 8기 브수타: 2026년 4월 3일](https://docs.woowahan.com/education/conversations/bsuta-8th-2026-04-03)
 - [2026년 8기 브수타](https://docs.woowahan.com/education/conversations/bsuta/2026-8th)
+- [크루의 목소리](https://docs.woowahan.com/education/conversations/crew-voices)
 - [프로젝트 데모데이 아카이브](https://docs.woowahan.com/education/conversations/demo-day-archive)
 - [교육 설명회 아카이브](https://docs.woowahan.com/education/conversations/education-briefing-archive)
 - [인터뷰 챌린지 아카이브](https://docs.woowahan.com/education/conversations/interview-challenge-archive)
@@ -51,11 +58,13 @@
 - [실패한 교육](https://docs.woowahan.com/education/failed-experiments)
 - [실패 사례 카탈로그](https://docs.woowahan.com/education/failed-experiments/catalog)
 - [실패에서 패턴으로](https://docs.woowahan.com/education/failed-experiments/failure-to-pattern)
+- [이 문서는 어떻게 만들어지는가](https://docs.woowahan.com/education/how-its-made): 이 문서가 실험 로그에서 귀납되고 루브릭 게이트로 검증되며 수정되는 제작 과정을 시각화한 신뢰 페이지.
 - [검증된 패턴](https://docs.woowahan.com/education/insights)
 - [논증 기반 학습 설계: 정답을 주지 않고 설명하게 만들기](https://docs.woowahan.com/education/insights/argumentation-based-learning)
 - [학습 분석](https://docs.woowahan.com/education/insights/learning-analytics)
 - [강의 설계](https://docs.woowahan.com/education/insights/lecture-design)
 - [미션은 누적 학습 모델이다](https://docs.woowahan.com/education/insights/mission-learning-accumulation)
+- [비기술 첫 미션: 역량 불안과 관계 불안을 분리하기](https://docs.woowahan.com/education/insights/non-technical-first-mission): 입학 첫 미션을 비-기술 과제(연극)로 두어 역량 불안과 관계 불안을 분리하고, 첫 주에 심리적 안전감을 설계합니다. 기수가 바뀌어도 고정된 우테코의 출발점.
 - [POE 발견 학습: 먼저 말하게 하고 나중에 보여주기](https://docs.woowahan.com/education/insights/poe-discovery-learning)
 - [점진적 스캐폴딩: 한 번의 강의 대신 다회차 시퀀스](https://docs.woowahan.com/education/insights/progressive-scaffolding)
 - [공개 합작 회고: 함께 써서 공개로 남기기](https://docs.woowahan.com/education/insights/public-retrospective): 회고를 한 곳에 함께 써서 공개로 남기면 1회성 성찰이 기수를 넘는 학습 아카이브가 됩니다. 공개 회고 저장소에서 추출한 운영 패턴.
@@ -79,10 +88,13 @@
 - [원정대 테크살롱: 공유회로 전이 설계하기](https://docs.woowahan.com/education/logs/expedition-tech-salon)
 - [FE 접근성 리포트: 자기 서비스를 진단하는 6기·7기 반복 실험](https://docs.woowahan.com/education/logs/fe-accessibility-report)
 - [FE 레벨2 16단계 학습 체계: 점진적 깊이로 리액트를 체화하기](https://docs.woowahan.com/education/logs/fe-level2-16steps)
+- [로또 미션 8기 — PR 57개로 본 콘솔에서 웹으로의 관심사 분리](https://docs.woowahan.com/education/logs/fe-lotto-2026-prs)
+- [영화리뷰 미션 8기 — PR 54개로 본 비동기 에러와 상태 기반 설계의 첫 만남](https://docs.woowahan.com/education/logs/fe-movie-review-2026-prs)
 - [FE 성능 리포트: 자기 서비스를 진단하는 3단계 프레임워크의 진화](https://docs.woowahan.com/education/logs/fe-performance-report)
 - [FE React & TypeScript 컨벤션 워크숍: 5기와 7기 사이의 2년 변화](https://docs.woowahan.com/education/logs/fe-react-typescript-convention)
 - [렌더링 전략 워크숍: 팀×팀 피드백으로 기술 결정 단단히 만들기](https://docs.woowahan.com/education/logs/fe-rendering-strategy-workshop)
 - [FE SSR 학습: 토론과 OX퀴즈로 "서버와 클라이언트의 평행세계" 체험하기](https://docs.woowahan.com/education/logs/fe-ssr-discussion)
+- [ts러닝 미션 8기 — PR 26개로 본 "학습법을 학습하는" 신설 미션](https://docs.woowahan.com/education/logs/fe-ts-learning-2026-prs)
 - [피드백 리팩터링: 피드백을 코드처럼 진단하고 개선하는 훈련](https://docs.woowahan.com/education/logs/feedback-refactoring)
 - [나만의 기술적 강점 찾기: 정체성 선언 기반 딥다이브 학습](https://docs.woowahan.com/education/logs/finding-tech-strengths)
 - [그룹 코칭 지원](https://docs.woowahan.com/education/logs/group-coaching)
@@ -135,10 +147,11 @@
 - [교육 철학](https://docs.woowahan.com/education/philosophy)
 - [시작하기 — 5분 안에 우테코 모델](https://docs.woowahan.com/education/start): 우테코 교육 모델을 5분 안에 이해하고, 더 깊이 들어갈 문으로 안내하는 시작점.
 - [검증된 도구](https://docs.woowahan.com/education/tools)
+- [AI 협업 미션 설계 키트](https://docs.woowahan.com/education/tools/ai-collaboration-mission-kit)
 - [클린 랭귀지 상호 멘토링 가이드](https://docs.woowahan.com/education/tools/clean-language-mentoring)
+- [연극 온보딩 설계 키트](https://docs.woowahan.com/education/tools/drama-onboarding-kit)
 - [미션 저장소 PR 데이터 분석 워크플로우](https://docs.woowahan.com/education/tools/mission-repo-analysis-workflow)
 - [렌더링 전략 결정 워크숍 템플릿](https://docs.woowahan.com/education/tools/rendering-strategy-workshop)
 - [연구 사이클 워크플로우](https://docs.woowahan.com/education/tools/research-cycle-workflow)
 - [회고 형식 설계 키트](https://docs.woowahan.com/education/tools/retrospective-format-kit)
-- [이 문서는 어떻게 만들어지는가](https://docs.woowahan.com/how-its-made): 이 문서가 실험 로그에서 귀납되고 루브릭 게이트로 검증되며 수정되는 제작 과정을 시각화한 신뢰 페이지.
 - [타임라인](https://docs.woowahan.com/timeline)

@@ -1,25 +1,293 @@
 # 우아한테크코스 공식문서 — Full Contents
 
+<!-- source: https://docs.woowahan.com/apply -->
+
+# 지원하기
+
+<RecruitingStatus />
+
+우아한테크코스는 소프트웨어 생태계에 선한 영향력을 만드는 개발자를 찾습니다. 아래 일정을 확인하고 지원해 주세요.
+
+<RecruitingSchedule />
+
+> 지원·선발에 대한 자세한 내용은 [자주 묻는 질문(FAQ)](/apply/faq)에서 확인할 수 있습니다. 궁금한 점이 더 있다면 [문의하기](/apply/contact)로 연락해 주세요.
+
+---
+
+<!-- source: https://docs.woowahan.com/apply/contact -->
+
+# 문의하기
+
+## 주소
+
+2026년부터는 판교 캠퍼스에서 진행합니다.
+
+### 판교 캠퍼스
+
+경기도 성남시 수정구 금토로80번길 40, A동 우아한형제들 11층
+
+## 문의
+
+### 개인 문의
+
+지원·교육 관련 문의는 카카오 채널로 연락해 주세요.
+
+[카카오 채널 상담하기 →](https://pf.kakao.com/_budWj/chat)
+
+### 기업 문의
+
+기업 협업·제휴 문의는 이메일로 보내 주세요.
+
+woowa_course@woowahan.com
+
+## 개인정보 처리방침
+
+[우아한테크코스 개인정보 처리방침 →](https://terms.baemin.com/content/WOOWACOURSE_644?shotList=true)
+
+---
+
+<!-- source: https://docs.woowahan.com/apply/faq -->
+
+# 자주 묻는 질문 (FAQ)
+
+## 지원 및 선발
+
+<Toggle title="컴퓨터 관련 전공자만 참가할 수 있나요?">
+전공과 상관없이 지원할 수 있습니다. 다만, 본 교육 과정은 프로그래밍에 대한 기본 지식과 경험을 가지신 분들이 참여하실 수 있습니다.
+</Toggle>
+
+<Toggle title="웹 백엔드, 웹 프론트엔드, 모바일 안드로이드 과정 중 두 개 이상의 과정에 지원 가능한가요?">
+아니요. 세 개의 과정 중 한 가지 과정에만 지원하실 수 있습니다. 한 가지 과정을 선택해 지원서를 작성하시면 됩니다.
+</Toggle>
+
+<Toggle title="회사에 다니고 있는 주니어 개발자나 개발 경력이 있는 사람도 지원 가능한가요?">
+주니어 개발자나 개발 경력이 있는 사람도 지원 가능합니다. 단, 우아한테크코스는 취업 준비생을 위한 교육 과정인 만큼 재직 경험이 없는 분들에게 우선적으로 기회를 부여하고 있습니다. 개발자로서 재직 경험을 확인하기 위해 선발 과정에서 서류 제출을 요구할 수 있습니다.
+</Toggle>
+
+<Toggle title="다른 교육 기관, 부트캠프에 다니고 있는 수강생이나 수료자도 지원 가능한가요?">
+다른 교육기관, 부트캠프 수강생 혹은 수료생이라 하더라도 지원 가능합니다. 단, 프로그래밍 교육 기회가 적었던 분들에게 우선적으로 기회를 부여하고 있습니다. 우아한테크코스에서는 신뢰를 중요하게 생각하므로, 작성하지 않은 내용이 추후 확인되거나 거짓으로 작성한 내용이 있는 경우 선발 여부에 영향이 있을 수 있습니다.
+</Toggle>
+
+<Toggle title="선발 과정에서는 어떤 언어를 사용하나요?">
+선발 과정은 프리코스와 최종 테스트로 이루어져 있습니다. 선발 과정에서 웹 백엔드는 자바를 사용하며, 웹 프론트엔드는 자바스크립트를 사용합니다. 모바일 안드로이드는 코틀린을 주 언어로 사용합니다.
+</Toggle>
+
+<Toggle title="온라인 코딩 테스트는 어떤 언어로 테스트 하나요?">
+온라인 코딩 테스트는 진행하지 않습니다. 서류 지원한 모든 분은 온라인 코딩 테스트 없이 바로 프리코스를 진행합니다.
+</Toggle>
+
+<Toggle title="지원 과정을 보면 프리코스가 있는데 프리코스에서 무슨 활동을 하나요?">
+프리코스는 우아한테크코스 본 과정을 미리 경험해 보는 단계입니다. 본 과정과 같이 1, 2주 단위로 미션을 하나씩 구현하고 제출하는 방식으로 진행합니다. 이 과정을 통해 지원자는 본 과정을 미리 경험해 보면서 교육의 참여 여부를 결정할 수 있습니다.
+</Toggle>
+
+<Toggle title="프리코스 커뮤니티가 뭔가요?">
+프리코스 커뮤니티는 우아한테크코스 지원자들이 소통하고 함께 학습하고 성장할 수 있는 공간입니다. 프리코스 커뮤니티에는 다른 지원자들과 함께 할 수 있는 여러 활동이 있습니다. 커뮤니티를 통해 다양한 활동과 함께 성장하는 경험을 해보는 것을 권장합니다.
+</Toggle>
+
+<Toggle title="프리코스 커뮤니티에 꼭 참여해야 하나요?">
+네, 꼭 참여해야 합니다. 프리코스 진행에 필요한 중요한 공지사항은 프리코스 커뮤니티가 진행되는 디스코드로 전달됩니다.
+</Toggle>
+
+<Toggle title="최종 테스트의 문제 유형과 진행 방식은 어떻게 되나요?">
+최종 테스트의 문제 유형은 5주 동안 진행한 프리코스의 문제 유형과 같고 비슷한 난이도의 문제로 진행합니다. 최종 테스트는 오프라인으로 진행하는 것을 기본 원칙으로 하고 있습니다. 단, 코로나19와 같이 오프라인으로 진행하기 힘든 부득이한 상황이 발생하면 온라인으로 진행합니다. 5주간의 프리코스를 성실하게 잘 마무리했다면 최종 테스트도 무리 없이 진행할 수 있을 것으로 예상합니다.
+</Toggle>
+
+<Toggle title="최종 선발 인원은 몇 명인가요?">
+웹 백엔드 과정의 최종 선발 인원은 100명 내외이며, 웹 프론트엔드 과정의 최종 선발 인원은 30명 내외, 모바일 안드로이드 과정의 최종 선발 인원은 25명 내외입니다.
+</Toggle>
+
+## 교육 프로그램
+
+<Toggle title="우아한테크코스 참여 시 교육 비용은 어떻게 되나요?">
+교육비 전액을 지원합니다. 개인 부담금은 없습니다. 단, KDT에 참여하는 경우 고용노동부 정책 변경에 따라 변동사항이 있을 수 있으니 확인해 주시기 바랍니다.
+</Toggle>
+
+<Toggle title="교육 장소는 어떻게 되나요?">
+오프라인 교육장 위치가 판교로 이동했습니다. 자세한 위치는 [문의하기](/apply/contact) 페이지에서 확인해 주세요.
+</Toggle>
+
+<Toggle title="교육 시간은 어떻게 되나요?">
+공식적인 교육 시간은 월~금 10시~18시입니다. 공식적인 교육 시간 외에도 정해진 시간 내에 오프라인 교육장을 자유롭게 사용할 수 있습니다.
+</Toggle>
+
+<Toggle title="우아한테크코스 참여 시 실습할 장비는 지급하나요?">
+우아한테크코스는 별도의 장비를 지급하지 않습니다. 개인 실습 장비는 각자 준비해야 합니다.
+</Toggle>
+
+<Toggle title="수료의 기준이 어떻게 되나요?">
+우아한테크코스는 5개의 레벨로 구성되어 있습니다. 5개의 레벨을 모두 완주해야 최종 수료할 수 있습니다.
+</Toggle>
+
+## 기타
+
+<Toggle title="학교, 직장 등과 병행이 가능한가요?">
+정해진 교육 시간 동안 반드시 오프라인 교육에 참여하는 것을 기본 원칙으로 하고 있으므로 병행은 불가능합니다.
+</Toggle>
+
+<Toggle title="우아한테크캠프를 대신하여 진행되는 프로그램인가요?">
+아닙니다. 우아한테크코스는 우아한테크캠프와는 다른 별개의 교육 프로그램입니다.
+</Toggle>
+
+<Toggle title="우아한테크캠프와 다른 점이 무엇인가요?">
+우아한테크캠프는 현장에서 필요로 하는 역량을 끌어내는 인턴 과정이라면, 우아한테크코스는 최소한의 프로그래밍 지식과 역량을 가진 상태에서 현장에서 업무가 가능한 상태의 교육을 진행하는 교육 과정입니다. 우아한테크코스는 약 10개월 동안 진행되며, 웹 백엔드, 웹 프론트엔드, 모바일 안드로이드 세 개의 과정으로 진행합니다.
+</Toggle>
+
+<Toggle title="수료 후 우아한형제들에 입사할 기회가 있나요?">
+우아한테크코스를 수료한 교육생 중 일부를 신입사원으로 선발할 계획은 있습니다. 하지만 반드시 우아한형제들에 입사하지 않더라도 그에 따르는 회사에 입사할 기회는 많아질 것입니다.
+</Toggle>
+
+<Toggle title="KDT 과정 또는 국비지원 과정을 수강한 경험이 있는데 우아한테크코스 지원이 가능한가요?">
+지원할 수 있습니다. KDT 교육을 수강할 자격이 있으면 KDT 지원을 통해, 자격이 없으면 우아한형제들의 지원을 통해 교육을 수강할 수 있습니다.
+</Toggle>
+
+---
+
+<!-- source: https://docs.woowahan.com/apply/hero -->
+
+# Hero Tech Course: Berlin Edition
+
+<Callout type="warning">
+This program ran as a one-time edition with Delivery Hero in Berlin. **Applications are now closed.** The page is kept for reference.
+</Callout>
+
+## Introducing our new Hero Tech Course: Berlin Edition!
+
+The Hero Tech Course is a developer training program that brings the educational philosophy and curriculum of Woowa Tech Course — one of Korea's most respected programming education programs — to Europe, with the goal of nurturing developers with global competitiveness.
+
+Woowa Tech Course, operated by Woowa Brothers (the company behind Korea's leading delivery platform, "Baemin"), has been running since 2019 and is widely recognized in Korea for producing job-ready junior developers. The program focuses on project-based learning, pair programming, code reviews, and self-directed learning, simulating real-world development environments. To date, it has trained and launched the careers of hundreds of junior developers in Korea's tech industry.
+
+Over the past seven years, many graduates have joined top tech companies in Korea — and in 2024, several joined Delivery Hero entities in Berlin and Dubai, demonstrating that the program prepares developers to succeed in the global market.
+
+Now, for the first time, this proven educational model is expanding globally, starting with its launch at Delivery Hero's headquarters in Berlin.
+
+## About Woowa Tech Course: How We Learn, How We Grow
+
+Watch the videos below to explore what makes Woowa Tech Course special and how it helps developers launch successful global careers:
+
+- **Video 1 — [Life in Berlin & Delivery Hero](https://youtu.be/tweV95l39tA?si=QOxXaHafegGjWDeA)**: What it's like to work at Delivery Hero in Berlin as a Woowa Tech Course graduate.
+- **Video 2 — [The Philosophy Behind Woowa Tech Course](https://youtu.be/JTUIOC2QmR0?si=2vqXElF0yOb-hEUz)**: The unique educational philosophy that equips developers for success in the global tech industry.
+
+## Learning Objectives & Curriculum
+
+The Hero Tech Course is a two-month program focused on Kotlin-based backend development and project-based learning. It helps developers build both fundamental programming skills and essential soft skills.
+
+**Training Field**: Server/Backend Development
+
+**What you'll experience**
+
+- Backend web development using Kotlin and the Spring Framework
+- Hands-on learning of essential backend skills including object-oriented programming and Test-Driven Development (TDD)
+- Clean code practices through pair programming and code reviews
+
+**You'll have the opportunity to**
+
+- Work on real-world projects to gain practical experience
+- Develop problem-solving skills and a self-directed learning approach
+- Enhance your collaboration and communication skills in a global environment
+
+## After Completion of the Course
+
+- Participants who successfully complete the course will have the opportunity to join a 3-month internship at Delivery Hero from September to December 2025.
+- Internship participants will be considered for full-time engineering positions at Delivery Hero in 2026 based on performance and role.
+
+## We're Looking For Those Who
+
+- Want to grow as a developer on a global stage and collaborate in a diverse environment
+- Are motivated, committed, and determined to complete required projects and challenges
+- Have a passion for continuous and independent learning, beyond simply acquiring knowledge
+- Enjoy learning and growing together through code reviews, pair programming, and team projects
+
+## Eligibility
+
+- Relevant educational background (major in Computer Science, IT, etc.) or a graduate of a bootcamp/technical upskilling program
+- Self-taught coders with at least 6 months of experience who are career-transitioning are also welcome to apply
+- Demonstrated basic programming skills (ability to write programs of 300–500 lines)
+- Business fluency in English
+- Ability to commute daily to Delivery Hero's Berlin office during the training period
+- Available for an in-house internship from Sept–Dec 2025 (preferred) or ready to start a full-time role in early 2026
+- Legally eligible to live and work in Germany (including those with EU passports)
+
+## Application Process
+
+Schedule subject to change based on internal plans. The self-introduction must be completed in English.
+
+<Timeline label="Hero Tech Course Selection">
+  <TimelineItem date="March 25 (Tue) – April 11 (Fri)" title="Application Period">
+    Create an account on the application platform, then submit your application on the [Apply page](https://apply.techcourse.co.kr/recruits). The form includes basic personal information and a self-introduction (in English): your proudest project, why you want to become a developer and chose the Hero Tech Course, an experience of deep immersion, and a time you learned and grew together with others.
+  </TimelineItem>
+  <TimelineItem date="April 15 – April 28" title="Pre-course (Online)">
+    Open to all applicants. One mission per week over two weeks (about 2 hours/day, ~10 hours per mission). Participants receive feedback on each mission, which helps them decide whether to continue.
+  </TimelineItem>
+  <TimelineItem date="May 7 (Wed)" title="Pre-course Results Announcement">
+    Via individual email.
+  </TimelineItem>
+  <TimelineItem date="May 12 (Mon)" title="Final Coding Test (Online)">
+    Similar to the pre-course missions — a final assessment of problem-solving skills within a 5-hour time limit.
+  </TimelineItem>
+  <TimelineItem date="May 13 – May 16" title="Recruiter Interviews (Online)">
+    Checks the applicant's basic information and English communication skills.
+  </TimelineItem>
+  <TimelineItem date="End of May" title="Final Selection Announcement">
+    Via individual email.
+  </TimelineItem>
+</Timeline>
+
+## Training Period & Location
+
+- **Training Period**: July 1, 2025 – August 29, 2025 (2 months)
+- Monday to Friday, 10 AM – 6 PM
+- Full-time, in-person training; sessions held on-site every weekday
+- **Location**: Delivery Hero Office, Berlin (Oranienburger Straße 70, 10117)
+
+## Meet the Coaches
+
+- **박재성 / Jason** — Hero Tech Course Captain. Server developer using Kotlin and the Spring Framework. "I'm passionate about writing good code and strive to create software that remains adaptable even after one year or ten."
+- **조부용 / Brie** — Coach. Server developer using Kotlin and the Spring Framework. Enjoys building services and exploring how to make development and learning more efficient through automation and simple tools.
+- **김성주 / Justin** — Coach. Server developer using Kotlin and the Spring Framework. Believes every technology has core principles, and understanding them brings new insights.
+
+## Contact
+
+Have a question that isn't covered? Email **herotechcourse@deliveryhero.com**.
+
+---
+
+<!-- source: https://docs.woowahan.com/apply/notices -->
+
+# 공지사항
+
+우아한테크코스의 모집·행사 공지입니다.
+
+<NoticeList />
+
+---
+
 <!-- source: https://docs.woowahan.com/education -->
 
 # 교육
 
-우아한테크코스는 8년째 10개월짜리 교육을 굴려 왔습니다. 그 경험과, 현장에서 진행 중인 실험을 한 자리에 모은 공식문서입니다. 이 문서는 두 길로 읽을 수 있습니다 — 여러분의 경험으로 직접 **시작**하거나, 그 설계를 **이해**할 수도 있습니다.
+{/* "n년째" 는 빌드 시점 연도에서 자동 계산. 2019년이 1기(1년째)라 기준값 2018. 재배포 때마다 갱신됨. */}
+우아한테크코스는 {new Date().getFullYear() - 2018}년째 10개월짜리 교육을 이어 왔습니다. 그동안 반복한 실험과 거기서 얻은 교훈을 이 문서에 남깁니다. 이 경험이 우테코 안에서만 머물지 않기를 바랍니다. 읽는 분이 본인 현장에서 직접 꺼내 쓰는 데까지 닿으면 좋겠습니다.
+
+이 문서는 **이해하기 → 적용하기** 순서로 묶었습니다. 그동안의 경험에서 핵심만 추려 먼저 정리하고, 그 원리를 **여러분의 현장에서 어떻게 적용할지**로 이어집니다. 순서는 이해하기부터지만, 적용하기를 먼저 펴 보는 것도 좋은 방법입니다.
+
+<Callout type="tip" emoji="🚀">
+**바로 설계하거나 만들어보고 싶다면** 이해하기를 건너뛰고 [적용하기](/education/start)부터 시작해 보세요.
+</Callout>
 
 <CardGrid columns={2}>
-  <Card title="적용하기" icon="🚀" href="/education/start" meta="오늘 할 수 있는 작은 행동부터">
-    스스로 자라는 환경을, 당신의 자리에서 오늘 할 수 있는 작은 행동부터 시작합니다.
-  </Card>
   <Card title="이해하기" icon="🧭" href="/education/philosophy" meta="철학 → 커리큘럼 → 검증된 패턴">
-    8년의 설계를 철학부터 커리큘럼 구현까지, 추상에서 구체로 따라갑니다.
+    8년 동안 다듬어 온 설계를 철학부터 커리큘럼까지, 추상에서 구체로 따라갑니다.
+  </Card>
+  <Card title="적용하기" icon="🚀" href="/education/start" meta="오늘 할 수 있는 작은 행동부터">
+    스스로 자라는 환경을, 여러분의 현장에서 오늘 할 수 있는 작은 행동부터 시작합니다.
   </Card>
 </CardGrid>
 
 ## 전체 지도
 
-위에서 아래로 갈수록 추상에서 구체로 — 철학과 커리큘럼에서 출발해, 검증된 패턴을 거쳐, 오늘의 실험까지 이어집니다.
+위에서 아래로 읽으면 추상에서 구체로 내려갑니다. 철학과 커리큘럼에서 출발해, 검증된 패턴을 거쳐, 오늘의 실험까지 이어집니다. 왼쪽 **승격** 레일은 그 반대 방향 — 실험 로그를 교육 철학까지 끌어올리는 흐름을 가리킵니다.
 
-<CardGrid variant="list">
+<CardGrid variant="list" rail="승격">
   <Card title="교육 철학" icon="🎯" href="/education/philosophy" variant="row">
     왜 이런 방식으로 가르치는가
   </Card>
@@ -37,7 +305,9 @@
   </Card>
 </CardGrid>
 
-🧪 **실험 로그**와 🧩 **검증된 패턴**은 승격 파이프라인의 출발점입니다. 실험 로그에서 반복 패턴이 발견되면 검증된 패턴으로, 검증된 패턴이 실전 절차로 정제되면 검증된 도구로 묶입니다. 패턴과 도구가 더 일반화되면 커리큘럼과 교육 철학으로 올라갑니다. 승격 과정의 세부는 [연구 사이클 워크플로우](/education/tools/research-cycle-workflow)에서 확인할 수 있습니다.
+이 지도는 아래에서 위로도 자랍니다. 출발점은 🧪 **실험 로그**입니다. 매주 교육 현장에서 시도한 일을 실험 로그에 그대로 적습니다. 그중 여러 번 반복해서 통한 것만 골라 🧩 **검증된 패턴**으로 올립니다. 그 패턴을 누구나 따라 할 수 있는 절차로 다듬으면 **검증된 도구**가 됩니다. 여러 도구에서 같은 원리가 보이면, 그제야 **커리큘럼**과 **교육 철학**에 넣습니다.
+
+한 번 해 본 일이 곧바로 원칙이 되지는 않습니다. 여러 번 살아남은 것만 위로 올라갑니다. 우리는 이 걸러내는 과정을 '승격'이라고 부릅니다. 자세한 절차는 [연구 사이클 워크플로우](/education/tools/research-cycle-workflow)에 정리해 두었습니다.
 
 ---
 
@@ -301,6 +571,56 @@ FE 레벨1 영화 리뷰 미션으로, 155회 포크와 200+ PR이 누적된 활
 
 ---
 
+<!-- source: https://docs.woowahan.com/education/about -->
+
+# 우테코 소개
+
+## 소프트웨어 생태계에 선한 영향력을
+
+우아한테크코스의 로고는 행성입니다. 가운데서 빛나는 크루를 코치와 리뷰어가 감싸고 있는 모습으로, 크루가 자기 색깔로 빛나는 소프트웨어 장인이 되도록 곁에서 돕겠다는 뜻을 담았습니다.
+
+우리는 이 마음을 구호로만 두지 않습니다. 매주 쌓이는 실험에서 원칙을 귀납하고, 그 원칙을 다시 실험으로 검증합니다. 그 과정과 결과가 이 문서 전체입니다.
+
+## 어떻게 배우나
+
+우테코의 학습은 세 가지 축으로 굴러갑니다.
+
+- **미션 기반 · 코드 리뷰 중심** — 강의로 떠먹이지 않습니다. 단계별 미션을 직접 구현하고, 현장 경험을 가진 경력 개발자에게 리뷰를 받으며 배웁니다.
+- **소통과 협업** — 미션은 짝 프로그래밍으로 진행합니다. 혼자 푸는 문제가 아니라 동료와 토론하며 푸는 문제로 설계합니다.
+- **현장 중심** — 교육의 절반을 프로젝트로 채웁니다. 현장과 같은 협업, 레거시 코드를 리팩터링하는 경험을 미리 합니다.
+
+→ 이 방식이 어떤 원칙에서 나왔는지는 [교육 철학](/education/philosophy)에서, 레벨별 설계는 [커리큘럼](/education/curriculum)에서 자세히 다룹니다.
+
+## 누구를 위한 교육인가
+
+우테코는 다음 세 가지를 갖춘 사람을 찾습니다.
+
+- **몰입** — 한 가지에 깊이 몰입해 성공해 본 경험입니다. 분야는 프로그래밍이 아니어도 좋습니다. 깊이 빠져 본 사람은 목표에 이르는 과정과 난관을 넘는 법을 이미 몸으로 압니다.
+- **프로그래밍** — 최소한의 구현 역량입니다. 함수·변수·자료형·조건문·반복문으로 300라인 정도의 작은 애플리케이션을 만들 수 있으면 충분합니다.
+- **현장** — 현장형 개발자가 되고 싶은 마음입니다. 단계별 미션과 경력 개발자 피드백으로 현장의 문제 해결 역량을 키우는 데 관심이 많아야 합니다.
+
+→ 지원 일정과 방법은 [지원하기](/apply)에서 확인할 수 있습니다.
+
+## 캡틴의 메시지
+
+<Callout type="note" emoji="🧑‍🚀">
+**캡틴 포비**
+
+"인공지능이 인간의 일자리를 대체하지 않을까?"라는 우려가 여러 곳에서 들려옵니다. 저는 그 해답이 사람에게 더 집중하고 관심을 가지는 데 있다고 생각합니다.
+
+저는 프로그래밍을 가르치는 교육자입니다. 하지만 프로그래밍을 가르치는 것이 가장 큰 목표는 아닙니다. 더 큰 목표는 프로그래밍이라는 도구로 학습의 즐거움, 그리고 다른 사람과 협력하는 즐거움을 경험하게 하는 것입니다. 그런 경험을 통해 환경에 휘둘리지 않고 자기 색깔을 지키며 살아가는 주체적인 사람을 키우고 싶습니다. 자기 자신을 찾아가는 여정을 함께 떠나 보시죠.
+</Callout>
+
+<Callout type="note" emoji="🧑‍🚀">
+**캡틴 제이슨**
+
+초등학교 때 만든 첫 프로그램을 친구들이 좋아하며 썼던 기억이 있습니다. 단순한 프로그램이었지만, 내가 만든 것을 다른 사람이 즐겁게 쓰는 모습에서 보람을 느꼈고, 그 기억이 저를 오늘 이 자리에 세웠습니다.
+
+우테코는 지식 중심이 아니라 경험 중심의 교육을 지향합니다. 몇 년 안에 잊히거나 쓸모없어질 지식이 아니라, 먼 훗날까지 개발자의 삶을 떠받칠 경험을 드리겠다는 뜻입니다. 완벽한 답이 아닌 길을 걷더라도, 여러분의 선택에 따라 최선을 다하는 삶을 살아 보세요.
+</Callout>
+
+---
+
 <!-- source: https://docs.woowahan.com/education/assessment -->
 
 # 평가
@@ -416,6 +736,12 @@ FE 레벨1 영화 리뷰 미션으로, 155회 포크와 200+ PR이 누적된 활
 
 1. **기록 보존** — 인터뷰, 대화, 발표, 글 속에 흩어진 우테코의 목소리를 다시 찾을 수 있게 남깁니다.
 2. **패턴 발견** — 기수와 형식을 가로질러 반복되는 질문과 메시지를 읽어냅니다.
+
+## 크루의 목소리
+
+| 날짜 | 주요 주제 |
+|------|-----------|
+| [크루의 목소리](/education/conversations/crew-voices) | 우테코를 거쳐 간 크루들이 남긴 메시지·추천사를 모은 페이지. 결과만으로는 드러나지 않는, 10개월을 통과한 사람들의 언어와 "누구에게 권하고 싶은가"라는 답을 함께 읽을 수 있게 정리 |
 
 ## 설명회 아카이브
 
@@ -624,6 +950,42 @@ FE 레벨1 영화 리뷰 미션으로, 155회 포크와 200+ PR이 누적된 활
 ## 포수타와 비교했을 때의 변화
 
 포수타가 장기 성장의 기준을 세우는 데 무게가 있었다면, 브수타 8기는 그 기준을 실제 협업 현장에서 어떻게 적용할지에 더 가깝습니다. 질문은 더 현재형이고, 답변은 더 대화지향적입니다. 그래서 브수타는 "좋은 개발자가 되려면"에서 한 걸음 더 나아가, "지금 이 장면에서 나는 어떻게 말하고 움직일 것인가"를 다루는 기록으로 읽힙니다.
+
+---
+
+<!-- source: https://docs.woowahan.com/education/conversations/crew-voices -->
+
+# 크루의 목소리
+
+<Callout>
+우테코를 거쳐 간 크루들이 남긴 메시지와 추천의 말을 모은 페이지입니다.
+
+- 성격: 결과(어느 회사로 갔는가)만으로는 드러나지 않는, 10개월을 통과한 사람들의 언어
+- 수집 방식: 수료 크루들에게 직접 받은 메시지·추천사
+- 추천 대상: "우테코를 누구에게 권하고 싶은가"라는 크루 자신의 답
+</Callout>
+
+## 이 기록이 유용한 이유
+
+[크루는 어디로 갔나](/) 같은 지표는 우테코의 결과를 보여주지만, 그 사이에 무엇이 있었는지는 말해 주지 않습니다. 크루가 직접 남긴 문장에는 공식 문서가 다듬어 내기 전의 결이 담깁니다. 무엇이 답답했고, 어디서 자랐고, 그래서 누구에게 권하고 싶은지가 본인의 언어로 남습니다.
+
+이 페이지는 그 목소리를 한곳에 모아, 지원을 고민하는 분과 우리 교육을 들여다보는 분 모두가 다시 읽을 수 있게 합니다.
+
+<Callout type="info" emoji="✏️">
+아래 주제 빈도와 문구는 실제 크루에게 메시지를 받기 전 **예시**입니다. 실제 메시지가 모이면 빈도와 원문을 순차적으로 교체합니다.
+</Callout>
+
+## 무엇이 가장 많이 나왔나
+
+먼저 메시지에서 반복된 주제를 빈도로 봅니다. 주제를 누르면 그 주제를 대표하는 문장이 뜹니다.
+
+<CrewVoiceMap />
+
+## 개별 메시지
+
+위 주제들의 근거가 되는 개별 메시지 원문입니다.
+
+<CrewVoices />
 
 ---
 
@@ -5118,7 +5480,7 @@ SNS를 끊으면
 철학을 10개월로 옮기기 위해서 우리는 거꾸로 갑니다.
 </Callout>
 
-[교육 철학](/education/philosophy)이 **무엇이 자율 성장을 만드는가**를 다룬다면, 커리큘럼은 그 원리를 **약 10개월, 레벨 0~5라는 실제 시간에 어떻게 풀어놓는가**를 다룹니다. 같은 이야기를 한 걸음 더 구체적으로 내려온 것이고, 자기만의 학습 환경을 직접 짜보려는 사람이 보는 칸입니다. 아래 내용은 책상에서 미리 그린 설계도가 아닙니다. 7년 동안 커리큘럼을 굴리며 반복해서 관찰된 방식을 정리한 것이고, 곳곳의 **근거** 링크로 실제 기록·데이터와 이어집니다.
+[교육 철학](/education/philosophy)이 **무엇이 자율 성장을 만드는가**를 다룬다면, 커리큘럼은 그 원리를 **약 10개월, 레벨 0~5라는 실제 시간에 어떻게 풀어놓는가**를 다룹니다. 같은 이야기를 한 걸음 더 구체적으로 내려온 것이고, 자기만의 학습 환경을 직접 짜보려는 분이 보는 칸입니다. 아래 내용은 책상에서 미리 그린 설계도가 아닙니다. 우리는 7년 동안 커리큘럼을 굴리며 반복해서 확인한 방식을 정리했고, 본문 곳곳의 **근거** 링크로 실제 기록·데이터와 이어 두었습니다.
 
 <div style={{ margin: '1.75rem 0' }}>
   <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.78rem', opacity: 0.5, marginBottom: '0.4rem' }}>
@@ -5155,13 +5517,17 @@ SNS를 끊으면
 
 이 질문을 따라가며 1기의 10개월이 나왔습니다. 프로그래밍 기본으로 언어를 이해하고, 프레임워크를 익히고, 프로젝트를 거쳐, 심화 주제로 들어간 뒤, 이력서와 취업 준비까지. 뒤로 갈수록 실제 현장에 가까워지는 순서입니다.
 
-자기만의 학습 환경을 만들려는 사람도 같은 자리에서 시작하면 됩니다. "무엇을 가르칠까"가 아니라 **"교육이 끝났을 때 무엇을 할 수 있으면 성공인가"**부터 정의하는 것. 끝을 먼저 정해야 거기로 가는 길이 보입니다.
+자기만의 학습 환경을 만들려는 분도 같은 곳에서 시작하면 됩니다. "무엇을 가르칠까"가 아니라 **"교육이 끝났을 때 무엇을 할 수 있으면 성공인가"**부터 정의합니다. 끝을 먼저 정해야 거기로 가는 길이 보입니다.
 
 ## 쌓아 올리는 학습
 
 > 바뀌지 않는 기본기(폼·상태·컴포넌트 같은 핵심)는 그대로 두고, 그 위에 매년 새 목표를 한 층씩 올립니다.
 
-이 설계는 한 번 짜고 끝이 아닙니다. 매 기수 피드백을 반영해 같은 과정을 다시 돌립니다. 커리큘럼의 큰 줄기는 매년 갈아엎지 않고, 핵심은 그대로 둔 채 그 위에 한 층을 더합니다. [리액트 페이먼츠 미션 5년치 PR 555개](/education/logs/react-payments-555prs-analysis)를 보면, 같은 미션이 5년 동안 폼·상태·컴포넌트라는 기본기를 그대로 유지한 채 매년 새 목표(2025년 테스트·에러 처리, 2026년 비동기·MSW)를 한 층씩 더해 온 흐름이 데이터로 보입니다. 같은 걸 단순히 반복하는 게 아니라, 단단한 기본기 위에 매년 새 한 켜가 쌓이는 구조입니다.
+이 설계는 한 번 짜고 끝이 아닙니다. 매 기수 피드백을 반영해 같은 과정을 다시 돌립니다. 커리큘럼의 큰 줄기는 매년 갈아엎지 않고, 핵심은 그대로 둔 채 그 위에 한 층을 더합니다. [리액트 페이먼츠 미션 5년치 PR 555개](/education/logs/react-payments-555prs-analysis)를 보면, 같은 미션이 5년 동안 폼·상태·컴포넌트라는 기본기를 그대로 유지한 채 매년 새 목표(2025년 테스트·에러 처리, 2026년 비동기·MSW)를 한 층씩 더해 온 흐름이 데이터에 그대로 남아 있습니다. 같은 걸 단순히 반복하는 게 아니라, 단단한 기본기 위에 매년 새 한 켜를 쌓아 올립니다.
+
+뼈대로 고정된 건 기술 미션만이 아닙니다. **레벨0의 첫 미션은 기수가 바뀌어도 늘 연극입니다** — 프론트엔드·백엔드·안드로이드 크루가 트랙 구분 없이 한데 섞여, 코드보다 팀 협업과 심리적 안전감을 먼저 경험하게 하려는, 처음부터 정해 둔 출발점입니다. 그 온보딩을 직접 설계하는 법은 [연극 온보딩 설계 키트](/education/tools/drama-onboarding-kit)에 정리해 두었습니다.
+
+반대로, 위에 새로 올라가는 층도 있습니다. 올해(8기) 새로 더한 켜는 전 트랙 공통 **AI 협업 미션**입니다 — Gemini Canvas로 1주에 웹앱 네 개를 만들어 배포하며, '완벽한 코드'보다 '동작하는 무언가를 세상에 내놓는 경험'을 먼저 줍니다. 코드 품질 중심이던 커리큘럼에 AI 시대의 '만들고 배포하고 고치는' 감각을 더한 2026년의 한 켜로, 145개 PR을 분석한 [미션 설계 기록](/education/logs/mission-design)에 그 과정이 정리돼 있습니다.
 
 아래에서 기수를 눌러 보면, 레벨 0~5라는 뼈대는 그대로인데 **'이 해의 핵심'만 한 층씩 바뀝니다.** `기록 보강 중`이라고 적힌 기수는 아직 자료가 부족한 해라, 데이터가 모이는 대로 채워 갑니다.
 
@@ -5169,6 +5535,39 @@ SNS를 끊으면
 
 **↑ 교육 철학** → [몰입 기반 성장](/education/philosophy#몰입-기반-성장)
 **근거** → [페이먼츠 5년 555 PR](/education/logs/react-payments-555prs-analysis) · [미션은 누적 학습 모델이다](/education/insights/mission-learning-accumulation)
+
+## 올해 프론트엔드 미션에서 무엇을 길렀나
+
+> 위 타임라인이 한 해의 큰 줄기라면, 아래는 그 줄기가 실제 저장소에서 어떻게 자랐는지입니다.
+
+올해(8기) 레벨1 프론트엔드 미션 세 곳에서 크루들이 남긴 PR 137개와 리뷰 코멘트를 분석해, 각 미션이 무엇을 길렀는지만 추렸습니다. 카드를 누르면 미션별 상세 기록으로 이어집니다.
+
+<CardGrid columns={3}>
+  <Card title="로또 — 콘솔에서 웹으로" icon="🎰" href="/education/logs/fe-lotto-2026-prs" meta="PR 57개 · 레벨1">
+    같은 도메인을 콘솔로 먼저 짓고 웹으로 다시 지으며 관심사 분리를 몸으로 익혔습니다. 검증을 어디에 둘지, 정답 대신 트레이드오프를 따지는 힘을 길렀습니다.
+  </Card>
+  <Card title="ts러닝 — 학습법을 학습하기" icon="🧪" href="/education/logs/fe-ts-learning-2026-prs" meta="2026 신설 · PR 26개">
+    TypeScript를 익히는 동시에 자기 학습법을 설계·측정·개선했습니다. AI를 정답기가 아니라 학습 도구로 길들이는 판단력을 길렀습니다.
+  </Card>
+  <Card title="영화리뷰 — 비동기와 처음 만나기" icon="🎬" href="/education/logs/fe-movie-review-2026-prs" meta="PR 54개 · 레벨1">
+    fetch 비동기 통신과 에러 경로를 처음 부딪혔습니다. 모든 진입점마다 에러를 설계하고, 명령 기반에서 상태 기반 사고로 전환했습니다.
+  </Card>
+</CardGrid>
+
+**원본 저장소** → [로또](https://github.com/woowacourse/javascript-lotto) · [ts러닝](https://github.com/woowacourse/ts-and-learning) · [영화리뷰](https://github.com/woowacourse/javascript-movie-review)
+
+## 이 설계를 내 환경에 옮기려면
+
+"수료의 모습부터 거꾸로", "쌓아 올리는 학습"을 여러분의 미션·수업에 직접 적용하는 방법은 아래에서 이어 안내합니다.
+
+<CardGrid variant="list">
+  <Card title="시작하기 — 5분 안에 우테코 모델" icon="🚀" href="/education/start" variant="row">
+    "교육이 끝났을 때 무엇을 할 수 있으면 성공인가"부터, 오늘 할 수 있는 작은 행동으로.
+  </Card>
+  <Card title="검증된 도구" icon="🛠️" href="/education/tools" variant="row">
+    커리큘럼을 굴리는 워크숍·회고·멘토링 도구를 복사해서 바로 씁니다.
+  </Card>
+</CardGrid>
 
 ---
 
@@ -5189,6 +5588,7 @@ SNS를 끊으면
 → 큐레이션 본문: [커리큘럼 · 쌓아 올리는 학습](/education/curriculum#쌓아-올리는-학습)
 
 {/* PROMOTED FROM: react-payments-555prs-analysis (2026-05-26) */}
+
 ### 정량 증거: 페이먼츠 5년 누적
 
 [React 페이먼츠 미션 5년치 PR 555개 분석](/education/logs/react-payments-555prs-analysis)에서 같은 미션 저장소가 5년 동안 form/state/component라는 영구 핵심을 유지한 채 매년 새 학습 목표(2025 testing/error-handling, 2026 async/MSW)를 한 층씩 누적한 패턴이 데이터로 확인됐습니다. 나선형 커리큘럼이 단순한 반복 강화가 아니라 **영구 골격 + 누적 추상화**의 이중 구조임을 시사합니다.
@@ -5206,83 +5606,130 @@ SNS를 끊으면
 
 # 발견 학습 설계하기 — 답을 먼저 주지 않는 환경
 
-[교육 철학](/education/philosophy#발견-학습)에서 **왜** 답을 먼저 주지 않는지를 봤다면, 이 페이지는 그 원칙을 **여러분의 미션·수업·코드 리뷰에 어떻게 심는가**를 다룹니다. 우테코가 실제로 건 사례를 보고, 여러분의 환경에 맞게 설계하도록 돕는 LLM 스킬로 이어집니다.
+[교육 철학](/education/philosophy#발견-학습)에서 **왜** 답을 먼저 주지 않는지를 봤다면, 이 페이지는 그 원칙을 **여러분의 미션·수업·코드 리뷰에 어떻게 심는가**를 다룹니다. 우테코가 실제로 적용해 본 사례를 보여드리고, 이어서 여러분의 환경에 맞게 설계하도록 돕는 LLM 스킬을 소개합니다.
 
 ## 한 줄 원리
 
-**예측(Predict) → 관찰(Observe) → 설명(Explain).** 정답을 주입하지 않고, 배우는 사람이 먼저 예측하고 판단하고 설명한 뒤에야 정답과 마주치게 합니다. 핵심은 순서를 뒤집지 않는 것입니다 — 강의를 먼저 하면 "이해한 척"이 생깁니다. 교차 증거는 [POE 발견 학습 패턴](/education/insights/poe-discovery-learning)에서 확인할 수 있습니다.
+**예측(Predict) → 관찰(Observe) → 설명(Explain).** 정답을 주입하지 않고, 배우는 사람이 먼저 예측하고 판단하고 설명한 뒤에야 정답과 마주치게 합니다. 핵심은 이 순서를 뒤집지 않는 것입니다. 강의를 먼저 하면 "이해한 척"이 생깁니다. 교차 증거는 [POE 발견 학습 패턴](/education/insights/poe-discovery-learning)에서 확인할 수 있습니다.
 
 ## 실전 적용 사례
 
-우테코가 서로 다른 기술 도메인에서 같은 메커니즘을 건 사례입니다. 자기 상황과 가장 가까운 한 가지부터 빌려 보세요.
+우리는 서로 다른 기술 도메인에서 같은 메커니즘을 적용해 봤습니다. 자기 상황과 가장 가까운 한 가지부터 빌려 보세요.
 
 <CardGrid columns={1}>
-  <Card title="비동기 — '말로는 아는데 코드로는 못 쓰는' 개념" icon="🔭" href="/education/logs/async-quiz-explanation">
-    강의 대신 **퀴즈 해설지를 먼저 쓰게** 해, 설명 능력 자체를 관찰 대상으로 삼았습니다. 5·6·7기에 걸쳐 반복됐습니다.
+  <Card title="비동기 — '말로는 아는데 코드로는 못 쓰는' 개념" icon="🔀" href="/education/logs/async-quiz-explanation">
+    강의 대신 **퀴즈 해설지를 먼저 쓰게** 해, 설명 능력 자체를 관찰 대상으로 삼았습니다. 5·6·7기에 걸쳐 반복했습니다.
   </Card>
-  <Card title="코드 리뷰 — 선배 코드로 눈 키우기" icon="🔭" href="/education/logs/senior-code-review">
+  <Card title="코드 리뷰 — 선배 코드로 눈 키우기" icon="🔍" href="/education/logs/senior-code-review">
     모범 답안을 보여주기 전에 **AS-IS를 먼저 스스로 판단**하게 하고, 이후 TO-BE와 비교해 '못 보던 것'을 발견하게 했습니다.
   </Card>
-  <Card title="재구현 — 바퀴의 재발명 사전 에세이" icon="🔭" href="/education/logs/reinventing-the-wheel">
-    강의 전에 **사전 에세이로 재구현의 가치를 스스로 탐구**하게 한 뒤 강의와 대조했습니다. 3개 기수에서 반복됐습니다.
+  <Card title="재구현 — 바퀴의 재발명 사전 에세이" icon="🛞" href="/education/logs/reinventing-the-wheel">
+    강의 전에 **사전 에세이로 재구현의 가치를 스스로 탐구**하게 한 뒤 강의와 대조했습니다. 3개 기수에서 반복했습니다.
   </Card>
 </CardGrid>
 
-설계할 때 빠지기 쉬운 함정은 하나입니다 — 설명을 먼저 하고 과제를 나중에 내는 "강의 → 실습" 순서. POE는 순서가 뒤집혀야 작동합니다.
+설계할 때 빠지기 쉬운 함정은 하나입니다. 설명을 먼저 하고 과제를 나중에 내는 "강의 → 실습" 순서입니다. POE는 이 순서를 뒤집어야 작동합니다.
 
 ## 여러분 환경에 설계하기 — LLM 스킬
 
 <Callout type="tip">
-**설계용 LLM 스킬을 GitHub에 공개합니다.** [발견 학습 설계 스킬 저장소](https://github.com/woowacourse/llm-skills)를 받아 여러분이 쓰는 LLM(ChatGPT·Claude 등)에 붙여넣으면, 여러분의 미션·수업·리뷰 맥락을 입력으로 받아 **예측 과제 → 공개 시점 → 비교 회고**까지 POE 사이클 한 벌을 설계해 줍니다.
+**설계용 LLM 스킬을 GitHub에 공개합니다.** [발견 학습 설계 스킬 저장소](https://github.com/woowacourse/llm-skills)를 받아 여러분이 쓰는 LLM(ChatGPT·Claude 등)에 붙여넣어 보세요. 여러분의 미션·수업·리뷰 맥락을 입력으로 받아 **예측 과제 → 공개 시점 → 비교 회고**까지 POE 사이클 한 벌을 설계해 줍니다.
 </Callout>
 
-스킬은 다음을 묻고 채워 줍니다 — 어떤 개념에 인지적 불일치를 만들 것인가, 무엇을 예측 산출물(해설지·에세이·리뷰 글)로 받을 것인가, 정답을 언제 공개할 것인가, 비교 회고를 어떻게 배치할 것인가.
+스킬은 다음을 묻고 함께 채웁니다. 어떤 개념에 인지적 불일치를 만들 것인가, 무엇을 예측 산출물(해설지·에세이·리뷰 글)로 받을 것인가, 정답을 언제 공개할 것인가, 비교 회고를 어떻게 배치할 것인가.
 
 ### 프롬프트 예시 — 스킬 없이 바로 써보기
 
-저장소를 붙이기 전에, 아래 프롬프트를 복사해 `{중괄호}`만 여러분 맥락으로 바꿔 LLM(Claude·ChatGPT 등)에 넣어도 됩니다. Anthropic Opus 4.8 프롬프트 엔지니어링 가이드의 권장 — **역할 부여 · XML 태그 구조화 · 명시적 제약 · 먼저 오개념을 짚게 하는 추론 단계 · 예시(멀티샷) · 출력 형식 고정** — 을 그대로 따랐습니다.
+저장소를 붙이기 전에, 아래 프롬프트를 복사해 `{중괄호}`만 여러분 맥락으로 바꿔 LLM(Claude·ChatGPT 등)에 넣어도 됩니다. Anthropic Opus 4.8 프롬프트 엔지니어링 가이드의 권장 — **역할 부여 · 섹션 구조화 · 명시적 제약 · 먼저 오개념을 짚게 하는 추론 단계 · 예시(멀티샷) · 출력 형식 고정** — 을 따랐습니다. 구획은 사람이 복사·편집하기 쉽도록 XML 태그 대신 마크다운 헤더(`#`·`##`)로 나눴습니다.
 
 ```text
+# 역할
+
 당신은 우아한테크코스의 발견 학습(POE) 설계를 돕는 교육 코치입니다.
-발견 학습의 핵심은 예측(Predict) → 관찰(Observe) → 설명(Explain) 순서이며,
-이 순서를 절대 뒤집지 않습니다 — 정답·강의를 먼저 주면 "이해한 척"이 생기기 때문입니다.
 
-<배경>
-- 학습자: {예: 백엔드 레벨2 크루 16명}
-- 다룰 개념: {예: 자바 비동기·동시성 — 말로는 아는데 코드로는 못 쓰는 개념}
-- 형식·시간: {예: 90분 수업 1회}
-- 내가 평소 쓰던 방식: {예: 강의 먼저, 실습 나중}
-</배경>
+발견 학습의 핵심은 다음 순서입니다.
 
-<설계_원칙>
-1. 정답·강의는 학습자가 예측·판단·설명을 먼저 산출한 뒤에야 공개한다.
-2. 예측 산출물은 채점 대상이 아니라 "관찰 대상"이다 — 머릿속 모델의 허점을 드러내는 게 목적.
-3. 비교 회고에서 "내 예측 vs 실제"의 간극을 학습자가 스스로 언어화하게 한다.
-</설계_원칙>
+    예측(Predict) → 관찰(Observe) → 설명(Explain)
 
-<할_일>
-먼저 이 개념에서 학습자가 가장 흔히 빠지는 오개념(인지적 불일치 지점)을 1~2개 짚어라.
-그다음 그 지점을 정확히 건드리는 POE 사이클 한 벌을 설계하라.
-</할_일>
+이 순서는 절대 뒤집지 않습니다.
 
-<출력_형식>
+정답·강의를 먼저 주면 "이해한 척"이 생기기 때문입니다.
+
+
+# 배경
+
+- 학습자
+  {예: 백엔드 레벨2 크루 16명}
+
+- 다룰 개념
+  {예: 자바 비동기·동시성 — 말로는 아는데 코드로는 못 쓰는 개념}
+
+- 형식·시간
+  {예: 90분 수업 1회}
+
+- 내가 평소 쓰던 방식
+  {예: 강의 먼저, 실습 나중}
+
+
+# 설계 원칙
+
+1. 정답·강의는 학습자가 예측·판단·설명을 먼저 산출한 뒤에야 공개합니다.
+
+2. 예측 산출물은 채점 대상이 아니라 "관찰 대상"입니다.
+   머릿속 모델의 허점을 드러내는 게 목적입니다.
+
+3. 비교 회고에서 "내 예측 vs 실제"의 간극을 학습자가 스스로 언어화하게 합니다.
+
+
+# 할 일
+
+1. 먼저, 이 개념에서 학습자가 가장 흔히 빠지는 오개념(인지적 불일치 지점)을 1~2개 짚습니다.
+
+2. 그다음, 그 지점을 정확히 건드리는 POE 사이클 한 벌을 설계합니다.
+
+
+# 출력 형식
+
+아래 골격을 그대로 채워서 답합니다.
+
+
 ## 겨냥할 오개념
-- ...
-## 1. 예측 (Predict)
-- 예측 과제 · 산출물(관찰 대상):
-## 2. 관찰 (Observe)
-- 정답·실제와 마주치는 방법 · 공개 시점:
-## 3. 설명 (Explain)
-- 비교 회고 질문 · 코치가 던질 되묻는 질문:
-## 설계 의도
-- 왜 이 오개념을 겨냥했고 왜 이 순서인가:
-</출력_형식>
 
-<예시>
-우테코 비동기 수업: 강의 대신 "비동기 퀴즈 해설지를 먼저 쓰게"(예측) 해
-설명 능력 자체를 관찰 대상으로 삼고, 실제 실행 결과와 마주친 뒤(관찰)
-"내 해설과 실제가 어디서 갈렸나"를 회고하게 했다(설명).
-</예시>
+- ...
+
+
+## 1. 예측 (Predict)
+
+- 예측 과제 · 산출물(관찰 대상):
+
+
+## 2. 관찰 (Observe)
+
+- 정답·실제와 마주치는 방법 · 공개 시점:
+
+
+## 3. 설명 (Explain)
+
+- 비교 회고 질문 · 코치가 던질 되묻는 질문:
+
+
+## 설계 의도
+
+- 왜 이 오개념을 겨냥했고 왜 이 순서인가:
+
+
+# 예시
+
+우테코 비동기 수업의 한 사이클입니다.
+
+- 예측
+  강의 대신 "비동기 퀴즈 해설지를 먼저 쓰게" 해서, 설명 능력 자체를 관찰 대상으로 삼았습니다.
+
+- 관찰
+  실제 실행 결과와 마주치게 했습니다.
+
+- 설명
+  "내 해설과 실제가 어디서 갈렸나"를 회고하게 했습니다.
 ```
 
 ## 다음
@@ -5364,13 +5811,132 @@ SNS를 끊으면
 
 ---
 
+<!-- source: https://docs.woowahan.com/education/how-its-made -->
+
+# 이 문서는 어떻게 만들어지는가
+
+여러분이 보는 건 다듬어진 결과물입니다. 철학과 커리큘럼, 검증된 패턴은 깔끔하게 정리돼 있지만, 그것만 보면 한 가지 의심이 듭니다 — "이건 그냥 멋진 말 아닐까? 위에서 내려온 선언이거나 누군가의 인상에 불과한 건 아닐까?"
+
+이 페이지는 그 의심에 답하기 위해 **결과물이 만들어지는 과정 자체**를 펼쳐 보입니다.
+
+<Callout type="note" emoji="🔍">
+**이 문서의 주장은 세 가지 방식으로 떠받쳐집니다.** ① 위에서 떨어진 게 아니라 실험 로그에서 **귀납**되고, ② 감이 아니라 루브릭 **점수와 게이트**를 통과하며, ③ 한번 정해두고 끝나는 게 아니라 새 기록이 쌓이면 언제든 **수정**됩니다.
+</Callout>
+
+## 콘텐츠는 아래에서 위로 승격됩니다
+
+이 문서의 콘텐츠는 위에서 아래로 쓰이지 않습니다. 매주 쌓이는 실험 로그를 원재료로, 검증을 통과한 것만 한 단계씩 위로 올라갑니다.
+
+<PromotionPipeline />
+
+## 게이트는 감이 아니라 점수입니다
+
+위 루브릭을 눌러보면 알 수 있듯, 무엇이 위로 올라갈지는 인상으로 정하지 않습니다. 두 루브릭은 서로 다른 질문에 답합니다.
+
+**품질 루브릭(5개 차원·25점)은 "이 기록이 잘 쓰였는가"를 봅니다.** 구조가 갖춰졌는지, 수치와 인용으로 구체적인지, 다른 코치가 읽고 그대로 재현할 수 있는지, 성공과 실패를 균형 있게 다뤘는지, 원본 자료가 링크됐는지 — *형식과 서술*의 완성도입니다.
+
+**승격 루브릭(4개 차원·20점)은 "이 내용이 재사용 가능한 지식인가"를 봅니다.** 다른 기수에서도 반복됐는지, 독립된 도구·원칙으로 뽑아낼 수 있는지, 다른 기록들과 교차로 연결되는지, 실제 교육에 영향이 큰지 — *내용과 패턴*의 일반화 가능성입니다.
+
+잘 쓰인 기록이라고 곧바로 일반 원칙이 되는 건 아닙니다. 그래서 게이트가 둘입니다. 점수가 통과선(품질 16/25, 승격 16/20)을 넘지 못하면 올라가지 않고, 보강한 뒤 다시 채점됩니다.
+
+## 점수 한 번은 진실이 아니라 표본입니다
+
+채점은 LLM이 합니다. 그런데 같은 로그를 다시 채점해도 점수는 매번 조금씩 달라집니다. 그래서 **한 번 나온 점수는 진실이 아니라 분포에서 뽑은 표본 하나**로 다룹니다. 한 번의 18점을 믿는 대신, 여러 번 독립적으로 채점해 평균과 그 평균이 흔들리는 폭(신뢰구간)을 함께 봐야 합니다.
+
+그러면 "몇 번이면 의미가 있는가"가 핵심이 됩니다. 통계적으로 정직한 답은 — *잡음을 먼저 재기 전에는 정할 수 없다* 입니다.
+
+<Toggle title="통계 전문가라면 — 의미 있는 표본 수를 어떻게 정하나">
+
+**1. 잡음부터 측정합니다.** 필요한 반복 수 `n`은 점수의 표준편차 `σ`(얼마나 흔들리는가)와 우리가 원하는 정밀도 `E`(허용 오차)로 정해집니다.
+
+`n = (1.96 × σ / E)²`
+
+`σ`를 모르면 `n`도 모릅니다. 그래서 먼저 소규모 예비 채점(5~10회)으로 `σ`를 추정합니다.
+
+**2. 현실적인 숫자.** 25점 척도에서 `σ`가 약 2점이라고 가정하면(예시):
+
+| 원하는 오차(±) | 필요한 반복 수 |
+|------------------|----------------|
+| ±2점 (거칠게) | 약 4회 |
+| ±1점 (실용적) | 약 16회 |
+| ±0.5점 (정밀) | 약 62회 |
+
+흔히 말하는 "30회"는 이 사이 어딘가의 경험칙입니다. *의미 있는 구간은 대략 십수 번에서 수십 번* 사이입니다.
+
+**3. 작은 표본에서는 t 분포.** 실제로는 수십~수백 번을 돌리지 않으므로 표본이 작습니다. 이때는 위의 `1.96`(정규분포) 대신 자유도를 반영한 t 분포 값을 써야 구간이 정직해집니다(n=10이면 `1.96`이 아니라 `2.26`).
+
+**4. 더 영리한 방법 — 통과선까지만 뽑기.** 우리가 원하는 건 정밀한 점수가 아니라 *통과/보류 결정*입니다. 그래서 고정 횟수 대신, 신뢰구간이 통과선(16)을 완전히 벗어날 때까지만 적응적으로 더 채점합니다. 통과선에서 먼 로그(평균 22, 9 등)는 몇 번이면 끝나고, 통과선에 걸친 로그는 아무리 반복해도 LLM 혼자서는 가를 수 없습니다.
+
+**5. 표본은 잡음만 줄입니다, 편향은 못 줄입니다.** 반복 측정은 *무작위 오차*만 좁힙니다. LLM이 특정 유형의 로그를 체계적으로 후하게(또는 박하게) 본다면, 천 번을 평균 내도 *정밀하게 틀린* 값에 수렴할 뿐입니다. 편향은 표본 수로 고칠 수 없습니다 — 다른 잣대나 사람의 보정이 필요합니다. (심리측정학에서는 같은 문제를 평가자 간 신뢰도로 보고, 스피어먼-브라운 공식으로 목표 신뢰도에 필요한 반복 수를 역산하기도 합니다.)
+
+</Toggle>
+
+4번과 5번이 **사람이 승인하는 이유**입니다. 통계는 통과선에서 충분히 떨어진 로그를 자동으로 걸러주지만, 경계에 걸친 로그와 *체계적으로 틀릴 수 있는* 판단은 사람이 최종 결정합니다. LLM은 점수의 분포를 내고, 사람은 그 분포를 승인하거나 뒤집습니다.
+
+<Callout type="warning" emoji="🧪">
+**정직하게 — 지금은 로그당 1회 채점합니다.** 위의 반복 샘플링과 신뢰구간은 우리가 점수를 *읽는 원칙*이자 다음에 도입할 측정 방식이며, 아직 파이프라인에 자동화돼 있지는 않습니다. 그래서 현재의 모든 점수는 *표본 하나*로 보아야 하고, 경계값일수록 사람의 판단 비중이 큽니다.
+</Callout>
+
+## 주장은 수사가 아니라 측정입니다
+
+추상적인 원칙도 가능한 한 숫자로 받칩니다. 아래는 한 미션 저장소(react-payments) 5년치를 분석한 기록에서 나온 값입니다.
+
+<CardGrid>
+  <Card title="555 PR · 5년" icon="📦">한 미션 저장소에 5년간 쌓인 풀 리퀘스트</Card>
+  <Card title="97% 재방문" icon="🔁">215명 중 97%가 같은 저장소로 두 번 이상 돌아왔습니다 — "몰입 기반 성장"의 증거</Card>
+  <Card title="51% 질문" icon="💬">리뷰 코멘트 2,178건 중 51%가 답이 아닌 질문이었습니다 — "협업은 구조다"의 증거</Card>
+</CardGrid>
+
+> 출처: [react-payments 5년 555 PR 분석](/education/logs/react-payments-555prs-analysis)
+
+## 한 주장을 끝까지 따라가 보면
+
+철학의 한 문장은 다음처럼 데이터와 원본 로그, 게이트로 거슬러 추적됩니다. 모든 주장이 이렇게 근거로 연결돼 있습니다.
+
+<Mermaid chart={`
+flowchart TD
+    C["🎯 철학: 협업은 구조다"]
+    D["💬 데이터: 코멘트 2,178건 중 51%가 질문"]
+    L["📝 원본: react-payments 5년 로그"]
+    G["✅ 게이트: 품질·승격 루브릭 통과"]
+    C -->|근거| D
+    D -->|측정 대상| L
+    L -->|통과한 검증| G
+    style C fill:#fff0f0,stroke:#c4554d
+    style D fill:#e9f3f7,stroke:#487ca5
+    style L fill:#f0f4ff,stroke:#4285f4
+    style G fill:#eef3ed,stroke:#2f9e6b
+`} />
+
+## 고정된 정답이 아닙니다
+
+이 문서는 완성된 정답집이 아니라 **계속 갱신되는 가설의 집합**입니다. 새 실험 로그가 들어오면 점수가 다시 매겨지고, 패턴이 바뀌면 위층의 원칙도 수정됩니다. 아래는 실제로 이 문서가 갱신돼 온 기록입니다.
+
+<RecentUpdates limit={5} />
+
+## 더 깊이 보고 싶다면
+
+<CardGrid>
+  <Card title="연구 사이클 워크플로우" icon="🔧" href="/education/tools/research-cycle-workflow">코치가 이 파이프라인을 실제로 돌리는 방법(슬래시 커맨드 포함)</Card>
+  <Card title="검증된 패턴" icon="💡" href="/education/insights">여러 실험에서 교차 검증된 해결 패턴</Card>
+  <Card title="실험 로그" icon="📝" href="/education/logs">이 모든 것의 원재료가 되는 매주의 기록</Card>
+</CardGrid>
+
+## 그리고, 숫자에 담기지 않은 이야기
+
+지금까지는 결과물이 *어떻게 검증되는가*를 보았습니다. 하지만 루브릭 점수와 파이프라인으로는 다 담기지 않는 것이 있습니다 — 그 실험들을 누가, 어떤 고민 끝에, 무엇을 포기하고 시작했는지 같은 사람의 이야기입니다.
+
+여기 정리된 결과물 뒤에 있던 생생한 기록 — 수많은 시행착오와 결정의 순간들 — 은 **곧 책으로 만나보실 수 있습니다.**
+
+---
+
 <!-- source: https://docs.woowahan.com/education/insights -->
 
 # 검증된 패턴
 
-교육 현장에서 반복적으로 등장하는 문제와, 여러 실험 로그에서 독립적으로 검증된 해결 패턴을 정리합니다.
-각 패턴은 **문제 → 근거 로그 → 핵심 원칙 → 적용 가이드** 구조로 기술합니다.
-개별 실험은 로그에, 여러 로그에서 반복 검증된 패턴은 여기에, 더 일반화된 원칙은 교육 철학·커리큘럼에 자리잡습니다.
+교육 현장에서 반복해서 마주치는 문제와, 여러 실험 로그에서 따로따로 검증된 해결 패턴을 모았습니다.
+각 패턴은 **문제 → 근거 로그 → 핵심 원칙 → 적용 가이드** 순서로 적었습니다.
+개별 실험은 로그에 두고, 여러 로그에서 반복해 검증된 패턴은 여기에 묶고, 더 일반화된 원칙은 교육 철학·커리큘럼으로 올립니다.
 
 ## 현재 패턴
 
@@ -5382,12 +5948,12 @@ SNS를 끊으면
   />
   <Card
     title="자기 진단 프레임워크"
-    description="추상 가치를 진단 차원·점수·자기 대상 적용의 3박자로 분해합니다. 성능→접근성 이식이 재사용성을 실증."
+    description="추상적인 가치를 진단 차원·점수·자기 대상 적용 세 가지로 나눕니다. 성능에서 접근성으로 옮겨 보며 다시 쓸 수 있음을 확인했습니다."
     href="/education/insights/self-diagnostic-framework"
   />
   <Card
     title="점진적 스캐폴딩"
-    description="한 번의 강의 대신 3~5회 시퀀스로 분산하고, 앞 회차가 뒤 회차의 토양이 되게 합니다."
+    description="한 번의 강의 대신 3~5회로 나누고, 앞 회차에서 배운 것을 뒤 회차에서 다시 쓰게 합니다."
     href="/education/insights/progressive-scaffolding"
   />
   <Card
@@ -5402,14 +5968,32 @@ SNS를 끊으면
   />
   <Card
     title="회고 설계"
-    description="회고를 매 시점·매 회차마다 형식을 바꾸는 설계 대상으로 다뤄, 감상에서 메타인지까지 성찰 깊이를 점증시킵니다. 4개 회고 로그에서 수렴."
+    description="회고를 회차마다 형식을 바꾸는 설계 대상으로 다룹니다. 감상에서 메타인지까지 성찰의 깊이를 단계적으로 키웁니다. 4개 회고 로그에서 같은 결론에 닿았습니다."
     href="/education/insights/retrospective-design"
   />
   <Card
     title="공개 합작 회고"
-    description="회고를 한 코멘트에 함께 써서 공개로 남기면 1회성 성찰이 기수를 넘는 학습 아카이브가 됩니다. 우테코 공개 회고 저장소 4년치에서 추출."
+    description="회고를 한 코멘트에 함께 써서 공개로 남기면, 한 번의 성찰이 기수를 넘어 다음 크루가 읽는 학습 기록으로 남습니다. 우테코 공개 회고 저장소 4년치에서 뽑았습니다."
     href="/education/insights/public-retrospective"
   />
+  <Card
+    title="비기술 첫 미션"
+    description="입학 첫 미션을 비-기술 과제(연극)로 두어 역량 불안과 관계 불안을 분리하고, 첫 주에 심리적 안전감을 설계합니다. 기수가 바뀌어도 고정된 우테코의 출발점."
+    href="/education/insights/non-technical-first-mission"
+  />
+</CardGrid>
+
+## 이 패턴을 실제로 적용하려면
+
+검증된 패턴을 여러분의 미션·수업·리뷰에 옮기는 실전 절차는 적용하기에서 이어 설명합니다.
+
+<CardGrid variant="list">
+  <Card title="발견 학습 설계하기" icon="🔭" href="/education/design-poe" variant="row">
+    POE 발견 학습 패턴을 예측→관찰→설명 사이클로 직접 설계합니다.
+  </Card>
+  <Card title="검증된 도구" icon="🛠️" href="/education/tools" variant="row">
+    회고·멘토링·워크숍 패턴을 복사해서 바로 쓰는 도구로 묶었습니다.
+  </Card>
 </CardGrid>
 
 ---
@@ -5472,6 +6056,7 @@ SNS를 끊으면
 - [교육 철학 > 핵심 교육 원칙 > 함께 성장하는 문화](/education/philosophy#함께-성장하는-문화) — ✅ 반영 완료 (2026-06-16). 555 PR 리뷰 코멘트 질문 51% 정량 증거가 협업 문화 원칙의 근거로 인용됨.
 
 {/* PROMOTED FROM: react-payments-555prs-analysis (2026-05-26) — quantitative evidence marker */}
+
 ## 부록: 정량 증거 (페이먼츠 555 PR 분석)
 
 [React 페이먼츠 미션 5년치 PR 555개 데이터 분석](/education/logs/react-payments-555prs-analysis)에서 이 패턴의 정량 증거가 확인됐습니다.
@@ -5484,6 +6069,7 @@ SNS를 끊으면
 {/* END PROMOTED */}
 
 {/* <auto-sync slug="posuta-coach-qa-archive" date="2026-06-09" logs={["posuta-coach-qa-archive"]}> */}
+
 ## 부록: 비공식 대화에서도 반복된 어법 (포수타 Q&A 5회)
 
 [포수타 코치 Q&A 5회 아카이브](/education/logs/posuta-coach-qa-archive)는 페이먼츠 PR이 보여준 "답이 아닌 질문" 패턴이 **공식 코드 리뷰가 아닌 비공식 다대다 Q&A**에서도 반복됨을 보여줍니다. 2024-2025년 5회 누적 데이터(포비·검프·저스틴·시지프·디노) 중 어법 사례 4개를 인용합니다.
@@ -5577,6 +6163,18 @@ SNS를 끊으면
   </Card>
 </CardGrid>
 
+{/* <auto-sync slug="mission-learning-accumulation" date="2026-06-24" logs={["fe-lotto-2026-prs","fe-movie-review-2026-prs","fe-ts-learning-2026-prs"]}> */}
+
+### 8기 프론트엔드 미션 3종에서의 재확인 (2026)
+
+같은 누적 구조는 페이먼츠 한 저장소에 그치지 않습니다. 8기 프론트엔드 미션 세 곳의 2026년 PR을 분석한 결과, 동일한 이중 층(영구 골격 + 매년 누적되는 새 목표)이 반복됩니다.
+
+- **로또** — 콘솔(1단계)에서 웹(2단계)으로 같은 도메인을 두 번 짓는 구조 자체가 누적 학습 설계입니다(자바 로또의 구현→리팩토링 2단계와 같은 형태). 1단계의 관심사 분리 품질이 2단계에서 검증됩니다. [로또 8기 PR 57개 분석](/education/logs/fe-lotto-2026-prs)
+- **영화리뷰** — 영화 목록(1단계) → 상세·UX(2단계) 골격 위에 2026년 비동기 에러 경로·상태 기반 설계라는 새 층이 누적됐습니다. [영화리뷰 8기 PR 54개 분석](/education/logs/fe-movie-review-2026-prs)
+- **ts러닝** — 2026년 신설 미션으로, 'TypeScript 입문' 골격 위에 '학습법 튜닝(메타학습)'이라는 새 층을 함께 얹은 사례입니다. [ts러닝 8기 PR 26개 분석](/education/logs/fe-ts-learning-2026-prs)
+
+{/* </auto-sync> */}
+
 ## 핵심 원칙
 
 1. **영구 골격을 먼저 식별합니다** — 어떤 주제가 모든 기수에서 60% 이상 다뤄지는지를 데이터로 확인하고, 그것이 미션의 진짜 학습 목적임을 명시합니다. 페이먼츠에서는 form-handling, state-management, component-design, custom-hooks가 영구 층이었습니다.
@@ -5604,6 +6202,57 @@ SNS를 끊으면
 - [자기 진단 프레임워크](/education/insights/self-diagnostic-framework) — 누적된 미션의 상태를 매년 진단해 재설계 결정의 근거를 만듭니다.
 - [미션 저장소 PR 데이터 분석 워크플로우](/education/tools/mission-repo-analysis-workflow) — 이 패턴을 다른 미션 저장소에서 검증할 때 사용하는 표준 절차.
 - [교육 철학 > 핵심 교육 원칙 > 몰입 기반 성장](/education/philosophy#몰입-기반-성장) — ✅ 반영 완료 (2026-06-16). "같은 저장소로 반복해 돌아오는 누적 구조"가 한 기수를 넘는 몰입의 근거로 인용됨.
+
+---
+
+<!-- source: https://docs.woowahan.com/education/insights/non-technical-first-mission -->
+
+# 비기술 첫 미션: 역량 불안과 관계 불안을 분리하기
+
+> 입학 첫 주에 코드를 먼저 잡게 하면 "따라갈 수 있을까(역량)"와 "어떻게 어울리지(관계)"라는 두 불안이 한꺼번에 몰립니다. 첫 미션을 **비-기술 과제(연극)**로 두면 두 불안을 떼어내, 평가받지 않는 무대에서 팀과 심리적 안전감을 먼저 만들 수 있습니다.
+
+## 패턴 요약
+
+신입 크루는 입학 직후 두 가지 긴장을 동시에 안습니다 — 커리큘럼을 따라갈 수 있을지에 대한 **역량 불안**, 그리고 이 사람들 사이에서 어떻게 행동할지에 대한 **관계 불안**입니다. 첫 미션을 코드로 두면 둘이 한꺼번에 몰려 신뢰가 자랄 틈이 없습니다.
+
+우아한테크코스는 이 문제를 **기수가 바뀌어도 고정된 한 가지 방식**으로 풉니다 — 레벨0의 첫 미션을 늘 연극으로 엽니다. 기술 역량을 평가받지 않는 과제이기 때문에 역량 불안에서 분리된 채로 팀 협업만 먼저 경험하고, "잘해야 한다"는 압박이 낮아 오히려 자유로운 시도가 나옵니다. 그리고 공연 직후의 해방감을 회고로 이어 받아, 그 경험을 자기 인식과 신뢰의 토대로 전환합니다. 형식은 일회성 이벤트로 보이지만, 같은 선택이 매 기수 반복된다는 점에서 검증된 설계입니다.
+
+## 근거 로그
+
+| 로그 | 카테고리 | 이 패턴에 기여하는 요소 |
+|------|----------|------------------------|
+| [온보딩 연극 미션](/education/logs/drama-onboarding) | 온보딩 · 8기 | 요구사항 하나하나가 팀 경험 설계 장치("모두 무대에"=역할 분배, "유행어"=팀 정체성). MC를 크루가 맡는 주도성, 낮은 진입 장벽이 만든 자발성 |
+| [연극 회고: 취약함 공유로 심리적 안전감 만들기](/education/logs/drama-retrospective) | 온보딩·레벨1 · 8기 | 공연 직후 90분 회고에서 강점/취약점 이중 공유 + 명시적 규칙 4개("판단하지 않기"·"여기서만")로 첫 주에 신뢰 토대 형성 |
+
+## 핵심 원칙
+
+- **두 불안을 분리합니다.** 역량과 관계를 한 미션에서 동시에 시험하면 둘 다 제대로 다뤄지지 않습니다. 첫 미션에서 기술 평가를 빼면 관계·협업만 온전히 경험할 수 있습니다.
+- **낮은 압박이 시도를 허용합니다.** "진지하게 잘해야 한다"는 부담이 낮은 형식이라 오컬트 퇴마극·마피아 게임 같은 파격이 나옵니다. 안전하게 실패해 보는 경험 자체가 심리적 안전감의 첫 씨앗입니다.
+- **요구사항이 곧 팀 경험 설계 장치입니다.** "모두가 무대에 골고루" 같은 조건은 퍼포먼스 규칙이 아니라 역할 분배를 강제하는 장치입니다. 조건마다 "어떤 팀 경험을 강제하는가"를 먼저 정의해야 작동합니다.
+- **경험을 회고로 자기 인식으로 전환합니다.** 공연으로 끝내면 단발성 이벤트지만, 직후의 해방감을 회고로 받으면 평소보다 솔직한 이야기가 나옵니다. 경험을 신뢰로 바꾸는 것은 회고 단계입니다.
+- **안전감은 매년 새로 협상할 것이 아니라 첫 주에 설계하는 상수입니다.** 같은 첫 미션이 기수가 바뀌어도 반복된다는 사실 자체가, 안전감을 분위기가 아니라 **구조로** 다룬다는 증거입니다.
+
+## 적용 가이드
+
+- **언제 쓰는가:** 새 팀·새 기수가 시작될 때, 본격적인 협업 전에 신뢰 기반이 필요할 때, 첫 만남의 관계 불안이 이후 협업의 발목을 잡을 것으로 보일 때.
+- **어떻게 쓰는가:**
+  1. 첫 과제를 **기술 평가가 없는 팀 과제**로 둡니다 (연극·촌극 등). 역량과 관계를 한 번에 시험하지 않습니다.
+  2. 요구사항마다 "강제하려는 팀 경험"을 한 줄로 정의합니다 (전원 참여·팀 정체성·차별화).
+  3. 진행을 코치가 아니라 **크루에게 넘깁니다.** 주도성이 현장 에너지를 바꿉니다.
+  4. 끝난 직후 **회고로 잇습니다.** 강점/취약점 이중 공유와 "판단하지 않기·여기서만" 같은 명시적 규칙으로 안전한 공유 환경을 만듭니다.
+- **피해야 할 것:**
+  - 공연(과제)으로 끝내고 회고 없이 흘려보내기 — 경험이 신뢰로 전환되지 않습니다.
+  - 회고를 퍼실리테이터 없이 자유 형식으로만 — 조별 깊이 편차가 커집니다. 자기 인식으로 유도하는 질문 가이드를 사전에 줍니다.
+  - 안전감을 "분위기"로 착각하기 — 명시적 규칙·요구사항 같은 구조 없이 분위기만으로는 만들어지지 않습니다.
+
+## 관련 패턴
+
+- [회고 설계](/education/insights/retrospective-design) — 비기술 첫 미션의 경험을 신뢰로 바꾸는 마지막 단계가 회고입니다. 연극 회고는 그 회고 설계의 한 형식(강점/취약점 이중 공유)이기도 합니다.
+
+## 교육 모델 연결
+
+- [도구 > 연극 온보딩 설계 키트](/education/tools/drama-onboarding-kit) — 이 패턴을 그대로 복사해 설계하는 운영 키트
+- [커리큘럼 > 쌓아 올리는 학습](/education/curriculum#쌓아-올리는-학습) — 레벨0의 첫 미션(연극)은 기수가 바뀌어도 고정된 "불변 뼈대"의 대표 사례로 인용됨
 
 ---
 
@@ -5635,6 +6284,8 @@ Predict(예측) → Observe(관찰) → Explain(설명)의 3단 사이클로 학
 - **비교가 발견을 완성합니다.** AS-IS ↔ TO-BE, 내 해설지 ↔ 모범 해설지처럼 두 버전을 병치해야 차이가 학습으로 바뀝니다.
 
 ## 적용 가이드
+
+> 이 패턴을 여러분의 미션·수업·리뷰에 한 벌로 설계하려면 → [발견 학습 설계하기](/education/design-poe)에서 실전 사례와 설계용 LLM 스킬로 이어집니다. 아래는 그 전에 잡아둘 핵심 원칙입니다.
 
 - **언제 쓰는가:** 개념이 추상적이고 정답이 명확하나, 직접 전달하면 크루가 "이해한 척"하기 쉬운 주제에 적합합니다. SSR, 비동기, 관심사 분리처럼 "말로는 알지만 코드로는 못 쓰는" 영역이 전형적입니다.
 - **어떻게 쓰는가:**
@@ -7559,6 +8210,13 @@ MC 선착순 모집에 예상보다 빠르게 지원이 마감됐습니다. 아�
 - 오후 회고에서 자기 인식 언어("나는 이 팀에서 ~한 역할을 했다")를 명시한 크루와 그렇지 않은 크루의 레벨1 중간 회고 비교
 - 유행어나 팀 정체성 요소가 레벨1에서 얼마나 지속되는지 관찰 (슬랙 대화, 회고 기록 분석)
 
+## 이 실험에서 검증된 도구로
+
+이 로그는 원재료입니다. 여기서 반복 검증된 운영 방식은 아래에 복사해 쓸 수 있게 정리돼 있습니다.
+
+- [연극 온보딩 설계 키트](/education/tools/drama-onboarding-kit) — 검증된 도구
+- [연극 회고](/education/logs/drama-retrospective) — 공연 직후 회고로 잇는 짝 로그
+
 ---
 
 <!-- source: https://docs.woowahan.com/education/logs/drama-retrospective -->
@@ -8275,6 +8933,171 @@ interface DataContextType<T> {
 
 ---
 
+<!-- source: https://docs.woowahan.com/education/logs/fe-lotto-2026-prs -->
+
+import { Callout } from 'nextra/components'
+
+# 로또 미션 8기 — PR 57개로 본 콘솔에서 웹으로의 관심사 분리
+
+<Callout>
+**대상**: 레벨1 자바스크립트 미션을 설계하고 코칭하는 코치, 교육 모델 설계자
+
+**맥락**: `woowacourse/javascript-lotto`는 2021년에 연 레벨1 대표 미션입니다. 2026년(8기)에는 25명의 크루가 57개의 PR을 올렸고, 그 위에 983건의 리뷰 코멘트가 쌓였습니다. 1단계(콘솔)와 2단계(웹)로 같은 로또 도메인을 두 번 짓는 구조라, 1단계에서 도메인과 UI를 제대로 갈라 뒀는지가 2단계에서 그대로 드러납니다.
+
+**핵심 질문**: 올해 크루들은 이 미션에서 무엇을 가장 많이 고민했고, 우리는 무엇을 길러주려 했는가?
+</Callout>
+
+## 2026 PR 한눈에
+
+올해 PR은 단계가 두 갈래로 갈립니다.
+
+| 단계 | PR 수 | 학습 초점 |
+| --- | --- | --- |
+| 1단계 — 콘솔 기반 로또 | 28 | 도메인과 UI 분리, TDD로 점진적 리팩터링 |
+| 2단계 — 웹 기반 로또 | 27 | 도메인은 그대로 두고 뷰만 교체, 상태 기반 렌더링 |
+
+같은 도메인을 콘솔로 먼저 만든 뒤 웹으로 옮기는 구성이 이 미션의 핵심 장치입니다. 1단계에서 도메인을 UI에 섞어 두면 2단계에서 반드시 비용을 치르기 때문에, 미션 구조 자체가 관심사 분리를 검증하는 리트머스로 작동합니다.
+
+올해 983건의 리뷰 코멘트에서 반복해서 올라온 주제는 다음과 같습니다.
+
+- **검증과 에러 처리를 어디에 둘 것인가** — 도메인·컨트롤러·뷰 중 검증 책임의 위치가 올해 최다 논쟁 주제였습니다.
+- **도메인의 개념과 표현 수단을 구분하기** — "로또"라는 개념과 그것을 담는 class/instance는 다른 층위라는 코칭이 반복됐습니다.
+- **OOP 기초 제약** — 인스턴스 변수 3개 제한, getter 사용 여부, "객체에 메시지를 보낸다" 원칙.
+- **TDD의 본질** — 테스트를 먼저 쓰는 일과 테스트를 작성하는 일은 다른 층위라는 토론.
+- **콘솔에서 웹으로의 사고 전환** — 절차적 흐름에서 상태·이벤트 기반 설계로의 이동.
+
+## 인상적인 리뷰·학습 장면
+
+올해 PR에서 가장 깊은 대화가 오간 장면을 원문 그대로 옮깁니다. 모두 PR 번호를 함께 남깁니다.
+
+### 도메인의 "개념"과 "표현"을 가르다 — [PR #445](https://github.com/woowacourse/javascript-lotto/pull/445)
+
+> 우선 도메인이라는 개념과, 그걸 실제로 표현하는 방식은 다른 것이라는 걸 인지하면 좋을 것 같습니다. (…) 로또라는 도메인 개념을 예로 들면, 6개의 번호 / 번호는 1~45 사이의 정수 / 번호간 중복이 없음 (…) 근데 여기에 고민하셨던 '특정 형태의 문자열을 받아서, 특정한 방식으로 가공하는 것'이 실제로 도메인 규칙에 포함된다고 할 수 있을까요?
+
+추상적인 "도메인을 분리하라"는 주문을, 크루가 직접 만질 수 있는 규칙 목록으로 끌어내립니다. 경계를 대신 그어 주는 대신, 경계를 그을 기준을 쥐여 줍니다.
+
+### 콘솔과 웹은 흐름이 다르다 — [PR #466](https://github.com/woowacourse/javascript-lotto/pull/466)
+
+> 콘솔과 웹은 Flow가 달라요. 콘솔은 '순차적(절차적)'으로 동작하지만, 웹은 '이벤트 기반'으로 동작해요. 현재 while 코드를 보면 입력 > 처리 > 출력이 순차적으로 일어나고 있는데 이는 웹에서는 적합하지 않아요. (…) 보통 웹에서 설계를 할 때엔 상태 기반으로 구현을 하는 경우가 많이 있어요.
+
+1단계에서 2단계로 넘어갈 때 크루가 가장 자주 놓치는 지점입니다. `while`로 순서를 통제하던 사고를, 상태가 바뀌면 화면이 따라 그려지는 사고로 바꾸도록 짚어 줍니다.
+
+### 에러 처리에는 정답이 없다 — [PR #426](https://github.com/woowacourse/javascript-lotto/pull/426)
+
+> 요건 에러 처리 책임을 어디에 둘 것인가에 대한 문제인데요. 이것 또한 정답은 없어요. (…) 1. 방어로직으로 바로 return하는 경우 (…) 2. new Error()로 명시적 에러를 던지는 경우 (…) 사용하는 쪽에서 에러 처리에 대한 책임이 강해지기 때문에…
+
+정답을 내려 주는 대신 두 선택지의 장단점을 펼쳐 둡니다. 크루는 맥락에 맞게 책임의 경계를 스스로 정하는 연습을 합니다.
+
+### `type="number"`만 믿으면 안 되는 이유 — [PR #450](https://github.com/woowacourse/javascript-lotto/pull/450)
+
+> 재밌게도 type='number'는 브라우저마다 입력 경험이 달라질 수 있어요. (…) 'e', '-', '.'처럼 부동소수점/지수 표기와 관련된 문자는 중간 상태로 허용하는게 가능해요! (…) 애니의 앱에서도 '1e3'으로 다음 스텝이 통과됩니다!
+
+"HTML이 막아 주니 검증은 필요 없다"는 흔한 오개념을, 실제 재현으로 반증합니다. 도메인 레벨 검증이 왜 필요한지를 말이 아니라 경험으로 깨닫게 합니다.
+
+### "반쪽짜리 TDD"라는 고민에 답하다 — [PR #423](https://github.com/woowacourse/javascript-lotto/pull/423)
+
+크루가 "기능을 먼저 구현하고 테스트를 나중에 썼으니 반쪽짜리 TDD 아니냐"고 묻자, 코치는 이렇게 답합니다.
+
+> 저는 우선 TDD랑 테스트 코드 작성을 조금 다른 레벨의 이야기라고 생각하고 있어요. TDD는 말 그대로 테스트를 먼저 쓰면서 도메인 로직과 기획 요구사항을 한 줄 한 줄 구체화해 가는 개발 방식에 가까운 것 같아요.
+
+PR이 코드 리뷰를 넘어, 개발 방법론을 함께 더듬어 보는 멘토링 채널로 쓰인 장면입니다.
+
+## 올해 길러진 핵심 교육 경험
+
+1. **도메인을 건드리지 않고 뷰만 교체하며 관심사 분리를 몸으로 익혔습니다.** 콘솔에서 웹으로 같은 도메인을 옮기는 2단계 구조가, 1단계 분리의 품질을 자동으로 채점했습니다. 크루들은 getter 추가나 MVC 도입 같은 결정을 코치와 협상하며 "분리의 비용과 이득"을 직접 따졌습니다.
+
+2. **검증과 에러 처리의 "위치"를 정하는 힘을 길렀습니다.** 가장 잦은 리뷰 주제가 "이 검증을 어디에 둘 것인가"였고, 우리는 정답 대신 트레이드오프를 펼쳐 크루가 맥락에 따라 책임 경계를 설계하도록 했습니다.
+
+3. **코드 리뷰를 "정답 확인"이 아니라 "설계 의도를 설명하고 변호하는 대화"로 경험했습니다.** PR 템플릿이 "고민한 의사결정을 공유하고 정답을 묻지 말라"고 안내했고, TDD의 본질이나 브라우저 동작 같은 깊은 토론이 PR 스레드에서 일어나며 글로 사고를 정리하는 훈련이 함께 이뤄졌습니다.
+
+## 원본 자료
+
+- **분석 대상 저장소**: [woowacourse/javascript-lotto](https://github.com/woowacourse/javascript-lotto) — 2026년 PR 57건, 작성자 25명, 리뷰 코멘트 983건
+- 인용 PR: [#445](https://github.com/woowacourse/javascript-lotto/pull/445) · [#466](https://github.com/woowacourse/javascript-lotto/pull/466) · [#426](https://github.com/woowacourse/javascript-lotto/pull/426) · [#450](https://github.com/woowacourse/javascript-lotto/pull/450) · [#423](https://github.com/woowacourse/javascript-lotto/pull/423)
+- PR 본문과 전체 리뷰 코멘트 원본은 LLM Wiki(비공개) `raw/2026-06-23-fe-lotto-2026-prs.md`에 평문으로 보존돼 있습니다. 수집 절차는 [미션 저장소 PR 데이터 분석 워크플로우](/education/tools/mission-repo-analysis-workflow)를 따릅니다.
+
+---
+
+<!-- source: https://docs.woowahan.com/education/logs/fe-movie-review-2026-prs -->
+
+import { Callout } from 'nextra/components'
+
+# 영화리뷰 미션 8기 — PR 54개로 본 비동기 에러와 상태 기반 설계의 첫 만남
+
+<Callout>
+**대상**: 레벨1 후반 비동기 통신 미션을 설계하고 코칭하는 코치, 교육 모델 설계자
+
+**맥락**: `woowacourse/javascript-movie-review`는 2023년에 연 레벨1 미션입니다. 2026년(8기)에는 25명의 크루가 54개의 PR을 올렸고, 1,786건의 리뷰 코멘트가 쌓였습니다(세 미션 중 코멘트가 가장 많습니다). TMDB API를 `fetch`로 호출하는 구조라, 크루가 비동기 통신과 에러 처리를 처음 본격적으로 마주하는 자리입니다.
+
+**핵심 질문**: 레벨1 크루가 비동기·에러·상태를 처음 만났을 때 어디서 막혔고, 우리는 어떻게 다음 단계로 넘겼는가?
+</Callout>
+
+## 2026 PR 한눈에
+
+올해 PR은 두 단계로 나뉩니다.
+
+| 단계 | PR 수 | 학습 초점 |
+| --- | --- | --- |
+| 1단계 — 영화 목록 불러오기 | 29 | `fetch`로 비동기 통신, 페이지네이션, 환경변수로 API 키 분리 |
+| 2단계 — 상세 정보 & UI/UX 개선 | 25 | 상세 모달, 로딩·에러 UI, 상태 기반 렌더링 |
+
+1,786건의 코멘트(코치·크루 리뷰 1,059건, AI 봇 727건)에서 가장 강하게 반복된 주제는 비동기 에러 처리였습니다.
+
+- **비동기 에러를 경로별로 설계하기** — `fetch`가 4xx·5xx에 reject하지 않는다는 사실, 네트워크 오류는 `TypeError`로 온다는 사실을 직접 부딪혀 깨닫는 과정.
+- **상태 기반 렌더링** — 명령 기반으로 화면을 직접 그리던 사고에서 상태가 화면을 결정하는 사고로의 전환.
+- **관심사 분리** — 한 함수가 상태·API·DOM·로직을 모두 떠안는 구조를 단일 책임으로 쪼개기.
+- **운영 품질** — `.env`로 API 키 분리, 기술적 에러 메시지를 사용자에게 그대로 노출하지 않기, 실제 API에 의존하지 않는 E2E 모킹.
+
+## 인상적인 리뷰·학습 장면
+
+### 우연히 통과하는 테스트를 짚다 — [PR #264](https://github.com/woowacourse/javascript-movie-review/pull/264)
+
+> [필수] 응답 자체를 `{ statusCode: 500 }` 형태의 값으로 모킹했고 (…) fetch는 4xx/5xx 응답에 reject를 내리지 않습니다. 그러니 이 테스트는 실제 fetch 동작과는 다른 가정 위에서 작성된 것 (…) 우연히 통과하고 있을 가능성이 있으니
+
+`fetch`의 가장 흔한 오개념을 테스트와 연결해 교정합니다. "동작한다"와 "의도대로 동작한다"가 다르다는 것을 거짓으로 통과하는 테스트로 보여 줍니다.
+
+### 에러 핸들러는 만들었지만 호출 경로가 없다 — [PR #287](https://github.com/woowacourse/javascript-movie-review/pull/287)
+
+> `main().catch()`는 초기 페이지 로드 시점의 에러만 잡습니다. 더보기 버튼 클릭이나 검색 실행은 별도의 async 이벤트 핸들러에서 수행되는데, 이 핸들러들에는 try/catch가 없어요. (…) 이 에러는 unhandled promise rejection이 됩니다.
+
+에러 처리를 "한 군데 만들어 두면 끝"이 아니라 사용자 인터랙션 단위로 사고하게 만듭니다. 초기 로드, 더보기, 검색 — 모든 비동기 진입점마다 에러 경로를 따져야 한다는 깨달음입니다.
+
+### 지금 고칠 것과 사고만 해 둘 것을 나누다 — [PR #266](https://github.com/woowacourse/javascript-movie-review/pull/266)
+
+> P3; 뷰 렌더링이 상태 기반이 아니라 명령 기반이에요. (…) 순서를 실수하면 버그가 생길 수 있어요. (…) 당장 적용할 필요는 없지만 '상태 기반으로 화면을 설계한다' 측면에서 사고해보시는 것을 추천해요.
+
+P1~P3 우선순위를 달아 "지금 고칠 것"과 "사고만 해 둘 것"을 구분합니다. 레벨1 크루가 과부하 없이 상태 기반 설계라는 큰 개념을 받아들이게 하는 코칭 화법입니다.
+
+### 에러 타입 보존과 사용자 메시지 — [PR #285](https://github.com/woowacourse/javascript-movie-review/pull/285)
+
+> fetchMoviesApi에서 TypeError를 catch해서 일반 Error로 throw하기 때문에 userErrorMessage에서 TypeError 분기에 걸리지 않게 될 것 같아요!
+
+이어서 같은 리뷰어가 "기술적인 에러 메시지가 사용자에게 그대로 노출되는데 괜찮을까요?"라고 묻습니다. 에러 타입 보존과 변환, 그리고 사용자 경험·보안 관점까지 한 스레드에서 다층으로 다룹니다.
+
+### 피드백이 코드로 전이되다 — [PR #269](https://github.com/woowacourse/javascript-movie-review/pull/269)
+
+크루가 코치 피드백을 받아 직접 고쳐 옵니다.
+
+> 말씀해주신 것처럼 fetch() 자체가 reject되는 네트워크 오류는 response.ok로 잡을 수 없어서, try/catch로 감싸 HTTP 오류와 네트워크 오류를 분리해서 처리하도록 수정했습니다.
+
+리뷰에서 받은 개념이 크루의 코드로 옮겨 가는 학습 전이가 그대로 기록된 장면입니다.
+
+## 올해 길러진 핵심 교육 경험
+
+1. **"비동기 에러는 happy path가 아니라 경로별로 설계한다"는 감각을 얻었습니다.** 올해 영화리뷰의 가장 큰 학습은 `fetch`의 실제 동작(4xx·5xx 비-reject, 네트워크 오류는 `TypeError`)을 직접 부딪혀 깨닫고, 초기 로드·더보기·검색 등 모든 비동기 진입점마다 에러 전파 경로를 검증하게 된 것입니다.
+
+2. **명령 기반에서 상태 기반 사고로 처음 전환했습니다.** 한 함수가 상태·API·DOM·로직을 모두 떠안는 절차적 구조에서, 우리는 P1~P3 우선순위로 단일 책임과 상태 기반 렌더링을 점진적으로 제시했습니다. 크루는 레벨1이 감당할 만큼 관심사를 분리하며 레벨2 이후 설계 사고의 토대를 놓았습니다.
+
+3. **운영 관점을 코드 리뷰로 처음 익혔습니다.** `.env`로 API 키를 분리하되 `Bearer undefined`를 빠르게 잡아내는 방어, 기술 에러 메시지를 사용자에게 노출하지 않는 정제, 실제 API에 의존하지 않는 E2E 모킹 — 기능 구현을 넘어 실제 서비스에서 마주칠 운영 품질을 동료·코치 리뷰로 처음 인식한 미션이었습니다.
+
+## 원본 자료
+
+- **분석 대상 저장소**: [woowacourse/javascript-movie-review](https://github.com/woowacourse/javascript-movie-review) — 2026년 PR 54건, 작성자 25명, 리뷰 코멘트 1,786건
+- 인용 PR: [#264](https://github.com/woowacourse/javascript-movie-review/pull/264) · [#287](https://github.com/woowacourse/javascript-movie-review/pull/287) · [#266](https://github.com/woowacourse/javascript-movie-review/pull/266) · [#285](https://github.com/woowacourse/javascript-movie-review/pull/285) · [#269](https://github.com/woowacourse/javascript-movie-review/pull/269)
+- PR 본문과 전체 리뷰 코멘트 원본은 LLM Wiki(비공개) `raw/2026-06-23-fe-movie-review-2026-prs.md`에 평문으로 보존돼 있습니다. 수집 절차는 [미션 저장소 PR 데이터 분석 워크플로우](/education/tools/mission-repo-analysis-workflow)를 따릅니다.
+
+---
+
 <!-- source: https://docs.woowahan.com/education/logs/fe-performance-report -->
 
 # FE 성능 리포트: 자기 서비스를 진단하는 3단계 프레임워크의 진화
@@ -8774,6 +9597,85 @@ private field가 WeakMap으로 변환되거나 numeric separator(ES2021)가 일�
 
 - [논증 기반 학습 설계](/education/insights/argumentation-based-learning) — 검증된 패턴
 - [POE 발견 학습](/education/insights/poe-discovery-learning) — 검증된 패턴
+
+---
+
+<!-- source: https://docs.woowahan.com/education/logs/fe-ts-learning-2026-prs -->
+
+import { Callout } from 'nextra/components'
+
+# ts러닝 미션 8기 — PR 26개로 본 "학습법을 학습하는" 신설 미션
+
+<Callout>
+**대상**: 레벨1 도입부 온보딩과 자기주도 학습을 설계하는 코치, 교육 모델 설계자
+
+**맥락**: `woowacourse/ts-and-learning`은 2026년 3월에 새로 연 미션입니다. 25명의 크루가 26개의 PR을 올렸고, 177건의 리뷰 코멘트가 달렸습니다. 이름 그대로 "TS와 학습법 튜닝하기"로, TypeScript 입문과 함께 **학습법 자체를 실험 대상으로 삼는** 점이 일반 미션과 다릅니다.
+
+**핵심 질문**: 코드가 아니라 "어떻게 공부했는가"를 리뷰 대상으로 삼으면, 크루는 무엇을 배우는가?
+</Callout>
+
+## 2026 PR 한눈에
+
+이 미션은 2026년에 처음 열렸으므로 26개 PR 전부가 올해 기록입니다. 모든 PR이 같은 제목 형식(`[TS 와 학습법 튜닝하기] OOO 미션 제출합니다`)을 쓰고, 본문의 학습 목표도 두 축으로 통일돼 있습니다.
+
+> - TypeScript 기초 문법을 익힌다.
+> - 학습법을 설계 → 시도 → 피드백 루프를 반복하며 개선한다.
+
+산출물도 일관됩니다. (1) [typescript-exercises](https://github.com/woowacourse) 풀이, (2) `study-log.md` 학습 로그, (3) **스스로 만든 학습 도구**(주로 AI 프롬프트/스킬). 결정적인 차이는 **리뷰가 코드가 아니라 `study-log.md`에 달린다**는 점입니다. 우리는 결과물이 아니라 학습 과정을 읽고 코칭했습니다.
+
+올해 177건의 코멘트에서 반복된 주제는 다음과 같습니다.
+
+- **학습법 자체의 설계와 튜닝** — 회고와 학습 로그가 리뷰의 절반 이상을 차지했습니다.
+- **AI를 의존 대상이 아니라 학습 도구로 길들이기** — 정답을 받는 대신 키워드만 받기 같은 자기규칙.
+- **TypeScript 핵심 문법** — type predicate(`is`), 제네릭, `infer`, 유니온·인터섹션, `type` vs `interface`.
+- **측정 가능한 회고** — "비효과적이었다" 같은 감상이 아니라 숫자가 들어간 회고.
+- **바텀업과 탑다운의 분리 운용, 크루 간 상호 학습.**
+
+## 인상적인 리뷰·학습 장면
+
+### AI 자동화가 회고의 본질을 갉아먹는가 — [PR #1](https://github.com/woowacourse/ts-and-learning/pull/1)
+
+> 근데 이 툴은 그 핵심 과정 자체를 ai가 너무 많이 대신해주고 있는 것처럼 느껴졌어요. (…) 차라리 막혔던 포인트나 키워드, 다음에 다시 볼 만한 문장 정도만 추려주고, 그걸 정리하고 문장화하는 과정은 본인이 직접 가져가는 쪽이 더 낫지 않을까 싶어 가볍게 의견 드립니다.
+
+AI 시대 자기주도 학습의 핵심 긴장을 정면으로 짚습니다. 편의를 위한 자동화와, 학습에 꼭 필요한 인지적 부하 사이의 경계 문제입니다.
+
+### 회고를 루브릭으로 채점하다 — [PR #22](https://github.com/woowacourse/ts-and-learning/pull/22)
+
+> P2; 전략에 대해 평가는 있지만 측정이 없는 것 같아요! '비효과적이었다'만으로는 다음에 뭘 얼마나 바꿔야 하는지 판단할 수 없어요. '코드 해독에 25분, 개념 정리에 5분 → 코드 해독 비중이 너무 높았다'처럼 숫자가 있어야 개선 방향이 명확해져요.
+
+학습 로그에 P2·P3·P4 우선순위 태그를 달아 채점합니다. 회고를 느낌에서 측정 가능한 실험으로 옮기는 코칭으로, 우리 저장소의 [실험 로그 반복 개선 방식](/education/insights)과도 직접 맞닿습니다.
+
+### AI에게 키워드 하나만 요청하는 규칙 — [PR #24](https://github.com/woowacourse/ts-and-learning/pull/24)
+
+> 5분 이상 문제 해결의 실마리를 찾지 못한다면, AI에게 해당 문제를 풀기 위한 키워드를 딱 1개만 달라고 제시합니다. → 이 부분에서 제가 키워드를 몰랐던 것인지, 응용을 못했던 것인지 파악할 수 있었습니다.
+
+막힘의 원인을 "문법을 몰랐나, 응용을 못했나"로 진단 가능하게 만드는 구체적이고 재현 가능한 학습 프로토콜입니다. 다른 크루가 그대로 복제할 수 있습니다.
+
+### 미션 중에는 바텀업, 끝나면 탑다운 — [PR #16](https://github.com/woowacourse/ts-and-learning/pull/16)
+
+> 미션 중에는 바텀업으로 달리되, 미션이 끝난 뒤 (…) 짧게라도 탑다운으로 돌아보는 루프를 넣은게 좋은 것 같아요! 내가 이번에 만진 개념들이 TypeScript 타입 시스템에서 어떤 관계인가?를 한 번 정리해보는 것만으로도 파편화된 지식들이 연결될 것 같아요!
+
+"파편적으로 안다"는 다수 크루의 공통 고민에, 시간 제약과 깊이를 양립시키는 구조적 처방을 줍니다.
+
+### 대원칙은 재미다 — [PR #15](https://github.com/woowacourse/ts-and-learning/pull/15)
+
+> 저는 여기서 대 원칙이 무조건 재미있어야 한다고 생각해요. 재미가 있어야 오래 하게 되고, 오래 하다 보면 한계가 생기는데 더 잘하고 싶어 자연스레 파보게 되거든요.
+
+번아웃을 걱정하는 크루에게, 깊이와 지속 사이의 트레이드오프를 동기 차원에서 다시 정의해 줍니다.
+
+## 올해 길러진 핵심 교육 경험
+
+1. **학습을 측정 가능한 실험으로 바꾸는 메타인지 근육을 길렀습니다.** "공부했다"를 넘어 무엇을, 얼마나, 왜 바꿨는지를 숫자와 가설로 적도록 훈련했습니다. 코치가 학습 로그에 루브릭을 달고 "측정이 없다"를 반복하면서, 회고가 감상문에서 개선 사이클로 바뀌었습니다.
+
+2. **AI를 정답기가 아니라 학습 도구로 길들이는 판단력을 얻었습니다.** "키워드만 받기", "힌트 없이 다시 풀어 검증하기", "문장화는 직접 하기" 같은 자기규칙으로, 의존과 자립 사이에 스스로 선을 긋는 경험을 했습니다. AI가 일상이 된 시대에 신입 개발자가 가장 먼저 마주하는 역량입니다.
+
+3. **낯선 언어를 "완벽 이해"가 아니라 "필요한 만큼 빠르게 익혀 적용"하는 태도로 전환했습니다.** 모든 개념을 완벽히 이해하려다 진도가 멈추는 함정을 겪은 뒤, 동작하는 코드를 먼저 내고 반복으로 깊이를 더하는 학습 사이클로 마음가짐을 바꾼 크루가 많았습니다. TypeScript보다 "낯선 기술을 어떻게 학습할 것인가"라는 평생 가는 기술을 길러 준 미션입니다.
+
+## 원본 자료
+
+- **분석 대상 저장소**: [woowacourse/ts-and-learning](https://github.com/woowacourse/ts-and-learning) — 2026년 3월 신설, PR 26건, 작성자 25명, 리뷰 코멘트 177건
+- 인용 PR: [#1](https://github.com/woowacourse/ts-and-learning/pull/1) · [#15](https://github.com/woowacourse/ts-and-learning/pull/15) · [#16](https://github.com/woowacourse/ts-and-learning/pull/16) · [#22](https://github.com/woowacourse/ts-and-learning/pull/22) · [#24](https://github.com/woowacourse/ts-and-learning/pull/24)
+- PR 본문과 전체 리뷰 코멘트 원본은 LLM Wiki(비공개) `raw/2026-06-23-fe-ts-learning-2026-prs.md`에 평문으로 보존돼 있습니다. 수집 절차는 [미션 저장소 PR 데이터 분석 워크플로우](/education/tools/mission-repo-analysis-workflow)를 따릅니다.
 
 ---
 
@@ -9999,6 +10901,12 @@ Gemini Canvas를 활용해 프롬프트만으로 웹앱을 만들고 즉시 배�
 **독자에게:** 크루들의 평균 프롬프트 반복 횟수는 3~7회였으며, 가장 적극적인 크루는 19회까지 반복했습니다. AI 사용 일지에서 반복 횟수를 기록하게 한 미션 구조가 프롬프팅을 단순한 "한 번의 요청"이 아니라 "개선 가능한 과정"으로 인식하게 만든 것으로 보입니다. 교육자 입장에서 이 패턴은 프로그래밍의 디버깅 사이클과 동일한 구조이며, AI 협업 능력이 별개의 새로운 기술이 아닌 기존 개발 역량의 확장임을 보여줍니다.
 
 </Toggle>
+
+## 이 실험에서 검증된 도구로
+
+이 로그는 원재료입니다. 여기서 반복 검증된 미션 구조와 프롬프팅 패턴은 아래에 복사해 쓸 수 있게 정리돼 있습니다.
+
+- [AI 협업 미션 설계 키트](/education/tools/ai-collaboration-mission-kit) — 검증된 도구
 
 ---
 
@@ -12341,23 +13249,23 @@ import { Callout } from 'nextra/components'
 
 ## 우리는 가르치지 않습니다. 스스로 발견하게 합니다.
 
-그렇다고 이 말이 멋있어서 내건 구호는 아닙니다. 우테코의 교육 원칙은 책상에서 먼저 세운 신념이 아니라, 매주 쌓이는 실험 로그에서 귀납한 결론입니다. 원칙이 먼저 있고 사례를 끼워 맞춘 게 아니라, 여러 기수의 사례가 먼저 있고 원칙이 뒤따라 드러났습니다.
+그렇다고 이 말이 멋있어서 내건 구호는 아닙니다. 우테코의 원칙을 먼저 정해 놓고 사례를 끼워 맞춘 게 아닙니다. 매주 쌓이는 실험 로그가 먼저 있었고, 원칙은 거기서 귀납해 뒤따라 정리했습니다.
 
-그 귀납의 끝에서 만난 결론이 네 가지입니다. 하나씩, 무엇이 그렇게 말하게 했는지와 함께 보겠습니다.
+그렇게 정리한 결론이 네 가지입니다. 하나씩, 무엇이 그렇게 말하게 했는지와 함께 짚겠습니다.
 
 ## 자기주도 학습
 
-<Claim n="01">크루는 학습의 대상이 아니라 학습의 진단자이자 설계자입니다. 코치는 정답이 아니라 기준과 환경을 줍니다.</Claim>
+<Claim n="01">크루를 가르치는 게 아니라, 스스로 학습하도록 경험을 설계합니다. 코치는 정답이 아니라 기준과 환경을 줍니다.</Claim>
 
-자기주도성은 방치가 아닙니다. "성능을 높여라" 같은 추상 목표를, 크루가 자기 팀 서비스에 직접 적용하는 진단 기준으로 번역해 줍니다. 무엇을 깊게 팔지도 크루가 고릅니다. 코치가 학습 목표를 대신 정해주지 않습니다.
+자기주도성은 방치가 아닙니다. "성능을 높여라" 같은 추상 목표를, 크루가 자기 팀 서비스에서 직접 돌려 볼 진단 기준으로 바꿔 줍니다. 거기서부터 어떻게 학습할지, 무엇을 적용할지는 크루가 고릅니다. 코치는 목표와 방향만 잡아 주고, 문제는 크루가 동료와 함께 풉니다. 대신 방향을 잃지 않도록 동료, 리뷰어, 코치, 그리고 AI가 중간중간 피드백을 줍니다.
 
 **근거** → [자기 진단 프레임워크](/education/insights/self-diagnostic-framework) · [성능 리포트](/education/logs/fe-performance-report)
 
 ## 몰입 기반 성장
 
-<Claim n="02">깊이는 한 번의 강의가 아니라, 시간을 들인 반복과 누적에서 나옵니다.</Claim>
+<Claim n="02">한 번에 많이 준다고 깊어지지 않습니다. 도전이 실력보다 한 걸음 높을 때, 몰입이 생기고 깊이가 따라옵니다.</Claim>
 
-무거운 주제는 하루 특강으로 주면 다음 주에 증발합니다. 그래서 다회차 시퀀스로 분산하고, 같은 미션 저장소로 반복해 돌아오게 합니다. 페이먼츠 5년 555 PR에서 **215명 중 97%가 같은 저장소로 두 번 이상 돌아왔습니다**. 같은 문제로 다시 돌아오는 구조가 깊이를 만듭니다.
+무거운 주제는 하루 특강으로 주면 다음 주에 증발합니다. 그래서 한 주제를 여러 회차로 쪼개고, 같은 미션 저장소 위에서 난이도를 한 단계씩만 올립니다. 토대는 그대로 두고 제약만 조금씩 바꾸니, 지루하지도 버겁지도 않게 한 문제에 오래 머무릅니다. 페이먼츠 5년 555 PR에서 **215명 중 97%가 같은 저장소로 두 번 이상 돌아왔습니다**. 도전과 실력이 맞물리는 구간을 길게 끌고 가는 설계가 깊이를 만듭니다.
 
 **근거** → [점진적 스캐폴딩](/education/insights/progressive-scaffolding) · [미션은 누적 학습 모델이다](/education/insights/mission-learning-accumulation)
 
@@ -12365,7 +13273,7 @@ import { Callout } from 'nextra/components'
 
 <Claim n="03">협업은 따뜻한 분위기가 아니라 구조입니다. 답을 주는 대신 질문합니다.</Claim>
 
-이 문화는 측정된 적이 있습니다. 페이먼츠 5년 리뷰 코멘트 2,178건 중 **51%가 답이 아니라 질문**이었습니다(긍정 피드백 37%). 짝 프로그래밍 선언문과 팀×팀 워크숍으로 협업을 설계하고, 취약함을 먼저 꺼내는 회고로 안전한 바닥을 깝니다.
+이 문화는 측정해 본 적이 있습니다. 페이먼츠 5년 리뷰 코멘트 2,178건을 세어 보니 **51%가 답이 아니라 질문**이었습니다(긍정 피드백 37%). 짝 프로그래밍 선언문과 팀×팀 워크숍으로 협업을 설계하고, 취약함을 먼저 꺼내는 회고로 안전한 바닥을 깝니다.
 
 **근거** → [논증 기반 학습 설계](/education/insights/argumentation-based-learning)
 
@@ -12373,25 +13281,42 @@ import { Callout } from 'nextra/components'
 
 <Claim n="04">답을 먼저 주지 않습니다. 크루가 예측하고, 관찰하고, 설명한 뒤에야 정답과 마주치게 합니다.</Claim>
 
-강의를 먼저 하면 크루는 "이해한 척"을 하지만, 판단을 먼저 강제하면 자기 머릿속 모델의 허점이 드러납니다. 비동기 퀴즈 해설지, 선배 코드 AS-IS/TO-BE, SSR 토론까지 기술 도메인을 가로질러 같은 메커니즘이 반복됩니다. 첫 줄의 "발견하게 합니다"는 여기서 가장 또렷합니다.
+강의를 먼저 하면 크루는 "이해한 척"을 하지만, 판단을 먼저 시키면 자기 머릿속 모델의 허점이 드러납니다. 비동기 퀴즈 해설지, 선배 코드 AS-IS/TO-BE, SSR 토론까지, 기술 주제가 달라도 같은 메커니즘을 반복해서 씁니다. 첫 줄의 "발견하게 합니다"를 여기서 가장 또렷하게 볼 수 있습니다.
 
 **근거** → [POE 발견 학습](/education/insights/poe-discovery-learning)
+**적용** → 직접 설계하려면 [발견 학습 설계하기](/education/design-poe)
 
 <Callout type="note" emoji="📐">
-**이 철학은 믿음이 아니라, 경험에서 나온 패턴들입니다.** 이 원칙들은 우리의 실험으로 다시 검증되는 가설이며, 새 로그가 쌓일 때마다 언제든 수정되고 업데이트됩니다.
+**이 철학은 믿음이 아니라, 경험에서 나온 패턴입니다.** 이 원칙은 우리가 실험으로 다시 검증하는 가설이고, 새 로그가 쌓일 때마다 언제든 고쳐 씁니다.
 
-→ [이 원칙들이 어떻게 검증되는지 보기](/how-its-made)
+→ [이 원칙들이 어떻게 검증되는지 보기](/education/how-its-made)
 </Callout>
 
 <Toggle title="이론적 배경 — 구성주의 · 경험 학습 · 근접 발달 영역">
 
-우테코의 원칙은 교육학 이론에서 연역한 것이 아니라 실험에서 귀납했습니다. 다만 사후에 비춰 보면 검증된 학습 이론과 자연스럽게 맞닿습니다.
+우테코의 원칙은 교육학 이론에서 끌어낸 게 아니라 실험에서 귀납했습니다. 다만 나중에 비춰 보니 검증된 학습 이론과 자연스럽게 맞닿았습니다.
 
-- **구성주의 (Piaget)** — 기존 스키마와 새 경험의 불일치가 학습을 만듭니다. 발견 학습(POE)이 이 불일치를 의도적으로 설계합니다.
+- **구성주의 (Piaget)** — 기존 스키마와 새 경험의 불일치가 학습을 만듭니다. 발견 학습(POE)으로 이 불일치를 일부러 설계합니다.
 - **경험 학습 (Kolb)** — 경험은 성찰을 거쳐야 학습이 됩니다. 회고를 형식까지 설계하고 미션을 누적 구조로 두는 이유입니다.
-- **근접 발달 영역 (Vygotsky · Krashen)** — 현재보다 약간 높은 도전과 발판이 만날 때 성장합니다. 점진적 스캐폴딩과 선택 미션이 그 장치입니다.
+- **근접 발달 영역과 i+1 (Vygotsky · Krashen)** — 지금 수준(i)에서 한 걸음 높은 도전(i+1)과 발판이 만날 때 성장합니다. 점진적 스캐폴딩과 선택 미션을 그 장치로 씁니다.
 
 </Toggle>
+
+## 왜를 이해했다면, 이제 옮길 차례
+
+이 네 원칙을 여러분의 미션·수업·리뷰에 어떻게 옮길지는 적용하기에서 짚습니다.
+
+<CardGrid variant="list">
+  <Card title="시작하기 — 5분 안에 우테코 모델" icon="🚀" href="/education/start" variant="row">
+    오늘 할 수 있는 작은 행동부터.
+  </Card>
+  <Card title="발견 학습 설계하기" icon="🔭" href="/education/design-poe" variant="row">
+    위 4번째 원칙을 예측→관찰→설명 사이클로 직접 설계합니다.
+  </Card>
+  <Card title="검증된 도구" icon="🛠️" href="/education/tools" variant="row">
+    복사해서 바로 쓰는 워크숍·회고·멘토링 도구.
+  </Card>
+</CardGrid>
 
 ---
 
@@ -12399,13 +13324,13 @@ import { Callout } from 'nextra/components'
 
 # 시작하기 — 5분 안에 우테코 모델
 
-동료가 한 명이든 백 명이든, 사람이 스스로 자라는 환경을 만드는 원리는 같습니다. 이 페이지는 우테코 교육 모델을 5분 안에 잡고, 더 깊이 들어갈 문을 안내합니다.
+동료가 한 명이든 백 명이든, 사람이 스스로 자라는 환경을 만드는 원리는 같습니다. 이 페이지에서 우테코 교육 모델을 5분 안에 짚고, 더 깊이 들어갈 문을 안내합니다.
 
 ## 5분 이해 — 우테코 모델 한 문장
 
 **정답을 떠먹여 주지 않고, 사람이 스스로 자라는 환경을 설계합니다.**
 
-가르치는 사람(코치)은 답을 주는 사람이 아니라 '기준'과 '환경'을 까는 사람이고, 배우는 사람(크루)은 가르침의 대상이 아니라 자기 학습을 직접 진단하고 설계하는 주체입니다. 그래서 강의를 먼저 하지 않고 먼저 예측하게 한 뒤 부딪히게 하고(발견 학습), 무거운 주제는 한 번에 쏟지 않고 여러 회차로 나눠 깊이를 쌓으며(점진적 스캐폴딩), 답 대신 질문을 던지는 회고로 협업을 '분위기'가 아니라 '구조'로 깝니다. 이 원칙들은 누군가의 신념이 아니라 매주 쌓이는 실험에서 데이터로 귀납한 결과입니다.
+가르치는 사람(코치)은 답을 주는 사람이 아니라 '기준'과 '환경'을 까는 사람이고, 배우는 사람(크루)은 가르침의 대상이 아니라 자기 학습을 직접 진단하고 설계하는 주체입니다. 그래서 우리는 강의를 먼저 하지 않고 먼저 예측하게 한 뒤 부딪히게 합니다(발견 학습). 무거운 주제는 여러 회차로 나눠 깊이를 쌓고(점진적 스캐폴딩), 답 대신 질문을 던지는 회고로 협업을 '분위기'가 아니라 '구조'로 깝니다. 이 원칙들은 누군가의 신념이 아니라 매주 쌓이는 실험에서 데이터로 추려낸 결과입니다.
 
 <CardGrid columns={1}>
   <Card title="자기주도 학습" icon="🧭" href="/education/insights/self-diagnostic-framework">
@@ -12424,7 +13349,7 @@ import { Callout } from 'nextra/components'
 
 ## 다음 문 — 더 깊이
 
-이번 주 첫 행동을 한 번 해본 뒤, 왜 이게 작동했는지 원리가 궁금해지면 이 문을 여세요.
+이번 주 첫 행동을 한 번 해본 뒤, 왜 이게 작동했는지 원리가 궁금해지면 이 문을 엽니다.
 
 <CardGrid variant="list">
   <Card title="왜 이렇게 가르치는가 — 교육 철학" icon="🎯" href="/education/philosophy" variant="row">
@@ -12447,7 +13372,7 @@ import { Callout } from 'nextra/components'
 
 # 검증된 도구
 
-실험을 통해 효과가 확인된 AI 도구, 프롬프트, 워크플로우를 모아둔 페이지입니다. 복사해서 바로 써볼 수 있도록 구성했습니다.
+실험으로 효과를 확인한 AI 도구, 프롬프트, 워크플로우를 한곳에 모았습니다. 복사해서 바로 써볼 수 있도록 구성했습니다.
 
 ## 워크플로우
 
@@ -12457,10 +13382,103 @@ import { Callout } from 'nextra/components'
 
 - [렌더링 전략 결정 워크숍](/education/tools/rendering-strategy-workshop) — 선언→피드백→개정 3단계로 기술 결정을 논증 훈련으로 만드는 워크숍 템플릿 (7기 FE 레벨4 검증)
 - [회고 형식 설계 키트](/education/tools/retrospective-format-kit) — 점수화·역설 질문·타임라인·성장 그래프 등 검증된 회고 형식 7종을 깊이 사다리로 배열하는 카탈로그
+- [연극 온보딩 설계 키트](/education/tools/drama-onboarding-kit) — 입학 첫 주 연극 미션으로 역량 불안과 관계 불안을 분리하는 운영 구조·요구사항 의도·MC 제도 (8기 132팀 검증)
+- [AI 협업 미션 설계 키트](/education/tools/ai-collaboration-mission-kit) — Gemini Canvas로 1주에 앱 4개를 만들고 배포하며 AI 협업 감각을 기르는 미션 구조·페어 프롬프트 릴레이·프롬프팅 패턴 (8기 145 PR 분석)
 
 ## 멘토링
 
 - [클린 랭귀지 상호 멘토링](/education/tools/clean-language-mentoring) — 열린 질문만으로 크루 스스로 답을 발견하도록 돕는 7단계 가이드
+
+---
+
+<!-- source: https://docs.woowahan.com/education/tools/ai-collaboration-mission-kit -->
+
+# AI 협업 미션 설계 키트
+
+AI를 "쓰는" 단계를 넘어 **AI와 협업하는 방식 자체를 익히게 하는** 미션을 복사해 설계하는 키트입니다. 8기 전 트랙 공통으로 진행한 Gemini Canvas 웹앱 미션과, 그 미션의 145개 PR을 분석한 기록에서 실제로 작동한 구조만 모았습니다.
+
+<Callout type="tip">
+이 미션의 목표는 "완벽한 코드"가 아니라 **"동작하는 무언가를 세상에 내놓는 경험"**입니다. 코드 품질 중심 커리큘럼에 빠져 있던, 빠르게 만들고 배포해 사용자 반응으로 고치는 감각을 채웁니다.
+</Callout>
+
+## 왜 이 미션인가
+
+AI 도구가 일반화되면서, 크루가 AI를 단순히 사용하는 것을 넘어 **AI와 협업하는 방식 자체**를 익혀야 한다는 필요가 생겼습니다. 기존 미션은 코드 품질과 설계에 집중하는 구조라, "빠르게 만들고 배포해 사용자 반응으로 개선하는 경험"을 줄 자리가 없었습니다. 이 미션은 그 빈자리를 채웁니다 — 프롬프트만으로 웹앱을 만들고 즉시 배포하면서, AI를 실질적인 생산 도구로 다루는 감각을 기릅니다.
+
+## 미션 구조 — 1주에 앱 4개
+
+전 트랙(웹 프론트엔드·웹 백엔드·모바일 안드로이드)이 공통으로 참여합니다. 한 주 동안 성격이 다른 앱 네 개를 만들고, 그중 최소 한 개에는 AI 기능을 직접 통합합니다.
+
+| 카테고리 | 목적 |
+|---|---|
+| 유틸리티 앱 | 자신이 실제로 쓸 생산성 도구 만들기 |
+| 게임 | 재미 중심의 빠른 프로토타이핑 |
+| 학습 앱 | 본인 트랙 개념을 인터랙티브하게 표현 |
+| 페어 프롬프트 릴레이 앱 | AI 시대의 협업 방식 경험 |
+
+> 카테고리를 네 개로 벌린 이유는 "한 가지를 깊게"보다 **"여러 결의 만들기를 빠르게"** 경험시키기 위해서입니다. 완성도보다 출시 횟수를 먼저 늘립니다.
+
+## 핵심 장치 3가지
+
+### 1. 페어 프롬프트 릴레이 — AI 시대의 페어 프로그래밍
+
+두 사람이 하나의 Canvas 세션에서 **5분씩 교대로 프롬프트를 입력**하며, 둘 다 실제로 쓸 수 있는 앱을 함께 만듭니다. 혼자 만들면 자기 관점에 갇히기 쉬운 문제를 풀고, 상대의 프롬프팅 전략을 자연스럽게 배우게 됩니다. 페어 프로그래밍의 "교대" 구조를 AI 협업으로 옮긴 변형입니다.
+
+### 2. 데모데이 — 피드백 → 즉시 개선 → 재공유
+
+금요일 2시간 반 동안, 단순 발표가 아니라 **고치는 사이클을 한자리에서** 돌립니다.
+
+1. 소그룹(4~5명) 안에서 앱 시연 + 1줄 피드백 수집
+2. 피드백 하나를 골라 **20분 안에** 즉시 개선
+3. Before/After를 소그룹에서 공유
+4. 다른 소그룹과 셔플 공유 (자기 앱이 아니라 짝에게 들은 앱을 소개)
+5. 전체 회고
+
+"사용자 피드백 → 개선"의 루프를 짧고 강렬하게 체감시키는 게 핵심입니다.
+
+### 3. AI 사용 일지 — 프롬프팅 메타인지
+
+가장 잘 만든 앱 한 개에 대해 초기 프롬프트, 개선 과정, 효과적이었던 전략, 배운 점을 기록합니다. 크루가 자신의 프롬프팅 패턴을 스스로 들여다보게 만드는 장치입니다.
+
+## 프롬프팅 패턴 — 145개 PR에서 반복된 것
+
+미션의 PR 리뷰 대화 145건을 분석해 반복된 패턴을 추렸습니다. 미션 안내에 미리 넣으면 크루의 반복 실패를 줄일 수 있습니다.
+
+| 패턴 | 빈도 | 한 줄 |
+|------|------|-------|
+| 구조화된 초기 프롬프트 | 144개 PR | 섹션으로 나눈 프롬프트일수록 후속 수정이 줄었습니다 |
+| 출력 구조 먼저 고정 | 63개 PR | "하지 마"(부정 제약)보다 원하는 출력 형식을 먼저 못 박는 게 안정적입니다 |
+| 기술 스택 제한 선언 | 54개 PR | 초기에 안 박으면 Canvas에서 실행 안 되는 코드를 생성합니다 |
+| 반복 수정으로 개선 | 26개 PR | 평균 3~7회, 최대 19회 — 프롬프팅은 한 번의 요청이 아니라 디버깅 사이클입니다 |
+
+> 이 패턴들의 공통점은 **"제약을 먼저 고정하고 기능을 채운다"**는 소프트웨어 설계 사고와 같다는 점입니다. AI 협업은 새로운 기술이 아니라 기존 개발 역량의 확장입니다.
+
+## 리뷰를 "코드 리뷰"가 아니라 "프로덕트 리뷰"로
+
+145개 중 132개 PR에서 다른 크루가 **앱을 직접 써보고** 피드백을 남겼습니다. "코드 리뷰"가 아니라 "프로덕트 리뷰"라는 형식이 참여 장벽을 낮춥니다 — 리뷰어도 사용자가 되어 UX 감각을 함께 기릅니다. 코치가 가장 자주 던진 질문은 **"본인이 실제로 이 앱을 쓸 것인가"**(39개 PR)였습니다. 기능 완성도보다 문제 정의의 진정성을 묻는 이 질문이 많은 크루의 방향을 바꿨습니다.
+
+## 함정 & 진행 체크리스트
+
+8기 운영에서 드러난 한계입니다.
+
+- **단일 도구 의존** — 한 도구(Gemini Canvas)에 묶이면 도구 제약이 곧 미션 범위 제약이 됩니다. 도구를 바꿔도 작동하도록 "결과물의 조건"으로 미션을 정의합니다.
+- **사용 일지의 형식화** — "효과적이었던 전략" 항목이 깊은 성찰보다 형식적 작성으로 흐르기 쉽습니다. 구체적인 예시 한 줄을 의무화합니다.
+
+진행 전 체크리스트:
+
+- [ ] "완벽한 코드"가 아니라 "동작·배포 경험"을 목표로 명시했는가?
+- [ ] 기술 스택 등 제약을 초기 프롬프트에 고정하도록 안내했는가?
+- [ ] 리뷰를 코드가 아니라 프로덕트(실사용)로 두었는가?
+- [ ] "본인이 실제로 쓸 앱인가"를 평가 기준에 넣었는가?
+- [ ] 데모데이에 즉시 개선(피드백 → 20분 수정 → 재공유) 사이클을 넣었는가?
+- [ ] 도구가 바뀌어도 성립하도록 미션을 "결과물의 조건"으로 정의했는가?
+
+## 근거 로그
+
+- [미션 설계: Gemini Canvas 웹앱 다작하기](/education/logs/mission-design) — 8기 전 트랙 공통 미션 구조, 페어 프롬프트 릴레이, 데모데이, 145개 PR 분석 8개 패턴
+
+→ 크루 결과물 갤러리: [crew-apps.vercel.app](https://crew-apps.vercel.app/)
+→ 함께 쓰는 도구: [연극 온보딩 설계 키트](/education/tools/drama-onboarding-kit) (같은 온보딩에서 팀을 만든 뒤 이 미션의 데모데이를 그 팀으로 진행)
 
 ---
 
@@ -12602,6 +13620,143 @@ import { Callout } from 'nextra/components'
 - [코칭 스쿼드 전문성 강화 루프](/education/logs/coaching-squad-training-loop) — 5~6회차에 클린 랭귀지를 **코치 훈련 재료**로 끌어올린 사례. "잘 모르겠어요", "그냥 별일 없어요"처럼 자기표현이 어려운 크루를 다루는 시나리오에서, 피코치의 언어·메타포를 그대로 따라가는 5개 핵심 질문(무엇이 일어나기를 원하세요? / 그것은 어떤 느낌·성질을 가지고 있나요? / 그 외에 다른 중요한 점이 있나요? / 그것은 어디에 있나요? / 그런 다음에는 어떤 일이 일어나나요?)을 ORS(개인·대인·사회·전반 상태 점검)와 함께 사용했습니다. 정확한 공감은 분위기 관리가 아니라 **코치의 개입을 줄이고 피코치의 탐색을 늘리는 장치**로 기능했고, 만능 답안이 아니라 정보가 적은 장면에서 성급한 해결책으로 가는 것을 막는 보조 도구로 정의되었습니다.
 
 {/* </auto-sync> */}
+
+---
+
+<!-- source: https://docs.woowahan.com/education/tools/drama-onboarding-kit -->
+
+# 연극 온보딩 설계 키트
+
+우테코는 기수가 바뀌어도 **레벨0의 첫 미션을 늘 연극으로 엽니다.** 코드가 아니라 팀 협업과 심리적 안전감을 먼저 경험하게 하려는, 처음부터 고정된 선택입니다. 이 키트는 그 연극 온보딩을 복사해 설계할 수 있게 정리한 것으로, 기록이 가장 풍부한 8기 운영(전 트랙 132팀·약 30팀 공연)을 표준 사례로 삼았습니다.
+
+<Callout type="tip">
+연극의 목표는 퍼포먼스가 아닙니다. **역량 불안과 관계 불안을 분리**해 다루는 첫 장치입니다. "잘해야 한다"는 압박이 낮은 형식이라 오히려 크루가 자유롭게 시도합니다.
+</Callout>
+
+## 왜 연극을 첫 미션으로 두는가
+
+신입 크루는 입학 직후 두 가지 긴장을 동시에 안습니다. "이 커리큘럼을 따라갈 수 있을까"라는 **역량 불안**, 그리고 "이 사람들 사이에서 어떻게 행동해야 하나"라는 **관계 불안**입니다. 첫 미션을 코드로 두면 두 불안이 한꺼번에 몰려 안전감이 자랄 틈이 없습니다.
+
+연극은 이 둘을 분리합니다. 기술 역량을 평가받지 않는 무대에서 팀으로 무언가를 만들고, 실패를 두려워하지 않고 서 보는 경험이 **심리적 안전감의 첫 씨앗**이 됩니다. "진지하게 잘해야 한다"는 압박이 낮기 때문에 오컬트 퇴마극·마피아 게임 같은 파격적 시도가 나옵니다. 낮은 압박이 곧 시도를 허용하는 장치입니다.
+
+## 운영 구조 템플릿
+
+8기는 전 트랙 132팀(백엔드 88·프론트엔드 25·모바일 19)을 두 그룹으로 나눠 오전에 동시 진행했습니다. 아래 일정을 복사해 기수 규모에 맞게 조정합니다.
+
+| 시점 | 활동 | 설계 포인트 |
+|------|------|-------------|
+| D-7 (OT) | 연극 안내 + 사전 과제(《유연함의 힘》 4장까지) | 미션 의도를 먼저 깔고, 공통 독서로 언어를 맞춥니다 |
+| D-6 | 팀별 주제 폼으로 사전 수집 + 슬랙 공지 | 일찍 방향을 잡게 해 준비에 집중시킵니다 |
+| D-6~ | MC 그룹별 2명(총 4명) 슬랙 선착순 모집 | 크루가 행사를 진행하게 만드는 주도성 장치입니다 |
+| D-Day | 본 공연 10:30–12:00, 팀당 4–5분 | 짧게 둡니다 — 완성도보다 무대에 서는 경험이 목적입니다 |
+| D-Day 오후 | 회고 세션(90분) | 경험을 자기 인식으로 잇는 단계입니다(아래 참고) |
+
+## 요구사항의 교육적 의도 (핵심)
+
+연극 요구사항은 퍼포먼스 규칙이 아니라 **팀 경험 설계 장치**입니다. 각 조건에 의도를 실어야 연극이 협업 경험으로 작동합니다.
+
+| 요구사항 | 표면 | 숨은 교육적 의도 |
+|----------|------|------------------|
+| 모두가 무대에 골고루 나온다 | 출연 규칙 | **역할 분배 강제** — 발표 잘하는 한 명이 독점하지 않고, 모두가 팀의 일원임을 체감합니다 |
+| 기억에 남을 유행어를 만들어 쓴다 | 재미 요소 | **팀 정체성의 씨앗** — 공연 뒤에도 서로의 팀을 유행어로 기억하면 132명이 연결되는 방식이 달라집니다 |
+| 다른 조와의 차별화 포인트 1개 이상 | 차별화 | **내부를 향한 질문** — "우리는 어떤 팀인가"를 짧은 시간에 고민하게 합니다 |
+| 본 공연을 직접 촬영한다 | 기록 | **소유감 강화** — 자신들이 만든 것에 대한 주인 의식을 높입니다 |
+
+> 요구사항을 바꿀 때는 "이 조건이 어떤 팀 경험을 강제하는가"를 먼저 정의합니다. 의도 없는 규칙은 그냥 숙제가 됩니다.
+
+## MC 제도 — 크루가 진행하게 한다
+
+행사 진행을 코치가 아니라 크루(MC)에게 넘깁니다. 8기에서 MC 선착순 모집이 예상보다 빠르게 마감됐는데, 서로를 모르는 시점에 자발적으로 "나서는" 크루가 나왔다는 것 자체가 연극의 낮은 진입 장벽을 보여줍니다. 코치가 진행할 때와 크루가 진행할 때 현장 에너지가 달랐습니다.
+
+## 공연을 회고로 잇기
+
+공연으로 끝내면 단발성 이벤트에 그칩니다. 공연 직후의 안도감과 해방감은 평소보다 솔직한 이야기를 꺼낼 수 있는 상태이므로, **바로 회고로 이어 경험을 자기 인식으로 전환**합니다.
+
+연극 직후 회고의 구체적 형식(강점/취약점 이중 공유, 포스트잇 시각화, "먼저 듣기·판단하지 않기·공감하기·여기서만" 4규칙)은 [회고 형식 설계 키트](/education/tools/retrospective-format-kit)의 **7번 형식**에 정리돼 있습니다. 그대로 가져다 씁니다.
+
+## 함정 & 진행 체크리스트
+
+8기 운영에서 드러난 개선점을 함정으로 정리했습니다.
+
+- **회고 깊이 편차** — 퍼실리테이터 없이 조별 자율로 진행하면 대화 깊이가 조마다 갈립니다. 자기 인식으로 유도하는 **질문 가이드를 사전에 구체적으로** 제공합니다.
+- **공연 후 연결 단절** — 연극에서 만든 유행어·팀 캐릭터가 레벨1로 이어질 장치가 없으면 휘발됩니다. 온보딩 이후 커리큘럼에서 팀 언어를 다시 쓰는 고리를 설계합니다.
+- **병렬 진행의 밀도차** — 두 그룹을 동시에 돌리면 운영 밀도가 균일하지 않습니다. **그룹별 코치 배치와 역할**을 미리 명확히 정의합니다.
+
+진행 전 체크리스트:
+
+- [ ] 각 요구사항에 "강제하는 팀 경험"을 한 줄로 정의했는가?
+- [ ] 주제를 사전 수집해 팀이 일찍 방향을 잡게 했는가?
+- [ ] 진행을 크루(MC)에게 넘겼는가?
+- [ ] 공연 직후 회고로 잇는 시간을 확보했는가?
+- [ ] 회고 조별 깊이 편차를 줄일 질문 가이드를 준비했는가?
+- [ ] 연극에서 만든 팀 언어가 이후 커리큘럼으로 이어질 고리를 설계했는가?
+
+<Toggle title="8기 연극 주제 28개 (영감용 복사 카탈로그)">
+
+크루들이 상상한 "개발자로 산다는 것"이 유머와 불안이 섞여 표출된 결과입니다. 첫 미션 주제의 톤을 잡을 때 참고합니다.
+
+**개발자 문화 & 기술 풍자**
+
+| 제목 | 한 줄 설명 |
+|------|-----------|
+| 흑백개발자: 코드 계급 전쟁 | 흑백요리사 패러디. 코드 리뷰 심사로 개발자 계급을 가립니다 |
+| 흑백개발자 (다른 팀) | 클린 코드 vs 야생 코드 결승전. 기술은 철학이라는 메시지 |
+| 인사이드 에러 | 퇴근 직전 에러를 마주한 개발자의 머릿속. 인사이드 아웃 패러디 |
+| 귀(鬼)버깅: 험한 것이 붙었다 | 원인 불명의 서버 장애를 오컬트 퇴마극으로. AI 시대 개발자 불안 |
+| 메인 브랜치 살인 사건 마피아 게임 | 치명적 커밋으로 서버가 터진 사건. 관객 참여형 마피아 게임 |
+| 우린 답을 찾을 것이다 | 버전 관리 없던 혼돈, Git·Docker 등장으로 구원받는 역사극 |
+| 우아한 나락 퀴즈쇼 | 나락 퀴즈쇼 패러디. 개발자 유머 토크쇼 |
+| 퇴근 눈치게임 | 퇴근 시간 이후 벌어지는 보이지 않는 심리전 |
+| 극한 알바 | 카페 알바생이 다양한 진상을 만나는 이야기 |
+| 우아한 진상코스 | 비행기 공간의 '진상' 현상을 풍자한 코미디 |
+
+**우테코 & 부트캠프 생활**
+
+| 제목 | 한 줄 설명 |
+|------|-----------|
+| 1월 10일 | 코딩 테스트를 치르는 세 크루, 우테코 합격을 돌아보는 이야기 |
+| 아기코더 삼형제 | 수료 후 취업 시장으로 독립하는 세 아기 코더. 늑대 시니어의 심사 |
+| 우아한 면접 | 수료 후 취업 관문. "솔직한 나"가 가장 강력한 무기 |
+| 주제 제출 5분 전 | GPT 없이 아무것도 못 하는 크루들의 이야기 |
+| 캠퍼스 청소 규칙 설명 | 공동체 생활과 청소 규칙을 코믹하게. "내 손이 이래가…" 유행어 |
+| 그거 잘됐다! 우아한 테크코스 | "오히려 좋아!" 긍정 에너지로 부트캠프 생활을 돌아봅니다 |
+| 2046년 판교 | AI 폭주로 개발자가 멸종 위기종이 된 디스토피아 |
+
+**페어 프로그래밍 & 협업**
+
+| 제목 | 한 줄 설명 |
+|------|-----------|
+| UFC 개발자: 페어 프로그래밍편 | 파이터 출신 개발자들의 페어 갈등을 격투기로 표현 |
+| feat(페어프로그래밍): 이해와 성장 | 페어의 희로애락. 커밋 메시지 형식의 제목 |
+| 페어 프로그래밍: 희망편과 절망편 | 같은 과제를 맡은 희망팀과 절망팀의 대비 |
+| 출입증 - 그리고 아무도 없었다 | 출입증을 잃어버린 크루. 작은 사건의 나비효과 |
+
+**관계 & 소통**
+
+| 제목 | 한 줄 설명 |
+|------|-----------|
+| 우리, 같은 말 하고 있는 거 맞아? | 신조어와 판교어의 소통 오류. 효과적 소통의 메시지 |
+| 오빠 믿지? | 여자친구의 복잡한 심리를 꿰뚫으려는 로맨스 코미디 |
+| (개발자도) 대화가 필요해 | 레거시처럼 소통 안 되는 개발자 가족의 식탁 |
+| 오빠, 나 어디 바뀐 거 없어? | 평화로운 대화 이면의 처절한 내면 사투 |
+| 변 사체 | 평범한 소년의 장난이 거대한 나비효과를 부르는 이야기 |
+
+**자아 & 심리**
+
+| 제목 | 한 줄 설명 |
+|------|-----------|
+| 맥북병 걸린 INTP의 머릿속에는 4명이 산다 | 맥북 구매를 두고 벌어지는 4가지 자아의 충돌 |
+| 아주 평범한 택시 기사의 하루 | 안전 운전을 추구하면서 욕망에 흔들리는 모순. 도전의 의미 |
+
+</Toggle>
+
+## 근거 로그
+
+- [온보딩 연극 미션](/education/logs/drama-onboarding) — 8기 운영 구조, 요구사항의 교육적 의도, MC 제도, 28개 주제
+- [연극 회고: 취약함 공유로 심리적 안전감 만들기](/education/logs/drama-retrospective) — 90분 5단계 회고, 명시적 규칙 4개
+
+→ 검증된 패턴: [비기술 첫 미션](/education/insights/non-technical-first-mission) — 이 키트가 따르는 설계 원칙
+→ 함께 쓰는 도구: [회고 형식 설계 키트](/education/tools/retrospective-format-kit) (7번 강점/취약점 이중 공유)
 
 ---
 
@@ -12987,119 +14142,6 @@ A3 모눈종이에 성장 곡선을 그리고 감정 어휘로 정밀하게 언�
 - [나의 성장 그래프](/education/logs/growth-graph) — 감정 키워드 테이블, 서프라이즈 피드백
 
 → 근거 패턴: [검증된 패턴 > 회고 설계](/education/insights/retrospective-design)
-
----
-
-<!-- source: https://docs.woowahan.com/how-its-made -->
-
-# 이 문서는 어떻게 만들어지는가
-
-여러분이 보는 건 다듬어진 결과물입니다. 철학과 커리큘럼, 검증된 패턴은 깔끔하게 정리돼 있지만, 그것만 보면 한 가지 의심이 듭니다 — "이건 그냥 멋진 말 아닐까? 위에서 내려온 선언이거나 누군가의 인상에 불과한 건 아닐까?"
-
-이 페이지는 그 의심에 답하기 위해 **결과물이 만들어지는 과정 자체**를 펼쳐 보입니다.
-
-<Callout type="note" emoji="🔍">
-**이 문서의 주장은 세 가지 방식으로 떠받쳐집니다.** ① 위에서 떨어진 게 아니라 실험 로그에서 **귀납**되고, ② 감이 아니라 루브릭 **점수와 게이트**를 통과하며, ③ 한번 정해두고 끝나는 게 아니라 새 기록이 쌓이면 언제든 **수정**됩니다.
-</Callout>
-
-## 콘텐츠는 아래에서 위로 승격됩니다
-
-이 문서의 콘텐츠는 위에서 아래로 쓰이지 않습니다. 매주 쌓이는 실험 로그를 원재료로, 검증을 통과한 것만 한 단계씩 위로 올라갑니다.
-
-<PromotionPipeline />
-
-## 게이트는 감이 아니라 점수입니다
-
-위 루브릭을 눌러보면 알 수 있듯, 무엇이 위로 올라갈지는 인상으로 정하지 않습니다. 두 루브릭은 서로 다른 질문에 답합니다.
-
-**품질 루브릭(5개 차원·25점)은 "이 기록이 잘 쓰였는가"를 봅니다.** 구조가 갖춰졌는지, 수치와 인용으로 구체적인지, 다른 코치가 읽고 그대로 재현할 수 있는지, 성공과 실패를 균형 있게 다뤘는지, 원본 자료가 링크됐는지 — *형식과 서술*의 완성도입니다.
-
-**승격 루브릭(4개 차원·20점)은 "이 내용이 재사용 가능한 지식인가"를 봅니다.** 다른 기수에서도 반복됐는지, 독립된 도구·원칙으로 뽑아낼 수 있는지, 다른 기록들과 교차로 연결되는지, 실제 교육에 영향이 큰지 — *내용과 패턴*의 일반화 가능성입니다.
-
-잘 쓰인 기록이라고 곧바로 일반 원칙이 되는 건 아닙니다. 그래서 게이트가 둘입니다. 점수가 통과선(품질 16/25, 승격 16/20)을 넘지 못하면 올라가지 않고, 보강한 뒤 다시 채점됩니다.
-
-## 점수 한 번은 진실이 아니라 표본입니다
-
-채점은 LLM이 합니다. 그런데 같은 로그를 다시 채점해도 점수는 매번 조금씩 달라집니다. 그래서 **한 번 나온 점수는 진실이 아니라 분포에서 뽑은 표본 하나**로 다룹니다. 한 번의 18점을 믿는 대신, 여러 번 독립적으로 채점해 평균과 그 평균이 흔들리는 폭(신뢰구간)을 함께 봐야 합니다.
-
-그러면 "몇 번이면 의미가 있는가"가 핵심이 됩니다. 통계적으로 정직한 답은 — *잡음을 먼저 재기 전에는 정할 수 없다* 입니다.
-
-<Toggle title="통계 전문가라면 — 의미 있는 표본 수를 어떻게 정하나">
-
-**1. 잡음부터 측정합니다.** 필요한 반복 수 `n`은 점수의 표준편차 `σ`(얼마나 흔들리는가)와 우리가 원하는 정밀도 `E`(허용 오차)로 정해집니다.
-
-`n = (1.96 × σ / E)²`
-
-`σ`를 모르면 `n`도 모릅니다. 그래서 먼저 소규모 예비 채점(5~10회)으로 `σ`를 추정합니다.
-
-**2. 현실적인 숫자.** 25점 척도에서 `σ`가 약 2점이라고 가정하면(예시):
-
-| 원하는 오차(±) | 필요한 반복 수 |
-|------------------|----------------|
-| ±2점 (거칠게) | 약 4회 |
-| ±1점 (실용적) | 약 16회 |
-| ±0.5점 (정밀) | 약 62회 |
-
-흔히 말하는 "30회"는 이 사이 어딘가의 경험칙입니다. *의미 있는 구간은 대략 십수 번에서 수십 번* 사이입니다.
-
-**3. 작은 표본에서는 t 분포.** 실제로는 수십~수백 번을 돌리지 않으므로 표본이 작습니다. 이때는 위의 `1.96`(정규분포) 대신 자유도를 반영한 t 분포 값을 써야 구간이 정직해집니다(n=10이면 `1.96`이 아니라 `2.26`).
-
-**4. 더 영리한 방법 — 통과선까지만 뽑기.** 우리가 원하는 건 정밀한 점수가 아니라 *통과/보류 결정*입니다. 그래서 고정 횟수 대신, 신뢰구간이 통과선(16)을 완전히 벗어날 때까지만 적응적으로 더 채점합니다. 통과선에서 먼 로그(평균 22, 9 등)는 몇 번이면 끝나고, 통과선에 걸친 로그는 아무리 반복해도 LLM 혼자서는 가를 수 없습니다.
-
-**5. 표본은 잡음만 줄입니다, 편향은 못 줄입니다.** 반복 측정은 *무작위 오차*만 좁힙니다. LLM이 특정 유형의 로그를 체계적으로 후하게(또는 박하게) 본다면, 천 번을 평균 내도 *정밀하게 틀린* 값에 수렴할 뿐입니다. 편향은 표본 수로 고칠 수 없습니다 — 다른 잣대나 사람의 보정이 필요합니다. (심리측정학에서는 같은 문제를 평가자 간 신뢰도로 보고, 스피어먼-브라운 공식으로 목표 신뢰도에 필요한 반복 수를 역산하기도 합니다.)
-
-</Toggle>
-
-4번과 5번이 **사람이 승인하는 이유**입니다. 통계는 통과선에서 충분히 떨어진 로그를 자동으로 걸러주지만, 경계에 걸친 로그와 *체계적으로 틀릴 수 있는* 판단은 사람이 최종 결정합니다. LLM은 점수의 분포를 내고, 사람은 그 분포를 승인하거나 뒤집습니다.
-
-<Callout type="warning" emoji="🧪">
-**정직하게 — 지금은 로그당 1회 채점합니다.** 위의 반복 샘플링과 신뢰구간은 우리가 점수를 *읽는 원칙*이자 다음에 도입할 측정 방식이며, 아직 파이프라인에 자동화돼 있지는 않습니다. 그래서 현재의 모든 점수는 *표본 하나*로 보아야 하고, 경계값일수록 사람의 판단 비중이 큽니다.
-</Callout>
-
-## 주장은 수사가 아니라 측정입니다
-
-추상적인 원칙도 가능한 한 숫자로 받칩니다. 아래는 한 미션 저장소(react-payments) 5년치를 분석한 기록에서 나온 값입니다.
-
-<CardGrid>
-  <Card title="555 PR · 5년" icon="📦">한 미션 저장소에 5년간 쌓인 풀 리퀘스트</Card>
-  <Card title="97% 재방문" icon="🔁">215명 중 97%가 같은 저장소로 두 번 이상 돌아왔습니다 — "몰입 기반 성장"의 증거</Card>
-  <Card title="51% 질문" icon="💬">리뷰 코멘트 2,178건 중 51%가 답이 아닌 질문이었습니다 — "협업은 구조다"의 증거</Card>
-</CardGrid>
-
-> 출처: [react-payments 5년 555 PR 분석](/education/logs/react-payments-555prs-analysis)
-
-## 한 주장을 끝까지 따라가 보면
-
-철학의 한 문장은 다음처럼 데이터와 원본 로그, 게이트로 거슬러 추적됩니다. 모든 주장이 이렇게 근거로 연결돼 있습니다.
-
-<Mermaid chart={`
-flowchart TD
-    C["🎯 철학: 협업은 구조다"]
-    D["💬 데이터: 코멘트 2,178건 중 51%가 질문"]
-    L["📝 원본: react-payments 5년 로그"]
-    G["✅ 게이트: 품질·승격 루브릭 통과"]
-    C -->|근거| D
-    D -->|측정 대상| L
-    L -->|통과한 검증| G
-    style C fill:#fff0f0,stroke:#c4554d
-    style D fill:#e9f3f7,stroke:#487ca5
-    style L fill:#f0f4ff,stroke:#4285f4
-    style G fill:#eef3ed,stroke:#2f9e6b
-`} />
-
-## 고정된 정답이 아닙니다
-
-이 문서는 완성된 정답집이 아니라 **계속 갱신되는 가설의 집합**입니다. 새 실험 로그가 들어오면 점수가 다시 매겨지고, 패턴이 바뀌면 위층의 원칙도 수정됩니다. 아래는 실제로 이 문서가 갱신돼 온 기록입니다.
-
-<RecentUpdates limit={5} />
-
-## 더 깊이 보고 싶다면
-
-<CardGrid>
-  <Card title="연구 사이클 워크플로우" icon="🔧" href="/education/tools/research-cycle-workflow">코치가 이 파이프라인을 실제로 돌리는 방법(슬래시 커맨드 포함)</Card>
-  <Card title="검증된 패턴" icon="💡" href="/education/insights">여러 실험에서 교차 검증된 해결 패턴</Card>
-  <Card title="실험 로그" icon="📝" href="/education/logs">이 모든 것의 원재료가 되는 매주의 기록</Card>
-</CardGrid>
 
 ---
 

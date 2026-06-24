@@ -43,7 +43,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           feedback={{ link: 'https://github.com/woowacourse/guidebook/issues/new?labels=feedback' }}
           sidebar={{
             defaultMenuCollapseLevel: 1,
-            toggleButton: true
+            toggleButton: false
           }}
           footer={
             <Footer>

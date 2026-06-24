@@ -9,6 +9,7 @@ import { Placeholder } from './components/Placeholder'
 import { Hero } from './components/Hero'
 import { CrewJourney } from './components/CrewJourney'
 import { CrewVoices } from './components/CrewVoices'
+import { CrewVoiceMap } from './components/CrewVoiceMap'
 import { BookNote } from './components/BookNote'
 import { EnterDocs } from './components/EnterDocs'
 import { RecentUpdates } from './components/RecentUpdates'
@@ -40,6 +41,7 @@ export function useMDXComponents(components?: Record<string, React.FC>) {
     Hero,
     CrewJourney,
     CrewVoices,
+    CrewVoiceMap,
     BookNote,
     EnterDocs,
     RecentUpdates,

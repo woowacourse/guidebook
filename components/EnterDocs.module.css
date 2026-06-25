@@ -58,8 +58,8 @@
 
 .door:hover {
   transform: translateY(-2px);
-  border-color: rgba(55, 53, 47, 0.4);
-  box-shadow: 0 6px 20px rgba(55, 53, 47, 0.08);
+  border-color: rgba(214, 104, 48, 0.45);
+  box-shadow: 0 8px 24px rgba(214, 104, 48, 0.14);
 }
 
 :global(.dark) .door {
@@ -68,14 +68,36 @@
 }
 
 :global(.dark) .door:hover {
-  border-color: rgba(255, 255, 255, 0.45);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  border-color: rgba(240, 165, 112, 0.5);
+  box-shadow: 0 8px 24px rgba(240, 165, 112, 0.16);
 }
 
+/* 아이콘 — 따뜻한 오렌지 chip 배지로 감싸 팔레트와 묶고 '버튼'처럼 보이게 */
 .icon {
-  font-size: 1.7rem;
+  font-size: 1.45rem;
   line-height: 1;
   flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.9rem;
+  height: 2.9rem;
+  border-radius: 12px;
+  background: rgba(214, 104, 48, 0.1);
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.door:hover .icon {
+  background: rgba(214, 104, 48, 0.16);
+  transform: scale(1.04);
+}
+
+:global(.dark) .icon {
+  background: rgba(240, 165, 112, 0.14);
+}
+
+:global(.dark) .door:hover .icon {
+  background: rgba(240, 165, 112, 0.2);
 }
 
 .doorBody {
@@ -115,7 +137,7 @@
 
 .door:hover .arrow {
   transform: translateX(3px);
-  color: rgb(55, 53, 47);
+  color: rgb(214, 104, 48);
 }
 
 :global(.dark) .arrow {
@@ -123,7 +145,7 @@
 }
 
 :global(.dark) .door:hover .arrow {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgb(240, 165, 112);
 }
 
 @media (max-width: 640px) {

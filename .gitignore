@@ -20,6 +20,12 @@ public/_pagefind/
 .claude/settings.local.json
 .omc/
 
+# 디버그용 랜딩 스크린샷 (루트에 임시 저장) — 자동 커밋 메커니즘이 잡지 않도록 루트만 한정
+/landing-*.png
+/hero-*.png
+/crewjourney-*.png
+/bottom-*.png
+
 # woowacourse org research pipeline — 분석 노트·배치 로그는 재생성 가능하므로 gitignore
 # repo-scores.tsv 와 _index.json 은 커밋한다 (autoresearch의 results.tsv 역할)
 .research/repos/

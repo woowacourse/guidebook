@@ -50,29 +50,16 @@
   margin: 1.75rem auto 0;
 }
 
-/* 바깥 궤도 — 또렷한 얇은 링 */
+/* 궤도 — 단 하나의 또렷한 얇은 링. 노드 타원(RX44/RY39)에 맞춰 각 노드가 링 바로 바깥을 균일하게 돈다 */
 .ring {
   position: absolute;
-  inset: 15% 3%;
-  border: 1.5px solid rgba(55, 53, 47, 0.16);
-  border-radius: 50%;
-}
-
-/* 안쪽 궤도 — 희미한 점선으로 '궤도계' 깊이를 만든다 */
-.ring::after {
-  content: '';
-  position: absolute;
-  inset: 12%;
-  border: 1px dashed rgba(214, 104, 48, 0.22);
+  inset: 13% 7%;
+  border: 1.5px solid rgba(55, 53, 47, 0.18);
   border-radius: 50%;
 }
 
 :global(.dark) .ring {
-  border-color: rgba(255, 255, 255, 0.16);
-}
-
-:global(.dark) .ring::after {
-  border-color: rgba(240, 165, 112, 0.24);
+  border-color: rgba(255, 255, 255, 0.18);
 }
 
 .core {

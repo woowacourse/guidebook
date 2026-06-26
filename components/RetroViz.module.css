@@ -1,0 +1,168 @@
+/* RetroViz — 회고 형식 키트 인라인 시각화.
+   Mermaid 'neutral' 톤에 맞춘 중립 회색 + 구글블루 액센트(#4285f4). */
+
+.scale,
+.ratio {
+  margin: 1.5rem 0;
+  padding: 1.15rem 1.35rem;
+  border: 1px solid rgba(55, 53, 47, 0.12);
+  border-radius: 12px;
+  background: rgba(55, 53, 47, 0.016);
+}
+
+/* ===== ScoreScale (구글폼식 0~N점) ===== */
+.scaleQ {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.15rem;
+  word-break: keep-all;
+}
+
+.scaleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 0.2rem;
+}
+
+.scalePoint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.32rem;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.scaleName {
+  font-size: 0.68rem;
+  font-weight: 700;
+  height: 1rem;
+  line-height: 1rem;
+  white-space: nowrap;
+  color: #2d5bd9;
+}
+
+.dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid rgba(55, 53, 47, 0.3);
+  background: transparent;
+}
+
+.dotOn {
+  border-color: #4285f4;
+  background: #4285f4;
+  box-shadow: 0 0 0 4px rgba(66, 133, 244, 0.15);
+}
+
+.scaleNum {
+  font-size: 0.72rem;
+  color: rgba(55, 53, 47, 0.6);
+}
+
+.scaleEnds {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.55rem;
+  font-size: 0.72rem;
+  color: rgba(55, 53, 47, 0.55);
+}
+
+/* ===== RatioBars (계획 vs 실제) ===== */
+.ratioItem {
+  padding: 0.55rem 0;
+}
+
+.ratioItem + .ratioItem {
+  border-top: 1px solid rgba(55, 53, 47, 0.06);
+}
+
+.ratioLabel {
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.ratioRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.22rem 0;
+}
+
+.ratioCat {
+  flex: 0 0 2.4rem;
+  font-size: 0.72rem;
+  color: rgba(55, 53, 47, 0.6);
+}
+
+.ratioBarWrap {
+  flex: 1 1 auto;
+  height: 10px;
+  border-radius: 5px;
+  background: rgba(55, 53, 47, 0.08);
+  overflow: hidden;
+}
+
+.ratioFill {
+  height: 100%;
+  border-radius: 5px;
+}
+
+.ratioFillPlanned {
+  background: rgba(55, 53, 47, 0.28);
+}
+
+.ratioFillActual {
+  background: #4285f4;
+}
+
+.ratioVal {
+  flex: 0 0 1.8rem;
+  text-align: right;
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: rgba(55, 53, 47, 0.7);
+}
+
+/* ===== 다크모드 ===== */
+:global(.dark) .scale,
+:global(.dark) .ratio {
+  background: rgba(255, 255, 255, 0.02);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+:global(.dark) .scaleNum,
+:global(.dark) .scaleEnds,
+:global(.dark) .ratioCat {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+:global(.dark) .ratioVal {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+:global(.dark) .scaleName {
+  color: #7aa7ff;
+}
+
+:global(.dark) .dot {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+:global(.dark) .ratioBarWrap {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+:global(.dark) .ratioFillPlanned {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+:global(.dark) .dotOn,
+:global(.dark) .ratioFillActual {
+  background: #5b9bff;
+  border-color: #5b9bff;
+}

@@ -30,6 +30,7 @@ import { NoticeList } from './components/NoticeList'
 import { Embed } from './components/Embed'
 import { FaqList } from './components/FaqList'
 import { CopyField } from './components/CopyField'
+import { ScoreScale, RatioBars } from './components/RetroViz'
 
 const docsComponents = getDocsMDXComponents()
 
@@ -68,6 +69,8 @@ export function useMDXComponents(components?: Record<string, React.FC>) {
     Embed,
     FaqList,
     CopyField,
+    ScoreScale,
+    RatioBars,
     ...components
   }
 }

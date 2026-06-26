@@ -8,6 +8,7 @@ docs/plans/pr-data/
 .playwright-mcp/
 .temp/
 .worktrees/
+.claude/worktrees/
 .inbox/
 .superpowers/
 

@@ -1,15 +1,15 @@
-/* CrewVoiceMap — "크루들이 가장 많이 한 말" : 항상 어두운 '밤하늘' 밴드 패널.
-   흰 섹션들 사이의 어두운 밴드로 스크롤 리듬을 만들고, 별 메타포를 강화한다.
-   테마 무관 night-default (라이트/다크 모두 어두운 패널). 액센트는 따뜻한 오렌지. */
+/* CrewVoiceMap — "크루들이 가장 많이 한 말" : 뷰포트 끝까지 펼친 '밤하늘' 풀블리드 밴드.
+   흰 섹션들 사이에 박힌 어두운 챕터로 스크롤 리듬을 만들고, 별 메타포를 강화한다.
+   둥근 카드가 아니라 의도된 밴드 — 떠 있는 위젯이 아니라 페이지에 박힌 한 장면이다.
+   테마 무관 night-default (라이트/다크 모두 어두운 밴드). 액센트는 따뜻한 오렌지. */
 .section {
-  max-width: 58rem;
-  margin: 3.75rem auto;
-  padding: 3.25rem 1.5rem 2.25rem;
+  /* 풀블리드 — 가운데 정렬된 본문 칼럼을 calc(50% - 50vw) 음수 마진으로 좌우 끝까지 확장.
+     (50%=본문 폭 기준, 50vw=뷰포트 기준 → 둘의 차가 칼럼→뷰포트 확장폭) */
+  margin: 5rem calc(50% - 50vw);
+  padding: 5.5rem 1.5rem;
   text-align: center;
-  background: #15141c;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 24px;
-  box-shadow: 0 12px 44px rgba(18, 16, 28, 0.22);
+  /* 차가운 #15141c → 주황 팔레트에 맞춘 따뜻한 플럼-차콜. 위가 살짝 밝아 '지평선'처럼 눈을 들인다. */
+  background: linear-gradient(180deg, #1e1826 0%, #17131e 70%);
 }
 
 .heading {
@@ -195,9 +195,8 @@
 
 @media (max-width: 680px) {
   .section {
-    border-radius: 18px;
-    padding: 2.5rem 1rem 2.25rem;
-    margin: 2rem auto;
+    padding: 3.5rem 1.25rem;
+    margin: 3rem calc(50% - 50vw);
   }
   .field {
     height: auto;

@@ -62,6 +62,13 @@
   box-shadow: 0 8px 24px rgba(214, 104, 48, 0.14);
 }
 
+/* 카드형 링크라 호버에도 텍스트 밑줄을 켜지 않는다.
+   전역 콘텐츠 링크 밑줄 규칙이 호버 시 카드 전체(이모지·화살표 포함)로 관통하는 것을 막는다.
+   `.doors .door:hover`(특이도 0,3,0)로 올려야 그 규칙을 확실히 이긴다. */
+.doors .door:hover {
+  text-decoration: none;
+}
+
 :global(.dark) .door {
   border-color: rgba(255, 255, 255, 0.18);
   background: rgba(255, 255, 255, 0.025);

@@ -8,6 +8,18 @@
   --nextra-primary-saturation: 0%;
   --nextra-primary-lightness: 20%;
 
+  /* ===== 액센트 토큰 (단일 진실 원천) =====
+     문서 컴포넌트의 액센트를 랜딩의 따뜻한 팔레트로 통일한다. 컴포넌트는 이 토큰만
+     참조하고 색을 직접 박지 않는다 — 새 컴포넌트에서 색이 다시 어긋나는 걸 막는다.
+     역할 분리가 핵심: 채움(fill) 위에 글자가 올라가는 것과 페이지 위에 떠 있는
+     글자/마크는 명도 방향이 반대다(특히 다크 모드). */
+  --accent: #d66830;               /* 비텍스트 마크: 점·보더·아이콘·구분선 */
+  --accent-text: #c2410c;          /* 글자·링크 — 흰 배경 대비 4.6:1 (AA ✓) */
+  --accent-soft: #f0a570;          /* 보조 강조·은은한 하이라이트 */
+  --accent-subtle: rgba(214, 104, 48, 0.12); /* 배경 틴트·hover·활성 표시 */
+  --accent-fill: #c2410c;          /* 채움 표면(버튼·활성 칩) 배경 */
+  --accent-on: #ffffff;            /* 채움 위 글자 — 5:1 (AA ✓) */
+
   /* 랜딩 종이 그레인 — 알파를 SVG에 구워 라이트/다크 한 자산으로 */
   --paper-noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='table' tableValues='0 0.05'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");
 }
@@ -16,6 +28,14 @@
   --nextra-primary-hue: 0deg;
   --nextra-primary-saturation: 0%;
   --nextra-primary-lightness: 90%;
+
+  /* 다크 — 글자·마크는 밝은 앰버로 띄우고, 채움은 '선명'(밝은 앰버 + 어두운 글자). */
+  --accent: #f0a570;               /* 점·보더·아이콘은 밝게 */
+  --accent-text: #f0a570;          /* 링크·글자 — 어두운 배경 위 ~8:1 (AA ✓) */
+  --accent-soft: #d66830;
+  --accent-subtle: rgba(240, 165, 112, 0.16);
+  --accent-fill: #f0a570;          /* 선명: 밝은 앰버 채움 */
+  --accent-on: #1a1014;            /* 채움 위 어두운 글자 — ~9:1 (AA ✓) */
 }
 
 html {

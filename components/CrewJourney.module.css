@@ -1,9 +1,29 @@
 /* CrewJourney — "우테코를 넘어 소프트웨어 생태계로" : 행성이 중심 궤도(데스크톱) / 칩(모바일) */
 .section {
+  position: relative;
   max-width: 52rem;
   margin: 0 auto;
   padding: var(--landing-section-y) 1rem;
   text-align: center;
+}
+
+/* 풀블리드 '해질녘' 틴트 — Hero(종이)에서 시작해 아래로 따뜻하게 깊어지고,
+   바로 아래 다크 밴드(밤하늘)로 이음새 없이 내려간다(CrewVoiceMap top margin 0로 직결).
+   본문은 52rem 가운데 정렬 유지, 배경만 calc로 풀블리드. 반투명이라 종이 노이즈가 비친다. */
+.section::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: calc(50% - 50vw);
+  right: calc(50% - 50vw);
+  background: linear-gradient(180deg, rgba(214, 104, 48, 0.05) 0%, rgba(214, 104, 48, 0.11) 100%);
+  pointer-events: none;
+}
+
+:global(.dark) .section::before {
+  background: linear-gradient(180deg, rgba(240, 165, 112, 0.03) 0%, rgba(240, 165, 112, 0.07) 100%);
 }
 
 .heading {

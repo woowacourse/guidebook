@@ -3,9 +3,11 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  /* 첫 화면을 Hero가 차지하고 콘텐츠는 수직 중앙 — 아래 dusk 틴트는 살짝만 보이는 스크롤 단서로 내려간다 */
+  justify-content: center;
   align-items: center;
   text-align: center;
+  min-height: 85vh;
   /* 상하 대칭 — 공통 섹션 리듬 토큰. (별 위 여백은 .inner padding-top이 따로 담당) */
   padding: var(--landing-section-y) 0;
 }

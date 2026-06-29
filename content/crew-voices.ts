@@ -21,6 +21,9 @@ export interface CrewTheme {
   quote: string
 }
 
+/** 지금까지 우테코를 수료한 누적 크루 수. CrewJourney 궤도와 CrewVoiceMap 서브텍스트가 공유한다 */
+export const crewCount = 735
+
 /** 빈도 내림차순으로 둔다. 맵은 이 순서와 count로 크기·위계를 만든다 */
 export const crewThemes: CrewTheme[] = [
   {

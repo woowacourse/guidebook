@@ -11,6 +11,7 @@ import { CrewJourney } from './components/CrewJourney'
 import { CrewVoices } from './components/CrewVoices'
 import { CrewVoiceMap } from './components/CrewVoiceMap'
 import { BookNote } from './components/BookNote'
+import { Reveal } from './components/Reveal'
 import { EnterDocs } from './components/EnterDocs'
 import { RecentUpdates } from './components/RecentUpdates'
 import { LogList } from './components/LogList'
@@ -51,6 +52,7 @@ export function useMDXComponents(components?: Record<string, React.FC>) {
     CrewVoiceMap,
     BookNote,
     EnterDocs,
+    Reveal,
     RecentUpdates,
     LogList,
     Mermaid,

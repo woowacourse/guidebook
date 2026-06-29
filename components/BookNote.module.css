@@ -1,8 +1,8 @@
 /* BookNote — 랜딩 맨 아래 조용한 한 줄. CTA가 아니라 여운 */
-/* 랜딩 맨 아래 여운. P1: 페이지가 글자 직후 뚝 끊기지 않도록 하단 여백을 더해 당당히 닫는다. */
+/* 랜딩 맨 아래 여운. 상하 대칭 — 공통 섹션 리듬 토큰으로 다른 섹션과 동일한 간격을 유지한다. */
 .note {
   max-width: 34rem;
-  margin: 3.5rem auto 4.5rem;
+  margin: var(--landing-section-y) auto;
   padding: 0 1rem;
   text-align: center;
   font-size: 0.88rem;

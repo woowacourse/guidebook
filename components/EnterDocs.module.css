@@ -1,10 +1,10 @@
 /* EnterDocs — 랜딩의 닫는 초대. 증거 다음에 문서로 들어가는 두 입구를 연다 */
-/* 다크 밴드 직후의 '클로징 초대'. P1: 거대한 밴드를 빠져나온 눈이 회복할 상단 여백을
-   넉넉히 주고(3.75→5.5rem), 페이지가 옹색하게 끝나지 않도록 하단도 키운다(1→2rem). */
+/* 다크 밴드 직후의 '클로징 초대'. 상하 대칭 — 공통 섹션 리듬 토큰.
+   밴드를 빠져나온 회복 공간은 균일 간격(2× 토큰)이 다른 섹션과 동일하게 제공한다. */
 .section {
   max-width: 44rem;
   margin: 0 auto;
-  padding: 5.5rem 1rem 2rem;
+  padding: var(--landing-section-y) 1rem;
   text-align: center;
 }
 
@@ -158,9 +158,6 @@
 }
 
 @media (max-width: 640px) {
-  .section {
-    padding: 4rem 1rem 1.5rem;
-  }
   .doors {
     flex-direction: column;
     align-items: stretch;

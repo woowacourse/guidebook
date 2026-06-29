@@ -5,8 +5,8 @@
 .section {
   /* 풀블리드 — 가운데 정렬된 본문 칼럼을 calc(50% - 50vw) 음수 마진으로 좌우 끝까지 확장.
      (50%=본문 폭 기준, 50vw=뷰포트 기준 → 둘의 차가 칼럼→뷰포트 확장폭) */
-  margin: 5rem calc(50% - 50vw);
-  padding: 5.5rem 1.5rem;
+  margin: var(--landing-section-y) calc(50% - 50vw);
+  padding: var(--landing-section-y) 1.5rem;
   text-align: center;
   /* 차가운 #15141c → 주황 팔레트에 맞춘 따뜻한 플럼-차콜. 위가 살짝 밝아 '지평선'처럼 눈을 들인다. */
   background: linear-gradient(180deg, #1e1826 0%, #17131e 70%);
@@ -195,8 +195,8 @@
 
 @media (max-width: 680px) {
   .section {
-    padding: 3.5rem 1.25rem;
-    margin: 3rem calc(50% - 50vw);
+    padding: var(--landing-section-y) 1.25rem;
+    margin: var(--landing-section-y) calc(50% - 50vw);
   }
   .field {
     height: auto;

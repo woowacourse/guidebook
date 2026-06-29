@@ -214,6 +214,13 @@ aside a {
   --nextra-content-width: 85rem;
 }
 
+/* 랜딩 섹션 수직 리듬 — 모든 섹션이 같은 상/하 여백을 공유한다(일관된 스크롤 간격).
+   각 섹션의 상하 패딩(다크 밴드는 상하 마진)을 이 토큰 하나로 통일 → 섹션 간 간격 = 2× 이 값.
+   clamp로 한 값에서 반응형까지 처리 → 컴포넌트별 모바일 세로 패딩 오버라이드가 불필요해진다. */
+:root {
+  --landing-section-y: clamp(3.25rem, 6vw, 5rem);
+}
+
 /* 랜딩 페이지 — Nextra 기본 패딩 제거 후 콘텐츠 중앙 정렬 */
 div.nextra-body-typesetting-article:has([data-landing-hero]) {
   padding-left: 1rem;

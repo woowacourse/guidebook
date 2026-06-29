@@ -1,30 +1,9 @@
 /* CrewJourney — "우테코를 넘어 소프트웨어 생태계로" : 행성이 중심 궤도(데스크톱) / 칩(모바일) */
 .section {
-  position: relative;
   max-width: 52rem;
   margin: 0 auto;
-  padding: 5rem 1rem 3.75rem;
+  padding: var(--landing-section-y) 1rem;
   text-align: center;
-}
-
-/* 풀블리드 따뜻한 틴트 — Hero(종이)와 CrewVoiceMap(밤하늘) 사이의 '해질녘' 패널.
-   흑백 교대 대신 저진폭 톤 변주로 장면을 분리한다. 아래로 갈수록 깊어져 다크 밴드로 자연스럽게 내려간다.
-   본문은 52rem 가운데 정렬을 유지하고 배경만 뷰포트 끝까지 펼친다(CrewVoiceMap과 같은 calc 기법).
-   반투명이라 종이 노이즈 텍스처가 비쳐 통일감을 유지한다. */
-.section::before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: calc(50% - 50vw);
-  right: calc(50% - 50vw);
-  background: linear-gradient(180deg, rgba(214, 104, 48, 0.05) 0%, rgba(214, 104, 48, 0.11) 100%);
-  pointer-events: none;
-}
-
-:global(.dark) .section::before {
-  background: linear-gradient(180deg, rgba(240, 165, 112, 0.03) 0%, rgba(240, 165, 112, 0.07) 100%);
 }
 
 .heading {

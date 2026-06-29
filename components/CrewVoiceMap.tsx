@@ -6,7 +6,7 @@ import { crewThemes, crewThemesAreExample } from '../content/crew-voices'
 import { Eyebrow } from './Eyebrow'
 
 /**
- * CrewVoiceMap — "크루들이 가장 많이 한 말"을 손그림 별무리로.
+ * CrewVoiceMap — "수료하는 크루들이 마지막으로 남긴 말"을 손그림 별무리로.
  * 크루의 말 = 별(크기=빈도). Hero의 손그림 별(StarMark)과 같은 모양을 쓴다.
  * 억지 연결선 대신 따뜻한 광원 + 희미한 잔별로 밤하늘 분위기를 만든다.
  * 호버/포커스/탭하면 대표 문장이 아래 캡션에 뜬다. 데이터: content/crew-voices.ts
@@ -70,9 +70,9 @@ export function CrewVoiceMap() {
   const starPx = (count: number) => Math.round(22 + Math.sqrt((count - min) / (max - min || 1)) * 34)
 
   return (
-    <section className={styles.section} aria-label="크루들이 가장 많이 한 말">
+    <section className={styles.section} aria-label="수료하는 크루들이 마지막으로 남긴 말">
       <Eyebrow>크루의 목소리</Eyebrow>
-      <h2 className={styles.heading}>크루들이 가장 많이 한 말</h2>
+      <h2 className={styles.heading}>수료하는 크루들이 마지막으로 남긴 말을 모아봤습니다</h2>
       <p className={styles.sub}>
         자주 나온 말일수록 큰 별이 됩니다
         {crewThemesAreExample && <span className={styles.tag}>예시 미리보기</span>}

@@ -161,6 +161,13 @@
 }
 
 .quote {
+  /* 호버로 인용문이 1줄↔2줄로 바뀌어도 캡션 높이가 출렁이지 않게,
+     2줄 분량(line-height 1.65 × 2)을 미리 확보하고 그 안에서 세로 중앙 정렬한다.
+     → 짧은 문장은 빈 공간 위에 가운데 떠 있고, 박스 높이는 항상 일정하다. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.3em;
   margin: 0;
   padding: 0;
   border: 0;

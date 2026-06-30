@@ -41,6 +41,9 @@
 
 .sub {
   font-size: 0.95rem;
+  /* Nextra article p의 line-height(≈32px, ratio 2.1)는 작은 sub엔 너무 느슨해 가독성이 떨어진다.
+     프레임워크 prose 규칙을 이기려면 !important가 필요(이 repo의 Nextra 오버라이드 관례). */
+  line-height: 1.5 !important;
   color: rgba(255, 255, 255, 0.58);
   max-width: 30rem;
   margin: 0 auto;

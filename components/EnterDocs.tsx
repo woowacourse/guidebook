@@ -24,9 +24,9 @@ const DOORS = [
 export function EnterDocs() {
   return (
     <section className={styles.section} aria-label="문서로 들어가는 입구">
-      <h2 className={styles.heading}>이제 직접 들여다볼 차례입니다</h2>
+      <h2 className={styles.heading}>이런 교육엔 어떤 생각과 실험이 있었을까요</h2>
       <p className={styles.lede}>
-        왜 이렇게 가르치는지 이해하거나, 오늘 할 수 있는 것부터 적용하거나 — 우테코의 교육을 직접 살펴볼 수 있습니다.
+        동료와 함께 이런 영향력을 키워 온 교육에는, 수많은 생각과 실험과 도전이 있었습니다. 이해하기와 적용하기로 직접 살펴볼 수 있습니다.
       </p>
 
       <div className={styles.doors}>

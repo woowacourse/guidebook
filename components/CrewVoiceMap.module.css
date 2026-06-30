@@ -1,4 +1,4 @@
-/* CrewVoiceMap — "크루들이 가장 많이 한 말" : 항상 어두운 '밤하늘' 밴드 패널.
+/* CrewVoiceMap — "크루들이 가장 많이 남긴 메시지" : 항상 어두운 '밤하늘' 밴드 패널.
    흰 섹션들 사이의 어두운 밴드로 스크롤 리듬을 만들고, 별 메타포를 강화한다.
    테마 무관 night-default (라이트/다크 모두 어두운 패널). 액센트는 따뜻한 오렌지. */
 .section {
@@ -226,6 +226,24 @@
   font-size: 0.8rem;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.5);
+}
+
+/* 닫는 한마디 — 별무리가 가리키는 결론. 동료 → 선한 영향력으로 잇고 다음 섹션(문서 입구)으로 넘긴다.
+   '선한 영향력'은 Hero의 액센트와 같은 따뜻한 오렌지로 강조해 수미상관을 만든다. */
+.close {
+  max-width: 32rem;
+  margin: 1.75rem auto 0;
+  font-size: 1.02rem;
+  line-height: 1.7;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.86);
+  word-break: keep-all;
+  text-wrap: pretty;
+}
+
+.close strong {
+  color: rgb(240, 165, 112);
+  font-weight: 700;
 }
 
 .more {

@@ -2,11 +2,11 @@
 
 import { useState } from 'react'
 import styles from './CrewVoiceMap.module.css'
-import { crewThemes, crewThemesAreExample } from '../content/crew-voices'
+import { crewThemes, crewThemesAreExample, crewCount } from '../content/crew-voices'
 import { Eyebrow } from './Eyebrow'
 
 /**
- * CrewVoiceMap — "크루들이 가장 많이 한 말"을 손그림 별무리로.
+ * CrewVoiceMap — "크루들이 가장 많이 남긴 메시지"를 손그림 별무리로.
  * 크루의 말 = 별(크기=빈도). Hero의 손그림 별(StarMark)과 같은 모양을 쓴다.
  * 억지 연결선 대신 따뜻한 광원 + 희미한 잔별로 밤하늘 분위기를 만든다.
  * 호버/포커스/탭하면 대표 문장이 아래 캡션에 뜬다. 데이터: content/crew-voices.ts
@@ -65,12 +65,12 @@ export function CrewVoiceMap({ bleed = false }: { bleed?: boolean }) {
   return (
     <section
       className={bleed ? `${styles.section} ${styles.bleed}` : styles.section}
-      aria-label="크루들이 가장 많이 한 말"
+      aria-label="크루들이 가장 많이 남긴 메시지"
     >
       <Eyebrow>크루의 목소리</Eyebrow>
-      <h2 className={styles.heading}>크루들이 가장 많이 한 말</h2>
+      <h2 className={styles.heading}>크루들이 가장 많이 남긴 메시지</h2>
       <p className={styles.sub}>
-        앞서 본 크루들이 우테코를 수료하며 남긴 메시지입니다. 그 안에서 가장 자주 나온 말일수록 큰 별이 됩니다.
+        앞서 본 {crewCount}명이 우테코를 수료하며 남긴 메시지를, 가장 자주 나온 키워드별로 별자리로 그렸습니다. 가장 크게 남은 건 강의도, 코치도, 시설도 아닌 — 함께 자란 동료였습니다.
         {crewThemesAreExample && <span className={styles.tag}>예시 미리보기</span>}
       </p>
 
@@ -114,6 +114,10 @@ export function CrewVoiceMap({ bleed = false }: { bleed?: boolean }) {
           </figcaption>
         </figure>
       )}
+
+      <p className={styles.close}>
+        이 동료들과 함께, 더 큰 <strong>선한 영향력</strong>을 펼쳐나가기를 바랍니다.
+      </p>
 
       <p className={styles.more}>
         <a href="/education/conversations/crew-voices">크루의 목소리 전체 보기 →</a>

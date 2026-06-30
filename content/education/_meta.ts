@@ -18,7 +18,9 @@ export default {
   start: '🚀 시작하기',
   'design-poe': '🔭 발견 학습 설계하기',
   tools: '🛠️ 검증된 도구',
-  '--meta': { type: 'separator', title: '이 문서에 대해', display: 'hidden' },
+  // '이 문서에 대해' 섹션은 사이드바에서 통째로 숨긴다. separator 항목은
+  // display를 지원하지 않으므로(Nextra strictObject) 구분선 줄을 제거하고,
+  // 아래 항목들은 각각 display: 'hidden'으로 숨긴 채 라우팅만 유지한다.
   'how-its-made': { title: '🏗️ 문서가 만들어지는 법', display: 'hidden' },
   logs: { title: `실험 로그 (${logs.length})`, display: 'hidden' },
   conversations: {

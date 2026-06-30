@@ -1,10 +1,10 @@
 export default {
   index: '개요',
-  'poe-discovery-learning': 'POE 발견 학습',
-  'self-diagnostic-framework': '자기 진단 프레임워크',
-  'progressive-scaffolding': '점진적 스캐폴딩',
-  'argumentation-based-learning': '논증 기반 학습 설계',
-  'mission-learning-accumulation': '누적 학습 모델',
+  'poe-discovery-learning': '먼저 답하게 하기',
+  'self-diagnostic-framework': '스스로 진단하는 기준',
+  'progressive-scaffolding': '여러 번 나눠 가르치기',
+  'argumentation-based-learning': '맞히기 말고 설명하기',
+  'mission-learning-accumulation': '미션은 매년 쌓인다',
   // 아래 패턴들은 페이지·라우팅은 유지하되 사이드바에서만 숨긴다.
   // 교육 철학이 '근거 →'로 직접 인용하는 5개만 우선 공개하고,
   // 나머지는 한 페이지씩 다듬어 순차 공개한다.

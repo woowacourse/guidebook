@@ -50,20 +50,17 @@ const PROMOTION: Rubric = {
 
 const RUBRICS: Record<'quality' | 'promotion', Rubric> = { quality: QUALITY, promotion: PROMOTION }
 
-// 아래(원재료) → 위(일반화)로 승격되는 흐름. 게이트(루브릭)는 단계 사이의 필터.
+// 아래(원재료) → 위(일반화)로 승격되는 흐름. 게이트(루브릭)는 단계 사이의 필터 — 화살표 라벨로 표현.
 const PIPELINE = `
 flowchart BT
     L["📝 실험 로그"]
-    Q{"🔍 품질 루브릭 · 16/25 통과"}
     M["🛠️ 검증된 도구 · 패턴"]
-    P{"🔍 승격 루브릭 · 16/20 통과"}
     T["📐 커리큘럼 · 철학"]
-    L --> Q --> M --> P --> T
+    L -->|"🔍 품질 16/25 통과"| M
+    M -->|"🔍 승격 16/20 통과"| T
     style L fill:#f0f4ff,stroke:#4285f4
     style M fill:#eef3ed,stroke:#2f9e6b
     style T fill:#fff0f0,stroke:#c4554d
-    style Q fill:#fff8e8,stroke:#d9a441
-    style P fill:#fff8e8,stroke:#d9a441
 `
 
 const GATES: Array<'quality' | 'promotion'> = ['quality', 'promotion']

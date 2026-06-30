@@ -18,8 +18,8 @@ export default {
   start: '🚀 시작하기',
   'design-poe': '🔭 발견 학습 설계하기',
   tools: '🛠️ 검증된 도구',
-  '--meta': { type: 'separator', title: '이 문서에 대해' },
-  'how-its-made': '🏗️ 문서가 만들어지는 법',
+  '--meta': { type: 'separator', title: '이 문서에 대해', display: 'hidden' },
+  'how-its-made': { title: '🏗️ 문서가 만들어지는 법', display: 'hidden' },
   logs: { title: `실험 로그 (${logs.length})`, display: 'hidden' },
   conversations: {
     title: '🗂️ 우테코 콘텐츠 아카이브',

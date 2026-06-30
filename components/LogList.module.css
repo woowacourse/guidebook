@@ -64,9 +64,9 @@
 }
 
 .subtabActive {
-  background: #e5eefc;
-  border-color: #8fb1eb;
-  color: #17345f;
+  background: var(--accent-subtle);
+  border-color: var(--accent-soft);
+  color: var(--accent-text);
 }
 
 .list {
@@ -169,13 +169,6 @@
   background: #f9fafb;
   border-color: #f9fafb;
   color: #111827;
-}
-
-[data-theme='dark'] .subtabActive,
-:global(.dark) .subtabActive {
-  background: #1d3352;
-  border-color: #4d74b0;
-  color: #dbeafe;
 }
 
 [data-theme='dark'] .item:hover,

@@ -84,8 +84,8 @@
   font-size: 0.7rem;
   padding: 2px 6px;
   border-radius: 4px;
-  background: #eef2ff;
-  color: #4338ca;
+  background: var(--accent-subtle);
+  color: var(--accent-text);
   font-weight: 600;
 }
 
@@ -139,12 +139,6 @@
 :global(.dark) .category {
   background: #1f2937;
   color: #9ca3af;
-}
-
-[data-theme="dark"] .tier,
-:global(.dark) .tier {
-  background: #312e81;
-  color: #c7d2fe;
 }
 
 [data-theme="dark"] .title,

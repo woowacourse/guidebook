@@ -42,12 +42,18 @@
   white-space: nowrap;
 }
 
-/* 별무리 판 */
+/* 별무리 판 — 흐름(flow) 배치: 빈도순으로 흩뿌리되 버튼(클릭영역)이 겹치지 않는다.
+   각 별은 자기 박스만큼만 자리를 차지하고, 살짝 위아래로 띄워 별무리 느낌을 낸다. */
 .field {
   position: relative;
-  height: 320px;
-  max-width: 600px;
+  max-width: 620px;
   margin: 1.5rem auto 0;
+  padding: 1.75rem 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem 1.7rem;
 }
 
 /* 따뜻한 광원 — 밤하늘 속 따뜻한 빛 */
@@ -77,20 +83,19 @@
   pointer-events: none;
 }
 
-/* 말=별 */
+/* 말=별 — 흐름 아이템. 별 글리프·라벨·숫자를 세로로 쌓고 좌표가 아니라 흐름으로 배치된다 */
 .star {
-  position: absolute;
-  transform: translate(-50%, -50%);
+  position: relative;
   z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.28rem;
+  gap: 0.3rem;
   background: none;
   border: 0;
   cursor: pointer;
   font-family: inherit;
-  padding: 0.2rem;
+  padding: 0.3rem 0.45rem;
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -202,12 +207,7 @@
     margin: 2rem auto;
   }
   .field {
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 0.8rem 1.3rem;
+    gap: 1rem 1.2rem;
     max-width: 30rem;
     padding: 0.5rem 0;
   }
@@ -216,7 +216,6 @@
     display: none;
   }
   .star {
-    position: static;
-    transform: none;
+    transform: none !important;
   }
 }

@@ -8,10 +8,12 @@ export default {
       typesetting: 'article'
     }
   },
-  'clean-language-mentoring': '클린 랭귀지 상호 멘토링',
-  'research-cycle-workflow': '연구 사이클 워크플로우',
-  'rendering-strategy-workshop': '렌더링 전략 결정 워크숍',
-  'mission-repo-analysis-workflow': '미션 저장소 PR 데이터 분석',
+  // 일단 아래 3개(회고 형식·연극 온보딩·AI 협업 미션)만 노출.
+  // 나머지는 display:'hidden'으로 사이드바에서만 숨김 — 라우트·파일은 유지(직접 URL 접근 가능).
+  'clean-language-mentoring': { title: '클린 랭귀지 상호 멘토링', display: 'hidden' },
+  'research-cycle-workflow': { title: '연구 사이클 워크플로우', display: 'hidden' },
+  'rendering-strategy-workshop': { title: '렌더링 전략 결정 워크숍', display: 'hidden' },
+  'mission-repo-analysis-workflow': { title: '미션 저장소 PR 데이터 분석', display: 'hidden' },
   'retrospective-format-kit': '회고 형식 설계 키트',
   'drama-onboarding-kit': '연극 온보딩 설계 키트',
   'ai-collaboration-mission-kit': 'AI 협업 미션 설계 키트'

@@ -1,4 +1,4 @@
-import { Footer, Layout, Navbar, ThemeSwitch } from 'nextra-theme-docs'
+import { Footer, LastUpdated, Layout, Navbar, ThemeSwitch } from 'nextra-theme-docs'
 import { Head, Search } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import 'nextra-theme-docs/style.css'
@@ -41,7 +41,13 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           docsRepositoryBase="https://github.com/woowacourse/2026-okr/tree/main/docs-site"
           copyPageButton={false}
           editLink={null}
-          feedback={{ link: 'https://github.com/woowacourse/guidebook/issues/new?labels=feedback' }}
+          feedback={{
+            content: '피드백 보내기',
+            link: 'https://github.com/woowacourse/guidebook/issues/new?labels=feedback'
+          }}
+          toc={{ title: '목차', backToTop: '맨 위로' }}
+          themeSwitch={{ light: '라이트 모드', dark: '다크 모드', system: '시스템 설정' }}
+          lastUpdated={<LastUpdated locale="ko">마지막 수정일</LastUpdated>}
           sidebar={{
             defaultMenuCollapseLevel: 1,
             toggleButton: false

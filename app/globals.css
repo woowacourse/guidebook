@@ -287,11 +287,11 @@ button[title="Change theme"]:not(.theme-switch-navbar) {
 /* ===== 헤더 검색창 너비 =====
    Nextra 기본값은 md:w-64(16rem)인데, 메뉴 링크가 없는 이 네비바에서는
    균형을 잡아줄 다른 요소가 없어 검색 pill이 우측을 독차지한다. 검색은 사이드바
-   내비게이션을 보조하는 수단이므로, 사용 빈도에 맞춰 12rem으로 줄여 무게를 낮춘다.
+   내비게이션을 보조하는 수단이므로, 사용 빈도에 맞춰 10rem으로 줄여 무게를 낮춘다.
    (.nextra-search input = specificity 0,1,1 > Tailwind .md:w-64 = 0,1,0 이라 우선됨) */
 @media (min-width: 768px) {
   .nextra-search input {
-    width: 12rem;
+    width: 10rem;
   }
 }
 

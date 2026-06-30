@@ -12,6 +12,18 @@
   box-shadow: 0 12px 44px rgba(18, 16, 28, 0.22);
 }
 
+/* 랜딩 전용(홈 _meta.ts: sidebar·toc false) — 카드 크롬을 벗고 뷰포트 끝까지 펼친 풀폭 밴드.
+   docs 페이지는 .bleed 없이 기본 .section(가운데 둥근 카드)으로 렌더 → 사이드바·TOC와 겹치지 않는다.
+   calc(50% - 50vw) 풀블리드는 본문이 가운데 정렬일 때만 정확 → 사이드바 없는 홈에서만 켠다.
+   .section.bleed 더블클래스라 모바일 @media .section 보다 우선순위가 높아 모든 폭에서 적용된다. */
+.section.bleed {
+  max-width: none;
+  margin: 0 calc(50% - 50vw) var(--landing-section-y);
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
 .heading {
   font-size: clamp(1.5rem, 3.6vw, 2.05rem);
   font-weight: 800;

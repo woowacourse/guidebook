@@ -52,7 +52,7 @@ const SPARKS: Array<[number, number, number]> = [
   [31, 20, 4]
 ]
 
-export function CrewVoiceMap() {
+export function CrewVoiceMap({ bleed = false }: { bleed?: boolean }) {
   const themes = [...crewThemes].sort((a, b) => b.count - a.count)
   const [activeKey, setActiveKey] = useState(themes[0]?.key)
   const active = themes.find((t) => t.key === activeKey) ?? themes[0]
@@ -63,7 +63,10 @@ export function CrewVoiceMap() {
   const starPx = (count: number) => Math.round(22 + Math.sqrt((count - min) / (max - min || 1)) * 34)
 
   return (
-    <section className={styles.section} aria-label="크루들이 가장 많이 한 말">
+    <section
+      className={bleed ? `${styles.section} ${styles.bleed}` : styles.section}
+      aria-label="크루들이 가장 많이 한 말"
+    >
       <Eyebrow>크루의 목소리</Eyebrow>
       <h2 className={styles.heading}>크루들이 가장 많이 한 말</h2>
       <p className={styles.sub}>

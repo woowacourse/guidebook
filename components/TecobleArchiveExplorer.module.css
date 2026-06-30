@@ -1,13 +1,5 @@
 .root {
   margin-top: 1.5rem;
-
-  /* 이 탐색기는 다크 모드 비대응(항상 흰 카드 표면)이다. 액센트 토큰을 라이트 값으로
-     고정해, 다크 모드에서 토큰이 밝은 앰버로 뒤집혀 흰 카드 위 글자 대비가 무너지는 걸
-     막는다. 추후 이 컴포넌트를 다크 대응하면 이 블록을 지우면 된다. */
-  --accent: #d66830;
-  --accent-text: #c2410c;
-  --accent-soft: #f0a570;
-  --accent-subtle: rgba(214, 104, 48, 0.12);
 }
 
 .summaryGrid {
@@ -225,4 +217,69 @@
   .date {
     font-size: 0.86rem;
   }
+}
+
+/* ---------- 다크 모드 ----------
+   하드코딩된 라이트 표면(흰 카드·슬레이트 글자)을 다크 표면 + 흰색 알파 글자로 전환한다.
+   글자 명도 위계(가장 진한 #111827 → 가장 옅은 #64748b)는 알파 단계로 그대로 보존.
+   액센트는 .root의 라이트 고정을 제거했으므로 globals.css 토큰이 자동으로 밝은 앰버로
+   반전된다 — 이제 표면이 어두워 대비가 확보된다. */
+:global(.dark) .summaryCard {
+  background: #1e1e22;
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+:global(.dark) .summaryLabel {
+  color: rgba(255, 255, 255, 0.6);
+}
+:global(.dark) .summaryValue {
+  color: rgba(255, 255, 255, 0.88);
+}
+:global(.dark) .summary {
+  color: rgba(255, 255, 255, 0.65);
+}
+:global(.dark) .controls {
+  background: #17171a;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+:global(.dark) .controlTitle {
+  color: rgba(255, 255, 255, 0.72);
+}
+:global(.dark) .searchInput {
+  background: #1e1e22;
+  border-color: rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.86);
+}
+:global(.dark) .searchInput::placeholder {
+  color: rgba(255, 255, 255, 0.38);
+}
+:global(.dark) .chip {
+  background: #1e1e22;
+  border-color: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.7);
+}
+:global(.dark) .resultMeta {
+  color: rgba(255, 255, 255, 0.6);
+}
+:global(.dark) .card {
+  background: #1e1e22;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+:global(.dark) .index {
+  color: rgba(255, 255, 255, 0.5);
+}
+:global(.dark) .link {
+  color: rgba(255, 255, 255, 0.88);
+}
+:global(.dark) .date {
+  color: rgba(255, 255, 255, 0.5);
+}
+:global(.dark) .metaText {
+  color: rgba(255, 255, 255, 0.6);
+}
+:global(.dark) .excerpt {
+  color: rgba(255, 255, 255, 0.72);
+}
+:global(.dark) .tag {
+  color: rgba(255, 255, 255, 0.55);
 }

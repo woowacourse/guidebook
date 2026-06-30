@@ -12,6 +12,7 @@
     "check:search-index": "node scripts/search/verify-pagefind.mjs",
     "test:llms-txt": "node --test scripts/llms-txt/__tests__/build.test.mjs",
     "lint:tone": "node scripts/style/tone-lint.mjs",
+    "lint:style": "node scripts/style/ai-style-lint.mjs",
     "start": "next start"
   },
   "dependencies": {

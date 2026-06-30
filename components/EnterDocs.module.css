@@ -60,6 +60,7 @@
   transform: translateY(-2px);
   border-color: rgba(214, 104, 48, 0.45);
   box-shadow: 0 8px 24px rgba(214, 104, 48, 0.14);
+  text-decoration: none;
 }
 
 :global(.dark) .door {

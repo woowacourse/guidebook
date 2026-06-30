@@ -21,7 +21,7 @@ function HandStar({ size, rotate, flip }: { size: number; rotate: number; flip: 
     <svg
       className={styles.starSvg}
       width={size}
-      height={Math.round((size * 79) / 73)}
+      height={size}
       viewBox="0 0 73 79"
       aria-hidden="true"
       focusable="false"
@@ -33,12 +33,19 @@ function HandStar({ size, rotate, flip }: { size: number; rotate: number; flip: 
 }
 
 // 별마다 다른 기울기 + 일부 좌우 반전 → 같은 path라도 손그림처럼 제각각 보인다 (결정적)
-const ROT = [-9, 13, -17, 7, 20, -13, 9, -6, 16]
-const FLIP = [1, -1, 1, -1, 1, 1, -1, 1, -1]
+const ROT = [-9, 13, -17, 7, 20, -13, 9]
+const FLIP = [1, -1, 1, -1, 1, 1, -1]
 
-// 흐름(flow) 배치에서 각 별을 조금씩 위아래로 띄워 손그림 별무리 느낌을 준다.
-// transform 시각 효과만 — 클릭영역(버튼 박스)은 그대로라 서로 겹치지 않는다.
-const OFFSET = [-8, 10, -5, 8, -10, 5, -7, 9, -4]
+// 별 위치(%, 빈도 내림차순). 손그림 별무리답게 살짝 흐트러 배치.
+const POS = [
+  [50, 30],
+  [27, 47],
+  [72, 40],
+  [38, 67],
+  [64, 61],
+  [17, 73],
+  [84, 69]
+]
 
 // 배경 잔별 (장식, 빈도와 무관) — 밤하늘 깊이
 const SPARKS: Array<[number, number, number]> = [
@@ -52,7 +59,7 @@ const SPARKS: Array<[number, number, number]> = [
   [31, 20, 4]
 ]
 
-export function CrewVoiceMap({ bleed = false }: { bleed?: boolean }) {
+export function CrewVoiceMap() {
   const themes = [...crewThemes].sort((a, b) => b.count - a.count)
   const [activeKey, setActiveKey] = useState(themes[0]?.key)
   const active = themes.find((t) => t.key === activeKey) ?? themes[0]
@@ -63,14 +70,11 @@ export function CrewVoiceMap({ bleed = false }: { bleed?: boolean }) {
   const starPx = (count: number) => Math.round(22 + Math.sqrt((count - min) / (max - min || 1)) * 34)
 
   return (
-    <section
-      className={bleed ? `${styles.section} ${styles.bleed}` : styles.section}
-      aria-label="크루들이 가장 많이 한 말"
-    >
+    <section className={styles.section} aria-label="크루들이 가장 많이 한 말">
       <Eyebrow>크루의 목소리</Eyebrow>
       <h2 className={styles.heading}>크루들이 가장 많이 한 말</h2>
       <p className={styles.sub}>
-        앞서 본 크루들이 우테코를 수료하며 남긴 메시지입니다. 그 안에서 가장 자주 나온 말일수록 큰 별이 됩니다.
+        자주 나온 말일수록 큰 별이 됩니다
         {crewThemesAreExample && <span className={styles.tag}>예시 미리보기</span>}
       </p>
 
@@ -86,19 +90,20 @@ export function CrewVoiceMap({ bleed = false }: { bleed?: boolean }) {
         ))}
 
         {themes.map((t, i) => {
+          const [x, y] = POS[i] ?? [50, 50]
           const isActive = t.key === active?.key
           return (
             <button
               key={t.key}
               type="button"
               className={isActive ? `${styles.star} ${styles.on}` : styles.star}
-              style={{ transform: `translateY(${OFFSET[i % OFFSET.length]}px)` }}
+              style={{ left: `${x}%`, top: `${y}%` }}
               onMouseEnter={() => setActiveKey(t.key)}
               onFocus={() => setActiveKey(t.key)}
               onClick={() => setActiveKey(t.key)}
               aria-pressed={isActive}
             >
-              <HandStar size={starPx(t.count)} rotate={ROT[i % ROT.length]} flip={FLIP[i % FLIP.length]} />
+              <HandStar size={starPx(t.count)} rotate={ROT[i] ?? 0} flip={FLIP[i] ?? 1} />
               <span className={styles.lab}>{t.label}</span>
               <span className={styles.ct}>{t.count}</span>
             </button>

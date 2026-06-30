@@ -1,6 +1,5 @@
 import styles from './CrewJourney.module.css'
 import { Eyebrow } from './Eyebrow'
-import { crewCount } from '../content/crew-voices'
 
 /**
  * CrewJourney — "우테코를 넘어 소프트웨어 생태계로"
@@ -8,6 +7,8 @@ import { crewCount } from '../content/crew-voices'
  * 데스크톱은 궤도, 모바일(<=680px)은 칩 목록으로 폴백한다.
  * 숫자·회사 목록은 아래 상수만 고치면 갱신된다.
  */
+const CREW_COUNT = 735
+
 const COMPANIES = [
   '우아한형제들',
   '카카오',
@@ -52,7 +53,7 @@ export function CrewJourney() {
       <Eyebrow>크루의 행선지</Eyebrow>
       <h2 className={styles.heading}>우테코를 넘어 소프트웨어 생태계로</h2>
       <p className={styles.lede}>
-        이 문서에 담긴 경험과 문화로 자란 크루 <strong>{crewCount}명</strong>이,
+        이 문서에 담긴 경험과 문화로 자란 크루 <strong>{CREW_COUNT}명</strong>이,
         <br />
         지금 이런 회사들에서 IT 생태계에 영향력을 펼치고 있습니다.
       </p>
@@ -67,7 +68,7 @@ export function CrewJourney() {
         <div className={styles.core}>
           <span className={styles.coreGlow} aria-hidden="true" />
           <img className={styles.planet} src="/images/characters/행성이-걷기.png" alt="" width={104} />
-          <span className={styles.coreN}>{crewCount}명</span>
+          <span className={styles.coreN}>{CREW_COUNT}명</span>
         </div>
         {NODES.map((n) => (
           <span

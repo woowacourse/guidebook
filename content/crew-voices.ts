@@ -3,10 +3,10 @@
 //   crewThemes : 메시지에서 무엇이 "얼마나 자주" 나왔는가 (랜딩 타이포 빈도 맵)
 //   crewVoices : 개별 메시지 원문 (아카이브 전체 인용)
 //
-// 출처: 3·4·5·6·7기 레벨5 "과정 최종 피드백" 설문 422명 응답에서 상향식으로 추출.
-//   원본(익명화)은 비공개 원본 위키(llm-wiki/raw/*-level5-course-final-feedback-*.md)에 보존.
-//   crewThemes.count = 5개 기수 합산, 긍정·성장·추천 컬럼에서 그 주제가 언급된 응답 근사치.
-//   crewVoices.quote = 실제 응답 원문(거의 그대로, 명백한 오타·깨짐만 정리). 작성자는 익명(기수·트랙).
+// 지금 값은 실제 메시지를 받기 전 "예시"입니다 (example: true).
+// 실제 메시지가 쌓이면:
+//   ① crewVoices 에 원문/작성자 채우고 example 줄 삭제
+//   ② crewThemes 의 count 를 실제 빈도로 갱신(주제 태그 집계)
 // ─────────────────────────────────────────────────────────────
 
 /** 메시지에서 반복된 주제 한 묶음 — 랜딩 타이포 빈도 맵의 단위 */
@@ -15,75 +15,60 @@ export interface CrewTheme {
   key: string
   /** 화면에 보일 주제명 (글자 크기로 빈도를 인코딩) */
   label: string
-  /** 이 주제가 언급된 메시지 수 (5개 기수 합산 근사치) */
+  /** 이 주제가 언급된 메시지 수 (현재는 예시값) */
   count: number
   /** 이 주제를 대표하는 크루 문장 — 호버/탭하면 캡션에 뜬다 */
   quote: string
 }
 
-/** 지금까지 우테코를 수료한 누적 크루 수. CrewJourney 궤도와 CrewVoiceMap 서브텍스트가 공유한다 */
-export const crewCount = 735
-
 /** 빈도 내림차순으로 둔다. 맵은 이 순서와 count로 크기·위계를 만든다 */
 export const crewThemes: CrewTheme[] = [
   {
-    key: 'together',
-    label: '함께 자란 동료',
-    count: 300,
-    quote: `개발을 배우러 왔는데 인간의 따뜻함을 느끼고 갑니다. 개발보다 배우기 어려운 좋은 사람이 되는 방법을 우테코에서 조금 알게 된 것 같아요.`,
-  },
-  {
-    key: 'career',
-    label: '취업 실전 특강',
-    count: 218,
-    quote: `이력서, 면접, 재테크 특강 등 유익한 특강이 많아서 좋았어요.`,
-  },
-  {
-    key: 'soft',
-    label: '소프트스킬·협업',
-    count: 199,
-    quote: `소프트스킬이 뭔지도 몰랐었는데 굉장히 큰 도움이 됐습니다.`,
-  },
-  {
-    key: 'autonomy',
-    label: '레벨5의 자율',
-    count: 150,
-    quote: `레벨1~4까지는 지식을 주워담았다면, 레벨5가 되어서야 그 지식을 소화할 수 있었습니다. 레벨5 특유의 자유로움이 너무 좋았어요!`,
-  },
-  {
-    key: 'learning',
-    label: '자기주도 학습',
-    count: 133,
-    quote: `공부하는 방법을 알고 실천하는 힘을 얻었습니다. 어떤 방식이 제게 잘 맞는지 알게 되어 더 자신있게 실천할 수 있었어요.`,
-  },
-  {
-    key: 'why',
-    label: `'왜'를 묻는 사고`,
+    key: 'growth',
+    label: '성장·자기효능감',
     count: 124,
-    quote: `개발에 대한 자아를 만들어줬습니다. 그저 좋다고 해서 하는 것이 아닌 '왜?'를 계속 물어봐주어 능동적인 개발자가 될 수 있었습니다.`,
+    quote: '매주 쌓인 작은 완성이 "나도 만든다"는 확신이 됐어요.',
   },
   {
-    key: 'coach',
-    label: '코치·원온원',
-    count: 84,
-    quote: `코치분들이 결론을 내주시지 않고 질문을 통해 제 머릿속을 구체화해주신 게 너무 좋았습니다.`,
+    key: 'together',
+    label: '함께 자라기',
+    count: 96,
+    quote: '혼자였다면 못 갔을 거리를, 동료들과 함께 걸었어요.',
   },
   {
-    key: 'recruiting',
-    label: '리크루팅 데이',
-    count: 60,
-    quote: `막막한 취업시장에 한줄기 빛이 되었달까요. 코치님들이 필터링해주신 기업들 안에서 제 기준에 맞는 기업을 찾을 수 있었습니다.`,
+    key: 'self-directed',
+    label: '자기주도 학습',
+    count: 71,
+    quote: '정답을 안 떠먹여 줘서 답답했는데, 그 답답함이 스스로 배우는 근육이 됐어요.',
   },
   {
-    key: 'confidence',
-    label: '자신감·정체성',
-    count: 50,
-    quote: `개발자를 동경하는 사람에서, 개발자가 될 수 있었습니다.`,
+    key: 'review',
+    label: '질문하는 리뷰',
+    count: 52,
+    quote: '리뷰어의 질문 하나하나가 "왜?"를 멈추지 않게 했어요.',
+  },
+  {
+    key: 'flow',
+    label: '몰입',
+    count: 44,
+    quote: '시간 가는 줄 모르고 붙잡고 있다가, 어느새 어제의 나보다 나아져 있었어요.',
+  },
+  {
+    key: 'safety',
+    label: '심리적 안전감',
+    count: 38,
+    quote: '모른다고 말해도 괜찮은 곳이어서, 처음으로 마음껏 질문했어요.',
+  },
+  {
+    key: 'resilience',
+    label: '회복탄력성',
+    count: 27,
+    quote: '막히면 부끄러워하기보다 먼저 손을 들게 됐어요. 그게 제일 큰 변화예요.',
   },
 ]
 
-/** 표시값이 실측임을 한곳에서 켠다(과거 예시 모드 종료). */
-export const crewThemesAreExample = false
+/** 현재 표시값이 실측이 아니라 예시임을 한곳에서 끈다. 실데이터 도입 시 false */
+export const crewThemesAreExample = true
 
 /** 아카이브 전체 인용에 쓰는 개별 메시지 */
 export interface CrewVoice {
@@ -101,58 +86,42 @@ export interface CrewVoice {
 
 const crewVoices: CrewVoice[] = [
   {
-    quote: `같은 곳을 바라보는 열정적인 동료 100명과 함께한 이 시간을 평생 잊지 못할 것 같아요.`,
-    author: '5기 백엔드 크루',
+    quote:
+      '혼자였다면 못 갔을 거리를 10개월간 동료들과 함께 걸었습니다. 코드보다 먼저 "같이 자라는 법"을 배웠어요.',
+    author: '6기 백엔드 크루',
     theme: 'together',
     recommendsTo: '혼자보다 함께 더 멀리 가고 싶은 분',
+    example: true,
   },
   {
-    quote: `학습하는 법을 배운 게 가장 큰 것 같네요. 코테용 코드밖에 못 짜던 사람이 이제는 무엇이든 만들 자신감이 생겼습니다.`,
-    author: '4기 프론트엔드 크루',
-    theme: 'learning',
-    recommendsTo: '스스로 배우는 힘을 기르고 싶은 분',
-  },
-  {
-    quote: `옛날에는 잘 하는 사람의 코드를 따라가려고만 했는데, 우테코를 수료하고 '내 방식'이라는 게 생겼어요.`,
-    author: '6기 프론트엔드 크루',
-    theme: 'why',
-  },
-  {
-    quote: `자율 출근이어서 시간을 저에게 맞게 더 효율적으로 쓸 수 있었어요.`,
-    author: '7기 백엔드 크루',
-    theme: 'autonomy',
-  },
-  {
-    quote: `현업자이자 선배 개발자이신 코치분들이 전해주는 생생하고 현실적인 취업 준비 팁들이 큰 도움이 됐습니다.`,
-    author: '6기 안드로이드 크루',
-    theme: 'career',
-  },
-  {
-    quote: `소프트 스킬이 많이 늘었어요. 원래 사람들이랑 말도 잘 안했거든요.`,
-    author: '5기 프론트엔드 크루',
-    theme: 'soft',
-  },
-  {
-    quote: `두려움을 떨쳐낼 수 있었어요. 경력 전환, 짧은 기간에 다 배울 수 있을까, 취업시장에서 인정받을 수 있을까 하는 두려움들이 사라졌어요.`,
-    author: '6기 프론트엔드 크루',
-    theme: 'confidence',
-    recommendsTo: '새로운 분야로 도전하는 게 두려운 분',
-  },
-  {
-    quote: `존경하는 사람들과 대화를 통해 더 많은 동기부여와 성장을 할 수 있었던 원온원이 가장 좋았다.`,
+    quote:
+      '정답을 떠먹여 주지 않아 처음엔 답답했는데, 그 답답함이 결국 스스로 학습하는 근육이 됐습니다.',
     author: '7기 프론트엔드 크루',
-    theme: 'coach',
+    theme: 'self-directed',
+    recommendsTo: '스스로 답을 찾는 과정을 즐기는 분',
+    example: true,
   },
   {
-    quote: `리크루팅 데이 때 양질의 회사들이 많이 와서 좋았다. 대기업에만 관심이 있었는데 그들의 비전을 통해 같이 도전해보고 싶다는 생각이 들었다.`,
-    author: '3기 백엔드 크루',
-    theme: 'recruiting',
+    quote:
+      '리뷰어의 질문 하나하나가 "왜?"를 멈추지 않게 했어요. 지금도 PR을 올릴 때 그 질문들이 떠오릅니다.',
+    author: '8기 안드로이드 크루',
+    theme: 'review',
+    example: true,
   },
   {
-    quote: `기술보다 동료가 중요하다는 사실! 잊지 않고 하시면 우테코 기간을 잘 보내실 수 있을 거라 생각합니다.`,
-    author: '4기 프론트엔드 크루',
-    theme: 'together',
-    recommendsTo: '10개월을 어떻게 보낼지 고민인 분',
+    quote:
+      '비전공자로 시작했지만, 매주 쌓이는 작은 완성이 "나도 만들 수 있다"는 확신으로 바뀌었습니다.',
+    author: '7기 백엔드 크루',
+    theme: 'growth',
+    recommendsTo: '전공·경력보다 성장 의지가 앞서는 분',
+    example: true,
+  },
+  {
+    quote:
+      '모른다고 말해도 괜찮은 분위기여서, 처음으로 마음껏 질문하고 마음껏 틀려봤습니다.',
+    author: '6기 프론트엔드 크루',
+    theme: 'safety',
+    example: true,
   },
 ]
 

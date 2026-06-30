@@ -9,6 +9,11 @@
   border: 1px solid var(--nextra-border, #e5e7eb);
   background: #f8fafc;
 }
+/* 다크 모드 — 라이트 surface(#f8fafc)가 그대로 밝게 남던 문제.
+   Card·AssetCard와 같은 반투명 오버레이 surface로 맞춘다. */
+:global(.dark) .frameWrap {
+  background: rgba(255, 255, 255, 0.04);
+}
 .frame {
   position: absolute;
   inset: 0;

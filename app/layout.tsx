@@ -1,5 +1,5 @@
 import { Footer, Layout, Navbar, ThemeSwitch } from 'nextra-theme-docs'
-import { Head } from 'nextra/components'
+import { Head, Search } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import 'nextra-theme-docs/style.css'
 import './globals.css'
@@ -36,6 +36,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
               <ThemeSwitch lite className="theme-switch-navbar" />
             </Navbar>
           }
+          search={<Search placeholder="문서 검색..." />}
           pageMap={await getPageMap()}
           docsRepositoryBase="https://github.com/woowacourse/2026-okr/tree/main/docs-site"
           copyPageButton={false}

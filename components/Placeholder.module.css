@@ -24,24 +24,16 @@
 .label {
   font-size: 0.875em;
   font-weight: 500;
-  color: rgba(55, 53, 47, 0.45);
+  color: var(--text-secondary);
 }
 
 .hint {
   font-size: 0.8125em;
-  color: rgba(55, 53, 47, 0.35);
+  color: var(--text-tertiary);
   line-height: 1.5;
 }
 
-/* Dark mode */
+/* Dark mode — .label·.hint 글자색은 --text-* 토큰이 라이트/다크를 함께 처리 */
 :global(.dark) .placeholder {
   background: rgba(255, 255, 255, 0.024);
-}
-
-:global(.dark) .label {
-  color: rgba(255, 255, 255, 0.35);
-}
-
-:global(.dark) .hint {
-  color: rgba(255, 255, 255, 0.25);
 }

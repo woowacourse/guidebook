@@ -37,12 +37,19 @@ const walkFiles = (directoryPath) => {
 }
 
 const htmlFiles = walkFiles(builtAppPath).filter((filePath) => filePath.endsWith('.html'))
+
+// pagefind 는 <main> 요소에 실제로 렌더된 data-pagefind-body 속성만 보고 인덱싱한다.
+// 주의: searchable:false 페이지도 RSC 페이로드(script)에 "data-pagefind-body":"$undefined"
+// 문자열이 남으므로, 단순 includes('data-pagefind-body') 는 그런 페이지까지 과다 계수한다
+// (그래서 expected 가 실제 검색 가능 수보다 커져 검증이 잘못 실패했다). 렌더된 <main ... data-pagefind-body>
+// 만 센다.
+const MAIN_PAGEFIND_BODY = /<main\b[^>]*\bdata-pagefind-body\b/
 const searchableHtmlFiles = htmlFiles.filter((filePath) => {
   if (filePath.endsWith(`${path.sep}_not-found.html`)) {
     return false
   }
 
-  return readFileSync(filePath, 'utf8').includes('data-pagefind-body')
+  return MAIN_PAGEFIND_BODY.test(readFileSync(filePath, 'utf8'))
 })
 
 const pagefindEntryPath = path.join(pagefindPath, 'pagefind-entry.json')

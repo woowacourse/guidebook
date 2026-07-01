@@ -39,16 +39,19 @@
   font-size: 0.95rem;
   line-height: 1.5 !important;
   color: rgba(255, 255, 255, 0.58);
-  max-width: 30rem;
+  /* 데스크톱: 강제 줄바꿈(<br>)을 쓰므로 가장 긴 줄에 폭을 맞춰(fit-content) 중앙 정렬.
+     세 줄은 왼쪽 정렬(ragged-right)로 앉는다. 모바일에선 max-width 로 줄 길이를 좁힌다. */
+  width: fit-content;
+  max-width: 100%;
   margin: 0 auto;
   word-break: keep-all;
   text-wrap: pretty;
 }
 
-/* 각 문장을 한 단위로 묶어 줄바꿈이 문장 경계에서만 일어나게 한다.
-   (뒷 문장 첫 단어가 앞 줄 끝에 홀로 남는 어색한 줄바꿈 방지) */
-.sentence {
-  display: inline-block;
+/* 데스크톱 전용 줄바꿈 — 소개 문구를 의도한 세 줄로 쪼갠다.
+   모바일(<=680px)에선 display:none 으로 숨겨 화면 폭에 맞춰 자연스럽게 흐르게 한다. */
+.brDesktop {
+  display: inline;
 }
 
 .tag {
@@ -351,6 +354,13 @@
     border-radius: 0;
     margin: 0;
     margin-inline: calc(50% - 50vw);
+  }
+  /* 데스크톱 전용 강제 줄바꿈 해제 → 소개 문구가 좁은 화면 폭에 맞춰 자연스럽게 흐른다. */
+  .brDesktop {
+    display: none;
+  }
+  .sub {
+    max-width: 24rem;
   }
   .field {
     max-width: 24rem;

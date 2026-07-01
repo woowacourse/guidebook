@@ -110,12 +110,11 @@ export function CrewVoiceMap({ bleed = false }: { bleed?: boolean }) {
       <Eyebrow>크루의 목소리</Eyebrow>
       <h2 className={styles.heading}>크루들이 가장 많이 남긴 메시지</h2>
       <p className={styles.sub}>
-        <span className={styles.sentence}>
-          앞서 본 {crewCount}명이 우테코를 수료하며 남긴 메시지를, 가장 자주 나온 키워드별로 별자리로 그렸습니다.
-        </span>{' '}
-        <span className={styles.sentence}>
-          가장 크게 남은 건 강의도, 코치도, 시설도 아닌 함께 자란 동료였습니다.
-        </span>
+        앞서 본 {crewCount}명이 우테코를 수료하며 남긴 메시지를{' '}
+        <br className={styles.brDesktop} />
+        가장 자주 나온 키워드별로 별자리로 그렸습니다.{' '}
+        <br className={styles.brDesktop} />
+        가장 크게 남은 건 강의도, 코치도, 시설도 아닌 함께 자란 동료였습니다.
         {crewThemesAreExample && <span className={styles.tag}>예시 미리보기</span>}
       </p>
 

@@ -61,7 +61,12 @@ function mdxBodyLines(lines) {
     }
     if (inFence) return ''
     if (t.startsWith('>')) return '' // 블록쿼트(인용)는 verbatim — 검사 제외
-    return raw.replace(/`[^`]*`/g, '') // 인라인 코드 제거
+    // 인용 안 —는 예외(발화 인용 verbatim). 따옴표 구간·JSX주석·인라인코드를 지운 뒤 검사.
+    return raw
+      .replace(/\{\/\*[\s\S]*?\*\/\}/g, '') // JSX 주석 {/* */}
+      .replace(/`[^`]*`/g, '') // 인라인 코드
+      .replace(/"[^"]*"/g, '') // 큰따옴표 인용
+      .replace(/'[^']*'/g, '') // 작은따옴표 인용
   })
 }
 

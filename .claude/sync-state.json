@@ -1,6 +1,6 @@
 {
-  "lastSyncCommit": "7f8bda7816de85dd0230a5bc1af2fe1ee736e9d6",
-  "lastSyncDate": "2026-06-24",
+  "lastSyncCommit": "ddf7bd4f40560f62b81040d3187e54bbcaed9b23",
+  "lastSyncDate": "2026-07-01",
   "config": {
     "threshold": 9,
     "promotionMinScore": 16,
@@ -15,30 +15,123 @@
   },
   "lastBatch": {
     "logs": [
+      "async-quiz-explanation",
+      "coaching-squad-training-loop",
+      "codelab-lotto-domain-ui",
+      "demo-day-retrospective",
       "drama-onboarding",
-      "fe-lotto-2026-prs",
-      "fe-movie-review-2026-prs",
-      "fe-ts-learning-2026-prs",
-      "mission-design"
+      "drama-retrospective",
+      "fe-accessibility-report",
+      "fe-level2-16steps",
+      "fe-performance-report",
+      "fe-react-typescript-convention",
+      "fe-rendering-strategy-workshop",
+      "fe-ssr-discussion",
+      "feedback-refactoring",
+      "growth-graph",
+      "level3-team-project-retrospective-series",
+      "mission-design",
+      "posuta-coach-qa-archive",
+      "react-payments-555prs-analysis",
+      "reinventing-the-wheel",
+      "senior-code-review",
+      "ux-lecture-level3",
+      "ux-research-training"
     ],
-    "promoted": [
-      "fe-lotto-2026-prs / fe-movie-review-2026-prs / fe-ts-learning-2026-prs (조건부 12~14) → augmented insights/mission-learning-accumulation (8기 미션 3종 재확인 marker, 근거 로그로)"
-    ],
+    "promoted": [],
     "skipped": [
       {
+        "slug": "async-quiz-explanation",
+        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+      },
+      {
+        "slug": "coaching-squad-training-loop",
+        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+      },
+      {
+        "slug": "codelab-lotto-domain-ui",
+        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+      },
+      {
+        "slug": "demo-day-retrospective",
+        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+      },
+      {
         "slug": "drama-onboarding",
-        "note": "modified: tool back-link only (drama-onboarding-kit), no new content"
+        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+      },
+      {
+        "slug": "drama-retrospective",
+        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+      },
+      {
+        "slug": "fe-accessibility-report",
+        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+      },
+      {
+        "slug": "fe-level2-16steps",
+        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+      },
+      {
+        "slug": "fe-performance-report",
+        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+      },
+      {
+        "slug": "fe-react-typescript-convention",
+        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+      },
+      {
+        "slug": "fe-rendering-strategy-workshop",
+        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+      },
+      {
+        "slug": "fe-ssr-discussion",
+        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+      },
+      {
+        "slug": "feedback-refactoring",
+        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+      },
+      {
+        "slug": "growth-graph",
+        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+      },
+      {
+        "slug": "level3-team-project-retrospective-series",
+        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
       },
       {
         "slug": "mission-design",
-        "note": "modified: tool back-link only (ai-collaboration-mission-kit), no new content"
+        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+      },
+      {
+        "slug": "posuta-coach-qa-archive",
+        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+      },
+      {
+        "slug": "react-payments-555prs-analysis",
+        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+      },
+      {
+        "slug": "reinventing-the-wheel",
+        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+      },
+      {
+        "slug": "senior-code-review",
+        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+      },
+      {
+        "slug": "ux-lecture-level3",
+        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+      },
+      {
+        "slug": "ux-research-training",
+        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
       }
     ],
     "insights": [],
-    "modelFilesChanged": [
-      "content/education/insights/mission-learning-accumulation.mdx"
-    ],
-    "note": "2026-06-24 auto cycle. 5 changed logs since 30a367b: 3 new FE 8기 PR-analysis (lotto/movie-review/ts-learning), 2 modified (drama-onboarding/mission-design = tool back-links only). Promotion P1~P4: lotto 12, movie-review 12, ts-learning 14 — all below auto threshold 16, so handled as 조건부 (evidence-only): augmented into mission-learning-accumulation as 근거 로그 (already committed in HEAD by a concurrent session). 0 new insight files. HEAVY concurrent multi-session race observed: sync-state pointer thrashed 30a367b→35259e4→30a367b and HEAD diverged (35259e4 became non-ancestor); a transient argumentation-based-learning marker was added then reverted. This finalize advances the pointer to the current HEAD that contains the persisted mission-learning-accumulation augmentation, clearing the backlog. ts-learning flagged in needsHumanReview as candidate for a dedicated 메타학습/AI-as-learning-tool insight."
+    "modelFilesChanged": [],
+    "note": "2026-07-01 auto cycle. 22 changed logs since 7f8bda7 — ALL are cross-reference link-LABEL renames only (e.g. [POE 발견 학습]→[예측 먼저], [회고 설계]→[매번 다른 회고]); target URLs unchanged, zero new content/patterns. Per conservative auto posture: 0 promotions, advance pointer to clear backlog (22→0). No insight/model changes. needsHumanReview unchanged."
   },
   "needsHumanReview": [
     {

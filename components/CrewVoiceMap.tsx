@@ -6,61 +6,89 @@ import { crewThemes, crewThemesAreExample, crewCount } from '../content/crew-voi
 import { Eyebrow } from './Eyebrow'
 
 /**
- * CrewVoiceMap — "크루들이 가장 많이 남긴 메시지"를 손그림 별무리로.
- * 크루의 말 = 별(크기=빈도). Hero의 손그림 별(StarMark)과 같은 모양을 쓴다.
- * 억지 연결선 대신 따뜻한 광원 + 희미한 잔별로 밤하늘 분위기를 만든다.
+ * CrewVoiceMap — "크루들이 가장 많이 남긴 메시지"를 손그림 별자리로.
+ * 크루의 말 = 별(점). 가장 많이 나온 '함께 자란 동료'를 길잡이 북극성으로 홀로 크게 띄우고,
+ * 나머지 테마 5개 + 채움별 2개가 북두칠성 국자를 이룬다. 국자 끝 두 별이 그 북극성을 가리킨다.
+ * 별은 좌표에 고정 배치(별자리는 '모양이 곧 의미') + 은은한 연결선으로 형태를 드러낸다.
  * 호버/포커스/탭하면 대표 문장이 아래 캡션에 뜬다. 데이터: content/crew-voices.ts
  */
 
-// Hero StarMark와 동일한 손그림 별 모양(외곽 실루엣, 솔리드)
-const STAR_PATH =
-  'M47.4503 55.4507C43.6684 58.9605 39.8864 62.3888 36.1861 65.9531C33.955 68.1025 31.9416 70.4697 29.8465 72.7007C28.1596 74.4965 26.5543 76.4011 24.7041 78.0336C23.507 79.0947 21.7929 79.2035 20.378 78.3601C19.1264 77.5982 19.0176 76.3195 19.2353 74.9046C20.0515 69.9255 20.7045 64.9192 21.5752 59.94C21.9017 58.1171 22.6635 56.3485 23.3437 54.2807C18.936 54.2807 14.8275 54.3351 10.6918 54.2807C7.59009 54.2263 4.59718 53.4917 1.76751 52.2401C0.543131 51.6959 -0.218703 50.7436 0.0261726 49.1927C0.271048 47.7507 0.89684 46.8528 2.31167 46.2814C3.78092 45.6829 5.11413 44.7306 6.52897 43.9143C11.4265 41.0302 16.324 38.1734 21.4391 35.1532C20.6229 33.4119 19.589 31.5073 18.8544 29.4939C17.0042 24.4059 15.2356 19.2908 13.6303 14.1484C13.3311 13.1689 13.5215 11.6724 14.1201 10.8834C14.8275 9.95829 16.1607 9.38692 17.5483 10.1215C20.5685 11.6996 23.6702 13.1689 26.6631 14.8014C30.2002 16.7604 33.6557 18.8554 37.2744 20.9505C38.009 19.2635 38.7709 17.495 39.5599 15.7537C41.2468 11.9445 42.9609 8.13533 44.6479 4.32616C44.9744 3.56433 45.2464 2.8025 45.5457 2.01345C46.3892 -0.136006 49.1372 -0.680173 50.5521 1.11558C51.2867 2.04066 51.9669 3.129 52.2934 4.27175C53.3001 7.78162 54.1436 11.3459 55.1503 15.2095C57.5174 14.23 59.939 13.1145 62.4421 12.2166C64.7548 11.4003 67.122 10.6657 69.5163 10.1488C71.965 9.63179 73.5431 11.7268 72.8357 14.0668C71.8018 17.3862 69.7068 19.971 67.6389 22.6646C65.5711 25.3582 63.6937 28.2151 61.7619 31.0176C61.517 31.3985 61.2994 31.9698 61.381 32.378C62.687 37.5748 64.2107 42.7171 65.3534 47.9684C66.1425 51.5326 66.4962 55.2058 66.9043 58.8245C67.122 60.5386 66.5234 62.1439 65.1085 63.1778C63.8298 64.1029 62.4421 63.7492 61.0545 62.9602C56.7284 60.5386 52.3206 58.2803 47.9401 55.9404C47.668 55.8044 47.4503 55.5323 47.4231 55.5051L47.4503 55.4507Z'
+// 손그림 동그라미 3종(.inbox/동그란 점) — 살짝 찌그러진 점. 인덱스별로 번갈아 써 손맛을 낸다.
+const DOTS = [
+  { w: 4, h: 5, d: 'M1.80179 4.1699C0.701792 4.0599 -0.108209 3.2599 0.0117907 2.2999C0.201791 0.709895 1.00179 -0.100106 2.09179 0.00989424C3.07179 0.109894 3.84179 1.0099 3.75179 1.9199C3.63179 3.1099 2.64179 4.2499 1.80179 4.1699Z' },
+  { w: 4, h: 4, d: 'M3.40602 1.46213C3.40602 1.62213 3.44602 1.82213 3.36602 1.94213C3.14602 2.32213 2.94602 2.90213 2.61602 2.99213C1.83602 3.21213 0.946013 3.27213 0.356013 2.49213C0.00601304 2.03213 -0.14398 1.50213 0.17602 0.932134C0.50602 0.332134 1.67602 -0.147866 2.36602 0.0421336C2.84602 0.182134 3.43602 0.972134 3.40602 1.46213Z' },
+  { w: 4, h: 4, d: 'M1.94484 0.00335708C2.78484 0.0433571 3.52484 0.833357 3.49484 1.66336C3.46484 2.58336 2.50484 3.30336 1.39484 3.24336C0.444838 3.19336 -0.0551615 2.67336 0.00483848 1.79336C0.0848385 0.693356 0.884841 -0.0566429 1.94484 0.00335708Z' }
+]
 
-function HandStar({ size, rotate, flip }: { size: number; rotate: number; flip: number }) {
+function HandDot({ size, index, rotate = 0 }: { size: number; index: number; rotate?: number }) {
+  const dot = DOTS[index % DOTS.length]
   return (
     <svg
       className={styles.starSvg}
       width={size}
-      height={Math.round((size * 79) / 73)}
-      viewBox="0 0 73 79"
+      height={Math.round((size * dot.h) / dot.w)}
+      viewBox={`0 0 ${dot.w} ${dot.h}`}
       aria-hidden="true"
       focusable="false"
-      style={{ transform: `rotate(${rotate}deg) scaleX(${flip})` }}
+      style={{ transform: `rotate(${rotate}deg)` }}
     >
-      <path d={STAR_PATH} />
+      <path d={dot.d} />
     </svg>
   )
 }
 
-// 별마다 다른 기울기 + 일부 좌우 반전 → 같은 path라도 손그림처럼 제각각 보인다 (결정적)
-const ROT = [-9, 13, -17, 7, 20, -13, 9, -6, 16]
-const FLIP = [1, -1, 1, -1, 1, 1, -1, 1, -1]
+// 북두칠성 asterism 좌표(0-100 정규화). 핸들 왼쪽(완만한 곡선) → 국자 오른쪽.
+// 사발(megrez·dubhe·merak·phecda)은 깊고 좁은 사다리꼴. 국자 끝 두 별(merak·dubhe)이
+// 위쪽 북극성(polaris)을 가리킨다. 우측 별은 모바일 라벨이 잘리지 않게 안쪽으로 당겼다.
+const STAR = {
+  polaris: [70, 15],
+  alkaid: [12, 52],
+  mizar: [27, 45],
+  alioth: [42, 41],
+  megrez: [55, 46],
+  phecda: [57, 67],
+  merak: [76, 67],
+  dubhe: [74, 41]
+} as const
 
-// 흐름(flow) 배치에서 각 별을 조금씩 위아래로 띄워 손그림 별무리 느낌을 준다.
-// transform 시각 효과만 — 클릭영역(버튼 박스)은 그대로라 서로 겹치지 않는다.
-const OFFSET = [-8, 10, -5, 8, -10, 5, -7, 9, -4]
+// 밝은 테마부터 눈에 띄는 국자 자리에 매핑(count 내림차순 순서와 1:1)
+const THEME_SLOTS = [STAR.dubhe, STAR.alioth, STAR.megrez, STAR.phecda, STAR.alkaid]
+// 라벨 없는 채움별 — 7별 국자 실루엣 완성용
+const FILLER_SLOTS = [STAR.mizar, STAR.merak]
+// 연결선: 국자(핸들+사발) + 북극성 지시 점선
+const DIPPER_LINE = [STAR.alkaid, STAR.mizar, STAR.alioth, STAR.megrez, STAR.dubhe, STAR.merak, STAR.phecda, STAR.megrez]
+const POINTER_LINE = [STAR.merak, STAR.dubhe, STAR.polaris]
 
-// 배경 잔별 (장식, 빈도와 무관) — 밤하늘 깊이
+const pts = (line: readonly (readonly [number, number])[]) => line.map(([x, y]) => `${x},${y}`).join(' ')
+
+// 점마다 다른 기울기 → 같은 path라도 손그림처럼 제각각 (결정적)
+const ROT = [8, -10, 6, -7, 5]
+
+// 배경 잔별 (장식) — 밤하늘 깊이
 const SPARKS: Array<[number, number, number]> = [
-  [11, 26, 4],
-  [89, 30, 5],
-  [44, 86, 3],
-  [72, 84, 4],
-  [7, 56, 3],
-  [93, 58, 4],
-  [60, 16, 3],
-  [31, 20, 4]
+  [14, 22, 3],
+  [88, 26, 4],
+  [46, 84, 3],
+  [70, 82, 3],
+  [9, 60, 2],
+  [92, 64, 3]
 ]
 
 export function CrewVoiceMap({ bleed = false }: { bleed?: boolean }) {
-  const themes = [...crewThemes].sort((a, b) => b.count - a.count)
-  const [activeKey, setActiveKey] = useState(themes[0]?.key)
-  const active = themes.find((t) => t.key === activeKey) ?? themes[0]
+  const sorted = [...crewThemes].sort((a, b) => b.count - a.count)
+  const pole = sorted[0]
+  const dipper = sorted.slice(1) // 테마 5개
 
-  const max = Math.max(...themes.map((t) => t.count))
-  const min = Math.min(...themes.map((t) => t.count))
-  // 빈도 → 별 크기(px). 제곱근 스케일 (22 ~ 56px)
-  const starPx = (count: number) => Math.round(22 + Math.sqrt((count - min) / (max - min || 1)) * 34)
+  const [activeKey, setActiveKey] = useState(pole.key)
+  const active = sorted.find((t) => t.key === activeKey) ?? pole
+
+  // 빈도 → 점 크기(px). 북극성은 가장 크게 고정.
+  const counts = dipper.map((t) => t.count)
+  const dMax = Math.max(...counts)
+  const dMin = Math.min(...counts)
+  const dotPx = (c: number) => Math.round(9 + Math.sqrt((c - dMin) / (dMax - dMin || 1)) * 9)
+
+  const activate = (key: string) => setActiveKey(key)
 
   return (
     <section
@@ -70,11 +98,16 @@ export function CrewVoiceMap({ bleed = false }: { bleed?: boolean }) {
       <Eyebrow>크루의 목소리</Eyebrow>
       <h2 className={styles.heading}>크루들이 가장 많이 남긴 메시지</h2>
       <p className={styles.sub}>
-        앞서 본 {crewCount}명이 우테코를 수료하며 남긴 메시지를, 가장 자주 나온 키워드별로 별자리로 그렸습니다. 가장 크게 남은 건 강의도, 코치도, 시설도 아닌 함께 자란 동료였습니다.
+        앞서 본 {crewCount}명이 우테코를 수료하며 남긴 메시지를, 가장 자주 나온 키워드별로 별자리로 그렸습니다. 가장 크게
+        남은 건 강의도, 코치도, 시설도 아닌 함께 자란 동료였습니다.
         {crewThemesAreExample && <span className={styles.tag}>예시 미리보기</span>}
       </p>
 
-      <div className={styles.field}>
+      <div
+        className={styles.field}
+        role="img"
+        aria-label={`크루가 가장 많이 남긴 메시지: ${sorted.map((t) => t.label).join(', ')}`}
+      >
         <div className={styles.glow} aria-hidden="true" />
         {SPARKS.map(([x, y, s], i) => (
           <span
@@ -85,20 +118,57 @@ export function CrewVoiceMap({ bleed = false }: { bleed?: boolean }) {
           />
         ))}
 
-        {themes.map((t, i) => {
-          const isActive = t.key === active?.key
+        {/* 별자리 연결선 */}
+        <svg className={styles.lines} viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <polyline className={styles.dipperLine} points={pts(DIPPER_LINE)} />
+          <polyline className={styles.pointerLine} points={pts(POINTER_LINE)} />
+        </svg>
+
+        {/* 채움별 (라벨 없음) */}
+        {FILLER_SLOTS.map(([x, y], i) => (
+          <span
+            key={`f${i}`}
+            className={styles.filler}
+            style={{ left: `${x}%`, top: `${y}%` }}
+            aria-hidden="true"
+          >
+            <HandDot size={7} index={i + 1} rotate={i ? -4 : 5} />
+          </span>
+        ))}
+
+        {/* 북극성 — 함께 자란 동료 (가장 밝게) */}
+        <button
+          type="button"
+          className={
+            active.key === pole.key ? `${styles.star} ${styles.pole} ${styles.on}` : `${styles.star} ${styles.pole}`
+          }
+          style={{ left: `${STAR.polaris[0]}%`, top: `${STAR.polaris[1]}%` }}
+          onMouseEnter={() => activate(pole.key)}
+          onFocus={() => activate(pole.key)}
+          onClick={() => activate(pole.key)}
+          aria-pressed={active.key === pole.key}
+        >
+          <HandDot size={26} index={0} rotate={-4} />
+          <span className={styles.lab}>{pole.label}</span>
+          <span className={styles.ct}>{pole.count}</span>
+        </button>
+
+        {/* 국자 별 — 나머지 테마 5개 */}
+        {dipper.map((t, i) => {
+          const [x, y] = THEME_SLOTS[i]
+          const on = t.key === active.key
           return (
             <button
               key={t.key}
               type="button"
-              className={isActive ? `${styles.star} ${styles.on}` : styles.star}
-              style={{ transform: `translateY(${OFFSET[i % OFFSET.length]}px)` }}
-              onMouseEnter={() => setActiveKey(t.key)}
-              onFocus={() => setActiveKey(t.key)}
-              onClick={() => setActiveKey(t.key)}
-              aria-pressed={isActive}
+              className={on ? `${styles.star} ${styles.on}` : styles.star}
+              style={{ left: `${x}%`, top: `${y}%` }}
+              onMouseEnter={() => activate(t.key)}
+              onFocus={() => activate(t.key)}
+              onClick={() => activate(t.key)}
+              aria-pressed={on}
             >
-              <HandStar size={starPx(t.count)} rotate={ROT[i % ROT.length]} flip={FLIP[i % FLIP.length]} />
+              <HandDot size={dotPx(t.count)} index={i} rotate={ROT[i]} />
               <span className={styles.lab}>{t.label}</span>
               <span className={styles.ct}>{t.count}</span>
             </button>

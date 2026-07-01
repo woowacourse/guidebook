@@ -1,6 +1,7 @@
 /* CrewVoiceMap — "크루들이 가장 많이 남긴 메시지" : 항상 어두운 '밤하늘' 밴드 패널.
    흰 섹션들 사이의 어두운 밴드로 스크롤 리듬을 만들고, 별 메타포를 강화한다.
-   테마 무관 night-default (라이트/다크 모두 어두운 패널). 액센트는 따뜻한 오렌지. */
+   테마 무관 night-default(라이트/다크 모두 어두운 패널). 액센트는 따뜻한 오렌지.
+   별무리는 흐름(flex)이 아니라 좌표 스테이지(.field)에 고정 배치 — 별자리는 '모양이 곧 의미'. */
 .section {
   max-width: 58rem;
   margin: 3.75rem auto;
@@ -14,16 +15,11 @@
 
 /* 랜딩 전용(홈 _meta.ts: sidebar·toc false) — 카드 크롬을 벗고 브라우저 가로 끝까지 펼친 풀폭 밴드.
    margin-inline: calc(50% - 50vw) → 가운데 정렬된 본문 칼럼에서 좌우를 정확히 뷰포트 폭(100vw)만큼
-   벌려 양 끝을 브라우저 모서리에 붙인다(= '브라우저 기준 가로 꽉참', 컨테이너 width 100%가 아님).
-   세로 마진은 기본 .section(3.75rem)을 그대로 물려받는다 — 사라진 --landing-section-y 변수에 의존 X.
-   docs 페이지는 .bleed 없이 기본 카드로 렌더 → 사이드바·TOC와 겹치지 않는다.
-   .section.bleed 더블클래스(0,2,0)라 모바일 @media .section 보다 우선해 모든 폭에서 적용된다. */
+   벌려 양 끝을 브라우저 모서리에 붙인다. docs 페이지는 .bleed 없이 기본 카드로 렌더. */
 .section.bleed {
   position: relative;
   max-width: none;
   margin-inline: calc(50% - 50vw);
-  /* 떠 있는 흰 갭 제거 → 밴드가 '떠 있는 슬래브'가 아니라 페이지에 박힌 챕터가 된다.
-     인접 흰 섹션의 자체 패딩이 숨 쉴 공간을 주므로 답답하지 않다. */
   margin-block: 0;
   border: 0;
   border-radius: 0;
@@ -41,8 +37,6 @@
 
 .sub {
   font-size: 0.95rem;
-  /* Nextra article p의 line-height(≈32px, ratio 2.1)는 작은 sub엔 너무 느슨해 가독성이 떨어진다.
-     프레임워크 prose 규칙을 이기려면 !important가 필요(이 repo의 Nextra 오버라이드 관례). */
   line-height: 1.5 !important;
   color: rgba(255, 255, 255, 0.58);
   max-width: 30rem;
@@ -63,33 +57,28 @@
   white-space: nowrap;
 }
 
-/* 별무리 판 — 흐름(flow) 배치: 빈도순으로 흩뿌리되 버튼(클릭영역)이 겹치지 않는다.
-   각 별은 자기 박스만큼만 자리를 차지하고, 살짝 위아래로 띄워 별무리 느낌을 낸다. */
+/* 별자리 판 — 좌표 스테이지. 별은 left/top %(0-100)로 고정 배치된다. */
 .field {
   position: relative;
-  max-width: 620px;
-  margin: 1.5rem auto 0;
-  padding: 1.75rem 0.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem 1.7rem;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 62 / 34;
+  margin: 1.75rem auto 0;
 }
 
-/* 따뜻한 광원 — 밤하늘 속 따뜻한 빛 */
+/* 따뜻한 광원 */
 .glow {
   position: absolute;
   left: 50%;
-  top: 46%;
-  width: 72%;
-  height: 72%;
+  top: 48%;
+  width: 74%;
+  height: 82%;
   transform: translate(-50%, -50%);
   z-index: 0;
   pointer-events: none;
   background: radial-gradient(
     50% 50% at 50% 50%,
-    rgba(255, 233, 196, 0.18),
+    rgba(255, 233, 196, 0.16),
     rgba(255, 233, 196, 0) 70%
   );
 }
@@ -99,25 +88,56 @@
   position: absolute;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.32);
+  background: rgba(255, 255, 255, 0.3);
   z-index: 0;
   pointer-events: none;
 }
 
-/* 말=별 — 흐름 아이템. 별 글리프·라벨·숫자를 세로로 쌓고 좌표가 아니라 흐름으로 배치된다 */
-.star {
-  position: relative;
+/* 별자리 연결선 — viewBox 0-100을 비율 무시로 스테이지에 스트레치 → 별 %좌표와 정확히 일치.
+   non-scaling-stroke라 비대칭 스케일에도 선 두께는 균일(값이 px에 가깝게 렌더). */
+.lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.3rem;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.dipperLine {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.32);
+  stroke-width: 1.3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.pointerLine {
+  fill: none;
+  stroke: rgba(240, 165, 112, 0.62);
+  stroke-width: 1.3;
+  stroke-dasharray: 4 5;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+
+/* 별(점) — 좌표에 절대배치. 글리프는 정상 흐름(버튼 크기=글리프), 라벨·숫자는 아래 절대배치라
+   글리프 중심이 좌표에 정확히 놓여 연결선과 어긋나지 않는다. */
+.star {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  display: block;
+  line-height: 0;
   background: none;
   border: 0;
+  padding: 0;
+  margin: 0;
   cursor: pointer;
   font-family: inherit;
-  padding: 0.3rem 0.45rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.82);
 }
 
 .starSvg {
@@ -127,15 +147,26 @@
 }
 
 .star .lab {
-  font-size: 0.84rem;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 6px;
+  font-size: 0.8rem;
   font-weight: 700;
+  line-height: 1.2;
   color: rgba(255, 255, 255, 0.9);
   white-space: nowrap;
   transition: color 0.15s ease;
 }
 
 .star .ct {
-  font-size: 0.66rem;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 1.6rem;
+  font-size: 0.64rem;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.42);
 }
@@ -143,6 +174,7 @@
 .star:hover,
 .star.on {
   color: rgb(240, 165, 112);
+  z-index: 4;
 }
 
 .star:hover .lab,
@@ -157,17 +189,48 @@
 
 .star:focus-visible {
   outline: 2px solid rgba(240, 165, 112, 0.7);
-  outline-offset: 2px;
+  outline-offset: 3px;
   border-radius: 6px;
 }
 
-/* 캡션 — 말풍선 (별무리에서 내려온 한마디) */
+/* 북극성 — 함께 자란 동료. 상시 오렌지 + 광채로 '길잡이 별'임을 드러낸다. */
+.pole {
+  z-index: 3;
+  color: rgb(240, 165, 112);
+}
+
+.pole .starSvg {
+  filter: drop-shadow(0 0 11px rgba(240, 165, 112, 0.5));
+}
+
+.pole .lab {
+  font-size: 0.9rem;
+  margin-top: 8px;
+  color: rgb(240, 165, 112);
+}
+
+.pole .ct {
+  margin-top: 2rem;
+  color: rgba(240, 165, 112, 0.6);
+}
+
+/* 채움별 — 국자 실루엣 완성용(라벨 없음, 비인터랙티브) */
+.filler {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  line-height: 0;
+  color: rgba(255, 255, 255, 0.34);
+  pointer-events: none;
+}
+
+/* 캡션 — 말풍선(별에서 내려온 한마디) */
 .cap {
   position: relative;
   z-index: 1;
   max-width: 34rem;
   min-height: 3.2rem;
-  margin: 2rem auto 0;
+  margin: 2.25rem auto 0;
   padding: 1.2rem 1.5rem;
   border: 0;
   border-radius: 18px;
@@ -188,10 +251,6 @@
 }
 
 .quote {
-  /* 별을 바꿔 인용문이 1줄↔2줄로 바뀌어도 캡션·다크 밴드 높이가 출렁이지 않게,
-     2줄 높이를 미리 확보하고 그 안에서 세로 중앙 정렬한다(짧은 문장은 가운데 떠 있다).
-     주의: Nextra typography가 .quote의 line-height(1.65)를 덮어써(실제 ≈1.89/32px) 2줄이
-     64px가 된다. 가정값 3.3em(56px)은 1.75줄뿐이라 예약을 넘쳤다 → 실제 줄높이 단위 2lh로 예약. */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -215,8 +274,7 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* 닫는 한마디 — 별무리가 가리키는 결론. 동료 → 선한 영향력으로 잇고 다음 섹션(문서 입구)으로 넘긴다.
-   '선한 영향력'은 Hero의 액센트와 같은 따뜻한 오렌지로 강조해 수미상관을 만든다. */
+/* 닫는 한마디 — 별무리가 가리키는 결론. 동료 → 선한 영향력으로 잇고 다음 섹션(문서 입구)으로 넘긴다. */
 .close {
   max-width: 32rem;
   margin: 1.75rem auto 0;
@@ -253,16 +311,25 @@
     padding: 2.5rem 1rem 2.25rem;
     margin: 2rem auto;
   }
+  .section.bleed {
+    border-radius: 0;
+    margin: 0;
+    margin-inline: calc(50% - 50vw);
+  }
   .field {
-    gap: 1rem 1.2rem;
-    max-width: 30rem;
-    padding: 0.5rem 0;
+    max-width: 24rem;
   }
   .glow,
-  .spark {
+  .spark,
+  .filler,
+  .star .ct {
     display: none;
   }
-  .star {
-    transform: none !important;
+  .star .lab {
+    font-size: 0.66rem;
+    margin-top: 4px;
+  }
+  .pole .lab {
+    font-size: 0.72rem;
   }
 }

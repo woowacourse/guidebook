@@ -141,20 +141,6 @@
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* 해외 거점 — 따뜻한 오렌지 강조 pill */
-.node.intl {
-  color: rgb(214, 104, 48);
-  font-weight: 700;
-  background: rgba(214, 104, 48, 0.09);
-  border-color: rgba(214, 104, 48, 0.34);
-}
-
-:global(.dark) .node.intl {
-  color: rgb(240, 165, 112);
-  background: rgba(240, 165, 112, 0.12);
-  border-color: rgba(240, 165, 112, 0.36);
-}
-
 /* 모바일 폴백 (기본 숨김) */
 .fallback {
   display: none;
@@ -173,16 +159,6 @@
 :global(.dark) .chip {
   color: rgba(255, 255, 255, 0.88);
   border-color: rgba(255, 255, 255, 0.2);
-}
-
-.chipIntl {
-  color: rgb(214, 104, 48);
-  border-color: rgba(214, 104, 48, 0.4);
-}
-
-:global(.dark) .chipIntl {
-  color: rgb(240, 165, 112);
-  border-color: rgba(240, 165, 112, 0.4);
 }
 
 /* 글로벌 한 줄 */

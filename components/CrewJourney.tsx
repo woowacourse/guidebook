@@ -25,12 +25,9 @@ const COMPANIES = [
   '한국신용데이터',
   'CJ 올리브영',
   '당근',
-  '딜리버리히어로즈',
-  '탈라밧'
+  '딜리버리히어로즈 (베를린)',
+  '탈라밧 (두바이)'
 ]
-
-// 해외 거점 (강조 + 글로벌 한 줄과 연결)
-const INTL = ['딜리버리히어로즈', '탈라밧']
 
 // 궤도 좌표 — 결정적 계산(12시 방향부터 시계방향으로 균등 배치)
 // pill 노드가 좌우 가장자리에서 잘리지 않도록 RX를 살짝 좁힌다
@@ -40,7 +37,6 @@ const NODES = COMPANIES.map((name, i) => {
   const ang = (i / COMPANIES.length) * Math.PI * 2 - Math.PI / 2
   return {
     name,
-    intl: INTL.includes(name),
     left: `${(50 + RX * Math.cos(ang)).toFixed(2)}%`,
     top: `${(50 + RY * Math.sin(ang)).toFixed(2)}%`
   }
@@ -72,7 +68,7 @@ export function CrewJourney() {
         {NODES.map((n) => (
           <span
             key={n.name}
-            className={n.intl ? `${styles.node} ${styles.intl}` : styles.node}
+            className={styles.node}
             style={{ left: n.left, top: n.top }}
             aria-hidden="true"
           >
@@ -86,10 +82,7 @@ export function CrewJourney() {
         <img className={styles.planet} src="/images/characters/행성이-걷기.png" alt="" width={72} />
         <ul className={styles.chips}>
           {COMPANIES.map((name) => (
-            <li
-              key={name}
-              className={INTL.includes(name) ? `${styles.chip} ${styles.chipIntl}` : styles.chip}
-            >
+            <li key={name} className={styles.chip}>
               {name}
             </li>
           ))}

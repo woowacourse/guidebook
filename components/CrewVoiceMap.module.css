@@ -141,7 +141,7 @@
 }
 
 /* 포인터 히트 영역 확대 — 점 글리프는 그대로 두고, 점 중심에 넉넉한 투명 원을 덮어
-   작은 점도 편하게 호버/탭되게 한다. (검증용으로 잠시 주황색을 칠했다 → 확정 시 transparent) */
+   작은 점도 편하게 호버/탭되게 한다(약 3배 넓은 타깃, 인접 별과 겹치지 않는 크기). */
 .star::before {
   content: '';
   position: absolute;
@@ -151,7 +151,6 @@
   height: 40px;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: rgba(240, 165, 112, 0.18);
 }
 
 .starSvg {

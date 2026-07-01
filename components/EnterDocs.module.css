@@ -155,8 +155,18 @@
   .doors {
     flex-direction: column;
     align-items: stretch;
+    gap: 0.6rem;
   }
   .door {
     max-width: none;
+    /* 세로 스택에선 flex-basis(16rem)가 '높이'로 잡혀 카드가 과도하게 커진다.
+       basis를 auto로 되돌려 높이를 내용에 맞추고, 패딩을 조여 단정하게 */
+    flex: 0 0 auto;
+    padding: 0.9rem 1.05rem;
+  }
+  .icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.3rem;
   }
 }

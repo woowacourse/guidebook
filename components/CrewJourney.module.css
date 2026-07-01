@@ -21,7 +21,8 @@
 
 .lede {
   font-size: 1.05rem;
-  line-height: 1.7;
+  /* Nextra가 article p 줄높이를 2rem로 강제 → !important 없으면 무시됨 */
+  line-height: 1.6 !important;
   color: rgba(55, 53, 47, 0.82);
   max-width: 34rem;
   margin: 0 auto;
@@ -164,7 +165,7 @@
 /* 글로벌 한 줄 */
 .global {
   font-size: 0.98rem;
-  line-height: 1.7;
+  line-height: 1.6 !important; /* Nextra article p 2rem 강제를 이김 */
   color: rgba(55, 53, 47, 0.68);
   max-width: 32rem;
   margin: 1.75rem auto 0;

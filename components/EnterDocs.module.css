@@ -21,7 +21,7 @@
 
 .lede {
   font-size: 1.05rem;
-  line-height: 1.7;
+  line-height: 1.6 !important; /* Nextra article p 2rem 강제를 이김 */
   color: rgba(55, 53, 47, 0.82);
   max-width: 34rem;
   margin: 0 auto 2rem;

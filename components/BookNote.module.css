@@ -5,7 +5,7 @@
   padding: 0 1rem;
   text-align: center;
   font-size: 0.88rem;
-  line-height: 1.6;
+  line-height: 1.6 !important; /* Nextra article p 2rem 강제를 이김 (없으면 2.27로 렌더) */
   color: rgba(55, 53, 47, 0.55);
   word-break: keep-all;
 }

@@ -275,7 +275,7 @@
   padding: 0;
   border: 0;
   font-size: 1.06rem;
-  line-height: 1.65;
+  line-height: 1.6 !important; /* Nextra article p 2rem 강제를 이김 */
   font-weight: 500;
   color: rgba(255, 255, 255, 0.92);
   word-break: keep-all;
@@ -295,7 +295,7 @@
   max-width: 32rem;
   margin: 1.75rem auto 0;
   font-size: 1.02rem;
-  line-height: 1.7;
+  line-height: 1.6 !important; /* Nextra article p 2rem 강제를 이김 */
   font-weight: 600;
   color: rgba(255, 255, 255, 0.86);
   word-break: keep-all;

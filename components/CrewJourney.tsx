@@ -30,9 +30,10 @@ const COMPANIES = [
 ]
 
 // 궤도 좌표 — 결정적 계산(12시 방향부터 시계방향으로 균등 배치)
-// pill 노드가 좌우 가장자리에서 잘리지 않도록 RX를 살짝 좁힌다
-const RX = 44
-const RY = 39
+// RX/RY는 링 타원(.ring inset 6% 5%)과 정확히 일치 → 각 pill 중심이 링 선 위에 놓인다.
+// 타원을 세로로 더 둥글게(RY↑) 키워, 위쪽에 몰린 긴 라벨 두 개(딜리버리·탈라밧)의 겹침을 없앤다.
+const RX = 45
+const RY = 44
 const NODES = COMPANIES.map((name, i) => {
   const ang = (i / COMPANIES.length) * Math.PI * 2 - Math.PI / 2
   return {

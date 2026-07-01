@@ -45,15 +45,15 @@
 /* 궤도 */
 .orbit {
   position: relative;
-  height: 400px;
+  height: 465px;
   max-width: 720px;
   margin: 1.75rem auto 0;
 }
 
-/* 궤도 — 단 하나의 또렷한 얇은 링. 노드 타원(RX44/RY39)에 맞춰 각 노드가 링 바로 바깥을 균일하게 돈다 */
+/* 궤도 — 단 하나의 또렷한 얇은 링. 노드 타원(RX45/RY44)과 정확히 일치 → 각 노드 '중심'이 링 선 위에 놓인다 */
 .ring {
   position: absolute;
-  inset: 13% 7%;
+  inset: 6% 5%;
   border: 1.5px solid rgba(55, 53, 47, 0.18);
   border-radius: 50%;
 }
@@ -122,14 +122,14 @@
 .node {
   position: absolute;
   transform: translate(-50%, -50%);
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   font-weight: 600;
   white-space: nowrap;
   color: rgba(55, 53, 47, 0.92);
   background: rgba(255, 253, 249, 0.92);
   border: 1px solid rgba(55, 53, 47, 0.1);
   border-radius: 999px;
-  padding: 0.26rem 0.62rem;
+  padding: 0.26rem 0.56rem;
   box-shadow: 0 1px 4px rgba(40, 38, 34, 0.06);
   backdrop-filter: blur(2px);
 }

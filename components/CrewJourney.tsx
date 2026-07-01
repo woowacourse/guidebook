@@ -90,8 +90,10 @@ export function CrewJourney() {
       </div>
 
       <p className={styles.global}>
-        크루는 한국에만 있지 않습니다. 그 영향력은{' '}
-        <span className={styles.cities}>베를린·두바이</span>까지 이어집니다.
+        <span className={styles.sentence}>크루는 한국에만 있지 않습니다.</span>{' '}
+        <span className={styles.sentence}>
+          그 영향력은 <span className={styles.cities}>베를린·두바이</span>까지 이어집니다.
+        </span>
       </p>
     </section>
   )

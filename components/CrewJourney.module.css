@@ -176,6 +176,12 @@
   color: rgba(255, 255, 255, 0.62);
 }
 
+/* 각 문장을 한 단위로 묶어 줄바꿈이 문장 경계에서만 일어나게 한다.
+   (뒷 문장 첫 단어가 앞 줄 끝에 홀로 남는 어색한 줄바꿈 방지) */
+.sentence {
+  display: inline-block;
+}
+
 .cities {
   font-weight: 700;
   color: rgb(55, 53, 47);

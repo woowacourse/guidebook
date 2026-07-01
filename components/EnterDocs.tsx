@@ -35,7 +35,8 @@ export function EnterDocs() {
       <Eyebrow>그리고</Eyebrow>
       <h2 className={styles.heading}>이 경험이, 이제 여러분에게도 연결되도록</h2>
       <p className={styles.lede}>
-        우테코의 교육이 궁금한 분, 교육을 직접 만드는 분, 우테코에 지원하려는 분. 각자 필요한 곳으로 바로 안내합니다.
+        <span className={styles.sentence}>우테코의 교육이 궁금한 분, 교육을 직접 만드는 분, 우테코에 지원하려는 분.</span>{' '}
+        <span className={styles.sentence}>각자 필요한 곳으로 바로 안내합니다.</span>
       </p>
 
       <div className={styles.doors}>

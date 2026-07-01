@@ -32,17 +32,18 @@ function HandStar({ size, rotate, flip }: { size: number; rotate: number; flip: 
   )
 }
 
-// 북두칠성 asterism 좌표(0-100 정규화). 핸들 왼쪽 → 국자 오른쪽.
-// 국자 끝 두 별(merak·dubhe)이 위쪽 북극성(polaris)을 가리킨다.
+// 북두칠성 asterism 좌표(0-100 정규화). 핸들 왼쪽(완만한 곡선) → 국자 오른쪽.
+// 사발(megrez·dubhe·merak·phecda)은 깊고 좁은 사다리꼴. 국자 끝 두 별(merak·dubhe)이
+// 위쪽 북극성(polaris)을 가리킨다. 우측 별은 모바일 라벨이 잘리지 않게 안쪽으로 당겼다.
 const STAR = {
-  polaris: [72, 14],
-  alkaid: [12, 44],
-  mizar: [27, 37],
-  alioth: [43, 36],
-  megrez: [57, 44],
-  phecda: [60, 66],
-  merak: [80, 68],
-  dubhe: [78, 46]
+  polaris: [70, 15],
+  alkaid: [12, 52],
+  mizar: [27, 45],
+  alioth: [42, 41],
+  megrez: [55, 46],
+  phecda: [57, 67],
+  merak: [76, 67],
+  dubhe: [74, 41]
 } as const
 
 // 밝은 테마부터 눈에 띄는 국자 자리에 매핑(count 내림차순 순서와 1:1)

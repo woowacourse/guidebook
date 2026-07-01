@@ -56,7 +56,7 @@
 .description {
   margin: 0;
   font-size: 0.8125rem;
-  color: rgba(55, 53, 47, 0.65);
+  color: var(--text-secondary);
   line-height: 1.6;
 }
 
@@ -70,12 +70,8 @@
   display: inline-block;
   margin-top: 0.5rem;
   font-size: 0.75rem;
-  color: rgba(55, 53, 47, 0.45);
+  color: var(--text-tertiary);
   letter-spacing: 0.01em;
-}
-
-:global(.dark) .meta {
-  color: rgba(255, 255, 255, 0.35);
 }
 
 /* Arrow indicator for linked cards */
@@ -239,7 +235,7 @@
 
 .row .description {
   font-size: 0.8125rem;
-  color: rgba(55, 53, 47, 0.5);
+  color: var(--text-secondary);
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
@@ -250,7 +246,7 @@
   margin-top: 0;
   margin-left: auto;
   font-size: 0.75rem;
-  color: rgba(55, 53, 47, 0.35);
+  color: var(--text-tertiary);
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -274,14 +270,6 @@
 :global(.dark) .link:hover .row {
   background: transparent;
   border-color: rgba(255, 255, 255, 0.07);
-}
-
-:global(.dark) .row .description {
-  color: rgba(255, 255, 255, 0.35);
-}
-
-:global(.dark) .row .meta {
-  color: rgba(255, 255, 255, 0.25);
 }
 
 :global(.dark) .row .arrow {
@@ -341,8 +329,4 @@
   background: rgba(255, 255, 255, 0.06);
   border-color: rgba(255, 255, 255, 0.16);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
-}
-
-:global(.dark) .description {
-  color: rgba(255, 255, 255, 0.5);
 }

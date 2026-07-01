@@ -20,6 +20,13 @@
   --accent-fill: #c2410c;          /* 채움 표면(버튼·활성 칩) 배경 */
   --accent-on: #ffffff;            /* 채움 위 글자 — 5:1 (AA ✓) */
 
+  /* ===== 보조 텍스트 토큰 (단일 진실 원천) =====
+     카드·목록의 설명문·메타처럼 '연한 회색'으로 두던 글자를 알파로 직접 박지 않고
+     이 토큰만 참조한다 — 컴포넌트마다 alpha를 낮게 박아 AA(4.5:1)를 못 넘기던 걸 막는다.
+     secondary=본문성 설명, tertiary=메타·id 같은 보조 정보. 둘 다 흰/카드 배경에서 AA 통과. */
+  --text-secondary: #5f5c55;       /* 카드 설명문 — 흰/#FAFAFA 배경 대비 ~6:1 (AA ✓) */
+  --text-tertiary: #6f6c64;        /* 메타·id·태그 — ~5:1 (AA ✓) */
+
   /* 랜딩 종이 그레인 — 알파를 SVG에 구워 라이트/다크 한 자산으로 */
   --paper-noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='table' tableValues='0 0.05'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");
 }
@@ -36,6 +43,10 @@
   --accent-subtle: rgba(240, 165, 112, 0.16);
   --accent-fill: #f0a570;          /* 선명: 밝은 앰버 채움 */
   --accent-on: #1a1014;            /* 채움 위 어두운 글자 — ~9:1 (AA ✓) */
+
+  /* 다크 — 어두운 카드 배경 위에서 흰 글자를 띄운다. */
+  --text-secondary: rgba(255, 255, 255, 0.6);  /* 어두운 배경 ~7:1 (AA ✓) */
+  --text-tertiary: rgba(255, 255, 255, 0.5);   /* ~5.3:1 (AA ✓) */
 }
 
 html {

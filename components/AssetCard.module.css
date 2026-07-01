@@ -61,7 +61,7 @@
 
 .id {
   font-size: 0.8em;
-  color: rgba(55, 53, 47, 0.5);
+  color: var(--text-tertiary);
   font-family: 'SFMono-Regular', Menlo, Consolas, monospace;
 }
 
@@ -76,7 +76,7 @@
   display: flex;
   gap: 12px;
   font-size: 0.85em;
-  color: rgba(55, 53, 47, 0.5);
+  color: var(--text-tertiary);
   margin-bottom: 10px;
 }
 
@@ -92,7 +92,7 @@
   border-radius: 4px;
   font-size: 0.75em;
   background-color: rgba(55, 53, 47, 0.06);
-  color: rgba(55, 53, 47, 0.65);
+  color: var(--text-secondary);
 }
 
 /* Dark mode */
@@ -130,15 +130,6 @@
   color: #fca5a5;
 }
 
-:global(.dark) .id {
-  color: rgba(255, 255, 255, 0.4);
-}
-
-:global(.dark) .meta {
-  color: rgba(255, 255, 255, 0.4);
-}
-
 :global(.dark) .tag {
   background-color: rgba(255, 255, 255, 0.06);
-  color: rgba(255, 255, 255, 0.5);
 }

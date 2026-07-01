@@ -173,31 +173,12 @@
   transition: color 0.15s ease;
 }
 
-.star .ct {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 1.6rem;
-  font-size: 0.64rem;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.42);
-}
-
-/* 라벨을 별 위쪽에 두는 변형 — 좁은 폭에서 아래쪽 라벨끼리 겹치지 않게(손튜닝).
-   숫자(.ct)도 함께 위로 올려 라벨과 붙어 다니게 한다. */
+/* 라벨을 별 위쪽에 두는 변형 — 좁은 폭에서 아래쪽 라벨끼리 겹치지 않게(손튜닝). */
 .star.up .lab {
   top: auto;
   bottom: 100%;
   margin-top: 0;
   margin-bottom: 6px;
-}
-
-.star.up .ct {
-  top: auto;
-  bottom: 100%;
-  margin-top: 0;
-  margin-bottom: 1.55rem;
 }
 
 .star:hover,
@@ -235,10 +216,6 @@
 .pole .lab {
   font-size: 0.9rem;
   margin-top: 8px;
-}
-
-.pole .ct {
-  margin-top: 2rem;
 }
 
 /* 채움별 — 국자 실루엣 완성용(라벨 없음, 비인터랙티브) */
@@ -366,8 +343,7 @@
     max-width: 24rem;
   }
   .glow,
-  .spark,
-  .star .ct {
+  .spark {
     display: none;
   }
   .star .lab {

@@ -140,6 +140,20 @@
   color: rgba(255, 255, 255, 0.82);
 }
 
+/* 포인터 히트 영역 확대 — 점 글리프는 그대로 두고, 점 중심에 넉넉한 투명 원을 덮어
+   작은 점도 편하게 호버/탭되게 한다. (검증용으로 잠시 주황색을 칠했다 → 확정 시 transparent) */
+.star::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: rgba(240, 165, 112, 0.18);
+}
+
 .starSvg {
   display: block;
   fill: currentColor;

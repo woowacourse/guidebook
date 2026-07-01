@@ -5,7 +5,7 @@ import styles from './EnterDocs.module.css'
  * EnterDocs — 랜딩의 닫는 초대.
  * 열망(Hero) → 증거(CrewJourney·CrewVoices)를 본 독자에게, 독자별 입구를 준다.
  * /education 의 "이해하기 → 적용하기" 구조에, 우테코에 지원하려는 독자를 위한
- * 지원하기(/apply)를 더해 세 갈래로 안내한다.
+ * 지원하기(/apply/about)를 더해 세 갈래로 안내한다.
  */
 const DOORS = [
   {
@@ -24,7 +24,7 @@ const DOORS = [
     icon: '✍️',
     title: '지원하기',
     desc: '우테코 크루가 되고 싶다면',
-    href: '/apply'
+    href: '/apply/about'
   }
 ]
 

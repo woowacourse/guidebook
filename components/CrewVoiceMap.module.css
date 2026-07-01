@@ -347,15 +347,22 @@
   }
   .glow,
   .spark,
-  .filler,
   .star .ct {
     display: none;
   }
   .star .lab {
-    font-size: 0.66rem;
-    margin-top: 4px;
+    font-size: 0.62rem;
+    margin-top: 3px;
+  }
+  .star.up .lab {
+    margin-bottom: 3px;
   }
   .pole .lab {
-    font-size: 0.72rem;
+    font-size: 0.68rem;
+  }
+  /* 모바일 스테이지는 더 짧아 하단 여백이 작다 → 음수 마진을 거의 없애 캡션이 별과 겹치지 않게 */
+  .cap {
+    margin-top: 0.25rem;
+    padding: 1.1rem 1.2rem;
   }
 }

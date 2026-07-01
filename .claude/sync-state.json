@@ -2,9 +2,10 @@
   "lastSyncCommit": "5f5f672dfdabbccb33adf47871a74dae07b5bf05",
   "lastSyncDate": "2026-07-01",
   "config": {
-    "threshold": 9,
+    "threshold": 60,
     "promotionMinScore": 16,
-    "maxAutoSectionsPerFile": 5
+    "maxAutoSectionsPerFile": 5,
+    "_thresholdNote": "임시 상향(9→60) 2026-07-01: 진행 중인 네이밍 리팩터가 매 커밋마다 로그를 건드려 auto-sync 훅이 오탐 재점화. 리팩터 종료 후 9로 원복 + /로그승격 자동 1회 실행."
   },
   "lastCompileCommit": "7efbb76573821ff5f3c1364a49bb8b2d165d5960",
   "lastCompileDate": "2026-06-16",

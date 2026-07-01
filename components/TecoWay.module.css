@@ -1,9 +1,54 @@
-/* TecoWay — 랜딩 'Hero 다음' 선언. 헤더는 형제 섹션(CrewJourney)과 동일 토큰, 원칙은 좌측 정렬. */
+/* TecoWay: 랜딩 'Hero 다음' 선언. 헤더 토큰은 형제 섹션(CrewJourney)과 동일.
+   작은 행성이(반짝) + 은은한 glow로 '스스로 빛나는 별' 메타포를 연다. */
 .section {
   max-width: 52rem;
   margin: 0 auto;
   padding: 5rem 1rem 3.75rem;
   text-align: center;
+}
+
+/* 캐릭터 + glow (장식) */
+.figure {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.1rem;
+}
+
+.glow {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: min(240px, 60vw);
+  height: min(240px, 60vw);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 219, 170, 0.5),
+    rgba(255, 219, 170, 0) 70%
+  );
+}
+
+:global(.dark) .glow {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 230, 195, 0.16),
+    rgba(255, 230, 195, 0) 70%
+  );
+}
+
+.pose {
+  height: auto;
+  max-width: 100%;
+  mix-blend-mode: multiply; /* 라이트: 흰 배경이 종이에 녹는다 */
+}
+
+:global(.dark) .pose {
+  filter: invert(1); /* 다크: 검은 선을 흰 선으로 */
+  mix-blend-mode: screen;
 }
 
 .heading {
@@ -42,9 +87,20 @@
   color: rgba(255, 255, 255, 0.95);
 }
 
-/* 원칙 3개 — 가운데 정렬 헤더 아래, 읽기 폭으로 좁혀 좌측 정렬 */
-.claims {
-  max-width: 34rem;
-  margin: 2.25rem auto 0;
-  text-align: left;
+/* journey 링크: Nextra의 article a:hover 밑줄 강제를 끈다(Card/AssetCard/EnterDocs 패턴) */
+.journeyLink {
+  display: inline-block;
+  margin-top: 1.6rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: rgb(55, 53, 47);
+  text-decoration: none !important;
+}
+
+.journeyLink:hover {
+  opacity: 0.72;
+}
+
+:global(.dark) .journeyLink {
+  color: rgba(255, 255, 255, 0.92);
 }

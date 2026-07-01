@@ -153,7 +153,6 @@ export function CrewVoiceMap({ bleed = false }: { bleed?: boolean }) {
         >
           <HandDot size={18} index={0} rotate={-4} />
           <span className={styles.lab}>{pole.label}</span>
-          <span className={styles.ct}>{pole.count}</span>
         </button>
 
         {/* 국자 별 — 나머지 테마 7개 */}
@@ -175,7 +174,6 @@ export function CrewVoiceMap({ bleed = false }: { bleed?: boolean }) {
             >
               <HandDot size={dotPx(t.count)} index={i} rotate={ROT[i]} />
               <span className={styles.lab}>{t.label}</span>
-              <span className={styles.ct}>{t.count}</span>
             </button>
           )
         })}

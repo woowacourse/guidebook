@@ -10,7 +10,7 @@
 /* 캐릭터 + glow (장식) */
 .figure {
   position: relative;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 1.1rem;

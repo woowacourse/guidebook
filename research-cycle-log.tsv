@@ -10,3 +10,4 @@ date	mode	logs_measured	logs_promoted	insights_created	model_files_changed	notes
 2026-06-24	auto	5	3	0	1	auto cycle: 5 logs since 30a367b (3 new FE 8기 PR-analysis lotto/movie-review/ts-learning conditional 12~14; 2 modified drama-onboarding/mission-design = tool back-links only). 3 new logs augmented into insights/mission-learning-accumulation as 근거 로그 (8기 미션 3종 재확인 marker, committed in HEAD). 0 new insight files. ts-learning → needsHumanReview (dedicated 메타학습/AI-as-learning-tool insight). NOTE: heavy concurrent multi-session race; pointer thrashed & HEAD diverged; this run finalized the pointer to HEAD ff4a7a5
 
 2026-07-01	auto	22 logs (label-rename only, 0 substantive)	0	0
+2026-07-01	auto	40 logs (label-rename + frontmatter, 0 substantive)	0	0

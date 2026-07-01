@@ -1,5 +1,5 @@
 {
-  "lastSyncCommit": "8feb067d46f30f210da1a598c79b338fa195764f",
+  "lastSyncCommit": "5f5f672dfdabbccb33adf47871a74dae07b5bf05",
   "lastSyncDate": "2026-07-01",
   "config": {
     "threshold": 9,
@@ -15,123 +15,213 @@
   },
   "lastBatch": {
     "logs": [
+      "android-level2-mini-project",
       "async-quiz-explanation",
       "coaching-squad-training-loop",
+      "code-review",
       "codelab-lotto-domain-ui",
+      "crew-autonomy",
       "demo-day-retrospective",
       "drama-onboarding",
       "drama-retrospective",
+      "expedition-tech-salon",
+      "expedition",
       "fe-accessibility-report",
       "fe-level2-16steps",
+      "fe-lotto-2026-prs",
+      "fe-movie-review-2026-prs",
       "fe-performance-report",
       "fe-react-typescript-convention",
       "fe-rendering-strategy-workshop",
       "fe-ssr-discussion",
+      "fe-ts-learning-2026-prs",
       "feedback-refactoring",
+      "finding-tech-strengths",
+      "group-coaching",
       "growth-graph",
+      "layout-component-workshop",
       "level3-team-project-retrospective-series",
       "mission-design",
+      "one-on-one",
+      "pair-programming-manifesto",
+      "posuta-archive",
       "posuta-coach-qa-archive",
       "react-payments-555prs-analysis",
       "reinventing-the-wheel",
       "senior-code-review",
+      "soft-skill-one-step-study",
+      "standardized-crew-coaching",
+      "summary",
+      "team-building-ground-rules",
       "ux-lecture-level3",
       "ux-research-training"
     ],
     "promoted": [],
     "skipped": [
       {
+        "slug": "android-level2-mini-project",
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
+      },
+      {
         "slug": "async-quiz-explanation",
-        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
       },
       {
         "slug": "coaching-squad-training-loop",
-        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
+      },
+      {
+        "slug": "code-review",
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
       },
       {
         "slug": "codelab-lotto-domain-ui",
-        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
+      },
+      {
+        "slug": "crew-autonomy",
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
       },
       {
         "slug": "demo-day-retrospective",
-        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
       },
       {
         "slug": "drama-onboarding",
-        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
       },
       {
         "slug": "drama-retrospective",
-        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
+      },
+      {
+        "slug": "expedition-tech-salon",
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
+      },
+      {
+        "slug": "expedition",
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
       },
       {
         "slug": "fe-accessibility-report",
-        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
       },
       {
         "slug": "fe-level2-16steps",
-        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
+      },
+      {
+        "slug": "fe-lotto-2026-prs",
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
+      },
+      {
+        "slug": "fe-movie-review-2026-prs",
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
       },
       {
         "slug": "fe-performance-report",
-        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
       },
       {
         "slug": "fe-react-typescript-convention",
-        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
       },
       {
         "slug": "fe-rendering-strategy-workshop",
-        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
       },
       {
         "slug": "fe-ssr-discussion",
-        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
+      },
+      {
+        "slug": "fe-ts-learning-2026-prs",
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
       },
       {
         "slug": "feedback-refactoring",
-        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
+      },
+      {
+        "slug": "finding-tech-strengths",
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
+      },
+      {
+        "slug": "group-coaching",
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
       },
       {
         "slug": "growth-graph",
-        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
+      },
+      {
+        "slug": "layout-component-workshop",
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
       },
       {
         "slug": "level3-team-project-retrospective-series",
-        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
       },
       {
         "slug": "mission-design",
-        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
+      },
+      {
+        "slug": "one-on-one",
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
+      },
+      {
+        "slug": "pair-programming-manifesto",
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
+      },
+      {
+        "slug": "posuta-archive",
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
       },
       {
         "slug": "posuta-coach-qa-archive",
-        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
       },
       {
         "slug": "react-payments-555prs-analysis",
-        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
       },
       {
         "slug": "reinventing-the-wheel",
-        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
       },
       {
         "slug": "senior-code-review",
-        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
+      },
+      {
+        "slug": "soft-skill-one-step-study",
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
+      },
+      {
+        "slug": "standardized-crew-coaching",
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
+      },
+      {
+        "slug": "summary",
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
+      },
+      {
+        "slug": "team-building-ground-rules",
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
       },
       {
         "slug": "ux-lecture-level3",
-        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
       },
       {
         "slug": "ux-research-training",
-        "note": "back-link label rename only (친근한 우리말 이름 리팩터), URL 불변·신규 콘텐츠 없음"
+        "note": "trivial: 네이밍 리팩터 라벨 교체 또는 searchable:false frontmatter, 신규 콘텐츠 없음"
       }
     ],
     "insights": [],
     "modelFilesChanged": [],
-    "note": "2026-07-01 auto cycle. 22 changed logs since 7f8bda7 — ALL are cross-reference link-LABEL renames only (e.g. [POE 발견 학습]→[예측 먼저], [회고 설계]→[매번 다른 회고]); target URLs unchanged, zero new content/patterns. Per conservative auto posture: 0 promotions, advance pointer to clear backlog (22→0). No insight/model changes. needsHumanReview unchanged."
+    "note": "2026-07-01 auto cycle #2. 40 changed logs since 8feb067 — all trivial: 35 back-link LABEL renames (진행 중인 친근한 우리말 이름 리팩터; symmetric +N/-N incl. react-payments +33/-33), 4 searchable:false frontmatter (M3 검색 제외 수정), 나머지 소규모. 0 promotable, advance pointer. NOTE: 사용자 네이밍 리팩터가 진행 중이라 매 커밋이 로그를 건드려 이 훅이 재점화됨 — 리팩터 종료 후 1회 실행 권장."
   },
   "needsHumanReview": [
     {

@@ -50,6 +50,7 @@ LLM 에이전트(Claude Code, Codex, Cursor, 기타)가 이 저장소를 읽고 
 
 - 빌드 시 `public/llms.txt` 와 `public/llms-full.txt` 가 자동 생성된다 (`scripts/llms-txt/build.mjs`).
 - `/위키정리` 커맨드로 lint 가능: 모순, 고아 페이지, 오래된 `last_verified`, 깨진 `related`.
+- **코드펜스 안에 문장마다 빈 줄을 넣지 않는다.** 코드블록의 빈 줄은 화면에서 한 줄 높이를 그대로 차지하므로, 더블 스페이스로 쓰면 line-height 를 아무리 조여도 블록 전체가 두 배 행간으로 렌더링된다(프롬프트 예시가 특히 취약). 이어지는 문장은 붙이고, 빈 줄은 섹션(헤더) 사이에만 둔다. 점검: `npm run lint:codefence`.
 
 ### 5. 무엇을 자동화하지 말 것
 

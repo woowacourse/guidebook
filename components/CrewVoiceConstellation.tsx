@@ -8,13 +8,26 @@ import { Eyebrow } from './Eyebrow'
 /**
  * CrewVoiceConstellation — CrewVoiceMap의 별자리 개편 시안(컨셉 A).
  * 크루의 말 = 별. 가장 많이 나온 '함께 자란 동료'를 길잡이 북극성으로 홀로 크게 띄우고,
- * 나머지 테마 5개 + 채움별 2개가 북두칠성 국자를 이룬다. 국자 끝 두 별이 북극성을 가리킨다.
+ * 나머지 테마 5개 + 채움별 2개가 북두칠성 국자를 이룬다. 국자 끝 두 별이 그 별을 가리킨다.
  * 흐름(flex) 배치였던 원본과 달리, 별자리는 '모양이 곧 의미'라 좌표를 고정한다.
+ *
+ * variant — 글리프 형태 비교용:
+ *   'star'   전부 손그림 별 (Hero StarMark 계열)
+ *   'dots'   전부 손그림 동그라미 (성도風, 간결)
+ *   'hybrid' 북극성만 별, 나머지는 동그라미 (위계 + 온기)
  */
+type Variant = 'star' | 'dots' | 'hybrid'
 
 // Hero StarMark / CrewVoiceMap과 동일한 손그림 별 실루엣(솔리드)
 const STAR_PATH =
   'M47.4503 55.4507C43.6684 58.9605 39.8864 62.3888 36.1861 65.9531C33.955 68.1025 31.9416 70.4697 29.8465 72.7007C28.1596 74.4965 26.5543 76.4011 24.7041 78.0336C23.507 79.0947 21.7929 79.2035 20.378 78.3601C19.1264 77.5982 19.0176 76.3195 19.2353 74.9046C20.0515 69.9255 20.7045 64.9192 21.5752 59.94C21.9017 58.1171 22.6635 56.3485 23.3437 54.2807C18.936 54.2807 14.8275 54.3351 10.6918 54.2807C7.59009 54.2263 4.59718 53.4917 1.76751 52.2401C0.543131 51.6959 -0.218703 50.7436 0.0261726 49.1927C0.271048 47.7507 0.89684 46.8528 2.31167 46.2814C3.78092 45.6829 5.11413 44.7306 6.52897 43.9143C11.4265 41.0302 16.324 38.1734 21.4391 35.1532C20.6229 33.4119 19.589 31.5073 18.8544 29.4939C17.0042 24.4059 15.2356 19.2908 13.6303 14.1484C13.3311 13.1689 13.5215 11.6724 14.1201 10.8834C14.8275 9.95829 16.1607 9.38692 17.5483 10.1215C20.5685 11.6996 23.6702 13.1689 26.6631 14.8014C30.2002 16.7604 33.6557 18.8554 37.2744 20.9505C38.009 19.2635 38.7709 17.495 39.5599 15.7537C41.2468 11.9445 42.9609 8.13533 44.6479 4.32616C44.9744 3.56433 45.2464 2.8025 45.5457 2.01345C46.3892 -0.136006 49.1372 -0.680173 50.5521 1.11558C51.2867 2.04066 51.9669 3.129 52.2934 4.27175C53.3001 7.78162 54.1436 11.3459 55.1503 15.2095C57.5174 14.23 59.939 13.1145 62.4421 12.2166C64.7548 11.4003 67.122 10.6657 69.5163 10.1488C71.965 9.63179 73.5431 11.7268 72.8357 14.0668C71.8018 17.3862 69.7068 19.971 67.6389 22.6646C65.5711 25.3582 63.6937 28.2151 61.7619 31.0176C61.517 31.3985 61.2994 31.9698 61.381 32.378C62.687 37.5748 64.2107 42.7171 65.3534 47.9684C66.1425 51.5326 66.4962 55.2058 66.9043 58.8245C67.122 60.5386 66.5234 62.1439 65.1085 63.1778C63.8298 64.1029 62.4421 63.7492 61.0545 62.9602C56.7284 60.5386 52.3206 58.2803 47.9401 55.9404C47.668 55.8044 47.4503 55.5323 47.4231 55.5051L47.4503 55.4507Z'
+
+// 손그림 동그라미 3종(.inbox/동그란 점) — 살짝 찌그러진 점. 인덱스별로 번갈아 써 손맛을 낸다.
+const DOTS = [
+  { w: 4, h: 5, d: 'M1.80179 4.1699C0.701792 4.0599 -0.108209 3.2599 0.0117907 2.2999C0.201791 0.709895 1.00179 -0.100106 2.09179 0.00989424C3.07179 0.109894 3.84179 1.0099 3.75179 1.9199C3.63179 3.1099 2.64179 4.2499 1.80179 4.1699Z' },
+  { w: 4, h: 4, d: 'M3.40602 1.46213C3.40602 1.62213 3.44602 1.82213 3.36602 1.94213C3.14602 2.32213 2.94602 2.90213 2.61602 2.99213C1.83602 3.21213 0.946013 3.27213 0.356013 2.49213C0.00601304 2.03213 -0.14398 1.50213 0.17602 0.932134C0.50602 0.332134 1.67602 -0.147866 2.36602 0.0421336C2.84602 0.182134 3.43602 0.972134 3.40602 1.46213Z' },
+  { w: 4, h: 4, d: 'M1.94484 0.00335708C2.78484 0.0433571 3.52484 0.833357 3.49484 1.66336C3.46484 2.58336 2.50484 3.30336 1.39484 3.24336C0.444838 3.19336 -0.0551615 2.67336 0.00483848 1.79336C0.0848385 0.693356 0.884841 -0.0566429 1.94484 0.00335708Z' }
+]
 
 function HandStar({ size, rotate, flip }: { size: number; rotate: number; flip: number }) {
   return (
@@ -29,6 +42,31 @@ function HandStar({ size, rotate, flip }: { size: number; rotate: number; flip: 
     >
       <path d={STAR_PATH} />
     </svg>
+  )
+}
+
+function HandDot({ size, index, rotate = 0 }: { size: number; index: number; rotate?: number }) {
+  const dot = DOTS[index % DOTS.length]
+  return (
+    <svg
+      className={styles.starSvg}
+      width={size}
+      height={Math.round((size * dot.h) / dot.w)}
+      viewBox={`0 0 ${dot.w} ${dot.h}`}
+      aria-hidden="true"
+      focusable="false"
+      style={{ transform: `rotate(${rotate}deg)` }}
+    >
+      <path d={dot.d} />
+    </svg>
+  )
+}
+
+function Glyph(props: { kind: 'star' | 'dot'; size: number; rotate: number; flip: number; index: number }) {
+  return props.kind === 'dot' ? (
+    <HandDot size={props.size} index={props.index} rotate={props.rotate / 3} />
+  ) : (
+    <HandStar size={props.size} rotate={props.rotate} flip={props.flip} />
   )
 }
 
@@ -70,7 +108,7 @@ const SPARKS: Array<[number, number, number]> = [
   [92, 64, 3]
 ]
 
-export function CrewVoiceConstellation() {
+export function CrewVoiceConstellation({ variant = 'star' }: { variant?: Variant } = {}) {
   const sorted = [...crewThemes].sort((a, b) => b.count - a.count)
   const pole = sorted[0]
   const dipper = sorted.slice(1) // 테마 5개
@@ -78,11 +116,19 @@ export function CrewVoiceConstellation() {
   const [activeKey, setActiveKey] = useState(pole.key)
   const active = sorted.find((t) => t.key === activeKey) ?? pole
 
-  // 국자 테마 빈도 → 별 크기(px). 북극성보다 작게(15~27px)
+  // 글리프 종류 결정
+  const poleKind: 'star' | 'dot' = variant === 'dots' ? 'dot' : 'star'
+  const themeKind: 'star' | 'dot' = variant === 'star' ? 'star' : 'dot'
+
+  // 빈도 → 별 크기(px). 별과 점의 스케일이 달라 종류별로 분리.
   const counts = dipper.map((t) => t.count)
   const dMax = Math.max(...counts)
   const dMin = Math.min(...counts)
-  const themePx = (c: number) => Math.round(15 + Math.sqrt((c - dMin) / (dMax - dMin || 1)) * 12)
+  const norm = (c: number) => Math.sqrt((c - dMin) / (dMax - dMin || 1))
+  const themeSize = (c: number) =>
+    themeKind === 'dot' ? Math.round(9 + norm(c) * 9) : Math.round(15 + norm(c) * 12)
+  const poleSize = poleKind === 'dot' ? 26 : 40
+  const fillerSize = themeKind === 'dot' ? 7 : 11
 
   const activate = (key: string) => setActiveKey(key)
 
@@ -125,7 +171,7 @@ export function CrewVoiceConstellation() {
             style={{ left: `${x}%`, top: `${y}%` }}
             aria-hidden="true"
           >
-            <HandStar size={11} rotate={i ? -6 : 9} flip={i ? -1 : 1} />
+            <Glyph kind={themeKind} size={fillerSize} rotate={i ? -6 : 9} flip={i ? -1 : 1} index={i + 1} />
           </span>
         ))}
 
@@ -141,7 +187,7 @@ export function CrewVoiceConstellation() {
           onClick={() => activate(pole.key)}
           aria-pressed={active.key === pole.key}
         >
-          <HandStar size={40} rotate={-6} flip={1} />
+          <Glyph kind={poleKind} size={poleSize} rotate={-6} flip={1} index={0} />
           <span className={styles.lab}>{pole.label}</span>
           <span className={styles.ct}>{pole.count}</span>
         </button>
@@ -161,7 +207,7 @@ export function CrewVoiceConstellation() {
               onClick={() => activate(t.key)}
               aria-pressed={on}
             >
-              <HandStar size={themePx(t.count)} rotate={ROT[i]} flip={FLIP[i]} />
+              <Glyph kind={themeKind} size={themeSize(t.count)} rotate={ROT[i]} flip={FLIP[i]} index={i} />
               <span className={styles.lab}>{t.label}</span>
               <span className={styles.ct}>{t.count}</span>
             </button>

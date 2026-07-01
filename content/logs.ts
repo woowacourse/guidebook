@@ -138,7 +138,7 @@ export function getLogBadges(log: Log): string[] {
 const logs: Log[] = [
   {
     slug: 'fe-lotto-2026-prs',
-    title: '로또 미션 8기 — PR 57개로 본 콘솔에서 웹으로의 관심사 분리',
+    title: '로또 미션 8기: PR 57개로 본 콘솔에서 웹으로의 관심사 분리',
     description: 'woowacourse/javascript-lotto 2026년 PR 57건·리뷰 코멘트 983건에서 레벨1 크루가 콘솔에서 웹으로 같은 도메인을 옮기며 관심사 분리·검증 위치·TDD를 어떻게 익혔는지 정리했다.',
     href: '/education/logs/fe-lotto-2026-prs',
     date: '2026-06-23',
@@ -147,7 +147,7 @@ const logs: Log[] = [
   },
   {
     slug: 'fe-ts-learning-2026-prs',
-    title: 'ts러닝 미션 8기 — PR 26개로 본 "학습법을 학습하는" 신설 미션',
+    title: 'ts러닝 미션 8기: PR 26개로 본 "학습법을 학습하는" 신설 미션',
     description: '2026년 신설된 woowacourse/ts-and-learning PR 26건·리뷰 코멘트 177건에서, 크루가 TypeScript를 익히는 동시에 자신의 학습법 자체를 설계·측정·개선하도록 한 메타학습 실험을 정리했다.',
     href: '/education/logs/fe-ts-learning-2026-prs',
     date: '2026-06-23',
@@ -156,7 +156,7 @@ const logs: Log[] = [
   },
   {
     slug: 'fe-movie-review-2026-prs',
-    title: '영화리뷰 미션 8기 — PR 54개로 본 비동기 에러와 상태 기반 설계의 첫 만남',
+    title: '영화리뷰 미션 8기: PR 54개로 본 비동기 에러와 상태 기반 설계의 첫 만남',
     description: 'woowacourse/javascript-movie-review 2026년 PR 54건·리뷰 코멘트 1,786건에서 레벨1 크루가 fetch 비동기 통신·에러 경로 설계·상태 기반 렌더링을 처음 부딪히며 익힌 과정을 정리했다.',
     href: '/education/logs/fe-movie-review-2026-prs',
     date: '2026-06-23',
@@ -174,7 +174,7 @@ const logs: Log[] = [
   },
   {
     slug: 'posuta-coach-qa-archive',
-    title: '포수타 코치 Q&A 5회 아카이브 — 학습·관계·삶에 대한 누적 대화',
+    title: '포수타 코치 Q&A 5회 아카이브: 학습·관계·삶에 대한 누적 대화',
     description: '2024-2025년 포수타 5회 전사를 모아 시간 부족·완벽주의·관계·취업·재미라는 반복 주제와 코치들의 우테코식 가이드 어법을 정리.',
     href: '/education/logs/posuta-coach-qa-archive',
     date: '2026-05-19',
@@ -326,7 +326,7 @@ const logs: Log[] = [
   {
     slug: 'fe-level2-16steps',
     title: 'FE 레벨2 16단계 학습 체계: 점진적 깊이로 리액트를 체화하기',
-    description: '적게 읽기, 거꾸로 만들기, 관점 전환 — 세 가지 제약으로 설계한 FE 레벨2 전체 16단계 학습 체계.',
+    description: '적게 읽기, 거꾸로 만들기, 관점 전환, 세 가지 제약으로 설계한 FE 레벨2 전체 16단계 학습 체계.',
     href: '/education/logs/fe-level2-16steps',
     date: '2026-03-27',
     phases: ['레벨2'],

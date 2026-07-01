@@ -62,7 +62,7 @@ export const LEVELS_BY_TRACK: Record<TrackKey, CurriculumLevel[]> = {
     { level: '레벨 5', stage: '취업', name: '취업 준비', desc: '이력서, 인터뷰, 기업 매칭' },
   ],
   '소프트스킬': [
-    { level: '레벨 0', stage: '적응', name: '적응', desc: '연극 온보딩 미션 — 심리적 안정감·신뢰 구축' },
+    { level: '레벨 0', stage: '적응', name: '적응', desc: '연극 온보딩 미션: 심리적 안정감·신뢰 구축' },
     { level: '레벨 1', stage: '마인드셋', name: '마인드셋 전환', desc: '기존 마인드셋 점검 → 협력 중심 사고' },
     { level: '레벨 2', stage: '개인', name: '개인 역량 강화', desc: '강점·약점 인식, 목표 설정, 피드백 성장' },
     { level: '레벨 3', stage: '협업', name: '협업 역량', desc: '협업 소프트스킬 정의·실천 (팀 프로젝트)' },
@@ -80,7 +80,7 @@ const ALL_TRACKS: TrackKey[] = ['웹 프론트엔드', '웹 백엔드', '안드�
 const cohorts: CurriculumCohort[] = [
   {
     gi: 1, year: 2019, headline: '우아한테크코스의 시작',
-    core: ['우아한테크코스의 시작 — 첫 기수 출범', '웹 백엔드 과정으로 출발'],
+    core: ['우아한테크코스의 시작: 첫 기수 출범', '웹 백엔드 과정으로 출발'],
     tracks: BE_ONLY, depth: 'sparse',
   },
   {
@@ -90,7 +90,7 @@ const cohorts: CurriculumCohort[] = [
   },
   {
     gi: 3, year: 2021, headline: '웹 프론트엔드 트랙 신설',
-    core: ['웹 프론트엔드 과정 신설', '(임시) 페이먼츠 미션 개설 — 이후 5년 최장수 단일 미션'],
+    core: ['웹 프론트엔드 과정 신설', '(임시) 페이먼츠 미션 개설, 이후 5년 최장수 단일 미션'],
     tracks: BE_FE, depth: 'sparse',
   },
   {
@@ -115,7 +115,7 @@ const cohorts: CurriculumCohort[] = [
   },
   {
     gi: 8, year: 2026, headline: '서버 경계 설계 + AI 협업 미션',
-    core: ['현재 진행 중인 기수', '페이먼츠 미션을 비동기·서버 통신·통합 테스트로 재설계', '레벨1에 AI 협업 미션(Gemini Canvas) 신설 — 전 트랙 공통'],
+    core: ['현재 진행 중인 기수', '페이먼츠 미션을 비동기·서버 통신·통합 테스트로 재설계', '레벨1에 AI 협업 미션(Gemini Canvas) 신설, 전 트랙 공통'],
     tracks: ALL_TRACKS, depth: 'rich', current: true,
   },
 ]

@@ -171,6 +171,22 @@
   color: rgba(255, 255, 255, 0.42);
 }
 
+/* 라벨을 별 위쪽에 두는 변형 — 좁은 폭에서 아래쪽 라벨끼리 겹치지 않게(손튜닝).
+   숫자(.ct)도 함께 위로 올려 라벨과 붙어 다니게 한다. */
+.star.up .lab {
+  top: auto;
+  bottom: 100%;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.star.up .ct {
+  top: auto;
+  bottom: 100%;
+  margin-top: 0;
+  margin-bottom: 1.55rem;
+}
+
 .star:hover,
 .star.on {
   color: rgb(240, 165, 112);
@@ -193,25 +209,23 @@
   border-radius: 6px;
 }
 
-/* 북극성 — 함께 자란 동료. 상시 오렌지 + 광채로 '길잡이 별'임을 드러낸다. */
+/* 북극성 — 함께 자란 동료. 색은 다른 별과 똑같이 호버/선택 시에만 든다.
+   평소엔 색 대신 은은한 '흰' 광채로 가장 밝은 별임만 드러낸다(호버/선택 시 공용 규칙이 오렌지로 덮음). */
 .pole {
   z-index: 3;
-  color: rgb(240, 165, 112);
 }
 
-.pole .starSvg {
-  filter: drop-shadow(0 0 11px rgba(240, 165, 112, 0.5));
+.pole:not(.on):not(:hover) .starSvg {
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.32));
 }
 
 .pole .lab {
   font-size: 0.9rem;
   margin-top: 8px;
-  color: rgb(240, 165, 112);
 }
 
 .pole .ct {
   margin-top: 2rem;
-  color: rgba(240, 165, 112, 0.6);
 }
 
 /* 채움별 — 국자 실루엣 완성용(라벨 없음, 비인터랙티브) */
@@ -224,30 +238,42 @@
   pointer-events: none;
 }
 
-/* 캡션 — 말풍선(별에서 내려온 한마디) */
+/* 캡션 — 말풍선(별에서 피어오른 한마디). 별자리에 바짝 붙여 둘의 연결을 살린다.
+   음수 margin-top으로 스테이지 하단 여백 안으로 끌어올린다(별과는 안 겹침). */
 .cap {
   position: relative;
-  z-index: 1;
+  z-index: 5;
   max-width: 34rem;
   min-height: 3.2rem;
-  margin: 2.25rem auto 0;
-  padding: 1.2rem 1.5rem;
+  margin: -1.5rem auto 0;
+  padding: 1.25rem 1.6rem;
   border: 0;
-  border-radius: 18px;
+  /* 유기적 비대칭 라운드 — 딱딱한 사각형 대신 손으로 그린 듯한 말풍선 */
+  border-radius: 30px 34px 28px 36px / 34px 28px 34px 30px;
   background: rgba(255, 255, 255, 0.07);
 }
 
+/* 생각 방울 꼬리 — 별에서 피어오르듯 위로 향하는 두 점(별=점 모티프와 호응) */
 .cap::before {
   content: '';
   position: absolute;
-  top: -9px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 0;
-  border-left: 9px solid transparent;
-  border-right: 9px solid transparent;
-  border-bottom: 9px solid rgba(255, 255, 255, 0.07);
+  top: -10px;
+  left: calc(50% - 4px);
+  width: 15px;
+  height: 13px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.cap::after {
+  content: '';
+  position: absolute;
+  top: -23px;
+  left: calc(50% + 7px);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .quote {

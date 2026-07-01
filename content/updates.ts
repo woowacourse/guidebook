@@ -26,7 +26,7 @@ const updates: Update[] = [
   },
   {
     date: '2026년 연구',
-    title: '크루의 목소리 — 데이터 빈도 맵 + 아카이브 신설',
+    title: '크루의 목소리: 데이터 빈도 맵 + 아카이브 신설',
     description:
       '우테코를 거쳐 간 크루들이 남긴 메시지를 추천사 카드가 아니라 "무엇이 가장 많이 나왔나"라는 데이터로 보여준다. 랜딩에서는 "크루는 어디로 갔나(결과)" 다음에, 메시지에서 반복된 주제를 글자 크기(빈도)로 인코딩한 타이포그래픽 빈도 맵을 두고, 주제를 누르면 대표 문장이 뜬다. 아카이브에는 그 근거가 되는 개별 메시지 전체를 둔다. 현재 빈도·문구는 실제 메시지를 받기 전 예시다.',
     href: '/education/conversations/crew-voices',
@@ -66,7 +66,7 @@ const updates: Update[] = [
   },
   {
     date: '2026년 연구',
-    title: '공개 합작 회고 패턴 신설 — 우테코 회고 저장소에서 추출',
+    title: '공개 합작 회고 패턴 신설: 우테코 회고 저장소에서 추출',
     description:
       'woowacourse/retrospective 공개 디스커션 4년치(2022~2026)를 분석해, 회고의 "형식"과 직교하는 "진행·공유" 축의 패턴 3가지(한 코멘트 합작 · 공개 아카이브 · 역할 로테이션)를 정리했다. 회고를 함께 써서 공개로 남기면 1회성 성찰이 기수를 넘는 학습 자산이 된다. 기존 회고 설계·형식 키트와 직교 축으로 연결된다.',
     href: '/education/insights/public-retrospective',
@@ -276,7 +276,7 @@ const updates: Update[] = [
   {
     date: '7기',
     title: '논증 기반 학습 설계 인사이트',
-    description: '정답을 주지 않고 설명하게 만드는 패턴 — 4개 로그에서 레벨1~4에 걸쳐 발견된 교차 패턴을 인사이트로 정리.',
+    description: '정답을 주지 않고 설명하게 만드는 패턴. 4개 로그에서 레벨1~4에 걸쳐 발견된 교차 패턴을 인사이트로 정리.',
     href: '/education/insights/argumentation-based-learning',
     status: 'active',
   },
@@ -317,7 +317,7 @@ const updates: Update[] = [
   },
   {
     date: '2026년 8기',
-    title: '우테코 토크 아카이브 신설 — 2026년 8기 브수타 1회차',
+    title: '우테코 토크 아카이브 신설: 2026년 8기 브수타 1회차',
     description: '인터뷰, 수다 타임, 테코톡까지 담을 토크형 콘텐츠 아카이브를 열고, 첫 기록으로 브수타 8기 1회차를 정리.',
     href: '/education/conversations/bsuta/2026-8th',
     status: 'active',
@@ -332,7 +332,7 @@ const updates: Update[] = [
   {
     date: '아카이브',
     title: 'FE 레벨3·4 워크숍 6편 아카이브',
-    description: '접근성 리포트, SSR 토론, 렌더링 전략, TS 컨벤션, 레이아웃 컴포넌트, 레벨3 회고 3부작 — GitHub Discussions 기반 6개 실험 로그를 일괄 자산화.',
+    description: '접근성 리포트, SSR 토론, 렌더링 전략, TS 컨벤션, 레이아웃 컴포넌트, 레벨3 회고 3부작 등 GitHub Discussions 기반 6개 실험 로그를 일괄 자산화.',
     href: '/education/logs',
     status: 'active',
   },
@@ -422,7 +422,7 @@ const updates: Update[] = [
   },
   {
     date: '2025년 8기',
-    title: 'Gemini Canvas 미션 — PR 리뷰 패턴 분석',
+    title: 'Gemini Canvas 미션: PR 리뷰 패턴 분석',
     description: '145개 PR 리뷰 대화에서 추출한 8가지 반복 패턴. 프롬프팅 전략부터 피어 리뷰 구조까지.',
     href: '/education/logs/mission-design',
     status: 'completed',

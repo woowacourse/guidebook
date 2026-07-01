@@ -55,12 +55,13 @@ export function lintCss(content, filename = '<input>') {
       const n = Number(d[1])
       if (n <= 360) continue
       sawFixed = true
-      if (!hasMaxWidth) {
-        findings.push({
-          severity: 'error', rule: 'min-width-no-max', selector, line,
-          message: `min-width:${n}px — 폰 폭(360px) 초과 최소폭. 가로 스크롤 유발. max-width:100% 또는 낮춤 필요.`,
-        })
-      }
+      // max-width 가드 없음: CSS 에서 max-width 는 min-width 를 무효화하지 못한다
+      // (min-width 가 우선). 따라서 폰 폭 초과 min-width 는 max-width 동반 여부와
+      // 무관하게 항상 가로 스크롤을 유발하므로 error 로 잡는다.
+      findings.push({
+        severity: 'error', rule: 'min-width-no-max', selector, line,
+        message: `min-width:${n}px — 폰 폭(360px) 초과 최소폭. 가로 스크롤 유발(max-width 로 무효화 안 됨). 값을 낮추거나 제거 필요.`,
+      })
     }
     if (/white-space\s*:\s*nowrap/.test(body)) {
       findings.push({

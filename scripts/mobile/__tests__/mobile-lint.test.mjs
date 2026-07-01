@@ -25,6 +25,11 @@ test('폰 폭 초과 min-width 는 error', () => {
   assert.ok(rules(f).includes('min-width-no-max'))
 })
 
+test('min-width 는 max-width 가 있어도 error (max-width 로 무효화 안 됨)', () => {
+  const f = lintCss('.wrap { min-width: 700px; max-width: 100%; }', 'x.module.css')
+  assert.ok(rules(f).includes('min-width-no-max'))
+})
+
 test('white-space:nowrap 는 warn', () => {
   const f = lintCss('.chip { white-space: nowrap; }', 'x.module.css')
   const hit = f.find((x) => x.rule === 'nowrap')

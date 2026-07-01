@@ -128,6 +128,8 @@
 .doorDesc {
   font-size: 0.92rem;
   color: rgba(55, 53, 47, 0.6);
+  word-break: keep-all; /* 한글을 어절 단위로만 끊는다 (것부/터 → 것부터) */
+  text-wrap: balance; /* 2줄이 될 때 두 줄 길이를 고르게 — 끝줄에 1~2글자만 남는 것 방지 */
 }
 
 :global(.dark) .doorDesc {

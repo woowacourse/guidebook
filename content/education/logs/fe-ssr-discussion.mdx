@@ -16,7 +16,7 @@ SSR은 직관에 반하는 학습 주제다. 같은 JavaScript 코드가 서버�
 
 ### 두 단계 활동
 
-1. **토론 — JS의 평행세계, 서버와 클라이언트** ([Discussion #55](https://github.com/woowacourse/retrospective/discussions/55))
+1. **토론: JS의 평행세계, 서버와 클라이언트** ([Discussion #55](https://github.com/woowacourse/retrospective/discussions/55))
    - var 호이스팅 코드의 결괏값을 추론하기 (foo.js, bar.js의 변수 충돌)
    - 프리코스 자동차 경주 vs 레벨1 자동차 경주 저장소의 `package.json` 비교
    - Babel 트랜스파일링 직접 실행 후 원본 코드와 변환 결과 비교
@@ -34,7 +34,7 @@ SSR은 직관에 반하는 학습 주제다. 같은 JavaScript 코드가 서버�
 
 ## 결과
 
-### 1. 토론(#55) — "직접 실행한 팀"과 "추측한 팀"의 깊이 격차
+### 1. 토론(#55): "직접 실행한 팀"과 "추측한 팀"의 깊이 격차
 
 호이스팅 코드 결과 추론에서 다수 크루는 "var 재선언"을 단순 "덮어쓰기"로 설명하고 끝났습니다.
 
@@ -56,11 +56,11 @@ SSR은 직관에 반하는 학습 주제다. 같은 JavaScript 코드가 서버�
 
 private field가 WeakMap으로 변환되거나 numeric separator(ES2021)가 일반 숫자로 풀리는 것은 직접 트랜스파일해야만 발견 가능한 디테일입니다. 토론 3번 문제에서 6팀이 "시간 부족 / 못함"을 적었고, **실제로 트랜스파일까지 끝낸 4팀(크루루·hwinkr·투룻·모우다)만이 `_typeof`, `_classCallCheck`, `WeakMap`, `_interopRequireDefault` 같은 헬퍼 함수를 구체적으로 인지**했습니다. "직접 실행"과 "추측 설명"의 학습 격차가 데이터로 드러난 셈입니다.
 
-### 2. OX퀴즈(#56) — 가장 의견이 갈린 명제
+### 2. OX퀴즈(#56): 가장 의견이 갈린 명제
 
 가장 갈린 것은 **문제 3** ("하이드레이션 과정에서 첫 화면을 검증하지 않고 다음 렌더링을 준비한다") 이었습니다.
 
-- jinhokim98(행동대장)만 유일하게 **O**: "하이드레이션 중 서버와 클라이언트의 상태가 대체로 일치할 경우 추가적인 검증 없이 바로 다음 렌더링을 준비합니다 ... 주로 개발 환경에서만 경고가 표시될 수 있지만" — 검증을 "프로덕션에서는 생략"으로 해석.
+- jinhokim98(행동대장)만 유일하게 **O**: "하이드레이션 중 서버와 클라이언트의 상태가 대체로 일치할 경우 추가적인 검증 없이 바로 다음 렌더링을 준비합니다 ... 주로 개발 환경에서만 경고가 표시될 수 있지만". 검증을 "프로덕션에서는 생략"으로 해석했습니다.
 - 나머지 전원 **X**: 동일한 hydration error 메시지(`"Hydration failed because the initial UI does not match"`)를 근거로 제시.
 
 **"검증 한다 vs 생략 한다"가 정확히 둘로 갈린 것**입니다. 미묘한 차이를 다룬 해설:
@@ -100,5 +100,5 @@ private field가 WeakMap으로 변환되거나 numeric separator(ES2021)가 일�
 
 이 로그는 원재료입니다. 여기서 반복 검증된 내용은 아래에 바로 적용할 수 있게 정리돼 있습니다.
 
-- [설명으로 배우기](/education/insights/argumentation-based-learning) — 검증된 패턴
-- [예측 먼저](/education/insights/poe-discovery-learning) — 검증된 패턴
+- [설명으로 배우기](/education/insights/argumentation-based-learning) (검증된 패턴)
+- [예측 먼저](/education/insights/poe-discovery-learning) (검증된 패턴)

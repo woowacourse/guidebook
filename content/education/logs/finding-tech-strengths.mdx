@@ -62,41 +62,41 @@
 <Toggle title="렌더링과 Hydration 심화 (7건)">
 가장 많은 크루가 선택한 영역입니다. 같은 키워드지만 탐구 각도가 모두 달랐습니다.
 
-- **renderToString** — React 컴포넌트를 HTML로 변환할 때 useEffect, useState, onClick 등 중 무엇이 채택되고 무엇이 버려지는지 추적
-- **Hydration 내부 메커니즘** — React의 Fiber를 중심으로 hydration이 6단계로 동작하는 과정 분석
-- **Selective Hydration** — React 18의 Selective Hydration과 미스매치 오류 원인·종류·예방법 정리
-- **CSR 초기 렌더링 병목** — 스크립트 평가가 병목으로 작용해 LCP가 나빠지는 원인 분석
+- **renderToString**: React 컴포넌트를 HTML로 변환할 때 useEffect, useState, onClick 등 중 무엇이 채택되고 무엇이 버려지는지 추적
+- **Hydration 내부 메커니즘**: React의 Fiber를 중심으로 hydration이 6단계로 동작하는 과정 분석
+- **Selective Hydration**: React 18의 Selective Hydration과 미스매치 오류 원인·종류·예방법 정리
+- **CSR 초기 렌더링 병목**: 스크립트 평가가 병목으로 작용해 LCP가 나빠지는 원인 분석
 </Toggle>
 
 <Toggle title="성능 최적화: 이미지·폰트·캐싱 (12건)">
 프로젝트에서 직접 겪은 성능 문제에서 출발한 딥다이브가 많았습니다.
 
-- **이미지 최적화를 통한 LCP 개선** — 왜 이것이 성능 최적화를 만드는지, 다른 방법은 없는지 탐구
-- **이미지 압축의 원리** — 무손실/손실 압축의 차이를 원리 수준에서 파악
-- **웹 폰트 최적화** — 폰트 용량 축소, 리소스 요청 우선순위 조정, FOIT/FOUT 문제 해결까지 전체 과정
-- **CDN 기반 캐싱 전략** — CORS 오류가 브라우저 캐싱에서 비롯된 문제임을 발견하고 CDN 응답 헤더 정책으로 해결
-- **캐싱 전략 설계** — Lighthouse에서 TTL none인데 CloudFront에서 HIT으로 표시되는 현상 추적 및 해결
+- **이미지 최적화를 통한 LCP 개선**: 왜 이것이 성능 최적화를 만드는지, 다른 방법은 없는지 탐구
+- **이미지 압축의 원리**: 무손실/손실 압축의 차이를 원리 수준에서 파악
+- **웹 폰트 최적화**: 폰트 용량 축소, 리소스 요청 우선순위 조정, FOIT/FOUT 문제 해결까지 전체 과정
+- **CDN 기반 캐싱 전략**: CORS 오류가 브라우저 캐싱에서 비롯된 문제임을 발견하고 CDN 응답 헤더 정책으로 해결
+- **캐싱 전략 설계**: Lighthouse에서 TTL none인데 CloudFront에서 HIT으로 표시되는 현상 추적 및 해결
 </Toggle>
 
 <Toggle title="빌드와 번들링 (3건)">
-- **Tree Shaking** — package.json의 sideEffects 설정에서 왜 CSS 파일만 들어가는지를 출발점으로 AST 파싱과 의존성 그래프 구축 과정 분석
-- **Webpack 빌드 파이프라인** — 코드 변환·번들링·캐싱 등 빌드 흐름 전반을 처음부터 끝까지 분석
-- **트리셰이킹 트러블슈팅** — sideEffects 설정 오류로 인한 문제를 프로젝트에서 직접 발견하고 해결
+- **Tree Shaking**: package.json의 sideEffects 설정에서 왜 CSS 파일만 들어가는지를 출발점으로 AST 파싱과 의존성 그래프 구축 과정 분석
+- **Webpack 빌드 파이프라인**: 코드 변환·번들링·캐싱 등 빌드 흐름 전반을 처음부터 끝까지 분석
+- **트리셰이킹 트러블슈팅**: sideEffects 설정 오류로 인한 문제를 프로젝트에서 직접 발견하고 해결
 </Toggle>
 
 <Toggle title="애니메이션과 렌더링 파이프라인 (3건)">
-- **애니메이션 최적화** — 바텀시트 스크롤 애니메이션에서 프레임 드랍 원인을 개발자 도구로 직접 관찰하며 해결
-- **paint → composite 단계 전환** — paint 단계에 있었던 애니메이션을 composite 단계로 옮긴 최적화 사례
-- **transform의 렌더링 최적화 원리** — transform 속성이 렌더링 성능을 최적화하는 원리 탐구
+- **애니메이션 최적화**: 바텀시트 스크롤 애니메이션에서 프레임 드랍 원인을 개발자 도구로 직접 관찰하며 해결
+- **paint → composite 단계 전환**: paint 단계에 있었던 애니메이션을 composite 단계로 옮긴 최적화 사례
+- **transform의 렌더링 최적화 원리**: transform 속성이 렌더링 성능을 최적화하는 원리 탐구
 </Toggle>
 
 <Toggle title="접근성·UX·기타 (6건+)">
-- **웹 접근성** — 접근성이 장애인만을 위한 것인지, 개발자에게 어떤 이점이 있는지를 중심으로 정리
-- **CSR 환경에서 동적 OG 메타태그** — CloudFront + Lambda@Edge를 활용해 S3 정적 HTML에서 OG 메타태그를 실시간 수정하는 구조 탐구
-- **쌓임맥락(Stacking Context)** — 버튼 클릭 시 배경 애니메이션 구현 중 z-index만으로 해결 안 되는 문제를 isolation: isolate로 해결
-- **useSyncExternalStore** — Context API의 렌더링 문제와 provider hell을 개선하고, zustand 코드를 분석하며 selector 패턴 학습
-- **메모이제이션** — React.memo를 제대로 이해하지 못한 채 사용하던 것을 바로잡고 올바른 사용법 정리
-- **비동기와 동시성** — 서버(node)와 클라이언트(브라우저) 환경에서 비동기 처리 방법과 최신 웹 렌더링 전략과의 연결
+- **웹 접근성**: 접근성이 장애인만을 위한 것인지, 개발자에게 어떤 이점이 있는지를 중심으로 정리
+- **CSR 환경에서 동적 OG 메타태그**: CloudFront + Lambda@Edge를 활용해 S3 정적 HTML에서 OG 메타태그를 실시간 수정하는 구조 탐구
+- **쌓임맥락(Stacking Context)**: 버튼 클릭 시 배경 애니메이션 구현 중 z-index만으로 해결 안 되는 문제를 isolation: isolate로 해결
+- **useSyncExternalStore**: Context API의 렌더링 문제와 provider hell을 개선하고, zustand 코드를 분석하며 selector 패턴 학습
+- **메모이제이션**: React.memo를 제대로 이해하지 못한 채 사용하던 것을 바로잡고 올바른 사용법 정리
+- **비동기와 동시성**: 서버(node)와 클라이언트(브라우저) 환경에서 비동기 처리 방법과 최신 웹 렌더링 전략과의 연결
 </Toggle>
 
 ### 주제 선택의 패턴

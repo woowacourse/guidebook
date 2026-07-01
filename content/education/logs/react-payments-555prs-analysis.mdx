@@ -143,7 +143,7 @@ import { Callout } from 'nextra/components'
 
 핵심: **외부 상태관리 라이브러리 합계가 9회**에 그친다. 페이먼츠 미션은 5년 내내 **React 기본기(Context API + useState + useEffect)만으로 풀도록 설계**됐다는 것을 데이터가 확정한다.
 
-### 6) 크루의 자기 성찰 어휘 — 555개 본문 누적 빈도
+### 6) 크루의 자기 성찰 어휘: 555개 본문 누적 빈도
 
 | 어휘 | 누적 등장 |
 | --- | --- |
@@ -173,7 +173,7 @@ import { Callout } from 'nextra/components'
 
 215명 중 209명(97%)이 같은 미션에 2회 이상 PR을 보냈다. 한 번 통과로 끝나는 게 아니라 **여러 단계를 거치며 같은 저장소로 다시 돌아오는 반복 학습 구조**가 자리잡고 있다.
 
-### 8) 리뷰 코멘트 분석 — 상위 30개 PR, 2,178건의 인간 코멘트
+### 8) 리뷰 코멘트 분석: 상위 30개 PR, 2,178건의 인간 코멘트
 
 가장 활발한 리뷰어 Top 15:
 
@@ -214,7 +214,7 @@ pie title 리뷰 코멘트 테마 분포 (n=2178)
 `} />
 
 - **긍정 피드백 37%** + **질문 형식 35%** + **제안 23%** = 95%
-- "왜?" 형태의 의도 묻기 16% — 정답이 아닌 사고를 묻는 질문
+- "왜?" 형태의 의도 묻기 16%, 정답이 아닌 사고를 묻는 질문
 
 질문(35%) + "왜" 질문(16%)을 합치면 **절반에 가까운 51%가 답이 아니라 질문**이다. 이는 우테코의 소크라테스식 리뷰 문화의 정량적 증거다.
 
@@ -222,7 +222,7 @@ pie title 리뷰 코멘트 테마 분포 (n=2178)
 
 데이터에서 가장 깊은 토론이 오간 코멘트를 골라 인용한다. 모두 원문 인용이며 PR 번호를 함께 남긴다.
 
-#### 사례 1 — 포코(pocojang)의 깊이 코칭 ([PR #213](https://github.com/woowacourse/react-payments/pull/213))
+#### 사례 1: 포코(pocojang)의 깊이 코칭 ([PR #213](https://github.com/woowacourse/react-payments/pull/213))
 
 > 빡시게 공부 잘하셨고요! 다음부터는 이해하려고 노력해보셨으면 좋겠어요. 지금은 백과사전의 내용을 외운 느낌이 살짝 드는데 `웹 브라우저 주소창에 URL을 입력하면 일어나는 일` 관점에서 이해해보실 필요가 있어요.
 >
@@ -230,7 +230,7 @@ pie title 리뷰 코멘트 테마 분포 (n=2178)
 
 지식이 아니라 **이해의 깊이**를 묻는 코칭. "잘했다"는 칭찬과 "더 깊이 가라"는 도전 과제가 한 메시지 안에 공존한다.
 
-#### 사례 2 — 365kim의 공식 문서 인용 코칭 ([PR #390](https://github.com/woowacourse/react-payments/pull/390))
+#### 사례 2: 365kim의 공식 문서 인용 코칭 ([PR #390](https://github.com/woowacourse/react-payments/pull/390))
 
 > effect 관련 좋은 자료가 생각나 같이 첨부해보아요. 언제 effect를 사용할지, 언제 event handling만으로 충분할지 정리해보기 좋은 글이에요 :)
 >
@@ -238,13 +238,13 @@ pie title 리뷰 코멘트 테마 분포 (n=2178)
 
 리뷰어가 답을 알려주지 않는다. 대신 **공식 문서 한 줄을 추천**한다. 학습자가 직접 읽고 자기 코드와 비교하도록 한다.
 
-#### 사례 3 — InSeong-So의 일관성 진단 ([PR #258](https://github.com/woowacourse/react-payments/pull/258))
+#### 사례 3: InSeong-So의 일관성 진단 ([PR #258](https://github.com/woowacourse/react-payments/pull/258))
 
 > 이건 제3자가 알지 못하는 의도이므로 모든 방어코드를 작성하거나, 느슨하지만 일관된 기능을 프로젝트 코드 전반에 설치해둬야 합니다. `로컬 스토리지를 "왜" 사용했나요?`라는 질문은 아닙니다. 앱의 컨텍스트가 앱에 일관되지 않게 위치해있고, 그와 별개로 로컬 스토리지가 컨텍스트와 동기화되지 않았기 때문입니다.
 
 "왜 X를 썼는가"가 아니라 "왜 X와 Y가 일관되지 않은가"를 묻는다. **개별 결정이 아니라 결정들 사이의 일관성**을 본다.
 
-#### 사례 4 — yujo11의 "주석 = 도메인 설명" 가이드 ([PR #345](https://github.com/woowacourse/react-payments/pull/345))
+#### 사례 4: yujo11의 "주석 = 도메인 설명" 가이드 ([PR #345](https://github.com/woowacourse/react-payments/pull/345))
 
 > `isVisa`나 `isMaster`의 경우 ... 이 코드를 통해 어떤 숫자에 대해서 `true` 또는 `false`를 반환하는지는 알 수 있지만 "왜" 해당 숫자일 때 visa나 master로 판별하는지는 알 수 없는데 이 부분을 말씀드린거였습니다.
 >
@@ -252,7 +252,7 @@ pie title 리뷰 코멘트 테마 분포 (n=2178)
 
 **"코드로 표현할 수 없는 도메인 지식만 주석에 남긴다"** 는 원칙을 구체 사례로 코칭. 이건 책에서 베껴오기 어려운 깊이의 가이드다.
 
-#### 사례 5 — 호이의 깨달음 댓글 ([PR #448](https://github.com/woowacourse/react-payments/pull/448))
+#### 사례 5: 호이의 깨달음 댓글 ([PR #448](https://github.com/woowacourse/react-payments/pull/448))
 
 > 이 말씀을 듣고 나니, 제가 너무 재사용성에만 집착하고 있었던 것 같습니다. 이번 payment 미션을 처음 봤을 때도 "이건 무조건 재사용해야지!"라는 관점으로 접근했던 것 같습니다. 하지만 동키콩 말씀처럼, "이 컴포넌트가 담당하는 책임은 무엇인가?" 라는 질문을 먼저 생각해보면, 꼭 재사용을 위한 분리만이 정답은 아니구나 ...
 
@@ -260,7 +260,7 @@ pie title 리뷰 코멘트 테마 분포 (n=2178)
 
 ## 해석
 
-### 해석 1 — 페이먼츠 미션은 "Form + 컴포넌트 + 상태 관리"라는 **5년 불변의 골격** 위에 매년 학습 목표가 새롭게 누적되는 구조다
+### 해석 1: 페이먼츠 미션은 "Form + 컴포넌트 + 상태 관리"라는 **5년 불변의 골격** 위에 매년 학습 목표가 새롭게 누적되는 구조다
 
 form-handling, storybook, state-management, component-design은 모든 연도에서 50% 이상의 PR이 다루는 영구 핵심 주제다. 그 위에 매년 새로운 요구가 더해진다.
 
@@ -277,7 +277,7 @@ timeline
 
 미션은 단순 반복이 아니다. **누적 학습 모델**이다.
 
-### 해석 2 — 2026년의 미션 재설계는 "기능 동작"에서 "서버 경계 설계"로 학습 단위가 한 단계 추상화됐다는 신호다
+### 해석 2: 2026년의 미션 재설계는 "기능 동작"에서 "서버 경계 설계"로 학습 단위가 한 단계 추상화됐다는 신호다
 
 2026년 PR 본문에 나타난 표현들이 그것을 보여준다:
 
@@ -287,18 +287,18 @@ timeline
 
 핵심 단어는 **"설계"** 와 **"계약"** 이다. 컴포넌트가 잘 동작하는지가 아니라 **컴포넌트가 서버라는 외부 시스템과 어떻게 계약을 맺을지를 설계**하는 게 학습 목표가 됐다.
 
-### 해석 3 — 우테코 FE 리뷰 문화의 정량적 특징: "질문 51% + 긍정 37% + 제안 23%"
+### 해석 3: 우테코 FE 리뷰 문화의 정량적 특징은 "질문 51% + 긍정 37% + 제안 23%"
 
 부정 지적이 아니라 **질문과 발견**이 리뷰의 주된 형태다.
 
-- "왜 그렇게 했어요?" — 의도 묻기 16%
-- "이렇게 해보면 어떨까요?" — 대안 제시 23%
-- "이건 좋네요" — 잘한 부분 명시 37%
-- "정답을 알려주기보다 공식 문서 링크 한 줄을 추천한다" — 365kim 패턴
+- "왜 그렇게 했어요?": 의도 묻기 16%
+- "이렇게 해보면 어떨까요?": 대안 제시 23%
+- "이건 좋네요": 잘한 부분 명시 37%
+- "정답을 알려주기보다 공식 문서 링크 한 줄을 추천한다": 365kim 패턴
 
 이는 학습자를 정답으로 끌고 가는 게 아니라 **학습자가 스스로 답을 찾도록 자극하는 코칭 구조**다. 데이터로 본 우테코 리뷰의 본질이다.
 
-### 해석 4 — PR 본문 길이의 폭증은 "코드 설명"에서 "사고 과정 공유"로 PR의 의미가 바뀌었다는 증거다
+### 해석 4: PR 본문 길이의 폭증은 "코드 설명"에서 "사고 과정 공유"로 PR의 의미가 바뀌었다는 증거다
 
 | 연도 | 평균 본문 길이 | 변화 의미 |
 | --- | --- | --- |
@@ -317,13 +317,13 @@ timeline
 
 PR은 이제 코드 제출 도구가 아니라 **학습자의 사고 과정과 리뷰어의 코칭이 만나는 대화 공간**이다.
 
-### 해석 5 — 페이먼츠 미션은 외부 라이브러리를 의도적으로 배제한다
+### 해석 5: 페이먼츠 미션은 외부 라이브러리를 의도적으로 배제한다
 
 Redux/Zustand/Recoil/React Query의 합계 언급이 555개 본문에서 단 16회. Context API 언급은 306회. **"라이브러리로 추상화하기 전에 React 기본기로 끝까지 풀어본다"** 가 5년 내내 흔들리지 않은 설계 원칙이다.
 
 이는 페이먼츠 미션 이후 다른 미션(react-shopping-cart 등)에서 외부 라이브러리를 본격적으로 도입하는 구조와 연결돼야 의미가 살아난다.
 
-### 해석 6 — 크루 간 상호 리뷰가 코치 리뷰만큼 활발하다
+### 해석 6: 크루 간 상호 리뷰가 코치 리뷰만큼 활발하다
 
 상위 리뷰어 15명 중 절반(yeongipark, ohgus, brgndyy, JUDONGHYEOK 등)이 본인도 페이먼츠 미션을 제출한 크루다. 즉 **"나도 막 미션을 끝낸 사람"이 다른 크루의 미션을 리뷰**한다. 이는 "선배 코치 → 후배 크루"의 일방향 흐름이 아니라 **동료 학습 네트워크**가 PR 단위로 작동한다는 신호다.
 
@@ -333,7 +333,7 @@ Redux/Zustand/Recoil/React Query의 합계 언급이 555개 본문에서 단 16�
 
 1. **다른 미션 저장소도 동일 방식으로 분석**하여 페이먼츠와 비교
    - `react-shopping-cart` (외부 라이브러리 도입 미션)
-   - `react-step-payments` (이전 세대 페이먼츠 — fork 관계 추적)
+   - `react-step-payments` (이전 세대 페이먼츠, fork 관계 추적)
    - 두 저장소를 5년 매트릭스로 비교하면 미션 간 학습 단계의 차이가 정량화된다
 2. **2026년 80개 PR을 단독 분석**하여 "비동기 상태 관리" 도입 첫 해에 크루들이 어떤 패턴으로 막혔는지 정성 분석
 3. **상위 30 → 100 PR로 리뷰 코멘트 수집 확장**하여 코치 리뷰어 vs 크루 리뷰어의 코칭 스타일 차이를 정량화
@@ -353,7 +353,7 @@ Redux/Zustand/Recoil/React Query의 합계 언급이 555개 본문에서 단 16�
 
 ### 분석 대상 저장소
 
-- **woowacourse/react-payments** — https://github.com/woowacourse/react-payments
+- **woowacourse/react-payments**: https://github.com/woowacourse/react-payments
   - 555개 PR 전수, 2021-04 ~ 2026-05
   - PR 본문 평균 2,668자, 최대 15,394자
   - 215명의 크루 작성자
@@ -361,13 +361,13 @@ Redux/Zustand/Recoil/React Query의 합계 언급이 555개 본문에서 단 16�
 
 ### 인용된 리뷰 사례 PR
 
-- [PR #213 — 포코 코칭](https://github.com/woowacourse/react-payments/pull/213)
-- [PR #390 — 365kim 코칭](https://github.com/woowacourse/react-payments/pull/390)
-- [PR #258 — InSeong-So 일관성 진단](https://github.com/woowacourse/react-payments/pull/258)
-- [PR #345 — yujo11 주석 가이드](https://github.com/woowacourse/react-payments/pull/345)
-- [PR #448 — 호이 깨달음 댓글](https://github.com/woowacourse/react-payments/pull/448)
-- [PR #468 — 메타(조유담)의 19코멘트 토론 — 가장 활발한 PR](https://github.com/woowacourse/react-payments/pull/468)
-- [PR #576 — 2026년 5월 최신, MSW & Async & Testing 단계](https://github.com/woowacourse/react-payments/pull/576)
+- [PR #213: 포코 코칭](https://github.com/woowacourse/react-payments/pull/213)
+- [PR #390: 365kim 코칭](https://github.com/woowacourse/react-payments/pull/390)
+- [PR #258: InSeong-So 일관성 진단](https://github.com/woowacourse/react-payments/pull/258)
+- [PR #345: yujo11 주석 가이드](https://github.com/woowacourse/react-payments/pull/345)
+- [PR #448: 호이 깨달음 댓글](https://github.com/woowacourse/react-payments/pull/448)
+- [PR #468: 메타(조유담)의 19코멘트 토론, 가장 활발한 PR](https://github.com/woowacourse/react-payments/pull/468)
+- [PR #576: 2026년 5월 최신, MSW & Async & Testing 단계](https://github.com/woowacourse/react-payments/pull/576)
 
 ### 분석 스크립트와 원본 데이터
 
@@ -389,6 +389,6 @@ Redux/Zustand/Recoil/React Query의 합계 언급이 555개 본문에서 단 16�
 
 이 로그는 원재료입니다. 여기서 반복 검증된 내용은 아래에 바로 적용할 수 있게 정리돼 있습니다.
 
-- [설명으로 배우기](/education/insights/argumentation-based-learning) — 검증된 패턴
-- [쌓이는 미션](/education/insights/mission-learning-accumulation) — 검증된 패턴
-- [미션 저장소 PR 데이터 분석](/education/tools/mission-repo-analysis-workflow) — 검증된 도구
+- [설명으로 배우기](/education/insights/argumentation-based-learning): 검증된 패턴
+- [쌓이는 미션](/education/insights/mission-learning-accumulation): 검증된 패턴
+- [미션 저장소 PR 데이터 분석](/education/tools/mission-repo-analysis-workflow): 검증된 도구

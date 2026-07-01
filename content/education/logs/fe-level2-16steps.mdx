@@ -155,9 +155,9 @@ Step 2에서 NotebookLM과 대화한 크루들의 반응:
 
 | 접근 방식 | 핵심 아이디어 | Trade-off |
 |-----------|--------------|-----------|
-| **제네릭 Context 생성 함수** | `createDataContext<T>(getApi)` — 데이터 타입만 바꾸면 재사용 | 컨텍스트에 의존, isLoading/error 구현 필요 |
-| **커스텀 훅 추상화** | `useRequest({method, requestData})` — HTTP 메서드별 로직 통합 | 확장성은 좋지만 복잡한 케이스에 대응 어려움 |
-| **단일 Provider 통합** | `AllProvider` — Products와 CartItems를 하나의 Provider에서 관리 | Provider Hell 해결, 그러나 관심사 분리 약화 |
+| **제네릭 Context 생성 함수** | `createDataContext<T>(getApi)`: 데이터 타입만 바꾸면 재사용 | 컨텍스트에 의존, isLoading/error 구현 필요 |
+| **커스텀 훅 추상화** | `useRequest({method, requestData})`: HTTP 메서드별 로직 통합 | 확장성은 좋지만 복잡한 케이스에 대응 어려움 |
+| **단일 Provider 통합** | `AllProvider`: Products와 CartItems를 하나의 Provider에서 관리 | Provider Hell 해결, 그러나 관심사 분리 약화 |
 | **옵저버 패턴 도입** | Subject/Observer 인터페이스로 상태 변화 구독 | 선언적이지만 React 패러다임과의 충돌 가능 |
 
 크루들의 설계에서 공통적으로 포함된 인터페이스:
@@ -213,18 +213,18 @@ interface DataContextType<T> {
 
 단계별 활동 기록 (7기 FE 레벨2):
 
-- [Step 1/16 — 스토리북 적게 읽고, 더 많이 배우기 (Discussion #59)](https://github.com/woowacourse/retrospective/discussions/59)
-- [Step 2/16 — 리액트 공식문서 적게 읽고, 핵심 포인트 뽑기 (Discussion #60)](https://github.com/woowacourse/retrospective/discussions/60)
-- [Step 3/16 — 커스텀 훅 다양한 관점으로 읽고 설계해보기 (Discussion #61)](https://github.com/woowacourse/retrospective/discussions/61)
-- [Step 4/16 — 컴포넌트 & 상태 관리 근거 기반 리뷰 (Discussion #62)](https://github.com/woowacourse/retrospective/discussions/62)
-- [Step 5/16 — 페이먼츠 모듈 1단계, 커밋 로그 거꾸로 만들기 (Discussion #63)](https://github.com/woowacourse/retrospective/discussions/63)
-- [Step 6/16 — 책임 중심으로 코드를 바라보기 (Discussion #64)](https://github.com/woowacourse/retrospective/discussions/64)
-- [Step 8/16 — 나만의 리액트 기준 만들기 (Discussion #65)](https://github.com/woowacourse/retrospective/discussions/65)
-- [Step 13/16 — RFC: Designing a Data Fetching Hook in React (Discussion #67)](https://github.com/woowacourse/retrospective/discussions/67)
-- [Step 15~16/16 — 레벨2 돌아보기 공유 (Discussion #68)](https://github.com/woowacourse/retrospective/discussions/68)
+- [Step 1/16: 스토리북 적게 읽고, 더 많이 배우기 (Discussion #59)](https://github.com/woowacourse/retrospective/discussions/59)
+- [Step 2/16: 리액트 공식문서 적게 읽고, 핵심 포인트 뽑기 (Discussion #60)](https://github.com/woowacourse/retrospective/discussions/60)
+- [Step 3/16: 커스텀 훅 다양한 관점으로 읽고 설계해보기 (Discussion #61)](https://github.com/woowacourse/retrospective/discussions/61)
+- [Step 4/16: 컴포넌트 & 상태 관리 근거 기반 리뷰 (Discussion #62)](https://github.com/woowacourse/retrospective/discussions/62)
+- [Step 5/16: 페이먼츠 모듈 1단계, 커밋 로그 거꾸로 만들기 (Discussion #63)](https://github.com/woowacourse/retrospective/discussions/63)
+- [Step 6/16: 책임 중심으로 코드를 바라보기 (Discussion #64)](https://github.com/woowacourse/retrospective/discussions/64)
+- [Step 8/16: 나만의 리액트 기준 만들기 (Discussion #65)](https://github.com/woowacourse/retrospective/discussions/65)
+- [Step 13/16: RFC: Designing a Data Fetching Hook in React (Discussion #67)](https://github.com/woowacourse/retrospective/discussions/67)
+- [Step 15~16/16: 레벨2 돌아보기 공유 (Discussion #68)](https://github.com/woowacourse/retrospective/discussions/68)
 
 ## 이 실험에서 검증된 패턴·도구로
 
 이 로그는 원재료입니다. 여기서 반복 검증된 내용은 아래에 바로 적용할 수 있게 정리돼 있습니다.
 
-- [단계별 발판](/education/insights/progressive-scaffolding) — 검증된 패턴
+- [단계별 발판](/education/insights/progressive-scaffolding) (검증된 패턴)

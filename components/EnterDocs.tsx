@@ -4,7 +4,7 @@ import { Eyebrow } from './Eyebrow'
 
 /**
  * EnterDocs — 랜딩의 닫는 초대.
- * 열망(Hero) → 증거(CrewJourney·CrewVoices)를 본 독자에게, 독자별 입구를 준다.
+ * 열망(Hero) → 우테코란 곳(TecoWay) → 흔적(CrewVoiceMap) → 확산(CrewJourney)을 본 독자에게, 독자별 입구를 준다.
  * /education 의 "이해하기 → 적용하기" 구조에, 우테코에 지원하려는 독자를 위한
  * 지원하기(/apply/about)를 더해 세 갈래로 안내한다.
  */

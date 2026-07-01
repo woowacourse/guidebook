@@ -49,7 +49,7 @@ export function CrewJourney() {
       <Eyebrow>크루의 행선지</Eyebrow>
       <h2 className={styles.heading}>우테코를 넘어 소프트웨어 생태계로</h2>
       <p className={styles.lede}>
-        이 문서에 담긴 경험과 문화로 자란 크루 <strong>{crewCount}명</strong>이,
+        앞서 별자리를 남긴 그 크루 <strong>{crewCount}명</strong>이,
         <br />
         지금 이런 회사들에서 IT 생태계에 영향력을 펼치고 있습니다.
       </p>

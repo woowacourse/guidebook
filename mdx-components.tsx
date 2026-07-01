@@ -32,6 +32,7 @@ import { RecruitingStatus } from './components/RecruitingStatus'
 import { RecruitingSchedule } from './components/RecruitingSchedule'
 import { NoticeList } from './components/NoticeList'
 import { Embed } from './components/Embed'
+import { YouTubeLightbox } from './components/YouTubeLightbox'
 import { FaqList } from './components/FaqList'
 import { CopyField } from './components/CopyField'
 
@@ -74,6 +75,7 @@ export function useMDXComponents(components?: Record<string, React.FC>) {
     RecruitingSchedule,
     NoticeList,
     Embed,
+    YouTubeLightbox,
     FaqList,
     CopyField,
     ...components

@@ -38,7 +38,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           }
           search={<Search placeholder="문서 검색..." />}
           pageMap={await getPageMap()}
-          docsRepositoryBase="https://github.com/woowacourse/2026-okr/tree/main/docs-site"
+          docsRepositoryBase="https://github.com/woowacourse/guidebook/tree/main"
           copyPageButton={false}
           editLink={null}
           feedback={{

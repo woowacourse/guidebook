@@ -63,6 +63,12 @@ export const crewThemes: CrewTheme[] = [
     quote: `코치분들이 결론을 내주시지 않고 질문을 통해 제 머릿속을 구체화해주신 게 너무 좋았습니다.`,
   },
   {
+    key: 'focus',
+    label: '몰입·집중',
+    count: 75,
+    quote: `개발 공부에만 온전히 집중할 수 있는 환경이 좋았습니다.`,
+  },
+  {
     key: 'confidence',
     label: '자신감·정체성',
     count: 50,

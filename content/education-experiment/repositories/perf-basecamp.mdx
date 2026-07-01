@@ -14,11 +14,11 @@ title: 프론트엔드 성능 베이스캠프 (Memegle 최적화, JavaScript)
 
 ## 주요 발견
 
-- **이미지 최적화** — WebP·WebM 포맷 변환, 이미지 품질 압축, 히어로 이미지 우선 로딩 vs GIF 일괄 최적화 전략 논의가 가장 빈번한 리뷰 주제
-- **번들 최적화** — Tree Shaking(`usedExports`, `sideEffects` 설정), Terser Plugin을 활용한 JS minify, MiniCssExtractPlugin으로 CSS 분리 후 크기 비교
-- **캐싱 전략** — 로컬스토리지 캐싱 시 불필요한 리렌더링, 서버 데이터 변경 시 오래된 캐시 갱신 타이밍, `useEffect` 마운트 시점과 선제 호출의 의도 차이
-- **코드 스플리팅** — React Lazy loading 적용 범위(Home 컴포넌트 포함 여부), NavBar 분리 후 Route element에만 Suspense를 적용하는 구조 개선
-- **GPU 가속** — `translateX`/`translateY` 대비 `translate3d` 사용 이유, `will-change` CSS 속성으로 렌더링 레이어 사전 생성
+- **이미지 최적화**: WebP·WebM 포맷 변환, 이미지 품질 압축, 히어로 이미지 우선 로딩 vs GIF 일괄 최적화 전략 논의가 가장 빈번한 리뷰 주제
+- **번들 최적화**: Tree Shaking(`usedExports`, `sideEffects` 설정), Terser Plugin을 활용한 JS minify, MiniCssExtractPlugin으로 CSS 분리 후 크기 비교
+- **캐싱 전략**: 로컬스토리지 캐싱 시 불필요한 리렌더링, 서버 데이터 변경 시 오래된 캐시 갱신 타이밍, `useEffect` 마운트 시점과 선제 호출의 의도 차이
+- **코드 스플리팅**: React Lazy loading 적용 범위(Home 컴포넌트 포함 여부), NavBar 분리 후 Route element에만 Suspense를 적용하는 구조 개선
+- **GPU 가속**: `translateX`/`translateY` 대비 `translate3d` 사용 이유, `will-change` CSS 속성으로 렌더링 레이어 사전 생성
 
 ## 원본 데이터
 

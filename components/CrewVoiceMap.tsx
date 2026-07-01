@@ -7,10 +7,10 @@ import { Eyebrow } from './Eyebrow'
 
 /**
  * CrewVoiceMap — "크루들이 가장 많이 남긴 메시지"를 손그림 별자리로.
- * 크루의 말 = 별(점). 가장 많이 나온 '함께 자란 동료'를 길잡이 북극성으로 홀로 크게 띄우고,
- * 나머지 테마 5개 + 채움별 2개가 북두칠성 국자를 이룬다. 국자 끝 두 별이 그 북극성을 가리킨다.
+ * 크루의 말 = 별(점). 가장 많이 나온 '함께 자란 동료'를 길잡이 북극성으로 위에 두고,
+ * 나머지 테마 7개가 북두칠성 국자를 이룬다. 국자 끝 두 별이 그 북극성을 가리킨다.
  * 별은 좌표에 고정 배치(별자리는 '모양이 곧 의미') + 은은한 연결선으로 형태를 드러낸다.
- * 호버/포커스/탭하면 대표 문장이 아래 캡션에 뜬다. 데이터: content/crew-voices.ts
+ * 호버/포커스/탭하면 대표 문장이 아래 캡션에 뜬다(그 별에만 색이 든다). 데이터: content/crew-voices.ts
  */
 
 // 손그림 동그라미 3종(.inbox/동그란 점) — 살짝 찌그러진 점. 인덱스별로 번갈아 써 손맛을 낸다.
@@ -39,22 +39,30 @@ function HandDot({ size, index, rotate = 0 }: { size: number; index: number; rot
 
 // 북두칠성 asterism 좌표(0-100 정규화). 핸들 왼쪽(완만한 곡선) → 국자 오른쪽.
 // 사발(megrez·dubhe·merak·phecda)은 깊고 좁은 사다리꼴. 국자 끝 두 별(merak·dubhe)이
-// 위쪽 북극성(polaris)을 가리킨다. 우측 별은 모바일 라벨이 잘리지 않게 안쪽으로 당겼다.
+// 위쪽 북극성(polaris)을 가리킨다.
 const STAR = {
-  polaris: [70, 15],
-  alkaid: [12, 52],
-  mizar: [27, 45],
-  alioth: [42, 41],
-  megrez: [55, 46],
-  phecda: [57, 67],
-  merak: [76, 67],
-  dubhe: [74, 41]
+  polaris: [70, 14],
+  alkaid: [11, 55],
+  mizar: [26, 47],
+  alioth: [42, 42],
+  megrez: [55, 47],
+  phecda: [57, 69],
+  merak: [78, 69],
+  dubhe: [75, 42]
 } as const
 
-// 밝은 테마부터 눈에 띄는 국자 자리에 매핑(count 내림차순 순서와 1:1)
-const THEME_SLOTS = [STAR.dubhe, STAR.alioth, STAR.megrez, STAR.phecda, STAR.alkaid]
-// 라벨 없는 채움별 — 7별 국자 실루엣 완성용
-const FILLER_SLOTS = [STAR.mizar, STAR.merak]
+// 국자 7별 = 테마 7개. count 내림차순 순서와 1:1로 자리·라벨방향을 준다.
+// dir: 라벨을 별의 위/아래 어느 쪽에 둘지 — 좁은 폭에서 라벨끼리 겹치지 않게 손튜닝.
+const THEME_SLOTS: Array<{ pos: readonly [number, number]; dir: 'up' | 'down' }> = [
+  { pos: STAR.dubhe, dir: 'down' }, //  소프트스킬·협업 (포인터·최대)
+  { pos: STAR.alioth, dir: 'up' }, //   실전 프로젝트·미션
+  { pos: STAR.megrez, dir: 'down' }, // 자기주도 학습
+  { pos: STAR.phecda, dir: 'down' }, // '왜'를 묻는 사고
+  { pos: STAR.alkaid, dir: 'down' }, // 코치·원온원 (손잡이 끝)
+  { pos: STAR.merak, dir: 'down' }, //  몰입·집중
+  { pos: STAR.mizar, dir: 'down' } //   자신감·정체성
+]
+
 // 연결선: 국자(핸들+사발) + 북극성 지시 점선
 const DIPPER_LINE = [STAR.alkaid, STAR.mizar, STAR.alioth, STAR.megrez, STAR.dubhe, STAR.merak, STAR.phecda, STAR.megrez]
 const POINTER_LINE = [STAR.merak, STAR.dubhe, STAR.polaris]
@@ -62,31 +70,31 @@ const POINTER_LINE = [STAR.merak, STAR.dubhe, STAR.polaris]
 const pts = (line: readonly (readonly [number, number])[]) => line.map(([x, y]) => `${x},${y}`).join(' ')
 
 // 점마다 다른 기울기 → 같은 path라도 손그림처럼 제각각 (결정적)
-const ROT = [8, -10, 6, -7, 5]
+const ROT = [8, -10, 6, -7, 5, -6, 9]
 
 // 배경 잔별 (장식) — 밤하늘 깊이
 const SPARKS: Array<[number, number, number]> = [
-  [14, 22, 3],
-  [88, 26, 4],
-  [46, 84, 3],
-  [70, 82, 3],
-  [9, 60, 2],
-  [92, 64, 3]
+  [14, 20, 3],
+  [88, 24, 4],
+  [46, 86, 3],
+  [70, 84, 3],
+  [8, 62, 2],
+  [93, 60, 3]
 ]
 
 export function CrewVoiceMap({ bleed = false }: { bleed?: boolean }) {
   const sorted = [...crewThemes].sort((a, b) => b.count - a.count)
   const pole = sorted[0]
-  const dipper = sorted.slice(1) // 테마 5개
+  const dipper = sorted.slice(1) // 테마 7개
 
   const [activeKey, setActiveKey] = useState(pole.key)
   const active = sorted.find((t) => t.key === activeKey) ?? pole
 
-  // 빈도 → 점 크기(px). 북극성은 가장 크게 고정.
+  // 빈도 → 점 크기(px). 북극성은 가장 크되 과하지 않게(18), 국자는 9~17.
   const counts = dipper.map((t) => t.count)
   const dMax = Math.max(...counts)
   const dMin = Math.min(...counts)
-  const dotPx = (c: number) => Math.round(9 + Math.sqrt((c - dMin) / (dMax - dMin || 1)) * 9)
+  const dotPx = (c: number) => Math.round(9 + Math.sqrt((c - dMin) / (dMax - dMin || 1)) * 8)
 
   const activate = (key: string) => setActiveKey(key)
 
@@ -124,19 +132,7 @@ export function CrewVoiceMap({ bleed = false }: { bleed?: boolean }) {
           <polyline className={styles.pointerLine} points={pts(POINTER_LINE)} />
         </svg>
 
-        {/* 채움별 (라벨 없음) */}
-        {FILLER_SLOTS.map(([x, y], i) => (
-          <span
-            key={`f${i}`}
-            className={styles.filler}
-            style={{ left: `${x}%`, top: `${y}%` }}
-            aria-hidden="true"
-          >
-            <HandDot size={7} index={i + 1} rotate={i ? -4 : 5} />
-          </span>
-        ))}
-
-        {/* 북극성 — 함께 자란 동료 (가장 밝게) */}
+        {/* 북극성 — 함께 자란 동료 (가장 밝게, 색은 호버/선택 시에만) */}
         <button
           type="button"
           className={
@@ -148,20 +144,22 @@ export function CrewVoiceMap({ bleed = false }: { bleed?: boolean }) {
           onClick={() => activate(pole.key)}
           aria-pressed={active.key === pole.key}
         >
-          <HandDot size={26} index={0} rotate={-4} />
+          <HandDot size={18} index={0} rotate={-4} />
           <span className={styles.lab}>{pole.label}</span>
           <span className={styles.ct}>{pole.count}</span>
         </button>
 
-        {/* 국자 별 — 나머지 테마 5개 */}
+        {/* 국자 별 — 나머지 테마 7개 */}
         {dipper.map((t, i) => {
-          const [x, y] = THEME_SLOTS[i]
+          const slot = THEME_SLOTS[i]
+          const [x, y] = slot.pos
           const on = t.key === active.key
+          const cls = [styles.star, slot.dir === 'up' ? styles.up : '', on ? styles.on : ''].filter(Boolean).join(' ')
           return (
             <button
               key={t.key}
               type="button"
-              className={on ? `${styles.star} ${styles.on}` : styles.star}
+              className={cls}
               style={{ left: `${x}%`, top: `${y}%` }}
               onMouseEnter={() => activate(t.key)}
               onFocus={() => activate(t.key)}

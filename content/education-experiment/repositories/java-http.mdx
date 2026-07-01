@@ -14,11 +14,11 @@ title: 자바 HTTP 미션 (톰캣 직접 구현, Java)
 
 ## 주요 발견
 
-- **HTTP 파싱 정확성** — 쿠키 헤더 파싱 시 공백 미제거로 키 미스매치가 반복 발생. `Cookie: a=1; b=2` 형식에서 `b` 앞 공백이 `get("b")` 실패를 유발하며 JSESSIONID 인식 오류로 이어짐
-- **세션 보안 3종** — 쿠키에 `Path`, `HttpOnly`, `Secure`, `SameSite` 속성 누락; 로그인 성공 시 Session Fixation 방지를 위한 세션 ID 재발급 미적용; `null` JSESSIONID로 세션 생성 및 공유 위험
-- **에러 핸들링 일관성** — 미지원 메서드·미등록 경로에서 405·404 응답 대신 침묵(무응답); `IllegalArgumentException` 미처리로 클라이언트 타임아웃 유발
-- **동시성 설계** — `synchronized` 사용 이유 미설명, 스레드풀 적용 후 공유 상태 가시성 문제
-- **입력 검증 및 정보 보호** — 회원가입 중복 계정 덮어쓰기, 비밀번호 평문 저장, `User.toString()` 로그 출력 시 PII 노출
+- **HTTP 파싱 정확성**: 쿠키 헤더 파싱 시 공백 미제거로 키 미스매치가 반복 발생. `Cookie: a=1; b=2` 형식에서 `b` 앞 공백이 `get("b")` 실패를 유발하며 JSESSIONID 인식 오류로 이어짐
+- **세션 보안 3종**: 쿠키에 `Path`, `HttpOnly`, `Secure`, `SameSite` 속성 누락; 로그인 성공 시 Session Fixation 방지를 위한 세션 ID 재발급 미적용; `null` JSESSIONID로 세션 생성 및 공유 위험
+- **에러 핸들링 일관성**: 미지원 메서드·미등록 경로에서 405·404 응답 대신 침묵(무응답); `IllegalArgumentException` 미처리로 클라이언트 타임아웃 유발
+- **동시성 설계**: `synchronized` 사용 이유 미설명, 스레드풀 적용 후 공유 상태 가시성 문제
+- **입력 검증 및 정보 보호**: 회원가입 중복 계정 덮어쓰기, 비밀번호 평문 저장, `User.toString()` 로그 출력 시 PII 노출
 
 ## 원본 데이터
 

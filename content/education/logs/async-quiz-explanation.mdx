@@ -39,7 +39,7 @@
 | **Q3. async 함수 결괏값 출력** | Promise 반환, then 체이닝 (async 키워드 사용 불가 제약) | 중간 |
 | **Q4. Promise.race 타임아웃** | Promise.race, 에러 처리 패턴 | 심화 |
 
-<Toggle title="Q1. 실행 순서 예측 — 전체 퀴즈 내용">
+<Toggle title="Q1. 실행 순서 예측: 전체 퀴즈 내용">
 
 ```javascript
 console.log("1");
@@ -54,7 +54,7 @@ setTimeout(() => console.log("4"));
 
 </Toggle>
 
-<Toggle title="Q2. var/closure — 전체 퀴즈 내용">
+<Toggle title="Q2. var/closure: 전체 퀴즈 내용">
 
 ```javascript
 for (var i = 0; i < 10; i++) {
@@ -72,7 +72,7 @@ for (var i = 0; i < 10; i++) {
 
 </Toggle>
 
-<Toggle title="Q3. async 함수 결괏값 출력 — 전체 퀴즈 내용">
+<Toggle title="Q3. async 함수 결괏값 출력: 전체 퀴즈 내용">
 
 ```javascript
 async function getPopularMovies() {
@@ -90,7 +90,7 @@ foo();
 
 </Toggle>
 
-<Toggle title="Q4. Promise.race 타임아웃 — 전체 퀴즈 내용">
+<Toggle title="Q4. Promise.race 타임아웃: 전체 퀴즈 내용">
 
 ```javascript
 const getPopularMovies = new Promise((resolve, reject) => {
@@ -109,8 +109,8 @@ const getPopularMovies = new Promise((resolve, reject) => {
 
 | 단계 | 활동 | 시간 |
 |------|------|------|
-| 1 | 퀴즈 공개 — 페어와 함께 읽기 | 5분 |
-| 2 | 해설지 작성 — "왜 이렇게 작동하는지" 설명 | 30분 |
+| 1 | 퀴즈 공개: 페어와 함께 읽기 | 5분 |
+| 2 | 해설지 작성: "왜 이렇게 작동하는지" 설명 | 30분 |
 | 3 | Discussion에 해설지 게시 | 5분 |
 | 4 | 다른 페어의 해설지 읽기 | 10분 |
 
@@ -132,7 +132,7 @@ const getPopularMovies = new Promise((resolve, reject) => {
 
 3개 기수 모두에서 Q1의 정답률은 높았습니다. 그러나 **설명의 깊이**에서 차이가 나타났습니다.
 
-<Toggle title="5기 — 절차적 설명 위주">
+<Toggle title="5기: 절차적 설명 위주">
 
 5기 크루들의 설명은 "무엇이 어디로 가는가"라는 절차를 따라가는 방식이 주를 이뤘습니다.
 
@@ -144,7 +144,7 @@ const getPopularMovies = new Promise((resolve, reject) => {
 
 </Toggle>
 
-<Toggle title="6기 — 우선순위 개념의 등장">
+<Toggle title="6기: 우선순위 개념의 등장">
 
 6기에서는 "우선순위"라는 개념이 설명에 자연스럽게 포함되기 시작했습니다.
 
@@ -156,7 +156,7 @@ const getPopularMovies = new Promise((resolve, reject) => {
 
 </Toggle>
 
-<Toggle title="7기 — 구조적 설명과 시각화">
+<Toggle title="7기: 구조적 설명과 시각화">
 
 7기 크루들은 실행 흐름을 단계별로 구분하며, 각 큐의 상태를 시각적으로 추적하는 설명을 작성했습니다.
 
@@ -164,7 +164,7 @@ const getPopularMovies = new Promise((resolve, reject) => {
 
 > "마이크로 태스크 큐, 태스크 큐에 함수가 존재해도 (실행해야 하는 함수가 남아 있다면) 코드 실행이 우선된다."
 
-7기의 특징은 **엣지 케이스에 대한 인식** — 큐에 함수가 있어도 콜스택이 비어야 한다는 전제 조건을 명시했다는 점입니다.
+7기의 특징은 **엣지 케이스에 대한 인식**, 즉 큐에 함수가 있어도 콜스택이 비어야 한다는 전제 조건을 명시했다는 점입니다.
 
 </Toggle>
 
@@ -189,7 +189,7 @@ Q2는 비동기와 스코프를 동시에 이해해야 하는 문제입니다. 3
 
 > "var가 아니라 let이라면 0 1 2 3 4 5 6 7 8 9로 출력된다. let이라면 스택이 쌓일 당시의 i의 값을 그대로 가지고 스택이 쌓인다." — 7기 소하, 텐텐
 
-### Q3. async/then — "제약이 이해를 만든다"
+### Q3. async/then: "제약이 이해를 만든다"
 
 Q3의 핵심 제약은 "foo 함수에 async를 붙일 수 없다"입니다. 이 제약이 크루들에게 then 체이닝의 존재 이유를 스스로 발견하게 만들었습니다.
 
@@ -209,7 +209,7 @@ function foo() {
 
 > "await 키워드를 사용하면 해당 프로미스가 이행될 때까지 코드 실행이 일시 중지됩니다. getPopularMovies가 Promise를 반환하므로, then으로 resolve된 값을 받아 처리할 수 있습니다." — 6기 쿠키, 파슬리
 
-### Q4. Promise.race — 가장 큰 설명 편차
+### Q4. Promise.race: 가장 큰 설명 편차
 
 Q4는 가장 어려운 문제였으며, 크루들의 접근 방식이 가장 다양하게 갈렸습니다.
 
@@ -278,13 +278,13 @@ hateWaiting(getPopularMovies, 3000)
 
 ## 참고 자료
 
-- [5기 FE 영화 리뷰 — 비동기 퀴즈 해설지 만들기 (GitHub Discussion #32, 2023.03.18)](https://github.com/woowacourse/retrospective/discussions/32)
-- [6기 FE 영화 리뷰 — 비동기 퀴즈 해설지 만들기 (GitHub Discussion #46, 2024.03.26)](https://github.com/woowacourse/retrospective/discussions/46)
-- [7기 FE 영화 리뷰 — 비동기 퀴즈 해설지 만들기 (GitHub Discussion #58, 2025.03.25)](https://github.com/woowacourse/retrospective/discussions/58)
+- [5기 FE 영화 리뷰: 비동기 퀴즈 해설지 만들기 (GitHub Discussion #32, 2023.03.18)](https://github.com/woowacourse/retrospective/discussions/32)
+- [6기 FE 영화 리뷰: 비동기 퀴즈 해설지 만들기 (GitHub Discussion #46, 2024.03.26)](https://github.com/woowacourse/retrospective/discussions/46)
+- [7기 FE 영화 리뷰: 비동기 퀴즈 해설지 만들기 (GitHub Discussion #58, 2025.03.25)](https://github.com/woowacourse/retrospective/discussions/58)
 
 ## 이 실험에서 검증된 패턴·도구로
 
 이 로그는 원재료입니다. 여기서 반복 검증된 내용은 아래에 바로 적용할 수 있게 정리돼 있습니다.
 
-- [설명으로 배우기](/education/insights/argumentation-based-learning) — 검증된 패턴
-- [예측 먼저](/education/insights/poe-discovery-learning) — 검증된 패턴
+- [설명으로 배우기](/education/insights/argumentation-based-learning) (검증된 패턴)
+- [예측 먼저](/education/insights/poe-discovery-learning) (검증된 패턴)

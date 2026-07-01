@@ -31,9 +31,10 @@
   "include": [
     "**/*.ts",
     "**/*.tsx",
+    ".inbox/next-serve/types/**/*.ts",
     ".next/types/**/*.ts",
     "next-env.d.ts",
-    ".inbox/next-serve/types/**/*.ts"
+    ".inbox/next-verify/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"

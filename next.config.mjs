@@ -40,11 +40,6 @@ export default withNextra({
         source: '/education-experiment',
         destination: '/education',
         permanent: true
-      },
-      {
-        source: '/education-experiment/:path*',
-        destination: '/education/:path*',
-        permanent: true
       }
     ]
   }

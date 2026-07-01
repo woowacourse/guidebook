@@ -39,6 +39,12 @@ export const crewThemes: CrewTheme[] = [
     quote: `다른 사람의 의견을 먼저 들어보는 성격을 가지게 된 것 같아 너무 좋았습니다.`,
   },
   {
+    key: 'project',
+    label: '실전 프로젝트·미션',
+    count: 138,
+    quote: `기획부터 개발과 배포까지, 프로젝트의 한 사이클을 경험할 수 있었습니다.`,
+  },
+  {
     key: 'learning',
     label: '자기주도 학습',
     count: 133,

@@ -66,9 +66,8 @@ const THEME_SLOTS: Array<{ pos: readonly [number, number]; dir: 'up' | 'down' }>
   { pos: STAR.mizar, dir: 'down' } //   자신감·정체성
 ]
 
-// 연결선: 국자(핸들+사발) + 북극성 지시 점선
+// 연결선: 국자(핸들+사발)만. 북극성 지시 점선은 제거(위치·색으로만 강조).
 const DIPPER_LINE = [STAR.alkaid, STAR.mizar, STAR.alioth, STAR.megrez, STAR.dubhe, STAR.merak, STAR.phecda, STAR.megrez]
-const POINTER_LINE = [STAR.merak, STAR.dubhe, STAR.polaris]
 
 const pts = (line: readonly (readonly [number, number])[]) => line.map(([x, y]) => `${x},${y}`).join(' ')
 
@@ -133,10 +132,9 @@ export function CrewVoiceMap({ bleed = false }: { bleed?: boolean }) {
           />
         ))}
 
-        {/* 별자리 연결선 */}
+        {/* 별자리 연결선 — 국자(북두칠성)만. 북극성은 위치·색으로만 강조(지시 점선 제거). */}
         <svg className={styles.lines} viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
           <polyline className={styles.dipperLine} points={pts(DIPPER_LINE)} />
-          <polyline className={styles.pointerLine} points={pts(POINTER_LINE)} />
         </svg>
 
         {/* 북극성 — 함께 자란 동료 (가장 밝게, 색은 호버/선택 시에만) */}

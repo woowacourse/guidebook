@@ -1,6 +1,9 @@
 /* Hero — 랜딩 '선언' (manifesto) — 뷰포트 상단 살짝 위(광학적 중앙)에 배치 */
 .hero {
   position: relative;
+  /* 장식 글로우(.starGlow, width:440px)가 좁은 폰 폭을 넘겨 페이지 가로 스크롤을
+     유발한다. 글로우는 가장자리에서 페이드아웃하므로 클리핑해도 외형은 그대로다. */
+  overflow-x: clip;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

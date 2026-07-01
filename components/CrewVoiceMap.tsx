@@ -66,8 +66,10 @@ const THEME_SLOTS: Array<{ pos: readonly [number, number]; dir: 'up' | 'down' }>
   { pos: STAR.mizar, dir: 'down' } //   자신감·정체성
 ]
 
-// 연결선: 국자(핸들+사발)만. 북극성 지시 점선은 제거(위치·색으로만 강조).
+// 연결선: 국자(핸들+사발). 북극성은 포인터별 dubhe와 실선으로 잇는다(다른 선과 동일 스타일).
+// 실제 하늘에서도 사발 끝 dubhe가 북극성을 가리키는 포인터별. 점선(겹쳐 어색)이 아니라 실선으로.
 const DIPPER_LINE = [STAR.alkaid, STAR.mizar, STAR.alioth, STAR.megrez, STAR.dubhe, STAR.merak, STAR.phecda, STAR.megrez]
+const POLE_LINE = [STAR.dubhe, STAR.polaris]
 
 const pts = (line: readonly (readonly [number, number])[]) => line.map(([x, y]) => `${x},${y}`).join(' ')
 
@@ -132,9 +134,10 @@ export function CrewVoiceMap({ bleed = false }: { bleed?: boolean }) {
           />
         ))}
 
-        {/* 별자리 연결선 — 국자(북두칠성)만. 북극성은 위치·색으로만 강조(지시 점선 제거). */}
+        {/* 별자리 연결선 — 국자(북두칠성) + 포인터별 dubhe→북극성. 모두 같은 실선 스타일. */}
         <svg className={styles.lines} viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
           <polyline className={styles.dipperLine} points={pts(DIPPER_LINE)} />
+          <polyline className={styles.dipperLine} points={pts(POLE_LINE)} />
         </svg>
 
         {/* 북극성 — 함께 자란 동료 (가장 밝게, 색은 호버/선택 시에만) */}
@@ -190,10 +193,6 @@ export function CrewVoiceMap({ bleed = false }: { bleed?: boolean }) {
 
       <p className={styles.close}>
         이 동료들과 함께, 더 큰 <strong>선한 영향력</strong>을 펼쳐나가기를 바랍니다.
-      </p>
-
-      <p className={styles.more}>
-        <a href="/education/conversations/crew-voices">크루의 목소리 전체 보기 →</a>
       </p>
     </section>
   )

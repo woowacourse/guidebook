@@ -305,3 +305,23 @@ button[title="Change theme"]:not(.theme-switch-navbar) {
   filter: invert(1);
 }
 
+/* ===== 반응형 줄바꿈 유틸 =====
+   한 문장을 디바이스별로 다른 지점에서 접는다. MDX/JSX 본문에서
+   <br className="br-desktop" /> · <br className="br-mobile" /> 로 쓴다.
+   - .br-desktop : 데스크톱(>640px)에서만 줄바꿈, 모바일에선 무시
+   - .br-mobile  : 모바일(≤640px)에서만 줄바꿈, 데스크톱에선 무시
+   <br>는 display:none이면 줄바꿈이 사라지고, 기본값(inline)이면 되살아난다.
+   (Hero 설명문의 모바일 브레이크포인트 640px와 맞춘다.) */
+.br-mobile {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .br-desktop {
+    display: none;
+  }
+  .br-mobile {
+    display: inline;
+  }
+}
+

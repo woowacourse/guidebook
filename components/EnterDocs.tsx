@@ -12,19 +12,16 @@ const DOORS = [
   {
     icon: '🧭',
     title: '이해하기',
-    desc: '왜 이렇게 가르치는가',
     href: '/education/philosophy'
   },
   {
     icon: '🚀',
     title: '적용하기',
-    desc: '오늘 할 수 있는 것부터',
     href: '/education/start'
   },
   {
     icon: '✍️',
     title: '지원하기',
-    desc: '우테코 크루가 되고 싶다면',
     href: '/apply/about'
   }
 ]
@@ -47,7 +44,6 @@ export function EnterDocs() {
             </span>
             <span className={styles.doorBody}>
               <span className={styles.doorTitle}>{d.title}</span>
-              <span className={styles.doorDesc}>{d.desc}</span>
             </span>
             <span className={styles.arrow} aria-hidden="true">
               →

@@ -1,0 +1,50 @@
+/* TecoWay — 랜딩 'Hero 다음' 선언. 헤더는 형제 섹션(CrewJourney)과 동일 토큰, 원칙은 좌측 정렬. */
+.section {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 5rem 1rem 3.75rem;
+  text-align: center;
+}
+
+.heading {
+  font-size: clamp(1.5rem, 3.6vw, 2.05rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: rgb(55, 53, 47);
+  margin: 0 0 0.85rem;
+  word-break: keep-all;
+}
+
+:global(.dark) .heading {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.lede {
+  font-size: 1.05rem;
+  line-height: 1.6 !important;
+  color: rgba(55, 53, 47, 0.82);
+  max-width: 34rem;
+  margin: 0 auto;
+  word-break: keep-all;
+  text-wrap: pretty;
+}
+
+:global(.dark) .lede {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.lede strong {
+  font-weight: 800;
+  color: rgb(55, 53, 47);
+}
+
+:global(.dark) .lede strong {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* 원칙 3개 — 가운데 정렬 헤더 아래, 읽기 폭으로 좁혀 좌측 정렬 */
+.claims {
+  max-width: 34rem;
+  margin: 2.25rem auto 0;
+  text-align: left;
+}

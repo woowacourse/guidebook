@@ -8,6 +8,7 @@ import { Timeline, TimelineItem } from './components/Timeline'
 import { Placeholder } from './components/Placeholder'
 import { Hero } from './components/Hero'
 import { CrewJourney } from './components/CrewJourney'
+import { TecoWay } from './components/TecoWay'
 import { CrewGrowth } from './components/CrewGrowth'
 import { CrewVoices } from './components/CrewVoices'
 import { CrewVoiceMap } from './components/CrewVoiceMap'
@@ -49,6 +50,7 @@ export function useMDXComponents(components?: Record<string, React.FC>) {
     Placeholder,
     Hero,
     CrewJourney,
+    TecoWay,
     CrewGrowth,
     CrewVoices,
     CrewVoiceMap,

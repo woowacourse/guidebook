@@ -12,6 +12,7 @@ export default {
   },
   '--understand': { type: 'separator', title: '이해하기' },
   philosophy: '🎯 교육 철학',
+  journey: '🌱 성장 여정',
   curriculum: '🗺️ 커리큘럼',
   insights: '🧩 검증된 패턴',
   '--build': { type: 'separator', title: '적용하기' },

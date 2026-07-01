@@ -16,7 +16,7 @@ const ariaSummary = `크루의 성장 여정: ${GROWTH_ARC.map((s) => `${s.level
 export function CrewGrowth() {
   return (
     <section className={styles.section} aria-label="크루의 성장 여정">
-      <Eyebrow>크루의 성장 여정</Eyebrow>
+      <Eyebrow>레벨 0 → 레벨 5</Eyebrow>
       <h2 className={styles.heading}>작은 행성이가 개발자로 자라기까지</h2>
       <p className={styles.lede}>
         우테코의 10개월은 레벨 0에서 5로 이어집니다. 낯선 별에 도착한 작은 행성이가 한 단계씩

@@ -9,6 +9,14 @@ export interface Update {
 // 최신 항목을 맨 위에 추가하세요.
 const updates: Update[] = [
   {
+    date: '2026년 8기',
+    title: '뉴스레터 아카이브: 8기 시즌 20~22호 반영',
+    description:
+      '메일리 뉴스레터 아카이브를 22호까지 최신화했습니다. 판교 통합 캠퍼스(20호), 제 1회 테코톤(21호), 자율 스터디 취재(22호)를 목록과 추천 경로에 더하고, 기수가 바뀌어도 공동체의 문법이 이어진다는 다섯 번째 흐름을 새로 정리했습니다.',
+    href: '/education/conversations/newsletter-archive',
+    status: 'active',
+  },
+  {
     date: '2026년 연구',
     title: '크루 성장 여정: 레벨 0→5를 한눈에',
     description:

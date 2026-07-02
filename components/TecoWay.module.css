@@ -1,5 +1,5 @@
-/* TecoWay: 랜딩 'Hero 다음' 선언. 헤더 토큰은 형제 섹션(CrewJourney)과 동일.
-   작은 행성이(반짝) + 은은한 glow로 '스스로 빛나는 별' 메타포를 연다. */
+/* TecoWay: 랜딩 'Hero 다음' 선언. 한 크루의 여정을 3단계 가로 타임라인으로.
+   헤더 토큰은 형제 섹션(CrewJourney)과 동일. 마커 슬롯 높이를 고정해 연결선이 세 중심을 통과한다. */
 .section {
   max-width: 52rem;
   margin: 0 auto;
@@ -7,21 +7,81 @@
   text-align: center;
 }
 
-/* 캐릭터 + glow (장식) */
-.figure {
+.heading {
+  font-size: clamp(1.5rem, 3.6vw, 2.05rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: rgb(55, 53, 47);
+  margin: 0 0 0.85rem;
+  word-break: keep-all;
+}
+
+:global(.dark) .heading {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* 3단계 가로 타임라인 */
+.timeline {
   position: relative;
+  list-style: none;
+  margin: 2.5rem 0 0;
+  padding: 0;
   display: flex;
-  justify-content: center;
+}
+
+/* 세 마커 중심을 잇는 단일 수평선 (마커 뒤). 3등분 열에서 첫 중심 16.67%, 끝 83.33%. */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 36px; /* 마커 슬롯(72px) 세로 중앙 */
+  left: 16.67%;
+  right: 16.67%;
+  height: 1.5px;
+  background: rgba(55, 53, 47, 0.18);
+  z-index: 0;
+}
+
+:global(.dark) .timeline::before {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.step {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 1.1rem;
+  text-align: center;
+  padding: 0 0.5rem;
+}
+
+/* 마커 슬롯 — 높이 고정(72px)으로 점/캐릭터 모두 중앙 정렬 → 연결선이 중심을 통과 */
+.marker {
+  position: relative;
+  z-index: 1;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: rgb(55, 53, 47);
+}
+
+:global(.dark) .dot {
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .glow {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: min(240px, 60vw);
-  height: min(240px, 60vw);
+  width: min(160px, 45vw);
+  height: min(160px, 45vw);
   transform: translate(-50%, -50%);
   z-index: -1;
   pointer-events: none;
@@ -51,46 +111,55 @@
   mix-blend-mode: screen;
 }
 
-.heading {
-  font-size: clamp(1.5rem, 3.6vw, 2.05rem);
+.stepLabel {
+  margin-top: 0.55rem;
+  font-size: 1rem;
   font-weight: 800;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
   color: rgb(55, 53, 47);
-  margin: 0 0 0.85rem;
-  word-break: keep-all;
 }
 
-:global(.dark) .heading {
+:global(.dark) .stepLabel {
   color: rgba(255, 255, 255, 0.95);
 }
 
-.lede {
-  font-size: 1.05rem;
-  line-height: 1.6 !important;
-  color: rgba(55, 53, 47, 0.82);
-  max-width: 34rem;
-  margin: 0 auto;
+.stepText {
+  margin-top: 0.3rem;
+  max-width: 13rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: rgba(55, 53, 47, 0.72);
   word-break: keep-all;
   text-wrap: pretty;
 }
 
-:global(.dark) .lede {
-  color: rgba(255, 255, 255, 0.74);
+:global(.dark) .stepText {
+  color: rgba(255, 255, 255, 0.72);
 }
 
-.lede strong {
+.caption {
+  margin: 2rem 0 0;
+  font-size: 0.92rem;
+  color: rgba(55, 53, 47, 0.66);
+}
+
+:global(.dark) .caption {
+  color: rgba(255, 255, 255, 0.66);
+}
+
+.caption strong {
   font-weight: 800;
   color: rgb(55, 53, 47);
 }
 
-:global(.dark) .lede strong {
+:global(.dark) .caption strong {
   color: rgba(255, 255, 255, 0.95);
 }
 
 /* journey 링크: Nextra의 article a:hover 밑줄 강제를 끈다(Card/AssetCard/EnterDocs 패턴) */
 .journeyLink {
   display: inline-block;
-  margin-top: 1.6rem;
+  margin-top: 1.5rem;
   font-size: 0.95rem;
   font-weight: 700;
   color: rgb(55, 53, 47);
@@ -103,4 +172,24 @@
 
 :global(.dark) .journeyLink {
   color: rgba(255, 255, 255, 0.92);
+}
+
+/* 모바일 — 세로 스택. 가로 연결선 숨기고 단계별로 쌓는다(가로 오버플로우 방지). */
+@media (max-width: 680px) {
+  .timeline {
+    flex-direction: column;
+    gap: 1.4rem;
+    max-width: 22rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .timeline::before {
+    display: none;
+  }
+  .marker {
+    height: auto;
+  }
+  .stepText {
+    max-width: 20rem;
+  }
 }

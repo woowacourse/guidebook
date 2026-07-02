@@ -3,13 +3,19 @@
 <Hero
   eyebrow="우아한테크코스 공식문서"
   title="소프트웨어 생태계에 선한 영향력을"
-  description="우리가 한 교육 실험과 경험들이 우테코를 넘어 누군가의 성장과 변화를 돕는 데 쓰이길 바랍니다."
-  cta={{ label: '스스로 성장하는 교육 보기 →', href: '/education' }}
+  underline="선한 영향력"
+  description={
+    <>
+      우리가 한 교육 실험과 경험들이<br className="br-mobile" /> 우테코를 넘어<br className="br-desktop" /> 누군가의 성장과<br className="br-mobile" /> 변화를 돕는{' '}데 쓰이길 바랍니다.
+    </>
+  }
+  cta={{ label: '우테코 교육 들여다보기 →', href: '/education' }}
 />
 
 ## Pages
 
 - [지원하기](https://docs.woowahan.com/apply)
+- [우테코 소개](https://docs.woowahan.com/apply/about): 우아한테크코스가 무엇이고, 누구를 위한 교육인지 소개합니다.
 - [문의하기](https://docs.woowahan.com/apply/contact)
 - [자주 묻는 질문 (FAQ)](https://docs.woowahan.com/apply/faq)
 - [Hero Tech Course: Berlin Edition](https://docs.woowahan.com/apply/hero)
@@ -25,21 +31,20 @@
 - [자바스크립트 영화 리뷰 미션 (DOM 설계, JavaScript)](https://docs.woowahan.com/education-experiment/repositories/javascript-movie-review)
 - [프론트엔드 성능 베이스캠프 (Memegle 최적화, JavaScript)](https://docs.woowahan.com/education-experiment/repositories/perf-basecamp)
 - [리액트 페이먼츠 미션 (UI 컴포넌트 설계, TypeScript)](https://docs.woowahan.com/education-experiment/repositories/react-payments)
-- [우테코 소개](https://docs.woowahan.com/education/about): 우아한테크코스가 무엇이고, 어떻게 배우며, 누구를 위한 교육인지 소개합니다.
 - [평가](https://docs.woowahan.com/education/assessment)
 - [피드백 설계](https://docs.woowahan.com/education/assessment/feedback-design)
 - [레벨별 평가 기준](https://docs.woowahan.com/education/assessment/level-criteria)
 - [평가 방법론](https://docs.woowahan.com/education/assessment/methodology)
 - [평가 철학](https://docs.woowahan.com/education/assessment/philosophy)
-- [우테코 콘텐츠 아카이브](https://docs.woowahan.com/education/conversations)
+- [우테코 현장](https://docs.woowahan.com/education/conversations)
 - [브수타](https://docs.woowahan.com/education/conversations/bsuta)
 - [2026년 8기 브수타: 2026년 4월 3일](https://docs.woowahan.com/education/conversations/bsuta-8th-2026-04-03)
 - [2026년 8기 브수타](https://docs.woowahan.com/education/conversations/bsuta/2026-8th)
 - [크루의 목소리](https://docs.woowahan.com/education/conversations/crew-voices)
-- [프로젝트 데모데이 아카이브](https://docs.woowahan.com/education/conversations/demo-day-archive)
-- [교육 설명회 아카이브](https://docs.woowahan.com/education/conversations/education-briefing-archive)
-- [인터뷰 챌린지 아카이브](https://docs.woowahan.com/education/conversations/interview-challenge-archive)
-- [뉴스레터 아카이브](https://docs.woowahan.com/education/conversations/newsletter-archive)
+- [프로젝트 데모데이](https://docs.woowahan.com/education/conversations/demo-day-archive)
+- [교육 설명회](https://docs.woowahan.com/education/conversations/education-briefing-archive)
+- [인터뷰 챌린지](https://docs.woowahan.com/education/conversations/interview-challenge-archive)
+- [뉴스레터](https://docs.woowahan.com/education/conversations/newsletter-archive)
 - [포수타](https://docs.woowahan.com/education/conversations/posuta)
 - [2024년 6기 포수타: 2024년 9월 20일](https://docs.woowahan.com/education/conversations/posuta-2024-09-20)
 - [2025년 7기 포수타: 2025년 4월 18일](https://docs.woowahan.com/education/conversations/posuta-2025-04-18)
@@ -48,29 +53,30 @@
 - [2025년 7기 포수타: 2025년 5월 30일](https://docs.woowahan.com/education/conversations/posuta-2025-05-30)
 - [2024년 6기 포수타](https://docs.woowahan.com/education/conversations/posuta/2024-6th)
 - [2025년 7기 포수타](https://docs.woowahan.com/education/conversations/posuta/2025-7th)
-- [테코톡 아카이브](https://docs.woowahan.com/education/conversations/techtalk-archive)
-- [테코블 아카이브](https://docs.woowahan.com/education/conversations/tecoble-archive)
-- [우테코 유튜브 채널 아카이브](https://docs.woowahan.com/education/conversations/uteco-youtube-archive)
-- [우테코 브이로그 아카이브](https://docs.woowahan.com/education/conversations/vlog-archive)
+- [테코톡](https://docs.woowahan.com/education/conversations/techtalk-archive)
+- [테코블](https://docs.woowahan.com/education/conversations/tecoble-archive)
+- [우테코 유튜브 채널](https://docs.woowahan.com/education/conversations/uteco-youtube-archive)
+- [우테코 브이로그](https://docs.woowahan.com/education/conversations/vlog-archive)
 - [커리큘럼 - 철학을 10개월로 옮기는 법](https://docs.woowahan.com/education/curriculum)
 - [커리큘럼 설계 원칙 (승격 staging)](https://docs.woowahan.com/education/curriculum/design-principles)
-- [발견 학습 설계하기 — 답을 먼저 주지 않는 환경](https://docs.woowahan.com/education/design-poe): 발견 학습(예측→관찰→설명)을 당신의 미션·수업·리뷰에 설계하는 법 — 우테코 실전 사례와 설계용 LLM 스킬.
+- [발견 학습 설계하기: 답을 먼저 주지 않는 환경](https://docs.woowahan.com/education/design-poe): 발견 학습(예측→관찰→설명)을 당신의 미션·수업·리뷰에 설계하는 법 — 우테코 실전 사례와 설계용 LLM 스킬.
 - [실패한 교육](https://docs.woowahan.com/education/failed-experiments)
 - [실패 사례 카탈로그](https://docs.woowahan.com/education/failed-experiments/catalog)
 - [실패에서 패턴으로](https://docs.woowahan.com/education/failed-experiments/failure-to-pattern)
 - [이 문서는 어떻게 만들어지는가](https://docs.woowahan.com/education/how-its-made): 이 문서가 실험 로그에서 귀납되고 루브릭 게이트로 검증되며 수정되는 제작 과정을 시각화한 신뢰 페이지.
 - [검증된 패턴](https://docs.woowahan.com/education/insights)
-- [논증 기반 학습 설계: 정답을 주지 않고 설명하게 만들기](https://docs.woowahan.com/education/insights/argumentation-based-learning)
+- [설명으로 배우기: 정답 대신 스스로 주장하고 논증하게](https://docs.woowahan.com/education/insights/argumentation-based-learning)
 - [학습 분석](https://docs.woowahan.com/education/insights/learning-analytics)
 - [강의 설계](https://docs.woowahan.com/education/insights/lecture-design)
-- [미션은 누적 학습 모델이다](https://docs.woowahan.com/education/insights/mission-learning-accumulation)
-- [비기술 첫 미션: 역량 불안과 관계 불안을 분리하기](https://docs.woowahan.com/education/insights/non-technical-first-mission): 입학 첫 미션을 비-기술 과제(연극)로 두어 역량 불안과 관계 불안을 분리하고, 첫 주에 심리적 안전감을 설계합니다. 기수가 바뀌어도 고정된 우테코의 출발점.
-- [POE 발견 학습: 먼저 말하게 하고 나중에 보여주기](https://docs.woowahan.com/education/insights/poe-discovery-learning)
-- [점진적 스캐폴딩: 한 번의 강의 대신 다회차 시퀀스](https://docs.woowahan.com/education/insights/progressive-scaffolding)
-- [공개 합작 회고: 함께 써서 공개로 남기기](https://docs.woowahan.com/education/insights/public-retrospective): 회고를 한 곳에 함께 써서 공개로 남기면 1회성 성찰이 기수를 넘는 학습 아카이브가 됩니다. 공개 회고 저장소에서 추출한 운영 패턴.
-- [회고 설계: 형식을 매번 바꿔 성찰의 깊이를 끌어올리기](https://docs.woowahan.com/education/insights/retrospective-design)
-- [자기 진단 프레임워크: 추상 가치를 측정 가능한 기준으로 전환하기](https://docs.woowahan.com/education/insights/self-diagnostic-framework)
+- [쌓이는 미션: 골격은 그대로, 목표는 매년 한 층씩](https://docs.woowahan.com/education/insights/mission-learning-accumulation)
+- [첫 미션은 연극: 역량 불안과 관계 불안을 분리하기](https://docs.woowahan.com/education/insights/non-technical-first-mission): 입학 첫 미션을 비-기술 과제(연극)로 두어 역량 불안과 관계 불안을 분리하고, 첫 주에 심리적 안전감을 설계합니다. 기수가 바뀌어도 고정된 우테코의 출발점.
+- [예측 먼저: 답을 보여주기 전에 예측·관찰·설명부터](https://docs.woowahan.com/education/insights/poe-discovery-learning)
+- [단계별 발판: 한 번의 강의 대신 3~5회로](https://docs.woowahan.com/education/insights/progressive-scaffolding)
+- [함께 쓰는 회고: 공개로 남겨 기수를 넘는 아카이브로](https://docs.woowahan.com/education/insights/public-retrospective): 회고를 한 곳에 함께 써서 공개로 남기면 1회성 성찰이 기수를 넘는 학습 아카이브가 됩니다. 공개 회고 저장소에서 추출한 운영 패턴.
+- [매번 다른 회고: 형식을 바꿔 성찰의 깊이를 끌어올리기](https://docs.woowahan.com/education/insights/retrospective-design)
+- [스스로 진단 기준: 추상적인 가치를 측정 가능한 잣대로](https://docs.woowahan.com/education/insights/self-diagnostic-framework)
 - [학습 영역 종합 정리](https://docs.woowahan.com/education/insights/summary)
+- [크루의 성장 여정](https://docs.woowahan.com/education/journey)
 - [실험 로그](https://docs.woowahan.com/education/logs)
 - [레벨0: 자기주도 학습 설계 실험 (안드로이드 8기)](https://docs.woowahan.com/education/logs/android-level0)
 - [안드로이드 레벨2 미니 프로젝트 수업 계획](https://docs.woowahan.com/education/logs/android-level2-mini-project)
@@ -88,13 +94,13 @@
 - [원정대 테크살롱: 공유회로 전이 설계하기](https://docs.woowahan.com/education/logs/expedition-tech-salon)
 - [FE 접근성 리포트: 자기 서비스를 진단하는 6기·7기 반복 실험](https://docs.woowahan.com/education/logs/fe-accessibility-report)
 - [FE 레벨2 16단계 학습 체계: 점진적 깊이로 리액트를 체화하기](https://docs.woowahan.com/education/logs/fe-level2-16steps)
-- [로또 미션 8기 — PR 57개로 본 콘솔에서 웹으로의 관심사 분리](https://docs.woowahan.com/education/logs/fe-lotto-2026-prs)
-- [영화리뷰 미션 8기 — PR 54개로 본 비동기 에러와 상태 기반 설계의 첫 만남](https://docs.woowahan.com/education/logs/fe-movie-review-2026-prs)
+- [로또 미션 8기: PR 57개로 본 콘솔에서 웹으로의 관심사 분리](https://docs.woowahan.com/education/logs/fe-lotto-2026-prs)
+- [영화리뷰 미션 8기: PR 54개로 본 비동기 에러와 상태 기반 설계의 첫 만남](https://docs.woowahan.com/education/logs/fe-movie-review-2026-prs)
 - [FE 성능 리포트: 자기 서비스를 진단하는 3단계 프레임워크의 진화](https://docs.woowahan.com/education/logs/fe-performance-report)
 - [FE React & TypeScript 컨벤션 워크숍: 5기와 7기 사이의 2년 변화](https://docs.woowahan.com/education/logs/fe-react-typescript-convention)
 - [렌더링 전략 워크숍: 팀×팀 피드백으로 기술 결정 단단히 만들기](https://docs.woowahan.com/education/logs/fe-rendering-strategy-workshop)
 - [FE SSR 학습: 토론과 OX퀴즈로 "서버와 클라이언트의 평행세계" 체험하기](https://docs.woowahan.com/education/logs/fe-ssr-discussion)
-- [ts러닝 미션 8기 — PR 26개로 본 "학습법을 학습하는" 신설 미션](https://docs.woowahan.com/education/logs/fe-ts-learning-2026-prs)
+- [ts러닝 미션 8기: PR 26개로 본 "학습법을 학습하는" 신설 미션](https://docs.woowahan.com/education/logs/fe-ts-learning-2026-prs)
 - [피드백 리팩터링: 피드백을 코드처럼 진단하고 개선하는 훈련](https://docs.woowahan.com/education/logs/feedback-refactoring)
 - [나만의 기술적 강점 찾기: 정체성 선언 기반 딥다이브 학습](https://docs.woowahan.com/education/logs/finding-tech-strengths)
 - [그룹 코칭 지원](https://docs.woowahan.com/education/logs/group-coaching)
@@ -123,7 +129,7 @@
 - [1:1 코칭 지원](https://docs.woowahan.com/education/logs/one-on-one)
 - [짝 프로그래밍 선언문: 크루가 직접 만든 협업 원칙](https://docs.woowahan.com/education/logs/pair-programming-manifesto)
 - [크루들과의 포수타 5회 스크립트 아카이브](https://docs.woowahan.com/education/logs/posuta-archive)
-- [포수타 코치 Q&A 5회 아카이브 — 학습·관계·삶에 대한 누적 대화](https://docs.woowahan.com/education/logs/posuta-coach-qa-archive)
+- [포수타 코치 Q&A 5회 아카이브: 학습·관계·삶에 대한 누적 대화](https://docs.woowahan.com/education/logs/posuta-coach-qa-archive)
 - [React 페이먼츠 미션 5년치 PR 555개 데이터 분석](https://docs.woowahan.com/education/logs/react-payments-555prs-analysis)
 - [바퀴의 재발명 사전 에세이: 3개 기수가 탐구한 재구현의 교육적 가치](https://docs.woowahan.com/education/logs/reinventing-the-wheel)
 - [선배 코드로 눈 키우기: AS-IS 판단 → TO-BE 비교 활동](https://docs.woowahan.com/education/logs/senior-code-review)
@@ -145,13 +151,13 @@
 - [학습 환경 구성](https://docs.woowahan.com/education/operations/learning-environment)
 - [일정 및 프로세스 관리](https://docs.woowahan.com/education/operations/process-management)
 - [교육 철학](https://docs.woowahan.com/education/philosophy)
-- [시작하기 — 5분 안에 우테코 모델](https://docs.woowahan.com/education/start): 우테코 교육 모델을 5분 안에 이해하고, 더 깊이 들어갈 문으로 안내하는 시작점.
+- [시작하기: 5분 안에 우테코 모델](https://docs.woowahan.com/education/start): 우테코 교육 모델을 5분 안에 이해하고, 더 깊이 들어갈 문으로 안내하는 시작점.
 - [검증된 도구](https://docs.woowahan.com/education/tools)
-- [AI 협업 미션 설계 키트](https://docs.woowahan.com/education/tools/ai-collaboration-mission-kit)
+- [AI 협업 미션](https://docs.woowahan.com/education/tools/ai-collaboration-mission-kit)
 - [클린 랭귀지 상호 멘토링 가이드](https://docs.woowahan.com/education/tools/clean-language-mentoring)
-- [연극 온보딩 설계 키트](https://docs.woowahan.com/education/tools/drama-onboarding-kit)
+- [연극 온보딩](https://docs.woowahan.com/education/tools/drama-onboarding-kit)
 - [미션 저장소 PR 데이터 분석 워크플로우](https://docs.woowahan.com/education/tools/mission-repo-analysis-workflow)
 - [렌더링 전략 결정 워크숍 템플릿](https://docs.woowahan.com/education/tools/rendering-strategy-workshop)
 - [연구 사이클 워크플로우](https://docs.woowahan.com/education/tools/research-cycle-workflow)
-- [회고 형식 설계 키트](https://docs.woowahan.com/education/tools/retrospective-format-kit)
+- [회고 형식](https://docs.woowahan.com/education/tools/retrospective-format-kit)
 - [타임라인](https://docs.woowahan.com/timeline)

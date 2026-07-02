@@ -10,7 +10,7 @@
 
 ## Global Constraints
 
-- **본문 문체는 합니다체로 통일한다** (한다체·해요체 금지). 규약: `AGENTS.md` §6. 영문 프로그램(히어로테크코스)은 원문 영어 유지.
+- **본문 문체는 합니다체로 통일한다** (한다체·해요체 금지). 규약: `AGENTS.md` 6절. 영문 프로그램(히어로테크코스)은 원문 영어 유지.
 - 새 폴더마다 `_meta.ts`를 둔다. `display: 'hidden'` 항목은 삭제 금지.
 - 신규 컴포넌트는 `components/`에 두고 `mdx-components.tsx`에 import+매핑, `components/index.ts`에 export. CSS는 컴포넌트별 `*.module.css`.
 - 인터랙션(상태/이벤트)이 있는 컴포넌트만 `'use client'`. 정적 표시는 서버 컴포넌트.

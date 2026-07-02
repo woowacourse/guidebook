@@ -339,7 +339,7 @@ Expected: 시작하기 항목이 카탈로그에 포함됨(없으면 빌드 산�
 
 ## Self-Review (작성자 체크)
 
-- **스펙 커버리지:** start.mdx(§4) ✅ Task1 · 사이드바 그룹+tools(§3.1) ✅ Task2 · 개요 두 문(§3.2) ✅ Task3 · updates(§3.3) ✅ Task4 · 검증 체크리스트(§7) ✅ Task5.
+- **스펙 커버리지:** start.mdx(4절) ✅ Task1 · 사이드바 그룹+tools(3.1절) ✅ Task2 · 개요 두 문(3.2절) ✅ Task3 · updates(3.3절) ✅ Task4 · 검증 체크리스트(7절) ✅ Task5.
 - **스펙과의 의도적 차이(1건):** ② 직행 앵커를 페르소나별 4개 → "오늘의 작은 변화 1개" 섹션으로의 **단일 앵커(#today)**로 단순화. 사유: `Card`에 `id` prop이 없어 그리드 내 per-card 앵커가 취약. 페르소나 자기 식별은 ④의 라우팅 한 줄이 담당. (사용자 확인 사항)
 - **Placeholder:** 없음(모든 파일 전체 내용·정확한 명령 포함).
 - **타입 일관성:** `Callout type="tip"`, `Toggle title`, `CardGrid columns={2}|variant="list"`, `Card variant="row"` 모두 실제 시그니처와 일치. href 없는 ④ 카드(중첩 링크 회피) 확인.

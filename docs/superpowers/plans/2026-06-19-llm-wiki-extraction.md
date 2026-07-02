@@ -189,7 +189,7 @@ for f in $FILES; do
   perl -pi -e 's{knowledge/}{llm-wiki/}g' "$f"
 done
 ```
-Expected: 출력된 `$FILES`에 `content/education/...`, `*-rubric.md`, `llms-full.txt`가 **없어야** 함(있으면 중단). §5.1 목록과 일치.
+Expected: 출력된 `$FILES`에 `content/education/...`, `*-rubric.md`, `llms-full.txt`가 **없어야** 함(있으면 중단). 5.1절 목록과 일치.
 
 - [ ] **Step 2: 잔여 `knowledge/` 없음 확인 (docs/ 와 클론 제외)**
 
@@ -491,14 +491,14 @@ Expected: status에 `llm-wiki/` 없음; 커밋 히스토리에 Task별 커밋; c
 ## Self-Review
 
 **Spec coverage:**
-- §2 분리/동선 → Task 2,3 ✓
-- §3 네이밍 통일(폴더/스크립트/스킬/커맨드) → Task 4,5,6 ✓
-- §3 잔여 중복(`/위키정리` vs `/위키점검`) → Task 8 Step 1 커맨드 매핑 문서화 ✓
-- §4 마이그레이션 순서(split 먼저) → Task 2 before 3 ✓
-- §5.1 경로 치환 → Task 4 ✓ / §5.2 리네임 → Task 5,6 ✓ / §5.3 문서 → Task 8 ✓ / §5.4 prose 보존 → Global Constraint + Task 9 Step 4 ✓
-- §6 dual-write 분기(raw 자동 push) → Task 7 ✓
-- §8 위험(push 권한·gitignore leading slash·prose 오치환·빌드) → Task 1 Step 2, Task 3 Step 5, Task 9 Step 4, Task 9 Step 1 ✓
-- §9 완료 정의 6항 → Task 9 전반 ✓
+- 2절 분리/동선 → Task 2,3 ✓
+- 3절 네이밍 통일(폴더/스크립트/스킬/커맨드) → Task 4,5,6 ✓
+- 3절 잔여 중복(`/위키정리` vs `/위키점검`) → Task 8 Step 1 커맨드 매핑 문서화 ✓
+- 4절 마이그레이션 순서(split 먼저) → Task 2 before 3 ✓
+- 5.1절 경로 치환 → Task 4 ✓ / 5.2절 리네임 → Task 5,6 ✓ / 5.3절 문서 → Task 8 ✓ / 5.4절 prose 보존 → Global Constraint + Task 9 Step 4 ✓
+- 6절 dual-write 분기(raw 자동 push) → Task 7 ✓
+- 8절 위험(push 권한·gitignore leading slash·prose 오치환·빌드) → Task 1 Step 2, Task 3 Step 5, Task 9 Step 4, Task 9 Step 1 ✓
+- 9절 완료 정의 6항 → Task 9 전반 ✓
 
 **Placeholder scan:** 모든 Step에 실제 명령·치환·검증 포함. 플레이스홀더 없음.
 

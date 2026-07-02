@@ -66,11 +66,11 @@
    - `.gitignore`에 `/llm-wiki/` 추가 — **반드시 leading slash.** `llm-wiki/`(슬래시 없음)는 `scripts/llm-wiki/`까지 무시해버린다.
 3. **로컬 재연결**
    - 워킹트리의 `knowledge/`를 `llm-wiki/`로 교체: 기존 폴더 제거 후 `git clone …/llm-wiki llm-wiki` (또는 rename 후 remote 재설정). gitignored라 docs repo에 다시 잡히지 않음.
-4. **경로 일괄 치환** `knowledge/` → `llm-wiki/` (§5.1 대상)
-5. **디렉터리/파일/커맨드 리네임** (§5.2)
-6. **문서 갱신** — `CLAUDE.md`·`AGENTS.md`에 위키/문서 분리 + 부트스트랩 안내 + 글로사리 (§5.3)
-7. **`/로그추가` dual-write 분기** (§6)
-8. **검증** (§8)
+4. **경로 일괄 치환** `knowledge/` → `llm-wiki/` (5.1절 대상)
+5. **디렉터리/파일/커맨드 리네임** (5.2절)
+6. **문서 갱신** — `CLAUDE.md`·`AGENTS.md`에 위키/문서 분리 + 부트스트랩 안내 + 글로사리 (5.3절)
+7. **`/로그추가` dual-write 분기** (6절)
+8. **검증** (8절)
 
 ## 5. 재배선 인벤토리 (실측)
 
@@ -134,7 +134,7 @@
 - **push 권한** — `woowacourse-projects/llm-wiki` push 가능 여부를 절차 1에서 확인. 실패 시 중단·보고.
 - **subtree split 순서** — `knowledge/` 제거 전 실행 (히스토리 의존).
 - **`.gitignore` leading slash** — `/llm-wiki/`로 root만 무시, `scripts/llm-wiki/`는 추적 유지.
-- **본문 "지식" 오치환 방지** — 커맨드 식별자만 정밀 치환, prose는 불변(§5.4).
+- **본문 "지식" 오치환 방지** — 커맨드 식별자만 정밀 치환, prose는 불변(5.4절).
 - **빌드 영향 없음** — `knowledge/`는 Next.js/Nextra 빌드에 import되지 않음(주석·툴링 스크립트만 참조). 분리 후 사이트 빌드·Vercel 배포 정상 확인.
 - **새 체크아웃 부트스트랩** — `./llm-wiki` 부재 시 위키 툴링이 "먼저 `git clone …/llm-wiki`" 안내. README에 1줄 명시.
 

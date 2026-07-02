@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** woowacourse org 전체 저장소를 autoresearch 스타일 승격 파이프라인으로 분석하기 위한 인프라(루브릭·슬래시 커맨드·문서 레이어)를 구축한다. 본 계획은 실제 207개 레포 순회(스펙 §8 단계 8~12)를 **제외**하고, 인프라(단계 1~7)에만 집중한다 — 완료 후 사용자는 `/analyze-all`을 세션별로 돌리기만 하면 데이터가 누적된다.
+**Goal:** woowacourse org 전체 저장소를 autoresearch 스타일 승격 파이프라인으로 분석하기 위한 인프라(루브릭·슬래시 커맨드·문서 레이어)를 구축한다. 본 계획은 실제 207개 레포 순회(스펙 8절 단계 8~12)를 **제외**하고, 인프라(단계 1~7)에만 집중한다 — 완료 후 사용자는 `/analyze-all`을 세션별로 돌리기만 하면 데이터가 누적된다.
 
 **Architecture:** 기존 실험 로그 파이프라인(`/improve-log`, `/improve-all`, `.claude/log-quality-rubric.md`, `content/logs.ts`, `LogList`)을 템플릿으로 삼아 구조적으로 복제·확장한다. 신규 어휘를 도입하지 않는다. 상태의 단일 진실 원천은 `.research/repo-scores.tsv`(커밋)이고, 문서 표현의 단일 진실 원천은 `content/repositories.ts`(자동 갱신)이다.
 

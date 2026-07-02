@@ -21,13 +21,20 @@
 - **계수 의존 문구(편집 표면)**: "N개를 순서대로 읽어보면", H2 "N개를 다 읽고 나면 보이는 …가지 흐름"과 하위 흐름 절, 관찰 표 헤더 "N개 뉴스레터에서", "무엇이 궁금하면 어디서부터 읽을까" 표, "한 줄로 요약하면"
 - **마지막 갱신**: 2026-07-03, 22호까지 (아카이브 22 / 라이브 22)
 
-## 테코톡 `조사`
+## 테코톡 `실측 2026-07-03`
 
 - **라이브 소스**: 유튜브 재생목록 [#우아한테크코스 테코톡](https://www.youtube.com/playlist?list=PLgXGHBqgT2TvpJ_p9L_yZKPifgdBOzdVH) (채널: 우아한테크)
-- **항목 열거법**: 재생목록 전체 영상 목록 필요(yt-dlp `--flat-playlist` 또는 YouTube Data API). 라이브 총 개수 vs data.json `summary.totalVideos` 대조.
-- **갱신 대상**: `content/education/conversations/techtalk-data.json` (`scripts/techtalk/build-index.mjs`로 생성) + `techtalk-archive.mdx`의 Callout 계수·카테고리 서술 + derived 미러 + `content/updates.ts`
-- **주의**: build-index.mjs의 입력(재생목록 메타데이터)을 어떻게 다시 수집하는지 첫 갱신 때 확인·기록할 것.
-- **마지막 갱신**: data generatedAt 2026-04-14, 669편. 매주 테코톡이 열리므로(뉴스레터 20호 기준 5/28 진행) 밀려 있을 가능성 높음.
+- **항목 열거법**:
+  - 빠른 계수: `yt-dlp --flat-playlist --print "%(playlist_count)s" --playlist-items 1 <URL>` — 단, 이 값은 **비공개·삭제 영상 포함**이라 실제 나열 가능 수보다 클 수 있다(2026-07 기준 689 vs 686).
+  - 전체 열거: `python3 scripts/youtube/enumerate-playlist.py <URL> <out.json>` — YouTube가 재생목록을 lockupViewModel 레이아웃으로 바꿔 **yt-dlp(2026.06 기준)가 102개에서 끊긴다**. 이 스크립트는 InnerTube continuation을 직접 돌아 전량 열거한다(id·원제목·길이·조회수 텍스트).
+  - 신선도 판정은 **열거된 listed 수 vs data.json `summary.totalVideos`** + ID diff로 한다(계수만 비교하면 비공개분 +3이 영구 드리프트로 보인다).
+- **갱신 절차 (실측)**:
+  1. enumerate-playlist.py로 전량 열거 → ID diff (신규/사라짐 확인)
+  2. `.temp/techtalk/playlist.json` 합성: 열거 원제목 + **기존 data.json의 viewCount 병합**(정확도 보존), 신규 항목만 조회수 텍스트 파싱(천/만 근사)
+  3. `node scripts/techtalk/build-index.mjs` → data.json 재생성 (build 스크립트는 `{title, entries:[{id,title,duration,view_count,url}]}` 형식을 기대)
+  4. `techtalk-archive.mdx` 계수 3곳: Callout 영상 수·총 분량, "이 페이지는 이렇게 보면" 문단, "현재 자산화 범위" 문단
+- **갱신 대상**: `techtalk-data.json` + `techtalk-archive.mdx` + derived 미러 + `content/updates.ts`
+- **마지막 갱신**: 2026-07-03, 686편·137시간 33분 (신규 18, 비공개 전환 1 제거)
 
 ## 브이로그 `조사`
 
@@ -42,7 +49,7 @@
 - **라이브 소스**: 유튜브 재생목록 [데모데이](https://www.youtube.com/playlist?list=PLgXGHBqgT2TsWUA5puZimG3DDlJTd370Q)
 - **항목 열거법**: 재생목록 영상 수 vs `demo-day-data.json` `summary.totalVideos`(194) 대조.
 - **갱신 대상**: `demo-day-data.json` (`scripts/demo-day/build-report.mjs`) + `demo-day-archive.mdx` Callout 계수·묶음 표 + derived 미러 + `content/updates.ts`
-- **주의**: 브이로그와 같은 `.temp/` 파이프라인 구조로 추정 — 첫 갱신 때 입력 경로 확인.
+- **주의**: 브이로그와 같은 `.temp/` 파이프라인 구조로 추정 — 첫 갱신 때 입력 경로 확인. 100편 초과 재생목록이므로 전량 열거는 테코톡과 같이 `scripts/youtube/enumerate-playlist.py`를 쓴다.
 - **마지막 갱신**: 194편 (transcriptOk 187).
 
 ## 교육 설명회 `조사`

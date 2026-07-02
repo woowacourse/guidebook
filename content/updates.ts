@@ -403,7 +403,7 @@ const updates: Update[] = [
   {
     date: '2026년 8기',
     title: '레벨0: 자기주도 학습 설계 (안드로이드)',
-    description: '입학 전 4주, 계획-실행-회고 구조로 크루 스스로 학습 리듬을 만드는 실험. 19명 전원 완주.',
+    description: '입학 전 4주, 계획-실행-회고 구조로 크루 스스로 학습 루틴을 만드는 실험. 19명 전원 완주.',
     href: '/education/logs/android-level0',
     status: 'active',
   },

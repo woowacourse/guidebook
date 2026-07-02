@@ -10,6 +10,14 @@ export interface Update {
 const updates: Update[] = [
   {
     date: '2026년 8기',
+    title: '테코톡 아카이브: 8기 발표 18편 반영 (686편)',
+    description:
+      '재생목록 스냅숏을 686편, 137시간 33분으로 갱신했습니다. 바이브 코딩 보안, AI 시대의 SOLID, Fuzz Testing처럼 8기 시즌의 새 발표 18편이 카테고리·키워드 탐색기에 추가됐습니다.',
+    href: '/education/conversations/techtalk-archive',
+    status: 'active',
+  },
+  {
+    date: '2026년 8기',
     title: '뉴스레터 아카이브: 8기 시즌 20~22호 반영',
     description:
       '메일리 뉴스레터 아카이브를 22호까지 최신화했습니다. 판교 통합 캠퍼스(20호), 제 1회 테코톤(21호), 자율 스터디 취재(22호)를 목록과 추천 경로에 더하고, 기수가 바뀌어도 공동체의 문법이 이어진다는 다섯 번째 흐름을 새로 정리했습니다.',

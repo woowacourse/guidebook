@@ -2,48 +2,51 @@
   "source": {
     "playlistTitle": "#우아한테크코스 테코톡",
     "playlistUrl": "https://www.youtube.com/playlist?list=PLgXGHBqgT2TvpJ_p9L_yZKPifgdBOzdVH",
-    "channelTitle": "우아한테크",
-    "generatedAt": "2026-04-14T04:49:54.112Z"
+    "generatedAt": "2026-07-02T23:22:52.735Z"
   },
   "summary": {
-    "totalVideos": 669,
-    "totalSeconds": 483005,
-    "totalDuration": "134시간 10분",
+    "totalVideos": 686,
+    "totalSeconds": 495194,
+    "totalDuration": "137시간 33분",
     "topTags": [
       {
         "label": "Spring",
-        "count": 40
+        "count": 37
       },
       {
         "label": "컴포넌트",
         "count": 27
       },
       {
-        "label": "Thread",
-        "count": 22
-      },
-      {
         "label": "테스트",
         "count": 21
+      },
+      {
+        "label": "패턴",
+        "count": 20
       },
       {
         "label": "Java",
         "count": 20
       },
       {
-        "label": "패턴",
-        "count": 19
+        "label": "Thread",
+        "count": 20
       },
       {
         "label": "DNS/TCP",
-        "count": 17
-      },
-      {
-        "label": "React",
-        "count": 17
+        "count": 18
       },
       {
         "label": "객체지향",
+        "count": 17
+      },
+      {
+        "label": "JPA/JDBC",
+        "count": 16
+      },
+      {
+        "label": "React",
         "count": 16
       },
       {
@@ -51,15 +54,7 @@
         "count": 15
       },
       {
-        "label": "JPA/JDBC",
-        "count": 15
-      },
-      {
         "label": "안드로이드",
-        "count": 14
-      },
-      {
-        "label": "AWS/Docker",
         "count": 14
       },
       {
@@ -67,8 +62,12 @@
         "count": 14
       },
       {
-        "label": "브라우저",
+        "label": "AWS/Docker",
         "count": 13
+      },
+      {
+        "label": "브라우저",
+        "count": 12
       },
       {
         "label": "빌드도구",
@@ -88,15 +87,15 @@
         "트랜잭션",
         "인증/인가"
       ],
-      "count": 96,
+      "count": 92,
       "topTags": [
         {
           "label": "Spring",
-          "count": 36
+          "count": 34
         },
         {
           "label": "JPA/JDBC",
-          "count": 13
+          "count": 14
         },
         {
           "label": "패턴",
@@ -134,9 +133,9 @@
         },
         {
           "id": "calGCwG_B4Y",
-          "title": "코기의 Servlet vs Spring",
+          "title": "코기의 Servlet vs Spring",
           "topic": "Servlet vs Spring",
-          "speaker": "코기",
+          "speaker": "코기",
           "url": "https://www.youtube.com/watch?v=calGCwG_B4Y",
           "viewCount": 35000
         }
@@ -153,23 +152,23 @@
         "컴포넌트",
         "접근성"
       ],
-      "count": 96,
+      "count": 91,
       "topTags": [
         {
           "label": "컴포넌트",
-          "count": 21
+          "count": 20
         },
         {
           "label": "React",
-          "count": 17
+          "count": 16
         },
         {
           "label": "렌더링",
-          "count": 11
+          "count": 10
         },
         {
           "label": "브라우저",
-          "count": 11
+          "count": 10
         },
         {
           "label": "패턴",
@@ -191,19 +190,19 @@
         },
         {
           "id": "sJ14cWjrNis",
-          "title": "체프의 브라우저 렌더링",
-          "topic": "브라우저 렌더링",
+          "title": "체프의 브라우저 렌더링",
+          "topic": "브라우저 렌더링",
           "speaker": "체프",
           "url": "https://www.youtube.com/watch?v=sJ14cWjrNis",
           "viewCount": 18000
         },
         {
-          "id": "1YAWshEGU6g",
-          "title": "앨버의 리액트 렌더링 최적화",
-          "topic": "리액트 렌더링 최적화",
-          "speaker": "앨버",
-          "url": "https://www.youtube.com/watch?v=1YAWshEGU6g",
-          "viewCount": 17000
+          "id": "PN_WmsgbQCo",
+          "title": "지그의 Virtual DOM",
+          "topic": "Virtual DOM",
+          "speaker": "지그",
+          "url": "https://www.youtube.com/watch?v=PN_WmsgbQCo",
+          "viewCount": 14000
         }
       ]
     },
@@ -230,7 +229,7 @@
         },
         {
           "label": "컴포넌트",
-          "count": 2
+          "count": 3
         },
         {
           "label": "객체지향",
@@ -256,9 +255,9 @@
         },
         {
           "id": "PaGOJ3887Js",
-          "title": "Kobe's Kotlin Coroutine",
+          "title": "코비의 Kotlin Coroutine",
           "topic": "Kotlin Coroutine",
-          "speaker": "Kobe",
+          "speaker": "코비",
           "url": "https://www.youtube.com/watch?v=PaGOJ3887Js",
           "viewCount": 3200
         },
@@ -283,7 +282,7 @@
         "정규화",
         "락"
       ],
-      "count": 47,
+      "count": 46,
       "topTags": [
         {
           "label": "MySQL",
@@ -291,7 +290,7 @@
         },
         {
           "label": "인덱스",
-          "count": 9
+          "count": 8
         },
         {
           "label": "Redis",
@@ -299,7 +298,7 @@
         },
         {
           "label": "아키텍처",
-          "count": 3
+          "count": 1
         },
         {
           "label": "JPA/JDBC",
@@ -344,15 +343,15 @@
         "JVM",
         "GC"
       ],
-      "count": 94,
+      "count": 86,
       "topTags": [
         {
           "label": "Thread",
-          "count": 21
+          "count": 19
         },
         {
           "label": "DNS/TCP",
-          "count": 15
+          "count": 16
         },
         {
           "label": "HTTP",
@@ -360,11 +359,11 @@
         },
         {
           "label": "JVM/GC",
-          "count": 10
+          "count": 9
         },
         {
           "label": "객체지향",
-          "count": 2
+          "count": 3
         },
         {
           "label": "브라우저",
@@ -412,16 +411,16 @@
       "count": 54,
       "topTags": [
         {
-          "label": "AWS/Docker",
-          "count": 13
-        },
-        {
           "label": "보안",
           "count": 12
         },
         {
+          "label": "AWS/Docker",
+          "count": 12
+        },
+        {
           "label": "배포",
-          "count": 11
+          "count": 10
         },
         {
           "label": "빌드도구",
@@ -474,7 +473,7 @@
         "DI/IoC",
         "상속과 조합"
       ],
-      "count": 44,
+      "count": 42,
       "topTags": [
         {
           "label": "객체지향",
@@ -497,7 +496,7 @@
           "count": 1
         },
         {
-          "label": "Spring",
+          "label": "AI/MCP",
           "count": 1
         }
       ],
@@ -539,7 +538,7 @@
         "로깅",
         "메트릭"
       ],
-      "count": 30,
+      "count": 31,
       "topTags": [
         {
           "label": "테스트",
@@ -634,8 +633,8 @@
         },
         {
           "id": "ktWcieiNzKs",
-          "title": "알렉스, 열음의 멀티스레드와 동기화 In Java",
-          "topic": "멀티스레드와 동기화 In Java",
+          "title": "알렉스, 열음의 멀티스레드와 동기화 In Java",
+          "topic": "멀티스레드와 동기화 In Java",
           "speaker": "알렉스, 열음",
           "url": "https://www.youtube.com/watch?v=ktWcieiNzKs",
           "viewCount": 11000
@@ -661,7 +660,7 @@
         "협업",
         "AI"
       ],
-      "count": 35,
+      "count": 33,
       "topTags": [
         {
           "label": "Git",
@@ -716,37 +715,37 @@
         "프로젝트",
         "기타"
       ],
-      "count": 71,
+      "count": 109,
       "topTags": [
         {
           "label": "패턴",
-          "count": 1
+          "count": 2
         }
       ],
       "recommendations": [
         {
-          "id": "A04zlpL1Uw4",
-          "title": "유세지의 Node.js",
-          "topic": "Node.js",
-          "speaker": "유세지",
-          "url": "https://www.youtube.com/watch?v=A04zlpL1Uw4",
-          "viewCount": 10000
+          "id": "EWfujNzSUmw",
+          "title": "하루의 실행 컨텍스트",
+          "topic": "실행 컨텍스트",
+          "speaker": "하루",
+          "url": "https://www.youtube.com/watch?v=EWfujNzSUmw",
+          "viewCount": 32000
         },
         {
-          "id": "wcxWlyps4Vg",
-          "title": "피터의 이벤트루프",
-          "topic": "이벤트루프",
-          "speaker": "피터",
-          "url": "https://www.youtube.com/watch?v=wcxWlyps4Vg",
-          "viewCount": 9700
+          "id": "rvss-_t6gzg",
+          "title": "아론의 웹소켓&스프링",
+          "topic": "웹소켓&스프링",
+          "speaker": "아론",
+          "url": "https://www.youtube.com/watch?v=rvss-_t6gzg",
+          "viewCount": 24000
         },
         {
-          "id": "PCXlgnYekBg",
-          "title": "루피의 우아한테크코스 도서관리시스템",
-          "topic": "우아한테크코스 도서관리시스템",
-          "speaker": "루피",
-          "url": "https://www.youtube.com/watch?v=PCXlgnYekBg",
-          "viewCount": 6500
+          "id": "1YAWshEGU6g",
+          "title": "앨버의 리액트 렌더링 최적화",
+          "topic": "리액트 렌더링 최적화",
+          "speaker": "앨버",
+          "url": "https://www.youtube.com/watch?v=1YAWshEGU6g",
+          "viewCount": 17000
         }
       ]
     }
@@ -754,6 +753,265 @@
   "entries": [
     {
       "index": 1,
+      "id": "AGZA59MjhCg",
+      "title": "클라우디의 세션과 JWT",
+      "speaker": "클라우디",
+      "topic": "세션과 JWT",
+      "duration": "10:43",
+      "durationSeconds": 643,
+      "viewCount": 768,
+      "url": "https://www.youtube.com/watch?v=AGZA59MjhCg",
+      "categoryId": "misc-experiments",
+      "tags": []
+    },
+    {
+      "index": 2,
+      "id": "0jLxWJUlZLs",
+      "title": "피트의 CORS 에러, 왜 우리를 괴롭힐까?",
+      "speaker": "피트",
+      "topic": "CORS 에러, 왜 우리를 괴롭힐까?",
+      "duration": "13:28",
+      "durationSeconds": 808,
+      "viewCount": 414,
+      "url": "https://www.youtube.com/watch?v=0jLxWJUlZLs",
+      "categoryId": "infra-security",
+      "tags": [
+        "보안"
+      ]
+    },
+    {
+      "index": 3,
+      "id": "Frv2c_ZK7rU",
+      "title": "한다의 캡슐화를 지키는 JDBC 트랜잭션 관리",
+      "speaker": "한다",
+      "topic": "캡슐화를 지키는 JDBC 트랜잭션 관리",
+      "duration": "10:54",
+      "durationSeconds": 654,
+      "viewCount": 387,
+      "url": "https://www.youtube.com/watch?v=Frv2c_ZK7rU",
+      "categoryId": "server-backend",
+      "tags": [
+        "JPA/JDBC"
+      ]
+    },
+    {
+      "index": 4,
+      "id": "EJF_A5kHkJk",
+      "title": "바드의 Recomposition 최적화",
+      "speaker": "바드",
+      "topic": "Recomposition 최적화",
+      "duration": "9:25",
+      "durationSeconds": 565,
+      "viewCount": 168,
+      "url": "https://www.youtube.com/watch?v=EJF_A5kHkJk",
+      "categoryId": "network-os-concurrency",
+      "tags": [
+        "DNS/TCP",
+        "객체지향"
+      ]
+    },
+    {
+      "index": 5,
+      "id": "Aq4Ga7pfDJo",
+      "title": "하로의 단위 테스트로 나누는 것이 반드시 좋은 것일까?",
+      "speaker": "하로",
+      "topic": "단위 테스트로 나누는 것이 반드시 좋은 것일까?",
+      "duration": "9:05",
+      "durationSeconds": 545,
+      "viewCount": 338,
+      "url": "https://www.youtube.com/watch?v=Aq4Ga7pfDJo",
+      "categoryId": "testing-quality",
+      "tags": [
+        "테스트"
+      ]
+    },
+    {
+      "index": 6,
+      "id": "bd_JZJxjm4I",
+      "title": "티온의 다형성은 언제 해가 되는가?",
+      "speaker": "티온",
+      "topic": "다형성은 언제 해가 되는가?",
+      "duration": "10:43",
+      "durationSeconds": 643,
+      "viewCount": 342,
+      "url": "https://www.youtube.com/watch?v=bd_JZJxjm4I",
+      "categoryId": "misc-experiments",
+      "tags": []
+    },
+    {
+      "index": 7,
+      "id": "XlK2f-FPCJk",
+      "title": "조디악의 Jetpack Compose는 UI를 어떻게 그릴까?",
+      "speaker": "조디악",
+      "topic": "Jetpack Compose는 UI를 어떻게 그릴까?",
+      "duration": "8:27",
+      "durationSeconds": 507,
+      "viewCount": 202,
+      "url": "https://www.youtube.com/watch?v=XlK2f-FPCJk",
+      "categoryId": "mobile-android",
+      "tags": [
+        "컴포넌트"
+      ]
+    },
+    {
+      "index": 8,
+      "id": "MGgiXN2SQwQ",
+      "title": "봉구스의 Mockito 라이브러리 사용법",
+      "speaker": "봉구스",
+      "topic": "Mockito 라이브러리 사용법",
+      "duration": "12:05",
+      "durationSeconds": 725,
+      "viewCount": 245,
+      "url": "https://www.youtube.com/watch?v=MGgiXN2SQwQ",
+      "categoryId": "testing-quality",
+      "tags": []
+    },
+    {
+      "index": 9,
+      "id": "WVTHJCCWt-E",
+      "title": "투핸더의 바이브 코딩, 보안 괜찮을까?",
+      "speaker": "투핸더",
+      "topic": "바이브 코딩, 보안 괜찮을까?",
+      "duration": "11:21",
+      "durationSeconds": 681,
+      "viewCount": 411,
+      "url": "https://www.youtube.com/watch?v=WVTHJCCWt-E",
+      "categoryId": "infra-security",
+      "tags": [
+        "보안"
+      ]
+    },
+    {
+      "index": 10,
+      "id": "fcwl0hwziMc",
+      "title": "코로구의 상태패턴",
+      "speaker": "코로구",
+      "topic": "상태패턴",
+      "duration": "12:24",
+      "durationSeconds": 744,
+      "viewCount": 492,
+      "url": "https://www.youtube.com/watch?v=fcwl0hwziMc",
+      "categoryId": "misc-experiments",
+      "tags": [
+        "패턴"
+      ]
+    },
+    {
+      "index": 11,
+      "id": "-gbqPuHzLj0",
+      "title": "쿠다의 우테코 프로그래밍 요구사항을 왜 지켜야 할까?",
+      "speaker": "쿠다",
+      "topic": "우테코 프로그래밍 요구사항을 왜 지켜야 할까?",
+      "duration": "11:25",
+      "durationSeconds": 685,
+      "viewCount": 181,
+      "url": "https://www.youtube.com/watch?v=-gbqPuHzLj0",
+      "categoryId": "misc-experiments",
+      "tags": []
+    },
+    {
+      "index": 12,
+      "id": "X8T6Evy3SWM",
+      "title": "샤를의 기존 테스트를 넘어, Fuzz Testing",
+      "speaker": "샤를",
+      "topic": "기존 테스트를 넘어, Fuzz Testing",
+      "duration": "8:25",
+      "durationSeconds": 505,
+      "viewCount": 220,
+      "url": "https://www.youtube.com/watch?v=X8T6Evy3SWM",
+      "categoryId": "testing-quality",
+      "tags": [
+        "테스트"
+      ]
+    },
+    {
+      "index": 13,
+      "id": "aOTtFSha5sc",
+      "title": "해니의 브라우저는 유튜브 영상을 어떻게 재생할까?",
+      "speaker": "해니",
+      "topic": "브라우저는 유튜브 영상을 어떻게 재생할까?",
+      "duration": "12:29",
+      "durationSeconds": 749,
+      "viewCount": 430,
+      "url": "https://www.youtube.com/watch?v=aOTtFSha5sc",
+      "categoryId": "frontend-web",
+      "tags": [
+        "브라우저"
+      ]
+    },
+    {
+      "index": 14,
+      "id": "lOG9NvPVKs8",
+      "title": "티모의 암호화 복호화 기초",
+      "speaker": "티모",
+      "topic": "암호화 복호화 기초",
+      "duration": "11:36",
+      "durationSeconds": 696,
+      "viewCount": 392,
+      "url": "https://www.youtube.com/watch?v=lOG9NvPVKs8",
+      "categoryId": "infra-security",
+      "tags": []
+    },
+    {
+      "index": 15,
+      "id": "XoCy36rrJ7s",
+      "title": "이산의 DTO는 왜 써야할까?",
+      "speaker": "이산",
+      "topic": "DTO는 왜 써야할까?",
+      "duration": "13:47",
+      "durationSeconds": 827,
+      "viewCount": 2500,
+      "url": "https://www.youtube.com/watch?v=XoCy36rrJ7s",
+      "categoryId": "misc-experiments",
+      "tags": []
+    },
+    {
+      "index": 16,
+      "id": "Dz3bruRYfow",
+      "title": "보예의 AI시대에서도 SOLID 원칙은 중요한가?",
+      "speaker": "보예",
+      "topic": "AI시대에서도 SOLID 원칙은 중요한가?",
+      "duration": "8:36",
+      "durationSeconds": 516,
+      "viewCount": 1800,
+      "url": "https://www.youtube.com/watch?v=Dz3bruRYfow",
+      "categoryId": "architecture-patterns",
+      "tags": [
+        "AI/MCP"
+      ]
+    },
+    {
+      "index": 17,
+      "id": "kbAvBcLmgwE",
+      "title": "녀녕의 git 기초 명령어",
+      "speaker": "녀녕",
+      "topic": "git 기초 명령어",
+      "duration": "16:25",
+      "durationSeconds": 985,
+      "viewCount": 330,
+      "url": "https://www.youtube.com/watch?v=kbAvBcLmgwE",
+      "categoryId": "devtools-collaboration-ai",
+      "tags": [
+        "Git"
+      ]
+    },
+    {
+      "index": 18,
+      "id": "ZyG_6MR-1-g",
+      "title": "마이찬의 BDD는 방향을, TDD는 실행을 만든다(feat. Cucumber)",
+      "speaker": "마이찬",
+      "topic": "BDD는 방향을, TDD는 실행을 만든다(feat. Cucumber)",
+      "duration": "11:51",
+      "durationSeconds": 711,
+      "viewCount": 331,
+      "url": "https://www.youtube.com/watch?v=ZyG_6MR-1-g",
+      "categoryId": "testing-quality",
+      "tags": [
+        "테스트"
+      ]
+    },
+    {
+      "index": 19,
       "id": "lkuAxAVgAX0",
       "title": "레오의 MDC",
       "speaker": "레오",
@@ -766,7 +1024,7 @@
       "tags": []
     },
     {
-      "index": 2,
+      "index": 20,
       "id": "5og9G1Ib06w",
       "title": "칼리의 FCM의 작동 흐름",
       "speaker": "칼리",
@@ -779,7 +1037,7 @@
       "tags": []
     },
     {
-      "index": 3,
+      "index": 21,
       "id": "kDU0qlLFjig",
       "title": "오이의 안드로이드 백그라운드 작업",
       "speaker": "오이",
@@ -794,7 +1052,7 @@
       ]
     },
     {
-      "index": 4,
+      "index": 22,
       "id": "u_UeOEk0FKU",
       "title": "채넛의 Kotlin Flow",
       "speaker": "채넛",
@@ -809,7 +1067,7 @@
       ]
     },
     {
-      "index": 5,
+      "index": 23,
       "id": "pIVOs3bf3Gw",
       "title": "다이스의 Server-Sent Events for Android",
       "speaker": "다이스",
@@ -824,7 +1082,7 @@
       ]
     },
     {
-      "index": 6,
+      "index": 24,
       "id": "m4PP6gCDx18",
       "title": "모찌의 의존성 주입",
       "speaker": "모찌",
@@ -837,7 +1095,7 @@
       "tags": []
     },
     {
-      "index": 7,
+      "index": 25,
       "id": "CE2Rs3wM9tk",
       "title": "미플의 안드로이드 데이터 및 파일 저장소",
       "speaker": "미플",
@@ -852,7 +1110,7 @@
       ]
     },
     {
-      "index": 8,
+      "index": 26,
       "id": "19TrHkprQ7U",
       "title": "니야의 웹소켓 끊김 대응 전략",
       "speaker": "니야",
@@ -865,7 +1123,7 @@
       "tags": []
     },
     {
-      "index": 9,
+      "index": 27,
       "id": "FGuBPoSh_vw",
       "title": "시소의 리액티브 프로그래밍",
       "speaker": "시소",
@@ -878,7 +1136,7 @@
       "tags": []
     },
     {
-      "index": 10,
+      "index": 28,
       "id": "wYIdOgrSW0E",
       "title": "꾹이의 SSRF",
       "speaker": "꾹이",
@@ -894,7 +1152,7 @@
       ]
     },
     {
-      "index": 11,
+      "index": 29,
       "id": "6znXX1tnIAs",
       "title": "밍곰의 멱등성",
       "speaker": "밍곰",
@@ -907,7 +1165,7 @@
       "tags": []
     },
     {
-      "index": 12,
+      "index": 30,
       "id": "jIdydvGgguE",
       "title": "토바에의 Retrofit",
       "speaker": "토바에",
@@ -920,7 +1178,7 @@
       "tags": []
     },
     {
-      "index": 13,
+      "index": 31,
       "id": "0r0-R8NhINs",
       "title": "다로의 Elasticsearch",
       "speaker": "다로",
@@ -933,7 +1191,7 @@
       "tags": []
     },
     {
-      "index": 14,
+      "index": 32,
       "id": "lddAZUvOUrs",
       "title": "아이나의 서킷브레이커",
       "speaker": "아이나",
@@ -946,7 +1204,7 @@
       "tags": []
     },
     {
-      "index": 15,
+      "index": 33,
       "id": "wN1hnub6gyY",
       "title": "비타의 애플리케이션 배포 전략",
       "speaker": "비타",
@@ -961,7 +1219,7 @@
       ]
     },
     {
-      "index": 16,
+      "index": 34,
       "id": "57FJoXsbf2s",
       "title": "헤일러의 Terraform으로 인프라 자동화하기",
       "speaker": "헤일러",
@@ -977,7 +1235,7 @@
       ]
     },
     {
-      "index": 17,
+      "index": 35,
       "id": "sHqjW4l7GLU",
       "title": "조로의 해커도 손절하는 안전한 비밀번호 저장 방법",
       "speaker": "조로",
@@ -992,7 +1250,7 @@
       ]
     },
     {
-      "index": 18,
+      "index": 36,
       "id": "9lGmceEaSOE",
       "title": "제이의 UI 싱글 스레드 모델과 Handler·Looper",
       "speaker": "제이",
@@ -1008,7 +1266,7 @@
       ]
     },
     {
-      "index": 19,
+      "index": 37,
       "id": "n2AgeY77YbQ",
       "title": "히포의 클래스 패스와 클래스 로더",
       "speaker": "히포",
@@ -1021,7 +1279,7 @@
       "tags": []
     },
     {
-      "index": 20,
+      "index": 38,
       "id": "J-4-vQOHaBI",
       "title": "율무의 MySQL로 알아보는 공간 데이터",
       "speaker": "율무",
@@ -1036,7 +1294,7 @@
       ]
     },
     {
-      "index": 21,
+      "index": 39,
       "id": "aN5JcbBJ6-s",
       "title": "이든의 Compose Modifier",
       "speaker": "이든",
@@ -1049,7 +1307,7 @@
       "tags": []
     },
     {
-      "index": 22,
+      "index": 40,
       "id": "J4Dps7LQvuM",
       "title": "링크의 이벤트 스토밍",
       "speaker": "링크",
@@ -1062,7 +1320,7 @@
       "tags": []
     },
     {
-      "index": 23,
+      "index": 41,
       "id": "_C3nyFn5xzw",
       "title": "재오의 React, 객체지향 관점에서 바라보기",
       "speaker": "재오",
@@ -1078,7 +1336,7 @@
       ]
     },
     {
-      "index": 24,
+      "index": 42,
       "id": "2xRJ5EYSEIw",
       "title": "젠슨의 AWS Private Subnet",
       "speaker": "젠슨",
@@ -1093,7 +1351,7 @@
       ]
     },
     {
-      "index": 25,
+      "index": 43,
       "id": "ro4CEM6IGQM",
       "title": "하루의 DNS",
       "speaker": "하루",
@@ -1108,7 +1366,7 @@
       ]
     },
     {
-      "index": 26,
+      "index": 44,
       "id": "ckxmMbwmn98",
       "title": "루키의 Spring WebSocket과 STOMP를 활용한 실시간 통신 구조",
       "speaker": "루키",
@@ -1124,7 +1382,7 @@
       ]
     },
     {
-      "index": 27,
+      "index": 45,
       "id": "2I3sUiNEykI",
       "title": "다이앤의 http부터 웹소켓까지",
       "speaker": "다이앤",
@@ -1139,7 +1397,7 @@
       ]
     },
     {
-      "index": 28,
+      "index": 46,
       "id": "EHulc4O8vkw",
       "title": "클레어의 컴포넌트, 유연하게 다시 생각해보기",
       "speaker": "클레어",
@@ -1154,7 +1412,7 @@
       ]
     },
     {
-      "index": 29,
+      "index": 47,
       "id": "WiK3iUUZI0k",
       "title": "벡터의 Spring RestDocs와 Swagger 같이 사용하기",
       "speaker": "벡터",
@@ -1169,7 +1427,7 @@
       ]
     },
     {
-      "index": 30,
+      "index": 48,
       "id": "WFjxWcr90gg",
       "title": "피글렛의 소소한 쿼리 튜닝 팁",
       "speaker": "피글렛",
@@ -1182,7 +1440,7 @@
       "tags": []
     },
     {
-      "index": 31,
+      "index": 49,
       "id": "oUeWTdYtARs",
       "title": "메다의 안드로이드 Permission",
       "speaker": "메다",
@@ -1197,7 +1455,7 @@
       ]
     },
     {
-      "index": 32,
+      "index": 50,
       "id": "-_ErYK7zuas",
       "title": "카멜의 인터랙티브 웹 개발",
       "speaker": "카멜",
@@ -1210,7 +1468,7 @@
       "tags": []
     },
     {
-      "index": 33,
+      "index": 51,
       "id": "wUudBNlWNLM",
       "title": "강산의 이벤트 기반 아키텍처",
       "speaker": "강산",
@@ -1225,7 +1483,7 @@
       ]
     },
     {
-      "index": 34,
+      "index": 52,
       "id": "5HFW8SHG6h0",
       "title": "서프의 가상 스레드",
       "speaker": "서프",
@@ -1238,7 +1496,7 @@
       "tags": []
     },
     {
-      "index": 35,
+      "index": 53,
       "id": "HIGc93pqTAc",
       "title": "제프의 Thread Pool",
       "speaker": "제프",
@@ -1253,7 +1511,7 @@
       ]
     },
     {
-      "index": 36,
+      "index": 54,
       "id": "PY6amgPDsUM",
       "title": "기린의 리액트 메모이제이션",
       "speaker": "기린",
@@ -1268,7 +1526,7 @@
       ]
     },
     {
-      "index": 37,
+      "index": 55,
       "id": "Sxr1cK48THc",
       "title": "퐁쥬의 Error Boundary, 그게 뭔데?",
       "speaker": "퐁쥬",
@@ -1281,7 +1539,7 @@
       "tags": []
     },
     {
-      "index": 38,
+      "index": 56,
       "id": "RhoeOT75hC0",
       "title": "코기의 가상머신에서 컨테이너까지",
       "speaker": "코기",
@@ -1294,10 +1552,10 @@
       "tags": []
     },
     {
-      "index": 39,
+      "index": 57,
       "id": "mAbG2bY2yiA",
-      "title": "Mongi's Metric",
-      "speaker": "Mongi",
+      "title": "몽이의 Metric",
+      "speaker": "몽이",
       "topic": "Metric",
       "duration": "13:18",
       "durationSeconds": 798,
@@ -1309,7 +1567,7 @@
       ]
     },
     {
-      "index": 40,
+      "index": 58,
       "id": "qxoeNtb5dvs",
       "title": "동전의 ViewModel 테스트 전략",
       "speaker": "동전",
@@ -1324,7 +1582,7 @@
       ]
     },
     {
-      "index": 41,
+      "index": 59,
       "id": "wAFn9oXkfms",
       "title": "윌슨의 Event-Loop & Nginx",
       "speaker": "윌슨",
@@ -1340,7 +1598,7 @@
       ]
     },
     {
-      "index": 42,
+      "index": 60,
       "id": "AbGHJo8nbtc",
       "title": "타마의 안드로이드 Notification",
       "speaker": "타마",
@@ -1355,10 +1613,10 @@
       ]
     },
     {
-      "index": 43,
+      "index": 61,
       "id": "BIFlrU-Fs1E",
-      "title": "레몬의 MCP 알아보기",
-      "speaker": "레몬",
+      "title": "레몬의 MCP 알아보기",
+      "speaker": "레몬",
       "topic": "MCP 알아보기",
       "duration": "12:42",
       "durationSeconds": 762,
@@ -1370,7 +1628,7 @@
       ]
     },
     {
-      "index": 44,
+      "index": 62,
       "id": "1v-V8GAHf3o",
       "title": "줄리의 스토리지 엔진과 MySQL",
       "speaker": "줄리",
@@ -1385,7 +1643,7 @@
       ]
     },
     {
-      "index": 45,
+      "index": 63,
       "id": "FTC58pJZEYo",
       "title": "플린트의 MySQL의 전문 검색 인덱스",
       "speaker": "플린트",
@@ -1401,7 +1659,7 @@
       ]
     },
     {
-      "index": 46,
+      "index": 64,
       "id": "skDV3byEaVs",
       "title": "해삐의 컴포넌트 합성과 Compound Component 패턴",
       "speaker": "해삐",
@@ -1417,7 +1675,7 @@
       ]
     },
     {
-      "index": 47,
+      "index": 65,
       "id": "W2DySfjYdWQ",
       "title": "마빈의 랜덤",
       "speaker": "마빈",
@@ -1430,7 +1688,7 @@
       "tags": []
     },
     {
-      "index": 48,
+      "index": 66,
       "id": "uodIYHz4dus",
       "title": "라젤의 무한 스크롤과 Pagination",
       "speaker": "라젤",
@@ -1443,7 +1701,7 @@
       "tags": []
     },
     {
-      "index": 49,
+      "index": 67,
       "id": "At4Gyezw8WA",
       "title": "벨로의 Race Condition 이해하기",
       "speaker": "벨로",
@@ -1456,7 +1714,7 @@
       "tags": []
     },
     {
-      "index": 50,
+      "index": 68,
       "id": "L6teh1j0IRU",
       "title": "차니의 Spring Boot Profile과 외부 설정",
       "speaker": "차니",
@@ -1471,7 +1729,7 @@
       ]
     },
     {
-      "index": 51,
+      "index": 69,
       "id": "EzDjBEnatks",
       "title": "멍구의 스프링@EventListener와 @TransactionalEventListener",
       "speaker": "멍구",
@@ -1486,7 +1744,7 @@
       ]
     },
     {
-      "index": 52,
+      "index": 70,
       "id": "JOLwv6Btayg",
       "title": "머랭의 @ResponseBody와 ResponseEntity를 함께 사용하면 벌어지는 일",
       "speaker": "머랭",
@@ -1499,7 +1757,7 @@
       "tags": []
     },
     {
-      "index": 53,
+      "index": 71,
       "id": "zv89GQoznKY",
       "title": "세오의 반들반들한 번들러",
       "speaker": "세오",
@@ -1514,7 +1772,7 @@
       ]
     },
     {
-      "index": 54,
+      "index": 72,
       "id": "ux21o05vkb0",
       "title": "공백의 당신의 UI가 느린 이유",
       "speaker": "공백",
@@ -1529,7 +1787,7 @@
       ]
     },
     {
-      "index": 55,
+      "index": 73,
       "id": "MNKhJA_n4NU",
       "title": "크림의 LiveData와 DataBinding",
       "speaker": "크림",
@@ -1542,7 +1800,7 @@
       "tags": []
     },
     {
-      "index": 56,
+      "index": 74,
       "id": "xNr7p1gSNkI",
       "title": "캉골의 좋은 코드를 작성하기 위한 기준",
       "speaker": "캉골",
@@ -1555,7 +1813,7 @@
       "tags": []
     },
     {
-      "index": 57,
+      "index": 75,
       "id": "kK8XJq5UNCc",
       "title": "호떡의 알아두면 쓸데있는 I/O 기본 개념",
       "speaker": "호떡",
@@ -1568,7 +1826,7 @@
       "tags": []
     },
     {
-      "index": 58,
+      "index": 76,
       "id": "JHuk4ouuvs4",
       "title": "가콩의 Spring Bean은 왜",
       "speaker": "가콩",
@@ -1583,7 +1841,7 @@
       ]
     },
     {
-      "index": 59,
+      "index": 77,
       "id": "w-g3rTctwdw",
       "title": "밍트의 Spring Framework에서 OOP 실천하기",
       "speaker": "밍트",
@@ -1599,7 +1857,7 @@
       ]
     },
     {
-      "index": 60,
+      "index": 78,
       "id": "HBuc2-2N-Nw",
       "title": "익셉의 전역 상태 라이브러리 직접 구현하기",
       "speaker": "익셉",
@@ -1612,7 +1870,7 @@
       "tags": []
     },
     {
-      "index": 61,
+      "index": 79,
       "id": "MuZ-Mx0N-dA",
       "title": "프리, 말론의 B-Tree 인덱스와 클러스터링 인덱스",
       "speaker": "프리, 말론",
@@ -1627,7 +1885,7 @@
       ]
     },
     {
-      "index": 62,
+      "index": 80,
       "id": "qdZvHRhfqhI",
       "title": "투다의 Spring AOP",
       "speaker": "투다",
@@ -1642,7 +1900,7 @@
       ]
     },
     {
-      "index": 63,
+      "index": 81,
       "id": "jasLqz1RolA",
       "title": "조이의 Activity를 쪼개며 배운 구조 설계",
       "speaker": "조이",
@@ -1655,7 +1913,7 @@
       "tags": []
     },
     {
-      "index": 64,
+      "index": 82,
       "id": "-VzgLlSXm4g",
       "title": "한스의 MySQL의 락",
       "speaker": "한스",
@@ -1670,7 +1928,7 @@
       ]
     },
     {
-      "index": 65,
+      "index": 83,
       "id": "MdEIMzxUVbc",
       "title": "모루의 Spring Bean의 생명주기 들여다보기",
       "speaker": "모루",
@@ -1685,7 +1943,7 @@
       ]
     },
     {
-      "index": 66,
+      "index": 84,
       "id": "Bt04o-Ok4mE",
       "title": "머핀의 useState의 마법",
       "speaker": "머핀",
@@ -1698,7 +1956,7 @@
       "tags": []
     },
     {
-      "index": 67,
+      "index": 85,
       "id": "KIOUXT0LOKs",
       "title": "리바이의 브라우저 HTTP Client의 진화",
       "speaker": "리바이",
@@ -1714,7 +1972,7 @@
       ]
     },
     {
-      "index": 68,
+      "index": 86,
       "id": "-R6YnlFYrIY",
       "title": "아마의 데이터베이스 정규화",
       "speaker": "아마",
@@ -1727,7 +1985,7 @@
       "tags": []
     },
     {
-      "index": 69,
+      "index": 87,
       "id": "Q2n9I86mav4",
       "title": "웨이드의 OSIV",
       "speaker": "웨이드",
@@ -1742,7 +2000,7 @@
       ]
     },
     {
-      "index": 70,
+      "index": 88,
       "id": "OsbfJsED4MI",
       "title": "아더의 React key",
       "speaker": "아더",
@@ -1757,7 +2015,7 @@
       ]
     },
     {
-      "index": 71,
+      "index": 89,
       "id": "hqwDRhO4vUA",
       "title": "체체의 우리가 스프링 프레임워크를 사용하는 이유는 무엇인가?",
       "speaker": "체체",
@@ -1772,7 +2030,7 @@
       ]
     },
     {
-      "index": 72,
+      "index": 90,
       "id": "M9gEeaaQ1eE",
       "title": "히스타, 미소의 마인크래프트로 배우는 네트워크 기초",
       "speaker": "히스타, 미소",
@@ -1785,7 +2043,7 @@
       "tags": []
     },
     {
-      "index": 73,
+      "index": 91,
       "id": "ZTjg7wCa9uI",
       "title": "페토의 리사이클러뷰",
       "speaker": "페토",
@@ -1798,7 +2056,7 @@
       "tags": []
     },
     {
-      "index": 74,
+      "index": 92,
       "id": "gStqsTlBj1E",
       "title": "써밋의 useEffect",
       "speaker": "써밋",
@@ -1811,7 +2069,7 @@
       "tags": []
     },
     {
-      "index": 75,
+      "index": 93,
       "id": "heoTDzJx_Gw",
       "title": "제나의 브라우저의 렌더링 과정",
       "speaker": "제나",
@@ -1827,7 +2085,7 @@
       ]
     },
     {
-      "index": 76,
+      "index": 94,
       "id": "jAzm819dQBs",
       "title": "에리얼의 시맨틱 태그",
       "speaker": "에리얼",
@@ -1840,20 +2098,20 @@
       "tags": []
     },
     {
-      "index": 77,
+      "index": 95,
       "id": "5Z6uSWomliE",
-      "title": "Hiro's Servlets and Servlet Containers",
-      "speaker": "Hiro",
-      "topic": "Servlets and Servlet Containers",
+      "title": "히로의 서블릿과 서블릿 컨테이너",
+      "speaker": "히로",
+      "topic": "서블릿과 서블릿 컨테이너",
       "duration": "9:24",
       "durationSeconds": 564,
       "viewCount": 1000,
       "url": "https://www.youtube.com/watch?v=5Z6uSWomliE",
-      "categoryId": "server-backend",
+      "categoryId": "infra-security",
       "tags": []
     },
     {
-      "index": 78,
+      "index": 96,
       "id": "K4SqrAmEGEM",
       "title": "폰트의 Jdbc Template vs Jdbc Client",
       "speaker": "폰트",
@@ -1868,7 +2126,7 @@
       ]
     },
     {
-      "index": 79,
+      "index": 97,
       "id": "BqgbA30woW8",
       "title": "잭슨의 CSS-in-JS vs CSS Modules",
       "speaker": "잭슨",
@@ -1881,7 +2139,7 @@
       "tags": []
     },
     {
-      "index": 80,
+      "index": 98,
       "id": "4ec6WoHoSjs",
       "title": "포포의 생성형 AI 잘 사용하기",
       "speaker": "포포",
@@ -1896,7 +2154,7 @@
       ]
     },
     {
-      "index": 81,
+      "index": 99,
       "id": "86TJ0Z7eFvI",
       "title": "제리의 Context란?",
       "speaker": "제리",
@@ -1909,7 +2167,7 @@
       "tags": []
     },
     {
-      "index": 82,
+      "index": 100,
       "id": "VGFVLZtr5sY",
       "title": "피터의 React Fiber",
       "speaker": "피터",
@@ -1924,7 +2182,7 @@
       ]
     },
     {
-      "index": 83,
+      "index": 101,
       "id": "CEThRTpWErM",
       "title": "부기, 우가의 Gradle",
       "speaker": "부기, 우가",
@@ -1939,7 +2197,7 @@
       ]
     },
     {
-      "index": 84,
+      "index": 102,
       "id": "t137l7AfmTg",
       "title": "메이토의 키보드 이벤트",
       "speaker": "메이토",
@@ -1952,7 +2210,7 @@
       "tags": []
     },
     {
-      "index": 85,
+      "index": 103,
       "id": "8gyAr3lXGSw",
       "title": "슬링키의 직렬화, 역직렬화 in Spring",
       "speaker": "슬링키",
@@ -1967,7 +2225,7 @@
       ]
     },
     {
-      "index": 86,
+      "index": 104,
       "id": "QAMX_ykkEeE",
       "title": "사나, 수양의 웹세계 문지기 HTTP와 HTTPS 부수기!",
       "speaker": "사나, 수양",
@@ -1982,7 +2240,7 @@
       ]
     },
     {
-      "index": 87,
+      "index": 105,
       "id": "Fo1_6VgilZY",
       "title": "디랙의 Fragment",
       "speaker": "디랙",
@@ -1995,7 +2253,7 @@
       "tags": []
     },
     {
-      "index": 88,
+      "index": 106,
       "id": "oKX0rSCk174",
       "title": "비비의 Activity LifeCycle",
       "speaker": "비비",
@@ -2008,7 +2266,7 @@
       "tags": []
     },
     {
-      "index": 89,
+      "index": 107,
       "id": "NdTgIXLm-Nk",
       "title": "듀이의 Annotation, 알고 사용하시나요?",
       "speaker": "듀이",
@@ -2023,11 +2281,11 @@
       ]
     },
     {
-      "index": 90,
+      "index": 108,
       "id": "Wk2qrnCzIhs",
-      "title": "Drago's XML and JSON",
-      "speaker": "Drago",
-      "topic": "XML and JSON",
+      "title": "드라고의 XML과 JSON",
+      "speaker": "드라고",
+      "topic": "XML과 JSON",
       "duration": "11:43",
       "durationSeconds": 703,
       "viewCount": 596,
@@ -2036,7 +2294,7 @@
       "tags": []
     },
     {
-      "index": 91,
+      "index": 109,
       "id": "mOw2fpk1ok0",
       "title": "루나의 페어 프로그래밍",
       "speaker": "루나",
@@ -2051,7 +2309,7 @@
       ]
     },
     {
-      "index": 92,
+      "index": 110,
       "id": "6EMtVE5wFvI",
       "title": "머피의 객체지향은 왜 개발자를 예민하게 하는가?",
       "speaker": "머피",
@@ -2066,7 +2324,7 @@
       ]
     },
     {
-      "index": 93,
+      "index": 111,
       "id": "OL8z3-qiEuY",
       "title": "지오의 제네릭 in Kotlin",
       "speaker": "지오",
@@ -2082,7 +2340,7 @@
       ]
     },
     {
-      "index": 94,
+      "index": 112,
       "id": "bxlNOb5PDS8",
       "title": "에드의 팩토리 패턴",
       "speaker": "에드",
@@ -2097,7 +2355,7 @@
       ]
     },
     {
-      "index": 95,
+      "index": 113,
       "id": "34syiPghK3Q",
       "title": "메리의 자바스크립트 비동기의 작동 원리",
       "speaker": "메리",
@@ -2110,20 +2368,20 @@
       "tags": []
     },
     {
-      "index": 96,
+      "index": 114,
       "id": "P3vFRUmfLME",
-      "title": "Randy's Hash Table",
-      "speaker": "Randy",
-      "topic": "Hash Table",
+      "title": "랜디의 해시 테이블",
+      "speaker": "랜디",
+      "topic": "해시 테이블",
       "duration": "9:41",
       "durationSeconds": 581,
       "viewCount": 565,
       "url": "https://www.youtube.com/watch?v=P3vFRUmfLME",
-      "categoryId": "network-os-concurrency",
+      "categoryId": "misc-experiments",
       "tags": []
     },
     {
-      "index": 97,
+      "index": 115,
       "id": "Ojo-ZVTG4vk",
       "title": "대니의 Record 그렇게 쓰는거 아닌데",
       "speaker": "대니",
@@ -2138,7 +2396,7 @@
       ]
     },
     {
-      "index": 98,
+      "index": 116,
       "id": "8os-_pGfVm8",
       "title": "밍고의 Web Animation API",
       "speaker": "밍고",
@@ -2151,7 +2409,7 @@
       "tags": []
     },
     {
-      "index": 99,
+      "index": 117,
       "id": "APpUBvLRFJo",
       "title": "돔푸의 좋은 테스트",
       "speaker": "돔푸",
@@ -2166,7 +2424,7 @@
       ]
     },
     {
-      "index": 100,
+      "index": 118,
       "id": "gA-JX5q59N0",
       "title": "시아의 Kotlin 스럽다란 무엇인가",
       "speaker": "시아",
@@ -2181,7 +2439,7 @@
       ]
     },
     {
-      "index": 101,
+      "index": 119,
       "id": "WXkWsftrUU4",
       "title": "데이지의 this",
       "speaker": "데이지",
@@ -2196,7 +2454,7 @@
       ]
     },
     {
-      "index": 102,
+      "index": 120,
       "id": "wWu1lNvctic",
       "title": "가이온의 Garbage Collection",
       "speaker": "가이온",
@@ -2211,7 +2469,7 @@
       ]
     },
     {
-      "index": 103,
+      "index": 121,
       "id": "u4ulaQ4-dw4",
       "title": "후유의 불변 객체와 final",
       "speaker": "후유",
@@ -2224,7 +2482,7 @@
       "tags": []
     },
     {
-      "index": 104,
+      "index": 122,
       "id": "nsK4TP_uvaY",
       "title": "리버의 람다",
       "speaker": "리버",
@@ -2237,7 +2495,7 @@
       "tags": []
     },
     {
-      "index": 105,
+      "index": 123,
       "id": "_ycaQkzOwN4",
       "title": "하쿠의 왜 JS는 프로토타입 기반일까",
       "speaker": "하쿠",
@@ -2250,7 +2508,7 @@
       "tags": []
     },
     {
-      "index": 106,
+      "index": 124,
       "id": "EGUNZTgMaaQ",
       "title": "상추의 유지보수 관점에서 바라본 상속과 조합",
       "speaker": "상추",
@@ -2265,7 +2523,7 @@
       ]
     },
     {
-      "index": 107,
+      "index": 125,
       "id": "Q9aDtHS9NQg",
       "title": "모코의 Java Stream API",
       "speaker": "모코",
@@ -2280,7 +2538,7 @@
       ]
     },
     {
-      "index": 108,
+      "index": 126,
       "id": "vUiX5lS01SI",
       "title": "포르의 모든 원시 값과 문자열을 포장하라",
       "speaker": "포르",
@@ -2293,7 +2551,7 @@
       "tags": []
     },
     {
-      "index": 109,
+      "index": 127,
       "id": "wcnjGlz3W4Y",
       "title": "뭉치의 Git의 동작 원리",
       "speaker": "뭉치",
@@ -2308,7 +2566,7 @@
       ]
     },
     {
-      "index": 110,
+      "index": 128,
       "id": "rqMGT225nzQ",
       "title": "모다의 자바 Object 클래스 알고쓰기",
       "speaker": "모다",
@@ -2321,7 +2579,7 @@
       "tags": []
     },
     {
-      "index": 111,
+      "index": 129,
       "id": "K45jv8DbB88",
       "title": "노랑의 Git Objects",
       "speaker": "노랑",
@@ -2336,7 +2594,7 @@
       ]
     },
     {
-      "index": 112,
+      "index": 130,
       "id": "F-XkE9oM9hI",
       "title": "메이의 예외(Exception)",
       "speaker": "메이",
@@ -2349,7 +2607,7 @@
       "tags": []
     },
     {
-      "index": 113,
+      "index": 131,
       "id": "fcRhlBVIJTw",
       "title": "로건, 오거스의 함께 자라기",
       "speaker": "로건, 오거스",
@@ -2364,7 +2622,7 @@
       ]
     },
     {
-      "index": 114,
+      "index": 132,
       "id": "gcsu7ni3tBc",
       "title": "에버의 Mysql 옵티마이저",
       "speaker": "에버",
@@ -2379,7 +2637,7 @@
       ]
     },
     {
-      "index": 115,
+      "index": 133,
       "id": "7DwxuWyCNHA",
       "title": "리비의 DB Replication",
       "speaker": "리비",
@@ -2392,7 +2650,7 @@
       "tags": []
     },
     {
-      "index": 116,
+      "index": 134,
       "id": "QToJwFvj4G8",
       "title": "수야의 Multi Step Form",
       "speaker": "수야",
@@ -2407,7 +2665,7 @@
       ]
     },
     {
-      "index": 117,
+      "index": 135,
       "id": "Pdi-zj761bM",
       "title": "토다리의 디자인시스템",
       "speaker": "토다리",
@@ -2420,7 +2678,7 @@
       "tags": []
     },
     {
-      "index": 118,
+      "index": 136,
       "id": "kNAIvfFolAs",
       "title": "폰드의 커넥션 풀",
       "speaker": "폰드",
@@ -2433,7 +2691,7 @@
       "tags": []
     },
     {
-      "index": 119,
+      "index": 137,
       "id": "u9z3eAxXuFU",
       "title": "파란의 UI와 UX",
       "speaker": "파란",
@@ -2448,7 +2706,7 @@
       ]
     },
     {
-      "index": 120,
+      "index": 138,
       "id": "vjBltTTTpBA",
       "title": "썬데이의 땅콩의 스크린 리더 접근성 개선기",
       "speaker": "썬데이",
@@ -2461,7 +2719,7 @@
       "tags": []
     },
     {
-      "index": 121,
+      "index": 139,
       "id": "hdO_V7EMU4s",
       "title": "배키의 AOP와 Spring Aop",
       "speaker": "배키",
@@ -2476,7 +2734,7 @@
       ]
     },
     {
-      "index": 122,
+      "index": 140,
       "id": "9UUi5s_hkBU",
       "title": "트레의 스프링에서 STOMP로 채팅 구현하기",
       "speaker": "트레",
@@ -2492,7 +2750,7 @@
       ]
     },
     {
-      "index": 123,
+      "index": 141,
       "id": "xKX70lsdRss",
       "title": "카고의 SpringBoot 외부 API 테스트",
       "speaker": "카고",
@@ -2507,22 +2765,20 @@
       ]
     },
     {
-      "index": 124,
+      "index": 142,
       "id": "dLap7vclQvo",
-      "title": "Khaki's Delicious Way to Use Docker",
-      "speaker": "Khaki",
-      "topic": "Delicious Way to Use Docker",
+      "title": "카키의 도커 맛있게 사용하기",
+      "speaker": "카키",
+      "topic": "도커 맛있게 사용하기",
       "duration": "12:57",
       "durationSeconds": 777,
       "viewCount": 3600,
       "url": "https://www.youtube.com/watch?v=dLap7vclQvo",
-      "categoryId": "infra-security",
-      "tags": [
-        "AWS/Docker"
-      ]
+      "categoryId": "misc-experiments",
+      "tags": []
     },
     {
-      "index": 125,
+      "index": 143,
       "id": "rFnh9icyTRk",
       "title": "테바의 낭만개발자로 성장하기",
       "speaker": "테바",
@@ -2535,7 +2791,7 @@
       "tags": []
     },
     {
-      "index": 126,
+      "index": 144,
       "id": "giCR2IneTPw",
       "title": "소파의 meta 태그",
       "speaker": "소파",
@@ -2548,7 +2804,7 @@
       "tags": []
     },
     {
-      "index": 127,
+      "index": 145,
       "id": "sOfeCigoTIE",
       "title": "누누의 Jetpack Compose with State",
       "speaker": "누누",
@@ -2561,7 +2817,7 @@
       "tags": []
     },
     {
-      "index": 128,
+      "index": 146,
       "id": "A8RlRxB1agU",
       "title": "종이의 TCP/IP 모델 데이터 흐름",
       "speaker": "종이",
@@ -2576,7 +2832,7 @@
       ]
     },
     {
-      "index": 129,
+      "index": 147,
       "id": "HTK1pnZj9ko",
       "title": "비토의 GitHub Actions",
       "speaker": "비토",
@@ -2591,7 +2847,7 @@
       ]
     },
     {
-      "index": 130,
+      "index": 148,
       "id": "Xc0t4O-TuPY",
       "title": "릴리의 JPA 연관관계 최적화",
       "speaker": "릴리",
@@ -2606,7 +2862,7 @@
       ]
     },
     {
-      "index": 131,
+      "index": 149,
       "id": "JiFPTlEMrAs",
       "title": "파슬리의 검색 엔진 최적화",
       "speaker": "파슬리",
@@ -2619,7 +2875,7 @@
       "tags": []
     },
     {
-      "index": 132,
+      "index": 150,
       "id": "XJo5O6GrFC0",
       "title": "카피의 @Transactional",
       "speaker": "카피",
@@ -2632,7 +2888,7 @@
       "tags": []
     },
     {
-      "index": 133,
+      "index": 151,
       "id": "J0ZeznIBjF0",
       "title": "에디의 UI 이벤트 처리",
       "speaker": "에디",
@@ -2647,20 +2903,20 @@
       ]
     },
     {
-      "index": 134,
+      "index": 152,
       "id": "gbxOmKhzXmM",
-      "title": "Jerry's Semaphore",
-      "speaker": "Jerry",
-      "topic": "Semaphore",
+      "title": "제리의 세마포어",
+      "speaker": "제리",
+      "topic": "세마포어",
       "duration": "9:51",
       "durationSeconds": 591,
       "viewCount": 1500,
       "url": "https://www.youtube.com/watch?v=gbxOmKhzXmM",
-      "categoryId": "network-os-concurrency",
+      "categoryId": "misc-experiments",
       "tags": []
     },
     {
-      "index": 135,
+      "index": 153,
       "id": "kgvBlruQEKU",
       "title": "테니의 무중단 배포",
       "speaker": "테니",
@@ -2675,7 +2931,7 @@
       ]
     },
     {
-      "index": 136,
+      "index": 154,
       "id": "AlDBl7JuNkM",
       "title": "알파카의 자바 Virtual Thread",
       "speaker": "알파카",
@@ -2690,7 +2946,7 @@
       ]
     },
     {
-      "index": 137,
+      "index": 155,
       "id": "FEP2BzNzoRw",
       "title": "버건디, 아톰의 프론트엔드와 백엔드의 API 중복 호출 해결기",
       "speaker": "버건디, 아톰",
@@ -2703,7 +2959,7 @@
       "tags": []
     },
     {
-      "index": 138,
+      "index": 156,
       "id": "NCLmN26zki0",
       "title": "예니의 Kotlin Flow",
       "speaker": "예니",
@@ -2718,7 +2974,7 @@
       ]
     },
     {
-      "index": 139,
+      "index": 157,
       "id": "XRyt-2BOkAI",
       "title": "땡이의 SpringBoot 알아보기",
       "speaker": "땡이",
@@ -2733,7 +2989,7 @@
       ]
     },
     {
-      "index": 140,
+      "index": 158,
       "id": "AzGhzqfRhig",
       "title": "재즈의 자바 비동기 프로그래밍 이해",
       "speaker": "재즈",
@@ -2746,7 +3002,7 @@
       "tags": []
     },
     {
-      "index": 141,
+      "index": 159,
       "id": "s6RtVFL5lYU",
       "title": "해리의 타입스크립트 제네릭",
       "speaker": "해리",
@@ -2761,7 +3017,7 @@
       ]
     },
     {
-      "index": 142,
+      "index": 160,
       "id": "OHJJF1_NkD0",
       "title": "메이슨, 아토의 Java Thread",
       "speaker": "메이슨, 아토",
@@ -2777,7 +3033,7 @@
       ]
     },
     {
-      "index": 143,
+      "index": 161,
       "id": "RvsMwyysUHI",
       "title": "웨디의 프론트엔드에서의 에러 처리",
       "speaker": "웨디",
@@ -2790,7 +3046,7 @@
       "tags": []
     },
     {
-      "index": 144,
+      "index": 162,
       "id": "IRuGBlznR_A",
       "title": "마스터위의 크롬 익스텐션으로 사용자경험 확장하기",
       "speaker": "마스터위",
@@ -2803,7 +3059,7 @@
       "tags": []
     },
     {
-      "index": 145,
+      "index": 163,
       "id": "iuJ7dPi2HWU",
       "title": "해음의 코루틴 테스트",
       "speaker": "해음",
@@ -2819,7 +3075,7 @@
       ]
     },
     {
-      "index": 146,
+      "index": 164,
       "id": "UlF6o3Wbi2k",
       "title": "리브의 스프링 부트 내장 톰캣",
       "speaker": "리브",
@@ -2834,7 +3090,7 @@
       ]
     },
     {
-      "index": 147,
+      "index": 165,
       "id": "r2arbkCTVUk",
       "title": "백호, 망쵸의 Spring Boot와 AWS를 이용한 이미지 업로드 및 최적화",
       "speaker": "백호, 망쵸",
@@ -2850,7 +3106,7 @@
       ]
     },
     {
-      "index": 148,
+      "index": 166,
       "id": "UqxiAYpH6vA",
       "title": "월하의 애니메이션 최적화",
       "speaker": "월하",
@@ -2863,7 +3119,7 @@
       "tags": []
     },
     {
-      "index": 149,
+      "index": 167,
       "id": "uZdUO9Oi7DA",
       "title": "시소의 포트포워딩 그랬구나",
       "speaker": "시소",
@@ -2876,7 +3132,7 @@
       "tags": []
     },
     {
-      "index": 150,
+      "index": 168,
       "id": "OPXf00DX4b0",
       "title": "악어의 안드로이드 MVC 부터 MVVM 까지",
       "speaker": "악어",
@@ -2891,7 +3147,7 @@
       ]
     },
     {
-      "index": 151,
+      "index": 169,
       "id": "hNov4CJGDBQ",
       "title": "리버의 단일 이미지를 활용한 반응형 이미지 최적화",
       "speaker": "리버",
@@ -2904,7 +3160,7 @@
       "tags": []
     },
     {
-      "index": 152,
+      "index": 170,
       "id": "GuqJJzIjyHo",
       "title": "애쉬의 협업과 개발문서의 상관 관계",
       "speaker": "애쉬",
@@ -2919,7 +3175,7 @@
       ]
     },
     {
-      "index": 153,
+      "index": 171,
       "id": "aX9ANAqpC9A",
       "title": "무빈의 팀원들과 잘 소통하기",
       "speaker": "무빈",
@@ -2934,7 +3190,7 @@
       ]
     },
     {
-      "index": 154,
+      "index": 172,
       "id": "cmBFGSrHKnM",
       "title": "호기의 blocking VS non-blocking, sync VS async",
       "speaker": "호기",
@@ -2949,7 +3205,7 @@
       ]
     },
     {
-      "index": 155,
+      "index": 173,
       "id": "IftfkVSzOdI",
       "title": "냥인의 InnoDB",
       "speaker": "냥인",
@@ -2964,7 +3220,7 @@
       ]
     },
     {
-      "index": 156,
+      "index": 174,
       "id": "oUroldyG1_s",
       "title": "상돌의 Nginx 시작하기",
       "speaker": "상돌",
@@ -2979,7 +3235,7 @@
       ]
     },
     {
-      "index": 157,
+      "index": 175,
       "id": "CbVPN4nRpRU",
       "title": "초코의 웹 접근성",
       "speaker": "초코",
@@ -2992,7 +3248,7 @@
       "tags": []
     },
     {
-      "index": 158,
+      "index": 176,
       "id": "GnQu_KW3suI",
       "title": "채드의 안드로이드 Service",
       "speaker": "채드",
@@ -3007,7 +3263,7 @@
       ]
     },
     {
-      "index": 159,
+      "index": 177,
       "id": "era8W7q3CeQ",
       "title": "우주의 낙관적인 락, 비관적인 락",
       "speaker": "우주",
@@ -3020,7 +3276,7 @@
       "tags": []
     },
     {
-      "index": 160,
+      "index": 178,
       "id": "oLfh2UZ4JWU",
       "title": "텐텐의 리액트의 렌더링",
       "speaker": "텐텐",
@@ -3036,7 +3292,7 @@
       ]
     },
     {
-      "index": 161,
+      "index": 179,
       "id": "8MGhb78VJpk",
       "title": "프람의 OAuth-이론",
       "speaker": "프람",
@@ -3051,7 +3307,7 @@
       ]
     },
     {
-      "index": 162,
+      "index": 180,
       "id": "LfwRDFrhXA4",
       "title": "빙봉, 헤인의 클로저와 커링",
       "speaker": "빙봉, 헤인",
@@ -3064,7 +3320,7 @@
       "tags": []
     },
     {
-      "index": 163,
+      "index": 181,
       "id": "SN5U2FCmFAM",
       "title": "낙낙의 애자일",
       "speaker": "낙낙",
@@ -3077,7 +3333,7 @@
       "tags": []
     },
     {
-      "index": 164,
+      "index": 182,
       "id": "SKILL1pT6f4",
       "title": "도비의 CI/CD와 Github Action",
       "speaker": "도비",
@@ -3092,20 +3348,20 @@
       ]
     },
     {
-      "index": 165,
+      "index": 183,
       "id": "Flm-TqN93Ak",
-      "title": "Ryan's Lean Startup",
-      "speaker": "Ryan",
-      "topic": "Lean Startup",
+      "title": "라이언의 린 스타트업",
+      "speaker": "라이언",
+      "topic": "린 스타트업",
       "duration": "8:24",
       "durationSeconds": 504,
       "viewCount": 2000,
       "url": "https://www.youtube.com/watch?v=Flm-TqN93Ak",
-      "categoryId": "devtools-collaboration-ai",
+      "categoryId": "misc-experiments",
       "tags": []
     },
     {
-      "index": 166,
+      "index": 184,
       "id": "RfK15tw8H-I",
       "title": "시모의 TanStack Query",
       "speaker": "시모",
@@ -3121,7 +3377,7 @@
       ]
     },
     {
-      "index": 167,
+      "index": 185,
       "id": "leIwlemLWNc",
       "title": "몰리의 디버깅",
       "speaker": "몰리",
@@ -3134,7 +3390,7 @@
       "tags": []
     },
     {
-      "index": 168,
+      "index": 186,
       "id": "SwLKZUj9urY",
       "title": "레모네의 웹 소켓",
       "speaker": "레모네",
@@ -3147,7 +3403,7 @@
       "tags": []
     },
     {
-      "index": 169,
+      "index": 187,
       "id": "UkYdk1KKVCA",
       "title": "마크의 Redis",
       "speaker": "마크",
@@ -3162,7 +3418,7 @@
       ]
     },
     {
-      "index": 170,
+      "index": 188,
       "id": "ln9vfw-JAr8",
       "title": "쑤쑤의 z-index의 동작 방식",
       "speaker": "쑤쑤",
@@ -3177,7 +3433,7 @@
       ]
     },
     {
-      "index": 171,
+      "index": 189,
       "id": "1S6kS1dAlkM",
       "title": "포케의 웹 어플리케이션 보안",
       "speaker": "포케",
@@ -3192,7 +3448,7 @@
       ]
     },
     {
-      "index": 172,
+      "index": 190,
       "id": "X2hcteH8kR0",
       "title": "레디의 DNS",
       "speaker": "레디",
@@ -3207,7 +3463,7 @@
       ]
     },
     {
-      "index": 173,
+      "index": 191,
       "id": "JK4_U3OVWcY",
       "title": "폭포의 다이나믹 프로그래밍",
       "speaker": "폭포",
@@ -3220,7 +3476,7 @@
       "tags": []
     },
     {
-      "index": 174,
+      "index": 192,
       "id": "j7rxFkk8dcQ",
       "title": "하디의 코드 한 줄 몰라도 이해되는 문자열 탐색",
       "speaker": "하디",
@@ -3233,7 +3489,7 @@
       "tags": []
     },
     {
-      "index": 175,
+      "index": 193,
       "id": "2mNxqt7AtUg",
       "title": "꼬상의 안드로이드 이미지 라이브러리",
       "speaker": "꼬상",
@@ -3248,7 +3504,7 @@
       ]
     },
     {
-      "index": 176,
+      "index": 194,
       "id": "EJuWjyzGPKo",
       "title": "심지의 안드로이드 애니메이션",
       "speaker": "심지",
@@ -3263,11 +3519,11 @@
       ]
     },
     {
-      "index": 177,
+      "index": 195,
       "id": "ZYLW2KX_nnI",
-      "title": "잉크의 반란군",
-      "speaker": "잉크",
-      "topic": "반란군",
+      "title": "잉크의 반란군",
+      "speaker": "잉크",
+      "topic": "반란군",
       "duration": "4:05",
       "durationSeconds": 245,
       "viewCount": 964,
@@ -3276,22 +3532,20 @@
       "tags": []
     },
     {
-      "index": 178,
+      "index": 196,
       "id": "_UI8YDU_mfg",
-      "title": "초코칩&로키의 인덱스와 스캔 튜닝",
-      "speaker": "초코칩&로키",
-      "topic": "인덱스와 스캔 튜닝",
+      "title": "초코칩&로키의 인덱스와 스캔 튜닝",
+      "speaker": "초코칩&로키",
+      "topic": "인덱스와 스캔 튜닝",
       "duration": "30:00",
       "durationSeconds": 1800,
       "viewCount": 1800,
       "url": "https://www.youtube.com/watch?v=_UI8YDU_mfg",
-      "categoryId": "database-storage",
-      "tags": [
-        "인덱스"
-      ]
+      "categoryId": "misc-experiments",
+      "tags": []
     },
     {
-      "index": 179,
+      "index": 197,
       "id": "tbz5MObvIhI",
       "title": "다온의 CORS",
       "speaker": "다온",
@@ -3306,7 +3560,7 @@
       ]
     },
     {
-      "index": 180,
+      "index": 198,
       "id": "jSInFhiz1kY",
       "title": "프린의 Gradle",
       "speaker": "프린",
@@ -3321,7 +3575,7 @@
       ]
     },
     {
-      "index": 181,
+      "index": 199,
       "id": "Fr3AUZ9CGu8",
       "title": "도라의 릴레이션 스키마 변환 규칙 (with ERD)",
       "speaker": "도라",
@@ -3334,7 +3588,7 @@
       "tags": []
     },
     {
-      "index": 182,
+      "index": 200,
       "id": "YHhVSuFQUyQ",
       "title": "명오의 RESTDocs 삽질기",
       "speaker": "명오",
@@ -3347,7 +3601,7 @@
       "tags": []
     },
     {
-      "index": 183,
+      "index": 201,
       "id": "-m9xGyePEug",
       "title": "제이드의 Webpack",
       "speaker": "제이드",
@@ -3360,7 +3614,7 @@
       "tags": []
     },
     {
-      "index": 184,
+      "index": 202,
       "id": "3DNbRnl0im4",
       "title": "오둥이의 코루틴 예외처리",
       "speaker": "오둥이",
@@ -3375,7 +3629,7 @@
       ]
     },
     {
-      "index": 185,
+      "index": 203,
       "id": "iy-ouIRGDOY",
       "title": "빙티의 코틀린 코루틴의 동작 방식",
       "speaker": "빙티",
@@ -3390,7 +3644,7 @@
       ]
     },
     {
-      "index": 186,
+      "index": 204,
       "id": "7zcKu4-YPkU",
       "title": "올리의 MSW",
       "speaker": "올리",
@@ -3403,7 +3657,7 @@
       "tags": []
     },
     {
-      "index": 187,
+      "index": 205,
       "id": "Be9q0k5BJ_s",
       "title": "낙타의 ESLint",
       "speaker": "낙타",
@@ -3416,7 +3670,7 @@
       "tags": []
     },
     {
-      "index": 188,
+      "index": 206,
       "id": "BO7QFUnVdjc",
       "title": "리건의 IoC와 DI",
       "speaker": "리건",
@@ -3429,7 +3683,7 @@
       "tags": []
     },
     {
-      "index": 189,
+      "index": 207,
       "id": "mn7UTm0CbCc",
       "title": "켈리의 정규화",
       "speaker": "켈리",
@@ -3442,7 +3696,7 @@
       "tags": []
     },
     {
-      "index": 190,
+      "index": 208,
       "id": "o5rspNdJ-fE",
       "title": "위브의 Spring에서 직렬화 및 역직렬화 과정",
       "speaker": "위브",
@@ -3457,7 +3711,7 @@
       ]
     },
     {
-      "index": 191,
+      "index": 209,
       "id": "s5PaI2wb4hM",
       "title": "알송의 SQLite와 Room",
       "speaker": "알송",
@@ -3470,7 +3724,7 @@
       "tags": []
     },
     {
-      "index": 192,
+      "index": 210,
       "id": "c4rDrirE7Bc",
       "title": "산초의 영속성 컨텍스트와 EntityManager",
       "speaker": "산초",
@@ -3483,7 +3737,7 @@
       "tags": []
     },
     {
-      "index": 193,
+      "index": 211,
       "id": "vdT3HOctqpk",
       "title": "켬미의 프레임워크 vs 라이브러리 vs API",
       "speaker": "켬미",
@@ -3496,7 +3750,7 @@
       "tags": []
     },
     {
-      "index": 194,
+      "index": 212,
       "id": "FKxfs2F1HOU",
       "title": "테드의 Web Server와 Web Application Server",
       "speaker": "테드",
@@ -3509,7 +3763,7 @@
       "tags": []
     },
     {
-      "index": 195,
+      "index": 213,
       "id": "bEbW6zA0krY",
       "title": "새양의 가상화와 도커",
       "speaker": "새양",
@@ -3522,7 +3776,7 @@
       "tags": []
     },
     {
-      "index": 196,
+      "index": 214,
       "id": "T9y9RsysCvQ",
       "title": "쿠키의 쿠키",
       "speaker": "쿠키",
@@ -3535,7 +3789,7 @@
       "tags": []
     },
     {
-      "index": 197,
+      "index": 215,
       "id": "kt-i2falokE",
       "title": "호티의 Http Method",
       "speaker": "호티",
@@ -3550,7 +3804,7 @@
       ]
     },
     {
-      "index": 198,
+      "index": 216,
       "id": "dxaoUMm-QJk",
       "title": "조조의 Controller 테스트",
       "speaker": "조조",
@@ -3565,7 +3819,7 @@
       ]
     },
     {
-      "index": 199,
+      "index": 217,
       "id": "L8_XyPHqiOw",
       "title": "해나의 Android UI Test",
       "speaker": "해나",
@@ -3582,10 +3836,10 @@
       ]
     },
     {
-      "index": 200,
+      "index": 218,
       "id": "JAv3AomqwUY",
-      "title": "Pome's Node.js Event Loop",
-      "speaker": "Pome",
+      "title": "포메의 Node.js Event Loop",
+      "speaker": "포메",
       "topic": "Node.js Event Loop",
       "duration": "9:27",
       "durationSeconds": 567,
@@ -3598,7 +3852,7 @@
       ]
     },
     {
-      "index": 201,
+      "index": 219,
       "id": "fCgU_VFv33M",
       "title": "제제의 ResponseBody vs ResponseEntity",
       "speaker": "제제",
@@ -3611,7 +3865,7 @@
       "tags": []
     },
     {
-      "index": 202,
+      "index": 220,
       "id": "f0-RgQFJCkc",
       "title": "조이썬의 Java Optional",
       "speaker": "조이썬",
@@ -3626,7 +3880,7 @@
       ]
     },
     {
-      "index": 203,
+      "index": 221,
       "id": "w-BKbmNzYY0",
       "title": "채채의 안드로이드 Intent",
       "speaker": "채채",
@@ -3641,7 +3895,7 @@
       ]
     },
     {
-      "index": 204,
+      "index": 222,
       "id": "7KLh0z7ta10",
       "title": "페드로의 TCP 제어 기능",
       "speaker": "페드로",
@@ -3656,7 +3910,7 @@
       ]
     },
     {
-      "index": 205,
+      "index": 223,
       "id": "wLPHtaSfCmU",
       "title": "마루의 리액트 컴포넌트 LIFECYCLE",
       "speaker": "마루",
@@ -3672,7 +3926,7 @@
       ]
     },
     {
-      "index": 206,
+      "index": 224,
       "id": "8BNx8UbAo2s",
       "title": "리니의 HTTPS",
       "speaker": "리니",
@@ -3687,7 +3941,7 @@
       ]
     },
     {
-      "index": 207,
+      "index": 225,
       "id": "rOQOMRHFtng",
       "title": "뽀로로의 자바 애플리케이션에서의 캐싱",
       "speaker": "뽀로로",
@@ -3700,7 +3954,7 @@
       "tags": []
     },
     {
-      "index": 208,
+      "index": 226,
       "id": "Cr6mlXWZ35E",
       "title": "제우스의 자바 제네릭",
       "speaker": "제우스",
@@ -3715,7 +3969,7 @@
       ]
     },
     {
-      "index": 209,
+      "index": 227,
       "id": "TSCWYBd_nq8",
       "title": "바다의 createPortal",
       "speaker": "바다",
@@ -3728,7 +3982,7 @@
       "tags": []
     },
     {
-      "index": 210,
+      "index": 228,
       "id": "t-nR1SXK3o8",
       "title": "프룬의 리액트 Props Drilling",
       "speaker": "프룬",
@@ -3743,7 +3997,7 @@
       ]
     },
     {
-      "index": 211,
+      "index": 229,
       "id": "1VwRtsLDiyM",
       "title": "아루의 객체지향과 추상화 수준",
       "speaker": "아루",
@@ -3758,7 +4012,7 @@
       ]
     },
     {
-      "index": 212,
+      "index": 230,
       "id": "jSlpD2BsA1E",
       "title": "호두의 Context의 올바른 사용법",
       "speaker": "호두",
@@ -3771,7 +4025,7 @@
       "tags": []
     },
     {
-      "index": 213,
+      "index": 231,
       "id": "xnlCNIpzQq0",
       "title": "에프이의 useReducer",
       "speaker": "에프이",
@@ -3784,7 +4038,7 @@
       "tags": []
     },
     {
-      "index": 214,
+      "index": 232,
       "id": "7c0tqHLfxlE",
       "title": "클로버의 SOLID",
       "speaker": "클로버",
@@ -3797,7 +4051,7 @@
       "tags": []
     },
     {
-      "index": 215,
+      "index": 233,
       "id": "ebKRUxN5otQ",
       "title": "헤일리의 Custom Hook",
       "speaker": "헤일리",
@@ -3810,7 +4064,7 @@
       "tags": []
     },
     {
-      "index": 216,
+      "index": 234,
       "id": "SDhMExSPge0",
       "title": "커찬의 디자인 패턴",
       "speaker": "커찬",
@@ -3825,7 +4079,7 @@
       ]
     },
     {
-      "index": 217,
+      "index": 235,
       "id": "U6R-GJnwHJY",
       "title": "로빈의 의존성 주입",
       "speaker": "로빈",
@@ -3838,7 +4092,7 @@
       "tags": []
     },
     {
-      "index": 218,
+      "index": 236,
       "id": "R7spoJFfQ7U",
       "title": "도도의 좋은 단위 테스트란",
       "speaker": "도도",
@@ -3853,7 +4107,7 @@
       ]
     },
     {
-      "index": 219,
+      "index": 237,
       "id": "QLr1UGUAORM",
       "title": "러기의 브라우저의 동작",
       "speaker": "러기",
@@ -3868,22 +4122,20 @@
       ]
     },
     {
-      "index": 220,
+      "index": 238,
       "id": "hDKoMxhiKSM",
-      "title": "안나의 스프링 MVC와 DispatcherServlet",
+      "title": "안나의 스프링 MVC와 DispatcherServlet",
       "speaker": "안나",
-      "topic": "스프링 MVC와 DispatcherServlet",
+      "topic": "스프링 MVC와 DispatcherServlet",
       "duration": "10:45",
       "durationSeconds": 645,
       "viewCount": 3000,
       "url": "https://www.youtube.com/watch?v=hDKoMxhiKSM",
       "categoryId": "server-backend",
-      "tags": [
-        "Spring"
-      ]
+      "tags": []
     },
     {
-      "index": 221,
+      "index": 239,
       "id": "AfC5DK04INA",
       "title": "초롱의 Annotation",
       "speaker": "초롱",
@@ -3898,7 +4150,7 @@
       ]
     },
     {
-      "index": 222,
+      "index": 240,
       "id": "9aY-1kzmrsE",
       "title": "감자의 웹 통신의 흐름",
       "speaker": "감자",
@@ -3911,7 +4163,7 @@
       "tags": []
     },
     {
-      "index": 223,
+      "index": 241,
       "id": "hL0gdGJgI4k",
       "title": "구름의 상속과 조합",
       "speaker": "구름",
@@ -3926,7 +4178,7 @@
       ]
     },
     {
-      "index": 224,
+      "index": 242,
       "id": "FrPCDEiindY",
       "title": "미아의 Java Collection Framework",
       "speaker": "미아",
@@ -3941,7 +4193,7 @@
       ]
     },
     {
-      "index": 225,
+      "index": 243,
       "id": "hNeSEqsStqc",
       "title": "이상의 Java Stream API",
       "speaker": "이상",
@@ -3956,7 +4208,7 @@
       ]
     },
     {
-      "index": 226,
+      "index": 244,
       "id": "OIoxURRTLic",
       "title": "케이엠의 동일성과 동등성",
       "speaker": "케이엠",
@@ -3969,7 +4221,7 @@
       "tags": []
     },
     {
-      "index": 227,
+      "index": 245,
       "id": "Y6_o1NJtdnE",
       "title": "치코의 자바스크립트 동작 원리",
       "speaker": "치코",
@@ -3982,7 +4234,7 @@
       "tags": []
     },
     {
-      "index": 228,
+      "index": 246,
       "id": "-7qSRz6c2O4",
       "title": "서기의 추상 클래스와 인터페이스",
       "speaker": "서기",
@@ -3995,7 +4247,7 @@
       "tags": []
     },
     {
-      "index": 229,
+      "index": 247,
       "id": "VsYw2GWgZV0",
       "title": "이든의 방어적 복사",
       "speaker": "이든",
@@ -4008,22 +4260,20 @@
       "tags": []
     },
     {
-      "index": 230,
+      "index": 248,
       "id": "UJDXXmuMldM",
-      "title": "Kirby's Garbage Collection",
-      "speaker": "Kirby",
-      "topic": "Garbage Collection",
+      "title": "커비의 가비지 컬렉션",
+      "speaker": "커비",
+      "topic": "가비지 컬렉션",
       "duration": "12:42",
       "durationSeconds": 762,
       "viewCount": 1800,
       "url": "https://www.youtube.com/watch?v=UJDXXmuMldM",
-      "categoryId": "network-os-concurrency",
-      "tags": [
-        "JVM/GC"
-      ]
+      "categoryId": "misc-experiments",
+      "tags": []
     },
     {
-      "index": 231,
+      "index": 249,
       "id": "713TQsfpVUA",
       "title": "소하의 RESTful API",
       "speaker": "소하",
@@ -4036,7 +4286,7 @@
       "tags": []
     },
     {
-      "index": 232,
+      "index": 250,
       "id": "YlX7dGdECFI",
       "title": "아르의 자바스크립트 Prototype",
       "speaker": "아르",
@@ -4052,22 +4302,20 @@
       ]
     },
     {
-      "index": 233,
+      "index": 251,
       "id": "N4hIR6XDKQo",
-      "title": "How Hash and Darr's Git Commands Work",
-      "speaker": "How Hash and Darr",
-      "topic": "Git Commands Work",
+      "title": "해시, 다르의 깃 명령어 동작 원리",
+      "speaker": "해시, 다르",
+      "topic": "깃 명령어 동작 원리",
       "duration": "17:04",
       "durationSeconds": 1024,
       "viewCount": 2100,
       "url": "https://www.youtube.com/watch?v=N4hIR6XDKQo",
-      "categoryId": "devtools-collaboration-ai",
-      "tags": [
-        "Git"
-      ]
+      "categoryId": "misc-experiments",
+      "tags": []
     },
     {
-      "index": 234,
+      "index": 252,
       "id": "x0l_6AizLrs",
       "title": "올리브의 코틀린 Primitive Type과 Wrapper Class",
       "speaker": "올리브",
@@ -4082,7 +4330,7 @@
       ]
     },
     {
-      "index": 235,
+      "index": 253,
       "id": "qACxvjrb-xk",
       "title": "짱수의 Enum",
       "speaker": "짱수",
@@ -4095,7 +4343,7 @@
       "tags": []
     },
     {
-      "index": 236,
+      "index": 254,
       "id": "MiHxFpTgAog",
       "title": "타칸의 Record",
       "speaker": "타칸",
@@ -4110,7 +4358,7 @@
       ]
     },
     {
-      "index": 237,
+      "index": 255,
       "id": "rkTt1uQ1YHI",
       "title": "지니의 리팩터링 자바스크립트 테스트",
       "speaker": "지니",
@@ -4125,7 +4373,7 @@
       ]
     },
     {
-      "index": 238,
+      "index": 256,
       "id": "-RRPciXWRT8",
       "title": "벼리의 코틀린에서의 예외",
       "speaker": "벼리",
@@ -4140,7 +4388,7 @@
       ]
     },
     {
-      "index": 239,
+      "index": 257,
       "id": "jXtUUm92RiQ",
       "title": "망쵸의 유용한 Git 명령어",
       "speaker": "망쵸",
@@ -4155,7 +4403,7 @@
       ]
     },
     {
-      "index": 240,
+      "index": 258,
       "id": "dXhjPVDLCTg",
       "title": "에밀의 IP",
       "speaker": "에밀",
@@ -4168,7 +4416,7 @@
       "tags": []
     },
     {
-      "index": 241,
+      "index": 259,
       "id": "GhEZlj3Kv9Y",
       "title": "로이의 비트와 논리게이트",
       "speaker": "로이",
@@ -4181,7 +4429,7 @@
       "tags": []
     },
     {
-      "index": 242,
+      "index": 260,
       "id": "lAiUkGB9VSo",
       "title": "에코의 암호",
       "speaker": "에코",
@@ -4194,7 +4442,7 @@
       "tags": []
     },
     {
-      "index": 243,
+      "index": 261,
       "id": "DfNGidKhY6U",
       "title": "조이,엔초의 DNS와 ARP",
       "speaker": "조이,엔초",
@@ -4209,7 +4457,7 @@
       ]
     },
     {
-      "index": 244,
+      "index": 262,
       "id": "QG6_DG5Tapw",
       "title": "루쿠의 트리 자료구조",
       "speaker": "루쿠",
@@ -4222,7 +4470,7 @@
       "tags": []
     },
     {
-      "index": 245,
+      "index": 263,
       "id": "LQL8tXPaQCs",
       "title": "매튜의 선형 자료구조",
       "speaker": "매튜",
@@ -4235,7 +4483,7 @@
       "tags": []
     },
     {
-      "index": 246,
+      "index": 264,
       "id": "Q1jZtN8oMnU",
       "title": "우가의 Virtual Thread",
       "speaker": "우가",
@@ -4250,7 +4498,7 @@
       ]
     },
     {
-      "index": 247,
+      "index": 265,
       "id": "oyzWDtMquo4",
       "title": "오도의 정렬 알고리즘",
       "speaker": "오도",
@@ -4263,7 +4511,7 @@
       "tags": []
     },
     {
-      "index": 248,
+      "index": 266,
       "id": "_SyFgWccEs8",
       "title": "채채의 가상 메모리",
       "speaker": "채채",
@@ -4276,7 +4524,7 @@
       "tags": []
     },
     {
-      "index": 249,
+      "index": 267,
       "id": "QOWgP2_kGYQ",
       "title": "썬샷의 최소 신장 트리와 최단 경로 알고리즘",
       "speaker": "썬샷",
@@ -4289,7 +4537,7 @@
       "tags": []
     },
     {
-      "index": 250,
+      "index": 268,
       "id": "jEiUyh_lnFI",
       "title": "노아이즈의 합성 컴포넌트 패턴",
       "speaker": "노아이즈",
@@ -4305,7 +4553,7 @@
       ]
     },
     {
-      "index": 251,
+      "index": 269,
       "id": "prniILbdOYA",
       "title": "푸우의 Tomcat Thread Pool",
       "speaker": "푸우",
@@ -4320,11 +4568,11 @@
       ]
     },
     {
-      "index": 252,
+      "index": 270,
       "id": "atsWCicI5VQ",
-      "title": "Pooh's Versatile React Component Design and SOLID",
-      "speaker": "Pooh",
-      "topic": "Versatile React Component Design and SOLID",
+      "title": "푸만능의 리액트 컴포넌트 설계와 SOLID",
+      "speaker": "푸만능",
+      "topic": "리액트 컴포넌트 설계와 SOLID",
       "duration": "9:13",
       "durationSeconds": 553,
       "viewCount": 6900,
@@ -4336,7 +4584,7 @@
       ]
     },
     {
-      "index": 253,
+      "index": 271,
       "id": "5UiPIqmK_G4",
       "title": "제나의 컨테이너란?",
       "speaker": "제나",
@@ -4349,7 +4597,7 @@
       "tags": []
     },
     {
-      "index": 254,
+      "index": 272,
       "id": "RxQPo5CY_98",
       "title": "도치의 도커 엔진, 스윔, 컴포즈 이론편",
       "speaker": "도치",
@@ -4362,7 +4610,7 @@
       "tags": []
     },
     {
-      "index": 255,
+      "index": 273,
       "id": "RNH1KN2pD2Y",
       "title": "네이브의 컴포넌트 IoC패턴",
       "speaker": "네이브",
@@ -4378,7 +4626,7 @@
       ]
     },
     {
-      "index": 256,
+      "index": 274,
       "id": "vjBQks_tjOA",
       "title": "에디의 서버 컴포넌트",
       "speaker": "에디",
@@ -4393,7 +4641,7 @@
       ]
     },
     {
-      "index": 257,
+      "index": 275,
       "id": "qXyv_tDhtOI",
       "title": "도담의 리액트 사이드 이펙트",
       "speaker": "도담",
@@ -4408,7 +4656,7 @@
       ]
     },
     {
-      "index": 258,
+      "index": 276,
       "id": "n-ddI9Lt7Xs",
       "title": "가람, 도리의 Tanstack Query v5 (React Query)",
       "speaker": "가람, 도리",
@@ -4424,7 +4672,7 @@
       ]
     },
     {
-      "index": 259,
+      "index": 277,
       "id": "CXGzd07c_xo",
       "title": "하마드의 복제와 복제 지연",
       "speaker": "하마드",
@@ -4437,7 +4685,7 @@
       "tags": []
     },
     {
-      "index": 260,
+      "index": 278,
       "id": "rC3mfSj6G4I",
       "title": "반달의 안드로이드 앱 아키텍처 가이드",
       "speaker": "반달",
@@ -4453,7 +4701,7 @@
       ]
     },
     {
-      "index": 261,
+      "index": 279,
       "id": "KTOf-zzIXsY",
       "title": "토마스의 난독화",
       "speaker": "토마스",
@@ -4466,7 +4714,7 @@
       "tags": []
     },
     {
-      "index": 262,
+      "index": 280,
       "id": "Dz-46mPfkGo",
       "title": "바론, 블랙캣의 Querydsl with JPA",
       "speaker": "바론, 블랙캣",
@@ -4481,7 +4729,7 @@
       ]
     },
     {
-      "index": 263,
+      "index": 281,
       "id": "VAhZa30j8hA",
       "title": "연어의 DB Partitioning",
       "speaker": "연어",
@@ -4494,7 +4742,7 @@
       "tags": []
     },
     {
-      "index": 264,
+      "index": 282,
       "id": "xOejgF8uSsg",
       "title": "유스의 상태관리 패턴과 반응형 프로그래밍",
       "speaker": "유스",
@@ -4509,7 +4757,7 @@
       ]
     },
     {
-      "index": 265,
+      "index": 283,
       "id": "8pxvqKkl9As",
       "title": "아커, 윤생의 프론트엔드에서 서버 API mocking",
       "speaker": "아커, 윤생",
@@ -4522,7 +4770,7 @@
       "tags": []
     },
     {
-      "index": 266,
+      "index": 284,
       "id": "NL9JQh5bbZ8",
       "title": "오션의 뮤텍스와 세마포어",
       "speaker": "오션",
@@ -4535,7 +4783,7 @@
       "tags": []
     },
     {
-      "index": 267,
+      "index": 285,
       "id": "EBBS_giQ4AM",
       "title": "두둠, 쥬니의 데이터베이스 락",
       "speaker": "두둠, 쥬니",
@@ -4548,7 +4796,7 @@
       "tags": []
     },
     {
-      "index": 268,
+      "index": 286,
       "id": "4t8BennljZA",
       "title": "베로의 Monitor & Synchronized",
       "speaker": "베로",
@@ -4563,7 +4811,7 @@
       ]
     },
     {
-      "index": 269,
+      "index": 287,
       "id": "_jo-bJtyMng",
       "title": "아크의 Hilt",
       "speaker": "아크",
@@ -4576,7 +4824,7 @@
       "tags": []
     },
     {
-      "index": 270,
+      "index": 288,
       "id": "3cTn53dtzJI",
       "title": "베베, 허브의 성능 테스트",
       "speaker": "베베, 허브",
@@ -4591,7 +4839,7 @@
       ]
     },
     {
-      "index": 271,
+      "index": 289,
       "id": "KLEAhfw9vfg",
       "title": "민트의 DI",
       "speaker": "민트",
@@ -4604,7 +4852,7 @@
       "tags": []
     },
     {
-      "index": 272,
+      "index": 290,
       "id": "Fjj4ZmLlrP8",
       "title": "주드의 Server Sent Events",
       "speaker": "주드",
@@ -4617,7 +4865,7 @@
       "tags": []
     },
     {
-      "index": 273,
+      "index": 291,
       "id": "ut10rvh1vug",
       "title": "제레미의 번들사이즈 최적화",
       "speaker": "제레미",
@@ -4630,7 +4878,7 @@
       "tags": []
     },
     {
-      "index": 274,
+      "index": 292,
       "id": "b0s9RzKyHN0",
       "title": "키아라의 스프링 트랜잭션 전파",
       "speaker": "키아라",
@@ -4645,7 +4893,7 @@
       ]
     },
     {
-      "index": 275,
+      "index": 293,
       "id": "8sstaLbEBTY",
       "title": "홍고, 제이미의 무중단 배포",
       "speaker": "홍고, 제이미",
@@ -4660,10 +4908,10 @@
       ]
     },
     {
-      "index": 276,
+      "index": 294,
       "id": "PaGOJ3887Js",
-      "title": "Kobe's Kotlin Coroutine",
-      "speaker": "Kobe",
+      "title": "코비의 Kotlin Coroutine",
+      "speaker": "코비",
       "topic": "Kotlin Coroutine",
       "duration": "8:24",
       "durationSeconds": 504,
@@ -4675,7 +4923,7 @@
       ]
     },
     {
-      "index": 277,
+      "index": 295,
       "id": "nFj5d92WLpk",
       "title": "스캇의 ViewModel",
       "speaker": "스캇",
@@ -4688,7 +4936,7 @@
       "tags": []
     },
     {
-      "index": 278,
+      "index": 296,
       "id": "w27fZGbtvZ0",
       "title": "아코의 MySQL 아키텍처",
       "speaker": "아코",
@@ -4704,7 +4952,7 @@
       ]
     },
     {
-      "index": 279,
+      "index": 297,
       "id": "usEsrsaSSuU",
       "title": "모디의 MySQL의 실행 계획",
       "speaker": "모디",
@@ -4719,7 +4967,7 @@
       ]
     },
     {
-      "index": 280,
+      "index": 298,
       "id": "pXb1viEtEsE",
       "title": "둘리의 Localization",
       "speaker": "둘리",
@@ -4732,7 +4980,7 @@
       "tags": []
     },
     {
-      "index": 281,
+      "index": 299,
       "id": "tJauBMXEtJA",
       "title": "망고의 DeadLock",
       "speaker": "망고",
@@ -4745,7 +4993,7 @@
       "tags": []
     },
     {
-      "index": 282,
+      "index": 300,
       "id": "1BoJZqxFYfQ",
       "title": "코난의 자바스크립트 메모리 관리",
       "speaker": "코난",
@@ -4758,7 +5006,7 @@
       "tags": []
     },
     {
-      "index": 283,
+      "index": 301,
       "id": "Ql7CoQminoM",
       "title": "누누, 다즐의 클린 아키텍처",
       "speaker": "누누, 다즐",
@@ -4773,7 +5021,7 @@
       ]
     },
     {
-      "index": 284,
+      "index": 302,
       "id": "89WK1xJ7CMU",
       "title": "아인, 노아의 에러 핸들링",
       "speaker": "아인, 노아",
@@ -4786,7 +5034,7 @@
       "tags": []
     },
     {
-      "index": 285,
+      "index": 303,
       "id": "X_iE36En9F4",
       "title": "아마란스의 로깅",
       "speaker": "아마란스",
@@ -4801,7 +5049,7 @@
       ]
     },
     {
-      "index": 286,
+      "index": 304,
       "id": "tVZ15cCRAyE",
       "title": "저문, 라온의 Cache & Redis",
       "speaker": "저문, 라온",
@@ -4816,7 +5064,7 @@
       ]
     },
     {
-      "index": 287,
+      "index": 305,
       "id": "A0TB7qG-JBE",
       "title": "수달의 mock을 사용해 android presenter test하기",
       "speaker": "수달",
@@ -4832,7 +5080,7 @@
       ]
     },
     {
-      "index": 288,
+      "index": 306,
       "id": "l-7XA6gXqzs",
       "title": "필립, 박스터의 엔진엑스의 Everything",
       "speaker": "필립, 박스터",
@@ -4845,7 +5093,7 @@
       "tags": []
     },
     {
-      "index": 289,
+      "index": 307,
       "id": "PPPHh0Dm89M",
       "title": "아이크의 이터레이터와 제네레이터",
       "speaker": "아이크",
@@ -4858,7 +5106,7 @@
       "tags": []
     },
     {
-      "index": 290,
+      "index": 308,
       "id": "Q5wnVJXt8mA",
       "title": "요술토끼의 Mixin",
       "speaker": "요술토끼",
@@ -4871,7 +5119,7 @@
       "tags": []
     },
     {
-      "index": 291,
+      "index": 309,
       "id": "_wdOoPBw4bg",
       "title": "파워, 가비의 프로젝트에 도움이 될만한 aws 서비스 소개",
       "speaker": "파워, 가비",
@@ -4886,7 +5134,7 @@
       ]
     },
     {
-      "index": 292,
+      "index": 310,
       "id": "JdSwZzdUHrA",
       "title": "산군의 MVVM",
       "speaker": "산군",
@@ -4899,7 +5147,7 @@
       "tags": []
     },
     {
-      "index": 293,
+      "index": 311,
       "id": "KpyzbEFYE_E",
       "title": "헤나의 HTTPS",
       "speaker": "헤나",
@@ -4914,7 +5162,7 @@
       ]
     },
     {
-      "index": 294,
+      "index": 312,
       "id": "TXzwuaXQN2U",
       "title": "타미의 CSR과 SSR",
       "speaker": "타미",
@@ -4929,7 +5177,7 @@
       ]
     },
     {
-      "index": 295,
+      "index": 313,
       "id": "7eMl_jXNcaI",
       "title": "하티의 Espresso",
       "speaker": "하티",
@@ -4942,7 +5190,7 @@
       "tags": []
     },
     {
-      "index": 296,
+      "index": 314,
       "id": "6awJbcWXsts",
       "title": "루카의 CI/CD",
       "speaker": "루카",
@@ -4957,7 +5205,7 @@
       ]
     },
     {
-      "index": 297,
+      "index": 315,
       "id": "IRj9vKBy9CA",
       "title": "에이든, 황펭의 프론트엔드 성능 측정",
       "speaker": "에이든, 황펭",
@@ -4970,7 +5218,7 @@
       "tags": []
     },
     {
-      "index": 298,
+      "index": 316,
       "id": "v63xqVXwSlo",
       "title": "로지의 AWS 사용팁",
       "speaker": "로지",
@@ -4985,7 +5233,7 @@
       ]
     },
     {
-      "index": 299,
+      "index": 317,
       "id": "LDi5muN2kgI",
       "title": "우르의 Lock & JPA Lock",
       "speaker": "우르",
@@ -5000,7 +5248,7 @@
       ]
     },
     {
-      "index": 300,
+      "index": 318,
       "id": "VVVu35zDiO4",
       "title": "베르의 Room",
       "speaker": "베르",
@@ -5013,7 +5261,7 @@
       "tags": []
     },
     {
-      "index": 301,
+      "index": 319,
       "id": "TqLnQsd_Llk",
       "title": "쵸파의 컴포넌트",
       "speaker": "쵸파",
@@ -5028,7 +5276,7 @@
       ]
     },
     {
-      "index": 302,
+      "index": 320,
       "id": "_fgOxPRo8tU",
       "title": "에단의 Flyway",
       "speaker": "에단",
@@ -5041,7 +5289,7 @@
       "tags": []
     },
     {
-      "index": 303,
+      "index": 321,
       "id": "taUeIi6a6hk",
       "title": "로건의 Transaction",
       "speaker": "로건",
@@ -5054,7 +5302,7 @@
       "tags": []
     },
     {
-      "index": 304,
+      "index": 322,
       "id": "LRlooA5sYhU",
       "title": "라잇의 불변성",
       "speaker": "라잇",
@@ -5067,7 +5315,7 @@
       "tags": []
     },
     {
-      "index": 305,
+      "index": 323,
       "id": "ZuJUk9c2Ujs",
       "title": "베리의 RESTful API",
       "speaker": "베리",
@@ -5080,7 +5328,7 @@
       "tags": []
     },
     {
-      "index": 306,
+      "index": 324,
       "id": "ywYdEls88Sw",
       "title": "로이스의 Index",
       "speaker": "로이스",
@@ -5095,7 +5343,7 @@
       ]
     },
     {
-      "index": 307,
+      "index": 325,
       "id": "eBDj0B0HbEQ",
       "title": "솔로스타의 React 렌더링",
       "speaker": "솔로스타",
@@ -5111,7 +5359,7 @@
       ]
     },
     {
-      "index": 308,
+      "index": 326,
       "id": "yQDsd1OVR08",
       "title": "클린의 서스펜스와 에러바운더리",
       "speaker": "클린",
@@ -5124,7 +5372,7 @@
       "tags": []
     },
     {
-      "index": 309,
+      "index": 327,
       "id": "_6L2k3mzXTk",
       "title": "후추의 인증 인가",
       "speaker": "후추",
@@ -5137,7 +5385,7 @@
       "tags": []
     },
     {
-      "index": 310,
+      "index": 328,
       "id": "Mh3LaHmA21I",
       "title": "홍실의 OAuth 2.0",
       "speaker": "홍실",
@@ -5152,7 +5400,7 @@
       ]
     },
     {
-      "index": 311,
+      "index": 329,
       "id": "3doDm--wuJE",
       "title": "주노의 Github와 협업",
       "speaker": "주노",
@@ -5167,7 +5415,7 @@
       ]
     },
     {
-      "index": 312,
+      "index": 330,
       "id": "K8dqJ126th8",
       "title": "코건의 Scope & Closure",
       "speaker": "코건",
@@ -5182,7 +5430,7 @@
       ]
     },
     {
-      "index": 313,
+      "index": 331,
       "id": "r03ObslCNlo",
       "title": "체인저의 API 명세서와 협업",
       "speaker": "체인저",
@@ -5197,7 +5445,7 @@
       ]
     },
     {
-      "index": 314,
+      "index": 332,
       "id": "3gmOuUWPZV4",
       "title": "리오, 밀리의 Servlet & Spring MVC",
       "speaker": "리오, 밀리",
@@ -5212,7 +5460,7 @@
       ]
     },
     {
-      "index": 315,
+      "index": 333,
       "id": "7BNS6wtcbY8",
       "title": "콩하나의 스프링 AOP",
       "speaker": "콩하나",
@@ -5225,7 +5473,7 @@
       "tags": []
     },
     {
-      "index": 316,
+      "index": 334,
       "id": "Tm2mja5_dZs",
       "title": "무민, 테오의 RESTful API",
       "speaker": "무민, 테오",
@@ -5238,7 +5486,7 @@
       "tags": []
     },
     {
-      "index": 317,
+      "index": 335,
       "id": "S5BouBRoO9E",
       "title": "패트릭의 상태관리",
       "speaker": "패트릭",
@@ -5251,7 +5499,7 @@
       "tags": []
     },
     {
-      "index": 318,
+      "index": 336,
       "id": "4iXWkBi2hCA",
       "title": "성하의 CORS",
       "speaker": "성하",
@@ -5266,7 +5514,7 @@
       ]
     },
     {
-      "index": 319,
+      "index": 337,
       "id": "PBgQKK6nelo",
       "title": "세인의 제어 컴포넌트와 비제어 컴포넌트",
       "speaker": "세인",
@@ -5281,7 +5529,7 @@
       ]
     },
     {
-      "index": 320,
+      "index": 338,
       "id": "Q4RDlEaxRjg",
       "title": "빅스의 RecyclerView",
       "speaker": "빅스",
@@ -5294,7 +5542,7 @@
       "tags": []
     },
     {
-      "index": 321,
+      "index": 339,
       "id": "xLziDinqBj0",
       "title": "도밥의 모듈 번들러와 빌드 도구",
       "speaker": "도밥",
@@ -5309,7 +5557,7 @@
       ]
     },
     {
-      "index": 322,
+      "index": 340,
       "id": "UcpLNgko8lg",
       "title": "토리의 Spring Bean",
       "speaker": "토리",
@@ -5324,7 +5572,7 @@
       ]
     },
     {
-      "index": 323,
+      "index": 341,
       "id": "yoU-3ks7e5Q",
       "title": "해시의 Context",
       "speaker": "해시",
@@ -5337,7 +5585,7 @@
       "tags": []
     },
     {
-      "index": 324,
+      "index": 342,
       "id": "Bdk7QzbbcEI",
       "title": "엽토의 Virtual DOM",
       "speaker": "엽토",
@@ -5352,7 +5600,7 @@
       ]
     },
     {
-      "index": 325,
+      "index": 343,
       "id": "M49_H5FjJ3U",
       "title": "주디의 Garbage Collector",
       "speaker": "주디",
@@ -5367,7 +5615,7 @@
       ]
     },
     {
-      "index": 326,
+      "index": 344,
       "id": "RZB7_6sAtC4",
       "title": "헙크의 자바 Reflection",
       "speaker": "헙크",
@@ -5382,7 +5630,7 @@
       ]
     },
     {
-      "index": 327,
+      "index": 345,
       "id": "Bf2YAyFbreI",
       "title": "레오, 하디의 Process Scheduling",
       "speaker": "레오, 하디",
@@ -5397,7 +5645,7 @@
       ]
     },
     {
-      "index": 328,
+      "index": 346,
       "id": "MN7Pw4mK6lU",
       "title": "헤다의 프론트엔드 테스트 종류",
       "speaker": "헤다",
@@ -5412,7 +5660,7 @@
       ]
     },
     {
-      "index": 329,
+      "index": 347,
       "id": "ohz7uHnza6A",
       "title": "땡칠의 Blocking vs Non-Blocking과 Sync vs Async",
       "speaker": "땡칠",
@@ -5427,7 +5675,7 @@
       ]
     },
     {
-      "index": 330,
+      "index": 348,
       "id": "4LBMCHFLLpg",
       "title": "이레, 준팍의 빌드와 배포",
       "speaker": "이레, 준팍",
@@ -5443,7 +5691,7 @@
       ]
     },
     {
-      "index": 331,
+      "index": 349,
       "id": "6p0lZaSAW3A",
       "title": "해온, 첵스의 웹접근성 & 웹표준",
       "speaker": "해온, 첵스",
@@ -5456,7 +5704,7 @@
       "tags": []
     },
     {
-      "index": 332,
+      "index": 350,
       "id": "RWFtuQUx3fo",
       "title": "도이의 JDBC vs SQL Mapper vs ORM",
       "speaker": "도이",
@@ -5471,7 +5719,7 @@
       ]
     },
     {
-      "index": 333,
+      "index": 351,
       "id": "QMCan1dZwLQ",
       "title": "핑구의 Layout의 종류와 속성",
       "speaker": "핑구",
@@ -5486,7 +5734,7 @@
       ]
     },
     {
-      "index": 334,
+      "index": 352,
       "id": "Xve998VkZTg",
       "title": "제로의 Typescript and React",
       "speaker": "제로",
@@ -5502,7 +5750,7 @@
       ]
     },
     {
-      "index": 335,
+      "index": 353,
       "id": "zFf2jQUksMQ",
       "title": "센트의 JSX Element",
       "speaker": "센트",
@@ -5517,7 +5765,7 @@
       ]
     },
     {
-      "index": 336,
+      "index": 354,
       "id": "TJUIkLFpgGo",
       "title": "말랑의 스프링 이벤트",
       "speaker": "말랑",
@@ -5532,7 +5780,7 @@
       ]
     },
     {
-      "index": 337,
+      "index": 355,
       "id": "TSCHTPZ3PSQ",
       "title": "지토의 Auto Configuration",
       "speaker": "지토",
@@ -5545,7 +5793,7 @@
       "tags": []
     },
     {
-      "index": 338,
+      "index": 356,
       "id": "YdE4krx0dsM",
       "title": "오잉의 Spring vs Spring Boot",
       "speaker": "오잉",
@@ -5560,7 +5808,7 @@
       ]
     },
     {
-      "index": 339,
+      "index": 357,
       "id": "qjEcsNYFWYg",
       "title": "룩소의 React Hooks",
       "speaker": "룩소",
@@ -5575,7 +5823,7 @@
       ]
     },
     {
-      "index": 340,
+      "index": 358,
       "id": "JqCgJI-Nk88",
       "title": "폴로의 Forward proxy vs Reverse proxy vs Load Balancer",
       "speaker": "폴로",
@@ -5588,7 +5836,7 @@
       "tags": []
     },
     {
-      "index": 341,
+      "index": 359,
       "id": "XgcCkcKGbys",
       "title": "디투의 쿠키와 세션",
       "speaker": "디투",
@@ -5601,7 +5849,7 @@
       "tags": []
     },
     {
-      "index": 342,
+      "index": 360,
       "id": "LD97A_gqhzM",
       "title": "쿠마의 커링",
       "speaker": "쿠마",
@@ -5614,7 +5862,7 @@
       "tags": []
     },
     {
-      "index": 343,
+      "index": 361,
       "id": "wuOzMvNEzAg",
       "title": "이오의 OSI 7계층",
       "speaker": "이오",
@@ -5629,7 +5877,7 @@
       ]
     },
     {
-      "index": 344,
+      "index": 362,
       "id": "31tKPguQ1sk",
       "title": "여우의 Web Server와 WAS",
       "speaker": "여우",
@@ -5642,7 +5890,7 @@
       "tags": []
     },
     {
-      "index": 345,
+      "index": 363,
       "id": "ZFlnrGgdekI",
       "title": "레고의 Ajax",
       "speaker": "레고",
@@ -5655,7 +5903,7 @@
       "tags": []
     },
     {
-      "index": 346,
+      "index": 364,
       "id": "Zyv1Sj43ykw",
       "title": "포이의 HTTP1.1, HTTP2, 그리고 QUIC",
       "speaker": "포이",
@@ -5670,7 +5918,7 @@
       ]
     },
     {
-      "index": 347,
+      "index": 365,
       "id": "c7eLPK9RzEM",
       "title": "파인의 쿠키와 웹 스토리지",
       "speaker": "파인",
@@ -5683,7 +5931,7 @@
       "tags": []
     },
     {
-      "index": 348,
+      "index": 366,
       "id": "qg8hMsNejbg",
       "title": "멘델의 Fragment",
       "speaker": "멘델",
@@ -5696,7 +5944,7 @@
       "tags": []
     },
     {
-      "index": 349,
+      "index": 367,
       "id": "V-siVsZnTBI",
       "title": "로피의 ConstraintLayout",
       "speaker": "로피",
@@ -5711,7 +5959,7 @@
       ]
     },
     {
-      "index": 350,
+      "index": 368,
       "id": "yKEwNVbAFC0",
       "title": "제리의 프레임워크 vs 라이브러리 vs API",
       "speaker": "제리",
@@ -5724,7 +5972,7 @@
       "tags": []
     },
     {
-      "index": 351,
+      "index": 369,
       "id": "I_fDTa6Qy10",
       "title": "써니의 Activity Lifecycle",
       "speaker": "써니",
@@ -5737,7 +5985,7 @@
       "tags": []
     },
     {
-      "index": 352,
+      "index": 370,
       "id": "aVzjhtlVWi4",
       "title": "뽀또의 안드로이드 버전 별 역사",
       "speaker": "뽀또",
@@ -5752,7 +6000,7 @@
       ]
     },
     {
-      "index": 353,
+      "index": 371,
       "id": "QkCNba92Vqo",
       "title": "부엉이의 Execution Context",
       "speaker": "부엉이",
@@ -5765,7 +6013,7 @@
       "tags": []
     },
     {
-      "index": 354,
+      "index": 372,
       "id": "y8j59bEy4kQ",
       "title": "달리의 WEB의 응답과 요청 과정",
       "speaker": "달리",
@@ -5778,7 +6026,7 @@
       "tags": []
     },
     {
-      "index": 355,
+      "index": 373,
       "id": "JSVvhwwOvAY",
       "title": "오리의 Intellij Debugging",
       "speaker": "오리",
@@ -5793,7 +6041,7 @@
       ]
     },
     {
-      "index": 356,
+      "index": 374,
       "id": "xvmqaUGAZpo",
       "title": "참새의 history api",
       "speaker": "참새",
@@ -5806,7 +6054,7 @@
       "tags": []
     },
     {
-      "index": 357,
+      "index": 375,
       "id": "Z4FZzWsyCe0",
       "title": "우기의 Generics",
       "speaker": "우기",
@@ -5821,7 +6069,7 @@
       ]
     },
     {
-      "index": 358,
+      "index": 376,
       "id": "V4knLFDG-ZM",
       "title": "메리의 Gradle",
       "speaker": "메리",
@@ -5836,7 +6084,7 @@
       ]
     },
     {
-      "index": 359,
+      "index": 377,
       "id": "cnPRFqukzek",
       "title": "스플릿, 애쉬의 SQL과 NoSQL",
       "speaker": "스플릿, 애쉬",
@@ -5849,7 +6097,7 @@
       "tags": []
     },
     {
-      "index": 360,
+      "index": 378,
       "id": "lBJVae9iZns",
       "title": "우코의 타입스크립트 interface",
       "speaker": "우코",
@@ -5864,7 +6112,7 @@
       ]
     },
     {
-      "index": 361,
+      "index": 379,
       "id": "rRjvHKd0ci0",
       "title": "링링의 Scope Function",
       "speaker": "링링",
@@ -5877,22 +6125,20 @@
       "tags": []
     },
     {
-      "index": 362,
+      "index": 380,
       "id": "s3gDWV3x038",
-      "title": "Woody's Asynchronous Processing",
-      "speaker": "Woody",
-      "topic": "Asynchronous Processing",
+      "title": "우디의 비동기 처리",
+      "speaker": "우디",
+      "topic": "비동기 처리",
       "duration": "12:26",
       "durationSeconds": 746,
       "viewCount": 3100,
       "url": "https://www.youtube.com/watch?v=s3gDWV3x038",
-      "categoryId": "network-os-concurrency",
-      "tags": [
-        "Thread"
-      ]
+      "categoryId": "misc-experiments",
+      "tags": []
     },
     {
-      "index": 363,
+      "index": 381,
       "id": "ONYVhJGl48U",
       "title": "코코닥의 JDBC",
       "speaker": "코코닥",
@@ -5907,7 +6153,7 @@
       ]
     },
     {
-      "index": 364,
+      "index": 382,
       "id": "4ZtKiSvZNu4",
       "title": "깃짱, 이리내의 람다와 스트림",
       "speaker": "깃짱, 이리내",
@@ -5920,7 +6166,7 @@
       "tags": []
     },
     {
-      "index": 365,
+      "index": 383,
       "id": "m9aw5a50aDw",
       "title": "디노의 제네릭",
       "speaker": "디노",
@@ -5935,7 +6181,7 @@
       ]
     },
     {
-      "index": 366,
+      "index": 384,
       "id": "xJtVVLPxgco",
       "title": "루루의 Scope & Closure",
       "speaker": "루루",
@@ -5950,7 +6196,7 @@
       ]
     },
     {
-      "index": 367,
+      "index": 385,
       "id": "idgsruQl9f4",
       "title": "슬링키의 브라우저 렌더링 파이프라인",
       "speaker": "슬링키",
@@ -5966,7 +6212,7 @@
       ]
     },
     {
-      "index": 368,
+      "index": 386,
       "id": "veJO12VV-Mg",
       "title": "그레이, 호이의 Modern Java",
       "speaker": "그레이, 호이",
@@ -5981,7 +6227,7 @@
       ]
     },
     {
-      "index": 369,
+      "index": 387,
       "id": "BeoiIfvAmpE",
       "title": "아벨의 상태 패턴",
       "speaker": "아벨",
@@ -5996,7 +6242,7 @@
       ]
     },
     {
-      "index": 370,
+      "index": 388,
       "id": "OI5fF2wGVxA",
       "title": "마코의 JCF",
       "speaker": "마코",
@@ -6011,7 +6257,7 @@
       ]
     },
     {
-      "index": 371,
+      "index": 389,
       "id": "QcO_Mv0QdfY",
       "title": "애슐리의 CSS의 단위",
       "speaker": "애슐리",
@@ -6024,7 +6270,7 @@
       "tags": []
     },
     {
-      "index": 372,
+      "index": 390,
       "id": "EZccJBM3t78",
       "title": "멧돼지의 예외처리",
       "speaker": "멧돼지",
@@ -6037,7 +6283,7 @@
       "tags": []
     },
     {
-      "index": 373,
+      "index": 391,
       "id": "4n-6PxY3ZsU",
       "title": "우스의 CSS 프레임워크",
       "speaker": "우스",
@@ -6050,7 +6296,7 @@
       "tags": []
     },
     {
-      "index": 374,
+      "index": 392,
       "id": "Yzx-z6kCD2A",
       "title": "도기의 MVC 패턴",
       "speaker": "도기",
@@ -6065,7 +6311,7 @@
       ]
     },
     {
-      "index": 375,
+      "index": 393,
       "id": "mrrEPbGF6hQ",
       "title": "케로의 예외처리",
       "speaker": "케로",
@@ -6078,7 +6324,7 @@
       "tags": []
     },
     {
-      "index": 376,
+      "index": 394,
       "id": "AjpJS9WrDrs",
       "title": "히이로의 불변",
       "speaker": "히이로",
@@ -6091,7 +6337,7 @@
       "tags": []
     },
     {
-      "index": 377,
+      "index": 395,
       "id": "meue00nJV-c",
       "title": "엔델의 상속과 조합",
       "speaker": "엔델",
@@ -6106,7 +6352,7 @@
       ]
     },
     {
-      "index": 378,
+      "index": 396,
       "id": "EV-JKCuDABo",
       "title": "수아의 display",
       "speaker": "수아",
@@ -6119,7 +6365,7 @@
       "tags": []
     },
     {
-      "index": 379,
+      "index": 397,
       "id": "WSVEb_1IdNs",
       "title": "야미의 Flex layout",
       "speaker": "야미",
@@ -6134,7 +6380,7 @@
       ]
     },
     {
-      "index": 380,
+      "index": 398,
       "id": "eA8e18ddSms",
       "title": "부나의 Java에서 Kotlin으로",
       "speaker": "부나",
@@ -6150,7 +6396,7 @@
       ]
     },
     {
-      "index": 381,
+      "index": 399,
       "id": "nSIVFhtrnFo",
       "title": "글렌의 전략 패턴",
       "speaker": "글렌",
@@ -6165,7 +6411,7 @@
       ]
     },
     {
-      "index": 382,
+      "index": 400,
       "id": "6hdr9PI-3Mg",
       "title": "주노의 git commands",
       "speaker": "주노",
@@ -6180,7 +6426,7 @@
       ]
     },
     {
-      "index": 383,
+      "index": 401,
       "id": "uqZDt-0BDAo",
       "title": "비버의 JUnit 5",
       "speaker": "비버",
@@ -6195,11 +6441,11 @@
       ]
     },
     {
-      "index": 384,
+      "index": 402,
       "id": "mIO4Rbe_M74",
-      "title": "Jay's Unit Tests",
-      "speaker": "Jay",
-      "topic": "Unit Tests",
+      "title": "제이의 단위 테스트",
+      "speaker": "제이",
+      "topic": "단위 테스트",
       "duration": "10:06",
       "durationSeconds": 606,
       "viewCount": 7700,
@@ -6210,7 +6456,7 @@
       ]
     },
     {
-      "index": 385,
+      "index": 403,
       "id": "7UmApWKRGRw",
       "title": "고니의 Prototype",
       "speaker": "고니",
@@ -6226,7 +6472,7 @@
       ]
     },
     {
-      "index": 386,
+      "index": 404,
       "id": "xt9uzb39K5w",
       "title": "가브리엘의 클래스와 객체",
       "speaker": "가브리엘",
@@ -6239,7 +6485,7 @@
       "tags": []
     },
     {
-      "index": 387,
+      "index": 405,
       "id": "6nc_0-HWZXU",
       "title": "글로의 git - merge and rebase",
       "speaker": "글로",
@@ -6254,7 +6500,7 @@
       ]
     },
     {
-      "index": 388,
+      "index": 406,
       "id": "AqO4IfafQ3c",
       "title": "준찌의 Function Component & Execution Context",
       "speaker": "준찌",
@@ -6269,7 +6515,7 @@
       ]
     },
     {
-      "index": 389,
+      "index": 407,
       "id": "avfIUwDG2d8",
       "title": "티거의 Ajax",
       "speaker": "티거",
@@ -6282,7 +6528,7 @@
       "tags": []
     },
     {
-      "index": 390,
+      "index": 408,
       "id": "x10CJNyKSLk",
       "title": "마르코의 Progressive Web App",
       "speaker": "마르코",
@@ -6295,7 +6541,7 @@
       "tags": []
     },
     {
-      "index": 391,
+      "index": 409,
       "id": "8JrciOSL3Gk",
       "title": "슬로의 GC",
       "speaker": "슬로",
@@ -6310,11 +6556,11 @@
       ]
     },
     {
-      "index": 392,
+      "index": 410,
       "id": "ZrdHtL1gcEI",
-      "title": "빅터의 Generator와 Async/Await",
+      "title": "빅터의 Generator와 Async/Await",
       "speaker": "빅터",
-      "topic": "Generator와 Async/Await",
+      "topic": "Generator와 Async/Await",
       "duration": "9:44",
       "durationSeconds": 584,
       "viewCount": 4700,
@@ -6326,37 +6572,33 @@
       ]
     },
     {
-      "index": 393,
+      "index": 411,
       "id": "laQAQeuuJF4",
-      "title": "바니의 웹 보안",
+      "title": "바니의 웹 보안",
       "speaker": "바니",
-      "topic": "웹 보안",
+      "topic": "웹 보안",
       "duration": "12:50",
       "durationSeconds": 770,
       "viewCount": 2800,
       "url": "https://www.youtube.com/watch?v=laQAQeuuJF4",
-      "categoryId": "infra-security",
-      "tags": [
-        "보안"
-      ]
+      "categoryId": "misc-experiments",
+      "tags": []
     },
     {
-      "index": 394,
+      "index": 412,
       "id": "IcSdPhxCn9Y",
-      "title": "이프의 성능 테스트",
+      "title": "이프의 성능 테스트",
       "speaker": "이프",
-      "topic": "성능 테스트",
+      "topic": "성능 테스트",
       "duration": "12:34",
       "durationSeconds": 754,
       "viewCount": 6100,
       "url": "https://www.youtube.com/watch?v=IcSdPhxCn9Y",
-      "categoryId": "testing-quality",
-      "tags": [
-        "테스트"
-      ]
+      "categoryId": "misc-experiments",
+      "tags": []
     },
     {
-      "index": 395,
+      "index": 413,
       "id": "ImWjQ1Bxjrs",
       "title": "이브, 배카라의 Synchronization",
       "speaker": "이브, 배카라",
@@ -6371,11 +6613,11 @@
       ]
     },
     {
-      "index": 396,
+      "index": 414,
       "id": "hjDSKhyYK14",
-      "title": "봄의 AOP와 SPRING AOP",
+      "title": "봄의 AOP와 SPRING AOP",
       "speaker": "봄",
-      "topic": "AOP와 SPRING AOP",
+      "topic": "AOP와 SPRING AOP",
       "duration": "12:03",
       "durationSeconds": 723,
       "viewCount": 9100,
@@ -6386,7 +6628,7 @@
       ]
     },
     {
-      "index": 397,
+      "index": 415,
       "id": "NPVJQz_YF2A",
       "title": "앤지의 DB Replication",
       "speaker": "앤지",
@@ -6399,11 +6641,11 @@
       "tags": []
     },
     {
-      "index": 398,
+      "index": 416,
       "id": "uyt-B_SDo9k",
-      "title": "해리의 JavaScript와 ECMAScript의 탄생",
+      "title": "해리의 JavaScript와 ECMAScript의 탄생",
       "speaker": "해리",
-      "topic": "JavaScript와 ECMAScript의 탄생",
+      "topic": "JavaScript와 ECMAScript의 탄생",
       "duration": "5:46",
       "durationSeconds": 346,
       "viewCount": 2700,
@@ -6414,11 +6656,11 @@
       ]
     },
     {
-      "index": 399,
+      "index": 417,
       "id": "TqFwNFTa3c4",
-      "title": "아놀드의 프로토타입 뽀개기",
+      "title": "아놀드의 프로토타입 뽀개기",
       "speaker": "아놀드",
-      "topic": "프로토타입 뽀개기",
+      "topic": "프로토타입 뽀개기",
       "duration": "10:56",
       "durationSeconds": 656,
       "viewCount": 3200,
@@ -6427,11 +6669,11 @@
       "tags": []
     },
     {
-      "index": 400,
+      "index": 418,
       "id": "nvnl9YgnON8",
-      "title": "매트, 토르의 MySQL 성능 최적화",
+      "title": "매트, 토르의 MySQL 성능 최적화",
       "speaker": "매트, 토르",
-      "topic": "MySQL 성능 최적화",
+      "topic": "MySQL 성능 최적화",
       "duration": "13:03",
       "durationSeconds": 783,
       "viewCount": 15000,
@@ -6442,7 +6684,7 @@
       ]
     },
     {
-      "index": 401,
+      "index": 419,
       "id": "o-5K5Sc7L1k",
       "title": "나인의 Babel",
       "speaker": "나인",
@@ -6455,11 +6697,11 @@
       "tags": []
     },
     {
-      "index": 402,
+      "index": 420,
       "id": "ni92wUkAmQI",
-      "title": "수달의 JPA N+1 문제",
+      "title": "수달의 JPA N+1 문제",
       "speaker": "수달",
-      "topic": "JPA N+1 문제",
+      "topic": "JPA N+1 문제",
       "duration": "8:21",
       "durationSeconds": 501,
       "viewCount": 17000,
@@ -6470,23 +6712,22 @@
       ]
     },
     {
-      "index": 403,
+      "index": 421,
       "id": "8PRkLItDwXQ",
-      "title": "릭의 MySQL 아키텍처",
+      "title": "릭의 MySQL 아키텍처",
       "speaker": "릭",
-      "topic": "MySQL 아키텍처",
+      "topic": "MySQL 아키텍처",
       "duration": "8:59",
       "durationSeconds": 539,
       "viewCount": 7500,
       "url": "https://www.youtube.com/watch?v=8PRkLItDwXQ",
       "categoryId": "database-storage",
       "tags": [
-        "MySQL",
-        "아키텍처"
+        "MySQL"
       ]
     },
     {
-      "index": 404,
+      "index": 422,
       "id": "DHyYQod48pk",
       "title": "짱구의 정규화",
       "speaker": "짱구",
@@ -6499,7 +6740,7 @@
       "tags": []
     },
     {
-      "index": 405,
+      "index": 423,
       "id": "um4rYmQIeRE",
       "title": "조조그린의 Thread Pool",
       "speaker": "조조그린",
@@ -6514,7 +6755,7 @@
       ]
     },
     {
-      "index": 406,
+      "index": 424,
       "id": "TZz9VHjJzMk",
       "title": "콤피의 CSS를 통한 브라우저 렌더링 최적화",
       "speaker": "콤피",
@@ -6530,7 +6771,7 @@
       ]
     },
     {
-      "index": 407,
+      "index": 425,
       "id": "sDXcLyrn6gU",
       "title": "엘리의 DNS",
       "speaker": "엘리",
@@ -6545,7 +6786,7 @@
       ]
     },
     {
-      "index": 408,
+      "index": 426,
       "id": "8c-Q8anmJcM",
       "title": "아스피의 정렬 알고리즘",
       "speaker": "아스피",
@@ -6558,7 +6799,7 @@
       "tags": []
     },
     {
-      "index": 409,
+      "index": 427,
       "id": "HujbNZ9IWF8",
       "title": "도리의 Class",
       "speaker": "도리",
@@ -6571,7 +6812,7 @@
       "tags": []
     },
     {
-      "index": 410,
+      "index": 428,
       "id": "ad4AO1shXsY",
       "title": "칙촉의 TCP/UDP",
       "speaker": "칙촉",
@@ -6586,11 +6827,11 @@
       ]
     },
     {
-      "index": 411,
+      "index": 429,
       "id": "ktWcieiNzKs",
-      "title": "알렉스, 열음의 멀티스레드와 동기화 In Java",
+      "title": "알렉스, 열음의 멀티스레드와 동기화 In Java",
       "speaker": "알렉스, 열음",
-      "topic": "멀티스레드와 동기화 In Java",
+      "topic": "멀티스레드와 동기화 In Java",
       "duration": "21:10",
       "durationSeconds": 1270,
       "viewCount": 11000,
@@ -6601,11 +6842,11 @@
       ]
     },
     {
-      "index": 412,
+      "index": 430,
       "id": "lsXhMLlbT3M",
-      "title": "자스민, 병민의 웹팩 최적화 Part2",
+      "title": "자스민, 병민의 웹팩 최적화 Part2",
       "speaker": "자스민, 병민",
-      "topic": "웹팩 최적화 Part2",
+      "topic": "웹팩 최적화 Part2",
       "duration": "17:11",
       "durationSeconds": 1031,
       "viewCount": 1800,
@@ -6614,11 +6855,11 @@
       "tags": []
     },
     {
-      "index": 413,
+      "index": 431,
       "id": "QXYWlqK2eHI",
-      "title": "자스민, 병민의 웹팩 최적화 Part1",
+      "title": "자스민, 병민의 웹팩 최적화 Part1",
       "speaker": "자스민, 병민",
-      "topic": "웹팩 최적화 Part1",
+      "topic": "웹팩 최적화 Part1",
       "duration": "16:24",
       "durationSeconds": 984,
       "viewCount": 2500,
@@ -6627,7 +6868,7 @@
       "tags": []
     },
     {
-      "index": 414,
+      "index": 432,
       "id": "INPldifIEXE",
       "title": "록바의 웹 성능 개선하기 - 이미지",
       "speaker": "록바",
@@ -6640,7 +6881,7 @@
       "tags": []
     },
     {
-      "index": 415,
+      "index": 433,
       "id": "ZXV6ZqMyJLg",
       "title": "마루의 데이터베이스 Lock",
       "speaker": "마루",
@@ -6653,7 +6894,7 @@
       "tags": []
     },
     {
-      "index": 416,
+      "index": 434,
       "id": "kJexMyaeHDs",
       "title": "잉, 페퍼의Spring Data JPA 삽질일지",
       "speaker": "",
@@ -6669,7 +6910,7 @@
       ]
     },
     {
-      "index": 417,
+      "index": 435,
       "id": "edpYzFgHbqs",
       "title": "라라, 제로의 데이터베이스 인덱스",
       "speaker": "라라, 제로",
@@ -6684,7 +6925,7 @@
       ]
     },
     {
-      "index": 418,
+      "index": 436,
       "id": "jqir73Lourk",
       "title": "온스타의 상태관리",
       "speaker": "온스타",
@@ -6697,11 +6938,11 @@
       "tags": []
     },
     {
-      "index": 419,
+      "index": 437,
       "id": "0fzA1cRxFiU",
-      "title": "위니의 프론트엔드 개발자에게 UX란",
+      "title": "위니의 프론트엔드 개발자에게 UX란",
       "speaker": "위니",
-      "topic": "프론트엔드 개발자에게 UX란",
+      "topic": "프론트엔드 개발자에게 UX란",
       "duration": "11:28",
       "durationSeconds": 688,
       "viewCount": 4600,
@@ -6712,11 +6953,11 @@
       ]
     },
     {
-      "index": 420,
+      "index": 438,
       "id": "kMuJz6N-Grw",
-      "title": "시지프의 타입스크립트 도약하기",
+      "title": "시지프의 타입스크립트 도약하기",
       "speaker": "시지프",
-      "topic": "타입스크립트 도약하기",
+      "topic": "타입스크립트 도약하기",
       "duration": "15:20",
       "durationSeconds": 920,
       "viewCount": 5200,
@@ -6725,7 +6966,7 @@
       "tags": []
     },
     {
-      "index": 421,
+      "index": 439,
       "id": "H4J-8pPMvEU",
       "title": "썬의 캐싱",
       "speaker": "썬",
@@ -6738,11 +6979,11 @@
       "tags": []
     },
     {
-      "index": 422,
+      "index": 440,
       "id": "tkP5u_SrF-8",
-      "title": "애쉬의 AWS 살짝 알은체 하기",
+      "title": "애쉬의 AWS 살짝 알은체 하기",
       "speaker": "애쉬",
-      "topic": "AWS 살짝 알은체 하기",
+      "topic": "AWS 살짝 알은체 하기",
       "duration": "8:32",
       "durationSeconds": 512,
       "viewCount": 5900,
@@ -6753,11 +6994,11 @@
       ]
     },
     {
-      "index": 423,
+      "index": 441,
       "id": "cJ4ZiaKnejQ",
-      "title": "에덴의 서버 네트워크",
+      "title": "에덴의 서버 네트워크",
       "speaker": "에덴",
-      "topic": "서버 네트워크",
+      "topic": "서버 네트워크",
       "duration": "11:55",
       "durationSeconds": 715,
       "viewCount": 3200,
@@ -6766,7 +7007,7 @@
       "tags": []
     },
     {
-      "index": 424,
+      "index": 442,
       "id": "BoVpTSsTuVQ",
       "title": "승팡, 케이의 REST Docs",
       "speaker": "승팡, 케이",
@@ -6779,7 +7020,7 @@
       "tags": []
     },
     {
-      "index": 425,
+      "index": 443,
       "id": "Ds7EjE8Rhjs",
       "title": "비녀의 Package Manager",
       "speaker": "비녀",
@@ -6792,7 +7033,7 @@
       "tags": []
     },
     {
-      "index": 426,
+      "index": 444,
       "id": "UJDB6e8s1Fg",
       "title": "알린의 암호",
       "speaker": "알린",
@@ -6805,22 +7046,20 @@
       "tags": []
     },
     {
-      "index": 427,
+      "index": 445,
       "id": "v86B35pwk6s",
-      "title": "조시, 쿤의 서블릿 필터 & 스프링 인터셉터",
+      "title": "조시, 쿤의 서블릿 필터 & 스프링 인터셉터",
       "speaker": "조시, 쿤",
-      "topic": "서블릿 필터 & 스프링 인터셉터",
+      "topic": "서블릿 필터 & 스프링 인터셉터",
       "duration": "19:24",
       "durationSeconds": 1164,
       "viewCount": 8500,
       "url": "https://www.youtube.com/watch?v=v86B35pwk6s",
-      "categoryId": "server-backend",
-      "tags": [
-        "Spring"
-      ]
+      "categoryId": "misc-experiments",
+      "tags": []
     },
     {
-      "index": 428,
+      "index": 446,
       "id": "67YdHbPZJn4",
       "title": "파랑, 아키의 리플렉션",
       "speaker": "파랑, 아키",
@@ -6833,26 +7072,24 @@
       "tags": []
     },
     {
-      "index": 429,
+      "index": 447,
       "id": "aAs36UeLnTg",
-      "title": "호프의 프론트엔드에서 컴포넌트",
+      "title": "호프의 프론트엔드에서 컴포넌트",
       "speaker": "호프",
-      "topic": "프론트엔드에서 컴포넌트",
+      "topic": "프론트엔드에서 컴포넌트",
       "duration": "13:24",
       "durationSeconds": 804,
       "viewCount": 11000,
       "url": "https://www.youtube.com/watch?v=aAs36UeLnTg",
-      "categoryId": "frontend-web",
-      "tags": [
-        "컴포넌트"
-      ]
+      "categoryId": "misc-experiments",
+      "tags": []
     },
     {
-      "index": 430,
+      "index": 448,
       "id": "sIPU_VkrguI",
-      "title": "찬, 레넌의 CI/CD와 무중단 배포",
+      "title": "찬, 레넌의 CI/CD와 무중단 배포",
       "speaker": "찬, 레넌",
-      "topic": "CI/CD와 무중단 배포",
+      "topic": "CI/CD와 무중단 배포",
       "duration": "15:44",
       "durationSeconds": 944,
       "viewCount": 18000,
@@ -6863,20 +7100,20 @@
       ]
     },
     {
-      "index": 431,
+      "index": 449,
       "id": "BotXDfBPvDA",
-      "title": "토닉, 후디의 인증과 인가 - 부족사회부터 소셜로그인까지",
+      "title": "토닉, 후디의 인증과 인가 - 부족사회부터 소셜로그인까지",
       "speaker": "토닉, 후디",
-      "topic": "인증과 인가 - 부족사회부터 소셜로그인까지",
+      "topic": "인증과 인가 - 부족사회부터 소셜로그인까지",
       "duration": "18:42",
       "durationSeconds": 1122,
       "viewCount": 4100,
       "url": "https://www.youtube.com/watch?v=BotXDfBPvDA",
-      "categoryId": "server-backend",
+      "categoryId": "misc-experiments",
       "tags": []
     },
     {
-      "index": 432,
+      "index": 450,
       "id": "gA1KsJ2ak10",
       "title": "연로그의 쿠키 vs 세션 vs 토큰 vs 캐시",
       "speaker": "연로그",
@@ -6891,7 +7128,7 @@
       ]
     },
     {
-      "index": 433,
+      "index": 451,
       "id": "Il3xLZ4b7NM",
       "title": "라쿤의 HTTPS",
       "speaker": "라쿤",
@@ -6906,7 +7143,7 @@
       ]
     },
     {
-      "index": 434,
+      "index": 452,
       "id": "1IMJCg68-lU",
       "title": "이스트의 로깅",
       "speaker": "이스트",
@@ -6921,20 +7158,20 @@
       ]
     },
     {
-      "index": 435,
+      "index": 453,
       "id": "hQekqGONSlY",
-      "title": "밧드의 프론트엔드에서의 에러핸들링",
+      "title": "밧드의 프론트엔드에서의 에러핸들링",
       "speaker": "밧드",
-      "topic": "프론트엔드에서의 에러핸들링",
+      "topic": "프론트엔드에서의 에러핸들링",
       "duration": "6:55",
       "durationSeconds": 415,
       "viewCount": 2900,
       "url": "https://www.youtube.com/watch?v=hQekqGONSlY",
-      "categoryId": "frontend-web",
+      "categoryId": "misc-experiments",
       "tags": []
     },
     {
-      "index": 436,
+      "index": 454,
       "id": "xWA1eTPSzDE",
       "title": "민초의 RESTful",
       "speaker": "민초",
@@ -6947,24 +7184,24 @@
       "tags": []
     },
     {
-      "index": 437,
+      "index": 455,
       "id": "24tL6-YKz3I",
-      "title": "레오의 함수형 프로그래밍",
+      "title": "레오의 함수형 프로그래밍",
       "speaker": "레오",
-      "topic": "함수형 프로그래밍",
+      "topic": "함수형 프로그래밍",
       "duration": "7:04",
       "durationSeconds": 424,
       "viewCount": 2500,
       "url": "https://www.youtube.com/watch?v=24tL6-YKz3I",
-      "categoryId": "architecture-patterns",
+      "categoryId": "misc-experiments",
       "tags": []
     },
     {
-      "index": 438,
+      "index": 456,
       "id": "MFckVKrJLRQ",
-      "title": "기론, 리버의 JDK Dynamic Proxy와 CGLIB",
+      "title": "기론, 리버의 JDK Dynamic Proxy와 CGLIB",
       "speaker": "기론, 리버",
-      "topic": "JDK Dynamic Proxy와 CGLIB",
+      "topic": "JDK Dynamic Proxy와 CGLIB",
       "duration": "22:54",
       "durationSeconds": 1374,
       "viewCount": 5500,
@@ -6973,7 +7210,7 @@
       "tags": []
     },
     {
-      "index": 439,
+      "index": 457,
       "id": "taAp_u83MwA",
       "title": "리차드의 @Transactional",
       "speaker": "리차드",
@@ -6986,11 +7223,11 @@
       "tags": []
     },
     {
-      "index": 440,
+      "index": 458,
       "id": "_eEZqTx5N7s",
-      "title": "동키콩의 RegExp의 효율적 활용",
+      "title": "동키콩의 RegExp의 효율적 활용",
       "speaker": "동키콩",
-      "topic": "RegExp의 효율적 활용",
+      "topic": "RegExp의 효율적 활용",
       "duration": "9:11",
       "durationSeconds": 551,
       "viewCount": 2200,
@@ -6999,7 +7236,7 @@
       "tags": []
     },
     {
-      "index": 441,
+      "index": 459,
       "id": "yLZZi5E7NTU",
       "title": "블링의 웹 접근성",
       "speaker": "블링",
@@ -7012,23 +7249,20 @@
       "tags": []
     },
     {
-      "index": 442,
+      "index": 460,
       "id": "1YAWshEGU6g",
-      "title": "앨버의 리액트 렌더링 최적화",
-      "speaker": "앨버",
-      "topic": "리액트 렌더링 최적화",
+      "title": "앨버의 리액트 렌더링 최적화",
+      "speaker": "앨버",
+      "topic": "리액트 렌더링 최적화",
       "duration": "16:56",
       "durationSeconds": 1016,
       "viewCount": 17000,
       "url": "https://www.youtube.com/watch?v=1YAWshEGU6g",
-      "categoryId": "frontend-web",
-      "tags": [
-        "React",
-        "렌더링"
-      ]
+      "categoryId": "misc-experiments",
+      "tags": []
     },
     {
-      "index": 443,
+      "index": 461,
       "id": "GU254H0N93Y",
       "title": "어썸오의 JVM Memory Layout",
       "speaker": "어썸오",
@@ -7044,7 +7278,7 @@
       ]
     },
     {
-      "index": 444,
+      "index": 462,
       "id": "C_P0wHFp1o4",
       "title": "쿼리치의 Process vs Thread",
       "speaker": "쿼리치",
@@ -7059,7 +7293,7 @@
       ]
     },
     {
-      "index": 445,
+      "index": 463,
       "id": "G9Dl5FiaOQ4",
       "title": "아리, 디우의 프레임워크 vs 라이브러리 vs API",
       "speaker": "아리, 디우",
@@ -7072,7 +7306,7 @@
       "tags": []
     },
     {
-      "index": 446,
+      "index": 464,
       "id": "6rDBqVHSbgM",
       "title": "돔하디의 Virtual DOM",
       "speaker": "돔하디",
@@ -7087,7 +7321,7 @@
       ]
     },
     {
-      "index": 447,
+      "index": 465,
       "id": "cc4M-GS9DoY",
       "title": "후니의 스프링 트랜잭션",
       "speaker": "후니",
@@ -7102,7 +7336,7 @@
       ]
     },
     {
-      "index": 448,
+      "index": 466,
       "id": "NFK9qLWpujY",
       "title": "범고래, 소주캉의 JDBC, SQL Mapper, ORM",
       "speaker": "범고래, 소주캉",
@@ -7117,7 +7351,7 @@
       ]
     },
     {
-      "index": 449,
+      "index": 467,
       "id": "ntOH2bWLWQs",
       "title": "루나의 Gradle",
       "speaker": "루나",
@@ -7132,7 +7366,7 @@
       ]
     },
     {
-      "index": 450,
+      "index": 468,
       "id": "focpJqfSu4k",
       "title": "코이의 React 18에서의 변경점",
       "speaker": "코이",
@@ -7147,7 +7381,7 @@
       ]
     },
     {
-      "index": 451,
+      "index": 469,
       "id": "A04zlpL1Uw4",
       "title": "유세지의 Node.js",
       "speaker": "유세지",
@@ -7160,7 +7394,7 @@
       "tags": []
     },
     {
-      "index": 452,
+      "index": 470,
       "id": "n01foM9tsRo",
       "title": "더즈, 티키의 Classic TDD VS Mockist TDD",
       "speaker": "더즈, 티키",
@@ -7175,7 +7409,7 @@
       ]
     },
     {
-      "index": 453,
+      "index": 471,
       "id": "3gURJvJw_T4",
       "title": "주디의 Spring Bean",
       "speaker": "주디",
@@ -7190,7 +7424,7 @@
       ]
     },
     {
-      "index": 454,
+      "index": 472,
       "id": "NpTizz_qgtA",
       "title": "무비의 React의 state",
       "speaker": "무비",
@@ -7205,7 +7439,7 @@
       ]
     },
     {
-      "index": 455,
+      "index": 473,
       "id": "wQFBgKl1PYw",
       "title": "우디의 Flux Architecture",
       "speaker": "우디",
@@ -7221,7 +7455,7 @@
       ]
     },
     {
-      "index": 456,
+      "index": 474,
       "id": "EkNk8YeqZyM",
       "title": "유콩의 데이터 통신",
       "speaker": "유콩",
@@ -7234,7 +7468,7 @@
       "tags": []
     },
     {
-      "index": 457,
+      "index": 475,
       "id": "Nxi8Ur89Akw",
       "title": "정의 REST API",
       "speaker": "정",
@@ -7247,7 +7481,7 @@
       "tags": []
     },
     {
-      "index": 458,
+      "index": 476,
       "id": "IjxkKQvn8Bc",
       "title": "헌치, 써머의 HTTP",
       "speaker": "헌치, 써머",
@@ -7262,7 +7496,7 @@
       ]
     },
     {
-      "index": 459,
+      "index": 477,
       "id": "LD1LyvCCbCg",
       "title": "후이의 제어 컴포넌트 vs 비제어 컴포넌트",
       "speaker": "후이",
@@ -7277,7 +7511,7 @@
       ]
     },
     {
-      "index": 460,
+      "index": 478,
       "id": "evJ_O-H-EJI",
       "title": "우연의 Hooks",
       "speaker": "우연",
@@ -7290,7 +7524,7 @@
       "tags": []
     },
     {
-      "index": 461,
+      "index": 479,
       "id": "8lp_nHicYd4",
       "title": "오찌, 야호의 DI와 IoC",
       "speaker": "오찌, 야호",
@@ -7303,7 +7537,7 @@
       "tags": []
     },
     {
-      "index": 462,
+      "index": 480,
       "id": "86NxhHptx7s",
       "title": "베루스의 MVC",
       "speaker": "베루스",
@@ -7316,7 +7550,7 @@
       "tags": []
     },
     {
-      "index": 463,
+      "index": 481,
       "id": "h0rX720VWCg",
       "title": "루키의 Servlet & Spring Web MVC",
       "speaker": "루키",
@@ -7331,7 +7565,7 @@
       ]
     },
     {
-      "index": 464,
+      "index": 482,
       "id": "e2zQ0wJHt2E",
       "title": "오리, 후니의 편하게 콘솔 테스트하기",
       "speaker": "오리, 후니",
@@ -7346,7 +7580,7 @@
       ]
     },
     {
-      "index": 465,
+      "index": 483,
       "id": "QcKEJFvPryI",
       "title": "코카콜라의 HTTP 메서드와 상태코드",
       "speaker": "코카콜라",
@@ -7361,7 +7595,7 @@
       ]
     },
     {
-      "index": 466,
+      "index": 484,
       "id": "v8H5ujL4Tt8",
       "title": "결의 브라우저 렌더링",
       "speaker": "결",
@@ -7377,7 +7611,7 @@
       ]
     },
     {
-      "index": 467,
+      "index": 485,
       "id": "4rl6uMqVX2I",
       "title": "필즈, 판다의 OOP vs FP",
       "speaker": "필즈, 판다",
@@ -7392,7 +7626,7 @@
       ]
     },
     {
-      "index": 468,
+      "index": 486,
       "id": "LcIyHlE2NlA",
       "title": "호호의 Java 11",
       "speaker": "호호",
@@ -7407,22 +7641,20 @@
       ]
     },
     {
-      "index": 469,
+      "index": 487,
       "id": "EWaeItyWYJw",
-      "title": "Asynchronous Processing Inside - Promise",
-      "speaker": "",
-      "topic": "Asynchronous Processing Inside - Promise",
+      "title": "안의 비동기 처리 - Promise",
+      "speaker": "안",
+      "topic": "비동기 처리 - Promise",
       "duration": "8:27",
       "durationSeconds": 507,
       "viewCount": 4100,
       "url": "https://www.youtube.com/watch?v=EWaeItyWYJw",
-      "categoryId": "network-os-concurrency",
-      "tags": [
-        "Thread"
-      ]
+      "categoryId": "misc-experiments",
+      "tags": []
     },
     {
-      "index": 470,
+      "index": 488,
       "id": "PJjPVfQO61o",
       "title": "꼬재의 클로저",
       "speaker": "꼬재",
@@ -7435,7 +7667,7 @@
       "tags": []
     },
     {
-      "index": 471,
+      "index": 489,
       "id": "by8hb75i9X4",
       "title": "크리스, 로마의 stream vs for",
       "speaker": "크리스, 로마",
@@ -7450,7 +7682,7 @@
       ]
     },
     {
-      "index": 472,
+      "index": 490,
       "id": "rbm87IFpwvQ",
       "title": "차리의 Stream",
       "speaker": "차리",
@@ -7463,7 +7695,7 @@
       "tags": []
     },
     {
-      "index": 473,
+      "index": 491,
       "id": "By49qqkzmzA",
       "title": "자스민의 디바운싱과 쓰로틀링",
       "speaker": "자스민",
@@ -7476,7 +7708,7 @@
       "tags": []
     },
     {
-      "index": 474,
+      "index": 492,
       "id": "YpQTeIqjC4o",
       "title": "병민의 브라우저의 Event Loop",
       "speaker": "병민",
@@ -7493,7 +7725,7 @@
       ]
     },
     {
-      "index": 475,
+      "index": 493,
       "id": "fW1WGmj10rA",
       "title": "포키의 Parameter와 Argument",
       "speaker": "포키",
@@ -7506,7 +7738,7 @@
       "tags": []
     },
     {
-      "index": 476,
+      "index": 494,
       "id": "U4OSS4jJ9ns",
       "title": "클레이의 상속과 조합",
       "speaker": "클레이",
@@ -7521,7 +7753,7 @@
       ]
     },
     {
-      "index": 477,
+      "index": 495,
       "id": "sS-_Xr5Q4V4",
       "title": "스컬의 람다",
       "speaker": "스컬",
@@ -7534,7 +7766,7 @@
       "tags": []
     },
     {
-      "index": 478,
+      "index": 496,
       "id": "T1BJzC9xb0g",
       "title": "알파의 인터페이스",
       "speaker": "알파",
@@ -7547,7 +7779,7 @@
       "tags": []
     },
     {
-      "index": 479,
+      "index": 497,
       "id": "DTX52Pv7PZM",
       "title": "하리의 this",
       "speaker": "하리",
@@ -7562,7 +7794,7 @@
       ]
     },
     {
-      "index": 480,
+      "index": 498,
       "id": "hM8s3ZaycGk",
       "title": "소피아의 데이터타입과 불변성",
       "speaker": "소피아",
@@ -7575,7 +7807,7 @@
       "tags": []
     },
     {
-      "index": 481,
+      "index": 499,
       "id": "w5AKXDBW1gQ",
       "title": "그린론의 제네릭",
       "speaker": "그린론",
@@ -7590,7 +7822,7 @@
       ]
     },
     {
-      "index": 482,
+      "index": 500,
       "id": "5oUdqn7WeP0",
       "title": "아서의 싱글턴 패턴과 정적 클래스",
       "speaker": "아서",
@@ -7605,7 +7837,7 @@
       ]
     },
     {
-      "index": 483,
+      "index": 501,
       "id": "ZU4MXkwDb9g",
       "title": "태태,샐리의 var let const 비교",
       "speaker": "태태,샐리",
@@ -7618,7 +7850,7 @@
       "tags": []
     },
     {
-      "index": 484,
+      "index": 502,
       "id": "b72mDco4g78",
       "title": "오리&코린의 Merge, Rebase, Cherry pick",
       "speaker": "오리&코린",
@@ -7633,7 +7865,7 @@
       ]
     },
     {
-      "index": 485,
+      "index": 503,
       "id": "wtsr5keXUyE",
       "title": "렉스의 Git 브랜칭 전략",
       "speaker": "렉스",
@@ -7648,33 +7880,33 @@
       ]
     },
     {
-      "index": 486,
+      "index": 504,
       "id": "alsCMx6vpG4",
-      "title": "Grooming State Management and Responsive Programming",
-      "speaker": "",
-      "topic": "Grooming State Management and Responsive Programming",
+      "title": "그루밍의 상태관리와 반응형 프로그래밍",
+      "speaker": "그루밍",
+      "topic": "상태관리와 반응형 프로그래밍",
       "duration": "18:53",
       "durationSeconds": 1133,
       "viewCount": 8900,
       "url": "https://www.youtube.com/watch?v=alsCMx6vpG4",
-      "categoryId": "mobile-android",
+      "categoryId": "misc-experiments",
       "tags": []
     },
     {
-      "index": 487,
+      "index": 505,
       "id": "EWfujNzSUmw",
-      "title": "하루의 실행 컨텍스트",
+      "title": "하루의 실행 컨텍스트",
       "speaker": "하루",
-      "topic": "실행 컨텍스트",
+      "topic": "실행 컨텍스트",
       "duration": "15:33",
       "durationSeconds": 933,
       "viewCount": 32000,
       "url": "https://www.youtube.com/watch?v=EWfujNzSUmw",
-      "categoryId": "network-os-concurrency",
+      "categoryId": "misc-experiments",
       "tags": []
     },
     {
-      "index": 488,
+      "index": 506,
       "id": "95bnLnIxyWI",
       "title": "영이의 Replication",
       "speaker": "영이",
@@ -7687,11 +7919,11 @@
       "tags": []
     },
     {
-      "index": 489,
+      "index": 507,
       "id": "onBpJRDSZGA",
-      "title": "오즈의 데이터베이스 Lock",
+      "title": "오즈의 데이터베이스 Lock",
       "speaker": "오즈",
-      "topic": "데이터베이스 Lock",
+      "topic": "데이터베이스 Lock",
       "duration": "14:45",
       "durationSeconds": 885,
       "viewCount": 7800,
@@ -7700,38 +7932,35 @@
       "tags": []
     },
     {
-      "index": 490,
+      "index": 508,
       "id": "vQFGBZemJLQ",
-      "title": "우기의 MySQL 아키텍처",
+      "title": "우기의 MySQL 아키텍처",
       "speaker": "우기",
-      "topic": "MySQL 아키텍처",
+      "topic": "MySQL 아키텍처",
       "duration": "12:19",
       "durationSeconds": 739,
       "viewCount": 11000,
       "url": "https://www.youtube.com/watch?v=vQFGBZemJLQ",
       "categoryId": "database-storage",
       "tags": [
-        "MySQL",
-        "아키텍처"
+        "MySQL"
       ]
     },
     {
-      "index": 491,
+      "index": 509,
       "id": "rvss-_t6gzg",
-      "title": "아론의 웹소켓&스프링",
+      "title": "아론의 웹소켓&스프링",
       "speaker": "아론",
-      "topic": "웹소켓&스프링",
+      "topic": "웹소켓&스프링",
       "duration": "19:02",
       "durationSeconds": 1142,
       "viewCount": 24000,
       "url": "https://www.youtube.com/watch?v=rvss-_t6gzg",
-      "categoryId": "network-os-concurrency",
-      "tags": [
-        "Spring"
-      ]
+      "categoryId": "misc-experiments",
+      "tags": []
     },
     {
-      "index": 492,
+      "index": 510,
       "id": "tZMFlxCzXJQ",
       "title": "검프의 Docker #실습편 3부",
       "speaker": "검프",
@@ -7746,7 +7975,7 @@
       ]
     },
     {
-      "index": 493,
+      "index": 511,
       "id": "J_8-8ovxYMM",
       "title": "검프의 Docker #실습편 2부",
       "speaker": "검프",
@@ -7761,7 +7990,7 @@
       ]
     },
     {
-      "index": 494,
+      "index": 512,
       "id": "fUC2OoNYoKc",
       "title": "검프의 Docker #실습편 1부",
       "speaker": "검프",
@@ -7774,7 +8003,7 @@
       "tags": []
     },
     {
-      "index": 495,
+      "index": 513,
       "id": "NODVCBmyaXs",
       "title": "심바의 RESTful",
       "speaker": "심바",
@@ -7787,7 +8016,7 @@
       "tags": []
     },
     {
-      "index": 496,
+      "index": 514,
       "id": "6FAwAXXj5N0",
       "title": "피케이의 Nginx",
       "speaker": "피케이",
@@ -7802,7 +8031,7 @@
       ]
     },
     {
-      "index": 497,
+      "index": 515,
       "id": "BEK354TRgZ8",
       "title": "수리의 TCP/IP",
       "speaker": "수리",
@@ -7817,7 +8046,7 @@
       ]
     },
     {
-      "index": 498,
+      "index": 516,
       "id": "JQ0jO3B43YQ",
       "title": "콜린의 Flex Layout",
       "speaker": "콜린",
@@ -7832,7 +8061,7 @@
       ]
     },
     {
-      "index": 499,
+      "index": 517,
       "id": "Ry_gB34cvwc",
       "title": "케빈의 Deadlock",
       "speaker": "케빈",
@@ -7845,7 +8074,7 @@
       "tags": []
     },
     {
-      "index": 500,
+      "index": 518,
       "id": "Z2YJvBw3pPI",
       "title": "그루밍의 Form Validation",
       "speaker": "그루밍",
@@ -7860,20 +8089,20 @@
       ]
     },
     {
-      "index": 501,
+      "index": 519,
       "id": "5pEDL6c--_k",
-      "title": "배럴의 가상 메모리",
+      "title": "배럴의 가상 메모리",
       "speaker": "배럴",
-      "topic": "가상 메모리",
+      "topic": "가상 메모리",
       "duration": "9:44",
       "durationSeconds": 584,
       "viewCount": 10000,
       "url": "https://www.youtube.com/watch?v=5pEDL6c--_k",
-      "categoryId": "network-os-concurrency",
+      "categoryId": "misc-experiments",
       "tags": []
     },
     {
-      "index": 502,
+      "index": 520,
       "id": "oazGbhBCOfU",
       "title": "와일더의 Mutex vs Semaphore",
       "speaker": "와일더",
@@ -7886,22 +8115,20 @@
       "tags": []
     },
     {
-      "index": 503,
+      "index": 521,
       "id": "N06UeRrWFdY",
-      "title": "손너잘의 테스트 코드 최적화 여행기",
+      "title": "손너잘의 테스트 코드 최적화 여행기",
       "speaker": "손너잘",
-      "topic": "테스트 코드 최적화 여행기",
+      "topic": "테스트 코드 최적화 여행기",
       "duration": "13:04",
       "durationSeconds": 784,
       "viewCount": 8800,
       "url": "https://www.youtube.com/watch?v=N06UeRrWFdY",
-      "categoryId": "testing-quality",
-      "tags": [
-        "테스트"
-      ]
+      "categoryId": "misc-experiments",
+      "tags": []
     },
     {
-      "index": 504,
+      "index": 522,
       "id": "IiNI6XAYtrs",
       "title": "검프의 Docker #이론편",
       "speaker": "검프",
@@ -7916,7 +8143,7 @@
       ]
     },
     {
-      "index": 505,
+      "index": 523,
       "id": "wPdH7lJ8jf0",
       "title": "다니의 HTTPS",
       "speaker": "다니",
@@ -7931,7 +8158,7 @@
       ]
     },
     {
-      "index": 506,
+      "index": 524,
       "id": "itehKMMBVjc",
       "title": "마갸의 암호",
       "speaker": "마갸",
@@ -7944,7 +8171,7 @@
       "tags": []
     },
     {
-      "index": 507,
+      "index": 525,
       "id": "YuqB8D6eCKE",
       "title": "신세한탄의 CSR&SSR",
       "speaker": "신세한탄",
@@ -7959,7 +8186,7 @@
       ]
     },
     {
-      "index": 508,
+      "index": 526,
       "id": "6reapO0gLPs",
       "title": "김김의 JVM Specification",
       "speaker": "김김",
@@ -7974,7 +8201,7 @@
       ]
     },
     {
-      "index": 509,
+      "index": 527,
       "id": "FMUpVA0Vvjw",
       "title": "조엘의 GC",
       "speaker": "조엘",
@@ -7989,7 +8216,7 @@
       ]
     },
     {
-      "index": 510,
+      "index": 528,
       "id": "3uuBHt_SNTA",
       "title": "파노의 Generator & Iterator",
       "speaker": "파노",
@@ -8004,7 +8231,7 @@
       ]
     },
     {
-      "index": 511,
+      "index": 529,
       "id": "eBylHYAlzZk",
       "title": "조이의 UML",
       "speaker": "조이",
@@ -8017,65 +8244,63 @@
       "tags": []
     },
     {
-      "index": 512,
+      "index": 530,
       "id": "3y5rCRys4t0",
-      "title": "라이언의 애자일",
+      "title": "라이언의 애자일",
       "speaker": "라이언",
-      "topic": "애자일",
+      "topic": "애자일",
       "duration": "11:26",
       "durationSeconds": 686,
       "viewCount": 3300,
       "url": "https://www.youtube.com/watch?v=3y5rCRys4t0",
-      "categoryId": "devtools-collaboration-ai",
+      "categoryId": "misc-experiments",
       "tags": []
     },
     {
-      "index": 513,
+      "index": 531,
       "id": "eV4Yzssr9MA",
-      "title": "인치의 불변성",
+      "title": "인치의 불변성",
       "speaker": "인치",
-      "topic": "불변성",
+      "topic": "불변성",
       "duration": "12:44",
       "durationSeconds": 764,
       "viewCount": 3000,
       "url": "https://www.youtube.com/watch?v=eV4Yzssr9MA",
-      "categoryId": "architecture-patterns",
+      "categoryId": "misc-experiments",
       "tags": []
     },
     {
-      "index": 514,
+      "index": 532,
       "id": "X6QGhg19Kqg",
-      "title": "웨지의 지속적 배포",
+      "title": "웨지의 지속적 배포",
       "speaker": "웨지",
-      "topic": "지속적 배포",
+      "topic": "지속적 배포",
       "duration": "15:51",
       "durationSeconds": 951,
       "viewCount": 2100,
       "url": "https://www.youtube.com/watch?v=X6QGhg19Kqg",
-      "categoryId": "infra-security",
-      "tags": [
-        "배포"
-      ]
+      "categoryId": "misc-experiments",
+      "tags": []
     },
     {
-      "index": 515,
+      "index": 533,
       "id": "ww6URL1l1ho",
-      "title": "마크의 정렬 알고리즘",
+      "title": "마크의 정렬 알고리즘",
       "speaker": "마크",
-      "topic": "정렬 알고리즘",
+      "topic": "정렬 알고리즘",
       "duration": "20:27",
       "durationSeconds": 1227,
       "viewCount": 3900,
       "url": "https://www.youtube.com/watch?v=ww6URL1l1ho",
-      "categoryId": "network-os-concurrency",
+      "categoryId": "misc-experiments",
       "tags": []
     },
     {
-      "index": 516,
+      "index": 534,
       "id": "kVHMaOPMl5w",
-      "title": "소롱의 최단 경로 & 최소 신장 트리",
+      "title": "소롱의 최단 경로 & 최소 신장 트리",
       "speaker": "소롱",
-      "topic": "최단 경로 & 최소 신장 트리",
+      "topic": "최단 경로 & 최소 신장 트리",
       "duration": "16:38",
       "durationSeconds": 998,
       "viewCount": 3300,
@@ -8084,7 +8309,7 @@
       "tags": []
     },
     {
-      "index": 517,
+      "index": 535,
       "id": "FXtooPhupr4",
       "title": "티케의 프론트엔드에서의 에러 핸들링",
       "speaker": "티케",
@@ -8097,7 +8322,7 @@
       "tags": []
     },
     {
-      "index": 518,
+      "index": 536,
       "id": "-4ZsGy1LOiE",
       "title": "디토의 웹스토리지 & 쿠키",
       "speaker": "디토",
@@ -8110,24 +8335,24 @@
       "tags": []
     },
     {
-      "index": 519,
+      "index": 537,
       "id": "I5tEBoiBae4",
-      "title": "포츈의 트리 자료구조 #2",
+      "title": "포츈의 트리 자료구조 #2",
       "speaker": "포츈",
-      "topic": "트리 자료구조 #2",
+      "topic": "트리 자료구조 #2",
       "duration": "10:07",
       "durationSeconds": 607,
       "viewCount": 1500,
       "url": "https://www.youtube.com/watch?v=I5tEBoiBae4",
-      "categoryId": "network-os-concurrency",
+      "categoryId": "misc-experiments",
       "tags": []
     },
     {
-      "index": 520,
+      "index": 538,
       "id": "Hc6fD7uzns0",
-      "title": "Fortune's Tree Data Structures #1",
-      "speaker": "Fortune",
-      "topic": "Tree Data Structures #1",
+      "title": "포츈의 트리 자료구조 #1",
+      "speaker": "포츈",
+      "topic": "트리 자료구조 #1",
       "duration": "12:23",
       "durationSeconds": 743,
       "viewCount": 2400,
@@ -8136,33 +8361,33 @@
       "tags": []
     },
     {
-      "index": 521,
+      "index": 539,
       "id": "xnURecIJk4g",
-      "title": "Middle Bear's Linear Data Structures",
-      "speaker": "Middle Bear",
-      "topic": "Linear Data Structures",
+      "title": "중간곰의 선형 자료구조",
+      "speaker": "중간곰",
+      "topic": "선형 자료구조",
       "duration": "14:30",
       "durationSeconds": 870,
       "viewCount": 1800,
       "url": "https://www.youtube.com/watch?v=xnURecIJk4g",
-      "categoryId": "misc-experiments",
+      "categoryId": "network-os-concurrency",
       "tags": []
     },
     {
-      "index": 522,
+      "index": 540,
       "id": "A6J74xLWqYg",
-      "title": "서니의 프론트엔드 성능 측정",
+      "title": "서니의 프론트엔드 성능 측정",
       "speaker": "서니",
-      "topic": "프론트엔드 성능 측정",
+      "topic": "프론트엔드 성능 측정",
       "duration": "12:16",
       "durationSeconds": 736,
       "viewCount": 10000,
       "url": "https://www.youtube.com/watch?v=A6J74xLWqYg",
-      "categoryId": "frontend-web",
+      "categoryId": "misc-experiments",
       "tags": []
     },
     {
-      "index": 523,
+      "index": 541,
       "id": "pxDlj5jA9z4",
       "title": "코기의 Flyway",
       "speaker": "코기",
@@ -8175,11 +8400,11 @@
       "tags": []
     },
     {
-      "index": 524,
+      "index": 542,
       "id": "B70h37mpD74",
-      "title": "동동의 CSS 방법론",
+      "title": "동동의 CSS 방법론",
       "speaker": "동동",
-      "topic": "CSS 방법론",
+      "topic": "CSS 방법론",
       "duration": "25:11",
       "durationSeconds": 1511,
       "viewCount": 3500,
@@ -8188,24 +8413,24 @@
       "tags": []
     },
     {
-      "index": 525,
+      "index": 543,
       "id": "aX9c7z9l_u8",
-      "title": "샐리의 트랜잭션",
+      "title": "샐리의 트랜잭션",
       "speaker": "샐리",
-      "topic": "트랜잭션",
+      "topic": "트랜잭션",
       "duration": "13:38",
       "durationSeconds": 818,
       "viewCount": 10000,
       "url": "https://www.youtube.com/watch?v=aX9c7z9l_u8",
-      "categoryId": "server-backend",
+      "categoryId": "misc-experiments",
       "tags": []
     },
     {
-      "index": 526,
+      "index": 544,
       "id": "P5SZaTQnVCA",
-      "title": "찰리의 인덱싱",
+      "title": "찰리의 인덱싱",
       "speaker": "찰리",
-      "topic": "인덱싱",
+      "topic": "인덱싱",
       "duration": "24:54",
       "durationSeconds": 1494,
       "viewCount": 5800,
@@ -8214,11 +8439,11 @@
       "tags": []
     },
     {
-      "index": 527,
+      "index": 545,
       "id": "JBFT4KyEvoY",
-      "title": "파피의 Caching(캐싱)",
+      "title": "파피의 Caching(캐싱)",
       "speaker": "파피",
-      "topic": "Caching(캐싱)",
+      "topic": "Caching(캐싱)",
       "duration": "10:38",
       "durationSeconds": 638,
       "viewCount": 5200,
@@ -8227,22 +8452,20 @@
       "tags": []
     },
     {
-      "index": 528,
+      "index": 546,
       "id": "ww8Rz-Se3os",
-      "title": "에드의 네트워크 보안",
+      "title": "에드의 네트워크 보안",
       "speaker": "에드",
-      "topic": "네트워크 보안",
+      "topic": "네트워크 보안",
       "duration": "11:43",
       "durationSeconds": 703,
       "viewCount": 4300,
       "url": "https://www.youtube.com/watch?v=ww8Rz-Se3os",
-      "categoryId": "infra-security",
-      "tags": [
-        "보안"
-      ]
+      "categoryId": "misc-experiments",
+      "tags": []
     },
     {
-      "index": 529,
+      "index": 547,
       "id": "JqZzy7RyudI",
       "title": "검프의 Logging(로깅) #2",
       "speaker": "검프",
@@ -8257,7 +8480,7 @@
       ]
     },
     {
-      "index": 530,
+      "index": 548,
       "id": "1MD5xbwznlI",
       "title": "검프의 Logging(로깅) #1",
       "speaker": "검프",
@@ -8272,11 +8495,11 @@
       ]
     },
     {
-      "index": 531,
+      "index": 549,
       "id": "9b89f21Sizs",
-      "title": "썬의 모듈 번들러와 빌드도구",
-      "speaker": "썬",
-      "topic": "모듈 번들러와 빌드도구",
+      "title": "썬의 모듈 번들러와 빌드도구",
+      "speaker": "썬",
+      "topic": "모듈 번들러와 빌드도구",
       "duration": "10:50",
       "durationSeconds": 650,
       "viewCount": 3200,
@@ -8287,26 +8510,24 @@
       ]
     },
     {
-      "index": 532,
+      "index": 550,
       "id": "TXWUNePimAc",
-      "title": "Nabom's Authentication and Authorization",
-      "speaker": "Nabom",
-      "topic": "Authentication and Authorization",
+      "title": "나봄의 인증과 인가",
+      "speaker": "나봄",
+      "topic": "인증과 인가",
       "duration": "13:09",
       "durationSeconds": 789,
       "viewCount": 2000,
       "url": "https://www.youtube.com/watch?v=TXWUNePimAc",
-      "categoryId": "frontend-web",
-      "tags": [
-        "브라우저"
-      ]
+      "categoryId": "misc-experiments",
+      "tags": []
     },
     {
-      "index": 533,
+      "index": 551,
       "id": "2C1tXVHu9XQ",
-      "title": "브랜의 프론트엔드에서 Component란",
+      "title": "브랜의 프론트엔드에서 Component란",
       "speaker": "브랜",
-      "topic": "프론트엔드에서 Component란",
+      "topic": "프론트엔드에서 Component란",
       "duration": "9:00",
       "durationSeconds": 540,
       "viewCount": 5800,
@@ -8317,7 +8538,7 @@
       ]
     },
     {
-      "index": 534,
+      "index": 552,
       "id": "ZgSC5K1sUYM",
       "title": "손너잘의 HTTP1.1, HTTP2, 그리고 QUIC",
       "speaker": "손너잘",
@@ -8332,25 +8553,23 @@
       ]
     },
     {
-      "index": 535,
+      "index": 553,
       "id": "pkYUcKWOqPs",
-      "title": "도비의 프론트엔드에서의 테스트 종류",
+      "title": "도비의 프론트엔드에서의 테스트 종류",
       "speaker": "도비",
-      "topic": "프론트엔드에서의 테스트 종류",
+      "topic": "프론트엔드에서의 테스트 종류",
       "duration": "14:25",
       "durationSeconds": 865,
       "viewCount": 6000,
       "url": "https://www.youtube.com/watch?v=pkYUcKWOqPs",
-      "categoryId": "testing-quality",
-      "tags": [
-        "테스트"
-      ]
+      "categoryId": "misc-experiments",
+      "tags": []
     },
     {
-      "index": 536,
+      "index": 554,
       "id": "Fl_PSiIwtEo",
-      "title": "Paz's OSI 7 Layer",
-      "speaker": "Paz",
+      "title": "파즈의 OSI 7 Layer",
+      "speaker": "파즈",
       "topic": "OSI 7 Layer",
       "duration": "11:51",
       "durationSeconds": 711,
@@ -8362,20 +8581,20 @@
       ]
     },
     {
-      "index": 537,
+      "index": 555,
       "id": "fsmekO1fQcw",
-      "title": "카일의 프론트엔드의 비동기",
+      "title": "카일의 프론트엔드의 비동기",
       "speaker": "카일",
-      "topic": "프론트엔드의 비동기",
+      "topic": "프론트엔드의 비동기",
       "duration": "16:56",
       "durationSeconds": 1016,
       "viewCount": 5900,
       "url": "https://www.youtube.com/watch?v=fsmekO1fQcw",
-      "categoryId": "frontend-web",
+      "categoryId": "misc-experiments",
       "tags": []
     },
     {
-      "index": 538,
+      "index": 556,
       "id": "FiK0Hu5Pr3Q",
       "title": "루트의 리눅스 파일 시스템",
       "speaker": "루트",
@@ -8388,7 +8607,7 @@
       "tags": []
     },
     {
-      "index": 539,
+      "index": 557,
       "id": "qxmdX449z1U",
       "title": "현구막의 리눅스 메모리 관리",
       "speaker": "현구막",
@@ -8401,7 +8620,7 @@
       "tags": []
     },
     {
-      "index": 540,
+      "index": 558,
       "id": "-2TgkKYmJt4",
       "title": "나봄의 CORS",
       "speaker": "나봄",
@@ -8416,7 +8635,7 @@
       ]
     },
     {
-      "index": 541,
+      "index": 559,
       "id": "oEIoqGd-Sns",
       "title": "멍토의 Blocking vs Non-Blocking, Sync vs Async",
       "speaker": "멍토",
@@ -8431,7 +8650,7 @@
       ]
     },
     {
-      "index": 542,
+      "index": 560,
       "id": "1grtWKqTn50",
       "title": "코다의 Process vs Thread",
       "speaker": "코다",
@@ -8446,23 +8665,22 @@
       ]
     },
     {
-      "index": 543,
+      "index": 561,
       "id": "sJ14cWjrNis",
-      "title": "체프의 브라우저 렌더링",
+      "title": "체프의 브라우저 렌더링",
       "speaker": "체프",
-      "topic": "브라우저 렌더링",
+      "topic": "브라우저 렌더링",
       "duration": "11:44",
       "durationSeconds": 704,
       "viewCount": 18000,
       "url": "https://www.youtube.com/watch?v=sJ14cWjrNis",
       "categoryId": "frontend-web",
       "tags": [
-        "브라우저",
         "렌더링"
       ]
     },
     {
-      "index": 544,
+      "index": 562,
       "id": "u4O4zHdiFhk",
       "title": "조앤의 Forward Proxy vs Reverse Proxy vs Load Balancer",
       "speaker": "조앤",
@@ -8475,7 +8693,7 @@
       "tags": []
     },
     {
-      "index": 545,
+      "index": 563,
       "id": "mcnJcjbfjrs",
       "title": "알리의 Web Server vs WAS",
       "speaker": "알리",
@@ -8488,10 +8706,10 @@
       "tags": []
     },
     {
-      "index": 546,
+      "index": 564,
       "id": "PN_WmsgbQCo",
-      "title": "Zig's Virtual DOM",
-      "speaker": "Zig",
+      "title": "지그의 Virtual DOM",
+      "speaker": "지그",
       "topic": "Virtual DOM",
       "duration": "10:30",
       "durationSeconds": 630,
@@ -8503,7 +8721,7 @@
       ]
     },
     {
-      "index": 547,
+      "index": 565,
       "id": "Y11h-NUmNXI",
       "title": "에어의 Spring vs Spring Boot",
       "speaker": "에어",
@@ -8518,10 +8736,10 @@
       ]
     },
     {
-      "index": 548,
+      "index": 566,
       "id": "calGCwG_B4Y",
-      "title": "코기의 Servlet vs Spring",
-      "speaker": "코기",
+      "title": "코기의 Servlet vs Spring",
+      "speaker": "코기",
       "topic": "Servlet vs Spring",
       "duration": "11:44",
       "durationSeconds": 704,
@@ -8533,7 +8751,7 @@
       ]
     },
     {
-      "index": 549,
+      "index": 567,
       "id": "xToJhmAJYCE",
       "title": "미키의 웹 접근성 & 표준",
       "speaker": "미키",
@@ -8546,7 +8764,7 @@
       "tags": []
     },
     {
-      "index": 550,
+      "index": 568,
       "id": "gkutTlwi70s",
       "title": "웨지의 인텔리제이 디버깅",
       "speaker": "웨지",
@@ -8559,7 +8777,7 @@
       "tags": []
     },
     {
-      "index": 551,
+      "index": 569,
       "id": "VTqqZSuSdOk",
       "title": "⏰ 아마찌의 ORM vs SQL Mapper vs JDBC",
       "speaker": "⏰ 아마찌",
@@ -8574,7 +8792,7 @@
       ]
     },
     {
-      "index": 552,
+      "index": 570,
       "id": "_j4u4ftWwhQ",
       "title": "욘의 프레임워크 vs 라이브러리 vs API",
       "speaker": "욘",
@@ -8587,7 +8805,7 @@
       "tags": []
     },
     {
-      "index": 553,
+      "index": 571,
       "id": "jeaf8OXYO1g",
       "title": "웨지의 Git 브랜치 전략",
       "speaker": "웨지",
@@ -8602,7 +8820,7 @@
       ]
     },
     {
-      "index": 554,
+      "index": 572,
       "id": "JsRD2AWxxFg",
       "title": "와일더의 Git Commands",
       "speaker": "와일더",
@@ -8617,7 +8835,7 @@
       ]
     },
     {
-      "index": 555,
+      "index": 573,
       "id": "vM_zQLnlyKw",
       "title": "주모의 SPA",
       "speaker": "주모",
@@ -8630,7 +8848,7 @@
       "tags": []
     },
     {
-      "index": 556,
+      "index": 574,
       "id": "wsvhgrCGW78",
       "title": "춘식의 Stream",
       "speaker": "춘식",
@@ -8645,7 +8863,7 @@
       ]
     },
     {
-      "index": 557,
+      "index": 575,
       "id": "C6CczyrkYXU",
       "title": "크로플의 싱글턴과 정적클래스",
       "speaker": "크로플",
@@ -8658,7 +8876,7 @@
       "tags": []
     },
     {
-      "index": 558,
+      "index": 576,
       "id": "wvEYG6ydAGg",
       "title": "유조의 Callback",
       "speaker": "유조",
@@ -8671,7 +8889,7 @@
       "tags": []
     },
     {
-      "index": 559,
+      "index": 577,
       "id": "wYMN3sPIeHY",
       "title": "포모의 상태 패턴",
       "speaker": "포모",
@@ -8686,7 +8904,7 @@
       ]
     },
     {
-      "index": 560,
+      "index": 578,
       "id": "3etKkkna-f0",
       "title": "웨지의 OOP",
       "speaker": "웨지",
@@ -8701,7 +8919,7 @@
       ]
     },
     {
-      "index": 561,
+      "index": 579,
       "id": "PVYjfrgZhtU",
       "title": "엘라의 Scope & Closure",
       "speaker": "엘라",
@@ -8716,7 +8934,7 @@
       ]
     },
     {
-      "index": 562,
+      "index": 580,
       "id": "EwI3E9Natcw",
       "title": "바다의 JUnit5 사용법",
       "speaker": "바다",
@@ -8731,7 +8949,7 @@
       ]
     },
     {
-      "index": 563,
+      "index": 581,
       "id": "3LMmPXoGI9Q",
       "title": "피카의 TDD와 단위테스트",
       "speaker": "피카",
@@ -8746,7 +8964,7 @@
       ]
     },
     {
-      "index": 564,
+      "index": 582,
       "id": "wcxWlyps4Vg",
       "title": "피터의 이벤트루프",
       "speaker": "피터",
@@ -8759,7 +8977,7 @@
       "tags": []
     },
     {
-      "index": 565,
+      "index": 583,
       "id": "zeDh2mMd_fc",
       "title": "와이비의 빌드와 배포",
       "speaker": "와이비",
@@ -8775,7 +8993,7 @@
       ]
     },
     {
-      "index": 566,
+      "index": 584,
       "id": "clbpnp2xYOQ",
       "title": "로키의 상속보다는 Composition",
       "speaker": "로키",
@@ -8791,7 +9009,7 @@
       ]
     },
     {
-      "index": 567,
+      "index": 585,
       "id": "0jV7xOUcKog",
       "title": "삭정의 Web 요청 & 응답과정",
       "speaker": "삭정",
@@ -8804,10 +9022,10 @@
       "tags": []
     },
     {
-      "index": 568,
+      "index": 586,
       "id": "RYxgNZW3wl0",
-      "title": "Chris's Prototype",
-      "speaker": "Chris",
+      "title": "크리스의 Prototype",
+      "speaker": "크리스",
       "topic": "Prototype",
       "duration": "12:04",
       "durationSeconds": 724,
@@ -8820,7 +9038,7 @@
       ]
     },
     {
-      "index": 569,
+      "index": 587,
       "id": "vNsZXC3VgUA",
       "title": "완태의 전략패턴",
       "speaker": "완태",
@@ -8833,7 +9051,7 @@
       "tags": []
     },
     {
-      "index": 570,
+      "index": 588,
       "id": "7RiMu2DQrb4",
       "title": "브콜의 This",
       "speaker": "브콜",
@@ -8848,7 +9066,7 @@
       ]
     },
     {
-      "index": 571,
+      "index": 589,
       "id": "ogaXW6KPc8I",
       "title": "제리의 MVC 패턴",
       "speaker": "제리",
@@ -8863,7 +9081,7 @@
       ]
     },
     {
-      "index": 572,
+      "index": 590,
       "id": "z5fUkck_RZM",
       "title": "인비의 DTO vs VO",
       "speaker": "인비",
@@ -8876,7 +9094,7 @@
       "tags": []
     },
     {
-      "index": 573,
+      "index": 591,
       "id": "q1fQnGG1bgU",
       "title": "곤이의 DOM&BOM",
       "speaker": "곤이",
@@ -8891,7 +9109,7 @@
       ]
     },
     {
-      "index": 574,
+      "index": 592,
       "id": "Vv0PGUxOzq0",
       "title": "시드의 제네릭",
       "speaker": "시드",
@@ -8906,7 +9124,7 @@
       ]
     },
     {
-      "index": 575,
+      "index": 593,
       "id": "SLifMOhW1VA",
       "title": "제이온의 JCF",
       "speaker": "제이온",
@@ -8921,7 +9139,7 @@
       ]
     },
     {
-      "index": 576,
+      "index": 594,
       "id": "1xJU8HfBREY",
       "title": "라빈의 Spring Batch",
       "speaker": "라빈",
@@ -8936,7 +9154,7 @@
       ]
     },
     {
-      "index": 577,
+      "index": 595,
       "id": "Gimv7hroM8A",
       "title": "디디의 Redis",
       "speaker": "디디",
@@ -8951,7 +9169,7 @@
       ]
     },
     {
-      "index": 578,
+      "index": 596,
       "id": "w6sFR3ZM64c",
       "title": "카일의 데이터베이스 락",
       "speaker": "카일",
@@ -8964,7 +9182,7 @@
       "tags": []
     },
     {
-      "index": 579,
+      "index": 597,
       "id": "MPQHvwPxDUw",
       "title": "코일의 Web Socket",
       "speaker": "코일",
@@ -8979,7 +9197,7 @@
       ]
     },
     {
-      "index": 580,
+      "index": 598,
       "id": "CjoDIgDOHA4",
       "title": "빙봉의 정규 표현식",
       "speaker": "빙봉",
@@ -8992,11 +9210,11 @@
       "tags": []
     },
     {
-      "index": 581,
+      "index": 599,
       "id": "FXzBRD3CPlQ",
-      "title": "Butt Stalemate",
-      "speaker": "",
-      "topic": "Butt Stalemate",
+      "title": "둔덩의 교착상태",
+      "speaker": "둔덩",
+      "topic": "교착상태",
       "duration": "9:49",
       "durationSeconds": 589,
       "viewCount": 6600,
@@ -9005,7 +9223,7 @@
       "tags": []
     },
     {
-      "index": 582,
+      "index": 600,
       "id": "By77aC9Oe3Q",
       "title": "카프카의 탐색 알고리즘",
       "speaker": "카프카",
@@ -9018,7 +9236,7 @@
       "tags": []
     },
     {
-      "index": 583,
+      "index": 601,
       "id": "KMEPEdsK71I",
       "title": "서브웨이의 ARP 프로토콜",
       "speaker": "서브웨이",
@@ -9033,7 +9251,7 @@
       ]
     },
     {
-      "index": 584,
+      "index": 602,
       "id": "5rBzHoR4F2A",
       "title": "동글&라면의 DNS",
       "speaker": "동글&라면",
@@ -9048,7 +9266,7 @@
       ]
     },
     {
-      "index": 585,
+      "index": 603,
       "id": "VIfNipL5KkU",
       "title": "라테의 도메인 주도 설계",
       "speaker": "라테",
@@ -9061,7 +9279,7 @@
       "tags": []
     },
     {
-      "index": 586,
+      "index": 604,
       "id": "7iGIfcEsc2g",
       "title": "럿고의 CORS",
       "speaker": "럿고",
@@ -9076,7 +9294,7 @@
       ]
     },
     {
-      "index": 587,
+      "index": 605,
       "id": "bSGqBoZd8WM",
       "title": "알트의 XSS",
       "speaker": "알트",
@@ -9091,7 +9309,7 @@
       ]
     },
     {
-      "index": 588,
+      "index": 606,
       "id": "wJqHFpRmkmw",
       "title": "학성의 Event Sourcing",
       "speaker": "학성",
@@ -9106,7 +9324,7 @@
       ]
     },
     {
-      "index": 589,
+      "index": 607,
       "id": "mHMR03kaBHw",
       "title": "핀의 Realtime Web",
       "speaker": "핀",
@@ -9119,7 +9337,7 @@
       "tags": []
     },
     {
-      "index": 590,
+      "index": 608,
       "id": "aEk-7RjBKwQ",
       "title": "작은곰의 Spring Security",
       "speaker": "작은곰",
@@ -9135,7 +9353,7 @@
       ]
     },
     {
-      "index": 591,
+      "index": 609,
       "id": "Hm0w_9ngDpM",
       "title": "제이의 Spring AOP",
       "speaker": "제이",
@@ -9150,7 +9368,7 @@
       ]
     },
     {
-      "index": 592,
+      "index": 610,
       "id": "_OI9mKuFb7c",
       "title": "유안의 Spring IoC/DI",
       "speaker": "유안",
@@ -9163,7 +9381,7 @@
       "tags": []
     },
     {
-      "index": 593,
+      "index": 611,
       "id": "4x1QRyMIjGU",
       "title": "호돌의 Spring Webflux",
       "speaker": "호돌",
@@ -9179,7 +9397,7 @@
       ]
     },
     {
-      "index": 594,
+      "index": 612,
       "id": "ej-bnXlHk-E",
       "title": "시카의 Java final과 불변 객체",
       "speaker": "시카",
@@ -9194,7 +9412,7 @@
       ]
     },
     {
-      "index": 595,
+      "index": 613,
       "id": "OM_bN4wzd0g",
       "title": "보스독의 테스트 격리",
       "speaker": "보스독",
@@ -9209,7 +9427,7 @@
       ]
     },
     {
-      "index": 596,
+      "index": 614,
       "id": "3iypR-1Glm0",
       "title": "비밥의 자바 직렬화",
       "speaker": "비밥",
@@ -9222,7 +9440,7 @@
       "tags": []
     },
     {
-      "index": 597,
+      "index": 615,
       "id": "Fe3TVCEJhzo",
       "title": "엘리의 GC",
       "speaker": "엘리",
@@ -9237,7 +9455,7 @@
       ]
     },
     {
-      "index": 598,
+      "index": 616,
       "id": "e9PC0sroCzc",
       "title": "예지니어스의 트랜잭션",
       "speaker": "예지니어스",
@@ -9250,7 +9468,7 @@
       "tags": []
     },
     {
-      "index": 599,
+      "index": 617,
       "id": "9ZXIoh9PtwY",
       "title": "레베카의 인덱스",
       "speaker": "레베카",
@@ -9265,7 +9483,7 @@
       ]
     },
     {
-      "index": 600,
+      "index": 618,
       "id": "NxFJ-mJdVNQ",
       "title": "소니의 Cache",
       "speaker": "소니",
@@ -9280,7 +9498,7 @@
       ]
     },
     {
-      "index": 601,
+      "index": 619,
       "id": "_0p72JJ9iM8",
       "title": "터틀의 네트워크 보안",
       "speaker": "터틀",
@@ -9295,7 +9513,7 @@
       ]
     },
     {
-      "index": 602,
+      "index": 620,
       "id": "MxxeKXydn4A",
       "title": "무늬의 로깅",
       "speaker": "무늬",
@@ -9310,7 +9528,7 @@
       ]
     },
     {
-      "index": 603,
+      "index": 621,
       "id": "y0xMXlOAfss",
       "title": "토니의 인증과 인가",
       "speaker": "토니",
@@ -9323,7 +9541,7 @@
       "tags": []
     },
     {
-      "index": 604,
+      "index": 622,
       "id": "xcrjamphIp4",
       "title": "쿨라임의 HTTP/1.1, HTTP/2, 그리고 QUIC",
       "speaker": "쿨라임",
@@ -9338,7 +9556,7 @@
       ]
     },
     {
-      "index": 605,
+      "index": 623,
       "id": "1pfTxp25MA8",
       "title": "히히의 OSI 7 Layer",
       "speaker": "히히",
@@ -9353,7 +9571,7 @@
       ]
     },
     {
-      "index": 606,
+      "index": 624,
       "id": "oeuVjeeoLSQ",
       "title": "오렌지의 리눅스 파일 시스템",
       "speaker": "오렌지",
@@ -9366,7 +9584,7 @@
       "tags": []
     },
     {
-      "index": 607,
+      "index": 625,
       "id": "IdpkfygWIMk",
       "title": "우의 Block vs Non-Block & Sync vs Async",
       "speaker": "우",
@@ -9381,7 +9599,7 @@
       ]
     },
     {
-      "index": 608,
+      "index": 626,
       "id": "OPdjLaW0flU",
       "title": "그니의 리눅스 메모리 관리",
       "speaker": "그니",
@@ -9394,7 +9612,7 @@
       "tags": []
     },
     {
-      "index": 609,
+      "index": 627,
       "id": "F_vBAbjj4Pk",
       "title": "티거의 Web server vs WAS",
       "speaker": "티거",
@@ -9407,7 +9625,7 @@
       "tags": []
     },
     {
-      "index": 610,
+      "index": 628,
       "id": "DmZnOg5Ced8",
       "title": "쪼밀리와 오구의 Process vs Thread",
       "speaker": "쪼밀리와 오구",
@@ -9422,7 +9640,7 @@
       ]
     },
     {
-      "index": 611,
+      "index": 629,
       "id": "ndVYCPm-LH4",
       "title": "또링, 스티치, 알트, 토니, 코즈의 SUPP",
       "speaker": "또링, 스티치, 알트, 토니, 코즈",
@@ -9435,7 +9653,7 @@
       "tags": []
     },
     {
-      "index": 612,
+      "index": 630,
       "id": "YxwYhenZ3BE",
       "title": "제이미의 Forward Proxy, Reverse Proxy, Load Balancer",
       "speaker": "제이미",
@@ -9448,7 +9666,7 @@
       "tags": []
     },
     {
-      "index": 613,
+      "index": 631,
       "id": "OdpPvdB7qZY",
       "title": "또링의 Spring과 Spring Boot",
       "speaker": "또링",
@@ -9463,7 +9681,7 @@
       ]
     },
     {
-      "index": 614,
+      "index": 632,
       "id": "2pBsXI01J6M",
       "title": "타미의 Servlet vs Spring",
       "speaker": "타미",
@@ -9478,7 +9696,7 @@
       ]
     },
     {
-      "index": 615,
+      "index": 633,
       "id": "mezbxKGu68Y",
       "title": "코즈의 JDBC, SQLMAPPER, ORM",
       "speaker": "코즈",
@@ -9493,7 +9711,7 @@
       ]
     },
     {
-      "index": 616,
+      "index": 634,
       "id": "-ZG8uX7mpuk",
       "title": "임루트의 프레임워크 vs 라이브러리 vs API",
       "speaker": "임루트",
@@ -9506,7 +9724,7 @@
       "tags": []
     },
     {
-      "index": 617,
+      "index": 635,
       "id": "6SvUZqbU37E",
       "title": "스티치의 빌드와 배포",
       "speaker": "스티치",
@@ -9522,7 +9740,7 @@
       ]
     },
     {
-      "index": 618,
+      "index": 636,
       "id": "xz7e-GL2g6g",
       "title": "히로의 웹 요청과 응답",
       "speaker": "히로",
@@ -9535,7 +9753,7 @@
       "tags": []
     },
     {
-      "index": 619,
+      "index": 637,
       "id": "YJ4JJsGy8rY",
       "title": "앨런의 상속보다는 Composition",
       "speaker": "앨런",
@@ -9551,7 +9769,7 @@
       ]
     },
     {
-      "index": 620,
+      "index": 638,
       "id": "zGJzEBOELoU",
       "title": "그래의 전략 패턴",
       "speaker": "그래",
@@ -9566,7 +9784,7 @@
       ]
     },
     {
-      "index": 621,
+      "index": 639,
       "id": "J_Dr6R0Ov8E",
       "title": "라흐의 DTO vs VO",
       "speaker": "라흐",
@@ -9579,7 +9797,7 @@
       "tags": []
     },
     {
-      "index": 622,
+      "index": 640,
       "id": "es1ckjHOzTI",
       "title": "범블비의 MVC Pattern",
       "speaker": "범블비",
@@ -9594,7 +9812,7 @@
       ]
     },
     {
-      "index": 623,
+      "index": 641,
       "id": "n28M8iryFPw",
       "title": "두강의 Generics",
       "speaker": "두강",
@@ -9609,7 +9827,7 @@
       ]
     },
     {
-      "index": 624,
+      "index": 642,
       "id": "XfYJCpAb2aE",
       "title": "로운의 JCF",
       "speaker": "로운",
@@ -9624,7 +9842,7 @@
       ]
     },
     {
-      "index": 625,
+      "index": 643,
       "id": "gzKf2BTZToQ",
       "title": "마틴의 Sticky session & Session Clustering",
       "speaker": "마틴",
@@ -9637,7 +9855,7 @@
       "tags": []
     },
     {
-      "index": 626,
+      "index": 644,
       "id": "WQR_VQnz7Yg",
       "title": "뚱이의 AOP - Advice Target Pointcut",
       "speaker": "뚱이",
@@ -9650,7 +9868,7 @@
       "tags": []
     },
     {
-      "index": 627,
+      "index": 645,
       "id": "RHxTV7qFV7M",
       "title": "미르의 JDK Dynamic Proxy vs CGLIB Proxy",
       "speaker": "미르",
@@ -9663,7 +9881,7 @@
       "tags": []
     },
     {
-      "index": 628,
+      "index": 646,
       "id": "cmwmamOQmPc",
       "title": "규동의 Servlet & Spring",
       "speaker": "규동",
@@ -9678,7 +9896,7 @@
       ]
     },
     {
-      "index": 629,
+      "index": 647,
       "id": "ImvYNlF_saE",
       "title": "에이든의 트랜잭션 메커니즘",
       "speaker": "에이든",
@@ -9691,10 +9909,10 @@
       "tags": []
     },
     {
-      "index": 630,
+      "index": 648,
       "id": "y42TXZKFfqQ",
-      "title": "Hebrew's Sharding, Clustering, Replication",
-      "speaker": "Hebrew",
+      "title": "히브리의 Sharding, Clustering, Replication",
+      "speaker": "히브리",
       "topic": "Sharding, Clustering, Replication",
       "duration": "8:24",
       "durationSeconds": 504,
@@ -9704,7 +9922,7 @@
       "tags": []
     },
     {
-      "index": 631,
+      "index": 649,
       "id": "js4y5VDknfA",
       "title": "올라프의 Clustered vs Non-clustered Index",
       "speaker": "올라프",
@@ -9719,7 +9937,7 @@
       ]
     },
     {
-      "index": 632,
+      "index": 650,
       "id": "qzas_-u4Nxk",
       "title": "로비의 SQL 인젝션",
       "speaker": "로비",
@@ -9732,20 +9950,7 @@
       "tags": []
     },
     {
-      "index": 633,
-      "id": "dP0MIgyrqlo",
-      "title": "제목 미상",
-      "speaker": "",
-      "topic": "제목 미상",
-      "duration": "0:00",
-      "durationSeconds": 0,
-      "viewCount": 0,
-      "url": "https://www.youtube.com/watch?v=dP0MIgyrqlo",
-      "categoryId": "misc-experiments",
-      "tags": []
-    },
-    {
-      "index": 634,
+      "index": 651,
       "id": "6wPr2jgdDxM",
       "title": "포도당의 scale up vs scale out, SPOF",
       "speaker": "포도당",
@@ -9758,7 +9963,7 @@
       "tags": []
     },
     {
-      "index": 635,
+      "index": 652,
       "id": "_sLjXviYivM",
       "title": "코나스의 CORS",
       "speaker": "코나스",
@@ -9773,7 +9978,7 @@
       ]
     },
     {
-      "index": 636,
+      "index": 653,
       "id": "UzaGOXKVhwU",
       "title": "무민의 JVM Stack & Heap",
       "speaker": "무민",
@@ -9788,7 +9993,7 @@
       ]
     },
     {
-      "index": 637,
+      "index": 654,
       "id": "v11dxmc5a0I",
       "title": "유니의 Web polling vs Web push",
       "speaker": "유니",
@@ -9801,7 +10006,7 @@
       "tags": []
     },
     {
-      "index": 638,
+      "index": 655,
       "id": "QeBqwwbsBbM",
       "title": "미스터코의 Apache MPM vs NGINX vs Node.js",
       "speaker": "미스터코",
@@ -9816,7 +10021,7 @@
       ]
     },
     {
-      "index": 639,
+      "index": 656,
       "id": "vZRmCbl871I",
       "title": "던의 JVM의 Garbage Collector",
       "speaker": "던",
@@ -9831,7 +10036,7 @@
       ]
     },
     {
-      "index": 640,
+      "index": 657,
       "id": "uhlvXrDpM-Y",
       "title": "아이크의 HTTP 2.0",
       "speaker": "아이크",
@@ -9846,7 +10051,7 @@
       ]
     },
     {
-      "index": 641,
+      "index": 658,
       "id": "mFBIwEhvZUY",
       "title": "효오의 Latency & Bandwidth",
       "speaker": "효오",
@@ -9859,7 +10064,7 @@
       "tags": []
     },
     {
-      "index": 642,
+      "index": 659,
       "id": "EPcQqkqqouk",
       "title": "에단의 TLS",
       "speaker": "에단",
@@ -9872,7 +10077,7 @@
       "tags": []
     },
     {
-      "index": 643,
+      "index": 660,
       "id": "lg-wHikZg0Q",
       "title": "쉐이크반의 Forward Proxy vs Reverse Proxy",
       "speaker": "쉐이크반",
@@ -9885,10 +10090,10 @@
       "tags": []
     },
     {
-      "index": 644,
+      "index": 661,
       "id": "MBgEhSUOlXo",
-      "title": "Cookie's Connection Pool & Keep-Alive",
-      "speaker": "Cookie",
+      "title": "쿠기의 Connection Pool & Keep-Alive",
+      "speaker": "쿠기",
       "topic": "Connection Pool & Keep-Alive",
       "duration": "15:34",
       "durationSeconds": 934,
@@ -9898,7 +10103,7 @@
       "tags": []
     },
     {
-      "index": 645,
+      "index": 662,
       "id": "nMolWzTT-dU",
       "title": "제이엠의 MVC",
       "speaker": "제이엠",
@@ -9911,7 +10116,7 @@
       "tags": []
     },
     {
-      "index": 646,
+      "index": 663,
       "id": "-4HKhwlH3FQ",
       "title": "코맥의 Interrupt와 Context Switching",
       "speaker": "코맥",
@@ -9924,7 +10129,7 @@
       "tags": []
     },
     {
-      "index": 647,
+      "index": 664,
       "id": "4SaW9BbtL3k",
       "title": "철시의 요청 응답 흐름 과정",
       "speaker": "철시",
@@ -9937,7 +10142,7 @@
       "tags": []
     },
     {
-      "index": 648,
+      "index": 665,
       "id": "LLiV5Yz1AWg",
       "title": "김고래 Process & Thread",
       "speaker": "",
@@ -9952,7 +10157,7 @@
       ]
     },
     {
-      "index": 649,
+      "index": 666,
       "id": "Rpbj6jMYKag",
       "title": "코니의 # ⃣Hash Function",
       "speaker": "코니",
@@ -9965,7 +10170,7 @@
       "tags": []
     },
     {
-      "index": 650,
+      "index": 667,
       "id": "We8JKbNQeLo",
       "title": "티버의 API vs Library vs Framework",
       "speaker": "티버",
@@ -9978,7 +10183,7 @@
       "tags": []
     },
     {
-      "index": 651,
+      "index": 668,
       "id": "ikDVGYp5dhg",
       "title": "르윈의 TCP UDP",
       "speaker": "르윈",
@@ -9993,7 +10198,7 @@
       ]
     },
     {
-      "index": 652,
+      "index": 669,
       "id": "NkZ6r6z2pBg",
       "title": "안돌의 INDEX",
       "speaker": "안돌",
@@ -10008,7 +10213,7 @@
       ]
     },
     {
-      "index": 653,
+      "index": 670,
       "id": "JgRCaVwkPE8",
       "title": "에헴의 빌드용어",
       "speaker": "에헴",
@@ -10023,7 +10228,7 @@
       ]
     },
     {
-      "index": 654,
+      "index": 671,
       "id": "NyhbNtOq0Bc",
       "title": "희봉의 웹서버 vs WAS",
       "speaker": "희봉",
@@ -10036,7 +10241,7 @@
       "tags": []
     },
     {
-      "index": 655,
+      "index": 672,
       "id": "6h9qmKWK6Io",
       "title": "닉의 Spring vs Spring Boot",
       "speaker": "닉",
@@ -10051,37 +10256,37 @@
       ]
     },
     {
-      "index": 656,
+      "index": 673,
       "id": "JZgD8aPkHSc",
-      "title": "루피의 인증과 인가",
-      "speaker": "루피",
-      "topic": "인증과 인가",
+      "title": "루피의 인증과 인가",
+      "speaker": "",
+      "topic": "루피의 인증과 인가",
       "duration": "14:20",
       "durationSeconds": 860,
       "viewCount": 6700,
       "url": "https://www.youtube.com/watch?v=JZgD8aPkHSc",
-      "categoryId": "server-backend",
+      "categoryId": "misc-experiments",
       "tags": []
     },
     {
-      "index": 657,
+      "index": 674,
       "id": "ii5hnSCE6No",
-      "title": "도넛의 함수형 프로그래밍",
-      "speaker": "도넛",
-      "topic": "함수형 프로그래밍",
+      "title": "도넛의 함수형 프로그래밍",
+      "speaker": "",
+      "topic": "도넛의 함수형 프로그래밍",
       "duration": "36:00",
       "durationSeconds": 2160,
       "viewCount": 14000,
       "url": "https://www.youtube.com/watch?v=ii5hnSCE6No",
-      "categoryId": "architecture-patterns",
+      "categoryId": "misc-experiments",
       "tags": []
     },
     {
-      "index": 658,
+      "index": 675,
       "id": "xY7cpMuWh4w",
-      "title": "이지의 RESTful",
-      "speaker": "이지",
-      "topic": "RESTful",
+      "title": "이지의 RESTful",
+      "speaker": "",
+      "topic": "이지의 RESTful",
       "duration": "19:45",
       "durationSeconds": 1185,
       "viewCount": 9000,
@@ -10090,11 +10295,11 @@
       "tags": []
     },
     {
-      "index": 659,
+      "index": 676,
       "id": "MIGliPrUMGE",
-      "title": "안돌의 Git branches",
-      "speaker": "안돌",
-      "topic": "Git branches",
+      "title": "안돌의 Git branches",
+      "speaker": "",
+      "topic": "안돌의 Git branches",
       "duration": "35:49",
       "durationSeconds": 2149,
       "viewCount": 10000,
@@ -10105,11 +10310,11 @@
       ]
     },
     {
-      "index": 660,
+      "index": 677,
       "id": "Ppqc3qN75EE",
-      "title": "올레의 JPA와 JDBC",
-      "speaker": "올레",
-      "topic": "JPA와 JDBC",
+      "title": "올레의 JPA와 JDBC",
+      "speaker": "",
+      "topic": "올레의 JPA와 JDBC",
       "duration": "9:56",
       "durationSeconds": 596,
       "viewCount": 22000,
@@ -10120,7 +10325,7 @@
       ]
     },
     {
-      "index": 661,
+      "index": 678,
       "id": "IEH3YA2Nn4Q",
       "title": "제이의 시간복잡도",
       "speaker": "제이",
@@ -10133,11 +10338,11 @@
       "tags": []
     },
     {
-      "index": 662,
+      "index": 679,
       "id": "c33ojJ7kE7M",
-      "title": "큰곰의 Cache",
-      "speaker": "큰곰",
-      "topic": "Cache",
+      "title": "큰곰의 Cache",
+      "speaker": "",
+      "topic": "큰곰의 Cache",
       "duration": "19:56",
       "durationSeconds": 1196,
       "viewCount": 13000,
@@ -10148,11 +10353,11 @@
       ]
     },
     {
-      "index": 663,
+      "index": 680,
       "id": "OXILjfY8edw",
-      "title": "러너덕의 Springboot autoConfiguration",
-      "speaker": "러너덕",
-      "topic": "Springboot autoConfiguration",
+      "title": "러너덕의 Springboot autoConfiguration",
+      "speaker": "",
+      "topic": "러너덕의 Springboot autoConfiguration",
       "duration": "8:28",
       "durationSeconds": 508,
       "viewCount": 4400,
@@ -10163,11 +10368,11 @@
       ]
     },
     {
-      "index": 664,
+      "index": 681,
       "id": "wE40LuEMxx0",
-      "title": "슬로스&이바의 우리는 왜 실패했는가",
-      "speaker": "슬로스&이바",
-      "topic": "우리는 왜 실패했는가",
+      "title": "슬로스&이바의 우리는 왜 실패했는가",
+      "speaker": "",
+      "topic": "슬로스&이바의 우리는 왜 실패했는가",
       "duration": "10:12",
       "durationSeconds": 612,
       "viewCount": 1800,
@@ -10176,10 +10381,10 @@
       "tags": []
     },
     {
-      "index": 665,
+      "index": 682,
       "id": "uoVNJkyXX0I",
-      "title": "해리&션의 MVC 패턴",
-      "speaker": "해리&션",
+      "title": "해리&션의 MVC 패턴",
+      "speaker": "해리&션",
       "topic": "MVC 패턴",
       "duration": "10:58",
       "durationSeconds": 658,
@@ -10191,7 +10396,7 @@
       ]
     },
     {
-      "index": 666,
+      "index": 683,
       "id": "EeJnNaiMy3U",
       "title": "지노&비모의 DTO vs VO",
       "speaker": "지노&비모",
@@ -10204,7 +10409,7 @@
       "tags": []
     },
     {
-      "index": 667,
+      "index": 684,
       "id": "PCXlgnYekBg",
       "title": "루피의 우아한테크코스 도서관리시스템",
       "speaker": "루피",
@@ -10217,7 +10422,7 @@
       "tags": []
     },
     {
-      "index": 668,
+      "index": 685,
       "id": "90ZDvHl8ROE",
       "title": "베디의 OCP와 전략패턴",
       "speaker": "베디",
@@ -10232,7 +10437,7 @@
       ]
     },
     {
-      "index": 669,
+      "index": 686,
       "id": "NfJjaGjVceo",
       "title": "닉&러너덕의 점심봇",
       "speaker": "닉&러너덕",

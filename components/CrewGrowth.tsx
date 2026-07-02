@@ -19,7 +19,7 @@ export function CrewGrowth() {
       <Eyebrow>레벨 0 → 레벨 5</Eyebrow>
       <h2 className={styles.heading}>작은 행성이가 개발자로 자라기까지</h2>
       <p className={styles.lede}>
-        우테코의 10개월은 레벨 0에서 5로 이어집니다. 낯선 별에 도착한 작은 행성이가 한 단계씩
+        우테코의 10개월은 레벨 0에서 5로 이어집니다. 낯선 우테코에 도착한 작은 행성이가 한 단계씩
         커지며 빛나는 개발자로 자라는 길을, <strong>커리큘럼과 나란히</strong> 한눈에 담았습니다.
       </p>
 

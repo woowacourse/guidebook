@@ -40,7 +40,7 @@ function HandDot({ size, index, rotate = 0 }: { size: number; index: number; rot
 // 북두칠성 asterism 좌표(0-100 정규화). 핸들 왼쪽(완만한 곡선) → 국자 오른쪽.
 // 사발(megrez·dubhe·merak·phecda)은 깊고 좁은 사다리꼴. 국자 끝 두 별(merak·dubhe)이
 // 위쪽 북극성(polaris)을 가리킨다.
-// X는 필드 중앙(50%) 기준으로 좌우 대칭이 되게 배치한다 — 별들의 사용 범위 17~84%, 중심 50.5%.
+// X는 필드 중앙(50%) 기준으로 좌우 대칭이 되게 배치한다 — 별들의 사용 범위 17~82%, 중심 49.5%.
 // (별자리 모양=상대 배치는 그대로 두고 좌표계를 통째로 오른쪽으로 옮겨, 좁은 풀블리드 모바일에서
 //  왼쪽 여백이 좁아 별자리가 왼쪽으로 쏠려 보이던 문제를 해소.)
 const STAR = {
@@ -50,7 +50,7 @@ const STAR = {
   alioth: [48, 42],
   megrez: [61, 47],
   phecda: [63, 69],
-  merak: [84, 69],
+  merak: [82, 68],
   dubhe: [81, 42]
 } as const
 

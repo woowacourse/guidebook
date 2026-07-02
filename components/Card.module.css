@@ -96,14 +96,15 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* List container */
+/* List container — 위 경계선은 섹션 헤딩(h2) 밑줄이 대신하므로 긋지 않고,
+   행 사이 구분선만 남긴다(마지막 행 border 제거는 아래 last-child 규칙) */
 .list {
   margin: 1.25rem 0;
-  border-top: 1px solid rgba(55, 53, 47, 0.07);
 }
 
-:global(.dark) .list {
-  border-top-color: rgba(255, 255, 255, 0.07);
+.list > :last-child .row,
+.list > .row:last-child {
+  border-bottom: none;
 }
 
 /* 방향 레일 — 실험 로그 → 교육 철학으로 끌어올리는 승격 방향을 위로 향하는 화살표로 표시 */

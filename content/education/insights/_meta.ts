@@ -1,6 +1,6 @@
 export default {
   index: '개요',
-  'poe-discovery-learning': '예측 먼저',
+  'predict-first-learning': '예측 먼저',
   'self-diagnostic-framework': '스스로 진단 기준',
   'progressive-scaffolding': '단계별 발판',
   'argumentation-based-learning': '설명으로 배우기',

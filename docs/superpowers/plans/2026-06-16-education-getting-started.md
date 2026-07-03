@@ -61,7 +61,7 @@ last_verified: 2026-06-16
   <Card title="자기주도 학습" icon="🧭" href="/education/insights/self-diagnostic-framework">
     배우는 사람이 학습의 주체입니다.
   </Card>
-  <Card title="발견 학습 (예측→관찰→설명)" icon="🔭" href="/education/insights/poe-discovery-learning">
+  <Card title="발견 학습 (예측→관찰→설명)" icon="🔭" href="/education/insights/predict-first-learning">
     답보다 예측을 먼저 하게 합니다.
   </Card>
   <Card title="함께 성장하는 문화" icon="🤝" href="/education/insights/argumentation-based-learning">
@@ -139,7 +139,7 @@ grep -n "#today" content/education/start.mdx
 grep -oE "/education/[a-z/-]+" content/education/start.mdx | sort -u
 ```
 Expected: `#today` 1회(Callout) + 헤딩 정의 1회. 링크 슬러그가 아래 9개에 모두 포함:
-`/education/insights/self-diagnostic-framework`, `/education/insights/poe-discovery-learning`, `/education/insights/argumentation-based-learning`, `/education/insights/progressive-scaffolding`, `/education/logs/feedback-refactoring`, `/education/tools/retrospective-format-kit`, `/education/tools/mission-repo-analysis-workflow`, `/education/logs/react-payments-555prs-analysis`, 그리고 다음 문 4개(`/education/philosophy`, `/education/curriculum`, `/education/insights`, `/education/tools`).
+`/education/insights/self-diagnostic-framework`, `/education/insights/predict-first-learning`, `/education/insights/argumentation-based-learning`, `/education/insights/progressive-scaffolding`, `/education/logs/feedback-refactoring`, `/education/tools/retrospective-format-kit`, `/education/tools/mission-repo-analysis-workflow`, `/education/logs/react-payments-555prs-analysis`, 그리고 다음 문 4개(`/education/philosophy`, `/education/curriculum`, `/education/insights`, `/education/tools`).
 
 - [ ] **Step 5: 커밋**
 
@@ -324,7 +324,7 @@ Expected: 신규/수정 본문 위반 0건.
 
 Run:
 ```bash
-for s in insights/self-diagnostic-framework insights/poe-discovery-learning insights/argumentation-based-learning insights/progressive-scaffolding logs/feedback-refactoring tools/retrospective-format-kit tools/mission-repo-analysis-workflow logs/react-payments-555prs-analysis philosophy curriculum insights tools; do
+for s in insights/self-diagnostic-framework insights/predict-first-learning insights/argumentation-based-learning insights/progressive-scaffolding logs/feedback-refactoring tools/retrospective-format-kit tools/mission-repo-analysis-workflow logs/react-payments-555prs-analysis philosophy curriculum insights tools; do
   test -e "content/education/$s.mdx" -o -e "content/education/$s/index.mdx" -o -d "content/education/$s" && echo "✅ $s" || echo "❌ $s";
 done
 ```

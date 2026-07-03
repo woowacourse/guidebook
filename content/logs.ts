@@ -449,7 +449,7 @@ const logs: Log[] = [
   {
     slug: 'codelab-lotto-domain-ui',
     title: '코드랩으로 관심사 분리 체험하기',
-    description: 'POE 사이클로 "도메인과 UI를 왜 분리해야 하는가"를 크루 스스로 발견하게 하는 수업 설계.',
+    description: '예측→관찰→설명 흐름으로 "도메인과 UI를 왜 분리해야 하는가"를 크루 스스로 발견하게 하는 수업 설계.',
     href: '/education/logs/codelab-lotto-domain-ui',
     date: '2026-03-17',
     phases: ['레벨1'],

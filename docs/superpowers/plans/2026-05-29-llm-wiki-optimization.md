@@ -70,7 +70,7 @@
   related:
     - slug: progressive-scaffolding
       type: similar
-    - slug: poe-discovery-learning
+    - slug: predict-first-learning
       type: extends
   ```
 - `source_logs` — 이 페이지의 근거가 된 실험 로그 슬러그 배열 (insights/design-patterns/curriculum 페이지에서 사용).
@@ -84,7 +84,7 @@ id: progressive-scaffolding
 summary: 단일 세션으로 전달하면 증발하는 내용을 3~5회 점진적 시퀀스로 분산해 인지 부하를 관리하는 설계 원칙.
 last_verified: 2026-05-29
 related:
-  - slug: poe-discovery-learning
+  - slug: predict-first-learning
     type: similar
 source_logs:
   - ux-research-training

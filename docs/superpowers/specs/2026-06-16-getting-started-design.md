@@ -147,7 +147,7 @@
   | 카드 | 한 줄 | 링크 |
   |------|-------|------|
   | 자기주도 학습 | 배우는 사람이 학습의 주체 | `/education/insights/self-diagnostic-framework` |
-  | 발견 학습 (예측→관찰→설명) | 답보다 예측을 먼저 | `/education/insights/poe-discovery-learning` |
+  | 발견 학습 (예측→관찰→설명) | 답보다 예측을 먼저 | `/education/insights/predict-first-learning` |
   | 함께 성장하는 문화 | 협업은 분위기가 아니라 구조 | `/education/insights/argumentation-based-learning` |
   | 점진적 스캐폴딩 | 한 번에 안 쏟고 발판을 댄다 | `/education/insights/progressive-scaffolding` |
 - 섹션 끝 한 문장: "줄기는 하나(스스로 자라는 환경), 손잡이 크기만 다릅니다 — 운영자=큰 레버, 팀리더=중간 레버, 멘토=작은 레버."
@@ -195,7 +195,7 @@
 ### 4.4 링크 실재성 — 검증 완료(2026-06-16)
 
 아래 슬러그는 파일시스템에서 직접 존재 확인됨:
-`logs/feedback-refactoring` · `insights/self-diagnostic-framework` · `insights/poe-discovery-learning` · `insights/argumentation-based-learning` · `insights/progressive-scaffolding` · `insights/retrospective-design` · `tools/retrospective-format-kit` · `tools/mission-repo-analysis-workflow` · `logs/react-payments-555prs-analysis`
+`logs/feedback-refactoring` · `insights/self-diagnostic-framework` · `insights/predict-first-learning` · `insights/argumentation-based-learning` · `insights/progressive-scaffolding` · `insights/retrospective-design` · `tools/retrospective-format-kit` · `tools/mission-repo-analysis-workflow` · `logs/react-payments-555prs-analysis`
 
 > 참고: `tools/index.mdx`의 도구 목록이 불완전(`mission-repo-analysis-workflow`, `clean-language-mentoring` 누락). 본 작업과 별개의 소소한 보강 후보.
 

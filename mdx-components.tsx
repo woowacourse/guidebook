@@ -36,6 +36,7 @@ import { YouTubeLightbox } from './components/YouTubeLightbox'
 import { FaqList } from './components/FaqList'
 import { CopyField } from './components/CopyField'
 import { ExternalPreviewCard } from './components/ExternalPreviewCard'
+import { PromptCopyBlock } from './components/PromptCopyBlock'
 
 const docsComponents = getDocsMDXComponents()
 
@@ -80,6 +81,7 @@ export function useMDXComponents(components?: Record<string, React.FC>) {
     FaqList,
     CopyField,
     ExternalPreviewCard,
+    PromptCopyBlock,
     ...components
   }
 }

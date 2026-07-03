@@ -17,7 +17,7 @@ export default {
   insights: '🧩 검증된 패턴',
   '--build': { type: 'separator', title: '적용하기' },
   start: '🚀 시작하기',
-  'design-poe': '🔭 발견 학습 설계하기',
+  'design-discovery-learning': '🔭 발견 학습 설계하기',
   tools: '🛠️ 검증된 도구',
   '--field': { type: 'separator' },
   conversations: '🗂️ 우테코 현장',

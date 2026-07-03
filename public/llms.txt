@@ -59,7 +59,7 @@
 - [우테코 브이로그](https://docs.woowahan.com/education/conversations/vlog-archive)
 - [커리큘럼 - 철학을 10개월로 옮기는 법](https://docs.woowahan.com/education/curriculum)
 - [커리큘럼 설계 원칙 (승격 staging)](https://docs.woowahan.com/education/curriculum/design-principles)
-- [발견 학습 설계하기: 답을 먼저 주지 않는 환경](https://docs.woowahan.com/education/design-poe): 발견 학습(예측→관찰→설명)을 당신의 미션·수업·리뷰에 설계하는 법 — 우테코 실전 사례와 설계용 LLM 스킬.
+- [발견 학습 설계하기: 답을 먼저 주지 않는 환경](https://docs.woowahan.com/education/design-discovery-learning): 발견 학습(예측→관찰→설명)을 당신의 미션·수업·리뷰에 설계하는 법 — 우테코 실전 사례와 설계용 LLM 스킬.
 - [실패한 교육](https://docs.woowahan.com/education/failed-experiments)
 - [실패 사례 카탈로그](https://docs.woowahan.com/education/failed-experiments/catalog)
 - [실패에서 패턴으로](https://docs.woowahan.com/education/failed-experiments/failure-to-pattern)
@@ -70,7 +70,7 @@
 - [강의 설계](https://docs.woowahan.com/education/insights/lecture-design)
 - [쌓이는 미션: 골격은 그대로, 목표는 매년 한 층씩](https://docs.woowahan.com/education/insights/mission-learning-accumulation)
 - [첫 미션은 연극: 역량 불안과 관계 불안을 분리하기](https://docs.woowahan.com/education/insights/non-technical-first-mission): 입학 첫 미션을 비-기술 과제(연극)로 두어 역량 불안과 관계 불안을 분리하고, 첫 주에 심리적 안전감을 설계합니다. 기수가 바뀌어도 고정된 우테코의 출발점.
-- [예측 먼저: 답을 보여주기 전에 예측·관찰·설명부터](https://docs.woowahan.com/education/insights/poe-discovery-learning)
+- [예측 먼저: 답을 보여주기 전에 예측·관찰·설명부터](https://docs.woowahan.com/education/insights/predict-first-learning)
 - [단계별 발판: 한 번의 강의 대신 3~5회로](https://docs.woowahan.com/education/insights/progressive-scaffolding)
 - [함께 쓰는 회고: 공개로 남겨 기수를 넘는 아카이브로](https://docs.woowahan.com/education/insights/public-retrospective): 회고를 한 곳에 함께 써서 공개로 남기면 1회성 성찰이 기수를 넘는 학습 아카이브가 됩니다. 공개 회고 저장소에서 추출한 운영 패턴.
 - [매번 다른 회고: 형식을 바꿔 성찰의 깊이를 끌어올리기](https://docs.woowahan.com/education/insights/retrospective-design)

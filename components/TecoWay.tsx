@@ -22,12 +22,12 @@ const STEPS: Array<{ level: string; fact: string; pose: string; text?: ReactNode
     pose: '행성이-호기심',
   },
   {
-    level: '레벨 1',
+    level: '레벨 1~2',
     fact: '강의보다 미션이 먼저입니다',
     pose: '행성이-페어',
   },
   {
-    level: '레벨 2~3',
+    level: '레벨 3',
     fact: '사용자를 위한 진짜 서비스를 만듭니다',
     pose: '행성이-회의',
   },

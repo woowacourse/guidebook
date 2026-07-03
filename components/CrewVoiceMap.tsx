@@ -2,13 +2,13 @@
 
 import { useState } from 'react'
 import styles from './CrewVoiceMap.module.css'
-import { crewThemes, crewThemesAreExample, crewVoiceRespondentCount } from '../content/crew-voices'
+import { crewThemes, crewThemesAreExample } from '../content/crew-voices'
 import { Eyebrow } from './Eyebrow'
 
 /**
  * CrewVoiceMap — "크루들이 가장 많이 남긴 메시지"를 손그림 별자리로.
- * 서브텍스트의 '이 10개월을 경험한 크루 422명'은 TecoWay 섹션(우테코의 10개월·735명 캡션)을
- * 받는 연결어(crewVoiceRespondentCount 단일 원천) — 통계 출처가 아니라 위 여정의 서사를 잇는다.
+ * 서브텍스트의 '이 10개월을 경험한 크루들'은 TecoWay 섹션(우테코의 10개월)을 받는 연결어 —
+ * 통계 출처가 아니라 위 여정의 서사를 잇는다. 응답자 수(422)는 상세 페이지(crew-voices.mdx)가 담당.
  * 크루의 말 = 별(점). 가장 많이 나온 '함께 자란 동료'를 길잡이 북극성으로 위에 두고,
  * 나머지 테마 7개가 북두칠성 국자를 이룬다. 국자 끝 두 별이 그 북극성을 가리킨다.
  * 별은 좌표에 고정 배치(별자리는 '모양이 곧 의미') + 은은한 연결선으로 형태를 드러낸다.
@@ -112,7 +112,7 @@ export function CrewVoiceMap({ bleed = false }: { bleed?: boolean }) {
       <Eyebrow>크루의 목소리</Eyebrow>
       <h2 className={styles.heading}>크루들이 가장 많이 남긴 메시지</h2>
       <p className={styles.sub}>
-        이 10개월을 경험한 크루 {crewVoiceRespondentCount}명이 수료 직전 마지막 설문에 남긴 메시지를{' '}
+        이 10개월을 경험한 크루들이 수료 직전 마지막 설문에 남긴 메시지를{' '}
         <br className={styles.brDesktop} />
         가장 자주 나온 키워드별로 별자리로 그렸습니다.{' '}
         <br className={styles.brDesktop} />

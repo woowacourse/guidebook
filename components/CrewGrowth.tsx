@@ -40,11 +40,6 @@ export function CrewGrowth() {
             </div>
           ))}
         </div>
-        <div className={styles.ends} aria-hidden="true">
-          <span>작은 별에서</span>
-          <span className={styles.arrow}>→</span>
-          <span>빛나는 개발자로</span>
-        </div>
       </div>
 
       {/* 모바일 — 세로 성장 척추 */}

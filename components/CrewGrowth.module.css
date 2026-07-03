@@ -64,7 +64,7 @@
   align-items: flex-end;
   gap: 0.5rem;
   padding-bottom: 0.9rem;
-  border-bottom: 1.5px solid rgba(55, 53, 47, 0.18);
+  border-bottom: 1.5px dashed rgba(55, 53, 47, 0.28);
 }
 
 :global(.dark) .rail {
@@ -122,31 +122,6 @@
   color: rgba(255, 255, 255, 0.74);
 }
 
-.ends {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  margin-top: 1.2rem;
-  font-size: 0.82rem;
-  font-weight: 700;
-  color: rgba(55, 53, 47, 0.5);
-}
-
-:global(.dark) .ends {
-  color: rgba(255, 255, 255, 0.45);
-}
-
-/* 두 캡션 사이 여정을 잇는 점선 길 (→ 글자는 숨기고 선만) */
-.arrow {
-  flex: 1;
-  border-top: 1.5px dashed rgba(55, 53, 47, 0.28);
-  font-size: 0;
-}
-
-:global(.dark) .arrow {
-  border-top-color: rgba(255, 255, 255, 0.26);
-}
-
 /* ── 모바일: 세로 성장 척추 ─────────────────────────── */
 .arcMobile {
   display: none;
@@ -166,12 +141,11 @@
   top: 0.5rem;
   bottom: 0.5rem;
   left: 36px;
-  width: 1.5px;
-  background: rgba(55, 53, 47, 0.15);
+  border-left: 1.5px dashed rgba(55, 53, 47, 0.22);
 }
 
 :global(.dark) .arcMobile::before {
-  background: rgba(255, 255, 255, 0.16);
+  border-left-color: rgba(255, 255, 255, 0.22);
 }
 
 .spineRow {

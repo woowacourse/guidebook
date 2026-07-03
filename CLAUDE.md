@@ -12,6 +12,7 @@ Nextra 4 + Next.js App Router 기반 교육 가이드북.
 - **`public/llms.txt` / `public/llms-full.txt`** — 외부 LLM이 사이트를 빠르게 훑을 수 있는 진입점. `npm run build` 시 자동 생성.
 - **`/위키정리`** — 위키 정합성 lint 커맨드.
 - **`/말투점검`** (`npm run lint:tone`) — content 본문 문체 점검. **본문은 합니다체로 통일한다**(한다체·해요체 금지). 규약: `AGENTS.md` > 6. 문체.
+- **`/사람리뷰`** — content 문장의 AI 냄새 판정·다듬기. 기준은 `.claude/skills/사람냄새/`의 규칙이며, 규칙은 사람 판정 데이터(`references/calibration-pairs.md`)에서만 갱신한다. sentence-polish는 폐기(사람냄새로 대체).
 - **`npm run lint:codefence`** — 코드펜스 더블 스페이스(문장마다 빈 줄) 검출. **코드블록 빈 줄은 화면에서 한 줄 높이를 그대로 차지하므로 빈 줄은 섹션(헤더) 사이에만 둔다.** 규약: `AGENTS.md` > 4. 자동 검사.
 
 | 역할 | 파일 | 대상 독자 |

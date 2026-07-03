@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import type { ReactNode } from 'react'
 import styles from './TecoWay.module.css'
 import { Eyebrow } from './Eyebrow'
@@ -77,10 +76,6 @@ export function TecoWay() {
           </li>
         ))}
       </ol>
-
-      <Link className={styles.journeyLink} href="/education/journey">
-        레벨 0부터 5까지, 어떻게 자라는지 →
-      </Link>
     </section>
   )
 }

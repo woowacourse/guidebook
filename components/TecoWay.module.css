@@ -173,26 +173,6 @@
   color: rgba(255, 255, 255, 0.95);
 }
 
-/* journey 링크: Nextra의 article a:hover 밑줄 강제를 끈다(Card/AssetCard/EnterDocs 패턴).
-   패딩으로 터치 타깃 ≥44px 확보(시각 위치는 마진으로 보정). */
-.journeyLink {
-  display: inline-block;
-  margin-top: 1.4rem;
-  padding: 0.7rem 0.85rem;
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: rgb(55, 53, 47);
-  text-decoration: none !important;
-}
-
-.journeyLink:hover {
-  opacity: 0.72;
-}
-
-:global(.dark) .journeyLink {
-  color: rgba(255, 255, 255, 0.92);
-}
-
 /* 태블릿 — 5열이 좁아지는 구간은 2열 그리드로, 마지막 수료 정거장은 한 줄 전체 (연결선은 숨김) */
 @media (min-width: 681px) and (max-width: 940px) {
   .timeline {

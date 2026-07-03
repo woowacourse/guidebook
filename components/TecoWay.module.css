@@ -1,7 +1,7 @@
-/* TecoWay: 랜딩 'Hero 다음' 선언. 레벨 0→4를 4단계 가로 타임라인으로(단계마다 우테코만의 사실 하나).
-   헤더 토큰은 형제 섹션(CrewJourney)과 동일. 마커는 단계마다 커지는 행성이 포즈(성장 아크),
+/* TecoWay: 랜딩 'Hero 다음' 선언. 레벨 0→5를 5단계 가로 타임라인으로(단계마다 우테코만의 사실 하나).
+   헤더 토큰은 형제 섹션(CrewJourney)과 동일. 마커는 동일 크기 행성이 포즈,
    연결은 마커 사이만 잇는 점선 구간 — 캐릭터를 관통하지 않는다(multiply 블렌드라 선이 비쳐 보임).
-   행성이(반짝·최대)는 수료 시점인 아웃트로(캡션)에서 아크를 닫는다. */
+   마지막 수료 정거장(반짝)에만 글로우를 얹어 아크를 닫는다. */
 .section {
   max-width: 52rem;
   margin: 0 auto;
@@ -55,7 +55,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 0 0.5rem;
+  padding: 0 0.35rem;
 }
 
 /* 마커 사이를 잇는 점선 구간 — 이전 마커 중심 옆에서 시작해 내 마커 중심 옆에서 끝난다.
@@ -88,8 +88,8 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  width: min(160px, 45vw);
-  height: min(160px, 45vw);
+  width: min(120px, 34vw);
+  height: min(120px, 34vw);
   transform: translate(-50%, -50%);
   z-index: -1;
   pointer-events: none;
@@ -151,7 +151,7 @@
 
 .stepText {
   margin-top: 0.35rem;
-  max-width: 12rem;
+  max-width: 11.5rem;
   font-size: 0.9rem;
   line-height: 1.5;
   color: rgba(55, 53, 47, 0.72);
@@ -163,43 +163,13 @@
   color: rgba(255, 255, 255, 0.72);
 }
 
-/* 아웃트로 — 수료 시점. 행성이(반짝)가 여기서 '빛나는' 순간을 회수한다 */
-.outro {
-  margin-top: 2.25rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.45rem;
-}
-
-.grad {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.grad .glow {
-  width: min(130px, 38vw);
-  height: min(130px, 38vw);
-}
-
-.caption {
-  margin: 0;
-  font-size: 0.92rem;
-  color: rgba(55, 53, 47, 0.66);
-}
-
-:global(.dark) .caption {
-  color: rgba(255, 255, 255, 0.66);
-}
-
-.caption strong {
+/* 마지막 정거장(수료) 텍스트의 735 강조 */
+.stepText strong {
   font-weight: 800;
   color: rgb(55, 53, 47);
 }
 
-:global(.dark) .caption strong {
+:global(.dark) .stepText strong {
   color: rgba(255, 255, 255, 0.95);
 }
 
@@ -207,7 +177,7 @@
    패딩으로 터치 타깃 ≥44px 확보(시각 위치는 마진으로 보정). */
 .journeyLink {
   display: inline-block;
-  margin-top: 0.8rem;
+  margin-top: 1.4rem;
   padding: 0.7rem 0.85rem;
   font-size: 0.95rem;
   font-weight: 700;
@@ -223,7 +193,7 @@
   color: rgba(255, 255, 255, 0.92);
 }
 
-/* 태블릿 — 4열이 좁아지는 구간은 2×2 그리드로 (연결선은 숨김) */
+/* 태블릿 — 5열이 좁아지는 구간은 2열 그리드로, 마지막 수료 정거장은 한 줄 전체 (연결선은 숨김) */
 @media (min-width: 681px) and (max-width: 940px) {
   .timeline {
     display: grid;
@@ -232,6 +202,9 @@
     max-width: 30rem;
     margin-left: auto;
     margin-right: auto;
+  }
+  .step:last-child {
+    grid-column: 1 / -1;
   }
   .step + .step::before {
     display: none;

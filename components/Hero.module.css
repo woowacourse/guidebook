@@ -9,8 +9,9 @@
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  /* 하단 여백은 트레일(.trail)이 대신 채운다 — 빈 여백이 '페이지 끝' 인상을 주지 않게 최소화 */
-  padding: clamp(3rem, 10vh, 7rem) 0 0.5rem;
+  /* 하단은 원래(3rem)보다 약간 타이트하게 — 다음 섹션 제목이 fold 위로 걸쳐
+     '아래로 이어진다'가 보이게 한다 (빈 여백이 '페이지 끝' 인상을 주지 않게) */
+  padding: clamp(3rem, 10vh, 7rem) 0 2rem;
 }
 
 /* 넓고 은은한 따뜻한 환경광 — 별 광원(.starGlow)과 2겹으로 깊이를 만든다 */
@@ -209,71 +210,6 @@
   box-shadow: 0 10px 26px rgba(240, 165, 112, 0.26);
 }
 
-/* 보조 동선 — 주 CTA가 스크롤 초대일 때 문서로 직행하는 조용한 텍스트 링크.
-   버튼과 위계를 분리해 첫 화면의 주 행동('아래로')과 경쟁하지 않게 한다 */
-.secondaryAction {
-  position: relative;
-  z-index: 1;
-  margin-top: 1.1rem;
-  animation: heroFadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.5s both;
-}
-
-.secondaryLink {
-  /* 패딩+음수 마진 — 시각 변화 없이 터치 타깃만 44px 이상으로 확장 */
-  display: inline-block;
-  padding: 0.75rem 0.9rem;
-  margin: -0.75rem -0.9rem;
-  font-size: 0.88rem;
-  font-weight: 500;
-  color: rgba(55, 53, 47, 0.55);
-  text-decoration: none;
-  transition: color 0.18s ease;
-}
-
-.secondaryLink:hover {
-  color: rgba(55, 53, 47, 0.85);
-}
-
-:global(.dark) .secondaryLink {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-:global(.dark) .secondaryLink:hover {
-  color: rgba(255, 255, 255, 0.85);
-}
-
-/* 별의 트레일 — CTA 아래에서 fold를 지나 TecoWay 여정 점선으로 이어지는 세로 점선.
-   스트로크는 TecoWay 여정선(2px dashed)과 동일 — '별 아래로 난 길'이 10개월 여정으로 이어진다.
-   길이는 화면 높이에 비례(100vh - 시작점 오프셋)해서 어떤 데스크톱 높이에서도
-   fold에 잘린 채 보인다 — 잘림 자체가 '아래로 계속된다'는 신호다. */
-.trail {
-  position: relative;
-  z-index: 0;
-  width: 2px;
-  height: clamp(10rem, calc(100vh - 34rem), 40rem);
-  margin: 1.7rem auto 0;
-  overflow: hidden;
-}
-
-.trailLine {
-  height: 100%;
-  border-left: 2px dashed rgba(55, 53, 47, 0.25);
-  /* 로드 안무 마지막 박자에 위→아래로 한 번 그려진다(반복 없음).
-     height 대신 마스크 안 transform을 쓰는 건 dashed 간격이 성장 중 재배치되지 않게 하기 위함 */
-  transform: translateY(-101%);
-  animation: trailDraw 1s cubic-bezier(0.22, 1, 0.36, 1) 0.55s both;
-}
-
-:global(.dark) .trailLine {
-  border-left-color: rgba(255, 255, 255, 0.28);
-}
-
-@keyframes trailDraw {
-  to {
-    transform: translateY(0);
-  }
-}
-
 /* ── 페이지 로드 오케스트레이션 — 별 → 아이브로 → 제목 → 설명 → CTA 순차 등장 ── */
 @keyframes heroFadeUp {
   from {
@@ -309,21 +245,14 @@
   .eyebrowReveal,
   .title,
   .description,
-  .actions,
-  .secondaryAction {
+  .actions {
     animation: none;
-  }
-
-  /* 트레일은 그리기 모션 없이 처음부터 완성된 정적 점선으로 */
-  .trailLine {
-    animation: none;
-    transform: none;
   }
 }
 
 @media (max-width: 640px) {
   .hero {
-    padding: 3.5rem 0 0.5rem;
+    padding: 3.5rem 0 1.5rem;
   }
 
   .description {

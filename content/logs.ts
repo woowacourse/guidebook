@@ -137,6 +137,15 @@ export function getLogBadges(log: Log): string[] {
 // 최신 항목을 맨 위에 추가하세요.
 const logs: Log[] = [
   {
+    slug: 'java-http-1104prs-analysis',
+    title: '자바 HTTP 미션 5년치 PR 1,104개로 본 톰캣 재구현 학습',
+    description: 'woowacourse/java-http 저장소 PR 1,104개와 대표 PR 리뷰 1,487건에서, 크루가 톰캣을 직접 구현하며 HTTP 파싱·세션·서블릿 경계·동시성을 어떻게 익혔는지 정리했다.',
+    href: '/education/logs/java-http-1104prs-analysis',
+    date: '2026-07-03',
+    phases: ['레벨4'],
+    tracks: ['웹 백엔드'],
+  },
+  {
     slug: 'fe-lotto-2026-prs',
     title: '로또 미션 8기: PR 57개로 본 콘솔에서 웹으로의 관심사 분리',
     description: 'woowacourse/javascript-lotto 2026년 PR 57건·리뷰 코멘트 983건에서 레벨1 크루가 콘솔에서 웹으로 같은 도메인을 옮기며 관심사 분리·검증 위치·TDD를 어떻게 익혔는지 정리했다.',

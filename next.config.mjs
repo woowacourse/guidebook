@@ -40,6 +40,11 @@ export default withNextra({
         source: '/education-experiment',
         destination: '/education',
         permanent: true
+      },
+      {
+        source: '/education/design-poe',
+        destination: '/education/design-discovery-learning',
+        permanent: true
       }
     ]
   }

@@ -24,7 +24,7 @@
 - [우아한테크코스 저장소 연구](https://docs.woowahan.com/education-experiment/repositories)
 - [자바 블랙잭 미션 (다기수 누적, Java)](https://docs.woowahan.com/education-experiment/repositories/java-blackjack)
 - [자바 체스 미션 (OOP 심화·DB 연동, Java)](https://docs.woowahan.com/education-experiment/repositories/java-chess)
-- [자바 HTTP 미션 (톰캣 직접 구현, Java)](https://docs.woowahan.com/education-experiment/repositories/java-http)
+- [자바 HTTP 미션 (톰캣 직접 구현, Java)](https://docs.woowahan.com/education-experiment/repositories/java-http): 톰캣·HTTP 파서를 직접 구현하는 java-http 저장소의 구조와 주요 리뷰 주제를 요약합니다.
 - [자바 JDBC 미션](https://docs.woowahan.com/education-experiment/repositories/java-jdbc)
 - [자바 로또 미션 (구현→리팩토링 2단계, Java)](https://docs.woowahan.com/education-experiment/repositories/java-lotto)
 - [자바 @MVC 미션](https://docs.woowahan.com/education-experiment/repositories/java-mvc)
@@ -40,6 +40,7 @@
 - [브수타](https://docs.woowahan.com/education/conversations/bsuta)
 - [2026년 8기 브수타: 2026년 4월 3일](https://docs.woowahan.com/education/conversations/bsuta-8th-2026-04-03)
 - [2026년 8기 브수타](https://docs.woowahan.com/education/conversations/bsuta/2026-8th)
+- [크루의 행선지](https://docs.woowahan.com/education/conversations/crew-destinations): 우테코를 거쳐 간 크루들이 어떤 회사와 생태계로 이어졌는지 한눈에 보여줍니다.
 - [크루의 목소리](https://docs.woowahan.com/education/conversations/crew-voices)
 - [프로젝트 데모데이](https://docs.woowahan.com/education/conversations/demo-day-archive)
 - [교육 설명회](https://docs.woowahan.com/education/conversations/education-briefing-archive)
@@ -105,6 +106,7 @@
 - [나만의 기술적 강점 찾기: 정체성 선언 기반 딥다이브 학습](https://docs.woowahan.com/education/logs/finding-tech-strengths)
 - [그룹 코칭 지원](https://docs.woowahan.com/education/logs/group-coaching)
 - [나의 성장 그래프: 시각화와 감정 키워드로 레벨을 회고하기](https://docs.woowahan.com/education/logs/growth-graph)
+- [자바 HTTP 미션 5년치 PR 1,104개로 본 톰캣 재구현 학습](https://docs.woowahan.com/education/logs/java-http-1104prs-analysis): 톰캣을 직접 구현한 java-http PR 1,104개에서 HTTP 파싱·세션·서블릿 경계·동시성 학습 흐름을 추적합니다.
 - [유연하게 재사용 가능한 레이아웃 컴포넌트 워크숍](https://docs.woowahan.com/education/logs/layout-component-workshop)
 - [레벨0 로그](https://docs.woowahan.com/education/logs/level0)
 - [레벨0 · 모바일 로그](https://docs.woowahan.com/education/logs/level0/mobile)
@@ -131,7 +133,7 @@
 - [크루들과의 포수타 5회 스크립트 아카이브](https://docs.woowahan.com/education/logs/posuta-archive)
 - [포수타 코치 Q&A 5회 아카이브: 학습·관계·삶에 대한 누적 대화](https://docs.woowahan.com/education/logs/posuta-coach-qa-archive)
 - [React 페이먼츠 미션 5년치 PR 555개 데이터 분석](https://docs.woowahan.com/education/logs/react-payments-555prs-analysis)
-- [바퀴의 재발명 사전 에세이: 3개 기수가 탐구한 재구현의 교육적 가치](https://docs.woowahan.com/education/logs/reinventing-the-wheel)
+- [바퀴의 재발명 사전 에세이: 3개 기수가 탐구한 재구현의 교육적 가치](https://docs.woowahan.com/education/logs/reinventing-the-wheel): 바퀴의 재발명 사전 에세이 3개 기수를 분석해 재구현의 교육적 가치가 어떻게 깊어졌는지 정리합니다.
 - [선배 코드로 눈 키우기: AS-IS 판단 → TO-BE 비교 활동](https://docs.woowahan.com/education/logs/senior-code-review)
 - [소프트스킬 로그](https://docs.woowahan.com/education/logs/soft-skill)
 - [한 발짝 스터디 (8기)](https://docs.woowahan.com/education/logs/soft-skill-one-step-study)

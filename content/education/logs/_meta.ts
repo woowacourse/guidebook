@@ -43,6 +43,7 @@ export default {
   'feedback-refactoring': hidden('피드백 리팩터링'),
   'finding-tech-strengths': hidden('나만의 기술적 강점 찾기'),
   'growth-graph': hidden('나의 성장 그래프'),
+  'java-http-1104prs-analysis': hidden('자바 HTTP 미션 5년치 PR 1,104개 분석'),
   'layout-component-workshop': hidden('유연하게 재사용 가능한 레이아웃 컴포넌트 워크숍'),
   'level3-team-project-retrospective-series': hidden('레벨3 팀 프로젝트 회고 3부작'),
   'mission-design': hidden('Gemini Canvas 웹앱 다작하기'),

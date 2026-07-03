@@ -9,6 +9,14 @@ export interface Update {
 // 최신 항목을 맨 위에 추가하세요.
 const updates: Update[] = [
   {
+    date: '2026년 연구',
+    title: '실험 로그: 자바 HTTP 미션 5년치 PR 1,104개 분석',
+    description:
+      'woowacourse/java-http 저장소의 PR 1,104개와 대표 PR 리뷰 1,487건을 분석해, 톰캣 재구현 미션이 HTTP 파싱·세션·서블릿 경계·동시성 학습으로 어떻게 깊어지는지 정리했습니다.',
+    href: '/education/logs/java-http-1104prs-analysis',
+    status: 'active',
+  },
+  {
     date: '2026년 8기',
     title: '테코톡 아카이브: 8기 발표 18편 반영 (686편)',
     description:
@@ -223,7 +231,7 @@ const updates: Update[] = [
   {
     date: '2026년 연구',
     title: '자바 HTTP 미션 (톰캣 직접 구현, Java)',
-    description: '톰캣을 직접 구현하며 385회 포크·1,100+ PR 누적. 세션 보안·쿠키 파싱·에러 핸들링 일관성이 핵심 리뷰 주제.',
+    description: '톰캣을 직접 구현하며 385회 포크·1,104 PR 누적. 세션 보안·쿠키 파싱·에러 핸들링 일관성이 핵심 리뷰 주제.',
     href: '/education-experiment/repositories/java-http',
     status: 'active',
   },

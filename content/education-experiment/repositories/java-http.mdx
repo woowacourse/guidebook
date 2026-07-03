@@ -1,16 +1,24 @@
 ---
+id: java-http
 title: 자바 HTTP 미션 (톰캣 직접 구현, Java)
+summary: 톰캣·HTTP 파서를 직접 구현하는 java-http 저장소의 구조와 주요 리뷰 주제를 요약합니다.
+last_verified: 2026-07-03
+related:
+  - slug: java-http-1104prs-analysis
+    type: extends
+  - slug: reinventing-the-wheel
+    type: similar
 ---
 
 # 자바 HTTP 미션 (톰캣 직접 구현, Java)
 
 > [GitHub: woowacourse/java-http](https://github.com/woowacourse/java-http)
 >
-> 분석 티어: T2 · 점수: 22/25 · 마지막 스캔: 2026-04-07
+> 분석 티어: T2 · 점수: 22/25 · 마지막 스캔: 2026-07-03
 
 ## 개요
 
-자바로 HTTP 서버(톰캣)를 직접 구현하는 미션으로, 385회 포크와 1,100+ PR이 누적된 대규모 활성 레포지토리입니다. 학습 목표는 웹 서버의 작동 원리(HTTP 파싱, 스레드풀, 서블릿 생명주기)를 직접 구현하며 체득하는 것으로, Claude Code Review Bot이 도입된 2024년부터 리뷰 밀도가 크게 높아졌습니다.
+자바로 HTTP 서버(톰캣)를 직접 구현하는 미션으로, 385회 포크와 1,104개 PR이 누적된 대규모 활성 레포지토리입니다. 학습 목표는 웹 서버의 작동 원리(HTTP 파싱, 스레드풀, 서블릿 생명주기)를 직접 구현하며 체득하는 것입니다. 2024년부터 AI 코드 리뷰 봇이 도입되면서 사양·보안·테스트 관점의 자동 리뷰 밀도도 함께 높아졌습니다.
 
 ## 주요 발견
 
@@ -23,3 +31,8 @@ title: 자바 HTTP 미션 (톰캣 직접 구현, Java)
 ## 원본 데이터
 
 `.research/repos/java-http.md` 에 전체 분석 노트가 있습니다.
+
+## 더 깊게 읽기
+
+- [자바 HTTP 미션 5년치 PR 1,104개 분석](/education/logs/java-http-1104prs-analysis): PR 전수 메타데이터와 대표 리뷰 1,487건으로 톰캣 재구현 학습 흐름을 정리한 실험 로그입니다.
+- [바퀴의 재발명 사전 에세이](/education/logs/reinventing-the-wheel): 재구현의 교육적 가치를 크루가 어떻게 사전에 이해했는지 다룬 연결 로그입니다.

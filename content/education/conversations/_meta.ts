@@ -13,6 +13,7 @@ export default {
       typesetting: 'article'
     }
   },
+  'crew-destinations': hidden('크루의 행선지'),
   'crew-voices': hidden('크루의 목소리'),
   posuta: hidden('포수타'),
   bsuta: hidden('브수타'),

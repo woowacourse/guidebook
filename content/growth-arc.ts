@@ -66,7 +66,10 @@ const GROWTH_ARC: GrowthStage[] = [
     story:
       '이미 있는 도구를 일부러 직접 다시 만듭니다. 바퀴를 재발명하는 이 고생이, 갖다 쓰기만 할 땐 안 보이던 원리를 몸에 새깁니다.',
     pose: '행성이-과열',
-    links: [{ label: '검증된 패턴', href: '/education/insights' }],
+    links: [
+      { label: '톰캣 구현 PR 분석', href: '/education/logs/java-http-1104prs-analysis' },
+      { label: '저장소 분석', href: '/education-experiment/repositories/java-http' },
+    ],
   },
   {
     level: '레벨 5',
@@ -76,7 +79,7 @@ const GROWTH_ARC: GrowthStage[] = [
     story:
       '10개월의 성장을 세상에 내보일 시간입니다. 이력서를 다듬고 레벨 인터뷰와 면접을 준비하고 리크루팅데이에서 회사와 만납니다. 낯선 우테코에 도착했던 작은 행성이가 이제 IT 생태계로 걸어 나갑니다.',
     pose: '행성이-축하',
-    links: [{ label: '교육 철학으로', href: '/education/philosophy' }],
+    links: [{ label: '크루의 행선지', href: '/education/conversations/crew-destinations' }],
   },
 ]
 

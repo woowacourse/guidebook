@@ -80,7 +80,7 @@
 }
 
 .rail .pose {
-  width: var(--sz);
+  width: 72px;
 }
 
 .labels {
@@ -189,7 +189,7 @@
 }
 
 .arcMobile .pose {
-  width: calc(var(--sz) * 0.72);
+  width: 52px;
 }
 
 .spineText {

@@ -1,4 +1,3 @@
-import type { CSSProperties } from 'react'
 import styles from './CrewGrowth.module.css'
 import { Eyebrow } from './Eyebrow'
 import GROWTH_ARC from '../content/growth-arc'
@@ -7,10 +6,9 @@ import GROWTH_ARC from '../content/growth-arc'
  * CrewGrowth — "작은 행성이가 개발자로 자라기까지"
  * 레벨 0~5 성장 아크를 한눈에 보여주는 히어로 + 단계별 서사.
  * content/growth-arc.ts 한 배열이 두 뷰를 모두 그린다.
- * 데스크톱은 가로 성장 길(정거장이 왼→오른쪽으로 커짐), 모바일(<=880px)은 세로 척추.
+ * 데스크톱은 가로 성장 길, 모바일(<=880px)은 세로 척추. 포즈 크기는 단계 무관 동일.
  */
 const src = (pose: string) => `/images/characters/${pose}.png`
-const sz = (size: number) => ({ ['--sz']: `${size}px` } as CSSProperties)
 const ariaSummary = `크루의 성장 여정: ${GROWTH_ARC.map((s) => `${s.level} ${s.stage}`).join(', ')}`
 
 export function CrewGrowth() {
@@ -27,7 +25,7 @@ export function CrewGrowth() {
       <div className={styles.arcDesktop} role="img" aria-label={ariaSummary}>
         <div className={styles.rail} aria-hidden="true">
           {GROWTH_ARC.map((s) => (
-            <div key={s.level} className={styles.fig} style={sz(s.size)}>
+            <div key={s.level} className={styles.fig}>
               <img className={styles.pose} src={src(s.pose)} alt="" />
             </div>
           ))}
@@ -52,7 +50,7 @@ export function CrewGrowth() {
       {/* 모바일 — 세로 성장 척추 */}
       <ol className={styles.arcMobile} role="img" aria-label={ariaSummary}>
         {GROWTH_ARC.map((s) => (
-          <li key={s.level} className={styles.spineRow} style={sz(s.size)}>
+          <li key={s.level} className={styles.spineRow}>
             <span className={styles.spineFig} aria-hidden="true">
               <img className={styles.pose} src={src(s.pose)} alt="" />
             </span>

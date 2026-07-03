@@ -5,7 +5,6 @@
 // 히어로(한눈에 보는 성장 길)와 서사 섹션이 이 배열 하나를 공유한다.
 //
 // - pose: public/images/characters/{pose}.png (기존 18종에서만 고름)
-// - size: 히어로에서 렌더 폭(px). 단계마다 커져 "작은 행성이가 커나가는" 느낌을 만든다.
 // - 트랙별 상세 흐름은 CurriculumTimeline(/education/curriculum)이 담당. 여기선 서사만.
 
 export interface GrowthStage {
@@ -15,7 +14,6 @@ export interface GrowthStage {
   glance: string // 히어로 캡션 (짧게)
   story: string // 서사 2~3문장 (합니다체)
   pose: string // 파일명 (확장자 제외)
-  size: number // 히어로 렌더 폭(px) — 오름차순
   links?: { label: string; href: string }[] // 커리큘럼 근거
 }
 
@@ -28,7 +26,6 @@ const GROWTH_ARC: GrowthStage[] = [
     story:
       '우테코의 첫 미션은 코드가 아니라 연극입니다. 프론트엔드·백엔드·안드로이드 크루가 트랙 구분 없이 한 조로 섞여 무대를 함께 준비합니다. 작은 협업 경험 속에서 나를 드러내고, 심리적 안전감을 함께 만들어 가는 법을 배웁니다.',
     pose: '행성이-호기심',
-    size: 44,
     links: [{ label: '연극 온보딩 도구', href: '/education/tools/drama-onboarding-kit' }],
   },
   {
@@ -39,7 +36,6 @@ const GROWTH_ARC: GrowthStage[] = [
     story:
       '이제 직접 만듭니다. 콘솔 앱으로 프로그래밍 기본기를 다지되 동작하는 코드에서 멈추지 않습니다. 테스트를 쓰고 리팩터링하며, 왜 이렇게 짰는지를 PR에 적어 동료와 나눕니다.',
     pose: '행성이-코딩',
-    size: 52,
     links: [{ label: '로또 미션 기록', href: '/education/logs/fe-lotto-2026-prs' }],
   },
   {
@@ -50,7 +46,6 @@ const GROWTH_ARC: GrowthStage[] = [
     story:
       '기본기 위에 프레임워크를 올립니다. 애플리케이션을 스스로 설계하고 구조화하며, 같은 문제를 여러 번 다시 풀어 정답 대신 트레이드오프를 저울질하는 힘을 기릅니다.',
     pose: '행성이-운동',
-    size: 60,
     links: [{ label: '쌓아 올리는 학습', href: '/education/curriculum#쌓아-올리는-학습' }],
   },
   {
@@ -61,7 +56,6 @@ const GROWTH_ARC: GrowthStage[] = [
     story:
       '혼자 짜던 코드가 팀의 코드가 됩니다. 기획하고 역할을 나누고 충돌을 조율하며 하나의 서비스를 만듭니다. 그리고 실제 사용자에게 배포합니다. 코드보다 사람과 프로세스가 더 어렵다는 걸 여기서 배웁니다.',
     pose: '행성이-회의',
-    size: 70,
     links: [{ label: '커리큘럼 전체 흐름', href: '/education/curriculum' }],
   },
   {
@@ -72,7 +66,6 @@ const GROWTH_ARC: GrowthStage[] = [
     story:
       '이미 있는 도구를 일부러 직접 다시 만듭니다. 바퀴를 재발명하는 이 고생이, 갖다 쓰기만 할 땐 안 보이던 원리를 몸에 새깁니다.',
     pose: '행성이-과열',
-    size: 80,
     links: [{ label: '검증된 패턴', href: '/education/insights' }],
   },
   {
@@ -83,7 +76,6 @@ const GROWTH_ARC: GrowthStage[] = [
     story:
       '10개월의 성장을 세상에 내보일 시간입니다. 이력서를 다듬고 레벨 인터뷰와 면접을 준비하고 리크루팅데이에서 회사와 만납니다. 낯선 우테코에 도착했던 작은 행성이가 이제 IT 생태계로 걸어 나갑니다.',
     pose: '행성이-축하',
-    size: 96,
     links: [{ label: '교육 철학으로', href: '/education/philosophy' }],
   },
 ]

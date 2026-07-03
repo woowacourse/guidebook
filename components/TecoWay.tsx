@@ -59,8 +59,10 @@ export function TecoWay() {
         10개월의 경험이 가르칩니다.
       </h2>
       <p className={styles.lede}>
-        이 문서에 담긴 실험과 기록은 모두 이 10개월에서 나왔습니다. 크루가 지나는 길을 먼저
-        한눈에 담았습니다.
+        이 문서에 담긴 실험과 기록은 모두 이 10개월에서 나왔습니다.
+        <br className="br-desktop" />
+        <br className="br-mobile" />
+        크루가 지나는 길을 먼저 한눈에 담았습니다.
       </p>
 
       <ol className={styles.timeline}>

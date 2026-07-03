@@ -239,6 +239,15 @@ Have a question that isn't covered? Email **herotechcourse@deliveryhero.com**.
   </Card>
 </CardGrid>
 
+<div className="scroll-cue">
+  <a href="#education-map" aria-label="아래에 이어지는 전체 지도로 이동">
+    <span>아래에 전체 지도가 이어집니다</span>
+    <span className="scroll-cue__arrow" aria-hidden="true">↓</span>
+  </a>
+</div>
+
+<span id="education-map" className="section-anchor" />
+
 ## 전체 지도
 
 위에서 아래로 읽으면 추상에서 구체로 내려갑니다. 철학과 커리큘럼에서 출발해, 검증된 패턴과 도구를 거쳐, 오늘의 실험까지 이어집니다. 왼쪽 **승격** 화살표는 이 문서를 만든 방법입니다. 여러 교육 실험을 로그로 쌓고, 거기서 교육 철학까지 끌어올렸습니다.

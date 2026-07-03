@@ -1,4 +1,3 @@
-import { Fragment } from 'react'
 import cohorts, {
   LEVELS_BY_TRACK,
   TRACK_ORDER,
@@ -7,7 +6,7 @@ import cohorts, {
 import styles from './CurriculumTimeline.module.css'
 
 // content/curriculum-history.ts 를 두 섹션으로 렌더링한다.
-// 1) 현재 기수: 트랙 4개 × 레벨 0~5 테이블 + 올해의 실험 배지(셀/스팬 줄)
+// 1) 현재 기수: 트랙 4개 × 레벨 0~5 테이블
 // 2) 과거 기수: 헤드라인 + 델타 + 실험 링크의 압축 연표(최신순)
 // 원본/상세는 llm-wiki/wiki/curriculum-evolution.md.
 
@@ -33,7 +32,6 @@ export function CurriculumTimeline() {
   const current = cohorts.find((c) => c.current) ?? cohorts[cohorts.length - 1]
   const past = cohorts.filter((c) => c.gi !== current.gi).sort((a, b) => b.gi - a.gi)
   const tracks = TRACK_ORDER.filter((t) => current.tracks.includes(t))
-  const highlights = current.highlights ?? []
 
   return (
     <div className={styles.root}>
@@ -56,50 +54,25 @@ export function CurriculumTimeline() {
             </tr>
           </thead>
           <tbody>
-            {Array.from({ length: LEVEL_COUNT }, (_, i) => {
-              const levelLabel = `레벨 ${i}`
-              const rowHl = highlights.filter((h) => h.level === levelLabel)
-              const spanHl = rowHl.filter((h) => h.tracks === 'all')
-              return (
-                <Fragment key={levelLabel}>
-                  <tr>
-                    <th scope="row" className={styles.levelCell}>
-                      <span className={styles.levelNum}>{i}</span>
-                    </th>
-                    {tracks.map((t) => {
-                      const cell = LEVELS_BY_TRACK[t][i]
-                      const cellHl = rowHl.filter(
-                        (h) => h.tracks !== 'all' && h.tracks.includes(t)
-                      )
-                      return (
-                        <td key={t}>
-                          <span className={styles.cellName}>{cell.name}</span>
-                          <span className={styles.cellDesc}>{cell.desc}</span>
-                          {cellHl.map((h) => (
-                            <a key={h.href} href={h.href} className={styles.hl}>
-                              <span aria-hidden>★</span> {h.label}
-                            </a>
-                          ))}
-                        </td>
-                      )
-                    })}
-                  </tr>
-                  {spanHl.map((h) => (
-                    <tr key={h.href} className={styles.hlRow}>
-                      <td colSpan={tracks.length + 1}>
-                        <a href={h.href} className={styles.hl}>
-                          <span aria-hidden>★</span> {h.label}
-                        </a>
-                      </td>
-                    </tr>
-                  ))}
-                </Fragment>
-              )
-            })}
+            {Array.from({ length: LEVEL_COUNT }, (_, i) => (
+              <tr key={`레벨 ${i}`}>
+                <th scope="row" className={styles.levelCell}>
+                  <span className={styles.levelNum}>{i}</span>
+                </th>
+                {tracks.map((t) => {
+                  const cell = LEVELS_BY_TRACK[t][i]
+                  return (
+                    <td key={t}>
+                      <span className={styles.cellName}>{cell.name}</span>
+                      <span className={styles.cellDesc}>{cell.desc}</span>
+                    </td>
+                  )
+                })}
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
-      <p className={styles.legend}>★ 올해 새로 얹힌 층입니다. 누르면 실험 기록으로 이어집니다.</p>
 
       <div className={[styles.head, styles.headGap].join(' ')}>
         <span className={styles.headTitle}>커리큘럼이 쌓여 온 길</span>

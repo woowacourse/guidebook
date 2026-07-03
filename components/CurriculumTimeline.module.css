@@ -60,12 +60,13 @@
 }
 .table thead th {
   font-size: 0.75rem;
+  font-weight: 700;
   letter-spacing: 0.02em;
-  color: #6b7280;
+  color: var(--accent-on);
   text-align: left;
   padding: 10px 12px;
-  background: #f3f4f6;
-  border-bottom: 1px solid #e5e7eb;
+  background: var(--accent-fill);
+  border-bottom: 0;
 }
 .table tbody th,
 .table tbody td {
@@ -102,33 +103,6 @@
   color: #6b7280;
   font-size: 0.88em;
   margin-top: 2px;
-}
-
-/* 올해의 실험 배지 */
-.hl {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 8px;
-  padding: 8px 12px;
-  border-radius: 999px;
-  background: var(--accent-subtle);
-  color: var(--accent-text);
-  font-weight: 700;
-  font-size: 0.85em;
-  line-height: 1.35;
-  text-decoration: none !important; /* Nextra a:hover 밑줄 차단 (Card 패턴) */
-  word-break: keep-all;
-}
-.table .hlRow td {
-  /* .table tbody td 보다 명시도가 높아야 패딩이 먹는다 */
-  padding-top: 0;
-}
-@media (max-width: 640px) {
-  .hl {
-    /* 모바일 터치 타깃 44px 확보 */
-    min-height: 44px;
-  }
 }
 
 /* ---------- 과거 기수 델타 연표 ---------- */
@@ -192,12 +166,6 @@
 :global(.dark) .tableWrap {
   background: #232323;
   border-color: #333;
-}
-[data-theme='dark'] .table thead th,
-:global(.dark) .table thead th {
-  background: #1e1e1e;
-  border-color: #333;
-  color: #9ca3af;
 }
 [data-theme='dark'] .table tbody th,
 [data-theme='dark'] .table tbody td,

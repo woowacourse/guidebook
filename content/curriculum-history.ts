@@ -6,7 +6,6 @@
 // 구조: 현재 기수(current)는 트랙×레벨 테이블로, 과거 기수는 델타 연표로 렌더된다.
 //   - 레벨 0~5 골격은 트랙별로 거의 안정적이라 LEVELS_BY_TRACK 에 한 번만 정의(현재 기준).
 //   - 매년 바뀐 미션·강조점은 각 기수의 core[] 에 담고, link 로 실험 로그와 잇는다.
-//   - 현재 기수의 highlights[] 는 올해 새로 얹힌 층을 테이블 셀(트랙×레벨) 배지로 표시한다.
 //   - depth 'sparse' = 핵심 데이터가 얇음("기록 보강 중"). 'rich' = 교차 확인됨.
 // 트랙 시작: 웹 백엔드 1기~, 웹 프론트엔드 3기(2021)~, 안드로이드 5기(2023)~, 소프트스킬 6기(2024)~.
 // 1~6기 델타 수치는 FE 페이먼츠 미션 555 PR 분석 중심의 부분 관측(원본 위키의 한계 명시를 따름).
@@ -32,13 +31,6 @@ export interface CohortDelta {
   link?: { label: string; href: string }
 }
 
-export interface CohortHighlight {
-  level: string // '레벨 0' ~ '레벨 5'
-  tracks: TrackKey[] | 'all' // 'all' = 전 트랙 공통 → 해당 레벨 행 아래 스팬 줄로 렌더
-  label: string
-  href: string
-}
-
 export interface CurriculumCohort {
   gi: number // 기수
   year: number
@@ -47,7 +39,6 @@ export interface CurriculumCohort {
   tracks: TrackKey[] // 그 기수에 존재한 트랙
   depth: 'sparse' | 'rich'
   current?: boolean // 현재 진행 중 기수 → 테이블로 렌더
-  highlights?: CohortHighlight[] // current 기수의 테이블 셀 배지
 }
 
 // 레벨 0~5 골격 — 공식 트랙 페이지(현재 기준)에서 합성. 트랙별로 강조점이 다르다.
@@ -155,10 +146,6 @@ const cohorts: CurriculumCohort[] = [
       { text: '레벨1에 AI 협업 미션(Gemini Canvas) 신설, 전 트랙 공통', link: { label: '미션 설계 기록', href: '/education/logs/mission-design' } },
     ],
     tracks: ALL_TRACKS, depth: 'rich', current: true,
-    highlights: [
-      { level: '레벨 1', tracks: 'all', label: 'AI 협업 미션 신설: 1주 만에 만들어 배포하는 경험 (전 트랙 공통)', href: '/education/logs/mission-design' },
-      { level: '레벨 2', tracks: ['웹 프론트엔드'], label: '페이먼츠 재설계: 비동기·서버 경계', href: '/education/logs/react-payments-555prs-analysis' },
-    ],
   },
 ]
 

@@ -12,6 +12,10 @@
   padding-right: 3.25rem;
 }
 
+.block :global(pre > div:first-child) {
+  right: 3rem;
+}
+
 .button {
   position: absolute;
   top: 0.65rem;

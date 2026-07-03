@@ -3,11 +3,13 @@
 // 원본/상세는 llm-wiki/wiki/curriculum-evolution.md, 레벨 골격은 공식 트랙 페이지
 // (woowacourse.io/{frontend,backend,android,softskill}) 기반.
 //
-// 구조: 기수(gi)별로 "이 해의 핵심" + 그 기수에 존재한 트랙만 노출.
+// 구조: 현재 기수(current)는 트랙×레벨 테이블로, 과거 기수는 델타 연표로 렌더된다.
 //   - 레벨 0~5 골격은 트랙별로 거의 안정적이라 LEVELS_BY_TRACK 에 한 번만 정의(현재 기준).
-//   - 매년 바뀐 미션·강조점의 차이는 각 기수의 core[] 에 담는다.
+//   - 매년 바뀐 미션·강조점은 각 기수의 core[] 에 담고, link 로 실험 로그와 잇는다.
+//   - 현재 기수의 highlights[] 는 올해 새로 얹힌 층을 테이블 셀(트랙×레벨) 배지로 표시한다.
 //   - depth 'sparse' = 핵심 데이터가 얇음("기록 보강 중"). 'rich' = 교차 확인됨.
 // 트랙 시작: 웹 백엔드 1기~, 웹 프론트엔드 3기(2021)~, 안드로이드 5기(2023)~, 소프트스킬 6기(2024)~.
+// 1~6기 델타 수치는 FE 페이먼츠 미션 555 PR 분석 중심의 부분 관측(원본 위키의 한계 명시를 따름).
 
 export type TrackKey = '웹 프론트엔드' | '웹 백엔드' | '안드로이드' | '소프트스킬'
 
@@ -25,14 +27,27 @@ export interface CurriculumLevel {
   desc: string
 }
 
+export interface CohortDelta {
+  text: string
+  link?: { label: string; href: string }
+}
+
+export interface CohortHighlight {
+  level: string // '레벨 0' ~ '레벨 5'
+  tracks: TrackKey[] | 'all' // 'all' = 전 트랙 공통 → 해당 레벨 행 아래 스팬 줄로 렌더
+  label: string
+  href: string
+}
+
 export interface CurriculumCohort {
   gi: number // 기수
   year: number
   headline: string // 이 해를 한 줄로
-  core: string[] // 핵심 요소 2~3개
+  core: CohortDelta[] // 이 해에 얹힌 델타 (비면 연표에 헤드라인만)
   tracks: TrackKey[] // 그 기수에 존재한 트랙
   depth: 'sparse' | 'rich'
-  current?: boolean // 현재 진행 중 기수
+  current?: boolean // 현재 진행 중 기수 → 테이블로 렌더
+  highlights?: CohortHighlight[] // current 기수의 테이블 셀 배지
 }
 
 // 레벨 0~5 골격 — 공식 트랙 페이지(현재 기준)에서 합성. 트랙별로 강조점이 다르다.
@@ -76,47 +91,74 @@ const BE_FE: TrackKey[] = ['웹 프론트엔드', '웹 백엔드']
 const PLUS_ANDROID: TrackKey[] = ['웹 프론트엔드', '웹 백엔드', '안드로이드']
 const ALL_TRACKS: TrackKey[] = ['웹 프론트엔드', '웹 백엔드', '안드로이드', '소프트스킬']
 
-// 오래된 → 최신. 핵심(core)은 1·8기 외 임시 — 추후 보강 예정.
+const PAYMENTS_LOG = {
+  label: '555 PR 분석',
+  href: '/education/logs/react-payments-555prs-analysis',
+}
+
+// 오래된 → 최신. 렌더 순서는 컴포넌트가 정한다(연표는 최신순).
 const cohorts: CurriculumCohort[] = [
   {
     gi: 1, year: 2019, headline: '우아한테크코스의 시작',
-    core: ['우아한테크코스의 시작: 첫 기수 출범', '웹 백엔드 과정으로 출발'],
+    core: [{ text: '웹 백엔드 단일 트랙, 10개월 과정의 원형이 만들어진 해' }],
     tracks: BE_ONLY, depth: 'sparse',
   },
   {
     gi: 2, year: 2020, headline: '과정 정착기',
-    core: ['(임시) 기록 보강 중'],
+    core: [],
     tracks: BE_ONLY, depth: 'sparse',
   },
   {
     gi: 3, year: 2021, headline: '웹 프론트엔드 트랙 신설',
-    core: ['웹 프론트엔드 과정 신설', '(임시) 페이먼츠 미션 개설, 이후 5년 최장수 단일 미션'],
+    core: [
+      { text: '웹 프론트엔드 과정 신설' },
+      { text: '페이먼츠 미션 개설: 폼·커스텀 훅·컴포넌트 분리 중심, 이후 5년 최장수 미션', link: PAYMENTS_LOG },
+    ],
     tracks: BE_FE, depth: 'sparse',
   },
   {
     gi: 4, year: 2022, headline: '배포 경험의 도입',
-    core: ['(임시) FE 3단계(라이브러리 배포) 단계 도입'],
+    core: [
+      { text: 'FE 3단계(라이브러리 배포) 도입, 페이먼츠 PR 47개→117개 급증' },
+      { text: 'TypeScript 언급 비중 19%→44%' },
+    ],
     tracks: BE_FE, depth: 'sparse',
   },
   {
     gi: 5, year: 2023, headline: '안드로이드 트랙 신설',
-    core: ['안드로이드(모바일) 트랙 신설', '(임시) FE Storybook 문화 정착'],
+    core: [
+      { text: '안드로이드(모바일) 트랙 신설' },
+      { text: 'FE Storybook 문화 정착(81%), 컴포넌트 단위 사고 확산' },
+    ],
     tracks: PLUS_ANDROID, depth: 'sparse',
   },
   {
     gi: 6, year: 2024, headline: '소프트스킬 트랙 신설',
-    core: ['소프트스킬을 정식 트랙으로 분리·신설', '(임시) FE 곁가지 축소 → 기본기 집중'],
+    core: [
+      { text: '소프트스킬을 정식 트랙으로 분리·신설' },
+      { text: 'FE 3단계 축소, 곁가지를 쳐내고 기본기에 집중' },
+    ],
     tracks: ALL_TRACKS, depth: 'sparse',
   },
   {
     gi: 7, year: 2025, headline: '"동작"에서 "책임"으로',
-    core: ['에러 처리·테스트가 사실상 필수로 상향', 'PR이 사고 과정 공유의 장으로(본문 길이 급증)'],
+    core: [
+      { text: '에러 처리·테스트가 사실상 필수로 상향: testing 28%→94%, error-handling 11%→98%', link: PAYMENTS_LOG },
+      { text: 'PR이 사고 과정 공유의 장으로: 본문 평균 3,154자' },
+    ],
     tracks: ALL_TRACKS, depth: 'rich',
   },
   {
     gi: 8, year: 2026, headline: '서버 경계 설계 + AI 협업 미션',
-    core: ['현재 진행 중인 기수', '페이먼츠 미션을 비동기·서버 통신·통합 테스트로 재설계', '레벨1에 AI 협업 미션(Gemini Canvas) 신설, 전 트랙 공통'],
+    core: [
+      { text: '페이먼츠 미션을 비동기·서버 통신·통합 테스트로 재설계: async 1%→99%, MSW 6%→99%', link: PAYMENTS_LOG },
+      { text: '레벨1에 AI 협업 미션(Gemini Canvas) 신설, 전 트랙 공통', link: { label: '미션 설계 기록', href: '/education/logs/mission-design' } },
+    ],
     tracks: ALL_TRACKS, depth: 'rich', current: true,
+    highlights: [
+      { level: '레벨 1', tracks: 'all', label: 'AI 협업 미션 신설: 1주 만에 만들어 배포하는 경험 (전 트랙 공통)', href: '/education/logs/mission-design' },
+      { level: '레벨 2', tracks: ['웹 프론트엔드'], label: '페이먼츠 재설계: 비동기·서버 경계', href: '/education/logs/react-payments-555prs-analysis' },
+    ],
   },
 ]
 

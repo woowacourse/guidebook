@@ -2,98 +2,25 @@
   margin: 20px 0;
 }
 
-/* ---------- 기수 스텝퍼 ---------- */
-.stepper {
-  display: flex;
-  align-items: center;
-  overflow-x: auto;
-  padding-bottom: 6px;
-  margin-bottom: 20px;
-}
-
-.step {
-  appearance: none;
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-  font: inherit;
-  color: #9ca3af;
-  font-weight: 600;
-  padding: 6px 2px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 7px;
-  min-width: 62px;
-  flex-shrink: 0;
-}
-
-.gi {
-  font-size: 0.7rem;
-  font-weight: 700;
-}
-.yr {
-  font-size: 0.8rem;
-  color: #9ca3af;
-}
-
-.dot {
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  background: #ffffff;
-  border: 2px solid #d1d5db;
-}
-
-.step.done {
-  color: #6b7280;
-}
-.step.done .dot {
-  background: #9ca3af;
-  border-color: #9ca3af;
-}
-
-.step.active {
-  color: var(--accent-text);
-}
-.step.active .yr {
-  color: var(--accent-text);
-}
-.step.active .dot {
-  background: var(--accent);
-  border-color: var(--accent);
-  box-shadow: 0 0 0 4px var(--accent-subtle);
-}
-
-.conn {
-  flex: 1;
-  height: 2px;
-  background: #e5e7eb;
-  min-width: 14px;
-  margin-top: 24px;
-}
-
-/* ---------- 패널 ---------- */
-.panel {
-  background: #fafafa;
-  border: 1px solid #e5e7eb;
-  border-radius: 14px;
-  padding: 22px;
-}
-
-.ptitle {
+/* ---------- 섹션 머리 ---------- */
+.head {
   display: flex;
   align-items: baseline;
   gap: 8px;
   flex-wrap: wrap;
+  margin-bottom: 12px;
 }
-.pgi {
+.headGap {
+  margin-top: 36px;
+}
+.headTitle {
   font-weight: 800;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
 }
-.pyr {
+.headMeta {
   color: #9ca3af;
   font-weight: 600;
+  font-size: 0.9rem;
 }
 .badgeNow {
   align-self: center;
@@ -112,130 +39,180 @@
   background: #f3f4f6;
   padding: 2px 9px;
   border-radius: 999px;
+  white-space: nowrap;
 }
 
-/* 이 해의 핵심 */
-.core {
-  margin: 14px 0 4px;
-  padding: 14px 16px;
-  background: var(--accent-subtle);
-  border-radius: 10px;
-}
-.coreLbl {
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  color: var(--accent-text);
-  text-transform: uppercase;
-}
-.core ul {
-  margin: 6px 0 0;
-  padding-left: 18px;
-  font-size: 0.92em;
-}
-.core li {
-  margin: 3px 0;
-}
-
-/* 트랙 토글 */
-.tracks {
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-  margin: 20px 0 14px;
-}
-.trk {
-  appearance: none;
+/* ---------- 현재 기수 테이블 ---------- */
+.tableWrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   border: 1px solid #e5e7eb;
-  background: #ffffff;
+  border-radius: 14px;
+  background: #fafafa;
+}
+.table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: separate; /* collapse 는 sticky 열에서 테두리가 밀린다 */
+  border-spacing: 0;
+  font-size: 0.88em;
+  line-height: 1.55;
+}
+.table thead th {
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
   color: #6b7280;
-  cursor: pointer;
-  font: inherit;
-  font-size: 0.82em;
-  font-weight: 600;
-  padding: 5px 12px;
-  border-radius: 999px;
+  text-align: left;
+  padding: 10px 12px;
+  background: #f3f4f6;
+  border-bottom: 1px solid #e5e7eb;
 }
-.trkOn {
-  background: var(--accent-fill);
-  border-color: var(--accent-fill);
-  color: var(--accent-on);
+.table tbody th,
+.table tbody td {
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #e5e7eb;
+  word-break: keep-all;
 }
-
-/* 레벨 0~5 */
-.levels {
-  display: flex;
-  flex-direction: column;
+.table tbody tr:last-child th,
+.table tbody tr:last-child td {
+  border-bottom: 0;
 }
-.lv {
-  display: grid;
-  grid-template-columns: 76px 1fr;
-  gap: 14px;
-  padding: 11px 0;
-  border-top: 1px solid #e5e7eb;
-}
-.lv:first-child {
-  border-top: 0;
-}
-.lvtag {
-  font-weight: 700;
-  font-size: 0.82em;
+.levelCell {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  width: 56px;
+  min-width: 56px;
+  background: #fafafa;
   color: var(--accent-text);
 }
-.lvtag small {
+.levelNum {
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+.cellName {
   display: block;
-  color: #9ca3af;
-  font-weight: 500;
-  font-size: 0.92em;
-}
-.lvname {
   font-weight: 700;
-  font-size: 0.92em;
-  margin-bottom: 1px;
+  font-size: 0.95em;
 }
-.lvdesc {
+.cellDesc {
+  display: block;
   color: #6b7280;
   font-size: 0.88em;
+  margin-top: 2px;
+}
+
+/* 올해의 실험 배지 */
+.hl {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: var(--accent-subtle);
+  color: var(--accent-text);
+  font-weight: 700;
+  font-size: 0.85em;
+  line-height: 1.35;
+  text-decoration: none !important; /* Nextra a:hover 밑줄 차단 (Card 패턴) */
+  word-break: keep-all;
+}
+.table .hlRow td {
+  /* .table tbody td 보다 명시도가 높아야 패딩이 먹는다 */
+  padding-top: 0;
+}
+
+/* ---------- 과거 기수 델타 연표 ---------- */
+.deltas {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.delta {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 14px;
+  padding: 13px 0;
+  border-top: 1px solid #e5e7eb;
+}
+.delta:first-child {
+  border-top: 0;
+}
+.deltaGi {
+  display: block;
+  font-weight: 800;
+  font-size: 0.95em;
+  color: var(--accent-text);
+}
+.deltaYr {
+  display: block;
+  color: #9ca3af;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+.deltaHeadline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-weight: 700;
+  font-size: 0.95em;
+}
+.deltaList {
+  margin: 6px 0 0;
+  padding-left: 18px;
+  font-size: 0.9em;
+  color: #4b5563;
+}
+.deltaList li {
+  margin: 3px 0;
+  word-break: keep-all;
+}
+.deltaLink {
+  font-weight: 600;
 }
 
 .legend {
-  margin-top: 12px;
+  margin-top: 10px;
   font-size: 0.8em;
   color: #9ca3af;
 }
 
 /* ---------- 다크 모드 ---------- */
-[data-theme='dark'] .dot,
-:global(.dark) .dot {
-  background: #1e1e1e;
-  border-color: #555;
-}
-[data-theme='dark'] .step.done .dot,
-:global(.dark) .step.done .dot {
-  background: #4b5563;
-  border-color: #4b5563;
-}
-[data-theme='dark'] .conn,
-:global(.dark) .conn {
-  background: #333;
-}
-[data-theme='dark'] .panel,
-:global(.dark) .panel {
+[data-theme='dark'] .tableWrap,
+:global(.dark) .tableWrap {
   background: #232323;
   border-color: #333;
 }
-[data-theme='dark'] .trk,
-:global(.dark) .trk {
+[data-theme='dark'] .table thead th,
+:global(.dark) .table thead th {
   background: #1e1e1e;
   border-color: #333;
   color: #9ca3af;
 }
-[data-theme='dark'] .lv,
-:global(.dark) .lv {
+[data-theme='dark'] .table tbody th,
+[data-theme='dark'] .table tbody td,
+:global(.dark) .table tbody th,
+:global(.dark) .table tbody td {
   border-color: #333;
 }
-[data-theme='dark'] .lvdesc,
-:global(.dark) .lvdesc {
+[data-theme='dark'] .levelCell,
+:global(.dark) .levelCell {
+  background: #232323;
+}
+[data-theme='dark'] .cellDesc,
+:global(.dark) .cellDesc {
+  color: #9ca3af;
+}
+[data-theme='dark'] .delta,
+:global(.dark) .delta {
+  border-color: #333;
+}
+[data-theme='dark'] .deltaList,
+:global(.dark) .deltaList {
   color: #9ca3af;
 }
 [data-theme='dark'] .chip,

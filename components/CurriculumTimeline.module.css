@@ -167,6 +167,12 @@
   background: #232323;
   border-color: #333;
 }
+[data-theme='dark'] .table thead th,
+:global(.dark) .table thead th {
+  /* 다크의 .levelCell 배경(0,2,0)보다 명시도를 높여 스티키 코너도 accent 유지 */
+  background: var(--accent-fill);
+  color: var(--accent-on);
+}
 [data-theme='dark'] .table tbody th,
 [data-theme='dark'] .table tbody td,
 :global(.dark) .table tbody th,

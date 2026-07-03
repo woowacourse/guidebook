@@ -9,6 +9,14 @@ export interface Update {
 // 최신 항목을 맨 위에 추가하세요.
 const updates: Update[] = [
   {
+    date: '2026년 8기',
+    title: '커리큘럼: 트랙×레벨 테이블과 델타 연표로 개편',
+    description:
+      '기수 탭을 넘기던 커리큘럼 화면을 두 층으로 다시 짰습니다. 지금 굴러가는 8기 커리큘럼은 4개 트랙 × 레벨 0~5 표로 한눈에 비교하고, 올해 새로 얹힌 실험은 표 안 배지로 위치까지 보여줍니다. 1~7기는 해마다 무엇이 얹혔는지의 연표로 압축했습니다.',
+    href: '/education/curriculum',
+    status: 'active',
+  },
+  {
     date: '2026년 연구',
     title: '실험 로그: 자바 HTTP 미션 5년치 PR 1,104개 분석',
     description:

@@ -242,7 +242,7 @@
       "reason": "2026 신설 메타학습 미션(학습법을 학습 + AI를 학습 도구로 길들이기). P2=4/P4=4로 추출·영향력은 높으나 P1=2(단일 기수·미반복)라 자동 임계값 16 미만(14). 기존 인사이트가 안 다루는 신규 주제이므로 전용 인사이트 승격 여부는 사람이 판단."
     }
   ],
-  "lastMobileCheckCommit": "e9978d4e0f5317ca112cec66ae3d260a65bd14cf",
+  "lastMobileCheckCommit": "127c58cc930fb65c62461a4865cf886c818d8e85",
   "mobileCheckConfig": {
     "threshold": 1,
     "viewports": [

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import type { ReactNode } from 'react'
 import styles from './TecoWay.module.css'
 import { Eyebrow } from './Eyebrow'
 import { crewCount } from '../content/crew-voices'
@@ -14,29 +15,25 @@ import { crewCount } from '../content/crew-voices'
  * 레벨 5 텍스트의 735가 다운스트림 별자리('그중 422명')/행선지('이 길을 지난 735명')의
  * 지시 대상(crewCount 단일 원천). 성장 여정 상세는 /education/journey(CrewGrowth)가 담당한다.
  */
-const STEPS = [
+const STEPS: Array<{ level: string; fact: string; pose: string; text?: ReactNode; star?: boolean }> = [
   {
     level: '레벨 0',
     fact: '첫 미션은 코드가 아니라 연극입니다',
-    text: <>트랙을 섞어 무대를 만들며, 함께 배우는 법부터 익힙니다</>,
     pose: '행성이-호기심',
   },
   {
     level: '레벨 1',
     fact: '강의보다 미션이 먼저입니다',
-    text: <>페어와 코드 리뷰 속에서 테스트와 리팩터링이 습관이 됩니다</>,
     pose: '행성이-페어',
   },
   {
     level: '레벨 2~3',
-    fact: '같은 문제를 여러 번 다시 풉니다',
-    text: <>정답 대신 트레이드오프를 저울질하며, 팀으로 실제 사용자에게 배포합니다</>,
-    pose: '행성이-운동',
+    fact: '사용자를 위한 진짜 서비스를 만듭니다',
+    pose: '행성이-회의',
   },
   {
     level: '레벨 4',
     fact: '이미 있는 도구를 일부러 다시 만듭니다',
-    text: <>바퀴를 재발명하며 원리를 몸에 새깁니다</>,
     pose: '행성이-과열',
   },
   {
@@ -75,7 +72,7 @@ export function TecoWay() {
             </span>
             <span className={styles.stepLevel}>{s.level}</span>
             <span className={styles.stepFact}>{s.fact}</span>
-            <span className={styles.stepText}>{s.text}</span>
+            {s.text && <span className={styles.stepText}>{s.text}</span>}
           </li>
         ))}
       </ol>

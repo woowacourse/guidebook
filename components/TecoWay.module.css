@@ -215,25 +215,53 @@
   }
 }
 
-/* 모바일 — 세로 스택. 가로 연결선 숨기고 단계별로 쌓는다(가로 오버플로우 방지). */
+/* 모바일 — 왼쪽 레일 세로 타임라인(CrewGrowth 세로 척추와 같은 관용구).
+   행성이가 왼쪽 레일의 정거장, 점선이 세로로 흐르고 텍스트는 좌측 정렬로 스캔이 빠르다. */
 @media (max-width: 680px) {
   .timeline {
     flex-direction: column;
-    gap: 1.6rem;
+    gap: 1.5rem;
     max-width: 22rem;
     margin-left: auto;
     margin-right: auto;
   }
-  .step + .step::before {
-    display: none;
+  .step {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    column-gap: 0.9rem;
+    align-items: center;
+    text-align: left;
+    padding: 0;
   }
   .marker {
+    grid-column: 1;
+    grid-row: 1 / span 3;
     height: auto;
   }
+  .stepLevel {
+    grid-column: 2;
+    margin-top: 0;
+  }
   .stepFact {
-    max-width: 20rem;
+    grid-column: 2;
+    margin-top: 0.2rem;
+    max-width: none;
   }
   .stepText {
-    max-width: 20rem;
+    grid-column: 2;
+    margin-top: 0.25rem;
+    max-width: none;
+  }
+  /* 가로 점선을 세로 점선으로 — 레일(마커 열 중앙)을 따라 행 사이 간격을 잇는다 */
+  .step + .step::before {
+    left: 31px;
+    top: calc(-1.5rem - 2px);
+    width: 0;
+    height: calc(1.5rem + 4px);
+    border-top: none;
+    border-left: 2px dashed rgba(55, 53, 47, 0.25);
+  }
+  :global(.dark) .step + .step::before {
+    border-left-color: rgba(255, 255, 255, 0.28);
   }
 }

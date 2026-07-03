@@ -53,7 +53,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
             toggleButton: false
           }}
           footer={
-            <Footer>
+            <Footer className="site-footer">
               <span style={{ fontSize: '0.8125rem', color: 'rgb(155, 155, 155)' }}>
                 © {new Date().getFullYear()} 우아한테크코스 · 우아한형제들 테크교육개발팀
               </span>

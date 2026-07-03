@@ -366,6 +366,12 @@ button[title="Change theme"]:not(.theme-switch-navbar) {
   display: none !important;
 }
 
+/* 본문 footer 위의 Nextra 기본 switcher 영역과 구분선 제거 */
+div:has(> .site-footer) > div:has(button[title="Change theme"]),
+div:has(> .site-footer) > hr.nextra-border {
+  display: none !important;
+}
+
 /* 헤더 내 ThemeSwitch 스타일 */
 .theme-switch-navbar {
   margin-left: 0.25rem;

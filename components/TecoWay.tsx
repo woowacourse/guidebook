@@ -12,7 +12,7 @@ import { crewCount } from '../content/crew-voices'
  * (다른 교육기관 랜딩에 붙여도 어색하지 않은 문장은 넣지 않는다 — 문구 출처: growth-arc.ts·philosophy.mdx).
  * 마커는 행성이 포즈(동일 크기 — 크기 변화는 모호해서 뺐다), 점선 길이 다섯 정거장을 모두 잇고
  * 마지막 수료 정거장(반짝·글로우)이 아크를 닫는다 — 포즈는 사실 헤드라인과 1:1(카탈로그: characters/index.md).
- * 레벨 5 텍스트의 735가 다운스트림 별자리('그중 422명')/행선지('이 길을 지난 735명')의
+ * 레벨 5 텍스트의 735가 다운스트림 별자리('이 10개월을 경험한 크루 422명')/행선지('이 길을 지난 735명')의
  * 지시 대상(crewCount 단일 원천). 성장 여정 상세는 /education/journey(CrewGrowth)가 담당한다.
  */
 const STEPS: Array<{ level: string; fact: string; pose: string; text?: ReactNode; star?: boolean }> = [

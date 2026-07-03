@@ -20,6 +20,22 @@
   color: rgba(255, 255, 255, 0.95);
 }
 
+/* 히어로(문서의 약속)와 이 섹션(현장)을 잇는 리드 — 토큰은 CrewJourney .lede와 동일 */
+.lede {
+  font-size: 1.05rem;
+  /* Nextra가 article p 줄높이를 2rem로 강제 → !important 없으면 무시됨 */
+  line-height: 1.6 !important;
+  color: rgba(55, 53, 47, 0.82);
+  max-width: 34rem;
+  margin: 0 auto;
+  word-break: keep-all;
+  text-wrap: pretty;
+}
+
+:global(.dark) .lede {
+  color: rgba(255, 255, 255, 0.74);
+}
+
 /* 3단계 가로 타임라인 */
 .timeline {
   position: relative;

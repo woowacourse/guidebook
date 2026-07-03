@@ -63,7 +63,8 @@
   position: absolute;
   top: 2rem;
   left: 50%;
-  width: 440px;
+  /* 폰에서 뷰포트 폭을 넘지 않게 — 가장자리는 페이드아웃이라 좁아져도 외형 동일 */
+  width: min(440px, 100vw);
   height: 360px;
   transform: translate(-50%, -50%);
   z-index: 0;

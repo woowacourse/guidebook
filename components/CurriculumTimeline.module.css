@@ -124,6 +124,12 @@
   /* .table tbody td 보다 명시도가 높아야 패딩이 먹는다 */
   padding-top: 0;
 }
+@media (max-width: 640px) {
+  .hl {
+    /* 모바일 터치 타깃 44px 확보 */
+    min-height: 44px;
+  }
+}
 
 /* ---------- 과거 기수 델타 연표 ---------- */
 .deltas {

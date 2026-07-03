@@ -58,6 +58,13 @@
   font-size: 0.88em;
   line-height: 1.55;
 }
+.table thead tr {
+  background: var(--accent-fill);
+}
+.table thead .levelCell {
+  /* 스티키 셀은 별도 레이어로 그려져 오른쪽 경계에 헤어라인이 생긴다 — 1px 그림자로 덮는다 */
+  box-shadow: 1px 0 0 var(--accent-fill);
+}
 .table thead th {
   font-size: 0.75rem;
   font-weight: 700;

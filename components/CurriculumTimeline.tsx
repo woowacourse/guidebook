@@ -1,16 +1,14 @@
 import cohorts, {
-  LEVELS_BY_TRACK,
+  CURRICULUM_ROWS,
   TRACK_ORDER,
   type CohortDelta,
 } from '../content/curriculum-history'
 import styles from './CurriculumTimeline.module.css'
 
 // content/curriculum-history.ts 를 두 섹션으로 렌더링한다.
-// 1) 현재 기수: 트랙 4개 × 레벨 0~5 테이블
+// 1) 현재 기수: 트랙 4개 × 레벨 테이블. 전 트랙 공통 구간(common)은 전체 폭 한 칸.
 // 2) 과거 기수: 헤드라인 + 델타 + 실험 링크의 압축 연표(최신순)
 // 원본/상세는 llm-wiki/wiki/curriculum-evolution.md.
-
-const LEVEL_COUNT = 6
 
 function DeltaLine({ delta }: { delta: CohortDelta }) {
   return (
@@ -30,7 +28,7 @@ function DeltaLine({ delta }: { delta: CohortDelta }) {
 
 export function CurriculumTimeline() {
   const current = cohorts.find((c) => c.current) ?? cohorts[cohorts.length - 1]
-  const past = cohorts.filter((c) => c.gi !== current.gi).sort((a, b) => b.gi - a.gi)
+  const history = [...cohorts].sort((a, b) => b.gi - a.gi) // 진행 중 기수 포함 연표(최신순)
   const tracks = TRACK_ORDER.filter((t) => current.tracks.includes(t))
 
   return (
@@ -54,20 +52,30 @@ export function CurriculumTimeline() {
             </tr>
           </thead>
           <tbody>
-            {Array.from({ length: LEVEL_COUNT }, (_, i) => (
-              <tr key={`레벨 ${i}`}>
+            {CURRICULUM_ROWS.map((row) => (
+              <tr key={row.level} className={row.common ? styles.commonRow : undefined}>
                 <th scope="row" className={styles.levelCell}>
-                  <span className={styles.levelNum}>{i}</span>
+                  <span className={styles.levelNum}>{row.level}</span>
                 </th>
-                {tracks.map((t) => {
-                  const cell = LEVELS_BY_TRACK[t][i]
-                  return (
-                    <td key={t}>
-                      <span className={styles.cellName}>{cell.name}</span>
-                      <span className={styles.cellDesc}>{cell.desc}</span>
-                    </td>
-                  )
-                })}
+                {row.common ? (
+                  <td colSpan={tracks.length} className={styles.commonCell}>
+                    <span className={styles.cellName}>
+                      {row.common.name}
+                      <span className={styles.commonTag}>전 트랙 공통</span>
+                    </span>
+                    <span className={styles.cellDesc}>{row.common.desc}</span>
+                  </td>
+                ) : (
+                  tracks.map((t) => {
+                    const cell = row.cells[t]
+                    return (
+                      <td key={t}>
+                        <span className={styles.cellName}>{cell.name}</span>
+                        <span className={styles.cellDesc}>{cell.desc}</span>
+                      </td>
+                    )
+                  })
+                )}
               </tr>
             ))}
           </tbody>
@@ -77,12 +85,12 @@ export function CurriculumTimeline() {
       <div className={[styles.head, styles.headGap].join(' ')}>
         <span className={styles.headTitle}>커리큘럼이 쌓여 온 길</span>
         <span className={styles.headMeta}>
-          {past[past.length - 1].gi}~{past[0].gi}기
+          {history[history.length - 1].gi}~{history[0].gi}기
         </span>
       </div>
 
       <ol className={styles.deltas}>
-        {past.map((c) => (
+        {history.map((c) => (
           <li key={c.gi} className={styles.delta}>
             <div>
               <span className={styles.deltaGi}>{c.gi}기</span>
@@ -91,6 +99,7 @@ export function CurriculumTimeline() {
             <div>
               <div className={styles.deltaHeadline}>
                 {c.headline}
+                {c.current && <span className={styles.badgeNow}>진행 중</span>}
                 {c.depth === 'sparse' && <span className={styles.chip}>기록 보강 중</span>}
               </div>
               {c.core.length > 0 && (

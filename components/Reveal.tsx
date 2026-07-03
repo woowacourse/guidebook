@@ -31,6 +31,15 @@ export function Reveal({ children }: RevealProps) {
       return
     }
 
+    // 로드 시점에 이미 뷰포트에 걸친 섹션은 관찰 없이 바로 등장시킨다.
+    // 아래 rootMargin -10% 기준으로는 fold 걸침 섹션이 트리거되지 않아
+    // 첫 화면 하단이 투명한 여백으로 남는다 — "아래에 콘텐츠가 없어 보인다"의 원인.
+    // (첫 페인트 뒤 상태 전환이라 fade-up 전환은 그대로 재생된다)
+    if (el.getBoundingClientRect().top < window.innerHeight) {
+      setShown(true)
+      return
+    }
+
     const io = new IntersectionObserver(
       (entries) => {
         if (entries.some((e) => e.isIntersecting)) {

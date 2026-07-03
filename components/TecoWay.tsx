@@ -51,7 +51,7 @@ const STEPS: Array<{ level: string; fact: string; pose: string; text?: ReactNode
 
 export function TecoWay() {
   return (
-    <section className={styles.section} aria-label="우테코의 10개월 — 우리는 가르치지 않습니다">
+    <section id="teco-way" className={styles.section} aria-label="우테코의 10개월 — 우리는 가르치지 않습니다">
       <Eyebrow>우테코의 10개월</Eyebrow>
       <h2 className={styles.heading}>
         우리는 가르치지 않습니다.

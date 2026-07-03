@@ -17,6 +17,10 @@ interface HeroProps {
   description?: string | ReactNode
   /** 주요 행동 버튼 (우테코 철학을 담은 초대) */
   cta?: HeroCta
+  /** 주 CTA 아래 조용한 텍스트 링크 — 주 CTA가 스크롤 초대일 때 직행 독자의 동선 보존용 */
+  secondaryCta?: HeroCta
+  /** 별의 트레일 — CTA 아래에서 fold를 지나 다음 섹션(점선 여정)으로 이어지는 세로 점선. center 전용 */
+  trail?: boolean
   /** 제목 안에서 손그림 밑줄을 칠 키워드 (정확히 일치하는 부분만) */
   underline?: string
   /** 레이아웃 — center(기본 가운데 정렬) | split(좌측 2단: 제목 왼쪽 / 설명 오른쪽) */
@@ -37,13 +41,25 @@ function renderTitle(title: string, underline?: string): ReactNode {
   )
 }
 
-export function Hero({ title, eyebrow, description, cta, underline, align = 'center' }: HeroProps) {
+export function Hero({ title, eyebrow, description, cta, secondaryCta, trail, underline, align = 'center' }: HeroProps) {
   const titleNode = renderTitle(title, underline)
   const ctaNode = cta && (
     <div className={styles.actions}>
       <Link className={styles.cta} href={cta.href}>
         {cta.label}
       </Link>
+    </div>
+  )
+  const secondaryNode = secondaryCta && (
+    <div className={styles.secondaryAction}>
+      <Link className={styles.secondaryLink} href={secondaryCta.href}>
+        {secondaryCta.label}
+      </Link>
+    </div>
+  )
+  const trailNode = trail && (
+    <div className={styles.trail} aria-hidden="true">
+      <div className={styles.trailLine} />
     </div>
   )
 
@@ -64,6 +80,7 @@ export function Hero({ title, eyebrow, description, cta, underline, align = 'cen
           <div className={styles.splitRight}>
             {description && <div className={styles.description}>{description}</div>}
             {ctaNode}
+            {secondaryNode}
           </div>
         </div>
       </div>
@@ -83,6 +100,8 @@ export function Hero({ title, eyebrow, description, cta, underline, align = 'cen
         <h1 className={styles.title}>{titleNode}</h1>
         {description && <div className={styles.description}>{description}</div>}
         {ctaNode}
+        {secondaryNode}
+        {trailNode}
       </div>
     </div>
   )

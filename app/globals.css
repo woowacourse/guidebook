@@ -1,5 +1,13 @@
 /* ===== Notion-style Global Overrides for Nextra ===== */
 
+/* 페이지 내 앵커 이동(랜딩 CTA→#teco-way, 본문 TOC)을 부드럽게.
+   모션 최소화 사용자는 브라우저 기본(즉시 점프)을 그대로 쓴다. */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 /* Typography - 노션 스타일 깔끔한 서체 */
 :root {
   --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui,

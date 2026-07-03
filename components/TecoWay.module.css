@@ -7,6 +7,8 @@
   margin: 0 auto;
   padding: 5rem 1rem 3.75rem;
   text-align: center;
+  /* 랜딩 CTA(#teco-way) 앵커 착지 시 고정 네비바(64px)에 eyebrow가 붙지 않도록 */
+  scroll-margin-top: 2rem;
 }
 
 .heading {
